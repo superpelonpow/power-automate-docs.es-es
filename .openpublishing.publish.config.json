@@ -4,14 +4,14 @@
       "docset_name": "flow",
       "build_source_folder": "articles",
       "build_output_subfolder": "power-automate",
-      "locale": "es-ES",
+      "locale": "es-es",
       "monikers": [],
       "moniker_ranges": [],
       "xref_query_tags": [
         "/dotnet",
         "/dynamics365/customer-engagement/web-api"
       ],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -27,10 +27,10 @@
       "docset_name": "power-automate",
       "build_source_folder": "power-automate",
       "build_output_subfolder": "power-automate",
-      "locale": "es-ES",
+      "locale": "es-es",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       },
@@ -41,19 +41,21 @@
   "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [
-    "live-sxs",
-    "master-sxs"
+    "live",
+    "master"
   ],
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/power-automate-docs",
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/power-automate-docs.es-es",
   "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "contribution_branch_mappings": {},
+  "contribution_branch_mappings": {
+     "live-sxs": "live"
+  },
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.es-ES",
+      "url": "https://github.com/Microsoft/templates.docs.msft.es-es",
       "branch": "master",
       "branch_mapping": {}
     },
@@ -68,7 +70,7 @@
     }
   ],
   "branch_target_mapping": {},
-  "need_generate_pdf_url_template": true,
+  "need_generate_pdf_url_template": false,
   "targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
