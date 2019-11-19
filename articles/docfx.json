@@ -49,9 +49,6 @@
         "Power Automate"
       ],
       "titleSuffix": "Power Automate",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/power-automate-docs",
-      "feedback_product_url": "https://ideas.flow.microsoft.com",
       "search.appverid": "met150",
       "toc_preview": true
     },
