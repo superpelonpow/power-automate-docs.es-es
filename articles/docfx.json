@@ -50,7 +50,13 @@
       ],
       "titleSuffix": "Power Automate",
       "search.appverid": "met150",
-      "toc_preview": true
+      "toc_preview": true,
+      "disable_contribution_on_translation_quality": [
+        "MT",
+        "MTE75",
+        "MTE95",
+        "Blank"
+      ]
     },
     "fileMetadata": {
       "featureFlags": {
