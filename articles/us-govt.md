@@ -169,9 +169,9 @@ Puede usar un conjunto de direcciones URL para acceder a los entornos de Power A
 
 Versión comercial | Versión para la Administración Pública de Estados Unidos
 ------ | --------
-https://flow.microsoft.com | https://gov.flow.microsoft.us (GCC) y  https://high.flow.microsoft.us (GCC High)
-https://admin.flow.microsoft.com | https://gov.admin.flow.microsoft.us (GCC) y https://high.admin.flow.microsoft.us (GCC High)
-https://flow.microsoft.com/connectors | https://gov.flow.microsoft.us/connectors (GCC) y https://high.flow.microsoft.us/connectors (GCC High)
+https://flow.microsoft.com | [https://gov.flow.microsoft.us](https://gov.flow.microsoft.us ) (GCC) y  https://high.flow.microsoft.us (GCC High)
+https://admin.flow.microsoft.com | [https://gov.admin.flow.microsoft.us](https://gov.admin.flow.microsoft.us ) (GCC) y https://high.admin.flow.microsoft.us (GCC High)
+https://flow.microsoft.com/connectors | [https://gov.flow.microsoft.us/connectors](https://gov.flow.microsoft.us/connectors ) (GCC) y https://high.flow.microsoft.us/connectors (GCC High)
 
 
 Para los clientes que implementan restricciones de red, asegúrese de que el acceso a los dominios siguientes está disponible para los puntos de acceso de los usuarios finales:

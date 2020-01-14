@@ -1,8 +1,8 @@
-- name: Introducción
+- name: Información general
   items:
-    - name: Registro
+    - name: Registrarse
       href: sign-up-sign-in.md
-    - name: Introducción
+    - name: Comenzar
       href: getting-started.md
     - name: Aprendizaje guiado
       href: 'https://docs.microsoft.com/learn/paths/automate-process-using-flow'
@@ -90,7 +90,7 @@
       href: ./ui-flows/manage.md
 - name: Soluciones
   items:
-    - name: Introducción
+    - name: Información general
       href: overview-solution-flows.md
     - name: Creación de un flujo en una solución
       href: create-flow-solution.md
@@ -106,7 +106,7 @@
   items:
     - name: Flujos de trabajo clásicos de Common Data Service
       items:
-        - name: Introducción
+        - name: Información general
           href: workflow-processes.md
         - name: Configuración de fases y pasos de flujo de trabajo
           href: configure-workflow-steps.md
@@ -136,15 +136,15 @@
           href: use-cds-for-apps-dialogs.md
         - name: Sustitución de diálogos clásicos de Common Data Service
           href: replace-dialogs.md
-- name: Generador de IA
+- name: AI Builder
   items:
     - name: Uso de AI Builder en Power Automate
       href: use-ai-builder.md
-- name: Procedimientos
+- name: Procedimiento
   items:
     - name: Agregar una acción
       href: multi-step-logic-flow.md
-    - name: Adición de una condición
+    - name: Agregar una condición
       href: add-condition.md
     - name: Uso de operaciones de datos
       href: data-operations.md
@@ -154,6 +154,20 @@
       href: visio-flows.md
     - name: 'Referencia: Uso de funciones en expresiones'
       href: 'https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference'
+    - name: Uso de tarjetas adaptables para modelar flujos
+      items:
+        - name: Introducción a las tarjetas adaptables para Teams
+          href: overview-adaptive-cards.md
+        - name: Creación de tarjetas adaptables para Teams
+          href: create-adaptive-cards.md
+        - name: 'Ejemplo: recurso compartido de imagen'
+          href: image-share-sample.md
+        - name: 'Ejemplo: actualización de metadatos'
+          href: metadata-update-sample.md
+        - name: 'Ejemplo: meteorología diaria'
+          href: daily-weather-sample.md
+        - name: 'Ejemplo: generación de clientes potenciales'
+          href: lead-collection-sample.md
     - name: Flujos de aprobación
       items:
         - name: Aprobaciones únicas
@@ -174,7 +188,7 @@
       href: mobile-manage-flows.md
     - name: Publicación de una plantilla
       href: publish-a-template.md
-- name: Solución de problemas
+- name: Solucionar problemas
   items:
     - name: Visualización de un flujo
       href: see-a-flow-run.md
@@ -184,7 +198,7 @@
       href: fix-flow-failures.md
     - name: Búsqueda y corrección de errores con el comprobador de errores
       href: error-checker.md
-- name: Conexión a datos
+- name: Conectar a datos
   items:
     - name: Conexiones disponibles
       href: 'https://go.microsoft.com/fwlink/?linkid=832211'
@@ -192,7 +206,7 @@
       href: add-manage-connections.md
     - name: Administración de puertas de enlace
       href: gateway-manage.md
-    - name: Información acerca de las puertas de enlace
+    - name: Puertas de enlace
       href: gateway-reference.md
 - name: Para desarrolladores
   items:
@@ -200,7 +214,7 @@
       href: ./developer/dev-enterprise-intro.md
     - name: Compilación y certificación de conectores personalizados
       href: ./developer/register-custom-api.md
-    - name: Integración con sitios web y otras tecnologías
+    - name: Integrar con sitios web y otras tecnologías
       href: ./developer/embed-flow-dev.md
     - name: Permitir a los clientes la realización de pruebas de los flujos
       href: ./developer/dev-appsource-test-drive.md
