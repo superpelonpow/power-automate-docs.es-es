@@ -64,6 +64,8 @@
       href: create-business-process-flow.md
     - name: Mejora de los flujos de proceso de negocio con ramas
       href: enhance-business-process-flows-branching.md
+    - name: Adición de controles personalizados en flujos de procesos empresariales
+      href: custom-controls-business-process-flows.md
     - name: Procedimientos recomendados para los atributos de flujo de proceso de negocio
       href: best-practices-entity-attributes.md
 - name: Flujos de la interfaz de usuario (versión preliminar)
@@ -172,6 +174,8 @@
       items:
         - name: Aprobaciones únicas
           href: modern-approvals.md
+        - name: Aprobaciones con datos adjuntos
+          href: approval-attachments.md
         - name: Aprobaciones secuenciales
           href: sequential-modern-approvals.md
         - name: Aprobaciones en paralelo
