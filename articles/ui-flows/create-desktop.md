@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 064ab35f68ad36ba52395be7768b95276c5c648d
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.openlocfilehash: afe9277ced28cdb964ed32550dd0402eaa0d1df4
+ms.sourcegitcommit: 8c4231190023d17c3d620e1e58d1d3d6bcd289ab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74372616"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75943499"
 ---
 # <a name="create-and-test-desktop-ui-flows"></a>Creación y prueba de los flujos de la interfaz de usuario de escritorio
 
@@ -124,7 +124,7 @@ En los pasos siguientes, se muestra cómo automatizar la aplicación Calculadora
 
 - Es posible que quiera agregar una [acción de **cierre**](edit-desktop.md#add-a-manual-action) al final del flujo de interfaz de usuario porque los flujos de interfaz de usuario inician una instancia nueva de las aplicaciones con cada prueba o ejecución.
 
-- Seleccione **…**  > **Delete** (Eliminar) en la tarjeta de acciones grabadas para quitar toda acción innecesaria o duplicada. Puede que se creen acciones duplicadas según el tipo y la velocidad de la grabación. 
+- Seleccione **…**  > **Delete** (Eliminar) en la tarjeta de acciones grabadas para quitar toda acción innecesaria o duplicada.
 
 - Es posible que los clics con el botón derecho no se reproduzcan correctamente. En tal caso, mientras grabe, haga clic con el botón izquierdo para centrar los flujos de interfaz de usuario en el elemento de interfaz de usuario de destino y, luego, clic con el botón derecho.
 
