@@ -1,7 +1,7 @@
 ---
 title: Introducción a los flujos de proceso de negocio | Microsoft Docs
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 12/12/2019
 ms.reviewer: ''
 ms.service: flow
 author: MSFTMAN
@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 5ca4e1698ec3196f90d6765fc52d26ddbb1eb591
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.openlocfilehash: ce726a2f4bfdbd7c57a60e5dcc25eb5cee504bce
+ms.sourcegitcommit: 85100833f23c3bcc42f3ee090be476a53fe5c55b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74356631"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75951498"
 ---
 # <a name="business-process-flows-overview"></a>Introducción a los flujos de proceso de negocio
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
@@ -94,7 +94,7 @@ Los flujos de proceso de negocio proporcionan una guía para que los usuarios re
  Solo puede definir flujos de proceso de negocio para las entidades que los admitan. También deberá tener en cuenta los límites para el número de procesos, fases y pasos que se pueden agregar.  
   
 ### <a name="business-process-flows-that-call-a-workflow"></a>Flujos de proceso de negocio que llaman a un flujo de trabajo  
- Puede llamar a flujos de trabajo a petición desde dentro de un flujo de proceso de negocio. Para configurarlo desde el nuevo Diseñador de flujos de proceso de negocio, arrastre un componente de flujo de trabajo a una fase del proceso o a la sección de flujos de trabajo globales. Para obtener más información sobre cómo usar flujos de trabajo en flujos de proceso de negocio, vea [Blog: Business process flow automation in Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/) (Blog: Automatización de flujos de proceso de negocio en Dynamics 365).  
+ Puede llamar a flujos de trabajo a petición desde dentro de un flujo de proceso de negocio. Para configurarlo desde el nuevo Diseñador de flujos de proceso de negocio, arrastre un componente de flujo de trabajo a una fase del proceso o a la sección de flujos de trabajo globales. Para obtener más información sobre el empleo de flujos de trabajo en flujos de proceso de negocio, vea [Blog: Business process flow automation in Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/) (Blog: Automatización de flujos de proceso de negocio en Dynamics 365).  
   
  Cuando incluye un flujo de trabajo que quiere que se desencadene en la salida de fase de una fase del flujo de proceso de negocio, y esa fase es la última del flujo, el diseñador da la impresión de que el flujo de trabajo se desencadenará cuando que se haya completado la fase. Pero el flujo de trabajo no se desencadenará porque no tiene lugar una transición de fase. No recibirá una advertencia ni un error que le impida incluir el flujo de trabajo en la fase. Cuando un usuario interactúa con el flujo de proceso de negocio, finalizar o abandonar el proceso no produce una transición de fase y, por tanto, el flujo de trabajo no se desencadena. Considere los ejemplos siguientes:  
   
@@ -111,11 +111,11 @@ Los flujos de proceso de negocio proporcionan una guía para que los usuarios re
 -   Cuenta  
 -   Cita  
 -   Campaña  
--   Actividad de la campaña  
+-   Actividad de campaña  
 -   Respuesta de la campaña  
 -   Competidor  
 -   Contacto  
--   Correo electrónico  
+-   Correo  
 -   Derecho  
 -   Fax  
 -   Caso  
@@ -139,7 +139,7 @@ Los flujos de proceso de negocio proporcionan una guía para que los usuarios re
  Para habilitar una entidad personalizada para flujos de proceso de negocio, active la casilla **Flujos de proceso de negocio (se crearán campos)** de la definición de la entidad. Tenga en cuenta que esta acción no se puede deshacer.  
   
 > [!NOTE]
->  Si navega a la fase de flujo de proceso de negocio que contiene la entidad `Social Activity` y hace clic en el botón **Fase siguiente**, verá la opción **Crear**. Al hacer clic en **Crear**, se carga el formulario **Actividad social**. Pero como `Social Activity` no es válido para `Create` desde la interfaz de usuario de la aplicación, no podrá guardar el formulario y verá el mensaje de error: "Error inesperado".  
+>  Si navega a la fase de flujo de proceso de negocio que contiene la entidad `Social Activity` y hace clic en el botón **Fase siguiente**, verá la opción **Crear**. Al hacer clic en **Crear**, se carga el formulario **Actividad social**. Pero como `Social Activity` no es válido para `Create` desde la interfaz de usuario de la aplicación, no se puede guardar el formulario y aparece el mensaje de error: "Error inesperado".  
   
 <a name="BPF_MaxNumbers"></a>   
 ### <a name="maximum-number-of-processes-stages-and-steps"></a>Número máximo de procesos, fases y pasos  
@@ -172,6 +172,19 @@ Hay disponibles varias vistas predeterminadas que puede ver como un gráfico, co
 ### <a name="interact-with-the-business-process-flow-entity-from-a-workflow"></a>Interacción con la entidad de flujo de proceso de negocio desde un flujo de trabajo
 También puede interactuar con las entidades de flujo de proceso de negocio desde un flujo de trabajo. Por ejemplo, puede crear un flujo de trabajo para el registro de entidad Flujo de proceso de negocio para cambiar la Fase activa cuando se actualice un campo en el registro de entidad Oportunidad. Para obtener más información sobre cómo hacerlo, vea [Automate business process flow stages using workflows](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows) (Automatización de las fases de flujo de proceso de negocio mediante flujos de trabajo).
 
+### <a name="run-business-process-flows-offline"></a>Ejecución de los flujos de procesos de negocio sin conexión
+
+Puede usar los flujos de procesos de negocio sin conexión si se cumplen estas condiciones:
+
+- El flujo del proceso de negocio se usa desde una aplicación de Power Apps.
+- La aplicación Power Apps está habilitada para su uso sin conexión.
+- El flujo de procesos de negocio tiene una sola entidad.
+
+En concreto, los tres comandos que están disponibles para un flujo de proceso de negocio cuando la aplicación Power Apps está sin conexión son:
+
+- Fase siguiente
+- Fase anterior
+- Fase Establecer como activo
 
 ### <a name="limitations-of-using-business-process-flow-entities"></a>Limitaciones del uso de entidades de flujo de proceso de negocio
 
@@ -182,4 +195,4 @@ También puede interactuar con las entidades de flujo de proceso de negocio desd
  [Vea un vídeo corto (4:49) sobre los flujos de proceso de negocio](https://go.microsoft.com/fwlink/p/?linkid=842226)   
  [Crear un flujo de proceso de negocio](create-business-process-flow.md)   
  [Mejora de los flujos de proceso de negocio con ramas](enhance-business-process-flows-branching.md) <br/>
- [Notas del producto: Habilitación de procesos con Dynamics 365](https://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>
+ [Whitepaper: Process Enablement with Dynamics 365](https://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf) (Notas del producto: Habilitación de procesos con Dynamics 365)</br>
