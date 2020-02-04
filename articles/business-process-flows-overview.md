@@ -22,10 +22,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: ce726a2f4bfdbd7c57a60e5dcc25eb5cee504bce
-ms.sourcegitcommit: 85100833f23c3bcc42f3ee090be476a53fe5c55b
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "75951498"
 ---
 # <a name="business-process-flows-overview"></a>Introducción a los flujos de proceso de negocio

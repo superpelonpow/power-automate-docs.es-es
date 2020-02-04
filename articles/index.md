@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 000253e168f2575ffb3cf8910c1538699d405b55
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74354722"
 ---
 <div id="main" class="v2">
@@ -164,7 +164,7 @@ ms.locfileid: "74354722"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Obtenga ayuda</h3>
+                                            <h3>Obtener ayuda</h3>
                                             <p>Estamos aquí para ayudarle. ¿Con qué necesita asistencia?</p>
                                         </div>
                                     </div>

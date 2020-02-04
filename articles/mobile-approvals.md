@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 40692f5993652e386b084b2bd2ff375192448e35
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74377308"
 ---
 # <a name="approve-requests-on-your-mobile-device-by-using-power-automate"></a>Aprobación de solicitudes en dispositivos móviles mediante Power Automate

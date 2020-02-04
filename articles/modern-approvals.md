@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: c174ad7fe18539a7dc1d44acf315d569f4b35a39
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74376526"
 ---
 # <a name="create-and-test-an-approval-workflow-with-power-automate"></a>Creación y prueba de un flujo de trabajo de aprobación con Power Automate
@@ -94,7 +94,7 @@ La **dirección del sitio** y el **nombre de la lista** son los elementos que an
 >
 > Si su escenario lo requiere, puede adjuntar archivos a las solicitudes de aprobación que usan Common Data Service.
 
-## <a name="add-a-condition"></a>Adición de una condición
+## <a name="add-a-condition"></a>Agregar una condición
 
 [!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
 

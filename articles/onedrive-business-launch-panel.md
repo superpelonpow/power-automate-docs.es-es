@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: d7af2e8171a460159905edc4fed0ad1a3427343a
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74374985"
 ---
 # <a name="create-flows-from-the-onedrive-for-business-launch-panel"></a>Creación de flujos desde el panel de inicio de OneDrive para la Empresa

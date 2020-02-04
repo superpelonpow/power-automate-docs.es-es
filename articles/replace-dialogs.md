@@ -22,10 +22,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: b338991cfdbb73a8a0464fd4322714ece82c2ac5
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74373030"
 ---
 # <a name="replace-dialogs-with-business-process-flows-or-canvas-apps"></a>Reemplazo de cuadros de diálogo con aplicaciones de lienzo o flujos de proceso de negocio
@@ -85,7 +85,7 @@ Por último, configure las fases y los pasos de flujo de proceso de negocio, jun
 
 Para poner este flujo de proceso de negocio a disposición de los usuarios, asegúrese primero de que los usuarios adecuados tienen privilegios para el flujo de proceso de negocio y, después, actívelo.
 
-Para más detalles sobre cómo crear un flujo de proceso de negocio, vea [Tutorial: Crear un flujo de proceso de negocio para estandarizar procesos](create-business-process-flow.md).
+Para obtener más información sobre cómo crear un flujo de proceso de negocio, vea [Tutorial: Crear un flujo de proceso de negocio para estandarizar los procesos](create-business-process-flow.md).
 
 ## <a name="dialog-replacement-using-canvas-app-scenario"></a>Reemplazar cuadros de diálogo con aplicaciones de lienzo
 
@@ -126,7 +126,7 @@ Si damos un paso más, supongamos que quiere que esta aplicación esté disponib
 
 
 ## <a name="see-also"></a>Vea también
-[Tutorial: Crear un flujo de proceso de negocio para estandarizar procesos](create-business-process-flow.md) </br>
+[Tutorial: Crear un flujo de proceso de negocio para estandarizar los procesos](create-business-process-flow.md) </br>
 [¿Qué son las aplicaciones de lienzo en Power Apps?](/powerapps/maker/canvas-apps/getting-started)
 
 

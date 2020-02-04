@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 22fa35d40dbb198b376150f144d4de11585fc7ca
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74375192"
 ---
 # <a name="flow-in-your-organization-qa"></a>Preguntas y respuestas sobre Flow en su organización
@@ -81,9 +81,9 @@ Si desea quitar el icono de Flow del iniciador de aplicaciones de forma predeter
 Si se asignó una licencia de Flow Plan 1 o 2 a un usuario, puede realizar los pasos siguientes para quitar la licencia de Flow para ese usuario, con lo que se quitará el icono de Flow del iniciador de aplicaciones:
 
 1. Vaya al [Portal de administración de Office 365](https://portal.microsoftonline.com/).
-2. En la barra de navegación izquierda, seleccione **Usuarios** y, a continuación, **Usuarios activos**.
-3. Busque el usuario al que desea quitar la licencia y seleccione su nombre.
-4. En el panel de detalles del usuario, en la sección de **licencias de producto** seleccione **Editar**.
+2. En la barra de navegación izquierda, seleccione **Usuarios** y, después, **Usuarios activos**.
+3. Busque el usuario cuya licencia desea quitar y seleccione su nombre.
+4. En el panel de detalles del usuario, en la sección de **Product licenses** (Licencias de productos), seleccione **Edit** (Editar).
 5. Busque la licencia **Power Automate Plan 1** o **Power Automate Plan 2**, establezca el control de alternancia en **Desactivado** y seleccione **Guardar**.
    
    ![](./media/organization-q-and-a/remove-license.png)
@@ -91,14 +91,14 @@ Si se asignó una licencia de Flow Plan 1 o 2 a un usuario, puede realizar los p
 Si un usuario tiene acceso a Flow a través de su licencia de planes de Office 365 y Dynamics 365, puede deshabilitar su acceso a las características adicionales incluidas en este plan realizando los pasos siguientes:
 
 1. Vaya al [Portal de administración de Office 365](https://portal.microsoftonline.com/).
-2. En la barra de navegación izquierda, seleccione **Usuarios** y, a continuación, **Usuarios activos**.
+2. En la barra de navegación izquierda, seleccione **Usuarios** y, después, **Usuarios activos**.
 3. Busque el usuario al que desea quitar el acceso y seleccione su nombre.
 4. En el panel de detalles del usuario, en la sección de **licencias de producto** seleccione **Editar**.
 5. Expanda la licencia de Office 365 o Dynamics 365 del usuario, deshabilite el acceso para el servicio **Flow for Office 365** (Flow para Office 365) o **Flow for Dynamics 365** (Flow para Dynamics 365) y seleccione **Guardar**.
    
    ![](./media/organization-q-and-a/remove-service-plan.png)
 
-También es posible la eliminación masiva de licencias mediante PowerShell. Consulte [Eliminar licencias de cuentas de usuario con PowerShell de Office 365](https://technet.microsoft.com/library/dn771774.aspx) para ver un ejemplo detallado.   Por último, puede ver más instrucciones sobre la eliminación masiva de los servicios dentro de una licencia en [Deshabilitar el acceso a servicios con PowerShell de Office 365](https://technet.microsoft.com/library/dn771769.aspx).
+También es posible la eliminación masiva de licencias mediante PowerShell. Para ver un ejemplo detallado, Consulte [Eliminar licencias de cuentas de usuario con PowerShell de Office 365](https://technet.microsoft.com/library/dn771774.aspx).   Por último, puede ver más instrucciones sobre la eliminación masiva de los servicios dentro de una licencia en [Deshabilitar el acceso a servicios con PowerShell de Office 365](https://technet.microsoft.com/library/dn771769.aspx).
 
 Al eliminar el servicio o la licencia de Flow para un usuario de su organización, se eliminará el icono de Flow de las siguientes ubicaciones para dicho usuario:
 
@@ -112,7 +112,7 @@ Al eliminar el servicio o la licencia de Flow para un usuario de su organizació
 Tenga en cuenta que esto solo eliminará el icono de Flow de forma predeterminada. Un usuario aún podrá utilizar Power Automate como usuario individual.
 
 ### <a name="why-did-10000-licenses-for-power-automate-show-up-in-my-office-365-tenant"></a>¿Por qué han aparecido 10 000 licencias para Power Automate en mi inquilino de Office 365?
-Cualquier persona puede probar el plan 1 o 2 de Power Automate durante 90 días, y estas licencias de prueba representan la capacidad disponible de nuevos usuarios de Flow en el inquilino. No hay ningún cargo por esas licencias. En concreto, hay dos motivos posibles por los que puede que aparezca una capacidad de 10 000 licencias (prueba) para Flow en el portal de administración de Office 365:
+Cualquier persona puede probar el plan 1 o 2 de Power Automate durante 90 días, y estas licencias de prueba representan la capacidad disponible de nuevos usuarios de Flow en el inquilino. Estas licencias no tienen costo alguno. En concreto, hay dos motivos posibles por los que puede que aparezca una capacidad de 10 000 licencias (prueba) para Flow en el portal de administración de Office 365:
 
 1. Si al menos un usuario en el inquilino ha participado en la versión preliminar pública de Flow que estuvo activa de abril a octubre de 2016, verá 10 000 licencias etiquetadas como "Microsoft Power Apps and Logic flows" (Flujos de Microsoft PowerApps y lógica).
    
@@ -138,7 +138,7 @@ Cualquier usuario puede ver su plan si visita la página de precios de Flow en [
 ### <a name="will-power-automate-sign-up-impact-the-identities-in-my-organization"></a>¿La suscripción a Power Automate afectará a las identidades de mi organización?
 Si su organización ya tiene un entorno de Office 365 existente y todos los usuarios de su organización tienen cuentas de Office 365, la administración de las identidades no se verá afectada.
 
-Si su organización ya tiene un entorno de Office 365 existente pero no todos los usuarios de su organización tienen cuentas de Office 365, crearemos un usuario en el inquilino y asignaremos licencias en función de las direcciones de correo electrónico profesionales o educativas del usuario. Esto significa que el número de usuarios que está administrando en cualquier momento determinado crecerá a medida que los usuarios de la organización se registran en el servicio.
+Si su organización ya tiene un entorno de Office 365 existente pero no todos los usuarios de su organización tienen cuentas de Office 365, crearemos un usuario en el inquilino y asignaremos licencias en función de las direcciones de correo electrónico profesionales o educativas del usuario. Esto significa que el número de usuarios que administra en cualquier momento determinado crecerá a medida que los usuarios de la organización se suscriben en el servicio.
 
 Si la organización no tiene un entorno de Office 365 conectado al dominio de correo electrónico, no se producirá ningún cambio en la forma de administrar las identidades. Los usuarios se agregarán a un nuevo directorio de usuario solo en la nube y tendrá la opción de tomar el control como administrador de inquilinos y administrarlos.
 
@@ -146,22 +146,22 @@ Si la organización no tiene un entorno de Office 365 conectado al dominio de co
 Si Power Automate ha creado un inquilino, puede reclamarlo y administrarlo mediante estos pasos:
 
 1. Únase al inquilino registrándose en Flow con un dominio de correo electrónico que coincida con el dominio del inquilino que desea administrar. Por ejemplo, si Microsoft creó el inquilino de contoso.com, únase a ese inquilino con una dirección de correo electrónico que termine en @contoso.com.
-2. Reclame el control de la administración comprobando la propiedad del dominio: cuando se encuentre en el inquilino, puede promocionarse a sí mismo al rol de administrador comprobando la propiedad de dominio. Para ello, siga estos pasos:    
+2. Para reclamar el control de la administración, compruebe la propiedad del dominio: una vez que se encuentre en el inquilino, puede promocionarse al rol de administrador comprobando la propiedad del dominio. Para ello, siga estos pasos:    
    
    1. Vaya a [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free).
    2. Seleccione el icono del iniciador de aplicaciones en la esquina superior izquierda y elija Administrador.
-   3. Lea las instrucciones en la página **Become the Admin** (Convertirse en administrador) y, a continuación, elija **Yes, I want to be the admin** (Sí, quiero ser el administrador).  
+   3. Lea las instrucciones de la página **Become the admin** (Convertirse en el administrador) y, después, elija **Yes, I want to be the admin** (Sí, deseo ser el administrador).  
       
-       **NOTA**: si no aparece esta opción, se asignará un administrador de Office 365.
+       **NOTA**: Si no aparece esta opción, se asignará un administrador de Office 365.
 
-### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Si dispongo de varios dominios, ¿puedo controlar el inquilino de Office 365 al que se agregan usuarios?
+### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Si dispongo de varios dominios, ¿puedo controlar el inquilino de Office 365 al que se agregan los usuarios?
 Si no hace nada, se creará un inquilino para cada dominio y subdominio de correo electrónico del usuario.
 
-Si desea que todos los usuarios estén en el mismo inquilino independientemente de sus extensiones de correo electrónico:  
+Si desea que todos los usuarios estén en el mismo inquilino, independientemente de sus extensiones de correo electrónico:  
 
-* Cree de antemano un inquilino de destino o use un inquilino existente. Agregue todos los dominios y subdominios existentes que desee que se consoliden dentro de ese inquilino. A partir de entonces, todos los usuarios con direcciones de correo electrónico que terminen en esos dominios y subdominios se unirán automáticamente al inquilino de destino cuando se registren.
+* Cree de antemano un inquilino de destino o use un inquilino existente. Agregue todos los dominios y subdominios existentes que desee que se consoliden en dicho inquilino. A partir de ese momento, todos los usuarios cuyas direcciones de correo electrónico terminen en esos dominios y subdominios se unirán automáticamente al inquilino de destino al suscribirse.
 
-**IMPORTANTE**: No hay ningún mecanismo automático admitido para mover usuarios entre inquilinos una vez que se han creado. Para obtener información acerca de cómo agregar dominios a un solo inquilino de Office 365, consulte [Add your users and domain to Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7) (Incorporación de usuarios y dominios a Office 365).
+**IMPORTANTE**: No hay ningún mecanismo automático admitido para mover usuarios entre inquilinos una vez que se han creado. Para obtener información acerca de cómo agregar dominios a un solo inquilino de Office 365, consulte [Agregar usuarios y un dominio con el asistente de configuración](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
 
 ### <a name="how-can-i-restrict-my-users-ability-to-access-my-organizations-business-data"></a>¿Cómo puedo restringir la capacidad de mis usuarios para acceder a los datos empresariales de mi organización?
 Power Automate permite crear zonas de datos para datos empresariales y no empresariales, tal y como se muestra a continuación. Una vez implementadas estas directivas de prevención de pérdida de datos, se impide a los usuarios diseñar o ejecutar flujos que combinen datos empresariales y no empresariales. Para más información, consulte [Directivas de prevención de pérdida de datos (DLP)](prevent-data-loss.md).

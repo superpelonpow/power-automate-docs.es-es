@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: e8acff386e031eba3bb48a9f8abd535f8ce57940
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74373467"
 ---
 # <a name="run-flows-on-a-schedule"></a>Ejecución de flujos de forma programada
@@ -54,7 +54,7 @@ Cree un flujo que lleva a cabo una o varias tareas (como enviar un informe por c
 ## <a name="specify-advanced-options"></a>Especificación de opciones avanzadas
 1. Siga los pasos descritos en la sección anterior y, después, seleccione **Mostrar opciones avanzadas**.
    
-    **Nota**: Estas opciones cambian en función de los valores de los campos **Intervalo** y **Frecuencia**. Si la pantalla no es la misma que la siguiente, asegúrese de los valores de **Intervalo** y **Frecuencia** son los mismos valores que se muestran en el gráfico.
+    **Nota:** Estas opciones cambian en función de los valores de los campos **Intervalo** y **Frecuencia**. Si la pantalla no es la misma que la siguiente, asegúrese de los valores de **Intervalo** y **Frecuencia** son los mismos valores que se muestran en el gráfico.
 2. Seleccione una **zona horaria** para especificar si la **hora de inicio** refleja una zona horaria local, hora universal coordinada (UTC), etc.
 3. Especifique un **hora de inicio** en este formato:
    <br>AAAA-MM-DDTHH:MM:SSZ
