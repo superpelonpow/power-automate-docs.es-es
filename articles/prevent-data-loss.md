@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 63e49b656527f471d7bdd5a5d7a0b02d572c1221
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74374778"
 ---
 # <a name="data-loss-prevention-dlp-policies"></a>Directivas de prevención de pérdida de datos (DLP)
@@ -34,27 +34,27 @@ Este documento presenta las directivas de prevención de pérdida de datos, que 
 
 ## <a name="whats-a-data-loss-prevention-policy"></a>¿Qué es una directiva de prevención de pérdida de datos?
 
-Los datos de una organización son fundamentales para su éxito. Es preciso que los datos estén disponibles rápidamente para la toma de decisiones, pero deben protegerse para que no se puedan compartir con audiencias que no deberían tener acceso a ellos. Para proteger estos datos, Power Automate ofrece la posibilidad de crear y aplicar directivas que definen qué conectores de consumidor pueden acceder a los datos empresariales y compartirlos. Estas directivas que definen cómo se pueden compartir los datos se conocen como directivas de prevención de pérdida de datos (DLP).
+Los datos de una organización son fundamentales para su éxito. Los datos tienen que estar disponibles de inmediato para la toma de decisiones, pero tienen que protegerse de manera que no se compartan con personas que no deben tener acceso a ellos. Para proteger estos datos, Power Automate ofrece la posibilidad de crear y aplicar directivas que definen qué conectores de consumidor pueden acceder a los datos empresariales y compartirlos. Estas directivas que definen cómo se pueden compartir los datos se conocen como directivas de prevención de pérdida de datos (DLP).
 
-## <a name="why-create-a-dlp-policy"></a>Razones para crear una directiva de DLP
+## <a name="why-create-a-dlp-policy"></a>¿Por qué crear una directiva DLP?
 
 Una directiva de DLP se crea para definir claramente qué conectores de consumidor pueden acceder a los datos empresariales y compartirlos. Por ejemplo, es posible que una organización que usa Power Automate no quiera que sus datos empresariales de SharePoint se publiquen automáticamente en su fuente de Twitter. Para evitarlo, se crea una directiva de DLP que bloquea el uso de los datos de SharePoint como fuente de tweets.
 
-## <a name="benefits-of-a-dlp-policy"></a>Ventajas de una directiva de DLP
+## <a name="benefits-of-a-dlp-policy"></a>Ventajas de una directiva DLP
 
 * Garantiza que los datos se administran de forma uniforme en toda la organización.
 * Evita que los datos empresariales importantes se publiquen accidentalmente en conectores como sitios de redes sociales.
 
-## <a name="managing-dlp-policies"></a>Administración de directivas de DLP
+## <a name="managing-dlp-policies"></a>Administración de directivas DLP
 
 ### <a name="prerequisites-for-managing-dlp-policies"></a>Requisitos previos para administrar directivas de DLP
 
-* Permisos de administrador de entornos o administrador de inquilinos.
+* Permisos del administrador de inquilinos o entornos.
 
     Puede obtener más información sobre permisos en el [artículo sobre entornos](environments-overview-admin.md).
 * Una [licencia P2 de Power Automate](billing-questions.md).
 
-## <a name="create-a-dlp-policy"></a>Creación de una directiva de DLP
+## <a name="create-a-dlp-policy"></a>Crear una directiva DLP
 
 ### <a name="prerequisites-for-creating-dlp-policies"></a>Requisitos previos para crear directivas de DLP
 
@@ -66,12 +66,12 @@ Siga estos pasos para crear una directiva de DLP que evite que los datos del sit
 
 1. Seleccione la pestaña Directivas de datos y luego el vínculo **Nueva directiva**:
 
-    ![Inicio de sesión](./media/prevent-data-loss/create-policy-1.png)
+    ![Iniciar sesión](./media/prevent-data-loss/create-policy-1.png)
 1. Seleccione la pestaña **Grupos de datos**.
 
 1. Escriba el nombre de la directiva de DLP, por ejemplo *Secure Data Access for Contoso*, en la etiqueta **Nombre de la directiva de datos** de la parte superior de la página:
 
-    ![Inicio de sesión](./media/prevent-data-loss/create-policy-2.png)
+    ![Iniciar sesión](./media/prevent-data-loss/create-policy-2.png)
 
 1. Seleccione el [entorno](environments-overview-admin.md) en la pestaña **Entornos**.
 
@@ -98,11 +98,11 @@ Siga estos pasos para crear una directiva de DLP que evite que los datos del sit
 
 1. Seleccione **Guardar directiva** en la esquina superior derecha de la pantalla.
 
-1. Transcurridos unos segundos, la nueva directiva de DLP se mostrará en la lista de directivas de prevención de pérdida de datos:
+1. Transcurridos unos minutos, la nueva directiva DLP se mostrará en la lista de directivas de prevención de pérdida de datos:
 
     ![Lista de DLP](./media/prevent-data-loss/create-policy-9.png)
 
-1. **Opcional** Envíe un correo electrónico o cualquier otra comunicación a su equipo para avisarle de que hay una nueva directiva de DLP en vigor.
+1. **Opcional** Envíe un correo electrónico u otra comunicación al equipo avisándoles de que hay ahora una nueva directiva DLP disponible.
 
 Enhorabuena, ya ha creado una directiva de DLP que permite a la aplicación compartir datos entre SharePoint y Salesforce y que bloquea el uso compartido de datos con cualquier otro servicio.
 
@@ -125,37 +125,37 @@ Si los usuarios se ponen en contacto con usted acerca de flujos suspendidos, aqu
 
 1. Pida al usuario que deje el flujo en estado suspendido hasta que se tome una decisión sobre el uso compartido de datos entre estas dos entidades.
 
-## <a name="find-a-dlp-policy"></a>Búsqueda de una directiva de DLP
+## <a name="find-a-dlp-policy"></a>Buscar una directiva DLP
 
 ### <a name="admins"></a>Administradores
 
-Los administradores pueden utilizar la característica de búsqueda del Centro de administración para buscar directivas de DLP concretas.
+Los administradores pueden usar la característica de búsqueda desde el Centro de administración para buscar directivas DLP específicas.
 
 > [!NOTE]
 > Los administradores deben publicar todas las directivas de DLP para que los usuarios de la organización las conozcan antes de crear flujos.
 >
 >
 
-### <a name="makers"></a>Creadores
+### <a name="makers"></a>Responsables de toma de decisiones
 
-Si no tiene permisos de administrador y desea más información acerca de las directivas de DLP de su organización, póngase en contacto con el administrador de la misma. También puede obtener más información en el [artículo sobre entornos de creadores](environments-overview-maker.md).
+Si no tiene permisos de administrador y desea obtener más información acerca de las directivas DLP en su organización, póngase en contacto con su administrador. También puede obtener más información en el [artículo sobre entornos de creadores](environments-overview-maker.md).
 
 > [!NOTE]
 > Los administradores son los únicos que pueden editar o eliminar directivas de DLP.
 >
 >
 
-## <a name="edit-a-dlp-policy"></a>Edición de una directiva de DLP
+## <a name="edit-a-dlp-policy"></a>Editar una directiva DLP
 
 1. Inicie el [Centro de administración](https://admin.flow.microsoft.com).
 
-1. Seleccione el vínculo **Data polices** (Directivas de datos) en el lado izquierdo.
+1. En el Centro de administración que se inicia, seleccione la **datos directivas** vínculo en el lado izquierdo.
 
     ![Selección de directivas de datos](./media/prevent-data-loss/2.png)
 
 1. Busque en la lista de directivas de DLP existentes y seleccione el botón de edición que aparece junto a la directiva que quiere editar.
 
-1. Realice los cambios necesarios en la directiva. Puede modificar el entorno o los servicios de los grupos de datos, por ejemplo.
+1. Realice los cambios necesarios en la directiva. Puede modificar el entorno o los servicios en los grupos de datos, por ejemplo.
 
 1. Seleccione **Guardar directiva** para guardar los cambios.
 
@@ -164,7 +164,7 @@ Si no tiene permisos de administrador y desea más información acerca de las di
 >
 >
 
-## <a name="delete-a-dlp-policy"></a>Eliminación de una directiva de DLP
+## <a name="delete-a-dlp-policy"></a>Eliminar una directiva DLP
 
 1. Inicie el [Centro de administración](https://admin.flow.microsoft.com).
 
@@ -176,13 +176,13 @@ Si no tiene permisos de administrador y desea más información acerca de las di
 
     ![Selección del botón de eliminación](./media/prevent-data-loss/3-delete.png)
 
-1. Confirme que realmente desea eliminar la directiva, para lo que debe seleccionar el botón **Eliminar**:
+1. Confirme que realmente desea eliminar la directiva seleccionando el botón **Eliminar**:
 
     ![Confirmación de que realmente quiere eliminar la directiva](./media/prevent-data-loss/4.png)
 
-## <a name="dlp-policy-permissions"></a>Permisos de la directiva de DLP
+## <a name="dlp-policy-permissions"></a>Permisos de las directivas DLP
 
-Las directivas de DLP solo pueden crearlas y modificarlas los administradores de inquilinos y de entornos. Puede obtener más información sobre permisos en el artículo sobre [entornos](environments-overview-admin.md).
+Solo los administradores de inquilinos y entornos pueden crear y modificar directivas DLP. Puede obtener más información sobre permisos en el artículo sobre [entornos](environments-overview-admin.md).
 
 
 ## <a name="custom-and-http-connectors"></a>Conectores HTTP y personalizados
@@ -206,7 +206,7 @@ Para agregar los conectores HTTP a una directiva existente a través de la [plan
 
 ## <a name="add-custom-and-http-connectors-with-powershell"></a>Incorporación de conectores personalizados y HTTP con PowerShell
 
-Para agregar compatibilidad con conectores personalizados o conectores HTTP a una directiva con PowerShell, [descargue](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) e importa los scripts de PowerShell de Power Apps más recientes y, luego, use estos cmdlets: "New-AdminDlpPolicy", "Set-AdminDlpPolicy", "Add-CustomConnectorToPolicy" y "Remove-CustomConnectorFromPolicy" para modificar la directiva. Use el cmdlet "Get-Help -detailed" como referencia.
+Para agregar compatibilidad con conectores personalizados o conectores HTTP a una directiva con PowerShell, puede [descargar](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) e importar los últimos scripts de PowerShell de Power Apps y después usar los cmdlets  “New-AdminDlpPolicy”, “Set-AdminDlpPolicy”, “Add-CustomConnectorToPolicy” y “Remove-CustomConnectorFromPolicy” para modificar la directiva. Use el cmdlet "Get-Help -detailed" como referencia.
 
 
 > [!IMPORTANT]
@@ -216,7 +216,7 @@ Para agregar compatibilidad con conectores personalizados o conectores HTTP a un
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-* [Más información acerca de los entornos](environments-overview-admin.md)
+* [Aprender más acerca de los entornos](environments-overview-admin.md)
 * [Más información sobre Power Automate](getting-started.md)
 * [Más información acerca del Centro de administración](admin-center-introduction.md)
 * [Más información sobre la integración de datos](https://docs.microsoft.com/common-data-service/entity-reference/dynamics-365-integration)

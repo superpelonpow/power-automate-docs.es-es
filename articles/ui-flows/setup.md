@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: e7d5e4219c46703019f995b625c6d672a767018a
-ms.sourcegitcommit: 683127e3655abeec9ae6e86fcdf4ac2256101d08
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74882122"
 ---
 # <a name="set-up-ui-flows"></a>Configuración de los flujos de la interfaz de usuario
@@ -34,7 +34,7 @@ ms.locfileid: "74882122"
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 > [!IMPORTANT]
-> La característica de flujos de la interfaz de usuario se está implementando actualmente en las regiones. Si no ve la característica en el entorno, no puede crear flujos de interfaz de usuario o recibe un error al tratar de ejecutarla en un flujo. Vuelva a intentarlo más tarde.
+> La característica de flujos de la interfaz de usuario se está implementando actualmente en las regiones. Si no ve la característica en el entorno, no puede crear flujos de interfaz de usuario o recibe un error al tratar de ejecutarla en un flujo, vuelva a intentarlo más tarde.
 
 Antes de poder usar el dispositivo para crear flujos de interfaz de usuario, debe asegurarse de que cumple los requisitos que se describen aquí.
 

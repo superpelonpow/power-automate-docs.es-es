@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: fbc18e31b571149164b7316bdaa02d2840686995
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74376342"
 ---
 # <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>Agregar varias acciones y opciones avanzadas a un flujo
@@ -77,7 +77,7 @@ En este procedimiento, agregará una acción en el medio del flujo. Dicha acció
   
     ![Eliminar el menú](./media/multi-step-logic-flow/deletemenu.png)
   
-     **Nota:** No se puede eliminar una acción si se usa cualquier salida de ella en el flujo. Una vez que quite los resultados de los campos, podrá eliminar la acción.
+     **Nota**: no se puede eliminar una acción si se usa cualquier salida de ella en el flujo. Una vez que quite los resultados de los campos, podrá eliminar la acción.
 
 
 ## <a name="copy-and-paste-actions"></a>Acciones de copiar y pegar

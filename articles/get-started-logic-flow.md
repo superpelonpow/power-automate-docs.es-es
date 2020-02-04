@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 569408367130c6f5121b30d2c8c14833b142b934
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74368798"
 ---
 # <a name="create-a-flow-in-power-automate"></a>Creación de un flujo en Power Automate
@@ -32,7 +32,7 @@ ms.locfileid: "74368798"
 
 > [!VIDEO https://www.youtube.com/embed/Gt3CMhLAQqE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
 
-Cree un flujo que realice automáticamente una o varias tareas después de que lo desencadene un evento. Por ejemplo, cree un flujo que le envíe una notificación por correo electrónico cuando alguien envíe un tweet que contenga una palabra clave que especifique. En este ejemplo, el envío de un tweet es el evento y el envío de correo es la acción.
+Cree un flujo que realizará una o varias tareas automáticamente después de que un evento lo desencadene. Por ejemplo, cree un flujo que le envíe una notificación por correo electrónico cuando alguien envíe un tweet que contenga una palabra clave que especifique. En este ejemplo, el envío de un tweet es el evento y el envío de correo es la acción.
 
 ## <a name="prerequisites"></a>Requisitos previos
 

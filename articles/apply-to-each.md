@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 3f4ddd361eaad062a7287c1d0b33e00fc320e69e
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74357919"
 ---
 # <a name="use-the-apply-to-each-action-in-power-automate-to-process-a-list-of-items-periodically"></a>Uso de la acción Aplicar a cada uno de Power Automate para procesar periódicamente una lista de elementos
@@ -50,7 +50,7 @@ Estos son los requisitos para realizar correctamente los pasos de este tutorial:
 * La aplicación móvil de Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows).
 * Conexiones a Office 365 Outlook y el servicio de notificación push.
 
-## <a name="create-a-flow"></a>Crear un flujo
+## <a name="create-a-flow"></a>Creación de un flujo
 1. Inicie sesión en [Power Automate](https://flow.microsoft.com):
 2. Seleccione la pestaña **Mis flujos** y cree un flujo desde cero:
    

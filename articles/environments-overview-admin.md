@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 45fe310d7c18fc395857d29503faef9bf4e6eedb
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74365716"
 ---
 # <a name="using-environments-within-power-automate"></a>Uso de entornos en Power Automate
@@ -34,13 +34,13 @@ ms.locfileid: "74365716"
 
 Los entornos proporcionan las ventajas siguientes:
 
-* **Localidad de los datos**: los entornos se pueden crear en distintas regiones y enlazarse a esa ubicación geográfica. Cuando se crea un flujo en un entorno, dicho flujo se enruta a todos los centros de datos de su ubicación geográfica. Esto también mejora el rendimiento.
+* **Localidad de datos**: los entornos se pueden crear en regiones diferentes y se enlazan a esa ubicación geográfica. Cuando se crea un flujo en un entorno, dicho flujo se enruta a todos los centros de datos de su ubicación geográfica. Esto también mejora el rendimiento.
 
     Si los usuarios están en Europa, cree y use el entorno en la región de Europa. Si los usuarios están en Estados Unidos, cree y use el entorno de Estados Unidos. 
 
     > [!IMPORTANT]
     > Si elimina el entorno, también se eliminarán todos los flujos dentro de ese entorno. Esto es aplicable a cualquier elemento que haya creado en ese entorno, incluidas las conexiones, las puertas de enlace, Power Apps y otros.
-* **Prevención de pérdida de datos**: los administradores no desean flujos que obtengan datos de una ubicación interna (como *OneDrive para la Empresa* o una lista de SharePoint que contenga información sobre salarios) y que, después, publiquen los datos públicamente (como en to *Twitter*). Use la prevención de pérdida de datos para controlar los servicios que pueden compartir datos dentro de la implementación de Power Automate.
+* **Prevención de la pérdida de datos**: los administradores no desean flujos que obtengan datos de una ubicación interna (como *OneDrive para la Empresa* o una lista de SharePoint que contenga información sobre salarios) y que, después, publiquen los datos públicamente (como en to *Twitter*). Use la prevención de pérdida de datos para controlar los servicios que pueden compartir datos dentro de la implementación de Power Automate.
 
     Por ejemplo, puede agregar los servicios *SharePoint* y *OneDrive para la Empresa* a una directiva solo de datos empresariales. Los flujos creados en este entorno pueden usar los servicios *SharePoint* y *OneDrive para la Empresa*. Pero no podrán compartir datos con otros servicios que no estén incluidos en la directiva solo de datos empresariales.
 
@@ -71,7 +71,7 @@ Todos los usuarios comparten el entorno **predeterminado** y cualquier usuario p
 
 Los administradores usan el centro de administrador para crear y administrar los entornos. El centro de administrador se puede abrir de cualquiera de estas dos formas:
 
-### <a name="option-1-select-settings"></a>Opción 1: seleccione Configuración
+### <a name="option-1-select-settings"></a>Opción 1: Selección de Configuración
 
 1. Inicie sesión en [flow.microsoft.com](https://flow.microsoft.com).
 1. Seleccione el icono de engranaje para la configuración y elija **Centro de administrador** en la lista:
@@ -79,13 +79,13 @@ Los administradores usan el centro de administrador para crear y administrar los
    ![Configuración y Portal de administrador](./media/environments-overview-admin/settings.png)
 1. Se abre el centro de administrador.
 
-### <a name="option-2-open-adminflowmicrosoftcom"></a>Opción 2: abra admin.flow.microsoft.com
+### <a name="option-2-open-adminflowmicrosoftcom"></a>Opción 2: Apertura de admin.flow.microsoft.com
 
 Vaya a [admin.flow.microsoft.com](https://admin.flow.microsoft.com) e inicie sesión con su cuenta de trabajo.
 
 ## <a name="create-an-environment"></a>Creación de un entorno
 
-1. En el [Centro de administración de Power Automate](https://admin.flow.microsoft.com), seleccione **Entornos**. Verá todos los entornos existentes: ![entornos](./media/environments-overview-admin/environments-list.png)
+1. En el [Centro de administración de Power Automate](https://admin.flow.microsoft.com), seleccione **Entornos**. Verá todos los entornos existentes: ![Entornos](./media/environments-overview-admin/environments-list.png)
 2. Seleccione **Nuevo entorno** y proporcione la información necesaria:
 
 
@@ -93,7 +93,7 @@ Vaya a [admin.flow.microsoft.com](https://admin.flow.microsoft.com) e inicie ses
    |------------------|-------------------------------------------------------------------------------------------------------------|
    | Nombre de entorno |              Escriba el nombre del entorno, como `Human Resources` o `Europe flows`.              |
    |      Región      | Elija la ubicación para hospedar el entorno. Para obtener un rendimiento óptimo, use la región más cercana a los usuarios. |
-   | Tipo de entorno |                  Elija un tipo de entorno en función de la licencia, ya sea de producción o de evaluación.                   |
+   | Tipo de entorno |                  Elija un tipo de entorno en función de la licencia: producción o evaluación.                   |
 
      ![configuración del entorno](./media/environments-overview-admin/new-environment-dialog.png)
 3. Haga clic en **Crear entorno**.
@@ -116,7 +116,7 @@ Ahora puede agregar usuarios al entorno.
    ![pestaña detalles](./media/environments-overview-admin/open-environment.png)
 1. Seleccione **Seguridad**.
 
-    Si no seleccionó **Crear base de datos** en los pasos anteriores, hay dos opciones en **Roles de entorno**: **Administrador de entornos** y **Creador de entornos**:
+    Si no ha seleccionado **Crear base de datos** en los pasos anteriores, hay dos opciones en **Roles de entorno**: **Administrador de entornos** y **Creador de entornos**:
 
     ![los roles de administrador](./media/environments-overview-admin/environment-roles.png)
 

@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: bb50b99f0a86e1221aaa4c4072426a31b9bf8f61
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74368660"
 ---
 # <a name="get-started-with-power-automate"></a>Introducción a Power Automate 
@@ -42,7 +42,7 @@ Power Automate es uno de los pilares de Power Platform. Proporciona una platafor
 
 | **Tipo de flujo**                                                                       | **Caso de uso**                                                                                  | **Destino**                                                                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Flujos automatizados](get-started-logic-flow.md)                 | Cree un flujo que realice automáticamente una o varias tareas después de que lo desencadene un evento. | [Conectores](https://docs.microsoft.com/connectors/) para servicios en la nube o locales. |
+| [Flujos automatizados](get-started-logic-flow.md)                 | Cree un flujo que realizará una o varias tareas automáticamente después de que un evento lo desencadene. | [Conectores](https://docs.microsoft.com/connectors/) para servicios en la nube o locales. |
 | [Flujos de botón](introduction-to-button-flows.md)              | Ejecute tareas repetitivas desde cualquier lugar, en cualquier momento, a través del dispositivo móvil.                        |                                                                                        |
 | [Flujos programados](run-scheduled-tasks.md)                    | Cree un flujo que realice una o varias tareas según una programación.             |                                                                                        |
 | [Flujos de proceso de negocio](business-process-flows-overview.md) | Defina un conjunto de pasos que los usuarios pueden seguir para llegar a un resultado deseado.                 | Procesos humanos                                                                        |

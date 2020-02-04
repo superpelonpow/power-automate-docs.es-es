@@ -15,10 +15,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 2bb689f9dff55e8313a22d89efd8fa76eca4fb50
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74369718"
 ---
 # <a name="classic-common-data-service-workflows"></a>Flujos de trabajo clásicos de Common Data Service 
@@ -27,7 +27,7 @@ ms.locfileid: "74369718"
 Los flujos de trabajo automatizan los procesos de negocio sin una interfaz de usuario. Normalmente, los usuarios utilizan los procesos de flujo de trabajo para iniciar la automatización que no requiere ninguna interacción del usuario.
 
 > [!IMPORTANT]
-> Use flujos en lugar de flujos de trabajo clásicos para automatizar los procesos empresariales. Más información: [Reemplazar flujos de trabajo de Common Data Service clásicos por flujos](replace-workflows-with-flows.md)  
+> Use flujos en lugar de flujos de trabajo clásicos para automatizar los procesos empresariales. Más información: [Reemplazo de flujos de trabajo clásicos de Common Data Service con flujos](replace-workflows-with-flows.md)  
   
  Cada proceso de flujo de trabajo está asociado con una sola entidad. Al configurar los flujos de trabajo hay cuatro áreas principales que tener en cuenta:  
   
@@ -78,7 +78,7 @@ Los desarrolladores pueden crear flujos de trabajo con la información de la [Gu
  ![Pestaña General de un flujo de trabajo](media/create-workflow-general-tab.PNG "Pestaña General de un flujo de trabajo")  
   
  **Activar como**  
- Puede elegir **Plantilla de procesos** para crear un punto de partida avanzado para otras plantillas. Si elige esta opción, después de activar el flujo de trabajo no se aplicará, sino que estará disponible para seleccionarlo en el cuadro de diálogo **Crear proceso** si selecciona **Tipo**: **Proceso nuevo a partir de una plantilla existente (seleccione desde la lista)** .  
+ Puede elegir **Plantilla de procesos** para crear un punto de partida avanzado para otras plantillas. Si elige esta opción, después de activar el flujo de trabajo, este no se aplica, sino que está disponible para seleccionarse en el cuadro de diálogo **Crear proceso** al seleccionar **Tipo**: **Proceso nuevo a partir de una plantilla existente (seleccione desde la lista)**  
   
  Las plantillas de procesos resultan prácticas cuando tiene un número de procesos de flujo de trabajo similares y quiere definirlos sin duplicar la misma lógica.  
   
@@ -107,7 +107,7 @@ Los desarrolladores pueden crear flujos de trabajo con la información de la [Gu
 >  Las tareas de flujo de trabajo no se eliminan inmediatamente al finalizar, sino un poco después, mediante un proceso por lotes.  
   
  **Ámbito**  
- Para las entidades que pertenecen al usuario, las opciones son **Organización**, **Primario: unidades de negocio secundarias** , **Unidad de negocio** o **Usuario**. Para las entidades que pertenecen a la organización la única opción es **Organización**.  
+ En las entidades propiedad del usuario, las opciones son **Organización**, **Elemento principal: unidades de negocio secundarias**, **Unidad de negocio** o **Usuario**. Para las entidades que pertenecen a la organización la única opción es **Organización**.  
   
  Si el ámbito es **Organización**, la lógica de flujo de trabajo se puede aplicar a cualquier registro de la organización. En caso contrario, el flujo de trabajo solo se puede aplicar a un subconjunto de los registros que se encuentren dentro del ámbito.  
   
@@ -115,7 +115,7 @@ Los desarrolladores pueden crear flujos de trabajo con la información de la [Gu
 >  El valor de ámbito predeterminado es **Usuario**. Asegúrese de comprobar que el valor de ámbito es adecuado antes de activar el flujo de trabajo.  
   
  **Iniciar al**  
- Use las opciones de esta sección para especificar cuándo se debe iniciar un flujo de trabajo de forma automática. Puede configurar un flujo de trabajo en tiempo real para que se ejecute antes de determinados eventos. Se trata de una característica muy eficaz porque el flujo de trabajo puede detener la acción antes de que se produzca. Más información: [Usar flujos de trabajo en tiempo real](configure-workflow-steps.md#BKMK_SynchronousWorkflows). Las opciones son:  
+ Use las opciones de esta sección para especificar cuándo se debe iniciar un flujo de trabajo de forma automática. Puede configurar un flujo de trabajo en tiempo real para que se ejecute antes de determinados eventos. Se trata de una característica muy eficaz porque el flujo de trabajo puede detener la acción antes de que se produzca. Más información: [Uso de flujos de trabajo en tiempo real](configure-workflow-steps.md#BKMK_SynchronousWorkflows). Las opciones son:  
   
 - **Registro creado**  
   

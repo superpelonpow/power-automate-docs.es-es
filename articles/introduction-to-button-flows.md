@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 136bb90c47a1aeea2f11ef45e35a4957506ad488
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74363922"
 ---
 # <a name="introducing-button-flows"></a>Presentación de los flujos de botón
@@ -66,14 +66,14 @@ En este tutorial, vamos a crear un botón que inicia una compilación de Visual 
    ![Imagen de información general](./media/introduction-to-button-flows/create-button-8.png)  
 9. A continuación, configure las propiedades de la notificación push en la tarjeta **Send a push notification** (Enviar una notificación push). De manera predeterminada, esta notificación push está configurada para enviar un vínculo HTML a una página web que muestre el estado de la compilación:  
    ![Imagen de información general](./media/introduction-to-button-flows/create-button-9.png)  
-10. Seleccione el botón **Crear flujo** para guardar el flujo de botón: ![imagen de información general](./media/introduction-to-button-flows/create-button-10.png)  
+10. Seleccione el botón **Crear flujo** para guardar el flujo de botón: ![Imagen de información general](./media/introduction-to-button-flows/create-button-10.png)  
 11. En poco tiempo verá este mensaje de operación correcta:  
     ![Imagen de información general](./media/introduction-to-button-flows/create-button-11.png)  
 
 Enhorabuena, ha creado un flujo de botón. Ahora puede ejecutar este flujo de botón en cualquier momento y lugar desde la pestaña **Botones** de la aplicación Flow. Solo tiene que presionar el "botón" y se ejecutará. La aplicación móvil de Power Automate está disponible para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows).
 
 ### <a name="from-your-mobile-device"></a>Desde un dispositivo móvil
-**Nota**: en este tutorial se muestran las pantallas de un dispositivo Android, pero las de un dispositivo iOS son similares.
+**Nota:** en este tutorial se muestran las pantallas de un dispositivo Android, pero las de un dispositivo iOS son similares.
 
 En la aplicación Flow:
 
@@ -118,7 +118,7 @@ Ahora debe recibir la notificación push que indica que se ha enviado el correo 
 Los flujos de botón se pueden supervisar desde la pestaña **Activity** (Actividad) de la aplicación Flow:   
 ![Imagen de información general](./media/introduction-to-button-flows/create-button-from-mobile-13.png)  
 
-**Nota**: Pulse cualquier actividad para aumentar el detalle de los resultados de la ejecución, con el fin de obtener información acerca de la ejecución.  
+**Nota:** pulse cualquier actividad para aumentar el detalle de los resultados de la ejecución, con el fin de obtener información acerca de la ejecución.  
 
 ![Imagen de información general](./media/introduction-to-button-flows/activity-details-1.png)  
 

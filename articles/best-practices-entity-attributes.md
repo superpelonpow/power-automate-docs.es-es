@@ -20,10 +20,10 @@ author: msftman
 ms.author: deonhe
 manager: kvivek
 ms.openlocfilehash: ffc9fef64a9eda74d8a834745204fd635125e0c2
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74357275"
 ---
 # <a name="best-practices-in-using-business-process-flow-attributes"></a>Procedimientos recomendados para usar los atributos de flujo de proceso de negocio

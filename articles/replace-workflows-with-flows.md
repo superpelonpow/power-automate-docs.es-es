@@ -13,10 +13,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: c4be61dfafa17c3808eb497aa9ed7d1bcaaecbab
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74373674"
 ---
 # <a name="replace-classic-common-data-service-workflows-with-flows"></a>Reemplazo de flujos de trabajo clásicos de Common Data Service con flujos

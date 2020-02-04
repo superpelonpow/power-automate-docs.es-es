@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: e8f7b993b59c269b56dac2f13d4db166ed3e91b7
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74373076"
 ---
 # <a name="manage-sequential-approvals-with-power-automate"></a>Administración de aprobaciones secuenciales con Power Automate
@@ -92,7 +92,7 @@ Después de cada operación de guardado, seleccione **Editar flujo** en la parte
 
 Nota: Esta acción envía la solicitud de aprobación previa a la dirección de correo electrónico en el cuadro **Asignado a**.
 
-## <a name="add-a-condition"></a>Adición de una condición
+## <a name="add-a-condition"></a>Agregar una condición
 [!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
 
 > [!NOTE]

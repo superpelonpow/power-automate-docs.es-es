@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 4ee3a9c7acb567ed0516b682377e5b79d40132cf
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74356746"
 ---
 # <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Ejecutar los flujos con botones físicos (bttn) de The Button Corporation (versión preliminar)
@@ -57,7 +57,7 @@ Puede usar cualquiera de estas plantillas para crear flujos rápidamente para su
 
 ![plantillas de bttn](./media/bttn-button-flows/bttn-templates.png)
 
-Sugerencia: Para los fines de este tutorial, asigne un nombre al bttn que represente una sala de conferencias en un edificio de oficinas convencional.
+Sugerencia: para los fines de este tutorial, asigne un nombre al bttn que represente una sala de conferencias en un edificio de oficinas convencional.
 
 La configuración del bttn debe ser similar a la de este ejemplo (del sitio web de bttn):
 
@@ -70,7 +70,7 @@ Ahora que ha registrado y configurado el bttn, vamos a empezar a crear el flujo.
    
     ![iniciar sesión](./media/bttn-button-flows/sign-into-flow.png)
    
-    Nota: Como alternativa, puede crear flujos en la aplicación móvil de Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows).
+    Nota: como alternativa, puede crear flujos en la aplicación móvil de Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows).
 2. Escriba **bttn** en el cuadro de búsqueda y seleccione el icono de búsqueda.
    
     ![buscar](./media/bttn-button-flows/bttn-search-template.png)
@@ -86,7 +86,7 @@ Ahora que ha registrado y configurado el bttn, vamos a empezar a crear el flujo.
     ![credenciales](./media/bttn-button-flows/bttn-provide-credentials.png)
 2. Al iniciar sesión en el servicio Bttn, autorice a Power Automate a usar sus bttn.
    
-    **Importante**: Si no autoriza a Power Automate a usar sus bttn, no podrá verlos ni conectarse a ellos desde esta aplicación.
+    **Importante**: si no autoriza a Power Automate a usar sus bttn, no podrá verlos ni conectarse a ellos desde esta aplicación.
    
     ![autorizar](./media/bttn-button-flows/authorize-bttn.png)
 3. Después de iniciar sesión en ambos servicios, seleccione **Continuar**.
@@ -111,7 +111,7 @@ Ahora que ha registrado y configurado el bttn, vamos a empezar a crear el flujo.
    
     Puede comprobar el historial de ejecución en el sitio web de Power Automate o en el dispositivo móvil.
    
-    Nota: El estado de ejecución se establece en **En ejecución** hasta que un usuario selecciona **Confirmación** en el correo electrónico de solicitud de soporte técnico.
+    Nota: el estado de ejecución se establece en **En ejecución** hasta que un usuario selecciona **Confirmación** en el correo electrónico de solicitud de soporte técnico.
 3. También puede confirmar que el correo electrónico se envió al equipo de soporte técnico.
    
     Si ha seguido estos pasos, el correo electrónico de soporte técnico tendrá un aspecto similar al de este ejemplo:

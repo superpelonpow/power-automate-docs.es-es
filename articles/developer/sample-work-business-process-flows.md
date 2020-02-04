@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Uso de flujos de proceso de negocio | MicrosoftDocs'
+title: 'Ejemplo: uso de flujos de proceso de negocio | Microsoft Docs'
 description: En el ejemplo se muestra cómo trabajar con flujos de proceso de negocio mediante programación, por ejemplo para recuperar instancias del flujo de proceso de negocio para un registro de entidad, recuperar la ruta de acceso activa de una instancia de flujo de proceso de negocio y sus fases, y cambiar la fase activa.
 ms.custom: ''
 ms.date: 04/05/2018
@@ -19,10 +19,10 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: 4f7566c6d6430c9167c0d1b7cc082792d0939780
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74364727"
 ---
 # <a name="sample-work-with-business-process-flows"></a>Ejemplo: Trabajar con flujos de proceso de negocio
@@ -30,7 +30,7 @@ ms.locfileid: "74364727"
 
 En este ejemplo se muestra cómo trabajar con flujos de proceso de negocio mediante programación, por ejemplo para recuperar instancias del flujo de proceso de negocio para un registro de entidad, recuperar la ruta de acceso activa de una instancia de flujo de proceso de negocio y sus fases, y cambiar la fase activa. Para obtener información sobre estos conceptos, vea [Work with business process flows using code](business-process-flows-code.md) (Trabajar con flujos de proceso de negocio mediante código).  
 
- Este ejemplo está disponible para descargar desde [Sample: Work with business process flows](https://go.microsoft.com/fwlink/p/?LinkId=846108) (Ejemplo: Trabajar con flujos de proceso de negocio empresariales).  
+ Este ejemplo está disponible para descargar desde [Sample: Work with business process flows](https://go.microsoft.com/fwlink/p/?LinkId=846108) (Ejemplo: Trabajar con flujos de proceso de negocio).  
 
 <a name="BKMK_Prerequisites"></a>   
 ## <a name="prerequisites"></a>Requisitos previos  
@@ -80,7 +80,7 @@ En este ejemplo se muestra cómo trabajar con flujos de proceso de negocio media
 5. Si no ha ejecutado antes uno de los ejemplos, tendrá que especificar información para ejecutar el código; en caso contrario, escriba el número de una de las instancias que ha configurado previamente.  
 
 
-   |                                 Mensaje                                  |                                                                                             Descripción                                                                                             |
+   |                                 Pedir confirmación                                  |                                                                                             Descripción                                                                                             |
    |-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |      Escriba un nombre de servidor y un puerto de Dynamics 365 [crm.dynamics.com]       | Escriba el nombre del servidor de Dynamics 365. El valor predeterminado es Dynamics 365 (en línea) (crm.dynamics.com) en Norteamérica.<br /><br /> Ejemplo: <br />crm5.dynamics.com |
    | Esta organización está aprovisionada en Microsoft Online Services (s/n) [n] |                                                 Escriba **s** si se trata de una organización aprovisionada en Microsoft Online Services. En caso contrario, escriba **n**.                                                  |

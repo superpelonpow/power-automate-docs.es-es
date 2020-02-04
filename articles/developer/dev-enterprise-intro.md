@@ -20,10 +20,10 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: ca815ad5949da494c1a50c193c040acdd948d3a2
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74362864"
 ---
 # <a name="power-automate-for-enterprise-developers-isvs-and-partners"></a>Power Automate para desarrolladores empresariales, fabricantes de software independientes y asociados
@@ -35,11 +35,11 @@ Como desarrollador, puede ampliar Power Automate y así permitir soluciones más
 
 Como desarrollador empresarial, capacite a su organización para crear soluciones personalizadas sólidas en Power Automate:
 
-- **Creación de conectores personalizados**: desarrolle conectores personalizados para conectarse a los servicios web y de datos de la organización a través de Power Automate. [Más información](https://docs.microsoft.com/connectors/custom-connectors/)
+- **Creación de conectores personalizados**: con Power Automate podrá crear conectores personalizados para conectarse a los datos y a los servicios web de su organización. [Más información](https://docs.microsoft.com/connectors/custom-connectors/)
 
-- **Creación de instancias de Azure Functions**: diseñe instancias de Azure Functions para ampliar aplicaciones con lógica personalizada del lado del servidor. [Más información](/azure/azure-functions/app-service-export-api-to-powerapps-and-flow)
+- **Creación de instancias de Azure Functions**: Elabore instancias de Azure Functions para ampliar las aplicaciones con lógica de servidor personalizada. [Más información](/azure/azure-functions/app-service-export-api-to-powerapps-and-flow)
 
-- **Inserción de Power Automate**: inserte Power Automate directamente en sus experiencias de sitio web para crear soluciones integradas, flujos de trabajo de superficie o procesos en los que personas de su organización ya hacen su trabajo. [Más información](embed-flow-dev.md)
+- **Inserción de Power Automate**: inserte Power Automate directamente en sus experiencias de sitio web para crear soluciones integradas, flujos de trabajo de superficie o procesos en los que personas de su organización ya hacen su trabajo. [Más información](embed-flow-dev.md)
 
 ## <a name="power-automate-for-isvs-and-microsoft-partners"></a>Power Automate para fabricantes de software independientes y asociados de Microsoft
 
@@ -85,6 +85,6 @@ Si los clientes ya tienen Office 365 o Dynamics 365 y las licencias están asoci
 
 Le ofrecemos el programa [Microsoft Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) para que compre licencias en nombre de sus clientes. Hay dos [planes de tarifa](https://flow.microsoft.com/pricing/) distintos para Power Automate. Consulte cada plan y sus características.
 
-### <a name="7-list-on-appsource"></a>7. Publicación en AppSource
+### <a name="7-list-on-appsource"></a>7. Publicar en AppSource
 
 Una vez que haya integrado Power Automate en la aplicación, podrá publicarla en AppSource. Genere nuevos clientes potenciales para su empresa mediante la compilación de una aplicación y su publicación en AppSource para que los nuevos clientes las prueben. [Más información](dev-appsource-test-drive.md)

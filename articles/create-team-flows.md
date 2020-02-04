@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 1343d71bab5819600130496dcc0df01751f15fa6
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74361783"
 ---
 # <a name="create-team-flows"></a>Creación de flujos de equipo
@@ -115,7 +115,7 @@ Es posible que deba cambiar el propietario de una conexión en un flujo si quita
 Las conexiones que se usan en un flujo se dividen en dos categorías:
 
 * **Insertadas**: estas conexiones se utilizan en el flujo.
-* **Otras** &mdash;: estas conexiones se han definido para un flujo, pero no se utilizan en él.
+* **Otras**: estas conexiones se han definido para un flujo, pero no se utilizan en él.
 
 Si una conexión deja de usarse en un flujo, aparecerá en la lista de **Otras** conexiones, donde permanecerá hasta que un propietario vuelva a incluirla en el flujo.
 

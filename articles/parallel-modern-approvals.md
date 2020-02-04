@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 223ca24325ee9aed2476d1da6ad9e986c09306d7
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74375606"
 ---
 # <a name="create-parallel-approval-workflows-with-power-automate"></a>Creación de flujos de trabajo de aprobaciones en paralelo con Power Automate
@@ -75,7 +75,7 @@ Tome nota del nombre y la dirección URL de la lista de SharePoint Online. Usamo
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
 > [!IMPORTANT]
-> Esta acción envía la solicitud de vacaciones a la dirección de correo electrónico del cuadro **Asignado a**, por tanto inserte el token **Correo electrónico** en la lista **Obtener el administrador (v2)** .
+> Esta acción envía la solicitud de vacaciones a la dirección de correo electrónico del cuadro **Asignado a**, por tanto inserte el token **Correo electrónico** en la lista **Obtener el administrador (v2)**.
 > 
 > 
 
@@ -148,7 +148,7 @@ Sigamos:
 
 Realice los siguientes pasos en la sección **EN CASO POSITIVO** de la rama **Condición**.
 
-   Nota: El flujo usa estos pasos para enviar un correo electrónico cuando se aprueba la solicitud:
+   Nota: el flujo usa estos pasos para enviar un correo electrónico cuando se aprueba la solicitud:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
@@ -162,7 +162,7 @@ Repita los pasos anteriores en las ramas **Start an approval 2** (Iniciar una ap
 
 Realice los pasos siguientes para actualizar SharePoint cuando se toman decisiones.
 
-   Nota: Asegúrese de realizar estos pasos en ambos lados **IF YES** (En caso positivo) y **IF NO** (En caso negativo) de la sucursal.
+   Nota: asegúrese de realizar estos pasos en ambos lados **IF YES** (En caso positivo) e **IF NO** (En caso negativo) de la rama.
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 

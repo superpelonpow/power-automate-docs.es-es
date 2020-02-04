@@ -1,6 +1,6 @@
 ---
 title: Creación de lógica de negocios personalizada mediante procesos con Power Apps | Microsoft Docs
-description: Obtenga información sobre los diferentes tipos de lógica de negocios que se pueden usar en la aplicación
+description: Obtenga información sobre los distintos tipos de lógica de negocios que puede usar en la aplicación.
 ms.custom: ''
 ms.date: 05/01/2018
 ms.reviewer: ''
@@ -23,16 +23,16 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: c5cc72f79b411f8ba50120308bcaf6dd03b302e6
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74368361"
 ---
 # <a name="create-custom-business-logic-through-processes"></a>Creación de lógica de negocios personalizada mediante procesos
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-La definición y aplicación de procesos de negocio coherentes es uno de los principales motivos por el que los usuarios utilizan aplicaciones basadas en modelos. Los procesos coherentes ayudan a asegurarse de que los usuarios del sistema se puedan centrar en su trabajo y no en recordar realizar un conjunto de pasos manuales. Los procesos pueden ser simples o complejos, y pueden cambiar con el tiempo.  
+La definición y aplicación de procesos de negocio coherentes es uno de los principales motivos por el que los usuarios utilizan aplicaciones basadas en modelos. Los procesos coherentes ayudan a asegurarse de que los usuarios del sistema se puedan centrar en su trabajo y no en recordar realizar un conjunto de pasos manuales. Los procesos pueden ser simples o complejos, y cambian con el tiempo.  
   
 Power Apps incluye varios tipos de procesos, cada uno diseñado para un propósito diferente:  
   
@@ -68,8 +68,8 @@ Power Apps incluye varios tipos de procesos, cada uno diseñado para un propósi
   
 <a name="useMSFlow"></a>   
 ## <a name="when-to-use-power-automate"></a>Cuándo usar Power Automate  
- Use Power Automate cuando tenga que crear flujos de trabajo automatizados que realicen acciones entre el entorno y su aplicación o servicio favorito, como Dynamics 365, Twitter, Dropbox, Google Services, Office 365 y SharePoint. Puede desencadenar un flujo en función de una acción específica, o bien invocarlo desde dentro de la aplicación. Más información: [Usar Power Automate para automatizar procesos entre servicios](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services
-).  
+ Use Power Automate cuando tenga que crear flujos de trabajo automatizados que realicen acciones entre el entorno y su aplicación o servicio favorito, como Dynamics 365, Twitter, Dropbox, Google Services, Office 365 y SharePoint. Puede desencadenar un flujo en función de una acción específica, o bien invocarlo desde dentro de la aplicación. Más información: [Usar Power Automate para automatizar procesos entre servicios](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services
+)  
   
 <a name="BKMK_Where"></a>   
 ## <a name="where-do-i-go-to-create-processes"></a>¿Dónde se crean los procesos?  

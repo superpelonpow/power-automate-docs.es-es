@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 4361705779ab31b73206835380a648557f581e66
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74354676"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Límites y configuración de Power Automate
@@ -74,10 +74,10 @@ Estos son los límites de una sola ejecución de flujo. En el caso de los límit
 
 | Nombre | Límite | Notas |
 | --- | --- | --- |
-| Elementos de Aplicar a cada: licencia gratuita|5000 |Puede usar la acción de filtrado para filtrar matrices de mayor tamaño según sea necesario. |
+| Elementos de Aplicar a cada: licencia gratuita|5 000 |Puede usar la acción de filtrado para filtrar matrices de mayor tamaño según sea necesario. |
 | Elementos de Aplicar a cada: licencias de Office 365, Plan 1, Plan 2, Por usuario y Por flujo|100 000 |Puede usar la acción de filtrado para filtrar matrices de mayor tamaño según sea necesario. |
-| Iteraciones Until |5000 | |
-| Elementos de SplitOn: licencia gratuita |5000 ||
+| Iteraciones Until |5 000 | |
+| Elementos de SplitOn: licencia gratuita |5 000 ||
 | Elementos de SplitOn: licencias de Office 365, Plan 1, Plan 2, Por usuario y Por flujo |100 000 ||
 | Aplicar a cada paralelismo |50 |De forma predeterminada, los bucles se ejecutan en secuencia (básicamente, el paralelismo es 1). Puede configurar hasta 50 en paralelo. |
 | Ejecuciones de acciones por 5 minutos: licencias gratuita, de Office 365, Plan 1 y versiones de prueba | 2 000 | Además, puede distribuir una carga de trabajo por más de un flujo según sea necesario. |
@@ -91,8 +91,8 @@ Estos son los límites de una sola ejecución de flujo. En el caso de los límit
 |---|---|---|
 |Punto de conexión en tiempo de ejecución - Número de llamadas de lectura permitidas por 5 minutos: licencias gratuita, de Office 365, Plan 1 y versiones de prueba|6 000||
 |Punto de conexión en tiempo de ejecución - Número de llamadas de lectura permitidas por 5 minutos: licencias Plan de pago 2, Por usuario y Por flujo|60 000||
-|Punto de conexión en tiempo de ejecución - Llamadas de invocación por 5 minutos: licencias gratuita, de Office 365, Plan 1 y versiones de prueba|4 500||
-|Punto de conexión en tiempo de ejecución - Número de llamadas de invocación por 5 minutos: licencias de Plan de pago 2, Por usuario y Por flujo|45 000||
+|Punto de conexión en tiempo de ejecución: llamadas de invocación por 5 minutos: licencias gratuita, de Office 365, Plan 1 y versiones de prueba|4 500||
+|Punto de conexión en tiempo de ejecución: número de llamadas de invocación por 5 minutos: licencias de Plan de pago 2, Por usuario y Por flujo|45 000||
 |Cantidad de rendimiento permitido por 5 minutos: licencias gratuita, de Office 365, Plan 1 y versiones de prueba|600 MB||
 |Cantidad de rendimiento permitido por 5 minutos: licencias Plan de pago 2, Por usuario y Por flujo|6 GB||
 |Cantidad de flujos de contenido que se pueden generar (entradas/salidas de acciones) por hora: licencias gratuita, de Office 365, Plan 1, Plan 2, Por usuario y Por flujo|200 GB||
@@ -144,12 +144,12 @@ En la tabla siguiente se enumeran los servicios a los que se conecta Power Autom
 
 Dominios | Protocolos | Usos
 --------|  ---------| -----
-management.azure.com|HTTPS|Acceso a Azure Resource Manager.
-login.microsoft.com</br>login.windows.net</br>login.microsoftonline.com</br>secure.aadcdn.microsoftonline-p.com|HTTPS|Acceso a la biblioteca de autenticación de Active Directory (ADAL).
+management.azure.com|https|Acceso a Azure Resource Manager.
+login.microsoft.com</br>login.windows.net</br>login.microsoftonline.com</br>secure.aadcdn.microsoftonline-p.com|https|Acceso a la biblioteca de autenticación de Active Directory (ADAL).
 graph.microsoft.com </br>graph.windows.net</br>|HTTPS|Acceso a la Graph API de Azure AD: para obtener información del usuario, como una foto del perfil.
-*.azure-apim.net|HTTPS|Acceso al runtime para los conectores.
-*.flow.microsoft.com|HTTPS|Acceso al sitio de Power Automate.
-*.powerapps.com|HTTPS|Acceso al sitio de Power Apps.
-*.azureedge.net|HTTPS|Acceso a la red CDN de Power Automate.
-nps.onyx.azure.net|HTTPS|Acceso a NPS (Net Promoter Score).
-webshell.suite.office.com|HTTPS|Acceso a Office para encabezados y búsqueda. Para más información, consulte [los intervalos y las direcciones URL de Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online).
+*.azure-apim.net|https|Acceso al runtime para los conectores.
+*.flow.microsoft.com|https|Acceso al sitio de Power Automate.
+*.powerapps.com|https|Acceso al sitio de Power Apps.
+*.azureedge.net|https|Acceso a la red CDN de Power Automate.
+nps.onyx.azure.net|https|Acceso a NPS (Net Promoter Score).
+webshell.suite.office.com|https|Acceso a Office para encabezados y búsqueda. Para más información, consulte [los intervalos y las direcciones URL de Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online).

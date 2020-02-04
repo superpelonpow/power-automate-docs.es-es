@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: ca8633ac8ee3654d8c61b55421a3feead392954c
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74358540"
 ---
 # <a name="use-data-operations-with-power-automate"></a>Uso de operaciones de datos con Power Automate
@@ -146,7 +146,7 @@ Use la acción **Operaciones de datos - Crear tabla CSV** (create csv table) par
    
     ![configurar la acción crear tabla csv](./media/data-operations/create-csv-table.png)
    
-    Nota: El token **Cuerpo** de esta imagen procede de una acción **Solicitud/respuesta – Respuesta**; sin embargo, los datos de entrada de la acción **Crear tabla CSV** se pueden obtener de la salida de cualquier acción anterior del flujo, o bien se pueden escribir directamente en el cuadro **Desde**.
+    Nota: el token **Cuerpo** de esta imagen procede de una acción **Solicitud/respuesta – Respuesta**; sin embargo, los datos de entrada de la acción **Crear tabla CSV** se pueden obtener de la salida de cualquier acción anterior del flujo, o bien se pueden escribir directamente en el cuadro **Desde**.
 2. Guarde el flujo y ejecútelo.
    
     Cuando se ejecuta el flujo, la salida de **Crear tabla CSV** es similar a esta imagen:

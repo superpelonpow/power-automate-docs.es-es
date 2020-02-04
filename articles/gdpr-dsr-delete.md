@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 8554959026d299ac45ccf3ccb3ace7b8d9226294
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74369074"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-power-automate"></a>Respuesta a solicitudes de eliminación del interesado de acuerdo con el RGPD para Power Automate
@@ -56,7 +56,7 @@ En el caso de los datos y recursos que requieren una revisión manual, Power Aut
 
 * **Acceso a sitio web:** inicie sesión en el [centro de administración de Power Apps](https://admin.powerapps.com/) o el [centro de administración de Power Automate](https://admin.flow.microsoft.com/).
 
-* **Acceso a PowerShell:** [cdmlets de PowerShell de administración de Power Apps](https://go.microsoft.com/fwlink/?linkid=871804). 
+* **Acceso a PowerShell:**  [Cmdlets de PowerShell de administración de Power Apps](https://go.microsoft.com/fwlink/?linkid=871804) 
 
 Este es el desglose de las experiencias que están disponibles para que un administrador elimine cada tipo de datos personales dentro de cada tipo de recurso:
 

@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 2c02b50289988a6462ed33df92350e9e4286b785
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74376825"
 ---
 # <a name="monitor-activity-in-power-automate-from-your-phone"></a>Supervisión de la actividad en Power Automate desde un teléfono
@@ -48,7 +48,7 @@ Cuando se ejecuta el flujo, envía una notificación push personalizada, con est
 
 ![Enviar notificaciones push](./media/mobile-monitor-activity/create-event.png)
 
-**Nota:** también puede [administrar sus flujos](mobile-manage-flows.md) desde la aplicación móvil.
+**Nota**: también puede [administrar sus flujos](mobile-manage-flows.md) desde la aplicación móvil.
 
 ## <a name="display-a-summary-of-activity"></a>Visualización de un resumen de la actividad
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nVCGJamOw6s?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>

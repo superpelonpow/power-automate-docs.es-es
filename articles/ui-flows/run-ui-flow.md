@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: d0d5380e1ade6d1d11d557f38e7fc5db6616d1d9
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74370960"
 ---
 # <a name="run-ui-flows"></a>Ejecución de los flujos de la interfaz de usuario
@@ -74,7 +74,7 @@ En este ejemplo, usaremos un flujo automatizado para desencadenar un flujo de in
 
     - **Nombre de la conexión**: elija un nombre para la conexión del dispositivo a Flow. Puede ser distinta del nombre de la puerta de enlace.
     - **Nombre de usuario**: proporcione la cuenta profesional o educativa del dispositivo.
-    - **Tipo de autenticación**: seleccione Windows.
+    - **Tipo de autenticación**: Seleccione Windows.
     - **Contraseña**: la contraseña de la cuenta profesional o educativa.
     - **Puerta de enlace**: seleccione la puerta de enlace que creó durante la instalación.
 

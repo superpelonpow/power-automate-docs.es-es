@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 019d711771c10f360b1f5c7dab61aa432c827311
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74367119"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-power-automate"></a>Administración de una puerta de enlace de datos local en Power Automate
@@ -44,7 +44,7 @@ Con una puerta de enlace, puede conectarse a datos locales a través de estas co
 * Oracle Database
 * PostgreSQL
 * SharePoint
-* SQL Server
+* SQL Server
 * Teradata (versión preliminar)
 
 > [!IMPORTANT]
@@ -53,10 +53,10 @@ Con una puerta de enlace, puede conectarse a datos locales a través de estas co
 ## <a name="prerequisites"></a>Requisitos previos
 
 * El nombre de usuario y la contraseña que se usaron para [registrarse](sign-up-sign-in.md) en Power Automate.
-* Permisos administrativos en una puerta de enlace.
+* Los permisos administrativos de una puerta de enlace.
 
   Tiene estos permisos de manera predeterminada para cada puerta de enlace que instale. Además, un administrador de otra puerta de enlace puede conceder estos permisos para esa puerta de enlace.
-* Una licencia que admita puertas de enlace Para más información, consulte la sección "Conectividad" de la [página de precios](https://flow.microsoft.com/pricing/).
+* Una licencia que admite puertas de enlace. Para más información, consulte la sección "Conectividad" de la [página de precios](https://flow.microsoft.com/pricing/).
 
 > [!NOTE]
 > Las puertas de enlace y las conexiones locales solo puede crearlas en su [entorno predeterminado](environments-overview-maker.md).
@@ -90,7 +90,7 @@ Siga estos pasos para distribuir el tráfico a través de las puertas de enlace:
 1. Seleccione **Distribuya las solicitudes por todas las puertas de enlace activas de este clúster.** .
 1. Seleccione **Aplicar** para guardar los cambios.
 
-Para más información, consulte [Información acerca de las puertas de enlace de datos locales de Microsoft Flow](gateway-reference.md).
+Para más información, consulte [Puertas de enlace](gateway-reference.md).
 
 <!-- Image references -->
 [1]: ./media/manage-gateway/view-gateways.png

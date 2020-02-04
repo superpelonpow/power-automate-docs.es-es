@@ -15,10 +15,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 2b2b53b833711311c039678a9196a2833d50c84c
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74370868"
 ---
 # <a name="power-automate-us-government"></a>Power Automate para la Administración Pública de Estados Unidos
@@ -67,7 +67,7 @@ El acceso a los planes de Power Automate para la Administración Pública de Est
 > [!NOTE]
 > La licencia estará disponible en inquilinos de cliente desde mediados de abril de 2019.
 
-Encuentre información adicional y los detalles relacionados con las diferencias de funcionalidad entre estos grupos de licencias aquí: [Información de licencias de Power Automate](https://flow.microsoft.com/pricing/)
+Encuentre información adicional y los detalles relacionados con las diferencias de funcionalidad entre estos grupos de licencias aquí: [Información de licencias de Power Automate](https://flow.microsoft.com/pricing/).
 
 Power Automate para la Administración Pública de Estados Unidos está disponible a través de los canales de compra de proveedor de soluciones en la nube y licencia por volumen.
 

@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: eab01a20f44f68a85601ff824175f1a506ebec87
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74361323"
 ---
 # <a name="build-an-approval-loop-by-using-power-automate-and-the-microsoft-common-data-service"></a>Compilación de un bucle de aprobación mediante Power Automate y Microsoft Common Data Service
@@ -149,7 +149,7 @@ Si sigue los pasos que se describen en esta sección, compilará:
     ![Agregar token de nombre de archivo](./media/common-data-model-approve/add-filename-token.png)
 5. En **Approver**, escriba o pegue la dirección de correo electrónico de la persona que va a revisar los archivos.
    
-    **Nota**: para facilitar la prueba del flujo, especifique su propia dirección. Puede cambiarla más adelante, cuando el flujo esté listo para su uso real.
+    **Nota:** para facilitar la prueba del flujo, especifique su propia dirección. Puede cambiarla más adelante, cuando el flujo esté listo para su uso real.
    
     ![Agregar el aprobador](./media/common-data-model-approve/add-approver.png)
 6. En **Status**, escriba o pegue **Pending**.
@@ -167,7 +167,7 @@ Si sigue los pasos que se describen en esta sección, compilará:
    
     ![Elegir un valor](./media/common-data-model-approve/choose-value.png)
    
-    **Nota**: si la ventana del explorador no está maximizada, haga clic o pulse el cuadro superior que contiene **Elegir un valor**.
+    **Nota:** si la ventana del explorador no está maximizada, haga clic o pulse el cuadro superior que contiene **Elegir un valor**.
 3. En **Salidas desde Cuando se crea un archivo**, haga clic o pulse **Status** para agregar ese token de parámetro al campo.
    
     ![Agregar token Status](./media/common-data-model-approve/add-status.png)
@@ -178,7 +178,7 @@ Si sigue los pasos que se describen en esta sección, compilará:
    
     ![Especificar el estado que se inspecciona](./media/common-data-model-approve/do-until-not-pending.png)
    
-    **Nota**: si la ventana del explorador no está maximizada, haga clic o pulse el cuadro inferior que contiene **Elegir un valor**.
+    **Nota:** si la ventana del explorador no está maximizada, haga clic o pulse el cuadro inferior que contiene **Elegir un valor**.
 6. Cerca de la parte inferior de la acción **Do until**, haga clic en **Agregar una acción**.
    
     ![Agregar acción dentro de Do until](./media/common-data-model-approve/add-action-in-dountil.png)
@@ -201,7 +201,7 @@ Si sigue los pasos que se describen en esta sección, compilará:
    
     ![Esquina superior izquierda de la condición](./media/common-data-model-approve/condition-upper-left.png)
    
-    **Nota**: si la ventana del explorador no está maximizada, haga clic o pulse el cuadro superior que contiene **Elegir un valor**.
+    **Nota:** si la ventana del explorador no está maximizada, haga clic o pulse el cuadro superior que contiene **Elegir un valor**.
 3. En **Outputs from Get object**, haga clic o pulse el token de parámetro **Status** para agregarlo al campo.
    
     ![Agregar estado a condición](./media/common-data-model-approve/add-status-to-condition.png)
@@ -209,7 +209,7 @@ Si sigue los pasos que se describen en esta sección, compilará:
    
     ![Compruebe si el estado se establece en aprobado](./media/common-data-model-approve/status-equals-approved.png)
    
-    **Nota**: si la ventana del explorador no está maximizada, escriba o pegue **Aprobado** en el cuadro inferior que contiene **Elegir un valor**.
+    **Nota:** si la ventana del explorador no está maximizada, escriba o pegue **Aprobado** en el cuadro inferior que contiene **Elegir un valor**.
 
 ## <a name="send-notification-mail"></a>Enviar correo de notificación
 1. En **En caso positivo, no hacer nada**, haga clic o pulse **Agregar una acción**.
@@ -220,7 +220,7 @@ Si sigue los pasos que se describen en esta sección, compilará:
     ![En caso afirmativo, enviar correo](./media/common-data-model-approve/if-yes-send-mail.png)
 3. En **A**, escriba o pegue la dirección de la persona a la que desee enviar una notificación cuando se acepta un elemento.
    
-    **Nota**: para facilitar la prueba del flujo, especifique su propia dirección. Puede cambiarla cuando el flujo esté listo para su uso real.
+    **Nota:** para facilitar la prueba del flujo, especifique su propia dirección. Puede cambiarla cuando el flujo esté listo para su uso real.
    
     ![Destinatario de aprobación](./media/common-data-model-approve/approval-recipient.png)
 4. En **Asunto**, haga clic o pulse el cuadro y, luego, haga clic o pulse el token de parámetro **File name** para agregarlo al campo.
@@ -268,7 +268,7 @@ Si sigue los pasos que se describen en esta sección, compilará:
     ![Elegir una entidad](./media/common-data-model-approve/choose-entity.png)
 7. Cerca de la esquina inferior izquierda, haga clic en **Connect** (Conectar) o púlselo.
    
-    ![Botón Connect (Conectar)](./media/common-data-model-approve/connect-button.png)
+    ![Botón Conectar](./media/common-data-model-approve/connect-button.png)
 8. Si aparece la pantalla inicial del paseo introductorio, realice este recorrido para familiarizarse con Power Apps (o bien haga clic o pulse en **Omitir**).
    
     ![Paseo introductorio](./media/common-data-model-approve/quick-tour.png)
@@ -281,7 +281,7 @@ Si sigue los pasos que se describen en esta sección, compilará:
 ## <a name="customize-the-app"></a>Personalización de la aplicación
 1. En la barra de navegación derecha, haga clic o pulse el diseño que incluya un encabezado y una descripción.
    
-    ![Botón Connect (Conectar)](./media/common-data-model-approve/choose-layout.png)
+    ![Botón Conectar](./media/common-data-model-approve/choose-layout.png)
 2. En la **pantalla de exploración**, haga clic o pulse inmediatamente debajo de la barra de búsqueda para seleccionar el control de cuadro de texto mayor.
    
     ![Seleccionar encabezado](./media/common-data-model-approve/select-header.png)
@@ -298,7 +298,7 @@ Si sigue los pasos que se describen en esta sección, compilará:
 ## <a name="test-the-overall-solution"></a>Prueba de la solución global
 1. En Power Apps, abra el modo Vista previa, para lo que debe hacer clic o pulsar en el botón de reproducir que hay cerca de la esquina superior izquierda.
    
-    ![Abrir modo Vista previa](./media/common-data-model-approve/open-preview.png)
+    ![Abrir el modo de vista previa](./media/common-data-model-approve/open-preview.png)
 2. En el primer archivo de la lista, haga clic o pulse la flecha para mostrar los detalles del mismo.
    
     ![Abrir pantalla de detalles](./media/common-data-model-approve/open-details.png)

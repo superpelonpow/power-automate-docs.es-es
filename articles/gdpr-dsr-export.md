@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: aa3a66f71860f2bee2e3f45441bbcd0cd1646914
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74367786"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-power-automate"></a>Respuesta a solicitudes de exportación del interesado de acuerdo con el RGPD para Power Automate
@@ -40,7 +40,7 @@ Power Automate ofrece las experiencias siguientes para buscar o exportar datos p
 
 * **Acceso a sitio web:** inicie sesión en el [centro de administración de Power Apps](https://admin.powerapps.com/) o el [centro de administración de Power Automate](https://admin.flow.microsoft.com/).
 
-* **Acceso a PowerShell:** [cdmlets de PowerShell de administración de Power Apps](https://go.microsoft.com/fwlink/?linkid=871804).
+* **Acceso a PowerShell:**  [cmdlets de PowerShell de administración de Power Apps](https://go.microsoft.com/fwlink/?linkid=871804).
 
 |**Datos de cliente**|**Acceso al sitio web**|**Acceso a PowerShell**|
 |-----------------|------------------|-------------------|
@@ -51,7 +51,7 @@ Power Automate ofrece las experiencias siguientes para buscar o exportar datos p
 |Detalles del usuario||Cmdlets de Power Apps|
 |Conexiones|Portal de creador de Power Automate|Cmdlets de Power Apps |
 |Permisos de conexión|Portal de creador de Power Automate|Cmdlets de Power Apps |
-|Conectores personalizados.|Portal de creador de Power Automate|Cmdlets de Power Apps |
+|Conectores personalizados|Portal de creador de Power Automate|Cmdlets de Power Apps |
 |Permisos de conector personalizado|Portal de creador de Power Automate|Cmdlets de Power Apps |
 |Puerta de enlace|Portal de creador de Power Automate|Cmdlets de PowerShell de puerta de enlace de datos local|
 |Permisos de puerta de enlace|Portal de creador de Power Automate|Cmdlets de PowerShell de puerta de enlace de datos local|
@@ -68,7 +68,7 @@ Un usuario final o un administrador al que se haya concedido acceso al flujo pue
 
     ![Exportación de flujo](./media/gdpr-dsr-export/export-flow.png)
 
-1. Seleccione **Paquete (.zip)** .
+1. Seleccione **Paquete (.zip)**.
 
 El flujo estará ahora disponible como un paquete comprimido. Para obtener más información, consulte la entrada de blog sobre [cómo exportar e importar un flujo](https://flow.microsoft.com/blog/import-export-bap-packages/).
 
@@ -106,7 +106,7 @@ En [Power Automate](https://flow.microsoft.com/), la fuente de actividad muestra
 
 Las conexiones permiten a los flujos conectarse a las API, las aplicaciones de SaaS y otros sistemas de terceros. Siga estos pasos para ver las conexiones:
 
-1. Inicie sesión en [Power Automate](https://flow.microsoft.com/), seleccione el icono de engranaje cerca de la esquina superior derecha y, a continuación, seleccione **Conexiones**.
+1. Inicie sesión en [Power Automate](https://flow.microsoft.com/), seleccione el icono de engranaje cerca de la esquina superior derecha y, luego, seleccione **Conexiones**.
 
     ![Muestra de conexiones](./media/gdpr-dsr-export/show-connections.png)
 1. Copie los resultados y, a continuación, péguelos en un editor de documentos, como Microsoft Word.

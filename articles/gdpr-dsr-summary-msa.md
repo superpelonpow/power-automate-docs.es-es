@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 81b486c0d9ed059cc310f1297e27b28206776f45
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74367556"
 ---
 # <a name="respond-to-gdpr-data-subject-rights-dsrs-requests"></a>Respuesta a las solicitudes de derechos de interesados (DSR) de acuerdo con el RGPD
@@ -55,14 +55,14 @@ Microsoft proporciona productos, servicios y herramientas para ayudar a los resp
 
 Esta es una introducción a los procesos descritos en esta guía:
 
-1. **Detectar**: use herramientas de búsqueda y detección para encontrar fácilmente los datos de los clientes que puedan ser objeto de una solicitud DSR. Si determina que los documentos que recopila cumplen las directrices del responsable para emprender medidas, puede realizar una o varias de las acciones de DSR descritas en los pasos siguientes. Obtenga más información en la [documentación de detección de DSR de Power Automate para cuentas Microsoft](gdpr-dsr-discovery-msa.md). Como alternativa, puede determinar que la solicitud no cumple las directrices del responsable para responder a las solicitudes de DSR.
+1. **Detección**: use herramientas de búsqueda y detección para encontrar fácilmente los datos de los clientes que puedan ser objeto de una solicitud DSR. Si determina que los documentos que recopila cumplen las directrices del responsable para emprender medidas, puede realizar una o varias de las acciones de DSR descritas en los pasos siguientes. Obtenga más información en la [documentación de detección de DSR de Power Automate para cuentas Microsoft](gdpr-dsr-discovery-msa.md). Como alternativa, puede determinar que la solicitud no cumple las directrices del responsable para responder a las solicitudes de DSR.
 
-1. **Acceder**: recupere datos personales que residen en la nube de Microsoft y, si se solicita, haga una copia de estos para que pueda estar a disposición del interesado.
+1. **Acceso**: recupere datos personales que residen en la nube de Microsoft y, si se solicita, haga una copia de estos para que pueda estar a disposición del interesado.
 
-1. **Rectificar**: haga cambios o implemente otras acciones solicitadas en los datos personales, si procede.
+1. **Rectificación**: haga cambios o implemente otras acciones solicitadas en los datos personales, si procede.
 
-1. **Restringir**: limite el tratamiento de los datos personales, ya sea quitando licencias para varios servicios en línea o desactivando los servicios deseados siempre que sea posible. También puede quitar datos de la nube de Microsoft y conservarlos de manera local o en otra ubicación.
+1. **Restricción**: limite el tratamiento de los datos personales, ya sea quitando licencias para varios servicios en línea o desactivando los servicios deseados siempre que sea posible. También puede quitar datos de la nube de Microsoft y conservarlos de manera local o en otra ubicación.
 
-1. **Eliminar**: quite permanentemente los datos personales que se encuentran en la nube de Microsoft. Obtenga más información sobre [cómo eliminar datos personales para cuentas de Microsoft](gdpr-dsr-delete-msa.md). Obtenga más información sobre [cómo cerrar una cuenta de Microsoft](gdpr-dsr-accountclose-msa.md).
+1. **Eliminar**: quite de forma permanente los datos personales que se encuentran en la nube de Microsoft. Obtenga más información sobre [cómo eliminar datos personales para cuentas de Microsoft](gdpr-dsr-delete-msa.md). Obtenga más información sobre [cómo cerrar una cuenta de Microsoft](gdpr-dsr-accountclose-msa.md).
 
-1. **Exportar**: proporcione una copia electrónica (en un formato legible) de los datos personales. [Obtenga más información sobre cómo exportar datos personales para cuentas de Microsoft](gdpr-dsr-export-msa.md).
+1. **Export**: proporcione una copia electrónica (en un formato legible) de los datos personales. [Obtenga más información sobre cómo exportar datos personales para cuentas de Microsoft](gdpr-dsr-export-msa.md).

@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 2b536263d90af7b0bbdcdec30d1b00bc7bae2a9e
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74361208"
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Cree de un flujo que use Common Data Service
@@ -52,7 +52,7 @@ Por ejemplo, aproveche Common Data Service en Power Automate de las siguientes f
    
     **Nota**: para mostrar el botón **Iniciar sesión** es posible que tenga que abrir el menú de la parte superior izquierda.
    
-    ![Inicio de sesión](./media/common-data-model-intro/signin-flow.png)
+    ![Iniciar sesión](./media/common-data-model-intro/signin-flow.png)
 2. En el menú de la parte superior derecha seleccione el entorno en que creó la base de datos en powerapps.com.
    
     **Nota**: si no selecciona el mismo entorno, no verá las entidades.
@@ -73,7 +73,7 @@ Por ejemplo, aproveche Common Data Service en Power Automate de las siguientes f
     ![Utilizar plantilla](./media/common-data-model-intro/use-template.png)
 4. Si aún no ha creado una conexión de Power Automate con Dynamics 365, haga clic o pulse en **Iniciar sesión** y, luego, especifique sus credenciales, en caso de que se le pidan.
    
-    ![Iniciar sesión en Dynamics 365](./media/common-data-model-intro/dynamics-signin.png)
+    ![Inicio de sesión en Dynamics 365](./media/common-data-model-intro/dynamics-signin.png)
 5. Haga clic en **Continuar** o púlselo.
    
     ![Confirmar cuentas](./media/common-data-model-intro/confirm-accounts.png)
@@ -86,12 +86,12 @@ Por ejemplo, aproveche Common Data Service en Power Automate de las siguientes f
     ![Especificar instancia de Dynamics 365](./media/common-data-model-intro/specify-instance.png)
 2. (opcional) Cerca de la parte superior de la pantalla, especifique otro nombre para el flujo que va a crear.
    
-    **Nota**: si la ventana del explorador no está maximizada, es posible que la interfaz de usuario sea un poco diferente.
+    **Nota:** si la ventana del explorador no está maximizada, es posible que la interfaz de usuario sea un poco diferente.
    
     ![Flujo de nombre](./media/common-data-model-intro/name-flow.png)
 3. Haga clic o pulse **Crear flujo**.
    
-    **Nota**: si la ventana del explorador no está maximizada, es posible que solo aparezca la marca de verificación.
+    **Nota:** si la ventana del explorador no está maximizada, es posible que solo aparezca la marca de verificación.
    
     ![Crear flujo](./media/common-data-model-intro/create-flow.png)
 

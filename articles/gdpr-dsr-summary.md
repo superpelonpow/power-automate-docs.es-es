@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 256e874e2b70844219cd1c21e2ed37f2a96ba78c
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74367395"
 ---
 # <a name="responding-to-gdpr-data-subject-requests-for-power-automate"></a>Respuesta a solicitudes del interesado de acuerdo con el RGPD para Power Automate
@@ -57,7 +57,7 @@ Si es miembro de un [inquilino no administrado](https://docs.microsoft.com/azure
 
 El RGPD otorga a los usuarios (denominados en el RGPD "titulares de datos") el derecho de administrar los datos personales que se han recopilado por un empleador u otro tipo de agencia u organización (denominado "controlador de datos" o simplemente "controlador"). Los datos personales se definen muy ampliamente en el RGPD como cualquier dato que guarde relación con una persona física identificada o identificable. El RGPD ofrece a los titulares de datos derechos específicos sobre sus datos personales, como la obtención de copias de los datos personales, la solicitud de correcciones, la restricción de procesamiento, la eliminación o la recepción en un formato electrónico que permita su transferencia a otro controlador. Una solicitud formal emitida por un titular de datos a un controlador para que adopte medidas sobre sus datos personales se denomina "solicitud de derechos de titulares de datos".
 
-En este artículo se describe cómo utilizar los productos, servicios y herramientas administrativas de Microsoft para ayudar a los controladores a buscar y actuar en datos personales en respuesta a los derechos de titulares de datos. En concreto, este artículo incluye cómo buscar, acceder y actuar en los datos personales que residen en la nube de Microsoft. Esta es una introducción rápida a los procesos descritos en esta guía:
+En este artículo se describe cómo utilizar los productos, servicios y herramientas administrativas de Microsoft para ayudar a los controladores a buscar y actuar en datos personales en respuesta a los derechos de titulares de datos. En concreto, este artículo incluye cómo buscar, acceder y actuar en los datos personales que residen en la nube de Microsoft. Este es un breve resumen de los procesos descritos en esta guía:
 
 1. Detectar: use herramientas de búsqueda y detección para encontrar más fácilmente los datos de los clientes que pueden estar sometidos a derechos de titulares de datos. Una vez que se recopilen documentos potencialmente de respuesta, puede realizar una o varias de las acciones de derechos de titulares de datos descritas en los pasos siguientes para responder a la solicitud. También puede determinar que la solicitud no cumple las directrices de su organización para responder a los derechos de los titulares de datos. [Documentación de detección de derechos de titulares de datos de Power Automate](gdpr-dsr-discovery.md)
 
@@ -69,11 +69,11 @@ En este artículo se describe cómo utilizar los productos, servicios y herramie
 
     Puede usar Azure Active Directory para administrar las identidades de los usuarios de Power Automate. Los clientes empresariales pueden administrar las solicitudes de rectificación de derechos de titulares de datos, incluidas las características de edición limitadas, por la naturaleza de un determinado servicio de Microsoft.  Como procesador de datos, Microsoft no ofrece la posibilidad de corregir los registros generados por el sistema, porque estos registros reflejan actividades objetivas y constituyen un registro histórico de eventos dentro de los servicios de Microsoft.  [Obtenga más información sobre los derechos de titulares de datos.](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure)
 
-1. Restringir: limite el procesamiento de datos personales, ya sea quitando licencias para varios servicios en línea o desactivando los servicios deseados siempre que sea posible. También puede quitar datos de la nube de Microsoft y conservarlos de manera local o en otra ubicación.
+1. Restringir: limite el tratamiento de los datos personales, ya sea quitando licencias para varios servicios en línea o desactivando los servicios deseados siempre que sea posible. También puede quitar datos de la nube de Microsoft y conservarlos de manera local o en otra ubicación.
 
     Los titulares de datos pueden solicitar que se restrinja el procesamiento de sus datos personales.  Microsoft proporciona interfaces de programación de aplicaciones (API) e interfaces de usuario (IU) para este propósito.  Estas interfaces permiten al administrador de inquilinos del cliente de empresa administrar estos derechos de titulares de datos a través de una combinación de exportación y eliminación de los datos. Un cliente puede 1) exportar una copia electrónica de los datos personales del usuario, incluidas las cuentas, los registros generados por el sistema y los registros asociados, seguido de 2) la eliminación de la cuenta y los datos asociados que se encuentran dentro de sistemas de Microsoft.
 
-1. Eliminar: quite permanentemente los datos personales que se encuentran en la nube de Microsoft. [Obtenga más información acerca de cómo eliminar datos personales](gdpr-dsr-delete.md).
+1. Eliminar: quite de forma permanente los datos personales que se encuentran en la nube de Microsoft. [Obtenga más información acerca de cómo eliminar datos personales](gdpr-dsr-delete.md).
 
 1. Exportar: proporcione una copia electrónica (en un formato legible) de los datos personales al titular de los datos. Cada sección de este artículo describe los procedimientos técnicos que puede llevar a cabo la organización de un controlador de datos para responder a una solicitud de derechos de titulares de datos en relación con datos personales en la nube de Microsoft. [Obtenga más información acerca de cómo exportar datos personales](gdpr-dsr-export.md).
 

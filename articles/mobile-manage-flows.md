@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: cba8de780c58a2b70f1d65ff002336c7312dfd36
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74377423"
 ---
 # <a name="manage-flows-in-power-automate-from-your-phone"></a>Administración de flujos en Power Automate desde el teléfono
@@ -46,7 +46,7 @@ Cuando se ejecuta el flujo, envía una notificación push personalizada, con est
 
 ![Enviar mensaje Slack](./media/mobile-manage-flows/create-event.png)
 
-**Nota**: también puede [supervisar la actividad del flujo](mobile-monitor-activity.md) desde la aplicación móvil.
+**Nota:** también puede [supervisar la actividad del flujo](mobile-monitor-activity.md) desde la aplicación móvil.
 
 ## <a name="manage-a-flow"></a>Administración de un flujo
 1. Abra la aplicación móvil y pulse **My flows** (Mis flujos) en la parte inferior de la pantalla para enumerar todos los flujos.

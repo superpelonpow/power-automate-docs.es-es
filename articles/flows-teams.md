@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
 ms.openlocfilehash: a2a9b5d5a6ed8305ed3e7c29717ef19978bae0a7
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74367073"
 ---
 # <a name="power-automate-in-teams"></a>Power Automate en Teams
@@ -63,7 +63,7 @@ Siga estos pasos para instalar la aplicación Power Automate en Microsoft Teams
 
 1. Si no lo ha hecho antes, puede que tenga que iniciar sesión y conceder permisos.
 
-    ![Inicio de sesión](media/flows-teams/grant-permissions-sign-in.png)
+    ![Iniciar sesión](media/flows-teams/grant-permissions-sign-in.png)
 
 
     Observe las pestañas siguientes:

@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 06a27a495a008542208cd56230ad8c21b5e5b938
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74372386"
 ---
 # <a name="create-and-test-your-web-ui-flows"></a>Creación y prueba de los flujos de la interfaz de usuario web
@@ -58,7 +58,7 @@ Siga estos pasos para crear un flujo de interfaz de usuario web simple:
    Se inicia el IDE de Selenium.
 
    >[!TIP] 
-   >Sugerencia: Puede grabar acciones en varios sitios web HTTP o HTTPS dentro de la misma pestaña.  
+   >Sugerencia: puede grabar acciones en varios sitios web HTTP o HTTPS dentro de la misma pestaña.  
 
 1. En el IDE de Selenium, seleccione el botón **REC** rojo que está en el lado superior derecho de la pantalla para iniciar la grabadora.
 
@@ -112,7 +112,7 @@ Para solucionarlo, el usuario debe editar manualmente el script para insertar lo
 
 -   Multi-Factor Authentication (MFA) no es compatible. Use un inquilino que no requiera MFA.
 
--   No se admiten estos comandos del IDE de Selenium: Run, AnswerOnNextPrompt, ChooseCancelOnNextConfirmation, ChooseCancelOnNextPrompt, ChooseOkOnNextConfirmation, Debugger, ClickAt, DoubleClickAt, Echo, MouseOut, MouseUpAt ni MouseDownAt.
+-   No se admiten estos comandos de Selenium IDE: Run, AnswerOnNextPrompt, ChooseCancelOnNextConfirmation, ChooseCancelOnNextPrompt, ChooseOkOnNextConfirmation, Debugger, ClickAt, DoubleClickAt, Echo, MouseOut, MouseUpAt y MouseDownAt.
 
 -   No se admite el clic con el botón derecho. 
 

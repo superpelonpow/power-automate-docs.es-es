@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: a9042e258c1e99aafc5e20b9d1adce9782dc09ca
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74366636"
 ---
 # <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Ejecute flujos presionando un botón inteligente Flic (versión preliminar)
@@ -58,7 +58,7 @@ Una vez que haya vinculado un evento de Flic a Power Automate, puede seleccionar
 ## <a name="create-a-flow-thats-triggered-by-a-flic"></a>Cree un flujo desencadenado por un Flic
 En este tutorial, usamos un Flic para ejecutar un flujo que registra el tiempo que un consultor invierte en cada cliente. El consultor pulsa el Flic al llegar y vuelve a pulsarlo inmediatamente antes de salir del cliente. Cada vez que se pulsa el Flic se inicia una ejecución del flujo al que está conectado. El flujo guarda la hora actual en Hojas de cálculo de Google y, después, envía una notificación por correo electrónico. El correo electrónico contiene detalles acerca de la ejecución de flujo.
 
-Nota: asegúrese de que ha usado la aplicación móvil Flic para realizar el emparejamiento y configure al menos una acción **click** que desencadene Power Automate. En esta captura de pantalla, he configurado la acción **click** para desencadenar Power Automate. Más adelante configuraremos que se desencadene nuestro flujo cuando el Flic se pulsa una vez (se hace clic en él).
+Nota: asegúrese de que ha usado la aplicación móvil Flic para realizar el emparejamiento y configure al menos una acción **click** que desencadene Power Automate. En esta captura de pantalla, he configurado la acción **click** para desencadenar Power Automate. Más adelante configuraremos que se desencadene nuestro flujo cuando el Flic se pulsa una vez (se hace clic en él).
 
    ![configuración de flic](./media/flic-button-flows/flic-configured-for-flow.png)
 
