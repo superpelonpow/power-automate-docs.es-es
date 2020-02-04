@@ -11,10 +11,10 @@ ms.technology: ''
 ms.author: stepsic
 audience: Power user
 ms.openlocfilehash: 7cce365213f22854b8a3b97808ad7172c3af3409
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74369695"
 ---
 # <a name="power-automate-web-api"></a>API web de Power Automate
@@ -92,7 +92,7 @@ Tal y como se ha señalado arriba, se puede obtener la lista de flujos de trabaj
 
 | Nombre de la propiedad     | Descripción                                              |
 | ----------------- | -------------------------------------------------------- |
-| category          | Categoría del flujo. Los distintos tipos son los siguientes: 0 (flujos de trabajo clásicos de Common Data Service), 1 (cuadros de diálogo clásicos de Common Data Service), 2 (reglas de negocio), 3 (acciones clásicas de Common Data Service), 4 (flujos de procesos de negocio) y 5 (flujos automatizados, instantáneos o programados). |
+| category          | Categoría del flujo. Los distintos tipos son: 0 (flujos de trabajo clásicos de Common Data Service), 1 (cuadros de diálogo clásicos de Common Data Service), 2 (reglas de negocio), 3 (acciones clásicas de Common Data Service), 4 (flujos de procesos de negocio) y 5 (flujos automatizados, instantáneos o programados). |
 | statecode         | Estado del flujo. El estado puede ser **0** (desactivado) o **1** (activado).|
 | workflowuniqueid  | Identificador único de esta instalación del flujo. |
 | workflowid        | Identificador único de un flujo en todas las importaciones. |
@@ -104,7 +104,7 @@ Tal y como se ha señalado arriba, se puede obtener la lista de flujos de trabaj
 | _modifiedby_value | Último usuario que actualizó el flujo. Se trata de un identificador de la entidad systemusers en Common Data Service. |
 | _createdby_value  | Usuario que creó el flujo. Se trata de un identificador de la entidad systemusers en Common Data Service. |
 | type              | Indica si el flujo es un flujo en ejecución o una plantilla que se puede usar para crear más flujos. 1 (flujo), 2 (activación) o 3 (plantilla). |
-| descripción       | Descripción del flujo proporcionada por el usuario. |
+| description       | Descripción del flujo proporcionada por el usuario. |
 | clientdata        | JSON codificado como cadena de un objeto que contiene el parámetro connectionReferences y la definición del flujo. |
 
 También puede solicitar propiedades concretas, filtrar la lista de flujos y mucho más, como se describe en la [documentación de la API de Common Data Service para la consulta de datos](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api). Por ejemplo, esta consulta devuelve únicamente los flujos automatizados, instantáneos o programados que están activados actualmente:
@@ -115,7 +115,7 @@ Accept: application/json
 Authorization: Bearer ey...
 ```
 
-## <a name="create-a-flow"></a>Crear un flujo
+## <a name="create-a-flow"></a>Creación de un flujo
 
 Para crear un flujo, llame a `POST` en la colección `workflows`. Las propiedades necesarias en los flujos automatizados, instantáneos o programados son category, name, type, primaryentity y clientdata. Use `none` como primaryentity en estos tipos de flujos.
 
@@ -247,7 +247,7 @@ El parámetro `AccessMask` es un campo con los siguientes valores relativos a lo
 
 | Nombre         | Descripción                                          |
 | ------------ | ---------------------------------------------------- |
-| None         | Sin acceso.                                           |
+| Ninguno         | Sin acceso.                                           |
 | ReadAccess   | Derecho a leer el flujo.                          |
 | WriteAccess  | Derecho a actualizar el flujo.                        |
 | DeleteAccess | Derecho a eliminar el flujo.                        |
