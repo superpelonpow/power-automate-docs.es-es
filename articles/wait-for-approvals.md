@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: dfc33b4d12d5d8b6936b80182cfb77211f3e9dee
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74369764"
 ---
 # <a name="wait-for-approval-in-power-automate"></a>Espera de aprobación en Power Automate
@@ -72,7 +72,7 @@ Cree un flujo que, si crea un elemento en SharePoint, envíe un mensaje de aprob
 
     ![Imagen del campo Enviar correo electrónico de aprobación a](./media/wait-for-approvals/send-approval-email-to.png)
 
-## <a name="add-a-condition"></a>Adición de una condición
+## <a name="add-a-condition"></a>Agregar una condición
 
 1. Seleccione el botón **Nuevo paso** y luego **Agregar una condición**.
 

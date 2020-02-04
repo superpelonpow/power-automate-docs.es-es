@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 26bed9ab3329bbf0edf8ea055de71b732d7d0746
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74355412"
 ---
 # <a name="responding-to-gdpr-data-subject-discovery-requests-for-power-automate"></a>Respuesta a las solicitudes de detección de los interesados en el RGPD en Power Automate
@@ -45,7 +45,7 @@ A continuación se muestra un resumen de los tipos de recursos de Power Automate
 |Detalles del usuario|Detalles, no percibidos por el usuario, que respaldan la ejecución del flujo.|
 |Conexiones|Utilizadas por los conectores, permiten la conectividad a las API, los sistemas, las bases de datos, etc. [Más información](https://docs.microsoft.com/flow/add-manage-connections)|
 |Permisos de conexión|Permisos para una conexión específica. [Más información](https://docs.microsoft.com/flow/add-manage-connections)|
-|Conectores personalizados.|Conectores personalizados que ha creado y publicado un usuario que permiten la conectividad con sistemas de otros fabricantes o personalizados. [Más información](https://docs.microsoft.com/connectors/custom-connectors/)|
+|Conectores personalizados|Conectores personalizados que ha creado y publicado un usuario que permiten la conectividad con sistemas de otros fabricantes o personalizados. [Más información](https://docs.microsoft.com/connectors/custom-connectors/)|
 |Permisos de conector personalizado|Listas de permisos para los conectores personalizados. [Más información](https://docs.microsoft.com/connectors/custom-connectors/share)|
 |Puerta de enlace|Las puertas de enlace son servicios de datos locales que puede instalar un usuario para transferir datos de forma rápida y segura entre Power Automate y un origen de datos que no se encuentra en la nube. [Más información](https://docs.microsoft.com/flow/gateway-manage)|
 |Permisos de puerta de enlace|Las puertas de enlace se pueden compartir con los usuarios dentro de una organización. [Más información](https://go.microsoft.com/fwlink/?linkid=872249)|

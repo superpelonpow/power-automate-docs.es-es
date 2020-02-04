@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
 ms.openlocfilehash: 9a7e6b28f7080ea65141d9a68881a637cd68cb2d
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74362726"
 ---
 # <a name="manage-sharepoint-page-approvals-with-power-automate"></a>Administración de aprobaciones de páginas de SharePoint con Power Automate

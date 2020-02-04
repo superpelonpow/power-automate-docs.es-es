@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 2808fb064ae0910d184d1f785a528c6f44e601af
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74360288"
 ---
 # <a name="create-an-automated-flow-by-using-common-data-service"></a>Creación de un flujo automatizado mediante Common Data Service
@@ -59,7 +59,7 @@ Puede usar ámbitos para determinar si el flujo se ejecuta al crear un nuevo reg
 | --- | --- |
 |Unidad de negocio|Se realiza una acción en un registro que es propiedad de la unidad de negocio|
 |Organización|Cualquier usuario de la organización o la base de datos realiza una acción|
-|Elemento principal: unidad de negocio secundaria|Se realiza una acción en un registro que es propiedad de la unidad de negocio o una unidad de negocio secundaria|
+|Elemento principal: unidades de negocio secundarias|Se realiza una acción en un registro que es propiedad de la unidad de negocio o una unidad de negocio secundaria|
 |Usuario|Se realiza una acción en un registro de su propiedad|
 
 Los desencadenadores que se ejecutan cuando se actualiza un registro también pueden usar atributos de filtrado. Esto garantiza que el flujo solo se ejecute cuando se actualice cualquiera de los atributos definidos.

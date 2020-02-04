@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 263ebf710d280ebd7c4a6d2846fa859693561476
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74355481"
 ---
 # <a name="choosing-an-environment"></a>Elección de un entorno
@@ -38,7 +38,7 @@ Obtendrá información sobre:
 * Cómo cambiar entre entornos.
 * Cómo crear un flujo en el entorno adecuado.
 
-## <a name="environments-overview"></a>Introducción a los entornos
+## <a name="environments-overview"></a>Información general sobre los entornos
 
 Cuando se crea un flujo, se puede elegir en qué entorno se va a hospedar y los recursos que va a usar. Se pueden usar entornos distintos para diferentes escenarios.
 

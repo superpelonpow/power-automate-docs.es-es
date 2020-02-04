@@ -23,13 +23,13 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 2c8e512c39805296e5885266750b59b49feca482
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74359207"
 ---
-# <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Tutorial: Crear un flujo de proceso de negocio para estandarizar procesos
+# <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Tutorial: Creación de un flujo de proceso de negocio para estandarizar procesos
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 En este tutorial se explica cómo crear un flujo de proceso de negocio con Power Apps. Para saber más sobre por qué se usan flujos de proceso de negocio, vea [Información general sobre flujos de proceso de negocio](business-process-flows-overview.md). Para más información sobre cómo crear un flujo de tareas móviles, vea [Crear un flujo de tareas móviles](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
@@ -67,7 +67,7 @@ Necesita [Flow Plan 2](https://preview.flow.microsoft.com/pricing/) para crear f
   
          La entidad seleccionada afectará a los campos disponibles para los pasos que se pueden agregar a la primera fase del flujo de proceso. Si no encuentra la entidad que quiere, asegúrese de que la entidad tiene la opción Business process flows (fields will be created) [Flujos de proceso de negocio (se crearán los campos)] establecida en la definición de entidad. No se puede cambiar esto después de guardar el proceso.  
   
-5. Haga clic en **Aceptar**.  
+5. Seleccione **Aceptar**.  
   
      Se crea el nuevo proceso y se abre el diseñador de flujo de proceso de negocio con una sola fase creada automáticamente.  
   

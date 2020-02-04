@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 84b3a8956008149f80f1790a20c1388dde8737ac
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74360242"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Creación de un flujo mediante Dynamics 365 (con conexión)
@@ -34,7 +34,7 @@ Mediante un conector de Dynamics 365 se pueden crear flujos que se inician cuand
 En Power Automate puede configurar flujos de trabajo automatizados entre sus aplicaciones y servicios preferidos para sincronizar archivos, obtener notificaciones, recopilar datos, etc. Para más información, consulte [Introducción a Power Automate](getting-started.md).
 
 > [!IMPORTANT] 
-> Para invocar un desencadenador de flujos, la entidad de Common Data Service utilizada con el flujo debe tener activada la opción **Change Tracking**. Para obtener más información, consulte [Habilitar seguimiento de cambios para controlar la sincronización de datos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization). 
+> Para invocar un desencadenador de flujos, la entidad de Common Data Service utilizada con el flujo debe tener activada la opción **Change Tracking**. Más información: [Habilitar seguimiento de cambios para controlar la sincronización de datos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization). 
 
 ## <a name="create-a-flow-from-a-template"></a>Creación de un flujo desde una plantilla
 Para crear un flujo se puede utilizar una de las muchas plantillas disponibles, como en estos ejemplos:
@@ -79,7 +79,7 @@ Si no hay una plantilla disponible para lo que necesita, cree un flujo desde el 
     
     ![Flujo agregar tema](./media/connection-dynamics365/flow-addtopic.png)
     
-    > **Sugerencia:** en el panel de contenido dinámico, haga clic o pulse **Ver más** para mostrar más campos asociados a la entidad. Por ejemplo, también puede rellenar el campo **Asunto** de la tarea con los campos **Nombre de la compañía**, **Cliente**, **Descripción**, o **Correo electrónico** del cliente potencial.
+    > **Sugerencia:** En el panel de contenido dinámico, haga clic en **Ver más** o pulse dicho vínculo para mostrar más campos asociados a la entidad. Por ejemplo, también puede rellenar el campo **Asunto** de la tarea con los campos **Nombre de la compañía**, **Cliente**, **Descripción**, o **Correo electrónico** del cliente potencial.
     > 
     > 
 12. Haga clic o pulse **Crear flujo**.

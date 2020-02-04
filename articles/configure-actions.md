@@ -22,10 +22,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 9157159a263bb2b8be41445aebb478fc6aa2ddb3
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74360564"
 ---
 # <a name="configure-custom-actions-from-a-workflow"></a>Configuración de acciones personalizadas desde un flujo de trabajo
@@ -123,7 +123,7 @@ Las acciones también tienen algo de lo que carecen los procesos de flujo de tra
   
 |Tipo|Descripción|  
 |----------|-----------------|  
-|Boolean|Un valor `true` o `false`.|  
+|Booleano|Un valor `true` o `false`.|  
 |DateTime|Un valor que almacena información de fecha y hora.|  
 |Decimal|Un valor numérico con precisión decimal. Se usa cuando la precisión es extremadamente importante.|  
 |Entity|Un registro de la entidad especificada. Cuando se selecciona Entity, se habilita la lista desplegable y se puede seleccionar el tipo de entidad.|  

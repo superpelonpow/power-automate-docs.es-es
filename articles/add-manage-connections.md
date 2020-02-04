@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: f2e46711637497120872848f239d59651ab875d5
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74358103"
 ---
 # <a name="manage-connections-in-power-automate"></a>Administración de conexiones en Power Automate
@@ -46,7 +46,7 @@ Puede crear una conexión en varios escenarios, como estos:
 
 En este tema se muestra cómo administrar conexiones en el [sitio web de Power Automate][1].
 
-## <a name="add-a-connection"></a>Incorporación de una conexión
+## <a name="add-a-connection"></a>Agregar una conexión
 1. En el [sitio web de Power Automate][1], inicie sesión con su cuenta profesional o de organización.
 2. Cerca de la esquina superior derecha, seleccione el icono del engranaje y, después, seleccione **Conexiones**.
    

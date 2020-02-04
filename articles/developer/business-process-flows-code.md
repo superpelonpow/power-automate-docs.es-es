@@ -15,10 +15,10 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: d65be1552c3e748e4910c4fb942a60322f6f1e19
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74363278"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Uso de flujos de proceso de negocio con código
@@ -47,7 +47,7 @@ Para habilitar una entidad para el flujo de proceso de negocio, establezca la pr
 <a name="DefineBPF"></a>   
 ## <a name="define-business-process-flow"></a>Definición de un flujo de proceso de negocio
   
-Use el diseñador visual de flujos de proceso de negocio para definir un flujo de proceso de negocio. Más información: [Creación de un flujo de proceso de negocio](../create-business-process-flow.md)
+Use el diseñador visual de flujos de proceso de negocio para definir un flujo de proceso de negocio. Más información: [Crear un flujo de proceso de negocio](../create-business-process-flow.md)
 
 De forma predeterminada, un registro de flujo de proceso de negocio se crea en el estado `Draft`.  
 
@@ -75,10 +75,10 @@ La definición de un flujo de proceso de negocio se almacena en la entidad <xref
 
 Puede recuperar el nombre de la entidad de flujo de proceso de negocio mediante cualquiera de las maneras siguientes:
 
-- **Mediante la interfaz de usuario**: use la interfaz de usuario de personalización para ir a la entidad de flujo de proceso de negocio:
+- **Mediante la UI**: Use la interfaz de usuario de personalización para ir a la entidad de flujo de proceso de negocio:
 
     ![](media/bpf-entity-name.png)
-- **Mediante la API web**: use la solicitud siguiente:
+- **Mediante la API web**: Use la siguiente solicitud:
 
     **Solicitud**
 
@@ -99,7 +99,7 @@ Puede recuperar el nombre de la entidad de flujo de proceso de negocio mediante 
       ]
     }
     ```
-- **Con el servicio de la organización**: use el siguiente ejemplo de código:
+- **Mediante el servicio de organización**: Use el siguiente ejemplo de código:
 
     ```c#
     QueryExpression query = new QueryExpression
@@ -143,7 +143,7 @@ La entidad de flujo de proceso de negocio personalizada tiene el ámbito de la o
 > [!IMPORTANT]
 > El cambio a otra instancia de proceso desde un registro de entidad solo se admite mediante la interfaz de usuario (cliente) o mediante programación siguiendo la información disponible en esta sección. Ya no puede usar el mensaje `SetProcess` (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> o <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) para cambiar procesos mediante programación (establecer otro flujo de proceso de negocio como instancia de proceso activa) en el registro de entidad de destino. 
 
- Pongamos como ejemplo un flujo de proceso de negocio de varias entidades, "Mi FPN personalizado", que cuenta con 3 fases: S1:Cuenta, S2:Cuenta y S3:Contacto. 
+ Pongamos como ejemplo un flujo de proceso de negocio de varias entidades, "Mi FPN personalizado", que cuenta con 3 fases: Cuenta, Cuenta y Contacto. 
 
  ![](media/sample-bpf.png)
  
@@ -267,18 +267,18 @@ OData-Version: 4.0
 
 #### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>Cambio del estado de una instancia de proceso: Anular, Reactivar o Finalizar 
 
-Una instancia de proceso puede tener uno de los estados siguientes: **Activo**, **Finalizada** o **Anulada**. El estado se determina por los atributos siguientes en el registro de la instancia de proceso:
+Una instancia de proceso puede tener uno de los siguientes estados: **Activa**, **Finalizada** o **Anulada**. El estado se determina por los atributos siguientes en el registro de la instancia de proceso:
 
-- **statecode**: muestra el estado de la instancia del proceso.
+- **statecode**: Muestra el estado de la instancia del proceso.
 
-    |Valor|Etiqueta|
+    |Valor|Label|
     |-----|-----|
     |0    |Activo|
     |1    |Inactivo|
 
-- **statuscode**: muestra información sobre el estado de la instancia del proceso.
+- **statuscode**: Muestra información sobre el estado de la instancia del proceso.
 
-    |Valor|Etiqueta|
+    |Valor|Label|
     |-----|-----|
     |1    |Activo|
     |2    |Finalizado|
@@ -373,7 +373,7 @@ Si no establece un valor para el atributo **ProcessId** durante la creación del
 
 Los atributos heredados relacionados con los procesos (como **ProcessId**, **StageId** y **TraversedPath**) en las entidades habilitadas para los flujos de proceso de negocio ya están en desuso. La manipulación de estos atributos heredados relacionados con los procesos para seleccionar como destino registros de entidad no garantiza la coherencia del estado de flujo de proceso de negocio y ***no*** es un escenario admitido. La manera recomendada es usar los atributos de la entidad de flujo de proceso de negocio como se explicó anteriormente en la sección [Creación recuperación, actualización y eliminación de registros de entidad de flujo de proceso de negocio (instancias de proceso)](#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances).
 
-La única excepción es modificar mediante programación el atributo **ProcessId** durante la creación de un registro de entidad para invalidar la aplicación predeterminada del flujo de proceso de negocio para el nuevo registro, como se explicó en la sección anterior: [Aplicación del flujo de proceso de negocio al crear un registro de entidad](#ApplyBPF).
+La única excepción es modificar mediante programación el atributo **ProcessId** durante la creación de un registro de entidad para invalidar la aplicación predeterminada del flujo de proceso de negocio para el nuevo registro, como se ha explicado en la sección anterior: [Aplicación del flujo de proceso de negocio al crear un registro de entidad](#ApplyBPF).
 
 <a name="BKMK_clientSideScript"></a>   
 ## <a name="client-side-programmability-support-for-business-process-flows"></a>Compatibilidad con la programación del lado cliente para los flujos de proceso de negocio  

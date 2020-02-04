@@ -23,10 +23,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 15cbfdf61a25287714f0244639ec4a3246bd845c
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74355435"
 ---
 # <a name="invoke-custom-actions-from-a-workflow"></a>Invocación de acciones personalizadas desde un flujo de trabajo
