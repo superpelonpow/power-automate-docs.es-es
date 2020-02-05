@@ -19,10 +19,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 46985cc33ac099c75c6e8e976aba19d7a5d6c567
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/29/2020
 ms.locfileid: "74370316"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Uso de expresiones en condiciones para comprobar varios valores
@@ -35,15 +35,15 @@ En las condiciones puede usar cualquier combinación de las siguientes expresion
 
 Expresión|Descripción|Ejemplo
 --------|-----------|-------
-|[and](#use-the-and-expression)|Toma dos argumentos y devuelve true si ambos valores son true.<br><b>Nota</b>: ambos argumentos deben ser valores booleanos.|Esta expresión devuelve false: <br>and(greater(1,10),equals(0,0))
-|[or](#use-the-or-expression)|Toma dos argumentos y devuelve true si cualquiera de los dos argumentos es true. <br><b>Nota</b>: ambos argumentos deben ser valores booleanos.|Esta expresión devuelve true:<br>or(greater(1,10),equals(0,0))
+|[and](#use-the-and-expression)|Toma dos argumentos y devuelve true si ambos valores son true.<br><b>Nota:</b> Ambos argumentos deben ser valores booleanos.|Esta expresión devuelve false: <br>and(greater(1,10),equals(0,0))
+|[or](#use-the-or-expression)|Toma dos argumentos y devuelve true si cualquiera de los dos argumentos es true. <br><b>Nota:</b> Ambos argumentos deben ser valores booleanos.|Esta expresión devuelve true:<br>or(greater(1,10),equals(0,0))
 |equals|Devuelve true si los dos valores son iguales.|Por ejemplo, si el valor de parameter1 es someValue, esta expresión devuelve true:<br>equals(parameters('parameter1'), 'someValue')
-|[less](#use-the-less-expression)|Toma dos argumentos y devuelve true si el primer argumento es menor que el segundo. <br><b>Nota</b>: los tipos admitidos son integer, float y string.|Esta expresión devuelve true:<br>less(10,100)
-|lessOrEquals|Toma dos argumentos y devuelve true si el primer argumento es menor o igual que el segundo. <br><b>Nota</b>: los tipos admitidos son integer, float y string.|Esta expresión devuelve true:<br>lessOrEquals(10,10)
-|[greater](#use-the-greater-expression)|Toma dos argumentos y devuelve true si el primero es mayor que el segundo. <br><b>Nota</b>: los tipos admitidos son integer, float y string.|Esta expresión devuelve false:<br>greater(10,10)
-|greaterOrEquals|Toma dos argumentos y devuelve true si el primer argumento es mayor o igual que el segundo. <br><b>Nota</b>: los tipos admitidos son integer, float y string.|Esta expresión devuelve false:<br>greaterOrEquals(10,100)
+|[less](#use-the-less-expression)|Toma dos argumentos y devuelve true si el primer argumento es menor que el segundo. <br><b>Nota:</b> Los tipos admitidos son integer, float y string.|Esta expresión devuelve true:<br>less(10,100)
+|lessOrEquals|Toma dos argumentos y devuelve true si el primer argumento es menor o igual que el segundo. <br><b>Nota:</b> Los tipos admitidos son integer, float y string.|Esta expresión devuelve true:<br>lessOrEquals(10,10)
+|[greater](#use-the-greater-expression)|Toma dos argumentos y devuelve true si el primero es mayor que el segundo. <br><b>Nota:</b> Los tipos admitidos son integer, float y string.|Esta expresión devuelve false:<br>greater(10,10)
+|greaterOrEquals|Toma dos argumentos y devuelve true si el primer argumento es mayor o igual que el segundo. <br><b>Nota:</b> Los tipos admitidos son integer, float y string.|Esta expresión devuelve false:<br>greaterOrEquals(10,100)
 |[empty](#use-the-empty-expression)|Devuelve true si el objeto, matriz o cadena están vacíos.|Esta expresión devuelve true:<br>empty('')
-|not|Devuelve el opuesto de un valor booleano. |Esta expresión devuelve true:<br>not(contains('200 Success','Fail'))
+|no|Devuelve el opuesto de un valor booleano. |Esta expresión devuelve true:<br>not(contains('200 Success','Fail'))
 |if|Devuelve un valor específico si el resultado de la expresión es true o false.|Esta expresión devuelve "yes":<br>if(equals(1, 1), 'yes', 'no')
 
 ## <a name="prerequisites"></a>Requisitos previos
@@ -93,7 +93,7 @@ Vamos a crear el flujo.
 2. Busque **filas** y seleccione **Excel - 
 Obtener filas**.
 
-    Nota: Seleccione la acción "obtener filas" que corresponda a la hoja de cálculo que vaya a usar. Por ejemplo, si va a utilizar Hojas de cálculo de Google, seleccione **Hojas de cálculo de Google - Obtener filas**.
+    Nota: Seleccione la acción "obtener filas" que corresponda a la hoja de cálculo que esté usando. Por ejemplo, si va a utilizar Hojas de cálculo de Google, seleccione **Hojas de cálculo de Google - Obtener filas**.
 
     ![obtener filas](includes/media/new-step/get-excel-rows.png)
 3. Seleccione el icono de la carpeta en el cuadro **Nombre de archivo**, busque la hoja de cálculo que contiene los datos y selecciónela.
@@ -216,4 +216,4 @@ Esta es la implementación de la expresión **and** que identifica a todas las p
 
 ## <a name="use-functions-in-expressions"></a>Uso de funciones en expresiones
 
-Algunas expresiones obtienen sus valores de acciones en tiempo de ejecución que es posible que aún no existan cuando un flujo empiece a ejecutarse. Para hacer referencia a estos valores o trabajar con ellos en expresiones, puede usar las funciones que proporciona el lenguaje de definición de flujo de trabajo. Más información: [Referencia de funciones para el lenguaje de definición de flujo de trabajo en Power Automate](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
+Algunas expresiones obtienen sus valores de acciones en tiempo de ejecución que es posible que aún no existan cuando un flujo empiece a ejecutarse. Para hacer referencia a estos valores o trabajar con ellos en expresiones, puede usar las funciones que proporciona el lenguaje de definición de flujo de trabajo. Más información: [Referencia de funciones para el lenguaje de definición de flujo de trabajo en Power Automate](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
