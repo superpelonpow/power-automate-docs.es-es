@@ -56,6 +56,24 @@
       href: run-scheduled-tasks.md
     - name: Proceso de una lista de elementos
       href: apply-to-each.md
+- name: Flujos de aprobación
+  items:
+    - name: Aprobaciones únicas
+      href: modern-approvals.md
+    - name: Aprobaciones con datos adjuntos
+      href: approval-attachments.md
+    - name: Aprobaciones secuenciales
+      href: sequential-modern-approvals.md
+    - name: Aprobaciones en paralelo
+      href: parallel-modern-approvals.md
+    - name: Todos los usuarios deben aprobar
+      href: all-assigned-must-approve.md
+    - name: Aprobaciones integradas
+      href: common-data-model-approve.md
+    - name: Solicitudes de aprobación de formato
+      href: approvals-markdown-support.md
+    - name: Opciones de respuesta de aprobación personalizadas
+      href: create-approval-response-options.md
 - name: Flujos de proceso de negocio
   items:
     - name: Introducción a los flujos de proceso de negocio
@@ -170,24 +188,6 @@
           href: daily-weather-sample.md
         - name: 'Ejemplo: generación de clientes potenciales'
           href: lead-collection-sample.md
-    - name: Flujos de aprobación
-      items:
-        - name: Aprobaciones únicas
-          href: modern-approvals.md
-        - name: Aprobaciones con datos adjuntos
-          href: approval-attachments.md
-        - name: Aprobaciones secuenciales
-          href: sequential-modern-approvals.md
-        - name: Aprobaciones en paralelo
-          href: parallel-modern-approvals.md
-        - name: Todos los usuarios deben aprobar
-          href: all-assigned-must-approve.md
-        - name: Aprobaciones integradas
-          href: common-data-model-approve.md
-        - name: Solicitudes de aprobación de formato
-          href: approvals-markdown-support.md
-        - name: Opciones de respuesta de aprobación personalizadas
-          href: create-approval-response-options.md
     - name: Administración de flujos en un teléfono
       href: mobile-manage-flows.md
     - name: Publicación de una plantilla
