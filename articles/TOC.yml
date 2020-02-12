@@ -180,12 +180,20 @@
           href: overview-adaptive-cards.md
         - name: Creación de tarjetas adaptables para Teams
           href: create-adaptive-cards.md
+        - name: 'Ejemplo: comentarios de candidatos'
+          href: candidate-feedback-sample.md
         - name: 'Ejemplo: recurso compartido de imagen'
           href: image-share-sample.md
+        - name: 'Ejemplo: colección de posibles clientes'
+          href: lead-collection-sample.md
+        - name: 'Ejemplo: generador de encuestas'
+          href: poll-generator-sample.md
         - name: 'Ejemplo: actualización de metadatos'
           href: metadata-update-sample.md
         - name: 'Ejemplo: meteorología diaria'
           href: daily-weather-sample.md
+        - name: 'Ejemplo: formulario de acrónimos'
+          href: acronym-sample.md
         - name: 'Ejemplo: generación de clientes potenciales'
           href: lead-collection-sample.md
     - name: Administración de flujos en un teléfono
