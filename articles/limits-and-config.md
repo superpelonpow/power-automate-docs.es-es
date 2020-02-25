@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4361705779ab31b73206835380a648557f581e66
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 9a3bfc0d8db6425e31a86287a5ad78665d0ff28e
+ms.sourcegitcommit: 6b8e936cede73c8be8a63bdf77911fb69aced959
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74354676"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575068"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Límites y configuración de Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
@@ -110,7 +110,7 @@ Estos son los límites de un solo flujo.
 | `description` límite de longitud |256 | |
 
 ## <a name="sharepoint-limits"></a>Límites de SharePoint
-Hay [limitaciones](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/) sobre cómo se puede usar Microsoft SharePoint con Power Automate y Power Apps.
+Hay [limitaciones](https://docs.microsoft.com/connectors/sharepointonline/#limits) sobre cómo se puede usar Microsoft SharePoint con Power Automate y Power Apps.
 
 ## <a name="ip-address-configuration"></a>Configuración de la dirección IP
 La dirección IP desde la que se envían solicitudes de Power Automate depende de la [región](regions-overview.md) donde está ubicado el [entorno](environments-overview-admin.md) que contiene el flujo. Actualmente no se publican FQDN disponibles para escenarios de flujo.
