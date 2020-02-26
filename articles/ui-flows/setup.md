@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e7d5e4219c46703019f995b625c6d672a767018a
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 222ee4a6d7d3116100880ec4a5dc205988fc8ce6
+ms.sourcegitcommit: 6b8e936cede73c8be8a63bdf77911fb69aced959
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74882122"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77574971"
 ---
 # <a name="set-up-ui-flows"></a>Configuración de los flujos de la interfaz de usuario
 
@@ -108,7 +108,7 @@ Una vez que se complete el instalador de flujos de interfaz de usuario, el explo
 Navigate to this link https://chrome.google.com/webstore/detail/microsoft-flow-preview/jcajipieipkmjpfakbdhmjidmhidogoo and install it manually, that will fix any issues. (For Edge Chromium, use the same link and accept when prompted to install from external stores.)
 -->
 
-## <a name="optional-install-selenium-ide-to-automate-web-applications"></a>(Opcional) Instalación del IDE de Selenium para automatizar las aplicaciones web
+## <a name="install-selenium-ide-to-automate-web-applications"></a>Instalación de Selenium IDE para automatizar las aplicaciones web
 
 El IDE de Selenium es una herramienta de código abierto que le permite grabar y reproducir interacciones humanas en sitios web.
 

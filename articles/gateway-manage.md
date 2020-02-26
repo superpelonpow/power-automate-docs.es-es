@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/16/2019
+ms.date: 02/13/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 019d711771c10f360b1f5c7dab61aa432c827311
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: f3600587897b9e64ecd76f85c8b9762e84bc7b94
+ms.sourcegitcommit: dbba53a52e2c5b1c2965f6c608e586748d5baae0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74367119"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567004"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-power-automate"></a>Administración de una puerta de enlace de datos local en Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
@@ -58,8 +58,8 @@ Con una puerta de enlace, puede conectarse a datos locales a través de estas co
   Tiene estos permisos de manera predeterminada para cada puerta de enlace que instale. Además, un administrador de otra puerta de enlace puede conceder estos permisos para esa puerta de enlace.
 * Una licencia que admite puertas de enlace. Para más información, consulte la sección "Conectividad" de la [página de precios](https://flow.microsoft.com/pricing/).
 
-> [!NOTE]
-> Las puertas de enlace y las conexiones locales solo puede crearlas en su [entorno predeterminado](environments-overview-maker.md).
+> [!TIP]
+> Las puertas de enlace y las conexiones locales se pueden crear para [cualquier entorno](environments-overview-maker.md).
 
 ## <a name="install-a-gateway"></a>Instalación de una puerta de enlace
 

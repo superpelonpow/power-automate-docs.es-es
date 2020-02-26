@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e617e6928d5295a9485c55e1efa57a945abf870f
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: ab6b6d0cf638b489db47e1f2d075afdf18a2ee49
+ms.sourcegitcommit: 6b8e936cede73c8be8a63bdf77911fb69aced959
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74374318"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575062"
 ---
 # <a name="release-notes"></a>Notas de la versión
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
@@ -51,14 +51,9 @@ ms.locfileid: "74374318"
 
 ## <a name="whats-new"></a>Novedades
 
-> [!IMPORTANT]
->
-> **Anuncio de las notas de la versión**
->
-> ¿Se pregunta sobre las funcionalidades próximas y recientemente lanzadas de Power Automate?
->[Vea las notas de la versión de octubre de 2018](https://docs.microsoft.com/business-applications-release-notes/October18/microsoft-flow/). Hemos tomado buena nota de todos los detalles que puede usar para la planeación. Para más información, revise [cada versión semanal](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow) con las características y mejoras que contiene.
->
-> Las notas de la versión anteriores a la versión de octubre de 2018 permanecerán aquí por si tuviera que consultarlas en otro momento, pero las nuevas versiones solo se incluirán en las ubicaciones anteriores y no en esta página.
+Para información sobre las nuevas características publicadas para Power Automate, visite:
+- [Plan del primer lanzamiento de versiones de 2020](https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features) para conocer las nuevas características que se van a publicar en los próximos meses.
+- [Notas de la versión semanales](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow) para conocer nuevas características, correcciones y mejoras publicadas en las últimas semanas.
 
 ### <a name="release-2018-09-24"></a>Versión del 24/09/2018
 
@@ -98,7 +93,7 @@ El programa de versión preliminar de Power Automate es la manera de acceder con
 
 - **Compilación y ejecución de flujos desde Excel**: con el botón **Flujo** (al que se obtiene acceso desde la pestaña **Datos** de la cinta), puede crear y desencadenar automatizaciones desde Power Automate en sus datos de tabla en Excel. Automatice el procesamiento de datos o el copiado o la importación de datos.
 - **Creación de un flujo de proceso de negocio**: un flujo de proceso de negocio es un nuevo tipo de flujo con estado y de interacción humana basado en Common Data Service. Utilice estos nuevos flujos para definir un conjunto de fases y pasos que sigan los usuarios. Pueden avanzar y retroceder según sea necesario.
-- **Creación de un flujo para Microsoft To-Do en Outlook Web App **: si se \@menciona a alguien en Outlook Web App, verá un acceso directo para crear un flujo. Este flujo crea tareas automáticamente para la \@persona mencionada en Microsoft To-Do, basadas en el contenido del correo electrónico.
+- **Creación de un flujo para Microsoft To-Do en Outlook Web App** : si se \@menciona a alguien en Outlook Web App, verá un acceso directo para crear un flujo. Este flujo crea tareas automáticamente para la \@persona mencionada en Microsoft To-Do, basadas en el contenido del correo electrónico.
 - **Compatibilidad con vistas de SharePoint**: ahora, el conector SharePoint admite la selección de una vista de SharePoint específica en desencadenadores y acciones. Esto filtra las columnas a solo los campos que se encuentran en la vista seleccionada.
 - **Cuatro nuevos conectores**: Azure IoT Central agregado (una solución de software como servicio (SaaS) de IoT de alta escalabilidad), Survey 123, LMS365 y ProjectWise Design Integration.
 
@@ -146,7 +141,7 @@ El programa de versión preliminar de Power Automate es la manera de acceder con
 - **Devolver datos a Power Apps a partir de un flujo**: cree flujos a los que se pueda llamar desde una aplicación compilada con Power Apps y que permitan devolver los datos a la aplicación. Use el diseñador de flujos visual, que permite arrastrar y colocar, para crear la lógica que necesite para sus aplicaciones. 
 - **Agregar varios registros a entradas de matriz**: se ha agregado un creador de listas en Power Automate que se puede usar para agregar varios datos adjuntos a un correo electrónico, por ejemplo.
 - **Probar flujos con datos ejecutados anteriormente**: se ha agregado un nuevo botón Probar flujo en el diseñador. Con él podrá probar el flujo con datos desencadenadores a partir de ejecuciones de flujos anteriores.
-- **Nuevos campos workflow()**: ahora puede acceder al nombre del entorno y al nombre para mostrar del flujo con la expresión workflow().
+- **Nuevos campos workflow()** : ahora puede acceder al nombre del entorno y al nombre para mostrar del flujo con la expresión workflow().
 
 [Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/return-data-to-powerapps/) acerca de esta versión.
 
@@ -371,7 +366,7 @@ Ahora puede ver el estado de todas las solicitudes de aprobación pendientes que
 ### <a name="release-2017-05-23"></a>Versión 2017-05-23
 * **Conector de Microsoft Teams** - [Microsoft Teams](https://flow.microsoft.com/blog/introducing-the-microsoft-teams-connector-for-flow/) es un área de trabajo de Office 365 basado en chat que reúne a personas, conversaciones y contenido, junto con las herramientas que necesitan los equipos, para que puedan colaborar fácilmente para lograr objetivos superiores.
 * **Widgets en iOS y Android**: los widgets de Power Automate son accesos directos de botón que proporcionan una manera más rápida y sencilla de desencadenar los botones desde la pantalla principal.
-* **Crear pasos de "control de errores"**: defina los pasos que se van a ejecutar después de que se produzca un error en una acción. Por ejemplo, obtener inmediatamente una notificación si un flujo no crea un registro en Dynamics 365.
+* **Crear pasos de "control de errores"** : defina los pasos que se van a ejecutar después de que se produzca un error en una acción. Por ejemplo, obtener inmediatamente una notificación si un flujo no crea un registro en Dynamics 365.
 * **Variables enteras y flotantes**: inicialice los contadores e increméntelos o redúzcalos en una ejecución de flujo para contar el número de veces que se ejecuta un conjunto de lógica determinado.
 * **Página de detalles de flujo**: al seleccionar un flujo en la lista **Mis flujos**, verá una página con detalles de dicho flujo, como quién tiene acceso y el historial de ejecución.
 * **Cuotas de ejecución de flujo para administradores**: ahora, los administradores pueden supervisar el uso de las ejecuciones de flujos en una organización con respecto a la cuota habitual de ejecuciones de una empresa y obtener un desglose de la cuota para saber qué licencias contribuyen a ella.
@@ -410,7 +405,7 @@ Ahora puede ver el estado de todas las solicitudes de aprobación pendientes que
 * **Experiencias modernas de aprobación**: cree flujos de trabajo donde los aprobadores pueden aprobar forma segura desde la misma aplicación móvil de Power Automate o en el centro de aprobaciones unificadas del sitio web de Power Automate.
 * **Disponibilidad general de flujos de equipo**: varias personas pueden poseer y administrar un flujo junto con flujos de equipo, que ahora están disponibles con carácter general.
 * **Creación de conectores para Power Automate**: cualquier persona puede enviar su propio conector de Power Automate gratis para que lo use todo el mundo.
-* **Un diseñador "a medida"**: en algunas plantillas, la nueva versión del diseñador presenta solo aquellos campos que son necesarios para crear un flujo, lo que simplifica la experiencia.
+* **Un diseñador "a medida"** : en algunas plantillas, la nueva versión del diseñador presenta solo aquellos campos que son necesarios para crear un flujo, lo que simplifica la experiencia.
 
 [Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/q1-2017-update/) acerca de esta versión.
 
