@@ -88,7 +88,7 @@
       href: custom-controls-business-process-flows.md
     - name: Procedimientos recomendados para los atributos de flujo de proceso de negocio
       href: best-practices-entity-attributes.md
-- name: Flujos de la interfaz de usuario (versión preliminar)
+- name: Flujos de interfaz de usuario (versión preliminar)
   items:
     - name: Introducción a los flujos de la interfaz de usuario
       href: ./ui-flows/overview.md
@@ -100,6 +100,9 @@
       href: ./ui-flows/edit-desktop.md
     - name: Uso de entradas y salidas en los flujos de la interfaz de usuario de escritorio
       href: ./ui-flows/inputs-outputs-desktop.md
+      items:
+        - name: Uso de editores de métodos de entrada (IME) en flujos de interfaz de usuario
+          href: ./ui-flows/use-ime.md
     - name: Creación y prueba de los flujos de la interfaz de usuario web
       href: ./ui-flows/create-web.md
     - name: Edición de los flujos de la interfaz de usuario web
