@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 02/28/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: afe9277ced28cdb964ed32550dd0402eaa0d1df4
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: c27637f56defb1acff07302954424953ec48b506
+ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "75943499"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78244315"
 ---
 # <a name="create-and-test-desktop-ui-flows"></a>Creación y prueba de los flujos de la interfaz de usuario de escritorio
 
@@ -60,6 +60,23 @@ En los pasos siguientes, se muestra cómo automatizar la aplicación Calculadora
    ![Selección de escritorio](../media/create-windows-ui-flow/give-a-name.png "Selección de escritorio") 
 
 1. Seleccione **Siguiente** en la parte inferior para omitir la pantalla **Configuración de entradas**, porque no usaremos entradas en este tutorial.
+
+1.  Seleccione **Descargar paquete**.
+1.  Abra el archivo **Setup.Microsoft.Flow.UIflow.exe**. Es probable que este archivo esté en la carpeta **Descargas** después de que lo descargó en el paso anterior.
+1.  Siga las instrucciones del instalador de configuración de flujos de interfaz de usuario (versión preliminar) para completar la instalación.
+
+    Una vez que el instalador de flujos de interfaz de usuario complete el proceso, el explorador le pedirá activar la extensión.
+
+1. En Microsoft Edge (Chromium), seleccione cada icono de advertencia en la esquina superior derecha del explorador y, luego, seleccione **Enable extension** (Habilitar extensión).
+1. En Google Chrome, seleccione **Enable extension** (Habilitar extensión) cuando se le solicite.
+
+   > [!TIP]
+   > Si no ve la solicitud en el explorador, revise lo siguiente:
+   > - Debe usar el explorador Microsoft Edge (Chromium) o Google Chrome.
+   > - Es posible que tenga que habilitar manualmente la extensión. Para Microsoft Edge (Chromium), vaya a **edge://extensions** o, para Google Chrome, vaya a **chrome://extensions**.
+   > - Si la extensión de los flujos de interfaz de usuario de Power Automate no aparece, puede volver a instalarla con el [instalador de flujos de interfaz de usuario](https://go.microsoft.com/fwlink/?linkid=2102613).
+
+   Continúe después de haber instalado la extensión.
 
 1. Seleccione la tarjeta **Record app** (Grabar aplicación) para expandirla.
 
@@ -128,14 +145,14 @@ En los pasos siguientes, se muestra cómo automatizar la aplicación Calculadora
 
 - Es posible que los clics con el botón derecho no se reproduzcan correctamente. En tal caso, mientras grabe, haga clic con el botón izquierdo para centrar los flujos de interfaz de usuario en el elemento de interfaz de usuario de destino y, luego, clic con el botón derecho.
 
-- Si los flujos de interfaz de usuario dejan de grabar o de reproducir aplicaciones de Windows después de instalar una versión nueva, desinstale la versión anterior y, luego, instale la versión nueva.
+- Si los flujos de interfaz de usuario ya no graban ni reproducen las aplicaciones Windows después de instalar una versión nueva, confirme que disponga de la [versión más reciente](https://go.microsoft.com/fwlink/?linkid=2102613&clcid=0x409).
 
 
 ### <a name="unsupported-application-types"></a>Tipos de aplicaciones no compatibles
 
--   Interacciones en Windows (Explorador de archivos, menú de inicio, barra de tareas, etc.).
+- Interacciones en Windows (Explorador de archivos, menú de inicio, barra de tareas, etc.).
 
--   Exploradores web (Chrome, IE, Edge, Edge Chromium, Firefox, Mozilla, etc.).
+- Exploradores web (Chrome, IE, Edge, Edge Chromium, Firefox, Mozilla, etc.).
     En su lugar, consulte [Creación de un flujo de interfaz de usuario web](edit-web.md) para automatizar sitios web.
 
 -   Aplicaciones Java

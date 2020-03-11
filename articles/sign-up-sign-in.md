@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: anjlic
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 5c70db242974e549d07161fa47e76ab7eaa7a924
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 3d9686ed208183aaf73a6a274b809d7a3cce4bf0
+ms.sourcegitcommit: 517c1418aca5745a93d8765cfde661067cedfdf6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74372708"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78267115"
 ---
 # <a name="sign-up-and-sign-in-for-power-automate"></a>Registro e inicio de sesión de Power Automate
 
@@ -38,9 +38,9 @@ Empezar a usar Power Automate, como individuo, es sencillo. Para poder crear un 
 ## <a name="sign-up-free"></a>Regístrese gratis
 Si no ha usado otros productos de Microsoft en línea, deberá registrarse.
 
-1. En [flow.microsoft.com](https://flow.microsoft.com), haga clic o pulse **Regístrese gratis** en la esquina superior derecha.
+1. En [flow.microsoft.com](https://flow.microsoft.com), seleccione **Probar gratis**, en la esquina superior derecha.
 2. Especifique su dirección de correo electrónico.
-3. Haga clic o pulse la flecha derecha.
+3. Seleccione la flecha derecha.
 
     ![Vínculo de registro](./media/sign-up-sign-in/signup.png)
 

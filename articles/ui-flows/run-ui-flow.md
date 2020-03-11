@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: d0d5380e1ade6d1d11d557f38e7fc5db6616d1d9
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 3feab8291a3dc14adab398f7619fd5b6141674ab
+ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74370960"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78244228"
 ---
 # <a name="run-ui-flows"></a>Ejecución de los flujos de la interfaz de usuario
 
@@ -72,7 +72,7 @@ En este ejemplo, usaremos un flujo automatizado para desencadenar un flujo de in
 
    Tendrá que hacerlo una vez por dispositivo:
 
-    - **Nombre de la conexión**: elija un nombre para la conexión del dispositivo a Flow. Puede ser distinta del nombre de la puerta de enlace.
+    - **Nombre de la conexión**: elija un nombre para la conexión del dispositivo a Flow. Puede ser diferente del nombre de la puerta de enlace.
     - **Nombre de usuario**: proporcione la cuenta profesional o educativa del dispositivo.
     - **Tipo de autenticación**: Seleccione Windows.
     - **Contraseña**: la contraseña de la cuenta profesional o educativa.
@@ -111,10 +111,6 @@ Cuando define entradas y salidas dentro de un flujo de interfaz de usuario, pued
 
 1. También puede usar las salidas del flujo de la interfaz de usuario como entradas para las acciones que aparecen más adelante en el flujo. Para hacerlo, seleccione el campo de entrada y, a continuación, seleccione una entrada del selector de tokens.
 
-## <a name="limitations-and-known-issues"></a>Limitaciones y problemas conocidos
-
-- No se admiten clústeres de puerta de enlace.
-- Como no se admiten los teclados que no son de EE. UU. (QWERTY) en esta versión, la reproducción de un paso de entrada donde la secuencia de teclas se grabó de un teclado no de los EE. UU. (QWERTY) generaría pulsaciones de tecla en teclado de EE. UU. (QWERTY).
 
 ## <a name="learn-more"></a>Más información
 

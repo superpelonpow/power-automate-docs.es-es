@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9c9da27098ca9114c0919d0fb6e70495f442a3c6
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 0be3b3656cf9683b43d4ba22bc23b537ccc4e597
+ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74371719"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78244293"
 ---
 # <a name="edit-desktop-ui-flows"></a>Edición de los flujos de la interfaz de usuario de escritorio
 
@@ -161,6 +161,40 @@ Puede capturar **elementXPath** con la [grabadora de la interfaz de usuario WinA
 Quite el primer elemento (todo antes de /Windows) antes de usar el resultado en **elementXPath** del selector.
 
 Pruebe el flujo de interfaz de usuario para confirmar que el selector funciona correctamente.
+
+
+## <a name="enable-coordinate-based-playback"></a>Habilitación de la reproducción basada en coordenadas
+
+La reproducción basada en coordenadas usa el desplazamiento de coordenadas de pantalla relativo al modo de reserva para ayudar a los flujos de la interfaz de usuario a encontrar los objetos de destino que el marco de automatización de la interfaz de usuario de Windows predeterminado no puede encontrar durante la reproducción. 
+
+Estos son algunos de los motivos por los que el marco predeterminado de la automatización de la interfaz de usuario de Windows podría no encontrar objetos de destino durante la reproducción:
+
+- Es posible que la aplicación heredada que está automatizando no use tecnologías de programación que admitan el marco de automatización de la interfaz de usuario de Windows.
+- Es posible que la aplicación o sus controles no tengan un elemento XPath, nombre o identificador de automatización de la interfaz de usuario únicos. 
+- La aplicación tiene controles dinámicos cuyos nombres o identificadores pueden cambiar. 
+- La aplicación tiene controles sin nombre, identificador, identificador único, etc.
+
+>[!TIP]
+>Para mejorar la precisión de la reproducción basada en coordenadas, use la misma escala y resolución, además de maximizar la aplicación de destino durante la grabación.
+
+Siga estos pasos después de haber grabado un script de flujo de interfaz de usuario:
+
+1. Expanda el paso que inicia o adjunta la aplicación.
+   
+   Suele ser el primer paso del script de grabación.
+1. Seleccione **Mostrar opciones avanzadas**.
+1. Busque las propiedades de **Usar reproducción de coordenadas**.
+1. Seleccione **Sí** en la lista para habilitar la reproducción basada en coordenadas.
+
+>[!TIP]
+> Puede habilitar o deshabilitar **Usar reproducción de coordenadas** para que cada aplicación aplique la configuración a todos los pasos realizados en esa aplicación.  
+
+
+>[!WARNING]
+>Con la reproducción basada en coordenadas, la automatización puede seleccionar controles que no forman parte de la aplicación de destino debido a una serie de motivos, por ejemplo, que la interfaz de usuario de las aplicaciones de destino cambie drásticamente.
+
+
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 

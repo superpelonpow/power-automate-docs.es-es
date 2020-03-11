@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 02/28/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 06a27a495a008542208cd56230ad8c21b5e5b938
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 90951e4244ef7caa75bedc522d1bb032e070dbef
+ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74372386"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78244255"
 ---
 # <a name="create-and-test-your-web-ui-flows"></a>Creación y prueba de los flujos de la interfaz de usuario web
 
@@ -96,9 +96,7 @@ Ahora que creó un flujo de interfaz de usuario web, úselo en los otros flujos.
 
 **Los flujos de interfaz de usuario ya no graban ni reproducen las aplicaciones Windows después de instalar una versión nueva**.
 
-Debe desinstalar la versión anterior antes de instalar una nueva.
-
-Para eso, abra el menú Inicio, vaya a **Configuración** > **Aplicaciones**, busque **Flujos de interfaz de usuario** en la lista de aplicaciones > **Flujos de interfaz de usuario (versión preliminar)** y, luego, seleccione "Desinstalar". El asistente lo guiará durante todo el proceso.
+Confirme que está usando la [versión más reciente](https://go.microsoft.com/fwlink/?linkid=2102613&clcid=0x409).
 
 **Perfil de usuario temporal para la reproducción**
 
@@ -131,3 +129,4 @@ Para solucionarlo, el usuario debe editar manualmente el script para insertar lo
 
 - Si quiere hacer más cosas con los flujos de interfaz de usuario, también puede probar los flujos de interfaz de usuario con parámetros de [entrada y salida](inputs-outputs-web.md).
 
+ 
