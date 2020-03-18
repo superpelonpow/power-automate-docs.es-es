@@ -16,15 +16,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 577bad2fa7e0db66c95fae5668c4a576e3c3a2d7
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 2fedda5160291362d1ff4fcbcf91cec9f4e78713
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74365187"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195598"
 ---
 # <a name="tutorial-enhance-business-process-flows-with-branching"></a>Tutorial: Mejora de los flujos de proceso de negocio con ramas
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Los flujos de proceso de negocio le guían por las distintas fases de ventas, marketing o procesos de servicio hacia su finalización. En los casos más sencillos, un flujo de proceso de negocio lineal es una buena opción. Pero en escenarios más complejos, un flujo de proceso de negocio se puede mejorar con la creación de ramas. Si tiene los permisos de creación en los flujos de proceso de negocio, podrá crear el flujo con varias ramas mediante la lógica `If-Else`. La condición de ramas puede estar formada por varias expresiones lógicas en las que se usa una combinación de operadores `AND` u `OR`. La selección de la rama se realiza de forma automática, en tiempo real, en función de las reglas definidas durante la definición del proceso. Por ejemplo, para vender automóviles, puede configurar un solo flujo de proceso de negocio, que después de una fase de calificación común se divida en dos ramas independientes en función de una regla (si el cliente prefiere un automóvil nuevo o uno de segunda mano, si su presupuesto es mayor o inferior de 20 000 EUR, y así sucesivamente. ), una rama para la venta de automóviles nuevos y otra para los de segunda mano. Para obtener más información sobre los flujos de proceso de negocio, vea [Información general sobre flujos de proceso de negocio](business-process-flows-overview.md).  
   

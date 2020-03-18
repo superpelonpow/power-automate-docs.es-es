@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 2808fb064ae0910d184d1f785a528c6f44e601af
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 06781496eecd33801cdd08768c698e2203b1f846
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74360288"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194402"
 ---
 # <a name="create-an-automated-flow-by-using-common-data-service"></a>Creación de un flujo automatizado mediante Common Data Service
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Con el conector Common Data Service, puede crear flujos que se inicien mediante la creación y actualización de eventos dentro de la base de datos de Common Data Service. Además, puede realizar acciones de creación, actualización, recuperación y eliminación en registros dentro de la base de datos de Common Data Service.
 

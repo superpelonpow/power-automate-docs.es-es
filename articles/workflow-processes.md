@@ -14,15 +14,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 2bb689f9dff55e8313a22d89efd8fa76eca4fb50
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 53bc2b24da55c8700412b527c7f27934e5515bc4
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74369718"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195759"
 ---
 # <a name="classic-common-data-service-workflows"></a>Flujos de trabajo clásicos de Common Data Service 
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Los flujos de trabajo automatizan los procesos de negocio sin una interfaz de usuario. Normalmente, los usuarios utilizan los procesos de flujo de trabajo para iniciar la automatización que no requiere ninguna interacción del usuario.
 

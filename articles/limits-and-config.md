@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9a3bfc0d8db6425e31a86287a5ad78665d0ff28e
-ms.sourcegitcommit: 6b8e936cede73c8be8a63bdf77911fb69aced959
+ms.openlocfilehash: 8f5ec1e45c2dccf3553712b5662ada5262ffe4d1
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77575068"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79224340"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Límites y configuración de Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Este tema contiene información sobre los límites actuales y detalles de la configuración de flujos.
 
 ## <a name="request-limits"></a>Límites de solicitudes

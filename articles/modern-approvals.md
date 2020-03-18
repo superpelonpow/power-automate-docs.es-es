@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c174ad7fe18539a7dc1d44acf315d569f4b35a39
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 4892ac2806009a1ed33b8bfb019b551aec6fce70
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74376526"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79224317"
 ---
 # <a name="create-and-test-an-approval-workflow-with-power-automate"></a>Creación y prueba de un flujo de trabajo de aprobación con Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Con Power Automate, puede administrar la aprobación de documentos o procesos en varios servicios, entre los que se incluyen SharePoint, Dynamics 365, Salesforce, OneDrive para la Empresa, Zendesk o WordPress.
 

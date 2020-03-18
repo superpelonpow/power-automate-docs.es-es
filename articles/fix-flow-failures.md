@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 89d81576fafe0089abd9f0d981471a578b425691
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: faa0b50a9a525d5abaa818d05be8a97e6ad6663b
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74358172"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79192792"
 ---
 # <a name="troubleshooting-a-flow"></a>Solución de problemas en un flujo
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 ## <a name="repair-tips-in-email"></a>Sugerencias de reparación en el correo electrónico
 

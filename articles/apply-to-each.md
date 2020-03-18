@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 3f4ddd361eaad062a7287c1d0b33e00fc320e69e
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 9eb1707da3f0aa365750cbed4e69715ce818aaff
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74357919"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193781"
 ---
 # <a name="use-the-apply-to-each-action-in-power-automate-to-process-a-list-of-items-periodically"></a>Uso de la acción Aplicar a cada uno de Power Automate para procesar periódicamente una lista de elementos
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Algunos desencadenadores pueden iniciar inmediatamente un flujo basado en un evento, como cuando llega un nuevo correo electrónico a la Bandeja de entrada. Estos desencadenadores son excelentes, pero a veces se quiere ejecutar un flujo que consulte un origen de datos según una programación predefinida mediante la realización de determinadas acciones en función de las propiedades de los elementos del origen de datos. Para ello, puede iniciar el flujo según una programación (por ejemplo, una vez al día) y usar una acción de bucle como **Aplicar a cada** para procesar una lista de elementos. Por ejemplo, podría utilizar **Aplicar a cada uno** para actualizar registros de una base de datos o una lista de elementos de Microsoft SharePoint.
 
 En este tutorial, vamos a crear un flujo que se ejecuta cada 15 minutos y que hace lo siguiente:

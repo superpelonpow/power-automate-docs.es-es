@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f2e46711637497120872848f239d59651ab875d5
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: b4e087855890d7ca94a8288793494ce1e81826b2
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74358103"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193298"
 ---
 # <a name="manage-connections-in-power-automate"></a>Administración de conexiones en Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Si crea una conexión en Power Automate, podrá acceder fácilmente a los datos durante la compilación de un flujo. Power Automate incluye conexiones que se utilizan habitualmente, por ejemplo, SharePoint, SQL Server, Office 365, OneDrive para la Empresa, Salesforce, Excel, Dropbox, Twitter, etc. Las conexiones se comparten con Power Apps, por lo que cuando se crea una conexión en un producto, se muestra en el otro.
 
 Por ejemplo, puede usar una conexión para realizar estas tareas:

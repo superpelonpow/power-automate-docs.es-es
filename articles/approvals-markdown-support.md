@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 34689f9f153f8c1b68be3631eac6664561e987ce
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 4633df9687662c49757dd9cbb4d1d88892dfbe51
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74357459"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193643"
 ---
 # <a name="use-markdown-in-power-automate-approval-requests"></a>Uso de Markdown en las solicitudes de aprobación de Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 En este artículo se muestra cómo usar la sintaxis de [Markdown](https://en.wikipedia.org/wiki/Markdown) para agregar formato enriquecido a las solicitudes de aprobación.
 

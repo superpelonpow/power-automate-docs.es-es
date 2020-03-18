@@ -15,15 +15,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 140afe0c93b85363b8dab9658838d985ab9e786c
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 027038047dfa978a647ffcb129a16885915d4ce7
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74361484"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194770"
 ---
 # <a name="create-a-custom-action"></a>Creación de una acción personalizada
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Use acciones personalizadas cuando quiera automatizar una serie de comandos en el sistema. Las acciones expanden el vocabulario disponible para los desarrolladores para expresar los procesos de negocio. Una acción usa los verbos principales que proporciona el sistema, como Create (Crear), Update (Actualizar), Delete (Eliminar) y Assign (Asignar), para crear verbos más expresivos como Approve (Aprobar), Escalate (Escalar), Route (Enrutar) o Schedule (Programar). Si cambia la definición de un proceso de negocio, alguien que no sea un desarrollador puede modificar la acción personalizada para que no sea necesario cambiar el código.  
   

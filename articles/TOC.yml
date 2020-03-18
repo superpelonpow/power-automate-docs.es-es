@@ -92,6 +92,8 @@
   items:
     - name: Introducción a los flujos de la interfaz de usuario
       href: ./ui-flows/overview.md
+    - name: Actualización de flujos de interfaz de usuario a partir de versiones anteriores
+      href: ./ui-flows/upgrade.md
     - name: Configuración de los flujos de la interfaz de usuario
       href: ./ui-flows/setup.md
     - name: Creación y prueba de los flujos de la interfaz de usuario de escritorio
@@ -109,7 +111,7 @@
       href: ./ui-flows/edit-web.md
     - name: Uso de entradas y salidas en los flujos de la interfaz de usuario web
       href: ./ui-flows/inputs-outputs-web.md
-    - name: Ejecución de los flujos de la interfaz de usuario
+    - name: Ejecución de flujos de interfaz de usuario atendidos y desatendidos
       href: ./ui-flows/run-ui-flow.md
     - name: Administración de los flujos de la interfaz de usuario
       href: ./ui-flows/manage.md
