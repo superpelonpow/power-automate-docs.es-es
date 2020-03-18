@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: aa3a66f71860f2bee2e3f45441bbcd0cd1646914
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: df82a2aa48a8e85c950757ef4f72a6f7ee88e071
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74367786"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79192056"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-power-automate"></a>Respuesta a solicitudes de exportación del interesado de acuerdo con el RGPD para Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Como parte de nuestro compromiso de acompañarle en su viaje de adaptación al Reglamento general de protección de datos (RGPD), hemos elaborado una documentación que le ayudará a prepararse. En esta documentación no solo se describe lo que estamos haciendo para prepararnos para el RGPD, sino que también se comparten ejemplos de pasos que se pueden adoptar actualmente para el cumplimiento de este reglamento al usar Power Automate.
 
@@ -68,7 +68,7 @@ Un usuario final o un administrador al que se haya concedido acceso al flujo pue
 
     ![Exportación de flujo](./media/gdpr-dsr-export/export-flow.png)
 
-1. Seleccione **Paquete (.zip)**.
+1. Seleccione **Paquete (.zip)** .
 
 El flujo estará ahora disponible como un paquete comprimido. Para obtener más información, consulte la entrada de blog sobre [cómo exportar e importar un flujo](https://flow.microsoft.com/blog/import-export-bap-packages/).
 

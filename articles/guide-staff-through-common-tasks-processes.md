@@ -22,15 +22,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c5cc72f79b411f8ba50120308bcaf6dd03b302e6
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: af51cc703dbb42296493237bdd25387c6c15720c
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74368361"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194747"
 ---
 # <a name="create-custom-business-logic-through-processes"></a>Creación de lógica de negocios personalizada mediante procesos
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 La definición y aplicación de procesos de negocio coherentes es uno de los principales motivos por el que los usuarios utilizan aplicaciones basadas en modelos. Los procesos coherentes ayudan a asegurarse de que los usuarios del sistema se puedan centrar en su trabajo y no en recordar realizar un conjunto de pasos manuales. Los procesos pueden ser simples o complejos, y cambian con el tiempo.  
   

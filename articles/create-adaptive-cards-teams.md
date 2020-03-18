@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
-ms.openlocfilehash: 3813b32ea50c9f91ff3ac3b620796983926d365e
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 3ba5f24bf24f57242441fab2770bce881bc78b69
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74362956"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79192126"
 ---
 <!--from editor: I notice that adaptive cards is capitalized on the page opened by the link in the first paragraph. But the screenshots in this file don't show it being capitalized. So I'm unsure if it should change.-->
 
 
 # <a name="use-adaptive-cards-in-microsoft-teams"></a>Uso de tarjetas adaptables en Microsoft Teams
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Puede crear un flujo que publique [tarjetas adaptables](https://adaptivecards.io) en un canal de Microsoft Teams. Con las tarjetas adaptables, puede usar formato enriquecido para que sus publicaciones sean más claras, interactivas y atractivas. Las tarjetas adaptables pueden contener componentes como imágenes, gráficos, texto con formato enriquecido, etc.
 

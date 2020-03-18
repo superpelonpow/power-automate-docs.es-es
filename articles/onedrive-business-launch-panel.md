@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: d7af2e8171a460159905edc4fed0ad1a3427343a
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 7458b3cb08ca1ce3e29a9d0d29e1bec91d46f7ea
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74374985"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193206"
 ---
 # <a name="create-flows-from-the-onedrive-for-business-launch-panel"></a>Creación de flujos desde el panel de inicio de OneDrive para la Empresa
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 De manera similar al [Panel de inicio de Power Automate en SharePoint](https://flow.microsoft.com/blog/introducing-flow-launch-panel-in-sharepoint-lists-and-libraries/), puede ejecutar flujos en archivos específicos en OneDrive para la Empresa. 
 

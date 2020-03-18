@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b57e9dee27a2d22159a9cd805c65034a5e5bb578
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: d2a7cbf1f3bb582853583a790e2bd26f319655d3
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74363899"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195736"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Introducción a los tokens de desencadenadores de botones
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 ## <a name="what-are-button-trigger-tokens"></a>¿Qué son los tokens de desencadenadores de botones?
 Los tokens de desencadenadores de botones son puntos de datos conocidos y disponibles para el dispositivo en el que un [flujo de botones](introduction-to-button-flows.md) se está ejecutando. Estos tokens cambian en función de factores como la hora actual o la ubicación geográfica del dispositivo en un momento dado.  
 

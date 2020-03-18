@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 2be12487e8f5a023299a8775ec568915fd3f8cc0
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 4aac1ace0e30d5e36d59f0d2bcbb3cb692f7256c
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74374640"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195575"
 ---
 # <a name="submit-a-template-to-the-power-automate-gallery"></a>Envío de una plantilla a la galería de Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Envíe una plantilla de flujo a la galería de plantillas para Power Automate. Las plantillas ayudan a los usuarios no solo a crear flujos con más facilidad, sino también a imaginar escenarios adicionales que podrían beneficiarse de la creación de un flujo.
 

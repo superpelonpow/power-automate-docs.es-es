@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 223ca24325ee9aed2476d1da6ad9e986c09306d7
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 9515fee127c1130803f075c6b6a08802a7c1eaea
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74375606"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79192470"
 ---
 # <a name="create-parallel-approval-workflows-with-power-automate"></a>Creación de flujos de trabajo de aprobaciones en paralelo con Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 En un flujo de trabajo de aprobaciones en paralelo, son necesarias varias personas para aprobar distintos elementos, como facturas, pedidos de compra o solicitudes de vacaciones, entre otros. La aprobación de cada persona es independiente de todos los demás aprobadores.
 
@@ -75,7 +75,7 @@ Tome nota del nombre y la dirección URL de la lista de SharePoint Online. Usamo
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
 > [!IMPORTANT]
-> Esta acción envía la solicitud de vacaciones a la dirección de correo electrónico del cuadro **Asignado a**, por tanto inserte el token **Correo electrónico** en la lista **Obtener el administrador (v2)**.
+> Esta acción envía la solicitud de vacaciones a la dirección de correo electrónico del cuadro **Asignado a**, por tanto inserte el token **Correo electrónico** en la lista **Obtener el administrador (v2)** .
 > 
 > 
 

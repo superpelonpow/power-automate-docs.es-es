@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8f1a39206365804cb371fe530ee52f5e0b27c92d
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 38f81184ceacb04bd1a1fae54f79f1c674c9ba49
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74364980"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194264"
 ---
 # <a name="edit-a-solution-aware-flow"></a>Edición de un flujo compatible con la solución
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Siga estos pasos para editar un flujo compatible con la solución.
 

@@ -21,15 +21,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ce726a2f4bfdbd7c57a60e5dcc25eb5cee504bce
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 8f4a1fcf0feb893f3eca8ac12b6b7f725aceed10
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "75951498"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194241"
 ---
 # <a name="business-process-flows-overview"></a>Introducción a los flujos de proceso de negocio
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Puede ayudar a garantizar que los usuarios escriban los datos de forma coherente y sigan los mismos pasos cada vez que trabajan con un cliente mediante la creación de un flujo de proceso de negocio. Por ejemplo, es posible que quiera crear un flujo de proceso de negocio para que todos los usuarios controlen las solicitudes de servicio de cliente del mismo modo, o bien para requerir que el personal obtenga la aprobación de una factura antes de enviar un pedido. Los flujos de proceso de negocio usan la misma tecnología subyacente que otros procesos, pero las funcionalidades que proporcionan son muy diferentes a las de otras características que usan los procesos. Para obtener información sobre cómo crear o modificar un flujo de proceso de negocio, vea [Creación de un flujo de proceso de negocio](create-business-process-flow.md).  
   

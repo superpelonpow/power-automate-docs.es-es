@@ -18,15 +18,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0380509b2677e2229ecd2a98a5f3b8dde4f9732c
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 5aa5d43617a0b60f02a0e8b7f58a597b2f0de5f3
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74361438"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194287"
 ---
 # <a name="configure-workflow-stages-and-steps"></a>Configuración de fases y pasos de flujo de trabajo
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Al diseñar flujos de trabajo tiene la opción de que contengan la lógica que quiere realizar en fases y pasos.  
   

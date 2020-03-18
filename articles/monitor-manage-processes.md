@@ -21,15 +21,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: dc0fbe16593396f4d611b98825cf00ddc56efceb
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: e4042b71e6913f1008f506697fa39291b3cbf59a
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74376158"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79224294"
 ---
 # <a name="monitor-and-manage-workflow-processes"></a>Supervisión y administración de procesos de flujo de trabajo
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Para supervisar y administrar los procesos, debe localizar el proceso, evaluar el estado y realizar las acciones necesarias para solucionar los problemas.  
   

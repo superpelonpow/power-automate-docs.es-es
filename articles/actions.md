@@ -18,15 +18,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e3b5d53e72cff93f853bafd89f8a51200a7e735f
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.openlocfilehash: c165213949d72fa9e7aacbc28d076969677a8802
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74354607"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79192930"
 ---
 # <a name="use-actions"></a>Uso de las acciones
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Las acciones abren una gama de posibilidades para crear la lógica de negocios. Con las acciones, puede realizar operaciones como Crear, Actualizar, Eliminar, Asignar o Realizar acción. Internamente, una acción crea un mensaje personalizado. Los desarrolladores denominan "mensajes" a estas acciones. Cada uno de estos mensajes se basa en las acciones realizadas en un registro de entidad. Si el objetivo de un proceso es crear un registro, después actualizarlo y luego asignarlo, hay tres pasos independientes. Cada paso se define mediante las características de la entidad, no necesariamente por el proceso de negocio.  
   

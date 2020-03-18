@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 94ea624378a58e92441e1c72ce3e0ff72040a7f2
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 56b90ebdf7f3655763b7e40c60b985f06604c47b
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74375146"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194034"
 ---
 # <a name="overview"></a>Información general
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Cuando hospeda sus flujos en una [solución](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview), se convierten en portátiles, lo que facilita su traslado y el de todos sus componentes de un entorno a otro. Un caso típico de uso es que un fabricante de software independiente desarrolle flujos en un entorno de espacio aislado y luego los mueva a un entorno de prueba. Después de la prueba, el fabricante de software independiente movería los flujos a un entorno de producción para los clientes que compran estos flujos. Este proceso es mucho más fácil cuando se crean los flujos en las soluciones y, a continuación, se desplazan las soluciones y su contenido.
 

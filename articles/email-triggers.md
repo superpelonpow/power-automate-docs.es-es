@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: fdfa1966c40c3c6db6803a58d9f2df687058b3d6
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: f7588a3ca1db5c62a4e60380575542671e8d408d
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74365647"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79192328"
 ---
 # <a name="trigger-a-flow-based-on-email-properties"></a>Desencadenamiento de un flujo basado en las propiedades del correo electrónico
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Use el desencadenador **Cuando llega un correo electrónico nuevo** para crear un flujo que se ejecuta cuando una o varias de las propiedades de correo electrónico que se indican a continuación coinciden con los criterios que ha proporcionado:
 
 | Propiedad | Cuándo se usa |

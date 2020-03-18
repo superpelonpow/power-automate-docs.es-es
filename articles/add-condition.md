@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: aca3291bcbda1917b669107b73f84248741dee7e
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 3be9b2414a0f30581763622de0c7d49cb694e3b3
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "75867807"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79224248"
 ---
 # <a name="add-a-condition-to-a-flow"></a>Adición de una condición a un flujo
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Especifique que un flujo realice una o varias tareas solo si el valor de una condición es true. Por ejemplo, especifique que recibirá un correo electrónico solo si se retwittea al menos diez veces un tweet que contenga una palabra clave.
 

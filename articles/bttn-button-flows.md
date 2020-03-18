@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4ee3a9c7acb567ed0516b682377e5b79d40132cf
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 4eaafb1a551cc3333cde2058aebc41076b0267bd
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74356746"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194172"
 ---
 # <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Ejecutar los flujos con botones físicos (bttn) de The Button Corporation (versión preliminar)
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Desencadene los flujos presionando un bttn (un botón físico realizado por [The Button Corporation](https://my.bt.tn/)). Por ejemplo, puede presionar un bttn que desencadene un flujo para llevar a cabo estas tareas:
 
 * pone en contacto al departamento de soporte técnico con la información de ubicación

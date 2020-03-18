@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 1343d71bab5819600130496dcc0df01751f15fa6
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 697f41960a62c7da2eee9bc34bb174d39ed2c44b
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74361783"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195082"
 ---
 # <a name="create-team-flows"></a>Creación de flujos de equipo
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Cree un flujo de equipo mediante la adición de otros usuarios de su organización como propietarios. Todos los propietarios de un flujo de equipo pueden realizar estas acciones:
 
 * Ver el historial del flujo (es decir, todas las ejecuciones).

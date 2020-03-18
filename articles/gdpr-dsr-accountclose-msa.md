@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 277765754683a6690b186a5f592517482b32666f
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 10f232e45a53cea30892f512b626246fec16deed
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74366383"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195644"
 ---
 # <a name="responding-to-gdpr-data-subject-account-close-requests-for-power-automate"></a>Respuesta a solicitudes de cierre de cuenta del interesado de acuerdo con el RGPD para Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 El **derecho al olvido** de los datos personales es una protección clave en el RGPD. Este derecho incluye la eliminación de todos los datos personales excepto la información del registro de auditoría. Cuando un usuario decide cerrar su cuenta Microsoft (MSA), también se eliminan los datos subyacentes del usuario.
 

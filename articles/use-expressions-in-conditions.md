@@ -18,15 +18,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 46985cc33ac099c75c6e8e976aba19d7a5d6c567
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 3c1eb0f208f964f2a41e26ca831c60edef0d747c
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74370316"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195986"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Uso de expresiones en condiciones para comprobar varios valores
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 En este tutorial, aprenderá a utilizar expresiones y **condiciones** para comparar varios valores en **modo avanzado**.
 
 Cuando se crea un flujo, puede usar la tarjeta [**Condición**](add-condition.md#add-a-condition) en modo básico para comparar rápidamente un valor individual con otro. Sin embargo, hay veces en las que necesita comparar varios valores. Por ejemplo, puede comprobar el valor de varias columnas de una hoja de cálculo o de una tabla de base de datos.

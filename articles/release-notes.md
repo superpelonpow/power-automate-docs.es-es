@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ab6b6d0cf638b489db47e1f2d075afdf18a2ee49
-ms.sourcegitcommit: 6b8e936cede73c8be8a63bdf77911fb69aced959
+ms.openlocfilehash: 51f8d56a7dd5c94a782c67569dea686f21f7c754
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77575062"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193827"
 ---
 # <a name="release-notes"></a>Notas de la versión
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 ## <a name="top-questions"></a>Preguntas importantes
 1. Error en el flujo. ¿Cómo puedo corregirlo?
    

@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 26bed9ab3329bbf0edf8ea055de71b732d7d0746
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 05def202f2a0b0db8a6eebb067406c96221e7d1c
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74355412"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195552"
 ---
 # <a name="responding-to-gdpr-data-subject-discovery-requests-for-power-automate"></a>Respuesta a las solicitudes de detección de los interesados en el RGPD en Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 El primer paso para responder a un derecho de los titulares de datos es buscar los datos personales a los que se refiere la solicitud. Este primer paso le ayudará a determinar si un derecho de los titulares de datos cumple los requisitos de su organización para tener en cuenta o rechazar una solicitud de este tipo. Por ejemplo, después de buscar y revisar los datos personales en cuestión, puede determinar que la solicitud no cumple los requisitos de su organización porque si se atiende podría afectar negativamente a los derechos y libertades de terceros.
 

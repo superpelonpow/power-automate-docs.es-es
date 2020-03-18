@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ca8633ac8ee3654d8c61b55421a3feead392954c
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 0541a89ad0fe5f8d7dae0acfc6f257be7532ef15
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74358540"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195111"
 ---
 # <a name="use-data-operations-with-power-automate"></a>Uso de operaciones de datos con Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 En este tutorial, conocerá algunas de las operaciones de datos más usadas de Power Automate, como componer, combinar, seleccionar, filtrar matriz, crear tabla y analizar JSON que están disponibles para manipular datos al crear flujos.
 
 ## <a name="prerequisites"></a>Requisitos previos

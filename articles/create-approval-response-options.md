@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - maker
-ms.openlocfilehash: d33b1e78678c7029d441bcf00f6c066d7f492a66
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: ea98043ee9ab952cfd929a100cb76e42508b84bc
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74359253"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194218"
 ---
 # <a name="create-custom-response-options-for-approval-flows"></a>Creación de opciones de respuesta personalizadas para flujos de aprobación
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Supongamos que quiere enviar una solicitud de aprobación cada vez que un empleado carga un informe de gastos en SharePoint y, luego, permitir que el aprobador responda con una de estas tres opciones: Aceptar, Se necesita más información o Rechazar.
 

@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: abfe59e53f08b2feef106ba1db24e4a672eb8eb4
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: d02bce2ba97df31814d6488eca90d5c69733e7dd
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74357321"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193896"
 ---
 # <a name="manage-approval-requests-in-power-automate"></a>Administración de solicitudes de aprobación en Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Power Automate facilita la automatización de los [procesos de flujo de trabajo de aprobación](modern-approvals.md). En este tutorial, aprenderá a ver, aprobar y rechazar solicitudes de aprobación enviadas desde Power Automate.
 
 ## <a name="view-pending-approval-requests"></a>Visualización de las solicitudes de aprobación pendiente

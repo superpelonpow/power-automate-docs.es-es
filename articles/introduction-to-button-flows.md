@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 136bb90c47a1aeea2f11ef45e35a4957506ad488
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: ef83dc95d5f9f9afae42f3c488513f81de69b172
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74363922"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79192424"
 ---
 # <a name="introducing-button-flows"></a>Presentación de los flujos de botón
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 ## <a name="what-are-button-flows"></a>¿Qué son los flujos de botón?
 Hay muchas tareas repetitivas que a todos nos gustaría que se pudieran ejecutar pulsando un botón. Por ejemplo, es posible que necesite enviar un correo electrónico rápido a su equipo para recordar a los componentes que se unan a la sincronización diaria del equipo o que desee iniciar una nueva compilación de Visual Studio Online de su código base después de haber notificado que no hay más protecciones planeadas para ese día. Los flujos de botón permiten realizar estas y muchas otras tareas simplemente pulsando un botón del dispositivo móvil.
 

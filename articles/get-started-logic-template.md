@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f2e92d43a33a4a05523ae350a63aa68f9cda2d1f
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 8ccb933188902b89fa45b65cfec0d3d0e96de4c8
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74368706"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195713"
 ---
 # <a name="create-a-flow-from-a-template-in-power-automate"></a>Creación de un flujo desde una plantilla en Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Cree un flujo desde una de las muchas plantillas integradas que pueden, por ejemplo, enviarle un mensaje Slack cuando un administrador le envíe un correo electrónico en Office 365.
 
 **Nota**: use la opción [Crear un flujo desde cero](get-started-logic-flow.md) si ya tiene un proceso en mente y no encuentra una plantilla para él.

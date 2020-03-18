@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a96d2e7ee5d0050f5fcbc96afe79429e1aad2426
-ms.sourcegitcommit: 6b8e936cede73c8be8a63bdf77911fb69aced959
+ms.openlocfilehash: 333f5b92df92cc384b9517a9ccf1d6bb0164c07b
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77575028"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194310"
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Cree de un flujo que use Common Data Service
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Mejore la eficacia operativa con una vista unificada de los datos empresariales mediante la creación de un flujo que use [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Implemente esta base de datos profesional segura que incluye las entidades empresariales estándar con formato correcto (como Ventas, Compras, Atención al cliente y Productividad) de su organización. Almacene los datos de la organización en una o varias [entidades personalizadas](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), que ofrecen varias ventajas sobre los orígenes de datos externos, como Microsoft Excel y Salesforce.
 
 Por ejemplo, aproveche Common Data Service en Power Automate de las siguientes formas:

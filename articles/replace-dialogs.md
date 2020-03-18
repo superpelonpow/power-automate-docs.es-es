@@ -21,15 +21,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b338991cfdbb73a8a0464fd4322714ece82c2ac5
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 8d3ce37fee1a4650454cc2c47af0d19fe37da96d
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74373030"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193712"
 ---
 # <a name="replace-dialogs-with-business-process-flows-or-canvas-apps"></a>Reemplazo de cuadros de diálogo con aplicaciones de lienzo o flujos de proceso de negocio
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 [Los cuadros de diálogo están en desuso](https://docs.microsoft.com/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated) y es necesario reemplazarlos por aplicaciones de lienzo o flujos de procesos de negocio. En este tema se describen las distintas capacidades de estas opciones, así como las situaciones en las que se puede usar un flujo de proceso de negocio o una aplicación de lienzo insertada en un formulario basado en modelos para reemplazar un cuadro de diálogo existente.
 

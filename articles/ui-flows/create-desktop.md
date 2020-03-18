@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c27637f56defb1acff07302954424953ec48b506
-ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
+ms.openlocfilehash: 254e92db3c02cac4294b92fc5a1deec4a23e341e
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78244315"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79224202"
 ---
 # <a name="create-and-test-desktop-ui-flows"></a>Creación y prueba de los flujos de la interfaz de usuario de escritorio
 
@@ -129,11 +129,6 @@ En los pasos siguientes, se muestra cómo automatizar la aplicación Calculadora
 
 1. Seleccione **Guardar y salir** para guardar el flujo de interfaz de usuario.
 
-## <a name="next-steps"></a>Pasos siguientes
-
-- Obtenga información sobre cómo [desencadenar el flujo de interfaz de usuario](run-ui-flow.md) que acaba de crear.
-
-- Si quiere hacer más cosas con los flujos de interfaz de usuario, también puede probar los flujos de interfaz de usuario con parámetros de [entrada y salida](inputs-outputs-web.md).
 
 ## <a name="known-issues-and-solutions"></a>Problemas conocidos y soluciones
 
@@ -205,3 +200,9 @@ No se grabarán estas acciones:
 - Ancle la cinta de opciones antes de empezar la reproducción para evitar problemas que puedan producirse si la cinta de opciones está configurada para ocultarse automáticamente durante la reproducción.
 - No seleccione los elementos mediante clic y arrastrado. Por ejemplo, no use Mayús + clic para seleccionar celdas de Microsoft Excel y no arrastre el mouse para seleccionar texto en Microsoft Word ni Microsoft PowerPoint.
 - Es posible que algunos elementos no funcionen correctamente en los flujos de interfaz de usuario (versión preliminar	) de las aplicaciones de escritorio de Microsoft Word y Microsoft PowerPoint. Por ejemplo, es posible que no funcionen las opciones del menú Archivo, como empezar desde cero o hacer clic con el botón derecho en controles como agregar un párrafo en Microsoft Word o cambiar el diseño de las diapositivas en Microsoft PowerPoint.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+- Obtenga información sobre cómo [desencadenar el flujo de interfaz de usuario](run-ui-flow.md) que acaba de crear.
+
+- Si quiere hacer más cosas con los flujos de interfaz de usuario, también puede probar los flujos de interfaz de usuario con parámetros de [entrada y salida](inputs-outputs-web.md).

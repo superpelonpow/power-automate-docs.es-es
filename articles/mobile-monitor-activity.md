@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 2c02b50289988a6462ed33df92350e9e4286b785
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: aa2b5eb13479f50f88ba7f723c5d1649746c74ec
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74376825"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79196104"
 ---
 # <a name="monitor-activity-in-power-automate-from-your-phone"></a>Supervisión de la actividad en Power Automate desde un teléfono
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Vea el número de veces que cada flujo se ha ejecutado correctamente o con errores hoy, ayer y en los días anteriores. Explore los detalles relativos a cada ejecución, como cuándo se ejecutó, cuánto tardó en realizarse cada paso y, si se produjo un error, los motivos para ello.
 
 **Requisitos previos**

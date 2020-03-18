@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 22fa35d40dbb198b376150f144d4de11585fc7ca
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: f1e3ab59ad135b47b79466e1bd4d7fec73139955
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74375192"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79196081"
 ---
 # <a name="flow-in-your-organization-qa"></a>Preguntas y respuestas sobre Flow en su organización
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 En este tema se describe cómo los usuarios de su organización pueden usar Flow y cómo controlar el servicio Flow.
 
 ## <a name="signing-up-for-flow"></a>Suscripción a Flow

@@ -22,15 +22,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 15cbfdf61a25287714f0244639ec4a3246bd845c
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: a35523209e3db8444da71c0757db29fa21de08b3
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74355435"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195414"
 ---
 # <a name="invoke-custom-actions-from-a-workflow"></a>Invocación de acciones personalizadas desde un flujo de trabajo
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Los flujos de trabajo tienen numerosas funciones que admiten escenarios empresariales. Llamar a acciones básicas de operaciones de datos para un registro, como crear, actualizar y eliminar, desde un flujo de trabajo resuelve bastante escenarios empresariales. Pero si se combinan las funciones de los flujos de trabajo con la eficacia de las acciones personalizadas que se invocan directamente desde dentro de un flujo de trabajo, se agrega una gama de escenarios empresariales completamente nueva para la aplicación sin necesidad de escribir código.  
   

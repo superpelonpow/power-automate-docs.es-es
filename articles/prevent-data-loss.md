@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 63e49b656527f471d7bdd5a5d7a0b02d572c1221
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: b1894bbaa69e3c9093ccc93d6a7928a92d56535f
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74374778"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79192079"
 ---
 # <a name="data-loss-prevention-dlp-policies"></a>Directivas de prevención de pérdida de datos (DLP)
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Este documento presenta las directivas de prevención de pérdida de datos, que ayudan a proteger los datos de la organización al evitar que se compartan con una lista de conectores que se definen.
 

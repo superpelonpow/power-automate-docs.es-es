@@ -15,15 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
-ms.openlocfilehash: a2a9b5d5a6ed8305ed3e7c29717ef19978bae0a7
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 1fbd0c6b1f6a7cd453f6c1a336f5ce450e236c5e
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74367073"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195667"
 ---
 # <a name="power-automate-in-teams"></a>Power Automate en Teams
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 ### <a name="prerequisites"></a>Requisitos previos
 

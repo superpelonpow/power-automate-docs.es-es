@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bc3360d9bfaff35edac0463f92527d117c53475a
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: dae11e0a355d4e3f40b3829981c1b8da6f363748
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74368292"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193919"
 ---
 # <a name="import-a-solution"></a>Importación de una solución
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 > [!TIP]
 > Si desea que los flujos se inicien automáticamente después de importar una solución, use un conector de Common Data Service (entorno actual) en el flujo al crearla.

@@ -15,15 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/30/2019
 ms.author: deonhe
-ms.openlocfilehash: 09ee39c918bb35721ee77a7cdcd432755ccfa8c4
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 414c14b02b0543dc3992253192020b7453b9e2e0
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74362013"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79192907"
 ---
 # <a name="sharepoint-remind-me"></a>Recordatorio de SharePoint
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Las listas y bibliotecas de SharePoint le permitían definir columnas de metadatos personalizadas para realizar el seguimiento de fechas. Gracias a la integración de Power Automate con SharePoint, puede crear fácilmente flujos de recordatorio según las columnas DateTime de SharePoint. Con los flujos de recordatorio, recibirá una alerta de correo electrónico personal un número determinado de días antes de una fecha sobre cualquier documento o elemento de SharePoint.
 

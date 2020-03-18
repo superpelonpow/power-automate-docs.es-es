@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: eab01a20f44f68a85601ff824175f1a506ebec87
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 6346772d3eba6177577f7c5d7a151174f1a575f9
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74361323"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193873"
 ---
 # <a name="build-an-approval-loop-by-using-power-automate-and-the-microsoft-common-data-service"></a>Compilación de un bucle de aprobación mediante Power Automate y Microsoft Common Data Service
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Common Data Service puede proporcionar una forma de compilar flujos que tengan la información almacenada en una base de datos independiente de un flujo. El mejor ejemplo son las aprobaciones. Si almacena el estado de la aprobación en una entidad, el flujo puede funcionar encima.
 
 En este ejemplo, se creará un proceso de aprobación que comienza cuando un usuario agrega un archivo a Dropbox. En ese momento, aparece la información del archivo en una aplicación, donde un revisor puede aprobar o rechazar el cambio. Cuando el revisor aprueba o rechaza el cambio, se envía un correo de notificación y los archivos rechazados se eliminan de Dropbox.

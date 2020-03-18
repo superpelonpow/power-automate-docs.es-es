@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 256e874e2b70844219cd1c21e2ed37f2a96ba78c
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: e9f4418ae532c3c6e2f3511ee7ee873695bc8f9f
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74367395"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79191964"
 ---
 # <a name="responding-to-gdpr-data-subject-requests-for-power-automate"></a>Respuesta a solicitudes del interesado de acuerdo con el RGPD para Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Este articulo le prepara tanto a usted como a su organización para cumplir con el Reglamento general de protección de datos (RGPD). En este artículo no solo se describe lo que Microsoft está haciendo para prepararse para el RGPD, sino que también se incluyen ejemplos de medidas que puede adoptar ya para cumplir con el RGPD al usar Power Apps, Power Automate y Common Data Service.
 

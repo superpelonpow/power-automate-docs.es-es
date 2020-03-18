@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 84b3a8956008149f80f1790a20c1388dde8737ac
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: f341adb319c20a201525bb6b7a8a0c54e2da5ea3
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74360242"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195046"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Creación de un flujo mediante Dynamics 365 (con conexión)
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Mediante un conector de Dynamics 365 se pueden crear flujos que se inician cuando se produce un evento en 365 Dynamics, o algún otro servicio, que realiza una acción en Dynamics 365, o en algún otro servicio. 
 
 En Power Automate puede configurar flujos de trabajo automatizados entre sus aplicaciones y servicios preferidos para sincronizar archivos, obtener notificaciones, recopilar datos, etc. Para más información, consulte [Introducción a Power Automate](getting-started.md).

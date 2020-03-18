@@ -20,16 +20,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bb50b99f0a86e1221aaa4c4072426a31b9bf8f61
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 7d4cd1523e19811eb4636d0197a347dbc86de9f8
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74368660"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79224386"
 ---
 # <a name="get-started-with-power-automate"></a>Introducción a Power Automate 
 
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 <br>
 <iframe width="1129" height="635" src="https://www.youtube.com/embed/hCuxuUaGC6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

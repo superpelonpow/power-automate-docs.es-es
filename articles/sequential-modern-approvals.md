@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e8f7b993b59c269b56dac2f13d4db166ed3e91b7
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 28199ab8b2a2dbf18ef89b905b2bdd362ff9e82b
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74373076"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194103"
 ---
 # <a name="manage-sequential-approvals-with-power-automate"></a>Administración de aprobaciones secuenciales con Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Algunos flujos de trabajo requieren la aprobación previa antes de que se requiera al aprobador final que cierre la sesión. Por ejemplo, una compañía puede tener una directiva de aprobación secuencial que requiere la aprobación previa de las facturas de más de 1000 USD antes de que estén aprobados por el departamento de finanzas.
 
 En este tutorial, creamos un flujo de aprobación secuencial que administra las solicitudes de vacaciones de los empleados.

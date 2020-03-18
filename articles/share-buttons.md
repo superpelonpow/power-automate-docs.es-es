@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 3209748b03823add7622472665ce70b4cd581b1f
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 9b5671096bbecd9221d3849cd656548291acd4c9
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74372754"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194425"
 ---
 # <a name="share-button-flows-in-power-automate"></a>Uso compartido de flujos de botones en Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 En la aplicación móvil Power Automate, puede compartir [flujos de botones](introduction-to-button-flows.md) (botones) con otros usuarios o grupos de su organización. Cuando se comparte un botón, la persona o grupo con quien se haga puede ejecutarlo de la misma forma que sus propios botones. También puede [compartir un vínculo](share-buttons.md#re-share-a-button) a los botones que otra persona ha compartido con usted. Los botones se pueden [dejar de compartir](share-buttons.md#stop-sharing-a-button) en cualquier momento.
 
 > Las capturas de pantalla usadas en este documento se han realizado desde un dispositivo Android. Si usas un iPhone, las imágenes pueden tener una apariencia diferente, pero la funcionalidad es la misma.

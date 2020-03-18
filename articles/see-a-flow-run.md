@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 5d38ee4df1e1edb16b86c402e77ce43ff659dc64
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.openlocfilehash: 97fa3091a75abcec80dac594e4146283ae6310f0
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74373582"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193666"
 ---
 # <a name="watch-your-flows-in-action"></a>Vea sus flujos en acción
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 >[!VIDEO https://www.youtube.com/embed/3wPoUCGm7Yg]
 

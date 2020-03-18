@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 1d8d17b3f3ad0621da11406c7b9e29892138a382
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 9c7ed87d62ff6fc7370d5b57053239c8bfbeb591
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74356217"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193459"
 ---
 # <a name="sharing-and-connectors-admin-analytics-reports"></a>Informes de análisis de administración de conectores y uso compartido
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Las organizaciones necesitan saber cómo se usan las aplicaciones y quién las usa. Los informes de administración de conectores y uso compartido ofrecen información detallada sobre cómo se usa Power Automate en el inquilino. 
 

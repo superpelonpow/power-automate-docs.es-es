@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 45fe310d7c18fc395857d29503faef9bf4e6eedb
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 7a2ff7c0957e52f076ccc0cc7fdcb4d09109a404
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74365716"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194379"
 ---
 # <a name="using-environments-within-power-automate"></a>Uso de entornos en Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 ## <a name="benefits"></a>Ventajas
 

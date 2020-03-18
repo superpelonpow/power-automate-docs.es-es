@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0238905fe079bb0511c032fee0a3822b3c6d65c5
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 8470d927204f1ba40f801c806c34ca0c78336555
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74374272"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193850"
 ---
 # <a name="faq-for-regions-in-power-automate"></a>Preguntas más frecuentes sobre las regiones en Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 En este documento se proporciona una lista de preguntas más frecuentes sobre Power Automate.
 
 ## <a name="how-do-i-find-out-where-my-flow-is-deployed"></a>¿Cómo averiguar donde se implementa el flujo?

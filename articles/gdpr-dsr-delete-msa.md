@@ -20,15 +20,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: b9ef70579798b353ddcd8a961604665a287cd63a
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 48aafe66584e42f3011b135ff8dbdc5fec69737f
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74368154"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79193942"
 ---
 # <a name="respond-to-gdpr-data-subject-delete-requests"></a>Respuesta a solicitudes de eliminación del interesado de acuerdo con el RGPD
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 El **derecho al olvido** mediante la eliminación de datos personales es una protección clave en el RGPD. La eliminación de datos personales incluye la eliminación de todos los datos personales excepto la información del registro de auditoría.
 

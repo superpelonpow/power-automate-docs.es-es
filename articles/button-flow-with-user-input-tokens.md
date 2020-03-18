@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: fe7e8f685d319e11994adaf1926d2d0ab03706d7
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 5a2fa063b5379999a5dcbe37a56271fccf435cae
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74358586"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79192379"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Presentación de los flujos de botones con entradas del usuario
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Cree un flujo de botón para ejecutar tareas rutinarias simplemente con pulsar un botón. Para personalizar un flujo, permita al usuario proporcionar detalles específicos que se usarán al ejecutarlo. Este tema le guía a través de la creación de un flujo de botón que usa las entradas de los usuarios y, después, la ejecución del flujo de botón, y resalta cómo proporcionar la entrada del usuario.
 
 Puede crear un flujo de botón en el sitio web de Power Automate o en la aplicación móvil para Power Automate. En este tema, utilizará el sitio web.

@@ -20,15 +20,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 46a661b8e4cae28be2c25e8b07269b2677ca5667
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 2a0e2d3ff9fb39019ef4b8f37a7715229844c388
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74367947"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79224363"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>¿Qué es una puerta de enlace de datos local?
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Una puerta de enlace de datos local actúa como un puente, para proporcionar una transferencia de datos rápida y segura entre los datos locales (los datos que no se encuentran en la nube) y varios servicios en la nube de Microsoft. Estos servicios en la nube incluyen Power BI, Power Apps, Power Automate, Azure Analysis Services y Azure Logic Apps. Al usar una puerta de enlace, las organizaciones pueden mantener bases de datos y otros orígenes de datos en sus redes locales, pero usar de forma segura esos datos locales en servicios en la nube.
 
