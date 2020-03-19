@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/27/2020
+ms.date: 03/04/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 1cf0dee7576111a696f8486f36aa5a2cdd2eeebf
-ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
+ms.openlocfilehash: 825ebceb042215c379340f1e1b7e2dae6f921c2c
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78244245"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79196055"
 ---
 # <a name="set-up-ui-flows"></a>Configuración de los flujos de la interfaz de usuario
 
@@ -47,7 +47,7 @@ Antes de poder usar el dispositivo para crear flujos de interfaz de usuario, deb
 
 - Una cuenta profesional o educativa para iniciar sesión en el dispositivo Windows con privilegios de administrador y Power Automate.
 
-- Un dispositivo que ejecute Windows 10, Windows Server 2016 o Windows Server 2019.
+- Un dispositivo que ejecute Windows 10 Pro, Windows Server 2016 o Windows Server 2019.
 
 - Explorador [Microsoft Edge](https://www.microsoftedgeinsider.com) o Google Chrome.
 
@@ -57,14 +57,14 @@ Antes de poder usar el dispositivo para crear flujos de interfaz de usuario, deb
 
 ## <a name="limitations"></a>Limitaciones
 
-Flujos de interfaz de usuario (versión preliminar) está disponible en inglés.
+Para grabar, probar o ejecutar flujos de interfaz de usuario, debe tener la versión más reciente de cada componente.
 
 Lo siguiente no es compatible:
+- No se admiten instalaciones de Windows 10 Home.
 
 -   Flujos de la interfaz de usuario de escritorio
 
     -   Varios monitores
-    -   Máquinas virtuales
     -   Doble clic, mantener el mouse sobre un elemento, entrada táctil o de lápiz
     -   Interacciones en Windows (Explorador de archivos, menú de inicio, barra de tareas, etc.)
 
@@ -88,8 +88,8 @@ Para instalar la aplicación de flujos de interfaz de usuario, siga estos pasos:
 1. Abra el archivo **Setup.Microsoft.Flow.UIflow.exe**. Es probable que este archivo esté en la carpeta **Descargas** después de que lo descargó en el paso anterior.
 1. Siga las instrucciones del instalador de **configuración de flujos de interfaz de usuario (versión preliminar)** para completar la instalación.
 
-> [!TIP]
-> Si quiere cambiar la configuración de la colección de datos, vuelva a instalar los flujos de interfaz de usuario y cambie la configuración.
+> [!WARNING]
+> Si necesita cambiar la configuración de la recopilación de datos, debe desinstalar la aplicación de flujos de interfaz de usuario y, después, volver a instalarla. Los flujos de interfaz de usuario dejarán de funcionar si cambia la configuración de la recopilación de datos sin desinstalar primero la aplicación de flujos de interfaz de usuario.
 
 ## <a name="activate-the-ui-flows-browser-extension"></a>Activación de la extensión del explorador de flujos de interfaz de usuario 
 
@@ -103,6 +103,7 @@ Una vez que se complete el instalador de flujos de interfaz de usuario, el explo
 > - Debe usar Microsoft Edge o Google Chrome.
 > - Es posible que tenga que habilitar manualmente la extensión. Para Microsoft Edge, vaya a **edge://extensions** o, en el caso de Google Chrome, a **chrome://extensions**.
 > - Si la extensión de los flujos de interfaz de usuario de Power Automate no aparece, puede volver a instalarla con el [instalador de flujos de interfaz de usuario](https://go.microsoft.com/fwlink/?linkid=2102613).
+
 
 ## <a name="install-selenium-ide-to-automate-web-applications"></a>Instalación de Selenium IDE para automatizar las aplicaciones web
 
@@ -118,18 +119,38 @@ Siga estos pasos para instalar el IDE de Selenium:
 
 ## <a name="install-the-on-premises-data-gateway"></a>Instalación de la puerta de enlace de datos local
 
-Necesitará la puerta de enlace para desencadenar el flujo de interfaz de usuario desde un [flujo de evento, programación o botón](../getting-started.md#types-of-flows).
+Necesitará la puerta de enlace para desencadenar el flujo de interfaz de usuario desde un [flujo de evento, programación o botón](../getting-started.md#types-of-flows) en un dispositivo remoto.
 
 >[!TIP]
 >La puerta de enlace no es necesaria si solo quiere crear, editar y probar los flujos de interfaz de usuario en el dispositivo.
 
 [Instale la puerta de enlace de datos local](https://docs.microsoft.com/data-integration/gateway/service-gateway-install), si la necesita.
 
-## <a name="uninstall-ui-flows"></a>Desinstalación de los flujos de interfaz de usuario
+## <a name="setup-ui-flows-connections-and-machine-credentials"></a>Configuración de las conexiones de flujos de interfaz de usuario y las credenciales del equipo
 
-1. Abra el menú **Inicio** > **Configuración** > **Aplicaciones**.
-1. Busque **Flujos de interfaz de usuario (versión preliminar)** y selecciónelo.
-1. Seleccione **Desinstalar**.
+1. Inicie sesión en [Power Automate](https://powerautomate.microsoft.com).
+1. Expanda **Datos** en el lado izquierdo de la pantalla.
+1. Seleccione **Conexiones**.
+
+   ![Captura de pantalla de la pestaña conexiones](../media/ui-flows-setup/connections-tab.png)
+
+1. Seleccione Nueva conexión.
+
+   ![Captura de pantalla de una conexión](../media/ui-flows-setup/new-connection.png)
+
+1. Busque *Flujo de interfaz de usuario* y seleccione **Flujos de interfaz de usuario (versión preliminar).
+
+   ![Captura de pantalla del cuadro de búsqueda](../media/ui-flows-setup/search-ui-flow.png)
+
+1. Proporcione la información de puerta de enlace y las credenciales del dispositivo para *cada* puerta de enlace: 
+
+    - **Dominio y nombre de usuario**: proporcione su cuenta de dispositivo. Puede usar una cuenta local con el nombre del usuario (por ejemplo, “MACHINENAME\\usuario” o “local\\usuario”) o una cuenta de Active Directory como “DOMAIN\\usuario”.
+    - **Contraseña**: la contraseña de su cuenta.
+    - **Elegir una puerta de enlace**: seleccione una de las puertas de enlace que quiere configurar.
+
+      ![Captura de pantalla que muestra dónde especificar las credenciales para la conexión](../media/ui-flows-setup/credentials-screen.png)
+
+1. Seleccione **Crear**.
 
 ## <a name="supported-keyboard-layouts"></a>Distribuciones de teclado admitidas
 
@@ -158,7 +179,7 @@ Necesitará la puerta de enlace para desencadenar el flujo de interfaz de usuari
 A continuación se indican los idiomas compatibles con los flujos de interfaz de usuario, además del inglés:
 
 |||||
-----|-----|-----|-----
+----|-----|-----|--------
 Vasco  | Francés    | Letón   | Eslovaco
 Búlgaro   |   Gallego    |   Lituano  |   Esloveno
 Catalán |   Alemán      |Malayo  |   Español
@@ -171,12 +192,15 @@ Neerlandés       |Japonés   |   Ruso
 Estonio    |Kazajo |   Serbio (cirílico, Serbia)  
 Finés     |Coreano     |Serbio (latino, Serbia)
 
-## <a name="limitations"></a>Limitaciones
-- Las versiones más recientes de cada componente son necesarias para grabar, probar o ejecutar flujos de interfaz de usuario.
+## <a name="uninstall-ui-flows"></a>Desinstalación de los flujos de interfaz de usuario
 
+1. Abra el menú **Inicio** > **Configuración** > **Aplicaciones**.
+1. Busque **Flujos de interfaz de usuario (versión preliminar)** y selecciónelo.
+1. Seleccione **Desinstalar**.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="learn-more"></a>Más información
 
+- [Actualización de flujos de interfaz de usuario](upgrade.md) a partir de versiones anteriores
 - Aprenda a [crear flujos de interfaz de usuario de escritorio](create-desktop.md).
 - Aprenda a [crear flujos de interfaz de usuario web](create-web.md).
 - Aprenda a ejecutar [flujos de interfaz de usuario](run-ui-flow.md).

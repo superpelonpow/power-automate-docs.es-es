@@ -17,15 +17,15 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7f6319bd0091c4c857e7df133c36b38a0cd78891
-ms.sourcegitcommit: 52e739e5d53464b80e572928f131890562fc0396
+ms.openlocfilehash: bb8ca7efb83a863f3031dd18d0d9bd67ae3c5c07
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74356838"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79194080"
 ---
 # <a name="add-an-on-demand-workflow-to-a-business-process-flow"></a>Adición de un flujo de trabajo a petición a un flujo de proceso de negocio
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Puede desencadenar flujos de trabajo a petición desde dentro de un flujo de proceso de negocio. Por ejemplo, puede agregar un flujo de trabajo a petición a un flujo de proceso de negocio para que se cree una actividad, como una tarea o un correo electrónico, siempre que se complete una fase. 
 
@@ -34,7 +34,7 @@ Un flujo de trabajo se activa en función de la ubicación donde se coloque en e
 - Procesos globales a petición. Cuando el flujo de trabajo se coloca en el área **Flujos de trabajo globales**, se desencadena al activar o archivar el proceso (cuando el estado cambia a aplicado, finalizado, reactivado o abandonado). 
 
 Tenga en cuenta los requisitos siguientes al agregar un flujo de trabajo a un flujo de proceso de negocio.
-- Para los flujos de trabajo que se agregan a una fase: solo se pueden usar flujos de trabajo activos a petición creados para la misma entidad de la fase donde se agrega el flujo de trabajo.  
+- Para los flujos de trabajo que se agregan a una fase: solo se pueden usar flujos de trabajo activos y a petición creados para la misma entidad de la fase donde se agrega el flujo de trabajo.  
 - Para los flujos de trabajo globales: solo se pueden usar flujos de trabajo activos y a petición creados para la entidad primaria del flujo de proceso de negocio.
 
 ## <a name="add-an-on-demand-workflow-to-a-business-process-flow-stage"></a>Adición de un flujo de trabajo a petición a una fase de flujo de proceso de negocio
@@ -68,5 +68,5 @@ En el ejemplo siguiente, se agrega un flujo de trabajo a petición denominado **
  
 ## <a name="next-steps"></a>Pasos siguientes
 [Uso de procesos de flujo de trabajo para automatizar los procesos que no requieren interacción del usuario](workflow-processes.md) <br/>
-[Tutorial: Crear un flujo de proceso de negocio para estandarizar procesos](create-business-process-flow.md) <br/>
+[Tutorial: Crear un flujo de proceso de negocio para estandarizar los procesos](create-business-process-flow.md) <br/>
 [Business process flow automation in Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/) (Automatización de flujos de proceso de negocios en Dynamics 365)

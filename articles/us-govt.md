@@ -14,15 +14,15 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 44220aebd8726c31f94996ec215020688f317223
-ms.sourcegitcommit: 6b8e936cede73c8be8a63bdf77911fb69aced959
+ms.openlocfilehash: 2c889d21336b632edf1f3746cc90846f469ecbd4
+ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77574984"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79195943"
 ---
 # <a name="power-automate-us-government"></a>Power Automate para la Administración Pública de Estados Unidos
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 En respuesta a los requisitos únicos y en constante evolución del sector público de los Estados Unidos, Microsoft creó los planes de Power Automate para la Administración Pública de Estados Unidos. En esta sección se proporciona información general de las características específicas de Power Automate para la Administración Pública de Estados Unidos. Se recomienda leer esta sección complementaria, así como también el tema de [introducción](https://docs.microsoft.com/flow/getting-started) del servicio Power Automate. Para mayor brevedad, este servicio se conoce habitualmente como *Flow GCC*.
 
@@ -50,7 +50,7 @@ Microsoft ha diseñado la plataforma y nuestros procedimientos operativos para c
 
 ## <a name="customer-eligibility"></a>Idoneidad del cliente
 
-Power Automate para la Administración Pública de Estados Unidos está disponible para (1) las entidades gubernamentales federales, estatales, locales, tribales y territoriales de EE. UU. y (2) otras entidades que administran datos sujetos a normativas y requisitos gubernamentales y donde el uso de Power Automate para la Administración Pública de Estados Unidos sea adecuada para cumplir con estos requisitos, sujeto a la validación de idoneidad. La validación de idoneidad de Microsoft incluye la confirmación de administrar datos sujetos al Reglamento estadounidense sobre el tráfico internacional de armas (ITAR), datos policiales sujetos a la directiva de los servicios de información de justicia penal (CJIS) del FBI u otros datos controlados o regulados por el gobierno. Es posible que la validación requiera el patrocinio de una entidad gubernamental con requisitos específicos para la administración de los datos.
+Power Automate para la Administración Pública de Estados Unidos está disponible para (1) las entidades gubernamentales federales, estatales, locales, tribales y territoriales de EE. UU. y (2) otras entidades que administran datos sujetos a normativas y requisitos gubernamentales y donde el uso de Power Automate para la Administración Pública de Estados Unidos sea adecuado para cumplir con estos requisitos, sujeto a la validación de idoneidad. La validación de idoneidad de Microsoft incluye la confirmación de administrar datos sujetos al Reglamento estadounidense sobre el tráfico internacional de armas (ITAR), datos policiales sujetos a la directiva de los servicios de información de justicia penal (CJIS) del FBI u otros datos controlados o regulados por el gobierno. Es posible que la validación requiera el patrocinio de una entidad gubernamental con requisitos específicos para la administración de los datos.
 
 Las entidades que tengan dudas sobre la idoneidad de Power Automate para la Administración Pública de Estados Unidos deben consultar a su equipo de cuentas. Microsoft vuelve a validar la idoneidad cuando renueva los contratos de cliente de Power Automate para la Administración Pública de Estados Unidos.
 
@@ -121,7 +121,7 @@ Power Automate para la Administración Pública de Estados Unidos está diseñad
 
 A medida que Microsoft avanza para actualizar los artefactos de FedRAMP como parte de los ciclos de auditoría estándar, el contenido se irá actualizando según corresponda.
 
-Power Automate para la Administración Pública de Estados Unidos tiene características diseñadas para admitir los requisitos de la directiva de CJIS de los clientes para los organismos de seguridad. Visite la página de los productos de Power Automate para la Administración Pública de Estados Unidos en el Centro de confianza para información más detallada sobre las certificaciones y acreditaciones.
+Power Automate para la Administración Pública de Estados Unidos tiene características diseñadas para admitir los requisitos de la directiva de CJIS de los clientes para los organismos de seguridad. Visite la página de los productos de Power Automate para la Administración Pública de Estados Unidos en el Centro de confianza para obtener información más detallada sobre las certificaciones y acreditaciones.
 
 Microsoft diseñó esta plataforma y sus procedimientos operativos para cumplir los requisitos que se alinean con el marco de cumplimiento DISA SRG IL4. Microsoft prevé que la base de clientes contratistas del Departamento de Defensa de Estados Unidos y otros organismos federales que actualmente usan GCC High para Microsoft Office 365 usen la opción de implementación de GCC High para Power Automate para la Administración Pública de Estados Unidos, que permite y requiere que los clientes usen Azure AD Government para las identidades de los clientes, a diferencia de GCC, que usa Azure AD público. Para la base de clientes contratistas del Departamento de Defensa de Estados Unidos, Microsoft trabaja con el servicio de manera de permitir que estos clientes cumplan con las reglamentaciones de adquisición de DFARS e ITAR.
 
@@ -169,9 +169,9 @@ Puede usar un conjunto de direcciones URL para acceder a los entornos de Power A
 
 Versión comercial | Versión para la Administración Pública de Estados Unidos
 ------ | --------
-https://flow.microsoft.com | https://gov.flow.microsoft.us (GCC) y  https://high.flow.microsoft.us (GCC High)
-https://admin.flow.microsoft.com | https://gov.admin.flow.microsoft.us (GCC) y https://high.admin.flow.microsoft.us (GCC High)
-https://flow.microsoft.com/connectors | https://gov.flow.microsoft.us/connectors (GCC) y https://high.flow.microsoft.us/connectors (GCC High)
+[https://flow.microsoft.com](https://flow.microsoft.com) | [https://gov.flow.microsoft.us (GCC)](https://gov.flow.microsoft.us) y [https://high.flow.microsoft.us (GCC High)](https://high.flow.microsoft.us)
+[https://admin.flow.microsoft.com](https://admin.flow.microsoft.com) | [https://gov.admin.flow.microsoft.us (GCC)](https://gov.admin.flow.microsoft.us) y [https://high.admin.flow.microsoft.us (GCC High)](https://high.admin.flow.microsoft.us)
+[https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors) | [https://gov.flow.microsoft.us/connectors (GCC)](https://gov.flow.microsoft.us/connectors) y [https://high.flow.microsoft.us/connectors (GCC High)](https://high.flow.microsoft.us/connectors)
 
 
 Para los clientes que implementan restricciones de red, asegúrese de que el acceso a los dominios siguientes está disponible para los puntos de acceso de los usuarios finales:
@@ -205,7 +205,7 @@ Consulte los [intervalos IP](https://www.microsoft.com/download/confirmation.asp
 
 ## <a name="connectivity-between-power-automate-us-government-and-public-azure-cloud-services"></a>Conectividad entre los servicios en la nube pública de Azure y Power Automate para la Administración Pública de Estados Unidos
 
-Azure se distribuye entre varias nubes. De manera predeterminada, se permite a los inquilinos abrir reglas del firewall para una instancia específica de la nube, pero las redes entre las nubes son diferentes y es necesario abrir reglas de firewall específicas para la comunicación entre los servicios. Si es un cliente de Power Automate y ya tiene instancias de SQL en la nube pública de Azure donde necesita tener acceso, debe abrir puertos del firewall específicos en SQL para el espacio de direcciones IP de la nube de Azure Government, para los centros de datos siguientes:
+Azure se distribuye entre varias nubes. De manera predeterminada, se permite a los inquilinos abrir reglas del firewall para una instancia específica de la nube, pero las redes entre las nubes son diferentes y es necesario abrir reglas de firewall específicas para la comunicación entre los servicios. Si es un cliente de Power Automate y ya tiene instancias de SQL en la nube pública de Azure a las que necesita acceder, abra puertos del firewall específicos en SQL para el espacio de direcciones IP de la nube de Azure Government, para los centros de datos siguientes:
 
 - USGov Virginia
 - USGov Texas

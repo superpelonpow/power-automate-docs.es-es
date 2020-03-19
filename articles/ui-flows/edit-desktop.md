@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0be3b3656cf9683b43d4ba22bc23b537ccc4e597
-ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
+ms.openlocfilehash: 49586e7035c4a1796ff624667b2562d2a64c576a
+ms.sourcegitcommit: ace3dbcbda208991201b770b9c707ec39faaa0d9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78244293"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79384606"
 ---
 # <a name="edit-desktop-ui-flows"></a>Edición de los flujos de la interfaz de usuario de escritorio
 
@@ -53,6 +53,7 @@ Los parámetros avanzados le permiten cambiar:
 
 -  El retraso una vez que se realiza la acción. Por ejemplo, puede agregar un segundo retraso si cambia PT0S a PT1S. Esto puede ser útil cuando la aplicación de destino tiene un tiempo de respuesta lento que no se completa antes del paso siguiente del flujo de interfaz de usuario.
 -   El [selector](edit-desktop.md#set-the-selector) del elemento de la interfaz de usuario de destino.
+
 
 ## <a name="add-a-recording"></a>Incorporación de una grabación
 
@@ -161,6 +162,26 @@ Puede capturar **elementXPath** con la [grabadora de la interfaz de usuario WinA
 Quite el primer elemento (todo antes de /Windows) antes de usar el resultado en **elementXPath** del selector.
 
 Pruebe el flujo de interfaz de usuario para confirmar que el selector funciona correctamente.
+
+## <a name="use-advanced-controls"></a>Uso de controles avanzados
+
+Puede incorporar controles avanzados, como **condiciones**, **switch cases** y **finalizar** las acciones en los flujos de interfaz de usuario.
+
+Para realizar estas operaciones avanzadas, realice los pasos siguientes en un flujo de interfaz de usuario existente.
+
+1. Seleccione el flujo de interfaz de usuario que ha creado > **Más comandos** (...) > **Editar**.
+
+1. Seleccione **+**  > **Agregar una acción** en la flecha hacia abajo del paso de flujo de interfaz de usuario al que desea agregar la lógica.
+
+   ![Agregar una acción](../media/edit-desktop/add-action.png)
+
+1. Seleccione **Integrado** y, después, seleccione una de las acciones de control disponibles.
+
+   ![Integrada](../media/edit-desktop/select-built-in.png)
+
+1. Complete la expresión que debe evaluarse. Puede utilizar contenido dinámico y expresiones para evaluar los controles de condición y modificador. Además, puede usar cualquier salida generada a partir de los pasos anteriores del flujo de interfaz de usuario.
+
+   ![Tarjeta de condición](../media/edit-desktop/condition-card.png)
 
 
 ## <a name="enable-coordinate-based-playback"></a>Habilitación de la reproducción basada en coordenadas
