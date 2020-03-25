@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 49586e7035c4a1796ff624667b2562d2a64c576a
-ms.sourcegitcommit: ace3dbcbda208991201b770b9c707ec39faaa0d9
+ms.openlocfilehash: e56c6559c78de3bed4dabddaffb9c02c8be49631
+ms.sourcegitcommit: c1c73952bb799a1fe48f2eb4f0c8dc7dd8614ff1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79384606"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79437312"
 ---
 # <a name="edit-desktop-ui-flows"></a>Edición de los flujos de la interfaz de usuario de escritorio
 
@@ -182,6 +182,45 @@ Para realizar estas operaciones avanzadas, realice los pasos siguientes en un fl
 1. Complete la expresión que debe evaluarse. Puede utilizar contenido dinámico y expresiones para evaluar los controles de condición y modificador. Además, puede usar cualquier salida generada a partir de los pasos anteriores del flujo de interfaz de usuario.
 
    ![Tarjeta de condición](../media/edit-desktop/condition-card.png)
+
+
+## <a name="handle-error-conditions"></a>Control de condiciones de error
+
+Durante la reproducción pueden surgir condiciones inesperadas y provocar errores en los flujos de interfaz de usuario. Puede usar características avanzadas de control de errores para crear pasos alternativos cuando surjan condiciones inesperadas. 
+
+Estos son los pasos que debe seguir.
+
+1. Inicie sesión en [Power Automate](https://powerautomate.microsoft.com) con su cuenta profesional o educativa.
+1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario** para mostrar los flujos de la interfaz de usuario.
+1. Seleccione **Más comandos**, los tres puntos verticales correspondientes al flujo de la interfaz de usuario que quiera editar.
+1. Seleccione **Editar**.
+1. Seleccione la flecha abajo que se encuentra inmediatamente antes del paso de flujo de la interfaz de usuario al que quiere agregar el control de errores y, luego, elija **+** (Insertar nuevo paso).
+   
+   En la imagen siguiente, vamos a insertar el nuevo paso antes del paso **PostElementText 1**. Esto significa que, si **PostElementText 1** produce un error, se ejecutarán los pasos alternativos que defina a continuación.
+
+      ![Inserción de imagen de nuevo paso](../media/edit-desktop/insert-new-step.png) 
+
+1. Seleccione **Add a parallel branch** (Agregar una rama paralela).
+
+    ![Imagen que muestra la adición de una rama paralela y otras opciones](../media/edit-desktop/add-parallel-branch.png)
+
+1. Seleccione la acción que quiere realizar en la rama paralela si se produce un error al ejecutar el flujo de la interfaz de usuario.
+
+   Puede seleccionar **Grabar aplicación** para realizar una nueva grabación para la rama paralela, o bien seleccionar **Terminar** en las acciones **integradas** para salir de la salida del flujo de la interfaz de usuario correctamente si se produce un error.
+
+    ![Imagen que muestra las opciones de rama paralela](../media/edit-desktop/add-parallel-branch.png)
+
+   >[!NOTE]
+   >De forma predeterminada, la acción que se agrega en la rama paralela solo se ejecuta si se produce un error en el paso anterior. Puede seleccionar **...** en la rama paralela > **Configurar ejecución posterior** para cambiar el comportamiento predeterminado. 
+
+      ![Imagen que muestra las opciones, incluida Configurar ejecución posterior](../media/edit-desktop/configure-run-after.png)
+
+1.  En esta pantalla, puede seleccionar la condición sobre la que quiere que se ejecute la rama paralela. Puede seleccionar una de las cuatro opciones disponibles.
+
+    ![Imagen que muestra las opciones de ejecución posterior](../media/edit-desktop/run-after-options.png)
+
+    Nota: No podrá guardar un flujo de la interfaz de usuario cuya rama principal y conjunto de ramas paralelas se establezcan para ejecutarse en la misma condición.
+
 
 
 ## <a name="enable-coordinate-based-playback"></a>Habilitación de la reproducción basada en coordenadas

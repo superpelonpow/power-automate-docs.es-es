@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 825ebceb042215c379340f1e1b7e2dae6f921c2c
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 96c93771129ab0454d03e721a36d429e6cc894d5
+ms.sourcegitcommit: c1c73952bb799a1fe48f2eb4f0c8dc7dd8614ff1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79196055"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79437189"
 ---
 # <a name="set-up-ui-flows"></a>Configuración de los flujos de la interfaz de usuario
 
@@ -87,6 +87,12 @@ Para instalar la aplicación de flujos de interfaz de usuario, siga estos pasos:
 1. [Descargue el instalador de flujos de interfaz de usuario](https://go.microsoft.com/fwlink/?linkid=2102613).
 1. Abra el archivo **Setup.Microsoft.Flow.UIflow.exe**. Es probable que este archivo esté en la carpeta **Descargas** después de que lo descargó en el paso anterior.
 1. Siga las instrucciones del instalador de **configuración de flujos de interfaz de usuario (versión preliminar)** para completar la instalación.
+
+### <a name="set-data-collection-options"></a>Establecimiento de opciones de recopilación de datos
+
+Durante la instalación, si no quiere enviar datos de uso a Microsoft, puede cambiar la configuración predeterminada. Para ello, desactive **Permitir que Microsoft recopile datos de uso para mejorar los flujos de interfaz de usuario**.
+
+![Imagen que muestra las opciones de recopilación de datos](../media/ui-flows-setup/data-collection-settings.png)
 
 > [!WARNING]
 > Si necesita cambiar la configuración de la recopilación de datos, debe desinstalar la aplicación de flujos de interfaz de usuario y, después, volver a instalarla. Los flujos de interfaz de usuario dejarán de funcionar si cambia la configuración de la recopilación de datos sin desinstalar primero la aplicación de flujos de interfaz de usuario.

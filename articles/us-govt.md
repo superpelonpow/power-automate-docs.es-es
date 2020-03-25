@@ -14,12 +14,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 2c889d21336b632edf1f3746cc90846f469ecbd4
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: e74c8789975926600d4d17708a134cefb7fc0722
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195943"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80082172"
 ---
 # <a name="power-automate-us-government"></a>Power Automate para la Administración Pública de Estados Unidos
 
@@ -225,6 +225,8 @@ Algunas de las características disponibles en la versión comercial de Flow no 
 - Activación del flujo de Power Automate para la Administración Pública de Estados Unidos *desde* listas de SharePoint
 
 - Activación del flujo de Power Automate para la Administración Pública de Estados Unidos *desde* GCC de Dynamics 365
+
+- [AI Builder](https://docs.microsoft.com/ai-builder/) todavía no está disponible para los inquilinos de GCC y GCC High.
 
 - Las [aprobaciones](./modern-approvals.md) no están aún disponibles para los inquilinos de GCC y GCC High.
 
