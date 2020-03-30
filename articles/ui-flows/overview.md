@@ -20,23 +20,23 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8739d0a3227f74532039d09c0bba8cb18e27982a
-ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
+ms.openlocfilehash: d17e7884960af0fb4231eac785a17683c1dadd18
+ms.sourcegitcommit: c86134235a4e3a819800c77fbc50034cfd8714c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78244205"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80329851"
 ---
 # <a name="preview-introduction-to-ui-flows"></a>Versión preliminar: Introducción a los flujos de la interfaz de usuario
 
 [Este tema es documentación preliminar y está sujeto a cambios].
 
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
-<br>
-<iframe width="1129" height="635" src="https://www.youtube.com/embed/bZrrdoytTH0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 Los flujos de interfaz de usuario proporcionan funciones de automatización de procesos robóticos (RPA) para Power Automate. Puede usar flujos de interfaz de usuario para automatizar tareas repetitivas en aplicaciones web y Windows. Los flujos de interfaz de usuario transmiten y reproducen acciones de la interfaz de usuario (clics, entradas de teclado, etc.) para las aplicaciones que no tienen disponibilidad de API fáciles de usar o completas.
+
+<br/>
+
+> [!VIDEO https://www.youtube.com/embed/bZrrdoytTH0]
+
 
 > [!IMPORTANT]
 > - Esta es una característica en versión preliminar.

@@ -16,6 +16,20 @@
       href: create-team-flows.md
     - name: Creación de un flujo que usa Common Data Service
       href: common-data-model-intro.md
+    - name: Catálogo de cursos
+      items:
+        - name: Catálogo de cursos
+          href: learning-catalog/learning-catalog.md
+        - name: Creador de aplicaciones
+          href: learning-catalog/learning-catalog-app-maker.md
+        - name: Administrador
+          href: learning-catalog/learning-catalog-administrator.md
+        - name: Desarrollador
+          href: learning-catalog/learning-catalog-developer.md
+        - name: Consultor funcional
+          href: learning-catalog/learning-catalog-functional-consultant.md
+        - name: Roles de preventas de asociados
+          href: learning-catalog/learning-catalog-sales.md
 - name: Flujos automatizados
   items:
     - name: Creación de un flujo desde cero
