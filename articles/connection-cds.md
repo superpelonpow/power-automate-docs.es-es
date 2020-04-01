@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 06781496eecd33801cdd08768c698e2203b1f846
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 9c5180fc02a3aea9403dabe28a9f8767354bbe1c
+ms.sourcegitcommit: c86134235a4e3a819800c77fbc50034cfd8714c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194402"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80329888"
 ---
 # <a name="create-an-automated-flow-by-using-common-data-service"></a>Creación de un flujo automatizado mediante Common Data Service
 
@@ -71,6 +71,9 @@ Este flujo se desencadena cada vez que se actualiza el nombre o apellido de cont
 
 > [!div class="mx-imgBorder"]
 > ![Atributos de filtrado](./media/cds-connector/FilterAttributes.png)
+
+> [!IMPORTANT]
+> [Los conjuntos de opciones de selección múltiple](/powerapps/maker/common-data-service/custom-picklists) no se pueden usar en un flujo de trabajo. Si incluye uno, se producirá un error que indica que falta un "campo obligatorio".
 
 ## <a name="trigger-privileges"></a>Privilegios de desencadenador
 

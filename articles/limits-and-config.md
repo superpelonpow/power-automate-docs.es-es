@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/30/2019
+ms.date: 03/26/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8f5ec1e45c2dccf3553712b5662ada5262ffe4d1
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 959b7876426a78ae86bebe998332fc1846f7421e
+ms.sourcegitcommit: 7821cc858dc3fc51e3a44f1fc0c1f83962de8a2c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79224340"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80375824"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Límites y configuración de Power Automate
 
@@ -74,16 +74,16 @@ Estos son los límites de una sola ejecución de flujo. En el caso de los límit
 
 | Nombre | Límite | Notas |
 | --- | --- | --- |
-| Elementos de Aplicar a cada: licencia gratuita|5 000 |Puede usar la acción de filtrado para filtrar matrices de mayor tamaño según sea necesario. |
-| Elementos de Aplicar a cada: licencias de Office 365, Plan 1, Plan 2, Por usuario y Por flujo|100 000 |Puede usar la acción de filtrado para filtrar matrices de mayor tamaño según sea necesario. |
+| Elementos de Aplicar a cada uno: Office 365 y licencias gratuitas|5 000 |Puede usar la acción de filtrado para filtrar matrices de mayor tamaño según sea necesario. |
+| Elementos de Aplicar a cada uno: licencias de Plan 1, Plan 2, Por usuario y Por flujo|100 000 |Puede usar la acción de filtrado para filtrar matrices de mayor tamaño según sea necesario. |
 | Iteraciones Until |5 000 | |
-| Elementos de SplitOn: licencia gratuita |5 000 ||
-| Elementos de SplitOn: licencias de Office 365, Plan 1, Plan 2, Por usuario y Por flujo |100 000 ||
+| Elementos de SplitOn: Office 365 y licencias gratuitas |5 000 ||
+| Elementos de SplitOn: licencias de Plan 1, Plan 2, Por usuario y Por flujo |100 000 ||
 | Aplicar a cada paralelismo |50 |De forma predeterminada, los bucles se ejecutan en secuencia (básicamente, el paralelismo es 1). Puede configurar hasta 50 en paralelo. |
 | Ejecuciones de acciones por 5 minutos: licencias gratuita, de Office 365, Plan 1 y versiones de prueba | 2 000 | Además, puede distribuir una carga de trabajo por más de un flujo según sea necesario. |
 |Ejecuciones de acciones por 5 minutos: licencias Plan de pago 2, Por usuario y Por flujo|100 000|Además, puede distribuir una carga de trabajo por más de un flujo según sea necesario.|
 | Llamadas salientes a acciones simultáneas: licencias gratuita, de Office 365, Plan 1 y versiones de prueba | Más de 500 | Reduzca la cantidad de solicitudes simultáneas o la duración según sea necesario. |
-| Ejecuciones de acciones por 24 horas: licencias gratuita, de Office365, Plan 1 y versiones de prueba | ~2500 | Reduzca la cantidad de solicitudes simultáneas o la duración según sea necesario. | 
+| Llamadas salientes simultáneas de acciones: licencias plan 2, por usuario y por flujo | ~2500 | Reduzca la cantidad de solicitudes simultáneas o la duración según sea necesario. | 
 
 ## <a name="throughput-limits"></a>Límites de rendimiento
 
