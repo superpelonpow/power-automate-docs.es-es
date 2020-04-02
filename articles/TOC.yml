@@ -102,7 +102,7 @@
       href: custom-controls-business-process-flows.md
     - name: Procedimientos recomendados para los atributos de flujo de proceso de negocio
       href: best-practices-entity-attributes.md
-- name: Flujos de interfaz de usuario (versión preliminar)
+- name: Flujos de interfaz de usuario
   items:
     - name: Introducción a los flujos de la interfaz de usuario
       href: ./ui-flows/overview.md
