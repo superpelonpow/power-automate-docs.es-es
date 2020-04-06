@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 617f61e1c08f7a4a51bb6916bcadf5e02691d46f
-ms.sourcegitcommit: f7d040ae93eabbc60ce922f497ab47977130d877
+ms.openlocfilehash: b73c550eb22948ea3c0e9ac14adf15674869da61
+ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79132944"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80525066"
 ---
 # <a name="upgrade-ui-flows-app-and-connections-from-previous-releases"></a>Actualización de la aplicación de flujos de interfaz de usuario y de las conexiones a partir de versiones anteriores
 
@@ -48,10 +48,7 @@ No es necesario realizar ninguna acción hasta que actualice la aplicación de f
     1. Escriba sus credenciales para la conexión y guárdela.
 
     >[!IMPORTANT]
-    >Asegúrese de usar las credenciales correctas, tal como se describe en [Configuración de las conexiones de flujos de interfaz de usuario y las credenciales del equipo](setup.md). Usar las credenciales correctas garantiza que la conexión actualiza y usa las rutas de acceso del código para los flujos de interfaz de usuario que están disponibles con carácter general.
-
- <!-- todo      1. See (Managing UI flows app (Install, update, versions…)) for more
-            details. -->
+    >Asegúrese de usar las credenciales correctas, tal como se describe en [Configuración de las conexiones de flujos de interfaz de usuario y las credenciales del equipo](setup.md#setup-ui-flows-connections-and-machine-credentials). Usar las credenciales correctas garantiza que la conexión actualiza y usa las rutas de acceso del código para los flujos de interfaz de usuario que están disponibles con carácter general.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
