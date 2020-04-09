@@ -13,37 +13,35 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 03/30/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 38b6ba7f8fe3ab7a386229b6c9c5ccc300a147de
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 8ea8301c1b50502995cc5081d960df44859458eb
+ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74371420"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80525011"
 ---
 # <a name="use-inputs-and-outputs-in-web-ui-flows"></a>Uso de entradas y salidas en los flujos de la interfaz de usuario web
 
-[Este tema es documentación preliminar y está sujeto a cambios].
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
+Puede definir entradas para pasar a las aplicaciones automatizadas durante la reproducción. También puede pasar la *salida* de las aplicaciones automatizadas al flujo.
 
 ## <a name="define-inputs-for-a-web-ui-flow"></a>Definición de entradas para un flujo de interfaz de usuario web
 
 Las entradas de un flujo de interfaz de usuario permiten pasar información de un origen externo, como una base de datos u otro flujo de interfaz de usuario, al software heredado de destino que se automatizará.
 
-Cualquier variable que se use (lectura) antes de la inicialización (que habitualmente se hace a través de los comandos **store**) se tratará automáticamente como una variable de entrada y se mostrará en la tarjeta de acción **Run a UI Flow for web** (Ejecutar un flujo de interfaz de usuario para Web).
+Cualquier variable que se use (que se lea) antes de la inicialización (que habitualmente se hace a través de los comandos **store**) se tratará automáticamente como una variable de entrada y se mostrará en la tarjeta de acción **Ejecutar flujo de interfaz de usuario para la Web**.
 
 Puede usar variables a través de la interpolación de cadenas; por ejemplo, cambie el campo de destino del comando click a "id=\${elementId}". O cambie el campo del valor del comando type a "\${inputText}".
 
-El comando **set window size** y el comando **type** de las capturas de pantalla siguientes usan variables sin inicializar \${Width}, \${Height} y \${search}. Estas variables se convertirán en valores de entrada.
+El comando **set window size** y el comando **type** de las siguientes capturas de pantalla usan variables sin inicializar \${Width}, \${Height} y \${search}. Estas variables se convertirán en valores de entrada.
 
-![Establecimiento del tipo y el tamaño de la ventana](../media/inputs-outputs-web/f05cb445dad212aaf395b66ba969622c.png "Establecimiento del tipo y el tamaño de la ventana")
+![Establecimiento del tipo y el tamaño de la ventana](../media/inputs-outputs-web/set-window-size.png "Establecimiento del tipo y el tamaño de la ventana")
 
 Puede usar variables directamente en algunos comandos; por ejemplo, los campos de destino o valor del comando forEach son variables, no es necesario que lo incluya con "\${}".
 

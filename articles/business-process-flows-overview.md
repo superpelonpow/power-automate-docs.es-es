@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8f4a1fcf0feb893f3eca8ac12b6b7f725aceed10
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: a6e936b833f6b1e1d6cf6e050031969d41e40de6
+ms.sourcegitcommit: 31692af25f91af60cf77572edcb0c986602dc9a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194241"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80624838"
 ---
 # <a name="business-process-flows-overview"></a>Introducción a los flujos de proceso de negocio
 
@@ -190,6 +190,7 @@ En concreto, los tres comandos que están disponibles para un flujo de proceso d
 
 - En la actualidad, no se pueden crear formularios personalizados para entidades en función de un flujo de proceso de negocio.
 - Si una solución incluye una entidad de flujo de proceso de negocio, esta se debe agregar de forma manual a la solución antes de exportarla. En caso contrario, la entidad de flujo de proceso de negocio no se incluirá en el paquete de solución. Más información: [Agregar componentes de la solución](/powerapps/maker/model-driven-apps/create-solution#add-solution-components)
+- Al agregar una entidad Proceso a una aplicación controlada por modelos, la funcionalidad puede quedar limitada. Obtenga más información acerca de la [creación y edición de flujos de procesos de negocio](https://docs.microsoft.com/power-automate/create-business-process-flow). 
 
 ### <a name="next-steps"></a>Pasos siguientes  
  [Vea un vídeo corto (4:49) sobre los flujos de proceso de negocio](https://go.microsoft.com/fwlink/p/?linkid=842226)   

@@ -13,27 +13,23 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 03/24/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e56c6559c78de3bed4dabddaffb9c02c8be49631
-ms.sourcegitcommit: c1c73952bb799a1fe48f2eb4f0c8dc7dd8614ff1
+ms.openlocfilehash: 8b0aebaa0e61758d6bc6ebeb3de7b71bde665edc
+ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79437312"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80525093"
 ---
 # <a name="edit-desktop-ui-flows"></a>Edición de los flujos de la interfaz de usuario de escritorio
 
-[Este tema es documentación preliminar y está sujeto a cambios].
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
-Los flujos de interfaz de usuario de escritorio automatizan las aplicaciones de escritorio de Windows. Consulte los [problemas conocidos](create-desktop.md#known-issues-and-solutions) para más información sobre los problemas que podría encontrar, soluciones alternativas para esos problemas y escenarios no admitidos en esta versión preliminar.
+Los flujos de interfaz de usuario de escritorio automatizan las aplicaciones de escritorio de Windows. Consulte los [problemas conocidos](create-desktop.md#known-issues-and-solutions) para obtener más información sobre los problemas que podría encontrar, soluciones alternativas para esos problemas y escenarios no admitidos en esta versión.
 
 ## <a name="prerequisites"></a>Requisitos previos
 Un flujo de interfaz de usuario de escritorio. [Cree ahora un flujo de interfaz de usuario de escritorio](create-desktop.md#create-and-test-desktop-ui-flows) si no tiene ninguno para editarlo.
@@ -46,7 +42,7 @@ Puede editar la grabación para:
 
 -   Modificar el valor de las acciones que la admiten.
 -   Eliminar un paso.
--   Eliminar toda la grabación.
+-   Eliminar la grabación.
 -   Cambiar el orden de las acciones con arrastrar y colocar. Tenga cuidado con esto, porque puede romper la coherencia de la grabación.
 
 Los parámetros avanzados le permiten cambiar:
@@ -60,7 +56,7 @@ Los parámetros avanzados le permiten cambiar:
 Es posible que quiera grabar el flujo de interfaz de usuario en varias sesiones. Una vez que complete la primera grabación, puede continuar de la manera siguiente:
 
 1. Inicie sesión en [Power Automate](https://flow.microsoft.com).
-1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario (versión preliminar)** .
+1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario**.
 1. Seleccione el flujo de interfaz de usuario que quiere editar.
    ![](../media/edit-desktop/select-ui-flow.png)
 1. Seleccione **Editar**. 
@@ -111,7 +107,7 @@ Una vez que haya grabado una aplicación con al menos una acción, puede agregar
 Siga estos pasos para agregar una acción manual:
 
 1. Inicie sesión en [Power Automate](https://flow.microsoft.com).
-1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario (versión preliminar)** .
+1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario**.
 1. Seleccione el flujo de interfaz de usuario que quiere editar.
    ![](../media/edit-desktop/select-ui-flow.png)
 1. Seleccione **Editar**. 

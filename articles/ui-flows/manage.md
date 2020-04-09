@@ -20,25 +20,21 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: d07f2dc95432a81518fcb6445911f1c6430ce623
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: f780d18597989614aa0452c1723b805a753bd680
+ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74371374"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80525138"
 ---
 # <a name="manage-ui-flows"></a>Administración de los flujos de la interfaz de usuario
 
-[Este tema es documentación preliminar y está sujeto a cambios].
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
-Después de crear flujos de interfaz de usuario, puede que necesite ver, editar o simplemente comprobar su estado. Para hacerlo, vaya a la pestaña **Flujos de interfaz de usuario (versión preliminar)** .
+Después de crear flujos de interfaz de usuario, puede que necesite ver, editar o simplemente comprobar su estado. Para hacerlo, vaya a la pestaña **Flujos de interfaz de usuario**.
 
 ## <a name="list-of-ui-flows"></a>Lista de flujos de interfaz de usuario
 
 1. Inicie sesión en Power Automate.
-1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario (versión preliminar)** .
+1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario**.
 
    ![Ver todos los flujos de interfaz de usuario](../media/manage-ui-flows/view-all.png "Ver todos los flujos de interfaz de usuario")
 
@@ -54,7 +50,7 @@ Para cada uno de los flujos de interfaz de usuario, puede ver sus detalles si se
 Siga estos pasos para ver los detalles de un flujo de interfaz de usuario:
 
 1. Inicie sesión en Power Automate.
-1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario (versión preliminar)** .
+1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario**.
 1. Seleccione cualquiera de los flujos de interfaz de usuario.
 
    ![Ver detalles](../media/manage-ui-flows/view-details.png "Ver detalles")

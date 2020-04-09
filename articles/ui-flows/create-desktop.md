@@ -13,41 +13,34 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/28/2020
+ms.date: 03/28/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 254e92db3c02cac4294b92fc5a1deec4a23e341e
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 3705d825a2b659e19975b6deeeae215bb1fad3d5
+ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79224202"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80525083"
 ---
 # <a name="create-and-test-desktop-ui-flows"></a>Creación y prueba de los flujos de la interfaz de usuario de escritorio
 
-[Este tema es documentación preliminar y está sujeto a cambios].
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
-Consulte los [problemas conocidos](create-desktop.md#known-issues-and-solutions) que aparecen más adelante en este tema para más información sobre los problemas que podría encontrar, soluciones alternativas para esos problemas y escenarios no admitidos en esta versión preliminar.
-
+En los pasos siguientes, se muestra cómo automatizar la aplicación Calculadora para sumar dos números y, después, almacenar el resultado para usarlo más adelante.
 
 ## <a name="create-a-desktop-ui-flow"></a>Creación de un flujo de la interfaz de usuario de escritorio
-
-En los pasos siguientes, se muestra cómo automatizar la aplicación Calculadora para sumar dos números y, después, almacenar el resultado para usarlo más adelante.
 
 > [!TIP]
 > Puede automatizar otras aplicaciones de escritorio de Windows siguiendo un patrón similar.
 
-1. Asegúrese de que el [dispositivo está listo](setup.md) para crear flujos de interfaz de usuario. <!--Todo: link to the prereqs section-->
+1. Asegúrese de que el [dispositivo está listo](setup.md#prerequisites) para crear flujos de interfaz de usuario.
 
-1. Use la [versión Chromium de Microsoft Edge](https://www.microsoftedgeinsider.com) o Google Chrome para abrir [Power Automate](https://flow.microsoft.com) y, luego, inicie sesión con la misma cuenta profesional o educativa que en el dispositivo.
+1. Use la [versión 80 o posterior de Microsoft Edge](https://www.microsoftedgeinsider.com), o Google Chrome, para abrir [Power Automate](https://flow.microsoft.com) y, luego, inicie sesión con la misma cuenta profesional o educativa que en el dispositivo.
 
-1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario (versión preliminar)**  > **Nuevo**.
+1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario** > **Nuevo**.
 
    ![Creación de un flujo de interfaz de usuario](../media/create-windows-ui-flow/create-new.png "Creación de un flujo de interfaz de usuario")
 
@@ -62,19 +55,18 @@ En los pasos siguientes, se muestra cómo automatizar la aplicación Calculadora
 1. Seleccione **Siguiente** en la parte inferior para omitir la pantalla **Configuración de entradas**, porque no usaremos entradas en este tutorial.
 
 1.  Seleccione **Descargar paquete**.
-1.  Abra el archivo **Setup.Microsoft.Flow.UIflow.exe**. Es probable que este archivo esté en la carpeta **Descargas** después de que lo descargó en el paso anterior.
-1.  Siga las instrucciones del instalador de configuración de flujos de interfaz de usuario (versión preliminar) para completar la instalación.
+1.  Abra el archivo **Setup.Microsoft.PowerAutomate.UIflow.exe**. Es probable que este archivo esté en la carpeta **Descargas** después de que lo descargó en el paso anterior.
+1.  Siga las instrucciones del instalador de configuración de flujos de interfaz de usuario para completar la instalación.
 
     Una vez que el instalador de flujos de interfaz de usuario complete el proceso, el explorador le pedirá activar la extensión.
 
-1. En Microsoft Edge (Chromium), seleccione cada icono de advertencia en la esquina superior derecha del explorador y, luego, seleccione **Enable extension** (Habilitar extensión).
+1. En Microsoft Edge (versión 80 o posterior), seleccione cada icono de advertencia en la parte superior derecha del explorador y, después, **Habilitar extensión**.
 1. En Google Chrome, seleccione **Enable extension** (Habilitar extensión) cuando se le solicite.
 
    > [!TIP]
    > Si no ve la solicitud en el explorador, revise lo siguiente:
-   > - Debe usar el explorador Microsoft Edge (Chromium) o Google Chrome.
-   > - Es posible que tenga que habilitar manualmente la extensión. Para Microsoft Edge (Chromium), vaya a **edge://extensions** o, para Google Chrome, vaya a **chrome://extensions**.
-   > - Si la extensión de los flujos de interfaz de usuario de Power Automate no aparece, puede volver a instalarla con el [instalador de flujos de interfaz de usuario](https://go.microsoft.com/fwlink/?linkid=2102613).
+   > - Debe usar el explorador Microsoft Edge (versión 80 o posterior) o Google Chrome.
+   > - Es posible que tenga que actualizar la extensión para [Microsoft Edge (versión 80 o posterior)](https://www.microsoft.com/store/collections/edgeextensions/pc) o [Google Chrome](https://chrome.google.com/webstore/category/extensions).
 
    Continúe después de haber instalado la extensión.
 
@@ -88,7 +80,7 @@ En los pasos siguientes, se muestra cómo automatizar la aplicación Calculadora
 
    El control de la grabadora aparece en la parte superior de la pantalla.
 
-   ![El control de la grabadora](../media/create-windows-ui-flow/recorder-control.png "El control de la grabadora")
+   ![Control de la grabadora](../media/create-windows-ui-flow/recorder-control.png "Control de la grabadora")
 
 1. Inicie la aplicación Calculadora.
 
@@ -147,8 +139,8 @@ En los pasos siguientes, se muestra cómo automatizar la aplicación Calculadora
 
 - Interacciones en Windows (Explorador de archivos, menú de inicio, barra de tareas, etc.).
 
-- Exploradores web (Chrome, IE, Edge, Edge Chromium, Firefox, Mozilla, etc.).
-    En su lugar, consulte [Creación de un flujo de interfaz de usuario web](edit-web.md) para automatizar sitios web.
+- Exploradores web (Chrome, IE, Microsoft Edge, Firefox, Mozilla, etc.)
+    En su lugar, consulte [Creación de un flujo de interfaz de usuario web](create-web.md) para automatizar sitios web.
 
 -   Aplicaciones Java
 
@@ -194,15 +186,15 @@ No se grabarán estas acciones:
 
 -   Una aplicación abierta antes de la grabación.
 
-<!-- -   Closed app before playback starts. -->
 
 ## <a name="unreliable-behaviors-and-workarounds-for-microsoft-office-desktop"></a>Comportamientos no confiables y soluciones alternativas de Microsoft Office (escritorio)
+
 - Ancle la cinta de opciones antes de empezar la reproducción para evitar problemas que puedan producirse si la cinta de opciones está configurada para ocultarse automáticamente durante la reproducción.
 - No seleccione los elementos mediante clic y arrastrado. Por ejemplo, no use Mayús + clic para seleccionar celdas de Microsoft Excel y no arrastre el mouse para seleccionar texto en Microsoft Word ni Microsoft PowerPoint.
-- Es posible que algunos elementos no funcionen correctamente en los flujos de interfaz de usuario (versión preliminar	) de las aplicaciones de escritorio de Microsoft Word y Microsoft PowerPoint. Por ejemplo, es posible que no funcionen las opciones del menú Archivo, como empezar desde cero o hacer clic con el botón derecho en controles como agregar un párrafo en Microsoft Word o cambiar el diseño de las diapositivas en Microsoft PowerPoint.
+- Es posible que algunos elementos no funcionen correctamente en los flujos de interfaz de usuario de las aplicaciones de escritorio de Microsoft Word y Microsoft PowerPoint. Por ejemplo, es posible que no funcionen las opciones del menú **Archivo**, como empezar desde cero o hacer clic con el botón derecho en controles como agregar un párrafo en Microsoft Word o cambiar el diseño de las diapositivas en Microsoft PowerPoint.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 - Obtenga información sobre cómo [desencadenar el flujo de interfaz de usuario](run-ui-flow.md) que acaba de crear.
 
-- Si quiere hacer más cosas con los flujos de interfaz de usuario, también puede probar los flujos de interfaz de usuario con parámetros de [entrada y salida](inputs-outputs-web.md).
+- Si quiere hacer más cosas con los flujos de interfaz de usuario, también puede crear flujos de interfaz de usuario con parámetros de [entrada y salida](inputs-outputs-web.md).

@@ -20,28 +20,24 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 90951e4244ef7caa75bedc522d1bb032e070dbef
-ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
+ms.openlocfilehash: fb0b3b2dcd615130764d7f4c206e04e191bb1eca
+ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78244255"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80524622"
 ---
 # <a name="create-and-test-your-web-ui-flows"></a>Creación y prueba de los flujos de la interfaz de usuario web
 
-[Este tema es documentación preliminar y está sujeto a cambios].
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
-Siga estos pasos para crear un flujo de interfaz de usuario web simple:
+Siga estos pasos para crear un flujo de interfaz de usuario web simple.
 
 ## <a name="create-a-web-ui-flow"></a>Creación de un flujo de interfaz de usuario web
 
-1. Abra la [versión siguiente de Microsoft Edge](https://www.microsoftedgeinsider.com/) o Google Chrome y vaya a [Power Automate](https://flow.microsoft.com/).
+1. Abra la [versión 80 o posterior de Microsoft Edge](https://www.microsoft.com/edge), o Google Chrome, y vaya a [Power Automate](https://flow.microsoft.com/).
 
 1. Inicie sesión con su cuenta profesional o educativa si es necesario.
 
-1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario (versión preliminar)**  > **Nuevo**.
+1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario** > **Nuevo**.
 
    ![Creación de un flujo de interfaz de usuario](../media/create-windows-ui-flow/create-new.png "Creación de un flujo de interfaz de usuario")
 

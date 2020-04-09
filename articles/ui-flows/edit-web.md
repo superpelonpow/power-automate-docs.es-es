@@ -20,20 +20,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f29873dff5ae842d2f7b86f4f6e3e5c31bf04712
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 74c323f844c6bdc0f4cb1ad3d1a37977070a0a26
+ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74371696"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80525146"
 ---
 # <a name="edit-web-ui-flows"></a>Edición de los flujos de la interfaz de usuario web
 
-[Este tema es documentación preliminar y está sujeto a cambios].
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
-Los flujos de interfaz de usuario web automatizan los sitios web que se ejecutan en la [versión siguiente de Microsoft Edge](https://www.microsoftedgeinsider.com/) o Google Chrome. Una vez que haya [creado un flujo de interfaz de usuario web](create-web.md), es posible que tenga que editarlo. Siga los pasos de este documento para aprender a editar los flujos de interfaz de usuario web.
+Los flujos de interfaz de usuario web automatizan los sitios web que se ejecutan en la [versión 80 o posterior de Microsoft Edge](https://www.microsoft.com/edge/) o en Google Chrome. Una vez que haya [creado un flujo de interfaz de usuario web](create-web.md), es posible que tenga que editarlo. Siga los pasos de este documento para aprender a editar los flujos de interfaz de usuario web.
 
 ## <a name="edit-in-selenium-ide"></a>Edición en el IDE de Selenium
 

@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8470d927204f1ba40f801c806c34ca0c78336555
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 4c8b2b02cf87abb54a587d9358a4c1f462ceb724
+ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193850"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80524545"
 ---
 # <a name="faq-for-regions-in-power-automate"></a>Preguntas más frecuentes sobre las regiones en Power Automate
 
@@ -56,11 +56,24 @@ Los entornos se pueden crear en distintas regiones y enlazarse a esa ubicación 
 
 Para un rendimiento óptimo, cree el entorno en la región más cercana a los usuarios. Por ejemplo, si los usuarios están en Europa, cree el entorno en la región de Europa. Si los usuarios están en Estados Unidos, cree el entorno en la región de Estados Unidos.
 
-## <a name="gateways"></a>Puertas de enlace
-Las puertas de enlace son las siguientes:
+## <a name="region-mappings-for-power-automate-and-gateways"></a>Asignaciones de regiones para Power Automate y puertas de enlace
 
-* Actualmente no está disponible en la región de la India.
-* Solo se admite en el entorno predeterminado, no en entornos personalizados.
+La región en la que está instalada la puerta de enlace debe estar asignada a la región de Power Automate. No se admiten límites entre regiones geográficas. 
+
+Esta es la información de asignación:
+
+Región de Power Platform|Región de la puerta de enlace
+-----|-----
+Estados Unidos, incluida la versión preliminar|Centro de EE. UU., Este de EE. UU. 2, Centro-norte de EE. UU., Centro-sur de EE. UU., Oeste de EE. UU. 2, Centro-oeste de EE. UU. y Oeste de EE. UU.
+Asia|Este de Asia y Sudeste de Asia
+Australia|Este de Australia, Sudeste de Australia
+Canadá|Centro de Canadá y Este de Canadá
+Europa|Norte de Europa y Oeste de Europa
+Francia|Centro de Francia, Sur de Francia
+India|Centro de la India, India del Sur, Oeste de la India
+Japón|Japón Oriental, Japón Occidental
+Sudamérica|Sur de Brasil
+Reino Unido|Sur de Reino Unido y Oeste de Reino Unido
 
 ## <a name="is-power-automate-available-in-national-clouds"></a>¿Power Automate está disponible en nubes nacionales?
 Sí. [Más información](./us-govt.md).

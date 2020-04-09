@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 959b7876426a78ae86bebe998332fc1846f7421e
-ms.sourcegitcommit: 7821cc858dc3fc51e3a44f1fc0c1f83962de8a2c
+ms.openlocfilehash: ebb723812a8a6805616a8e66deee13aa74618ce2
+ms.sourcegitcommit: 7d6c210192ce68ad0d0b27f67f581e307d5ef606
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "80375824"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669858"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Límites y configuración de Power Automate
 
@@ -50,11 +50,11 @@ Límites para una única solicitud saliente.
 
 ### <a name="retry-policy"></a>Directiva de reintentos
 
-| Nombre | Límite |
-| --- | --- |
-| Número de reintentos |90 | El valor predeterminado es 4. Para cambiar el valor predeterminado, use la configuración de la acción | 
-| Reintentar retraso máximo |1 día | |
-| Reintentar retraso mínimo |5 segundos | |
+| Nombre | Límite |Notas|
+| --- | --- | --- |
+| Número de reintentos |90 | El valor predeterminado es 2. Para cambiar el valor predeterminado, use la configuración de la acción. | 
+| Reintentar retraso máximo |1 día |  |
+| Reintentar retraso mínimo |5 segundos |  |
 
 ## <a name="run-duration-and-retention"></a>Duración y retención de la ejecución
 Estos son los límites de una sola ejecución de flujo.

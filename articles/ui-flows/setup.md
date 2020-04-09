@@ -13,28 +13,21 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/04/2020
+ms.date: 03/24/2020
 ms.author: DeonHe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 96c93771129ab0454d03e721a36d429e6cc894d5
-ms.sourcegitcommit: c1c73952bb799a1fe48f2eb4f0c8dc7dd8614ff1
+ms.openlocfilehash: 97456d637dd272a465559d4cee8fb1d17fe3de8d
+ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79437189"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80524646"
 ---
 # <a name="set-up-ui-flows"></a>Configuración de los flujos de la interfaz de usuario
-
-[Este tema es documentación preliminar y está sujeto a cambios].
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
-> [!IMPORTANT]
-> La característica de flujos de la interfaz de usuario se está implementando actualmente en las regiones. Si no ve la característica en el entorno, no puede crear flujos de interfaz de usuario o recibe un error al tratar de ejecutarla en un flujo, vuelva a intentarlo más tarde.
 
 Antes de poder usar el dispositivo para crear flujos de interfaz de usuario, debe asegurarse de que cumple los requisitos que se describen aquí.
 
@@ -49,7 +42,7 @@ Antes de poder usar el dispositivo para crear flujos de interfaz de usuario, deb
 
 - Un dispositivo que ejecute Windows 10 Pro, Windows Server 2016 o Windows Server 2019.
 
-- Explorador [Microsoft Edge](https://www.microsoftedgeinsider.com) o Google Chrome.
+- El explorador [Microsoft Edge](https://www.microsoft.com/edge/) (versión 80 o posterior) o Google Chrome.
 
 - Un [entorno](https://docs.microsoft.com/power-platform/admin/environments-overview) con una [base de datos de Common Data Service](https://docs.microsoft.com/power-platform/admin/create-database).
 
@@ -70,7 +63,7 @@ Lo siguiente no es compatible:
 
 -   Flujos de interfaz de usuario web
 
-    -   Clic con el botón derecho
+    -   Haga clic con el botón derecho.
     -   La información de sesión del usuario (por ejemplo, las cookies) no se reutilizará durante la reproducción. Tendrá que editar el script para insertar la información de inicio de sesión cuando sea necesario en los sitios web.
 
 Encontrará limitaciones específicas de características incluidas en la documentación de cada característica.
@@ -85,8 +78,8 @@ El instalador de flujos de interfaz de usuario contiene todos los componentes ne
 Para instalar la aplicación de flujos de interfaz de usuario, siga estos pasos:
 
 1. [Descargue el instalador de flujos de interfaz de usuario](https://go.microsoft.com/fwlink/?linkid=2102613).
-1. Abra el archivo **Setup.Microsoft.Flow.UIflow.exe**. Es probable que este archivo esté en la carpeta **Descargas** después de que lo descargó en el paso anterior.
-1. Siga las instrucciones del instalador de **configuración de flujos de interfaz de usuario (versión preliminar)** para completar la instalación.
+1. Abra el archivo **Setup.Microsoft.PowerAutomate.UIflow.exe**. Es probable que este archivo esté en la carpeta **Descargas** después de que lo descargó en el paso anterior.
+1. Siga las instrucciones del instalador de **configuración de flujos de interfaz de usuario** para completar la instalación.
 
 ### <a name="set-data-collection-options"></a>Establecimiento de opciones de recopilación de datos
 
@@ -94,19 +87,16 @@ Durante la instalación, si no quiere enviar datos de uso a Microsoft, puede cam
 
 ![Imagen que muestra las opciones de recopilación de datos](../media/ui-flows-setup/data-collection-settings.png)
 
-> [!WARNING]
-> Si necesita cambiar la configuración de la recopilación de datos, debe desinstalar la aplicación de flujos de interfaz de usuario y, después, volver a instalarla. Los flujos de interfaz de usuario dejarán de funcionar si cambia la configuración de la recopilación de datos sin desinstalar primero la aplicación de flujos de interfaz de usuario.
-
 ## <a name="activate-the-ui-flows-browser-extension"></a>Activación de la extensión del explorador de flujos de interfaz de usuario 
 
 Una vez que se complete el instalador de flujos de interfaz de usuario, el explorador le pedirá activar la extensión.
 
-- En Microsoft Edge, seleccione cada icono de advertencia en la esquina superior derecha del explorador y, después, **Habilitar extensión**.
+- En [Microsoft Edge](https://www.microsoft.com/edge/) (versión 80 o posterior), seleccione cada icono de advertencia en la parte superior derecha del explorador y, después, **Habilitar extensión**.
 -   En Google Chrome, seleccione **Enable extension** (Habilitar extensión) cuando se le solicite.  
 
 > [!TIP]
 > Si no ve la solicitud en el explorador, revise lo siguiente:
-> - Debe usar Microsoft Edge o Google Chrome.
+> - Debe usar el explorador [Microsoft Edge](https://www.microsoft.com/edge/) (versión 80 o posterior) o Google Chrome.
 > - Es posible que tenga que habilitar manualmente la extensión. Para Microsoft Edge, vaya a **edge://extensions** o, en el caso de Google Chrome, a **chrome://extensions**.
 > - Si la extensión de los flujos de interfaz de usuario de Power Automate no aparece, puede volver a instalarla con el [instalador de flujos de interfaz de usuario](https://go.microsoft.com/fwlink/?linkid=2102613).
 
@@ -119,9 +109,9 @@ Con flujos de interfaz de usuario, puede ejecutar scripts del IDE de Selenium de
 
 Siga estos pasos para instalar el IDE de Selenium:
 
-1. [Descargue e instale](https://go.microsoft.com/fwlink/?linkid=2107665) el IDE de Selenium para la versión siguiente de Microsoft Edge o Google Chrome.
+1. [Descargue e instale](https://go.microsoft.com/fwlink/?linkid=2107665) Selenium IDE para la versión 80 o posterior de [Microsoft Edge](https://www.microsoft.com/edge/) o Google Chrome.
 
-1. En Microsoft Edge, seleccione **Permitir extensiones de otras tiendas** y, después, **Agregar a Chrome**.
+1. En Microsoft Edge (versión 80 o posterior), seleccione **Permitir extensiones de otras tiendas** y, después, **Agregar a Chrome**.
 
 ## <a name="install-the-on-premises-data-gateway"></a>Instalación de la puerta de enlace de datos local
 
@@ -131,6 +121,11 @@ Necesitará la puerta de enlace para desencadenar el flujo de interfaz de usuari
 >La puerta de enlace no es necesaria si solo quiere crear, editar y probar los flujos de interfaz de usuario en el dispositivo.
 
 [Instale la puerta de enlace de datos local](https://docs.microsoft.com/data-integration/gateway/service-gateway-install), si la necesita.
+
+
+>[!IMPORTANT]
+>Cuando se instale la puerta de enlace, el valor predeterminado pasará a ser la región que usa Power Automate.
+
 
 ## <a name="setup-ui-flows-connections-and-machine-credentials"></a>Configuración de las conexiones de flujos de interfaz de usuario y las credenciales del equipo
 
@@ -144,19 +139,26 @@ Necesitará la puerta de enlace para desencadenar el flujo de interfaz de usuari
 
    ![Captura de pantalla de una conexión](../media/ui-flows-setup/new-connection.png)
 
-1. Busque *Flujo de interfaz de usuario* y seleccione **Flujos de interfaz de usuario (versión preliminar).
+1. Busque *Flujo de interfaz de usuario* y seleccione **Flujos de interfaz de usuario**.
 
    ![Captura de pantalla del cuadro de búsqueda](../media/ui-flows-setup/search-ui-flow.png)
 
-1. Proporcione la información de puerta de enlace y las credenciales del dispositivo para *cada* puerta de enlace: 
+1. Proporcione la información de puerta de enlace y las credenciales del dispositivo: 
 
     - **Dominio y nombre de usuario**: proporcione su cuenta de dispositivo. Puede usar una cuenta local con el nombre del usuario (por ejemplo, “MACHINENAME\\usuario” o “local\\usuario”) o una cuenta de Active Directory como “DOMAIN\\usuario”.
     - **Contraseña**: la contraseña de su cuenta.
-    - **Elegir una puerta de enlace**: seleccione una de las puertas de enlace que quiere configurar.
+    - **Elegir una puerta de enlace**: Seleccione la puerta de enlace que quiere usar.
 
       ![Captura de pantalla que muestra dónde especificar las credenciales para la conexión](../media/ui-flows-setup/credentials-screen.png)
 
 1. Seleccione **Crear**.
+
+## <a name="troubleshoot-missing-gateway"></a>Solucionar problemas de una puerta de enlace que falta
+
+Es posible que no encuentre la puerta de enlace en la lista mientras crea la conexión por las siguientes razones:
+
+- La puerta de enlace se puede instalar en una región distinta a la de Power Automate. Para resolver este problema, desinstale la puerta de enlace del dispositivo y vuelva a instalarla; para ello, seleccione [la región de Power Automate correcta](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
+- El propietario de la puerta de enlace la ha eliminado.
 
 ## <a name="supported-keyboard-layouts"></a>Distribuciones de teclado admitidas
 
@@ -201,7 +203,7 @@ Finés     |Coreano     |Serbio (latino, Serbia)
 ## <a name="uninstall-ui-flows"></a>Desinstalación de los flujos de interfaz de usuario
 
 1. Abra el menú **Inicio** > **Configuración** > **Aplicaciones**.
-1. Busque **Flujos de interfaz de usuario (versión preliminar)** y selecciónelo.
+1. Busque la opción **Flujos de interfaz de usuario** y selecciónela.
 1. Seleccione **Desinstalar**.
 
 ## <a name="learn-more"></a>Más información
