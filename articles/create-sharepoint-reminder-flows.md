@@ -13,14 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/30/2019
+ms.date: 04/06/2020
 ms.author: deonhe
-ms.openlocfilehash: 414c14b02b0543dc3992253192020b7453b9e2e0
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 75fa66b3be68ef86a78448b9b5868581cb0a9b0f
+ms.sourcegitcommit: c43c98cc777780d42d15e287233c040771a6e147
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192907"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80801429"
 ---
 # <a name="sharepoint-remind-me"></a>Recordatorio de SharePoint
 
@@ -35,9 +35,13 @@ Las listas y bibliotecas de SharePoint le permitían definir columnas de metadat
 ## <a name="create-a-reminder-flow"></a>Creación de un flujo de recordatorio
 
  1. Cree una [lista de SharePoint](https://support.office.com/article/Create-a-list-in-SharePoint-0D397414-D95F-41EB-ADDD-5E6EFF41B083) con al menos una columna DateTime en la vista actual. 
- 1. Seleccione **Flujo** > **Establecer un recordatorio** > **Date deactivated** (Fecha de desactivación) (esta es la columna con el valor de DateTime del recordatorio).
+ 1. Seleccione **Automatizar** > **Establecer un recordatorio** > **Date deactivated** (Fecha de desactivación) (esta es la columna con el valor de DateTime del recordatorio).
 
      ![Seleccionar el flujo de recordatorio](media/create-sharepoint-reminder-flows/select-reminder-flow.png)
+
+1. De forma opcional, es posible que tenga que iniciar sesión en los servicios que esta plantilla de Power Automate usa.
+     
+1. Seleccione **Continuar**.
 
 1. Rellene el campo **Nombre de flujo** y, en la entrada de la columna DateTime de la tarjeta **Establecer un recordatorio**, indique con cuántos días de antelación quiere recibir la alerta de recordatorio.
 

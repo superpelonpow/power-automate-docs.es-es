@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/15/2017
+ms.date: 04/07/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 624475254503f44756d97b1e59cc4896b586ab20
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 99a666c80cb1e6994b774f6b269d657a62996548
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193597"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862501"
 ---
 # <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -43,7 +43,7 @@ Power Automate tiene dos tipos de destinatarios distintos:
 Power Automate proporciona características que ayudan a los usuarios de la línea de negocio a crear flujos de trabajo automatizados. Logic Apps es un servicio de Azure que proporciona las mismas características que Power Automate, además de otras como la integración con Azure Resource Manager y Azure Portal, PowerShell y la CLI de xPlat, Visual Studio y otros muchos conectores. [Aprenda más sobre Logic Apps](https://azure.microsoft.com/services/app-service/logic/).
 
 ### <a name="how-does-power-automate-fit-in-microsofts-overall-business-application-platform-strategy"></a>¿Cómo encaja Power Automate en la estrategia de plataformas de aplicaciones empresariales globales de Microsoft?
-Power Automate forma parte de una plataforma de aplicaciones empresariales eficaces y adaptables que incluye Power Apps, Common Data Service, Dynamics 365 y Office 365. Esta plataforma permite a nuestros clientes, nuestros asociados y nuestros asociados ISV crear soluciones específicas para sus propias empresas, sector, roles funcionales o incluso ubicaciones geográficas específicas. Los usuarios de la línea de negocio, que comprenden mejor las necesidades de su empresa, pueden fácilmente analizar, redactar y simplificar los datos y procesos. Los desarrolladores profesionales pueden ampliar fácilmente la automatización, análisis y servicios de aplicaciones de la línea de negocio para aprovechar servicios de Azure como Functions, App Service y Logic Apps. Los conectores de API, las puertas de enlace y Microsoft Common Data Service permiten obtener más provecho de los servicios o datos ya en uso, ya sea en la nube o en un almacenamiento local.
+Power Automate forma parte de una plataforma de aplicaciones empresariales eficaces y adaptables que incluye Power Apps, Common Data Service, Dynamics 365 y Office 365. Esta plataforma permite a nuestros clientes, nuestros asociados y nuestros asociados ISV crear soluciones específicas para sus propias empresas, sector, roles funcionales o incluso ubicaciones geográficas específicas. Los usuarios de la línea de negocio, que comprenden mejor las necesidades de su empresa, pueden fácilmente analizar, redactar y simplificar los datos y procesos. Los desarrolladores profesionales pueden ampliar fácilmente la automatización, análisis y servicios de aplicaciones de la línea de negocio para aprovechar servicios de Azure como Functions, App Service y Logic Apps. Los conectores de API, las puertas de enlace y Common Data Service permiten obtener más provecho de los servicios o datos ya en uso, ya sea en la nube o en un almacenamiento local.
 
 ## <a name="functionality"></a>Funcionalidad
 ### <a name="what-do-i-need-to-use-power-automate"></a>¿Qué es necesario instalar para poder usar Power Automate?
@@ -98,7 +98,7 @@ A través de la [puerta de enlace de datos local](gateway-manage.md) puede acced
 Las plantillas son flujos predefinidos para escenarios comunes y muy utilizados. Para usar una plantilla, solo es preciso tener acceso a los servicios de la plantilla y rellenar los valores necesarios.
 
 ### <a name="what-data-sources-will-i-be-able-to-connect-to"></a>¿A qué orígenes de datos podré conectarme?
-Se puede conectar a más de 100 servicios estándar de Microsoft y de terceros, como Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server y muchos otros. También es posible conectarse a servicios premium como Salesforce y Common Data Service para Power Apps.
+Se puede conectar a más de 100 servicios estándar de Microsoft y de terceros, como Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server y muchos otros. También es posible conectarse a servicios premium como Salesforce y Common Data Service.
 
 ### <a name="how-do-i-connect-to-a-rest-api-in-my-flow"></a>¿Cómo me conecto a una API de REST en mi flujo?
 Mediante la creación de [un conector personalizado](developer/register-custom-api.md) puede conectarse a cualquier API de REST que use JSON y sea compatible con al menos uno de los más de diez métodos de autenticación existentes.

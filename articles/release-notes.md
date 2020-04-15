@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,21 +13,24 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/31/2018
+ms.date: 04/07/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 51f8d56a7dd5c94a782c67569dea686f21f7c754
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 7f4da4123d5623348513d9b14a75d1f03b3e17dc
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193827"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862754"
 ---
 # <a name="release-notes"></a>Notas de la versión
+
+>[!NOTE]
+>Ahora se realiza un seguimiento de los planes de versiones [aquí](https://docs.microsoft.com/dynamics365/release-plans/).
 
 ## <a name="top-questions"></a>Preguntas importantes
 1. Error en el flujo. ¿Cómo puedo corregirlo?
@@ -598,7 +601,7 @@ Ahora puede disfrutar de la nueva experiencia de listas modernas de SharePoint O
 [Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/visual-studio-team-services-enhancements-to-sharepoint-and-o365-outlook-and-boolean-control/) acerca de esta versión.
 
 ### <a name="release-2016-08-08"></a>Versión 2016-08-08
-Versión preliminar pública de Microsoft Common Data Service integrado en Power Automate. [Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/flow-and-common-data-model/) acerca de esta versión.
+Versión preliminar pública de Common Data Service integrado en Power Automate. [Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/flow-and-common-data-model/) acerca de esta versión.
 
 ### <a name="release-2016-08-05"></a>Versión 2016-08-05
 * **SharePoint local**: al igual que con SharePoint Online, puede crear flujos para las listas de SharePoint local y las bibliotecas de documentos, mediante plantillas predefinidas o partiendo de cero.
@@ -655,6 +658,9 @@ Si utiliza flujos de lógica como parte de [Microsoft Power Apps](https://powera
 * Puede ver el historial de cada comprobación y ejecución de los flujos.
 * Al guardar un flujo, puede [verlo en acción de inmediato](see-a-flow-run.md), solo tiene que realizar la acción del desencadenador.
 * Tenemos una [nueva comunidad](https://go.microsoft.com/fwlink/?LinkID=787467), donde puede intercambiar información sobre Flow o [enviar sus ideas](https://go.microsoft.com/fwlink/?LinkID=787474).
+
+>[!NOTE]
+>Ahora se realiza un seguimiento de los planes de versiones [aquí](https://docs.microsoft.com/dynamics365/release-plans/).
 
 ## <a name="next-steps"></a>Pasos siguientes
 Si tiene algún problema que no se haya incluido en estas notas de la versión o en la sección de [preguntas más frecuentes](frequently-asked-questions.md), [únase a nuestra comunidad](https://go.microsoft.com/fwlink/?LinkID=787467), donde puede realizar cualquier pregunta, o [póngase en contacto con el departamento de soporte técnico](https://go.microsoft.com/fwlink/?LinkID=787479).

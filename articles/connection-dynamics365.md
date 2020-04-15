@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: Mattp123
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/06/2017
+ms.date: 04/06/2020
 ms.author: matp
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f341adb319c20a201525bb6b7a8a0c54e2da5ea3
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 9f6f7554d73c0b14a26905ca1f3a706ab03797cd
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195046"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862547"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Creación de un flujo mediante Dynamics 365 (con conexión)
 
@@ -34,7 +34,7 @@ Mediante un conector de Dynamics 365 se pueden crear flujos que se inician cuand
 En Power Automate puede configurar flujos de trabajo automatizados entre sus aplicaciones y servicios preferidos para sincronizar archivos, obtener notificaciones, recopilar datos, etc. Para más información, consulte [Introducción a Power Automate](getting-started.md).
 
 > [!IMPORTANT] 
-> Para invocar un desencadenador de flujos, la entidad de Common Data Service utilizada con el flujo debe tener activada la opción **Change Tracking**. Más información: [Habilitar seguimiento de cambios para controlar la sincronización de datos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization). 
+> Para invocar un desencadenador de Power Automate, la entidad de Common Data Service utilizada con el flujo debe tener activada la opción **Seguimiento de cambios**. Más información: [Habilitar seguimiento de cambios para controlar la sincronización de datos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization). 
 
 ## <a name="create-a-flow-from-a-template"></a>Creación de un flujo desde una plantilla
 Para crear un flujo se puede utilizar una de las muchas plantillas disponibles, como en estos ejemplos:

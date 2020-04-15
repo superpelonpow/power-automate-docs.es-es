@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: sunaysv
-manager: anneta
+manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,22 +13,21 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/27/2017
+ms.date: 04/07/2020
 ms.author: sunayv
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7d62aa0870af1be0e05e0a3799d02cfdfe705e3c
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: b797fc6e4a2e7835a7322f9fc55d50c96d113031
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195437"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862570"
 ---
 # <a name="choosing-an-environment"></a>Elección de un entorno
-
 
 En este artículo se describen los **entornos** de Power Automate en los que puede crear y aislar de forma segura flujos, puertas de enlace, conexiones y otros recursos.
 
@@ -46,7 +45,7 @@ Cuando se crea un flujo, se puede elegir en qué entorno se va a hospedar y los 
 
 Escenario|Recomendación
 -----|-----
-Quiere crear un flujo que use una conexión a Microsoft Common Data Service.|Coloque el flujo y Common Data Service en el mismo entorno. Esto garantiza que todos los datos se aíslan en dicho entorno (límite de aislamiento).
+Quiere crear un flujo que use una conexión a Common Data Service.|Coloque el flujo y Common Data Service en el mismo entorno. Esto garantiza que todos los datos se aíslan en dicho entorno (límite de aislamiento).
 Va a crear un flujo para el departamento de recursos humanos. Desea asegurarse de que los usuarios del departamento de recursos humanos son los únicos que tienen acceso al flujo.|Cree un entorno y agregue solo a los usuarios de recursos humanos a él. Coloque el flujo y los demás recursos que el flujo utilice en este entorno.
 Hay usuarios en Europa que utilizan un flujo para mostrar datos de SharePoint.|Cree un entorno en Europa y, a continuación, cree el flujo y la conexión de SharePoint a este. Este entorno de Europa ofrece a los usuarios europeos el mejor rendimiento, ya que todos los recursos son locales en Europa (localidad de los datos).
 
@@ -85,7 +84,7 @@ Antes de crear un flujo, seleccione el entorno en el que se agregará el flujo y
 Considere los siguientes factores al elegir en qué entorno quiere hospedar los flujos:
 
 * Solo puede crear puertas de enlace en el entorno predeterminado. Por tanto, si desea usar una puerta de enlace para conectar el flujo a datos locales, tendrá que usar el entorno predeterminado.
-* Las bases de datos de Microsoft Common Data Service están asociadas a un entorno específico. Por lo tanto, si desea crear un flujo que use Common Data Service, debe crear el flujo en el entorno que hospeda la base de datos.
+* Common Data Service está asociado a un entorno específico. Por lo tanto, si desea crear un flujo que use Common Data Service, debe crear el flujo en el entorno que hospeda la base de datos.
 * Verá todos los entornos en los que se pueden editar recursos. Sin embargo, tendrá que pedir a un administrador que lo agregue como creador a todos los entornos en los que desee crear flujos.
 
 > [!NOTE]

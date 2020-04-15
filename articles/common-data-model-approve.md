@@ -1,11 +1,11 @@
 ---
-title: Compilación de un bucle de aprobación con Common Data Service| Microsoft Docs
+title: Compilación de un bucle de aprobación mediante Common Data Service | Microsoft Docs
 description: Cree una entidad, un flujo y una aplicación que funcionen conjuntamente para que los revisores pueden aprobar o rechazar archivos agregados a Dropbox.
 services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,21 +13,21 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/22/2016
+ms.date: 04/07/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 6346772d3eba6177577f7c5d7a151174f1a575f9
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 218e4fffd1ba86fec1c38a8322774f642ab64001
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193873"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862777"
 ---
-# <a name="build-an-approval-loop-by-using-power-automate-and-the-microsoft-common-data-service"></a>Compilación de un bucle de aprobación mediante Power Automate y Microsoft Common Data Service
+# <a name="build-an-approval-loop-by-using-power-automate-and-common-data-service"></a>Compilación de un bucle de aprobación mediante Power Automate y Common Data Service
 
 Common Data Service puede proporcionar una forma de compilar flujos que tengan la información almacenada en una base de datos independiente de un flujo. El mejor ejemplo son las aprobaciones. Si almacena el estado de la aprobación en una entidad, el flujo puede funcionar encima.
 
@@ -140,7 +140,7 @@ Si sigue los pasos que se describen en esta sección, compilará:
     ![Agregar una acción](./media/common-data-model-approve/add-action.png)
 2. En el cuadro que contiene **Buscar más acciones**, escriba o pegue **Common Data Service** y, después, haga clic o pulse **Common Data Service - Create object**.
    
-    ![Crear un objeto en Common Data Service](./media/common-data-model-approve/cdm-create-object.png)
+    ![Creación de un objeto en Common Data Service](./media/common-data-model-approve/cdm-create-object.png)
 3. En **The entity** (La entidad), escriba o pegue **Review**, y haga clic en **Review Dropbox files** (Revisar archivos de Dropbox).
    
     ![Elegir la entidad](./media/common-data-model-approve/choose-entity-flow.png)

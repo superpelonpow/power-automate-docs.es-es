@@ -14,18 +14,18 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/25/2019
+ms.date: 04/06/2020
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7458b3cb08ca1ce3e29a9d0d29e1bec91d46f7ea
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 4b1c10fd0365f370f1cd408528f6555a14d8fbbf
+ms.sourcegitcommit: c43c98cc777780d42d15e287233c040771a6e147
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193206"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80801461"
 ---
 # <a name="create-flows-from-the-onedrive-for-business-launch-panel"></a>Creación de flujos desde el panel de inicio de OneDrive para la Empresa
 
@@ -41,9 +41,9 @@ En este tutorial, vamos a crear un flujo sencillo que usa una de las muchas [pla
 ## <a name="create-a-flow-that-requests-manager-approval-for-a-file-in-onedrive-for-business"></a>Creación de un flujo que solicita la aprobación de un administrador para un archivo en OneDrive para la Empresa
 
 1. Inicie sesión en OneDrive para la Empresa.
-1. Busque y seleccione el archivo en el que quiere crear el flujo.
+1. Busque y seleccione el archivo para el que quiere crear el flujo.
 1. Seleccione el vínculo **Mostrar acciones** (tres puntos).
-1. Seleccione **Flujo** > **Crear un flujo**.
+1. Seleccione **Automatizar** > **Power Automate** > **Crear un flujo**.
 
      ![Crear flujo](./media/onedrive-launch-panel/create-flow.png) 
 

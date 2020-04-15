@@ -13,24 +13,24 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/06/2019
+ms.date: 04/06/2020
 ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9c5180fc02a3aea9403dabe28a9f8767354bbe1c
-ms.sourcegitcommit: c86134235a4e3a819800c77fbc50034cfd8714c2
+ms.openlocfilehash: 3fcf12f42f01d0777a5caeac6308e14b439da002
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80329888"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862662"
 ---
 # <a name="create-an-automated-flow-by-using-common-data-service"></a>Creación de un flujo automatizado mediante Common Data Service
 
 
-Con el conector Common Data Service, puede crear flujos que se inicien mediante la creación y actualización de eventos dentro de la base de datos de Common Data Service. Además, puede realizar acciones de creación, actualización, recuperación y eliminación en registros dentro de la base de datos de Common Data Service.
+Con el conector Common Data Service, puede crear flujos que se inicien mediante la creación y actualización de eventos dentro de la base de datos de Common Data Service. Además, puede realizar acciones de creación, actualización, recuperación y eliminación en registros dentro de Common Data Service.
 
 ## <a name="initiate-a-flow-from-common-data-service"></a>Inicio de un flujo desde Common Data Service
 

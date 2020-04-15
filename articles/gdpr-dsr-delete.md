@@ -14,18 +14,18 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/17/2018
+ms.date: 4/07/2020
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 39291e74b16727abe04c20c16eddeaa6d9871091
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: 16d92a2d8aad6e39ff5e2eb446438dc769b1baf8
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195690"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862685"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-power-automate"></a>Respuesta a solicitudes de eliminación del interesado de acuerdo con el RGPD para Power Automate
 
@@ -50,7 +50,7 @@ En la siguiente tabla se muestra cuáles datos personales se eliminan automátic
 
 *Cada uno de estos recursos contiene registros "Creado por" y "Modificado por" que incluyen datos personales. Por motivos de seguridad, estos registros se conservan hasta que se elimina el recurso.
 
-**En el caso de los entornos que incluyen una base de datos de Common Data Service, los permisos de entorno (por ejemplo, qué usuarios están asignados a los roles Creador de entorno y Administrador) se almacenan como registros de la base de datos de Common Data Service. Vea [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener instrucciones sobre cómo responder a DSR para los usuarios que usan Common Data Service.
+** En el caso de los entornos que incluyen una base de datos de Common Data Service, los permisos de entorno (por ejemplo, qué usuarios están asignados a los roles Creador de entorno y Administrador) se almacenan como registros en Common Data Service. Consulte [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener instrucciones sobre cómo responder a DSR para los usuarios que utilizan Common Data Service.
 
 En el caso de los datos y recursos que requieren una revisión manual, Power Automate ofrece las experiencias siguientes para buscar o cambiar los datos personales de un usuario específico:
 
@@ -77,7 +77,7 @@ Este es el desglose de las experiencias que están disponibles para que un admin
 |Permisos de conector personalizado|Portal de creador de Power Automate| ||
 |Historial de aprobación|Portal de creador de Microsoft Power Apps*|||
 
-*Con la introducción de Common Data Service, si se crea una base de datos dentro del entorno, los permisos del entorno y los de las aplicaciones controladas por modelos se almacenan como registros dentro de la instancia de la base de datos de Common Data Service. Vea [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener instrucciones sobre cómo responder a DSR para los usuarios que usan Common Data Service.
+* Con la introducción de Common Data Service, si se crea una base de datos dentro del entorno, los permisos del entorno y los de las aplicaciones controladas por modelos se almacenan como registros dentro de Common Data Service. Consulte [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener instrucciones sobre cómo responder a DSR para los usuarios que utilizan Common Data Service.
 
 \*\* Un administrador solo podrá acceder a estos recursos desde el portal de creador de Power Automate si el administrador le asignado acceso desde el Centro de administración de Power Automate.
 
@@ -148,7 +148,7 @@ Estos pasos copian flujos existentes para un usuario saliente. Si asigna una pro
 
 1. En Microsoft Excel, busque, filtre y, a continuación, elimine los datos de aprobación según sea necesario.
 
-Vea [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener más instrucciones sobre cómo responder a DSR para los usuarios que usan Common Data Service.
+Consulte [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener más instrucciones sobre cómo responder a DSR para los usuarios que utilizan Common Data Service.
 
 
 ## <a name="delete-connections-created-by-a-user"></a>Eliminación de las conexiones creadas por un usuario
@@ -278,7 +278,7 @@ Un administrador puede conceder acceso de administrador a un entorno creado por 
 
 Es posible asignar permisos a los usuarios (como Administrador de entorno, Creador de entorno, etc.) en un entorno, que se almacenan en el servicio Power Automate como "asignación de roles".
 
-Con la introducción de Common Data Service, si se crea una base de datos dentro del entorno, estas "asignaciones de roles" se almacenan como registros dentro de la instancia de la base de datos de Common Data Service.
+Con la introducción de Common Data Service, si se crea una base de datos dentro del entorno, estas "asignaciones de roles" se almacenan como registros dentro de Common Data Service.
 
 Para obtener más información acerca de cómo quitar el permiso de un usuario en un entorno, vaya a [Uso de entornos en Power Automate](https://docs.microsoft.com/flow/environments-overview-admin).
 

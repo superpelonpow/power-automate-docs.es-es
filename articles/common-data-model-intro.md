@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,21 +13,21 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/22/2016
+ms.date: 04/07/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 333f5b92df92cc384b9517a9ccf1d6bb0164c07b
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: ac149bcd62da4ee737f23f894e1f99773f843ada
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194310"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862616"
 ---
-# <a name="create-a-flow-that-uses-the-common-data-service"></a>Cree de un flujo que use Common Data Service
+# <a name="create-a-flow-that-uses-common-data-service"></a>Creación de un flujo que usa Common Data Service
 
 Mejore la eficacia operativa con una vista unificada de los datos empresariales mediante la creación de un flujo que use [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Implemente esta base de datos profesional segura que incluye las entidades empresariales estándar con formato correcto (como Ventas, Compras, Atención al cliente y Productividad) de su organización. Almacene los datos de la organización en una o varias [entidades personalizadas](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), que ofrecen varias ventajas sobre los orígenes de datos externos, como Microsoft Excel y Salesforce.
 
@@ -38,14 +38,14 @@ Por ejemplo, aproveche Common Data Service en Power Automate de las siguientes f
     Para obtener pasos detallados, consulte los procedimientos que se explicarán en este mismo tema.
 * En lugar de [crear un bucle de aprobación a través de correo electrónico](wait-for-approvals.md), cree un flujo que almacene el estado de aprobación en una entidad y compile una aplicación personalizada en la que los usuarios puedan aprobar o rechazar los elementos.
   
-    Para conocer los pasos detallados, consulte [Build an approval loop with the Common Data Service](common-data-model-approve.md) (Compilación de un bucle de aprobación con Common Data Service).
+    Para conocer los pasos detallados, consulte [Compilación de un bucle de aprobación mediante Common Data Service](common-data-model-approve.md).
 
 **Requisitos previos**
 
 * Regístrese en [Power Automate](https://flow.microsoft.com) y [Power Apps](https://make.powerapps.com).
   
     Si tiene problemas, compruebe si [Power Automate](sign-up-sign-in.md) y [Power Apps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) admiten el tipo de cuenta que tiene y si su organización no ha bloqueado la suscripción.
-* Si es la primera vez que utiliza Common Data Service, abra la pestaña **Entidades** de [powerapps.com](https://web.powerapps.com/#/entities) y haga clic o pulse **Create my database** (Crear mi base de datos).
+* Si es la primera vez que utiliza Common Data Service, abra la pestaña **Entidades** de [powerapps.com](https://web.powerapps.com/#/entities) y haga clic en la opción **Crear mi base de datos** o púlsela.
 
 ## <a name="sign-in-to-your-environment"></a>Inicie sesión en su entorno
 1. Abra el [portal de Power Automate](https://flow.microsoft.com) y haga clic o pulse en **Iniciar sesión** en la esquina superior derecha.
@@ -65,7 +65,7 @@ Por ejemplo, aproveche Common Data Service en Power Automate de las siguientes f
     ![Búsqueda de plantillas](./media/common-data-model-intro/template-search.png)
 2. En la lista de plantillas, haga clic o pulse la plantilla que importa datos del origen que desee en la entidad (o *objeto*) que desee.
    
-    Por ejemplo, haga clic o pulse la plantilla que copia la información de contacto de Dynamics 365 en Common Data Service.
+    Por ejemplo, pulse la plantilla que copia la información de contacto de Dynamics 365 en Common Data Service, o bien haga clic en ella.
    
     ![Elegir una plantilla](./media/common-data-model-intro/choose-template.png)
 3. Haga clic en el botón **Usar esta plantilla** o púlselo.
@@ -95,7 +95,7 @@ Por ejemplo, aproveche Common Data Service en Power Automate de las siguientes f
    
     ![Crear flujo](./media/common-data-model-intro/create-flow.png)
 
-Ahora, siempre que dicho objeto se cree en el sistema de origen, se importarán en Common Data Service. Si no encuentra una plantilla que haga lo que necesita, puede [generar un flujo desde cero](get-started-logic-flow.md) que opere sobre Common Data Service.
+Ahora, siempre que dicho objeto se cree en el sistema de origen, se importará en Common Data Service. Si no encuentra una plantilla que haga lo que necesita, puede [generar un flujo desde cero](get-started-logic-flow.md) que opere sobre Common Data Service.
 
 Puede realizar acciones en los cambios de la base de datos. Por ejemplo, puede enviar un correo de notificación cada vez que cambian los datos.
 
