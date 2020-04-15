@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
-manager: anneta
+manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/28/2017
+ms.date: 04/07/2020
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4c8b2b02cf87abb54a587d9358a4c1f462ceb724
-ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
+ms.openlocfilehash: a87845247f57e58edf7170dc3e8da721db7d275e
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80524545"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80862524"
 ---
 # <a name="faq-for-regions-in-power-automate"></a>Preguntas más frecuentes sobre las regiones en Power Automate
 
@@ -52,7 +52,8 @@ Los administradores pueden identificar la región si inician sesión en el [Cent
 * Francia
 
 ## <a name="what-features-are-specific-to-a-given-region"></a>¿Qué características son específicas de una región determinada?
-Los entornos se pueden crear en distintas regiones y enlazarse a esa ubicación geográfica. Cuando se crea un flujo en un entorno, dicho flujo se implementa en los centros de datos de dicha ubicación geográfica. Esto es aplicable a cualquier elemento que cree en ese entorno, incluidos Common Data Model, flujos, conexiones, puertas de enlace, aplicaciones y conectores personalizados.
+
+Los entornos se pueden crear en distintas regiones y enlazarse a esa ubicación geográfica. Cuando se crea un flujo en un entorno, dicho flujo se implementa en los centros de datos de dicha ubicación geográfica. Esto es aplicable a cualquier elemento que cree en ese entorno, incluidos Common Data Service, flujos, conexiones, puertas de enlace, aplicaciones y conectores personalizados.
 
 Para un rendimiento óptimo, cree el entorno en la región más cercana a los usuarios. Por ejemplo, si los usuarios están en Europa, cree el entorno en la región de Europa. Si los usuarios están en Estados Unidos, cree el entorno en la región de Estados Unidos.
 
