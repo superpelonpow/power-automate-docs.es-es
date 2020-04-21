@@ -20,28 +20,21 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: d17e7884960af0fb4231eac785a17683c1dadd18
-ms.sourcegitcommit: c86134235a4e3a819800c77fbc50034cfd8714c2
+ms.openlocfilehash: cdd901c75e7245126760200cc94d28555dc4a33a
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80329851"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80801542"
 ---
-# <a name="preview-introduction-to-ui-flows"></a>Versión preliminar: Introducción a los flujos de la interfaz de usuario
+# <a name="introduction-to-ui-flows"></a>Introducción a los flujos de la interfaz de usuario
 
-[Este tema es documentación preliminar y está sujeto a cambios].
-
-Los flujos de interfaz de usuario proporcionan funciones de automatización de procesos robóticos (RPA) para Power Automate. Puede usar flujos de interfaz de usuario para automatizar tareas repetitivas en aplicaciones web y Windows. Los flujos de interfaz de usuario transmiten y reproducen acciones de la interfaz de usuario (clics, entradas de teclado, etc.) para las aplicaciones que no tienen disponibilidad de API fáciles de usar o completas.
+Los flujos de interfaz de usuario ofrecen funciones de automatización de procesos robóticos (RPA) para Power Automate. Puede usar flujos de interfaz de usuario para automatizar tareas repetitivas en aplicaciones web y Windows. Los flujos de interfaz de usuario transmiten y reproducen acciones de la interfaz de usuario (clics, entradas de teclado, etc.) para las aplicaciones que no tienen disponibilidad de API fáciles de usar o completas.
 
 <br/>
 
 > [!VIDEO https://www.youtube.com/embed/bZrrdoytTH0]
 
-
-> [!IMPORTANT]
-> - Esta es una característica en versión preliminar.
-> - Una característica en versión preliminar puede tener una disponibilidad limitada y una funcionalidad restringida. Una característica en versión preliminar está disponible antes de una versión oficial para que los clientes puedan obtener acceso anticipado y proporcionar comentarios.
-> - La característica de flujos de la interfaz de usuario se está implementando actualmente en las regiones. Si no ve la característica en el entorno, no puede crear flujos de interfaz de usuario o recibe un error al tratar de ejecutarla en un flujo, vuelva a intentarlo más tarde.
 
 Puede ir directamente a:
 
