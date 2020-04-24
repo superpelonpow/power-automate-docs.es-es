@@ -243,9 +243,9 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 
 **Resultado:**
 
-Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
-**_Bold, italicized text_**    
-**~~Bold, strike-through text~~**  
+Use el _resaltado_ en los comentarios para expresar opiniones **contundentes** e indicar <s>correcciones</s> .  
+**_Texto en negrita y cursiva_**    
+**~~Texto en negrita y tachado~~**  
 
 
 ## <a name="special-characters"></a>Caracteres especiales
