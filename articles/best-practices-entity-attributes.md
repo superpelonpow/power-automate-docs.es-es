@@ -19,12 +19,12 @@ helpviewer_keywords:
 author: msftman
 ms.author: deonhe
 manager: kvivek
-ms.openlocfilehash: 8a5fb3cc698f20f025089524e6198c158f710980
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: b9a4a2968a251efd360a043d23e837eaeb746e4e
+ms.sourcegitcommit: 71f9b72d551887324c92b122dadd1b4dd584bc4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193965"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82081201"
 ---
 # <a name="best-practices-in-using-business-process-flow-attributes"></a>Procedimientos recomendados para usar los atributos de flujo de proceso de negocio
 
@@ -45,7 +45,7 @@ Con el desuso del campo *Fase activa* (activestageid) en las entidades relaciona
 En las versiones 9.0 y posteriores, cada flujo de proceso de negocio crea su propia entidad Common Data Service, normalmente con el mismo nombre que el flujo de proceso de negocio. Para informar sobre el flujo de proceso de negocio, seleccione la entidad correspondiente al flujo de proceso de negocio sobre el que desea informar y, luego, cree vistas y gráficos, como hacía antes.
 
 En nuestro ejemplo, siga estos pasos para ir a la entidad **Proceso de cliente potencial a ventas de la oportunidad**:
-1. Vaya a https://make.powerapps.com.
+1. Vaya a [https://make.powerapps.com](https://make.powerapps.com).
 1. Seleccione los **datos**.
 1. Seleccione las **entidades**.
 1. Establezca el filtro en **Todo**.
