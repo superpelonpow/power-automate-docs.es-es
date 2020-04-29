@@ -14,12 +14,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: e74c8789975926600d4d17708a134cefb7fc0722
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 78e90d05ba57cc73264a2914de06feb3be3dd640
+ms.sourcegitcommit: 5b1965a0c319c4294b7dc0c829120ed1f4f90444
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80082172"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153371"
 ---
 # <a name="power-automate-us-government"></a>Power Automate para la Administración Pública de Estados Unidos
 
@@ -182,10 +182,10 @@ Para los clientes que implementan restricciones de red, asegúrese de que el acc
 * .azure.us
 * .usgovcloudapi.net
 * .microsoftonline.com
-* . microsoft.com
+* .microsoft.com
 * .windows.net
-* . azureedge.net
-* . azure.net
+* .azureedge.net
+* .azure.net
 * .crm9.dynamics.com
 
 Consulte los [intervalos IP](https://www.microsoft.com/download/confirmation.aspx?id=57063) de AzureCloud.usgovtexas y AzureCloud.usgovvirginia para habilitar el acceso a instancias de Common Data Service que los usuarios y los administradores pueden crear en el inquilino. 

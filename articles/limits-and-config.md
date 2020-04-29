@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ebb723812a8a6805616a8e66deee13aa74618ce2
-ms.sourcegitcommit: 7d6c210192ce68ad0d0b27f67f581e307d5ef606
+ms.openlocfilehash: 478949c1d0579e399f4125e67c1e40103d889900
+ms.sourcegitcommit: e709e8c4a62df6fdb0ca06f3f8afb5c639c76632
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2020
-ms.locfileid: "80669858"
+ms.lasthandoff: 04/26/2020
+ms.locfileid: "82159547"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Límites y configuración de Power Automate
 
@@ -61,13 +61,16 @@ Estos son los límites de una sola ejecución de flujo.
 
 | Nombre | Límite | Notas |
 | --- | --- | --- |
-| Duración de la ejecución |30 días |Incluye flujos de trabajo con pasos pendientes, como aprobaciones. Después de 30 días, cualquier paso pendiente agotará el tiempo de espera. Las aprobaciones que agoten el tiempo de espera se quitarán del centro de aprobaciones. Si algún usuario intenta aprobar una solicitud que haya agotado el tiempo de espera, recibirá un mensaje de error. |
+| Duración de la ejecución |30 días |Incluye flujos de trabajo con pasos pendientes, como aprobaciones. Después de 30 días, cualquier paso pendiente agotará el tiempo de espera. |
 | Retención de almacenamiento |30 días |Contados desde la hora de inicio de la ejecución. |
 | Intervalo de periodicidad mínimo |1 minuto | |
 | Intervalo de periodicidad máximo |500 días | |
 | Retención máxima del historial de ejecución |28 días, según las reglas del RGPD. | |
 |Intervalo de aplazamiento mínimo: licencia Gratis y Plan 1|5 segundos||
 |Intervalo de aplazamiento mínimo: licencia Plan 2|1 segundo||
+
+>[!TIP]
+>Los conectores individuales también pueden tener también sus propios límites.
 
 ## <a name="looping-and-debatching-limits"></a>Repetición en bucle y fragmentación de límites
 Estos son los límites de una sola ejecución de flujo. En el caso de los límites diarios, consulte los [límites y las asignaciones de solicitudes](https://aka.ms/platformlimits).

@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b99d5433d159908bb136519107211b77b33e9228
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: 3f668d4462c06e061efe2a03b4e5e842364c4b6e
+ms.sourcegitcommit: 5b1965a0c319c4294b7dc0c829120ed1f4f90444
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862593"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153482"
 ---
 # <a name="create-an-approval-flow-that-requires-everyone-to-approve"></a>Creación de un flujo de aprobación que requiere que todos lo aprueben
 
@@ -65,29 +65,29 @@ En este tutorial se utilizan tokens. Para mostrar una lista de tokens, pulse o h
 
 Inicie sesión en [Power Automate](https://flow.microsoft.com) y siga estos pasos para crear un flujo.
 
-1. Seleccione **Mis flujos** > **Crear desde cero** en la parte superior derecha de la pantalla.
-1. Agregue el desencadenador **SharePoint - Cuando se crea o se modifica un elemento**.
-1. En **Dirección del sitio**, escriba la dirección del sitio de SharePoint que hospeda la lista de solicitudes de vacaciones y luego seleccione la lista **Nombre de lista**.
-1. Agregue la acción **Usuarios de Office 365 - Obtener administrador V2**, seleccione el cuadro **Usuario (UPN)** y luego agréguele el token **Creado por correo electrónico**.
+1. Seleccione **Mis flujos** > **Nuevo** > **Automated-from blank** (Automatizado desde cero), en la parte superior izquierda de la pantalla.
+1. Asigne un nombre al flujo y, luego, agregue el desencadenador **SharePoint - Cuando se crea o se modifica un elemento**.
+1. En **Dirección del sitio**, escriba la dirección del sitio de SharePoint que hospeda la lista de solicitudes de vacaciones y luego seleccione una lista en **Nombre de lista**.
+1. Seleccione **Nuevo paso**, agregue la acción **Obtener el administrador (V2)** de Office 365, seleccione el cuadro **Usuario (UPN)** y, luego, agréguele el token **Creado por correo electrónico**.
 
     El token **Creado por correo electrónico** se encuentra en la categoría **Cuando se crea o se modifica un elemento** de la lista **Contenido dinámico**. Este token proporciona acceso de forma dinámica a datos sobre el administrador a la persona que ha creado el elemento en SharePoint.
 
-1. Agregue otra acción **Usuarios de Office 365 - Obtener administrador V2** y luego agregue el token **Correo electrónico** al cuadro **Usuario (UPN)** .
+1. Seleccione **Nuevo paso**, agregue otra acción **Obtener el administrador (V2)** de Office 365 y, luego, agregue el token **Correo electrónico** al cuadro **Usuario (UPN)** .
 
-    El token **Correo electrónico** se encuentra en la categoría **Obtener administrador V2 2** de la lista **Contenido dinámico**. Este token proporciona acceso de forma dinámica a la dirección de correo electrónico del administrador del administrador.
+    El token **Correo electrónico** se encuentra en la categoría **Obtener el administrador (V2)** de la lista **Contenido dinámico**. Este token proporciona acceso de forma dinámica a la dirección de correo electrónico del administrador del administrador.
 
-    También puede cambiar el nombre de la tarjeta **Obtener administrador V2 2** a algo que tenga sentido, como "Omitir administrador de nivel".
-1. Agregue la acción **Iniciar una aprobación** y, después, seleccione **Todos los usuarios de la lista asignada** en la lista **Tipo de aprobación**.
+    También puede cambiar el nombre de la tarjeta **Obtener el administrador (V2) 2** por algo que tenga sentido, como "Omitir administrador de niveles".
+1. Seleccione **Nuevo paso**, agregue la acción **Iniciar y esperar una aprobación** y, luego, seleccione **Aprobar o rechazar: todos deben aprobar** en la lista **Tipo de aprobación**.
 
    > [!IMPORTANT]
    > Si cualquier aprobador rechaza la solicitud de aprobación, se considera rechazada para todos los aprobadores.
    >
    >
-1. Utilice la tabla siguiente como guía para completar la tarjeta **Iniciar una aprobación**.
+1. Use la tabla siguiente como guía para completar la tarjeta **Iniciar y esperar una aprobación**.
 
    | Campo | Descripción |
    | --- | --- |
-   |  Tipo de aprobación |Use **Cualquier persona de la lista asignada** para indicar que cualquiera de los aprobadores puede aprobar o rechazar la solicitud. </p>Use **Todos los usuarios de la lista asignada** para indicar que una solicitud solo se aprueba una solicitud si todo el mundo está de acuerdo y se deniega si una sola persona la rechaza. |
+   | Tipo de aprobación |Consulte los [tipos de aprobación](#approval-types-and-their-behaviors). |
    |  Título |El título de la solicitud de aprobación. |
    |  Asignado a |Las direcciones de correo electrónico de los aprobadores. |
    |  Detalles |Cualquier información adicional que desea que se envíe a los aprobadores que se enumeran en el campo **Asignado a**. |
@@ -95,37 +95,48 @@ Inicie sesión en [Power Automate](https://flow.microsoft.com) y siga estos paso
    |  Descripción del vínculo del elemento |Una descripción del **vínculo del elemento**. |
 
    > [!TIP]
-   > La acción **Iniciar una aprobación** proporciona varios tokens, entre los que se incluyen **Respuesta** y **Resumen de las respuestas**. Utilice estos tokens en su flujo de para proporcionar una gran funcionalidad de informes enriquecidos de los resultados de una ejecución de un flujo de solicitud de aprobación.
+   > La acción **Iniciar y esperar una aprobación** proporciona varios tokens, entre los que se incluyen **Respuestas** y **Resultado**. Utilice estos tokens en su flujo de para proporcionar una gran funcionalidad de informes enriquecidos de los resultados de una ejecución de un flujo de solicitud de aprobación.
    >
    >
 
-    La tarjeta **Iniciar una aprobación** es una plantilla para la solicitud de aprobación que se envía a los aprobadores. Configúrela de forma que resulte útil para su organización. Aquí se muestra un ejemplo.
+    La tarjeta **Iniciar y esperar una aprobación** es una plantilla para la solicitud de aprobación que se envía a los aprobadores. Configúrela de forma que resulte útil para su organización. Aquí se muestra un ejemplo.
 
-    ![iniciar una aprobación](media/all-assigned-must-approve/start-an-approval-card.png)
+    ![Iniciar y esperar una aprobación](media/all-assigned-must-approve/start-an-approval-card.png)
 
-1. Agregue la acción **Office 365 Outlook - Enviar un correo electrónico** y configúrela para que envíe un correo electrónico con los resultados de la solicitud.
+    Cuando un flujo con la acción **Iniciar y esperar una aprobación** se configura con **Aprobar o rechazar: todos deben aprobar**, espera hasta que todos los incluidos en **Asignado a** aprueben o al menos un **Asignado a** rechace la solicitud de aprobación.
 
-    Este es un ejemplo del aspecto que podría tener la tarjeta **Enviar un correo electrónico**.
+    >[!TIP]
+    >Agregue un paso de **Condición** si quiere que el flujo compruebe la respuesta de la solicitud de aprobación y realice diferentes acciones en función del valor de **Resultado**. El valor de **Resultado** puede ser **Aprobar** o **Rechazar**. 
+
+    Vamos a continuar con el flujo y a enviar un correo electrónico cuando se tome una decisión sobre la solicitud de aprobación.
+
+1. Seleccione **Nuevo paso**, busque "enviar un correo electrónico", agregue la acción **Enviar correo electrónico (V2)** de Office 365 y, luego, configure la acción para enviar un correo electrónico con los resultados de la solicitud a la persona que desea ir a vacaciones.
+
+    Este es un ejemplo del aspecto que podría tener la tarjeta **Enviar correo electrónico (V2)** .
 
     ![enviar un correo electrónico](media/all-assigned-must-approve/send-an-email-card.png)
 
 > [!NOTE]
-> Todas las acciones posteriores a **Iniciar una aprobación** se ejecutan de acuerdo con la opción que haya elegido en la lista **Tipo de aprobación** de la tarjeta **Iniciar una aprobación**. En la tabla siguiente se muestra el comportamiento en función de la selección.
+> Todas las acciones posteriores a **Iniciar y esperar una aprobación** se ejecutan de acuerdo con la selección de la lista **Tipo de aprobación** de la tarjeta **Iniciar y esperar una aprobación**. En la tabla siguiente se muestra el comportamiento en función de la selección.
 >
 >
+
+### <a name="approval-types-and-their-behaviors"></a>Tipos de aprobación y sus comportamientos
 
 | Tipo de aprobación | Comportamiento |
 | --- | --- |
-| Cualquier persona de la lista asignada |Las acciones que siguen a la acción **Iniciar una aprobación** se ejecutan después de que cualquiera de los aprobadores lo decida. |
-| Todos los usuarios de la lista asignada |Las acciones que siguen a la acción **Iniciar una aprobación** se ejecutan después de un aprobador declina la respuesta o todos los usuarios la aprueban. |
+| Aprobar o rechazar: todos deben aprobar | **Todos** los aprobadores deben aprobar o rechazar la solicitud para completar el proceso. </p> Las acciones que siguen a la acción **Iniciar y esperar una aprobación** se ejecutan después de que **todos** los aprobadores efectúen la aprobación, o cuando se realice un solo rechazo.|
+| Aprobar o rechazar: primero en responder | La aprobación o el rechazo por parte de un aprobador completa la solicitud.  </p> Las acciones que siguen a la acción **Iniciar y esperar una aprobación** se ejecutan después de que cualquiera de los aprobadores lo decida.|
+| Respuestas personalizadas: esperar todas las respuestas | Todos los aprobadores deben responder para completar el proceso. |
+| Respuestas personalizadas: esperar una respuesta | Una respuesta de cualquier aprobador completa el proceso. |
 
-En la parte superior de la pantalla, escriba el nombre del flujo en el cuadro **Nombre de flujo** y seleccione **Crear flujo** para guardarlo.
+Seleccione **Guardar** en la parte superior de la pantalla para guardar el flujo.
 
 Enhorabuena, el flujo está completo. Si ha seguido todos los pasos, el flujo será como el de la siguiente imagen:
 
 ![imagen de flujo global](media/all-assigned-must-approve/overall-flow.png)
 
-Ahora, cada vez que se agrega un elemento a la lista de SharePoint, o si cambia algún elemento, se desencadena el flujo y envía solicitudes de aprobación a todos los aprobadores que figuran en la lista del cuadro **Asignado a** de la tarjeta **Iniciar una aprobación**. El flujo envía solicitudes de aprobación tanto a través de la aplicación móvil Power Automate como por correo electrónico. La persona que crea el elemento en SharePoint recibe un correo electrónico que resume los resultados, en el que se indica con claridad si la solicitud se ha aprobado o rechazada.
+Ahora, cada vez que se agrega un elemento a la lista de SharePoint, o si cambia algún elemento, se desencadena el flujo y envía solicitudes de aprobación a todos los aprobadores que figuran en la lista del cuadro **Asignado a** de la tarjeta **Iniciar y esperar una aprobación**. El flujo envía solicitudes de aprobación tanto a través de la aplicación móvil Power Automate como por correo electrónico. La persona que crea el elemento en SharePoint recibe un correo electrónico que resume los resultados, en el que se indica con claridad si la solicitud se ha aprobado o rechazada.
 
 Este es un ejemplo de la solicitud de aprobación que se envía a cada aprobador.
 

@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/06/2020
 ms.author: deonhe
-ms.openlocfilehash: 75fa66b3be68ef86a78448b9b5868581cb0a9b0f
-ms.sourcegitcommit: c43c98cc777780d42d15e287233c040771a6e147
+ms.openlocfilehash: b5930ca6fa663d92497ec48b3cc6220d8c891d44
+ms.sourcegitcommit: 71f9b72d551887324c92b122dadd1b4dd584bc4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80801429"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82081178"
 ---
 # <a name="sharepoint-remind-me"></a>Recordatorio de SharePoint
 
@@ -47,7 +47,7 @@ Las listas y bibliotecas de SharePoint le permitían definir columnas de metadat
 
     ![Establecer los detalles del flujo de recordatorio](media/create-sharepoint-reminder-flows/set-reminder-details.png)
 
-1. Seleccione **Crear** en la tarjeta **Establecer un recordatorio**.
+1. Seleccione **Establecer un recordatorio** en la tarjeta **Crear**.
 
 1. Recibirá el mensaje siguiente, que indica que se ha creado el flujo:
 

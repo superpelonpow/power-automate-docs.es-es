@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/21/2017
+ms.date: 11/15/2019
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 697f41960a62c7da2eee9bc34bb174d39ed2c44b
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: b4479c2df6b8c7a1d5c269a8e0a48f15c1dda275
+ms.sourcegitcommit: 5b1965a0c319c4294b7dc0c829120ed1f4f90444
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195082"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153575"
 ---
 # <a name="create-team-flows"></a>Creación de flujos de equipo
 
@@ -55,7 +55,7 @@ Para crear un flujo de equipo, debe tener un [plan de pago de Power Automate](ht
 Siga estos pasos para crear un flujo de equipo o para agregar más propietarios a un flujo de equipo.
 
 1. Inicie sesión en [Power Automate](https://flow.microsoft.com) y seleccione **Mis flujos**.
-2. Seleccione el icono de personas del flujo que desea modificar:
+2. Seleccione **Más comandos** y, luego, elija **Compartir** para el flujo que quiere compartir:
    
     ![icono de equipo](./media/create-team-flows/addowner1.png)
 3. Escriba el nombre, la dirección de correo electrónico o el nombre de grupo de la persona o grupo que desea agregar como propietario:
@@ -86,18 +86,16 @@ Puede agregar listas de SharePoint como copropietario a un flujo para que todos 
 > 
 > 
 
-1. Seleccione el icono de personas del flujo que desea modificar:
+1. Seleccione **Más comandos** y, luego, elija **Compartir** para el flujo que quiera compartir:
    
-    ![seleccionar icono de personas](./media/create-team-flows/removeowner1.png)
+    ![seleccionar icono de personas](./media/create-team-flows/addowner1.png)
 2. Seleccione el icono **Eliminar** del propietario que desea quitar:
    
     ![seleccionar Eliminar](./media/create-team-flows/removeowner2.png)
 3. En el cuadro de diálogo de confirmación, seleccione **Quitar este propietario**:
    
     ![confirmar eliminación](./media/create-team-flows/removeowner3.png)
-4. &mdash; El usuario o grupo que quitó ya no aparece como propietario del flujo:
-   
-    ![usuario eliminado](./media/create-team-flows/removeowner4.png)
+4. ¡Felicidades! El usuario o grupo que quitó ya no aparece como propietario del flujo:
 
 
 ## <a name="update-connection-owner"></a>Actualización del propietario de la conexión
