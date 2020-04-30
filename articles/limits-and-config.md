@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/26/2020
+ms.date: 04/26/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 478949c1d0579e399f4125e67c1e40103d889900
-ms.sourcegitcommit: e709e8c4a62df6fdb0ca06f3f8afb5c639c76632
+ms.openlocfilehash: 06230d493fd43a9d9e23f4faebd6e1c6dc8d8045
+ms.sourcegitcommit: 28adfdffc00c149bc46fab85b7307e4e819000c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2020
-ms.locfileid: "82159547"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82189597"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Límites y configuración de Power Automate
 
@@ -156,3 +156,6 @@ graph.microsoft.com </br>graph.windows.net</br>|HTTPS|Acceso a la Graph API de A
 *.azureedge.net|https|Acceso a la red CDN de Power Automate.
 nps.onyx.azure.net|https|Acceso a NPS (Net Promoter Score).
 webshell.suite.office.com|https|Acceso a Office para encabezados y búsqueda. Para más información, consulte [los intervalos y las direcciones URL de Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online).
+
+### <a name="approval-email-delivery"></a>Entrega de correo electrónico de aprobación
+Vea el [artículo sobre la entrega de correo electrónico de aprobación](https://go.microsoft.com/fwlink/?linkid=2128304) para obtener más información sobre el enrutamiento de correo electrónico de aprobación.
