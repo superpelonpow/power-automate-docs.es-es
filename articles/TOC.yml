@@ -44,6 +44,8 @@
       href: flows-teams.md
     - name: Creación de flujos de tarjeta adaptables en Teams
       href: create-adaptive-cards-teams.md
+    - name: Creación de un flujo con Common Data Service (entorno actual)
+      href: connection-cds-native.md
     - name: Creación de un flujo con Common Data Service
       href: connection-cds.md
     - name: Creación de un flujo con Dynamics 365
