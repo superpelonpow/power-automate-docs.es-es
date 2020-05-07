@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - maker
-ms.openlocfilehash: ea98043ee9ab952cfd929a100cb76e42508b84bc
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: dc2eaf9ac0ffc0edb10f5cb096ee98dad6aac55d
+ms.sourcegitcommit: 9cca2a2fca8371ab883b12011c1c4485ceb9c761
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194218"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82200505"
 ---
 # <a name="create-custom-response-options-for-approval-flows"></a>Creación de opciones de respuesta personalizadas para flujos de aprobación
 
@@ -41,40 +41,39 @@ Supongamos que quiere enviar una solicitud de aprobación cada vez que un emplea
 ## <a name="create-approval-flow"></a>Creación de un flujo de aprobación
 1. Inicie sesión en [Power Automate](https://flow.microsoft.com).
 1. En la barra de navegación izquierda, seleccione **Mis flujos**.
-1. Seleccione **Nuevo** > **Crear desde cero**.
+1. Seleccione **Nuevo** > **Automatizado: desde cero**.
 
     ![Opción Crear desde cero](media/create-approval-response-options/create-approval-response-options.png)
 
-1. En la pantalla que se abre, seleccione **Crear desde cero**. 
+1. En la pantalla que se abre, proporcione un nombre para el flujo en **Nombre de flujo**. 
+  
+1. Busque **SharePoint** en **Choose your flow's trigger** (Elegir el desencadenador del flujo), seleccione **Cuando se crea un elemento** en la lista de desencadenadores y, después, **Crear**.
 
-    ![Seleccionar Crear desde cero](media/create-approval-response-options/create-from-blank.png)
-
-1. Busque **sharepoint** y, luego, seleccione **Cuando se crea un elemento** en la lista de desencadenadores. 
+   ![Seleccionar Crear desde cero](media/create-approval-response-options/create-from-blank.png)
 
 1. Rellene los campos **Dirección del sitio** y **Nombre de lista**. 
 
-1. Seleccione **Nuevo paso**, busque **Aprobación** y, luego, seleccione **Iniciar y esperar una aprobación (V2)** .
+   >[!TIP]
+   >Seleccione **Escribir un valor personalizado** en el campo **Dirección del sitio** antes de especificar texto en **Dirección del sitio**.
 
-1. En la tarjeta **Iniciar y esperar una aprobación (V2)** , seleccione la lista **Tipo de aprobación**.
+1. Seleccione **Nuevo paso**, busque **Aprobación** y, luego, seleccione **Iniciar y esperar una aprobación**.
+
+1. En la tarjeta **Iniciar y esperar una aprobación**, seleccione la lista **Tipo de aprobación**.
+
+1. Seleccione **Respuestas personalizadas: esperar una respuesta**.
 
     ![Tipo de aprobación](media/create-approval-response-options/select-approval-type.png)
-
-1. Seleccione **Respuestas personalizadas: esperar una respuesta (Premium)** .
-
-    ![Respuestas personalizadas](media/create-approval-response-options/select-custom-responses.png)
 
     A continuación, creará las respuestas personalizadas que los aprobadores usarán cuando respondan a una solicitud de aprobación de los gastos de un empleado.
 
 
-1. En el cuadro **Response options Item - 1** (Elemento de opciones de respuesta: 1), escriba **Aceptar** y, luego, seleccione **Agregar nuevo elemento**. 
+1. En el cuadro **Response options Item** (Elemento de opciones de respuesta), escriba **Aceptar** y, luego, seleccione **Agregar nuevo elemento**. 
 
     ![Respuesta personalizada 1](media/create-approval-response-options/enter-response-1.png)
 
-1. En el cuadro **Response options Item - 2** (Elemento de opciones de respuesta: 2), escriba **Aceptar** y, luego, seleccione **Agregar nuevo elemento**.
+1. En el cuadro **Response options Item** (Elemento de opciones de respuesta), escriba **Rechazar** y, luego, seleccione **Agregar nuevo elemento**.
 
-    ![Respuesta personalizada 2](media/create-approval-response-options/enter-response-2.png)
-
-1. En el cuadro **Response options Item - 3** (Elemento de opciones de respuesta: 3), escriba **Se necesita más información**.
+1. En el cuadro **Response options Item**  (Elemento de opciones de respuesta), escriba **Se necesita más información**.
 
     ![Respuesta personalizada 3](media/create-approval-response-options/enter-response-3.png)   
     

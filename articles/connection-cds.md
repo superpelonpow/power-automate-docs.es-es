@@ -13,24 +13,27 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/06/2020
+ms.date: 04/26/2020
 ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 3fcf12f42f01d0777a5caeac6308e14b439da002
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: 18719ac34d84298dd813b0241d00b652ae172ef6
+ms.sourcegitcommit: e58c8e6954c8e666497a66dc945fdc16c7c845a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862662"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "82727910"
 ---
 # <a name="create-an-automated-flow-by-using-common-data-service"></a>Creación de un flujo automatizado mediante Common Data Service
 
+>[!IMPORTANT]
+>Hay tres conectores disponibles para conectarse a Common Data Service. Use el [conector de Common Data Service (entorno actual)](./connection-cds-native.md) recomendado. Si no puede usar el conector recomendado, tiene a su disposición el **conector de Common Data Service**, que se trata en este artículo, y el [conector de Dynamics 365](https://docs.microsoft.com/connectors/dynamicscrmonline/).
 
-Con el conector Common Data Service, puede crear flujos que se inicien mediante la creación y actualización de eventos dentro de la base de datos de Common Data Service. Además, puede realizar acciones de creación, actualización, recuperación y eliminación en registros dentro de Common Data Service.
+
+Con el conector de Common Data Service, puede crear flujos que se inicien mediante los eventos de creación y actualización en Common Data Service. Además, puede realizar acciones de creación, actualización, recuperación y eliminación en registros dentro de Common Data Service.
 
 ## <a name="initiate-a-flow-from-common-data-service"></a>Inicio de un flujo desde Common Data Service
 
@@ -72,9 +75,6 @@ Este flujo se desencadena cada vez que se actualiza el nombre o apellido de cont
 > [!div class="mx-imgBorder"]
 > ![Atributos de filtrado](./media/cds-connector/FilterAttributes.png)
 
-> [!IMPORTANT]
-> [Los conjuntos de opciones de selección múltiple](/powerapps/maker/common-data-service/custom-picklists) no se pueden usar en un flujo de trabajo. Si incluye uno, se producirá un error que indica que falta un "campo obligatorio".
-
 ## <a name="trigger-privileges"></a>Privilegios de desencadenador
 
 Para crear un flujo que se desencadene en función de la creación, actualización o eliminación de un registro, el usuario debe tener permisos de nivel de usuario para crear, leer, escribir y eliminar en la entidad de registro de devolución de llamadas. Además, según los ámbitos definidos, el usuario puede necesitar al menos ese nivel de lectura en la misma entidad.  [Más información](https://docs.microsoft.com/power-platform/admin/database-security) sobre la seguridad del entorno.
@@ -115,11 +115,4 @@ Si tiene un desencadenador registrado en la actualización de un registro, el fl
 > Si tiene dos actualizaciones que se producen con una diferencia de segundos entre sí, el flujo se puede desencadenar más de una vez con el contenido más reciente con versiones.
 
 Si hay un trabajo pendiente de trabajos del sistema en el entorno, se pueden retrasar las ejecuciones del flujo.  Si se produce este retraso, el flujo se desencadena cuando se ejecuta el trabajo del sistema para invocar al flujo.
-
-### <a name="call-any-common-data-service-action"></a>Llamar a cualquier acción de Common Data Service
-
-Los flujos de trabajo automatizados pueden llamar a todas las acciones de Common Data Service, desde cumplimentar un pedido de venta hasta exportar un archivo de Microsoft Excel.
-
- ![Todas las acciones](./media/cds-connector/all-actions.png "todas las acciones")
-
 

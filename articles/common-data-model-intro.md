@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 04/27/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ac149bcd62da4ee737f23f894e1f99773f843ada
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: 7138d8f0aefc06799f5023204126e1a95494ba20
+ms.sourcegitcommit: e58c8e6954c8e666497a66dc945fdc16c7c845a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862616"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "82727964"
 ---
 # <a name="create-a-flow-that-uses-common-data-service"></a>Creación de un flujo que usa Common Data Service
 
@@ -48,7 +48,7 @@ Por ejemplo, aproveche Common Data Service en Power Automate de las siguientes f
 * Si es la primera vez que utiliza Common Data Service, abra la pestaña **Entidades** de [powerapps.com](https://web.powerapps.com/#/entities) y haga clic en la opción **Crear mi base de datos** o púlsela.
 
 ## <a name="sign-in-to-your-environment"></a>Inicie sesión en su entorno
-1. Abra el [portal de Power Automate](https://flow.microsoft.com) y haga clic o pulse en **Iniciar sesión** en la esquina superior derecha.
+1. Abra [Power Automate](https://flow.microsoft.com) y haga clic en la opción **Iniciar sesión**, o púlsela en la esquina superior derecha.
    
     **Nota**: para mostrar el botón **Iniciar sesión** es posible que tenga que abrir el menú de la parte superior izquierda.
    
