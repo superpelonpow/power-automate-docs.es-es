@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/30/2019
+ms.date: 05/07/2020
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: d1c46c6521e3267f5a2b5b8562122c92647211c7
-ms.sourcegitcommit: 855ee8b55aebe7b8e202006c39debfff02df1d30
+ms.openlocfilehash: a8b4ee39a7d40df41a1c8012a33860a77a51a092
+ms.sourcegitcommit: 8714786a5b632dfd60099871629cf369a31c4125
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80627046"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82895866"
 ---
 # <a name="billing-and-metering-questions"></a>Preguntas acerca de la facturación y la medición
 
@@ -45,7 +45,7 @@ Consulte esta [página de suscripción](https://portal.office.com/account/#subsc
 
 ## <a name="how-do-i-switch-plans"></a>¿Cómo se cambiar de plan?
 
-En el menú de navegación superior, seleccione **Información** > **Precios** y seleccione el plan al que quiera cambiar.
+En el menú de navegación superior, seleccione **Información**> **Precios** y seleccione el plan al que quiera cambiar.
 
 ![Más información > Precios](./media/billing-questions/learn-pricing.png)
 
@@ -90,7 +90,6 @@ Para solucionar este problema coloque en el desencadenador todos los filtros que
 ## <a name="other-limits-and-caveats"></a>Otros límites y advertencias
 
 * Cada cuenta puede tener:
-  * 250 flujos.
   * 15 conectores personalizados.
   * 20 conexiones por API y un total de 100 conexiones.
 * Algunos conectores externos, como Twitter, implementan la limitación de conexiones para controlar la calidad del servicio. Se produce un error en los flujos al estar en vigor la limitación. Si se producen errores en los flujos, revise los detalles de la ejecución con errores en el historial de ejecuciones del flujo.
