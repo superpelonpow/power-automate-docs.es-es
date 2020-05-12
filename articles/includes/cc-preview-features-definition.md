@@ -1,0 +1,1 @@
+Las vistas previas de características no se han diseñado para un uso de producción y pueden tener una funcionalidad restringida. Estas características están disponibles antes del lanzamiento oficial para que los clientes puedan tener un acceso anticipado y proporcionar comentarios.

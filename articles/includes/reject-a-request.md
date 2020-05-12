@@ -1,4 +1,4 @@
-Puede rechazar una solicitud a través del correo electrónico, el centro de aprobaciones o la aplicación Power Automate. Para rechazar una solicitud, siga los pasos para aprobar una solicitud, pero seleccione **Rechazar**, en lugar de **Aprobar**.
+Puede rechazar una solicitud desde el correo electrónico, el centro de aprobaciones o la aplicación Power Automate. Para rechazar una solicitud, siga los pasos para aprobar una solicitud, pero seleccione **Rechazar**, en lugar de **Aprobar**.
 
 Después de confirmar su decisión (el rechazo de la solicitud), el flujo ejecuta los pasos siguientes:
 

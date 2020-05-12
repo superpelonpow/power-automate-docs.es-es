@@ -16,8 +16,8 @@ metadata:
   ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "80082121"
+  ms.lasthandoff: 03/26/2020
+  ms.locfileid: "3295874"
 landingContent:
 - title: Acerca de Power Automate
   linkLists:
@@ -25,13 +25,13 @@ landingContent:
     links:
     - text: ¿Qué es Power Automate?
       url: /power-automate/getting-started
-    - text: Suscripción en Power Automate
+    - text: Suscribirse a Power Automate
       url: /power-automate/sign-up-sign-in
-    - text: Preguntas más frecuentes sobre Power Automate
+    - text: Preguntas más frecuentes para Power Automate
       url: /power-automate/frequently-asked-questions
   - linkListType: learn
     links:
-    - text: Descubrir Power Automate
+    - text: Obtener información sobre Power Automate
       url: https://docs.microsoft.com/learn/browse/?products=power-automate&term=Power%20Automate
   - linkListType: video
     links:
@@ -41,7 +41,7 @@ landingContent:
     links:
     - text: Planes de versiones
       url: https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features
-- title: Creación de flujos con Power Automate
+- title: Crear flujos con Power Automate
   linkLists:
   - linkListType: get-started
     links:
@@ -111,7 +111,7 @@ landingContent:
       url: /power-automate/visio-flows
   - linkListType: concept
     links:
-    - text: Power Automate para desarrolladores, fabricantes de software independientes y asociados
+    - text: Power Automate para desarrolladores, ISV y partners
       url: /power-automate/developer/dev-enterprise-intro
 - title: Soporte técnico y licencias
   linkLists:
@@ -125,7 +125,7 @@ landingContent:
       url: https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity
     - text: Blog de Power Automate
       url: https://flow.microsoft.com/en-us/blog/
-    - text: Licencias de Power Automate
+    - text: Licencias de Power Automate
       url: /power-automate/billing-questions
     - text: Planes de Power Automate para la Administración Pública de Estados Unidos
       url: /power-automate/us-govt

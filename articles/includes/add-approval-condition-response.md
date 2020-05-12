@@ -1,4 +1,4 @@
-1. Seleccione **Nuevo paso** y luego **Agregar una condición**.
+1. Seleccione **Nuevo paso** y después **Agregar una condición**.
    
     ![agregar condición](media/modern-approvals/add-response-condition.png)
 2. Seleccione el cuadro **Nombre de objeto** y, después, escriba **respuesta** en el cuadro de búsqueda en la tarjeta **Agregue contenido dinámico de las aplicaciones y servicios que se usan en este flujo**.

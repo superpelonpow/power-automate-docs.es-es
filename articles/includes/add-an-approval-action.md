@@ -1,4 +1,4 @@
-1. Seleccione **Nuevo paso** y, luego, **Agregar una acción**.
+1. Haga clic en **Nuevo paso** y después en **Agregar una acción**.
 
     ![nuevo paso](media/modern-approvals/select-sharepoint-add-action.png)
 1. Escriba **aprobación** en el cuadro de búsqueda **Elegir una acción**.

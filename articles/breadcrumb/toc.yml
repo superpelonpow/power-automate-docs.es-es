@@ -1,4 +1,4 @@
-- name: Docs
+- name: Documentos
   href: /
   topicHref: /
   items:
@@ -6,6 +6,6 @@
       href: /power-platform/
       topicHref: /power-platform/
       items:
-        - name: "Power\_Automate"
+        - name: Power Automate
           tocHref: /power-automate/
           topicHref: /power-automate/

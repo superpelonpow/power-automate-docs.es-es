@@ -2,9 +2,9 @@
   href: /power-automate/
 - name: Información general
   items:
-    - name: Registrarse
+    - name: Suscribirse
       href: sign-up-sign-in.md
-    - name: Comenzar
+    - name: Introducción
       href: getting-started.md
     - name: Aprendizaje guiado
       href: 'https://docs.microsoft.com/learn/paths/automate-process-using-flow'
@@ -14,7 +14,7 @@
       href: mobile-create-flow.md
     - name: Creación de un flujo de equipo
       href: create-team-flows.md
-    - name: Creación de un flujo que usa Common Data Service
+    - name: Crear un flujo que usa Common Data Service
       href: common-data-model-intro.md
     - name: Catálogo de cursos
       items:
@@ -96,7 +96,7 @@
   items:
     - name: Introducción a los flujos de proceso de negocio
       href: business-process-flows-overview.md
-    - name: Creación de un flujo de proceso de negocio para estandarizar procesos
+    - name: Crear un flujo de proceso de negocio para estandarizar los procesos
       href: create-business-process-flow.md
     - name: Mejora de los flujos de proceso de negocio con ramas
       href: enhance-business-process-flows-branching.md
@@ -143,7 +143,7 @@
       href: import-flow-solution.md
     - name: Edición de un flujo basado en la solución
       href: edit-solution-aware-flow.md
-    - name: Quitar un flujo compatibles con la solución
+    - name: Eliminación de un flujo basado en la solución
       href: remove-solution-aware-flow.md
 - name: Common Data Service
   items:
@@ -175,19 +175,19 @@
           href: create-mobile-task-flow.md
     - name: Diálogos clásicos de Common Data Service
       items:
-        - name: Uso de diálogos clásicos de Common Data Service
+        - name: Usar diálogos clásicos de Common Data Service
           href: use-cds-for-apps-dialogs.md
-        - name: Sustitución de diálogos clásicos de Common Data Service
+        - name: Reemplazar diálogos clásicos de Common Data Service
           href: replace-dialogs.md
 - name: AI Builder
   items:
-    - name: Uso de AI Builder en Power Automate
+    - name: Usar AI Builder en Power Automate
       href: use-ai-builder.md
-- name: Procedimiento
+- name: Cómo
   items:
     - name: Agregar una acción
       href: multi-step-logic-flow.md
-    - name: Agregar una condición
+    - name: Agrega una condición
       href: add-condition.md
     - name: Uso de operaciones de datos
       href: data-operations.md
@@ -223,7 +223,7 @@
       href: mobile-manage-flows.md
     - name: Publicación de una plantilla
       href: publish-a-template.md
-- name: Solucionar problemas
+- name: Solución de problemas
   items:
     - name: Visualización de un flujo
       href: see-a-flow-run.md
@@ -233,23 +233,23 @@
       href: fix-flow-failures.md
     - name: Búsqueda y corrección de errores con el comprobador de errores
       href: error-checker.md
-- name: Conectar a datos
+- name: Conectarse a los datos
   items:
     - name: Conexiones disponibles
       href: 'https://go.microsoft.com/fwlink/?linkid=832211'
-    - name: Administración de conexiones
+    - name: Administrar conexiones
       href: add-manage-connections.md
-    - name: Administración de puertas de enlace
+    - name: Administrar puertas de enlace
       href: gateway-manage.md
-    - name: Puertas de enlace
+    - name: Conocer las puertas de enlace
       href: gateway-reference.md
 - name: Para desarrolladores
   items:
-    - name: 'desarrolladores empresariales, asociados y fabricantes de software independientes'
+    - name: 'Desarrolladores empresariales, partners e ISV'
       href: ./developer/dev-enterprise-intro.md
-    - name: Compilación y certificación de conectores personalizados
+    - name: Crear y certificar conectores personalizados
       href: ./developer/register-custom-api.md
-    - name: Integrar con sitios web y otras tecnologías
+    - name: Integrar con páginas web y otras tecnologías
       href: ./developer/embed-flow-dev.md
     - name: Permitir a los clientes la realización de pruebas de los flujos
       href: ./developer/dev-appsource-test-drive.md
@@ -304,7 +304,7 @@
       href: us-govt.md
 - name: Referencia
   items:
-    - name: Información general de las regiones
+    - name: Información general de regiones
       href: regions-overview.md
     - name: Límites y configuración
       href: limits-and-config.md

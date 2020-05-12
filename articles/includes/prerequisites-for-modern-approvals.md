@@ -1,6 +1,6 @@
-* [Power Automate](https://flow.microsoft.com).
+* [Power Automate](https://flow.microsoft.com).
 * Una lista de SharePoint Online.
-* Cuenta de Office 365 Outlook y de Usuarios de Office 365.
+* Office 365 Outlook y cuenta de usuarios de Office 365.
 
 > [!NOTE]
 > Aunque usamos SharePoint Online y Office 365 Outlook en este tutorial, puede utilizar otros servicios como Zendesk, Salesforce o Gmail.

@@ -1,4 +1,4 @@
-1. Inicie sesión en [Power Automate](https://flow.microsoft.com).
+1. Inicie sesión en [Power Automate](https://flow.microsoft.com).
    
     ![iniciar sesión](media/modern-approvals/sign-in.png)
 2. Seleccione la pestaña **Mis flujos**.

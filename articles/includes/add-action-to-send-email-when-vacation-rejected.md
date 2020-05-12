@@ -1,4 +1,4 @@
-1. Seleccione **Agregar una acción** en la rama **IF NO, DO NOTHING** (En caso negativo, no hacer nada).
+1. Seleccione **Agregar una acción** en la rama **EN CASO NEGATIVO, NO HACER NADA**.
 2. Escriba **Enviar correo electrónico** en el cuadro de búsqueda de la tarjeta **Elegir una acción**.
    
     ![buscar acción de correo electrónico](media/modern-approvals/search-send-email-no.png)

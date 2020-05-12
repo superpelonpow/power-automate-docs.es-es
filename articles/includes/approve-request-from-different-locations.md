@@ -1,11 +1,11 @@
-Si es el aprobador de un flujo de aprobación, recibirá un correo electrónico cada vez que alguien cree una solicitud. También se envía la solicitud de aprobación al centro de aprobaciones. Después, puede aprobar o rechazar solicitudes desde el correo electrónico, el centro de aprobaciones o la aplicación Power Automate.
+Si es el aprobador de un flujo de aprobación, recibirá un correo electrónico cada vez que alguien cree una solicitud. También se envía la solicitud de aprobación al centro de aprobaciones. A continuación, puede aprobar o rechazar las solicitudes desde el correo electrónico, el centro de aprobaciones o la aplicación Power Automate.
 
 Para aprobar una solicitud:
 
 ### <a name="from-email"></a>Desde el correo electrónico
 1. Seleccione **Aprobar** en el correo electrónico que recibe cuando se agrega un elemento a la lista de SharePoint Online.
    
-     Nota: Si usa un dispositivo móvil que tiene instalada la aplicación Power Automate, esta se inicia; de lo contrario, se abre el centro de aprobaciones en el explorador.
+     Nota: Si usa un dispositivo móvil con la aplicación Power Automate instalada, inicie la aplicación Power Automate; de lo contrario, el centro de aprobaciones se abre en el explorador.
    
     ![correo electrónico de solicitud](media/modern-approvals/email-approval-request.png)
 2. Escriba un comentario y, después, seleccione el botón **Confirmar**.
@@ -26,7 +26,7 @@ Para aprobar una solicitud:
    
     ![agregar nota y confirmar](media/modern-approvals/approval-selection-card.png)
 
-### <a name="from-the-power-automate-app"></a>Desde la aplicación Power Automate
+### <a name="from-the-power-automate-app"></a>En la aplicación Power Automate
 1. En el teléfono móvil que tiene instalada la aplicación Power Automate, seleccione **Aprobar** desde el correo electrónico de solicitud de aprobación.
 2. Seleccione **Confirmar** en la esquina superior derecha de la pantalla.
    
