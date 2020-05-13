@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 05/07/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7f4da4123d5623348513d9b14a75d1f03b3e17dc
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: 82e175f463e9cbc264b6ac388e90eaa3433211b4
+ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862754"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82852685"
 ---
 # <a name="release-notes"></a>Notas de la versión
 
@@ -61,7 +61,7 @@ Para información sobre las nuevas características publicadas para Power Automa
 ### <a name="release-2018-09-24"></a>Versión del 24/09/2018
 
 - **Acceso de administrador para ayuda y soporte técnico**: abra incidencias de soporte técnico para Power Automate en el centro de administración de Power Platform y proporcione detalles adicionales sobre el error de flujo de trabajo.
-- **Comunidad de Flow rediseñada**: buscar lo que necesita ahora es más fácil en la comunidad de Flow.
+- **Comunidad de Power Automate rediseñada**: buscar lo que necesita ahora es más fácil en la comunidad de Power Automate.
 - **Mejoras en el conector de Microsoft Teams**: desencadenadores nuevos para Microsoft Teams para que pueda ejecutar un flujo cuando hay nuevos mensajes en un canal.
 - **Más acciones de SharePoint**: hay nuevas acciones para mover archivos y mucho más en el conector de SharePoint.
 - **Nuevos informes de análisis de administración**: amplios análisis del entorno y del inquilino en el centro de administración de plataformas de aplicaciones empresariales.
@@ -242,7 +242,7 @@ El panel de inicio de Power Automate ya está disponible en todas las regiones. 
 ### <a name="release-2017-11-02"></a>Versión 2017-11-02
 
 - **Registro de auditoría**: los eventos de auditoría de Power Automate están ya disponibles en el Centro de seguridad y cumplimiento de Office 365 para todos los inquilinos.
-- **Correcciones de widgets de Flow**: se ha corregido un problema en la aplicación móvil de Flow que hacía que los botones no se cargaran en el widget.
+- **Correcciones de widgets de Flow**: se ha corregido un problema en la aplicación móvil de Power Automate que hacía que los botones no se cargaran en el widget.
 
 [Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/security-and-compliance-center/) acerca de esta versión.
 
@@ -274,7 +274,7 @@ El panel de inicio de Power Automate ya está disponible en todas las regiones. 
 ### <a name="release-2017-09-25---q3-update-for-power-automate"></a>Versión de 2017-09-25 - Actualización del tercer trimestre para Power Automate
 
 - **Integración de SharePoint más profunda en primera versión**: hay un nuevo envío "integrado" para flujos de revisión y un panel de Flow para recopilar entradas cuando se ejecuta un flujo para los inquilinos de la primera versión.
-- **Aplicaciones de Dynamics 365**: Flow ahora está integrado en la interfaz de usuario de aplicaciones de Dynamics 365 como Dynamics 365 for Sales y Dynamics 365 Customer Service.
+- **Aplicaciones de Dynamics 365**: Power Automate ahora está integrado en la interfaz de usuario de aplicaciones de Dynamics 365 como Dynamics 365 for Sales y Dynamics 365 Customer Service.
 - **Centro de confianza de Microsoft**: Power Automate aparece en el Centro de confianza de Microsoft con las certificaciones HIPAA, ISO y SOC.
 - **Análisis de uso**: cada flujo tiene un panel de Power BI insertado con un análisis de uso básico.
 - **Registro de auditoría en la primera versión**: todos los eventos de administración de flujos se registran en el Centro de seguridad y cumplimiento de Office 365 para los inquilinos de la primera versión.
@@ -296,7 +296,7 @@ El panel de inicio de Power Automate ya está disponible en todas las regiones. 
 
 
 ### <a name="release-2017-08-25"></a>Versión 2017-08-25
-* **Propiedades de documentos y otras cuestiones relativas a SharePoint** - [lea y establezca las propiedades de la biblioteca de documentos de SharePoint](https://flow.microsoft.com/blog/support-for-sharepoint-document-library-properties/)y use campos adicionales, como vínculos, en el elemento de SharePoint.
+* **Propiedades de documentos y otras cuestiones relativas a SharePoint**- [lea y establezca las propiedades de la biblioteca de documentos de SharePoint](https://flow.microsoft.com/blog/support-for-sharepoint-document-library-properties/)y use campos adicionales, como vínculos, en el elemento de SharePoint.
 * **Colecciones de Flow**: las colecciones de Flow son un conjunto de colecciones de plantillas organizado por rol o por vertical.
 * **Volver a compartir botones**: si comparte botones con sus compañeros de trabajo, estos también pueden volver a compartirlos con otras personas.
 * **Recopilar listas de botones**: defina las listas desplegables de opciones que pueden elegir los usuarios al pulsar el botón.
@@ -357,7 +357,7 @@ Ahora puede ver el estado de todas las solicitudes de aprobación pendientes que
 [Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/seven-connectors-and-html/) acerca de esta versión.
 
 ### <a name="release-2017-06-04"></a>Versión 2017-06-04
-* **Disponibilidad general para Windows Phone** - [La aplicación móvil de Power Automate es ahora de disponibilidad general para Windows Phone](https://flow.microsoft.com/blog/announcing-flow-windows-phone-app/).
+* **Disponibilidad general para Windows Phone**- [La aplicación móvil de Power Automate es ahora de disponibilidad general para Windows Phone](https://flow.microsoft.com/blog/announcing-flow-windows-phone-app/).
 * **Correos electrónicos al producirse errores de flujo**: reciba las notificaciones por correo electrónico si se produce un error en algún flujo. Estos mensajes de error se enviarán solo una vez por semana y el usuario puede activarlos o desactivarlos.
 * **Acción de selección para tablas**: use la nueva acción de selección para cambiar el conjunto de columnas que se incluirán en las tablas.
 * **Conector de Microsoft Forms**: Microsoft Forms es un nuevo elemento de Office 365 Educación que permite a los profesores y alumnos crear cuestionarios personalizados de forma rápida y sencilla, así como encuestas, registros y mucho más.
@@ -367,7 +367,7 @@ Ahora puede ver el estado de todas las solicitudes de aprobación pendientes que
 [Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/microsoft-forms-tables-flow-failures/) acerca de esta versión.
 
 ### <a name="release-2017-05-23"></a>Versión 2017-05-23
-* **Conector de Microsoft Teams** - [Microsoft Teams](https://flow.microsoft.com/blog/introducing-the-microsoft-teams-connector-for-flow/) es un área de trabajo de Office 365 basado en chat que reúne a personas, conversaciones y contenido, junto con las herramientas que necesitan los equipos, para que puedan colaborar fácilmente para lograr objetivos superiores.
+* **Conector de Microsoft Teams**- [Microsoft Teams](https://flow.microsoft.com/blog/introducing-the-microsoft-teams-connector-for-flow/) es un área de trabajo de Office 365 basado en chat que reúne a personas, conversaciones y contenido, junto con las herramientas que necesitan los equipos, para que puedan colaborar fácilmente para lograr objetivos superiores.
 * **Widgets en iOS y Android**: los widgets de Power Automate son accesos directos de botón que proporcionan una manera más rápida y sencilla de desencadenar los botones desde la pantalla principal.
 * **Crear pasos de "control de errores"** : defina los pasos que se van a ejecutar después de que se produzca un error en una acción. Por ejemplo, obtener inmediatamente una notificación si un flujo no crea un registro en Dynamics 365.
 * **Variables enteras y flotantes**: inicialice los contadores e increméntelos o redúzcalos en una ejecución de flujo para contar el número de veces que se ejecuta un conjunto de lógica determinado.
@@ -415,7 +415,7 @@ Ahora puede ver el estado de todas las solicitudes de aprobación pendientes que
 ### <a name="release-2017-04-11"></a>Versión 2017-04-11
 * **Nuevas acciones para compilar tablas y listas**: acciones de creación de nuevas tablas HTML, creación de tablas CSV y combinación que pueden procesar listas de elementos (en lugar del anterior método que se aplicaba de forma individual).
 * **Inserción de pasos en cualquier lugar**: ahora puede insertar un nuevo paso en cualquier parte del flujo de trabajo sin necesidad de arrastrar y colocar.
-* **Cuatro nuevos servicios**: Flow es ahora compatible con 10 to 8 Scheduling, Act!, Inoreader y Computer Vision API. Con Computer Vision API puede procesar imágenes para obtener el contenido de texto (proceso conocido como OCR) o etiquetar automáticamente las imágenes en función de su contenido.
+* **Cuatro nuevos servicios**: Power Automate es ahora compatible con 10 to 8 Scheduling, Act!, Inoreader y Computer Vision API. Con Computer Vision API puede procesar imágenes para obtener el contenido de texto (proceso conocido como OCR) o etiquetar automáticamente las imágenes en función de su contenido.
 
 [Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/html-tables-csvs-computer-vision/) acerca de esta versión.
 
@@ -593,7 +593,7 @@ Ahora, Power Automate está disponible para todos. Inicialmente, la versión pre
 Ahora puede disfrutar de la nueva experiencia de listas modernas de SharePoint Online, que incluye la integración con Power Automate. [Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/microsoft-flow-integration-with-sharepoint-modern-lists-preview/) acerca de esta versión.
 
 ### <a name="release-2016-08-13"></a>Versión 2016-08-13
-* **Visual Studio Team Services**: con Flow, ahora puede conectar VSTS a una gran variedad de servicios como Correo de Office 365, Slack, Trello y Wunderlist.
+* **Visual Studio Team Services**: con Power Automate, ahora puede conectar VSTS a una gran variedad de servicios, como el correo electrónico de Office 365, Slack y Trello.
 * **Mejoras de SharePoint**: las listas de SharePoint admiten diversos tipos de datos, desde objetos simples como líneas individuales de texto o fecha y hora, a objetos complejos tales como personas o grupos, búsqueda y opciones.
 * **Probar las conexiones de O365 Outlook**: siempre que cree una nueva conexión a Office 365 Outlook, la probaremos para estar seguros de que está listo para usarla.
 * **Control booleano**: también hemos agregado un control booleano para aclarar qué valores se deben especificar en los campos de entrada booleanos, por ejemplo Tiene datos adjuntos en el desencadenador Cada vez que reciba un correo electrónico.
@@ -657,7 +657,7 @@ Si utiliza flujos de lógica como parte de [Microsoft Power Apps](https://powera
 * Puede [publicar sus propias plantillas](publish-a-template.md) en la galería después de personalizar un flujo.
 * Puede ver el historial de cada comprobación y ejecución de los flujos.
 * Al guardar un flujo, puede [verlo en acción de inmediato](see-a-flow-run.md), solo tiene que realizar la acción del desencadenador.
-* Tenemos una [nueva comunidad](https://go.microsoft.com/fwlink/?LinkID=787467), donde puede intercambiar información sobre Flow o [enviar sus ideas](https://go.microsoft.com/fwlink/?LinkID=787474).
+* Tenemos una [nueva comunidad](https://go.microsoft.com/fwlink/?LinkID=787467), donde puede intercambiar información sobre Power Automate o [enviar sus ideas](https://go.microsoft.com/fwlink/?LinkID=787474).
 
 >[!NOTE]
 >Ahora se realiza un seguimiento de los planes de versiones [aquí](https://docs.microsoft.com/dynamics365/release-plans/).

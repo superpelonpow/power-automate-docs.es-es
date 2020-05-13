@@ -13,18 +13,18 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/31/2019
+ms.date: 05/05/2020
 ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 6ca077b6a7b0d04f184ddf8a716dd677713e0667
-ms.sourcegitcommit: 835b005284b9ae21ae1742a7d36b574ba3884bef
+ms.openlocfilehash: 9ab8c2c7c0b830aa908a7445757418d4ff073921
+ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "74364635"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82852734"
 ---
 # <a name="integrate-power-automate-with-websites-and-apps"></a>Integración de Power Automate con sitios web y aplicaciones
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
@@ -54,7 +54,7 @@ Para empezar, agregue este código para mostrar las plantillas de Power Automate
 | Parámetro | Descripción |
 | --- | --- |
 | locale |El código de región e idioma de cuatro letras para la vista de la plantilla. Por ejemplo, `en-us` representa el inglés de Estados Unidos, mientras que `de-de` representa el alemán. |
-| search term |El término de búsqueda para las plantillas que desea mostrar en la vista. Por ejemplo, busque `wunderlist` para mostrar las plantillas de Wunderlist. |
+| search term |El término de búsqueda para las plantillas que desea mostrar en la vista. Por ejemplo, busque `SharePoint` para mostrar las plantillas de SharePoint. |
 | number of templates |El número de plantillas que desea mostrar en la vista. |
 | destination |La página que se abre cuando los usuarios seleccionan la plantilla. Escriba `details` para mostrar los detalles de la plantilla, o bien `new` para abrir el diseñador de Power Automate. |
 | category |Filtra por la categoría de plantilla determinada. | 
@@ -65,18 +65,17 @@ Si el parámetro de destino es `new`, se abre el diseñador de Power Automate cu
 
 ### <a name="passing-additional-parameters-to-the-flow-template"></a>Paso de parámetros adicionales a la plantilla de flujo
 
-Si el usuario está en un contexto determinado en el sitio web o la aplicación, es posible que quiera pasar ese contexto al flujo. Por ejemplo, un usuario puede abrir una plantilla para *Notify me when an item is added to a list* (Notificarme cuando se agrega un elemento a una lista) mientras ve una lista concreta en Wunderlist. Siga estos pasos para pasar el identificador de la lista como *parámetro* al flujo:
+Si el usuario está en un contexto determinado en el sitio web o la aplicación, es posible que quiera pasar ese contexto al flujo. Por ejemplo, un usuario puede abrir una plantilla para *Cuando se crea un elemento* mientras ve una lista concreta en SharePoint. Siga estos pasos para pasar el identificador de la lista como *parámetro* al flujo:
 
 1. Defina el parámetro de la plantilla de flujo antes de publicarlo. Así es un parámetro, `@{parameters('parameter_name')}`.
 1. Pase el parámetro en la cadena de consulta del iframe src. Por ejemplo, agregue `&parameters.listName={the name of the list}` si tiene un parámetro denominado **listName**.
 
 ### <a name="full-sample"></a>Ejemplo completo
 
-Para mostrar las cuatro plantillas principales de Wunderlist en alemán e iniciar el usuario con **myCoolList**, use este código:
+Para mostrar las cuatro plantillas principales de SharePoint en alemán e iniciar el usuario con **myCoolList**, use este código:
 
 ```html
-<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist
-&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
+<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=sharepoint%20&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
 ```
 
 ## <a name="use-the-authenticated-flow-widgets"></a>Uso de widgets de flujo autenticados

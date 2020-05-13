@@ -1,7 +1,7 @@
 ---
 title: Introducción a los flujos de proceso de negocio | Microsoft Docs
 ms.custom: ''
-ms.date: 12/12/2019
+ms.date: 05/06/2019
 ms.reviewer: ''
 ms.service: flow
 author: MSFTMAN
@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a6e936b833f6b1e1d6cf6e050031969d41e40de6
-ms.sourcegitcommit: 31692af25f91af60cf77572edcb0c986602dc9a6
+ms.openlocfilehash: 9d3ded6a38d45fa97a206abdf0ee5d89d2255124
+ms.sourcegitcommit: 7a42629c7bc15208c5a9d692ab89616fc0aa40cb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80624838"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82973077"
 ---
 # <a name="business-process-flows-overview"></a>Introducción a los flujos de proceso de negocio
 
@@ -189,11 +189,11 @@ En concreto, los tres comandos que están disponibles para un flujo de proceso d
 ### <a name="limitations-of-using-business-process-flow-entities"></a>Limitaciones del uso de entidades de flujo de proceso de negocio
 
 - En la actualidad, no se pueden crear formularios personalizados para entidades en función de un flujo de proceso de negocio.
-- Si una solución incluye una entidad de flujo de proceso de negocio, esta se debe agregar de forma manual a la solución antes de exportarla. En caso contrario, la entidad de flujo de proceso de negocio no se incluirá en el paquete de solución. Más información: [Agregar componentes de la solución](/powerapps/maker/model-driven-apps/create-solution#add-solution-components)
+- Si una solución incluye una entidad de flujo de proceso de negocio, esta se debe agregar de forma manual a la solución antes de exportarla. En caso contrario, la entidad de flujo de proceso de negocio no se incluirá en el paquete de solución. Más información: [Crear y editar entidades](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-entities-solution-explorer)
 - Al agregar una entidad Proceso a una aplicación controlada por modelos, la funcionalidad puede quedar limitada. Obtenga más información acerca de la [creación y edición de flujos de procesos de negocio](https://docs.microsoft.com/power-automate/create-business-process-flow). 
 
 ### <a name="next-steps"></a>Pasos siguientes  
- [Vea un vídeo corto (4:49) sobre los flujos de proceso de negocio](https://go.microsoft.com/fwlink/p/?linkid=842226)   
- [Crear un flujo de proceso de negocio](create-business-process-flow.md)   
+ [Vea un vídeo corto (4:49) sobre los flujos de proceso de negocio](https://go.microsoft.com/fwlink/p/?linkid=842226)  
+ [Crear un flujo de proceso de negocio](create-business-process-flow.md)  
  [Mejora de los flujos de proceso de negocio con ramas](enhance-business-process-flows-branching.md) <br/>
  [Whitepaper: Process Enablement with Dynamics 365](https://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf) (Notas del producto: Habilitación de procesos con Dynamics 365)</br>
