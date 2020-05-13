@@ -3,19 +3,19 @@ title: Los flujos se almacenan ahora en Common Data Service y usan la API web en
 description: Ahora, los flujos se almacenan en Common Data Service y usan la API web enriquecida.
 author: stepsic-microsoft-com
 ms.reviewer: deonhe
-ms.date: 03/05/2019
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: business-applications
 ms.technology: ''
 ms.author: stepsic
 audience: Power user
-ms.openlocfilehash: f446b1b4147b8531ee808447a18058628c2ac0cf
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.openlocfilehash: ebcd4951abae85f843ddaf34c8ce222eb1a83c33
+ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195782"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82852741"
 ---
 # <a name="power-automate-web-api"></a>API web de Power Automate
 
@@ -48,6 +48,7 @@ Para empezar a crear las solicitudes, primero deberá crear la dirección URL. E
      | India          | crm8        |
      | Gobierno de EE. UU.  | crm9        |
      | Reino Unido | crm11       |
+     |Emiratos Árabes Unidos |   crm15|
 
 La lista de instancias disponibles también se puede obtener mediante programación a través del método [Get Instances](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) de la API de Online Management.
 

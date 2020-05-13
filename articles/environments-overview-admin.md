@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 05/07/2020
 ms.author: sunayv
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 0e0b312ce5e962052770eb44fd1a61c2f19c8e4f
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: e1c2a93fb011b6f20ecaf79fb0bf95212a2506d4
+ms.sourcegitcommit: 2c9cffb59ef2382648a80966ebbf0fe8eafebe64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862708"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "83002606"
 ---
 # <a name="using-environments-within-power-automate"></a>Uso de entornos en Power Automate
 
@@ -175,9 +175,7 @@ Sí, los flujos se pueden exportar de un entorno e importarlos a otro.
 
 ### <a name="which-license-includes-common-data-service"></a>¿Qué licencia incluye Common Data Service?
 
-Solo el plan 2 de Microsoft Power Apps incluye los derechos necesarios para crear bases de datos con Common Data Service. Sin embargo, todos los planes de pago (los planes 1 y 2 de Power Automate y de Microsoft Power Apps) tienen los derechos necesarios para usar Common Data Service.
-
-Para elegir un plan adecuado, visite la página sobre [precios de Power Automate](https://flow.microsoft.com/pricing/).
+Puede acceder a Common Data Service mediante cualquier [licencia](https://flow.microsoft.com/pricing) de Power Automate.
 
 Consulte el documento [Preguntas sobre facturación](billing-questions.md) para conocer las respuestas a las preguntas más frecuentes relativas a la facturación.
 

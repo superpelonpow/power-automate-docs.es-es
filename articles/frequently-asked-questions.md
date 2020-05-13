@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 05/07/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 99a666c80cb1e6994b774f6b269d657a62996548
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: 5b646d486666b92f0496f7bb5c3f851cc8ab56f0
+ms.sourcegitcommit: 8714786a5b632dfd60099871629cf369a31c4125
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862501"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82895846"
 ---
 # <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -113,7 +113,7 @@ Puede compartir los flujos de cualquiera de estas maneras:
 * Para que los flujos se puedan ejecutar manualmente, también puede conceder a otros usuarios o grupos de su organización permiso solo para ejecutar el flujo.
 
 ### <a name="how-many-flows-can-i-have"></a>¿Cuántos flujos puedo tener?
-Power Automate viene con hasta 50 flujos. Si necesita más, puede solicitarlos.
+En función del [tipo de licencia](https://flow.microsoft.com/pricing) que tenga, podrá crear un número ilimitado de flujos.
 
 ### <a name="where-do-i-get-started-with-power-automate"></a>¿Por dónde empiezo con Power Automate?
 Comience con los siguientes recursos:

@@ -13,23 +13,26 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/26/2020
+ms.date: 04/28/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 06230d493fd43a9d9e23f4faebd6e1c6dc8d8045
-ms.sourcegitcommit: 28adfdffc00c149bc46fab85b7307e4e819000c8
+ms.openlocfilehash: 4e130133affb2d1a458842d2bd9f9e22ff2b27a3
+ms.sourcegitcommit: 7a42629c7bc15208c5a9d692ab89616fc0aa40cb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82189597"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82973100"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Límites y configuración de Power Automate
 
 Este tema contiene información sobre los límites actuales y detalles de la configuración de flujos.
+
+>[!TIP]
+>Consulte los [precios](https://flow.microsoft.com/pricing) para obtener detalles sobre los diferentes planes disponibles.
 
 ## <a name="request-limits"></a>Límites de solicitudes
 Límites para una única solicitud saliente.
@@ -136,6 +139,7 @@ Las llamadas realizadas desde un conector (por ejemplo, la API de SQL o la de Sh
 | India  | 104.211.81.192 - 104.211.81.207, 52.172.211.12, 40.78.194.240 - 40.78.194.255, 13.71.125.22, 104.211.146.224 - 104.211.146.239, 104.211.189.218 |
 | Japón | 13.78.108.0 - 13.78.108.15, 13.71.153.19, 40.74.100.224 - 40.74.100.239, 104.215.61.248 |
 | Sudamérica | 191.233.203.192 - 191.233.203.207, 104.214.19.48 - 104.214.19.63, 13.65.86.57, 104.41.59.51 |
+| Emiratos Árabes Unidos | 40.120.8.0 - 40.120.8.31, 20.37.74.192 - 20.37.74.207, 20.45.67.28|
 | Reino Unido | 51.140.148.0 - 51.140.148.15, 51.140.80.51, 51.140.211.0 - 51.140.211.15, 51.141.47.105 |
 | Estados Unidos | 13.89.171.80 - 13.89.171.95, 52.173.245.164, 40.71.11.80 - 40.71.11.95, 40.71.249.205, 40.70.146.208 - 40.70.146.223, 52.232.188.154, 52.162.107.160 - 52.162.107.175, 52.162.242.161, 40.112.243.160 - 40.112.243.175, 104.42.122.49|
 | Versión preliminar (Estados Unidos)  | 13.71.195.32 - 13.71.195.47, 52.161.102.22, 13.66.140.128 - 13.66.140.143, 52.183.78.157 |

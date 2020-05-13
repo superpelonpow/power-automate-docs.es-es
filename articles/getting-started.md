@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e78ba6de412a067ae21eb4a11a5b1a7d5165448c
-ms.sourcegitcommit: c86134235a4e3a819800c77fbc50034cfd8714c2
+ms.openlocfilehash: bd7d85dc2ec30147202c2838f00c7de6c7c587ad
+ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80329891"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82852653"
 ---
 # <a name="get-started-with-power-automate"></a>Introducción a Power Automate 
 
@@ -46,7 +46,7 @@ Power Automate es uno de los pilares de Power Platform. Proporciona una platafor
 | [Flujos de botón](introduction-to-button-flows.md)              | Ejecute tareas repetitivas desde cualquier lugar, en cualquier momento, a través del dispositivo móvil.                        |                                                                                        |
 | [Flujos programados](run-scheduled-tasks.md)                    | Cree un flujo que realice una o varias tareas según una programación.             |                                                                                        |
 | [Flujos de proceso de negocio](business-process-flows-overview.md) | Defina un conjunto de pasos que los usuarios pueden seguir para llegar a un resultado deseado.                 | Procesos humanos                                                                        |
-| [Flujos de interfaz de usuario (versión preliminar)](ui-flows/overview.md)                                                | Registre y automatice la reproducción de pasos manuales en un software heredado.                    | Aplicaciones web y de escritorio que no tienen API disponibles para la automatización.    |
+| [Flujos de interfaz de usuario](ui-flows/overview.md)                                                | Registre y automatice la reproducción de pasos manuales en un software heredado.                    | Aplicaciones web y de escritorio que no tienen API disponibles para la automatización.    |
 
 Puede crear y administrar todos los flujos de la pestaña **Mis flujos** de Power Automate.
 
