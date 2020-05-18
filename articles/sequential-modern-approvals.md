@@ -21,13 +21,13 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 28199ab8b2a2dbf18ef89b905b2bdd362ff9e82b
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194103"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298251"
 ---
-# <a name="manage-sequential-approvals-with-power-automate"></a>Administración de aprobaciones secuenciales con Power Automate
+# <a name="manage-sequential-approvals-with-power-automate"></a>Administrar las aprobaciones secuencias con Power Automate
 
 Algunos flujos de trabajo requieren la aprobación previa antes de que se requiera al aprobador final que cierre la sesión. Por ejemplo, una compañía puede tener una directiva de aprobación secuencial que requiere la aprobación previa de las facturas de más de 1000 USD antes de que estén aprobados por el departamento de finanzas.
 
@@ -59,7 +59,7 @@ Esta imagen resume los pasos anteriores:
 
 Para este tutorial, la lista de SharePoint Online que crea debe incluir estas columnas:
 
-   ![Columnas de la lista de SharePoint](./media/sequential-modern-approvals/sharepoint-columns.png)
+   ![Columnas de lista de SharePoint](./media/sequential-modern-approvals/sharepoint-columns.png)
 
 Tome nota del nombre y la dirección URL de la lista de SharePoint Online. Usamos estos elementos después al configurar el desencadenador **SharePoint - Cuando se crea un elemento**.
 
@@ -92,7 +92,7 @@ Después de cada operación de guardado, seleccione **Editar flujo** en la parte
 
 Nota: Esta acción envía la solicitud de aprobación previa a la dirección de correo electrónico en el cuadro **Asignado a**.
 
-## <a name="add-a-condition"></a>Agregar una condición
+## <a name="add-a-condition"></a>Agrega una condición
 [!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
 
 > [!NOTE]
@@ -131,7 +131,7 @@ Nota: Esta acción envía la solicitud de aprobación previa a la dirección de 
    
    ![plantilla de correo electrónico de aprobación final](./media/sequential-modern-approvals/vacatioin-request-approved-email-template.png)
 
-## <a name="update-sharepoint-with-approval"></a>Actualización de SharePoint con aprobación
+## <a name="update-sharepoint-with-approval"></a>Actualizar SharePoint con aprobación
 1. Siga los pasos de [Adición de una acción de actualización para las solicitudes aprobadas previamente](sequential-modern-approvals.md#add-an-update-action-for-pre-approved-requests) para agregar y configurar una acción que actualiza SharePoint cuando se aprueba la solicitud de vacaciones.
 2. Cuando haya terminado, la tarjeta debe ser similar a esta imagen:
    

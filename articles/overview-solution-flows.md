@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 56b90ebdf7f3655763b7e40c60b985f06604c47b
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194034"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298295"
 ---
 # <a name="overview"></a>Información general
 
@@ -46,7 +46,7 @@ Debe tener los siguientes componentes para crear soluciones y flujos compatibles
 
   Para comprobar la versión, vaya al [Centro de administración de Power Automate](https://admin.flow.microsoft.com) y seleccione sucesivamente **Entornos**, seleccione el entorno en el que esté interesado y, a continuación, seleccione la pestaña **Detalles**.
 
-## <a name="create-a-solution"></a>Creación de una solución
+## <a name="create-a-solution"></a>Crear una solución
 
 Siga estos pasos para crear una solución:
 
@@ -77,7 +77,7 @@ Siga estos pasos para crear una solución:
 ## <a name="learn-more"></a>Más información
 
 - [Creación de un flujo en una solución](./create-flow-solution.md)
-- [Exportación de una solución](./export-flow-solution.md)
-- [Importación de una solución](./import-flow-solution.md)
+- [Exportación de soluciones](./export-flow-solution.md)
+- [Importación de soluciones](./import-flow-solution.md)
 - [Edición de un flujo compatible con la solución](./edit-solution-aware-flow.md)
 - [Eliminación de un flujo compatible con la solución](./remove-solution-aware-flow.md)

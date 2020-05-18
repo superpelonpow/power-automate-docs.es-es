@@ -21,18 +21,18 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 0541a89ad0fe5f8d7dae0acfc6f257be7532ef15
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195111"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297569"
 ---
-# <a name="use-data-operations-with-power-automate"></a>Uso de operaciones de datos con Power Automate
+# <a name="use-data-operations-with-power-automate"></a>Usar operaciones con Power Automate
 
-En este tutorial, conocerá algunas de las operaciones de datos más usadas de Power Automate, como componer, combinar, seleccionar, filtrar matriz, crear tabla y analizar JSON que están disponibles para manipular datos al crear flujos.
+En este tutorial, obtendrá información acerca de algunas de las operaciones de datos más usadas de Power Automate, como componer, combinar, seleccionar, filtrar matriz, crear tabla y analizar JSON que se pueden usar para manipular datos al crear flujos.
 
 ## <a name="prerequisites"></a>Requisitos previos
-* Acceso a Power Automate.
+* Obtenga acceso a Power Automate.
 * Una herramienta como [PostMan](https://www.getpostman.com/postman) para enviar solicitudes HTTP POST con una matriz JSON al flujo.
 
 ## <a name="use-the-compose-action"></a>Uso de la acción de redacción
@@ -92,7 +92,7 @@ y desea volver a dar forma a los datos entrantes, para lo que cambiar "first" po
 
 ````[ { "FirstName": "Deon", "FamilyName": "Herb", "FullName": "Deon Herb" }, { "FirstName": "K", "FamilyName": "Herb", "FullName": "K Herb" } ]````.
 
-Para ello:
+Para hacerlo:
 
 1. Agregue la acción **Solicitud/respuesta – Respuesta** (request) al flujo.
 2. Seleccione **Usar una carga de ejemplo para generar el esquema** en la tarjeta **Solicitud**.
@@ -146,7 +146,7 @@ Use la acción **Operaciones de datos - Crear tabla CSV** (create csv table) par
    
     ![configurar la acción crear tabla csv](./media/data-operations/create-csv-table.png)
    
-    Nota: el token **Cuerpo** de esta imagen procede de una acción **Solicitud/respuesta – Respuesta**; sin embargo, los datos de entrada de la acción **Crear tabla CSV** se pueden obtener de la salida de cualquier acción anterior del flujo, o bien se pueden escribir directamente en el cuadro **Desde**.
+    Nota: El token **Cuerpo** de esta imagen procede de una acción **Solicitud/respuesta – Respuesta**; sin embargo, los datos de entrada de la acción **Crear tabla CSV** se pueden obtener de la salida de cualquier acción anterior del flujo, o bien se pueden escribir directamente en el cuadro **Desde**.
 2. Guarde el flujo y ejecútelo.
    
     Cuando se ejecuta el flujo, la salida de **Crear tabla CSV** es similar a esta imagen:

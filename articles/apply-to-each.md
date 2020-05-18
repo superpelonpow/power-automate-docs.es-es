@@ -1,6 +1,6 @@
 ---
 title: Utilice la acción Aplicar a cada uno para recorrer en iteración una matriz de elementos. | Microsoft Docs
-description: Use Power Automate para recorrer en iteración una matriz de elementos a fin de comprobar varias condiciones y actuar en función de estas.
+description: Utilice Power Automate para recorrer en iteración una matriz de elementos y comprobar varias condiciones y actuar en función de esas condiciones.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,21 +13,21 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/06/2020
+ms.date: 03/16/2017
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: fcd99ea786c03eeac6ceabdf9a97886a8bbee022
-ms.sourcegitcommit: 8714786a5b632dfd60099871629cf369a31c4125
+ms.openlocfilehash: 9eb1707da3f0aa365750cbed4e69715ce818aaff
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82896062"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296887"
 ---
-# <a name="use-the-apply-to-each-action-in-power-automate-to-process-a-list-of-items-periodically"></a>Uso de la acción Aplicar a cada uno de Power Automate para procesar periódicamente una lista de elementos
+# <a name="use-the-apply-to-each-action-in-power-automate-to-process-a-list-of-items-periodically"></a>Utilización de la acción Aplicar a cada uno en Power Automate para procesar periódicamente una lista de elementos
 
 Algunos desencadenadores pueden iniciar inmediatamente un flujo basado en un evento, como cuando llega un nuevo correo electrónico a la Bandeja de entrada. Estos desencadenadores son excelentes, pero a veces se quiere ejecutar un flujo que consulte un origen de datos según una programación predefinida mediante la realización de determinadas acciones en función de las propiedades de los elementos del origen de datos. Para ello, puede iniciar el flujo según una programación (por ejemplo, una vez al día) y usar una acción de bucle como **Aplicar a cada** para procesar una lista de elementos. Por ejemplo, podría utilizar **Aplicar a cada uno** para actualizar registros de una base de datos o una lista de elementos de Microsoft SharePoint.
 
@@ -38,7 +38,7 @@ En este tutorial, vamos a crear un flujo que se ejecuta cada 15 minutos y que ha
 3. Comprueba si el correo electrónico es de su jefe o se envió con importancia alta.
 4. Envía una notificación push y marca como leído cualquier correo electrónico que tenga **Reunirse ahora** en el asunto y que sea de su jefe o se haya enviado con importancia alta.
 
-En este diagrama se muestran los detalles del flujo de que vamos a crear:
+Este diagrama muestra los detalles del flujo de que vamos a crear en este tutorial:
 
 ![información general sobre el flujo que se está generando](./media/apply-to-each/foreach-flow-visio.png)
 
@@ -48,106 +48,134 @@ Estos son los requisitos para realizar correctamente los pasos de este tutorial:
 * Una cuenta que esté registrada para usar [Power Automate](https://flow.microsoft.com).
 * Una cuenta de Office 365 Outlook.
 * La aplicación móvil de Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows).
-* Conexiones a Office 365 Outlook y el servicio de notificación push.
+* Conexiones a Office 365 Outlook y al servicio de notificaciones push.
 
-## <a name="create-a-flow"></a>Creación de un flujo
-1. Inicie sesión en [Power Automate](https://flow.microsoft.com).
-1. Seleccione **Mis flujos**> **Nuevo**> **Programado: desde cero**.
-1. Indique un nombre para su flujo en **Nombre del flujo**, que encontrará en la pantalla **Creación de un flujo programado**. 
-1. Configure la programación que se va a ejecutar cada 15 minutos. 
-1. Seleccione **Crear**. 
+## <a name="create-a-flow"></a>Crear un flujo
+1. Iniciar sesión en [Power Automate](https://flow.microsoft.com):
+2. Seleccione la pestaña **Mis flujos** y cree un flujo desde cero:
    
-    ![ejecuciones de programación](./media/apply-to-each/foreach-3.png) 
-
-1. Seleccione **+ Nuevo paso** y, después, escriba**Outlook** en el cuadro de búsqueda para encontrar todos los conectores y todas las acciones relacionadas con Microsoft Outlook.
-1. Seleccione la acción **Obtener correos electrónicos (V3)** :
-1. Se abrirá la tarjeta **Obtener correos electrónicos (V3)** . Configure la tarjeta **Obtener correos electrónicos (V3)** para seleccionar los 10 primeros correos electrónicos no leídos en la carpeta Bandeja de entrada. No incluya archivos adjuntos porque no se usarán en el flujo:
+    ![crear desde cero](./media/apply-to-each/foreach-1.png)
+3. Escriba "programación" en el cuadro de búsqueda para buscar todos los servicios y desencadenadores que están relacionados con la programación.
+4. Seleccione el desencadenador **Programación - Periodicidad** para indicar que el flujo se va a ejecutar en una programación que proporcionará a continuación:
+   
+    ![acción de periodicidad de la programación](./media/apply-to-each/foreach-2.png)
+5. Configure la programación que se va a ejecutar cada 15 minutos:
+   
+    ![ejecuciones de programación](./media/apply-to-each/foreach-3.png)
+6. Seleccione **+ Nuevo paso**, **Agregar una acción** y, después, escriba **outlook** en el cuadro de búsqueda para buscar todas las acciones relacionadas con Microsoft Outlook.
+7. Seleccione la acción **Office 365 Outlook - Obtener correos electrónicos**:
+   
+    ![seleccionar acción obtener correos electrónicos](./media/apply-to-each/foreach-4.png)
+8. Se abrirá la tarjeta **Obtener correos electrónicos**. Configurar la tarjeta **Obtener correos electrónicos** para seleccionar los 10 primeros correos electrónicos no leídos en la carpeta Bandeja de entrada. No incluya archivos adjuntos porque no se usarán en el flujo:
    
     ![configurar tarjeta de correo electrónico](./media/apply-to-each/foreach-5.png)
    
    > [!NOTE]
    > Hasta ahora, ha creado un flujo simple que obtiene algunos correos electrónicos de la Bandeja de entrada. Estos correos electrónicos se devolverán en una matriz; la acción **Aplicar a cada uno** requiere una matriz, por lo que esto es exactamente lo que se necesita.
+   > 
+   > 
 
 ## <a name="add-actions-and-conditions"></a>Agregar acciones y condiciones
-1. Seleccione la acción **Nuevo paso**> **Integrado**> **Aplicar a cada uno** .
-1. Inserte el token **Valor** en el campo **Seleccionar una salida de los pasos anteriores** en la tarjeta **Aplicar a cada uno**. Esto extrae el cuerpo de los correos electrónicos que se usarán en la acción **Aplicar a cada uno**:
+1. Seleccione **+ Nuevo paso**, **Más** y, después, la acción **Agregar Aplicar a cada uno**:
+   
+    ![seleccionar aplicar a cada uno](./media/apply-to-each/foreach-6.png)
+2. Inserte el token **Cuerpo** en el cuadro **Seleccionar una salida de los pasos anteriores** en la tarjeta **Aplicar a cada uno**. Esto extrae el cuerpo de los correos electrónicos que se usarán en la acción **Aplicar a cada uno**:
    
     ![agregar el token cuerpo](./media/apply-to-each/foreach-7.png)
-1. Seleccione **Nuevo paso**> **Control**> **Condición**.
-1. Configure la tarjeta **Condición** para buscar el asunto de cada correo electrónico para las palabras "Reunirse ahora":
+3. Seleccione **Agregar una condición**:
    
-   * Inserte el token **Asunto** en el primer campo de la tarjeta **Condición**.
-   * Seleccione **Contiene** en la lista de operadores.
-   * Escriba **Reunirse ahora** en el tercer campo.
+    ![agregar condición](./media/apply-to-each/foreach-8.png)
+4. Configure la tarjeta **Condición** para buscar el asunto de cada correo electrónico para las palabras "Reunirse ahora":
+   
+   * Inserte el token **Asunto** en el cuadro **Nombre de objeto**.
+   * Seleccione **contiene** en la lista **Relación**.
+   * Escriba **Reunirse ahora** en el cuadro **Valor**.
      
      ![configurar condición](./media/apply-to-each/foreach-subject-condition.png)
-1. Seleccione **Agregar una acción**> **Condición** en la rama **En caso positivo**. Se abrirá la tarjeta **Condición 2**; configure esa tarjeta de esta forma:
+5. Seleccione **Más** y después seleccione **Agregar una condición** en la rama **IF YES, DO NOTHING** (En caso positivo, no hacer nada). Se abrirá la tarjeta **Condición 2**; configure esa tarjeta de esta forma:
    
-   * Inserte el token **Importancia** en el primer campo.
-   * Seleccione **Es igual a** en la lista de operadores.
-   * Escriba **Alta** en el campo de la parte derecha.
+   * Inserte el token **Importancia** en el cuadro **Nombre de objeto**.
+   * Seleccione **es igual a** en la lista **Relación**.
+   * Escriba **Alta** en el cuadro **Valor**.
      
      ![agregar condición](./media/apply-to-each/foreach-importance-condition.png)
-1. Seleccione **Agregar una acción** en la sección **En caso positivo**.     
-   Esto abrirá la tarjeta **Elegir una acción**, donde podrá definir qué ocurrirá si la condición de búsqueda (el correo electrónico **Reunirse ahora** se envió con importancia alta) es un valor true.
-1. Busque **Notificación** y, después, seleccione la acción **Enviarme una notificación móvil**:
+6. Seleccione **Agregar una acción** en la sección **IF YES, DO NOTHING** (En caso positivo, no hacer nada). Esto abrirá la tarjeta **Elegir una acción**, donde podrá definir qué debe ocurrir si la condición de búsqueda (el correo electrónico **Reunirse ahora** se envió con importancia alta) es un valor true:
+   
+    ![agregar acción](./media/apply-to-each/foreach-9.png)
+7. Busque **Notificación** y, después, seleccione la acción **Notifications - Send me a mobile notification** (Notificaciones - Enviarme una notificación del servicio móvil):
    
     ![buscar y seleccionar notificación](./media/apply-to-each/foreach-10.png)
-1. En la tarjeta **Enviarme una notificación móvil**, proporcione los detalles de la notificación push que se enviará si el asunto de un correo electrónico contiene "Reunirse ahora" y la **importancia** está establecida como **alta**.
+8. En la tarjeta **Send me a mobile notification** (Enviarme una notificación del servicio móvil), proporcione los detalles de la notificación push que se enviará si el asunto de un correo electrónico contiene "Reunirse ahora" y, después, seleccione **Agregar una acción**:
    
     ![configurar notificación](./media/apply-to-each/foreach-11.png)
-
-1. Si vuelve a la tarjeta **Condición 2** de la rama **En caso negativo**:
+9. Escriba **leer** como término de búsqueda y seleccione la acción **Office 365 Outlook - Marcar como leído**. Esto marcará cada correo electrónico como leído después de enviar la notificación push:
+   
+    ![agregar acción marcar como leído](./media/apply-to-each/foreach-12.png)
+10. Agregue el token **Id. de mensaje** al cuadro **Id. de mensaje** de la tarjeta **Marcar como leído**. Es posible que tenga que seleccionar **Ver más** para encontrar el token **Id. de mensaje**. Esto indica el identificador del mensaje que se va a marcar como leído:
+    
+     ![agregar identificador de mensaje](./media/apply-to-each/foreach-13.png)
+11. Si vuelve a la tarjeta **Condición 2**, de la rama **IF NO, DO NOTHING** (En caso negativo, no hacer nada):
     
     * Seleccione **Agregar una acción** y escriba **Obtener administrador** en el cuadro de búsqueda.
-    * Seleccione la acción **Obtener administrador (V2)** en la lista de resultados de la búsqueda.
-    * Escriba el token **Para** en el cuadro **Usuario (UPN)** de la tarjeta **Obtener administrador (V2)** .
+    * Seleccione la acción **Usuarios de Office 365 - Obtener administrador** en la lista de resultados de la búsqueda.
+    * Escriba su dirección de correo electrónica *completa* en el cuadro **Usuario** de la tarjeta **Obtener administrador**.
       
       ![agregar y configurar acción obtener administrador](./media/apply-to-each/foreach-get-manager.png)
-1. Seleccione **Agregar una acción** en la rama **En caso negativo**.
-1. Seleccione **Condición** en la tarjeta **Elegir una acción**. Se abrirá la tarjeta **Condición 3**; configure la tarjeta para comprobar si la dirección de correo electrónico del remitente (el token De) es igual a la dirección de correo electrónico de su jefe (el token Correo electrónico):
+12. Seleccione **Más** y después seleccione **Agregar una condición** en la rama **EN CASO NEGATIVO**. Se abrirá la tarjeta **Condición 3**; configure la tarjeta para comprobar si la dirección de correo electrónico del remitente (el token De) es igual a la dirección de correo electrónico de su jefe (el token Correo electrónico):
     
-    * Inserte el token **De** en el primer cuadro.
-    * Seleccione **Contiene** en la lista de operadores.
-    * Escriba el token **Correo** en el cuadro situado más a la derecha.
+    * Inserte el token **De** en el cuadro **Nombre de objeto**.
+    * Seleccione **contiene** en la lista **Relación**.
+    * Introduzca el token **Correo electrónico** en el cuadro **Valor**.
       
       ![configurar la condición de búsqueda](./media/apply-to-each/foreach-condition3-card.png)
-1. Seleccione **Agregar una acción** en la sección **En caso positivo** de la tarjeta **Condición 3**.
+13. Seleccione **Agregar una acción** en la sección **IF YES, DO NOTHING** (En caso negativo, no hacer nada) de la tarjeta **Condición 3**. Esto abrirá la tarjeta **EN CASO POSITIVO**, donde podrá definir qué debe ocurrir si la condición de búsqueda (el correo electrónico se envió desde la dirección de su jefe) es un valor true:
     
-Después, podrá definir qué debe ocurrir si la condición de búsqueda (el correo electrónico se envió desde la dirección de su jefe) es un valor true:
-
-1. Busque **Notificación** y, después, seleccione la acción **Enviarme una notificación móvil**:
+     ![configurar condición](./media/apply-to-each/foreah-condition3-add-action.png)
+14. Busque **Notificación** y, después, seleccione la acción **Notifications - Send me a mobile notification** (Notificaciones - Enviarme una notificación del servicio móvil):
     
      ![buscar acción de notificación](./media/apply-to-each/foreach-10.png)
-1. En la tarjeta **Send me a mobile notification 2** (Enviarme una notificación del servicio móvil 2), proporcione los detalles de la notificación push que se enviará si el correo electrónico procede de su jefe y, después, seleccione **Agregar una acción**:
+15. En la tarjeta **Send me a mobile notification 2** (Enviarme una notificación del servicio móvil 2), proporcione los detalles de la notificación push que se enviará si el correo electrónico procede de su jefe y, después, seleccione **Agregar una acción**:
     
      ![tarjeta configurar notificación](./media/apply-to-each/foreach-boss-notification.png)
-1. Agregue la acción **Marcar como leído o como no leído (V2)** .
-1. Agregue el token **Id. de mensaje** a la tarjeta **Marcar como leído o como no leído (V2)** . Es posible que tenga que seleccionar **Ver más** para encontrar el token **Id. de mensaje**. **Id. de mensaje** es el id. del mensaje que se marcará como leído.
-1. Seleccione **Leído** en la lista **Marcar como** de la tarjeta **Marcar como leído o como no leído (V2)** .
+16. Agregue la acción **Office 365 Outlook - Marcar como leído**. Esto marcará cada correo electrónico como leído después de enviar la notificación push:
+    
+     ![agregar acción marcar como leído](./media/apply-to-each/foreach-12.png)
+17. Agregue el token **Id. de mensaje** utilizado para la tarjeta **Marcar como leído 2**. Es posible que tenga que seleccionar **Ver más** para encontrar el token **Id. de mensaje**. Esto indica el identificador del mensaje que se va a marcar como leído:
     
      ![configurar acción marcar como leído](./media/apply-to-each/foreach-mark-as-read2.png)
-1. Seleccione **Guardar** para guardar el flujo.
+18. Asigne un nombre al flujo y vuelva a crearlo:
+    
+     ![asignar un nombre al flujo y guardarlo](./media/apply-to-each/foreach-14.png)
+
+Si ha seguido todo el proceso, el flujo debe ser similar al de este diagrama:
+
+![información general sobre el flujo creado](./media/apply-to-each/foreach-flow-finished.png)
 
 ## <a name="run-the-flow"></a>Ejecución del flujo
 1. Envíese un correo electrónico de importancia alta que incluya **Reunirse ahora** en el asunto (o pida a alguien de su organización que le envíe este mensaje de correo electrónico).
-1. Confirme que el correo electrónico se encuentra en la Bandeja de entrada y no está leído.
-1. Inicie sesión en Power Automate y seleccione **Mis flujos**.
+2. Confirme que el correo electrónico se encuentra en la Bandeja de entrada y no está leído.
+3. Inicie sesión en Power Automate, seleccione **Mis flujos** y, después, seleccione **Ejecutar ahora**:
    
-    Se mostrará una lista de sus flujos. 
-    
-1. Seleccione el flujo que acaba de crear y, después, elija **Ejecutar**.
-
-   ![ejecutar ahora](./media/apply-to-each/run-flow.png)
-
-1. Seleccione **Página de ejecuciones de flujo** y, después, elija la ejecución de flujo que quiera para ver los resultados.
+    ![ejecutar ahora](./media/apply-to-each/foreach-run-1.png)
+4. Seleccione **Ejecutar flujo** para confirmar que realmente desea ejecutar el flujo:
+   
+    ![confirmar ejecución](./media/apply-to-each/foreach-run-2.png)
+5. Transcurridos unos instantes, debería ver los resultados de la ejecución correcta:
    
     ![resultados de la ejecución](./media/apply-to-each/foreach-run-3.png)
 
 ## <a name="view-results-of-the-run"></a>Visualización de los resultados de la ejecución
 Ahora que ha ejecutado el flujo correctamente, debería recibir la notificación push en el dispositivo móvil.
+
+1. Abra la aplicación Power Automate en su dispositivo móvil y luego seleccione la pestaña **Actividad**. Verá la notificación push sobre la reunión:
    
-> [!NOTE]
-> Si no recibe la notificación push, confirme que el dispositivo móvil tiene una conexión de datos activa.
- 
+    ![seleccionar pestaña actividad](./media/apply-to-each/foreach-notification-1.png)
+2. Para ver todo el contenido de la notificación, puede que tenga que seleccionar la notificación. Verá la notificación completa, de forma similar a la siguiente:
+   
+    ![detalles de la notificación](./media/apply-to-each/foreach-notification-2.png)
+   
+   > [!NOTE]
+   > Si no recibe la notificación push, confirme que el dispositivo móvil tiene una conexión de datos activa.
+   > 
+   > 
 

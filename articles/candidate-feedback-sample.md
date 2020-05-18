@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 0d0157c4e0d392dd8493e5aeca4e97531c95213d
-ms.sourcegitcommit: e3543e32e4e8e8163bef0565e27b657eabbdc741
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868167"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297283"
 ---
 # <a name="candidate-feedback-sample"></a>Ejemplo de comentarios de candidatos
 
@@ -41,8 +41,8 @@ El **formulario de ejemplo de comentarios de candidatos** es un formulario de en
 
 | Nombre del token dinámico | Texto de marcador de posición | Notas:              |
 |--------------------|------------------|---------------------|
-| {acFullName}       | {acFullName}     | Display text        |
-| {acComments}       | {acComments}     | Display text        |
+| {acFullName}       | {acFullName}     | Texto para mostrar        |
+| {acComments}       | {acComments}     | Texto para mostrar        |
 | {acDecision}       |                  | **Salida** de respuesta |
 | {acFollowUp}       |                  | **Salida** de respuesta |
 

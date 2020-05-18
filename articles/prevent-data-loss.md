@@ -1,6 +1,6 @@
 ---
 title: Introducción a las directivas de prevención de pérdida de datos (DLP). | Microsoft Docs
-description: Introducción a las directivas de prevención de pérdida de datos de Power Automate.
+description: Introducción a las directivas de prevención de pérdida de datos para Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,7 +25,7 @@ ms.sourcegitcommit: e709e8c4a62df6fdb0ca06f3f8afb5c639c76632
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2020
-ms.locfileid: "82159570"
+ms.locfileid: "3299373"
 ---
 # <a name="data-loss-prevention-dlp-policies"></a>Directivas de prevención de pérdida de datos (DLP)
 
@@ -34,7 +34,7 @@ Este documento presenta las directivas de prevención de pérdida de datos, que 
 
 ## <a name="whats-a-data-loss-prevention-policy"></a>¿Qué es una directiva de prevención de pérdida de datos?
 
-Los datos de una organización son fundamentales para su éxito. Los datos tienen que estar disponibles de inmediato para la toma de decisiones, pero tienen que protegerse de manera que no se compartan con personas que no deben tener acceso a ellos. Para proteger estos datos, Power Automate ofrece la posibilidad de crear y aplicar directivas que definen qué conectores de consumidor pueden acceder a los datos empresariales y compartirlos. Estas directivas que definen cómo se pueden compartir los datos se conocen como directivas de prevención de pérdida de datos (DLP).
+Los datos de una organización son fundamentales para su éxito. Es preciso que los datos estén disponibles rápidamente para la toma de decisiones, pero deben protegerse para que no se puedan compartir con audiencias que no deberían tener acceso a ellos. Para proteger estos datos, Power Automate ofrece la posibilidad de crear y aplicar directivas que definen qué conectores de consumidor pueden acceder a los datos empresariales y compartirlos. Estas directivas que definen cómo se pueden compartir los datos se conocen como directivas de prevención de pérdida de datos (DLP).
 
 ## <a name="why-create-a-dlp-policy"></a>¿Por qué crear una directiva DLP?
 
@@ -66,12 +66,12 @@ Siga estos pasos para crear una directiva de DLP que evite que los datos del sit
 
 1. Seleccione la pestaña Directivas de datos y luego el vínculo **Nueva directiva**:
 
-    ![Iniciar sesión](./media/prevent-data-loss/create-policy-1.png)
+    ![Inicio de sesión](./media/prevent-data-loss/create-policy-1.png)
 1. Seleccione la pestaña **Grupos de datos**.
 
 1. Escriba el nombre de la directiva de DLP, por ejemplo *Secure Data Access for Contoso*, en la etiqueta **Nombre de la directiva de datos** de la parte superior de la página:
 
-    ![Iniciar sesión](./media/prevent-data-loss/create-policy-2.png)
+    ![Inicio de sesión](./media/prevent-data-loss/create-policy-2.png)
 
 1. Seleccione el [entorno](environments-overview-admin.md) en la pestaña **Entornos**.
 
@@ -115,7 +115,7 @@ Enhorabuena, ya ha creado una directiva de DLP que permite a la aplicación comp
 
 Si ha creado la directiva de DLP descrita arriba, si un usuario crea un flujo que comparte datos entre Salesforce (que está en el grupo de datos de **solo datos empresariales**) y Twitter (que está en el grupo de datos de **ningún dato empresarial permitido**), se notifica al usuario que el flujo se ha **suspendido** debido a un conflicto con la directiva de prevención de pérdida de datos creada.
 
-![Creación de flujo](./media/prevent-data-loss/10.png)
+![crear flujo](./media/prevent-data-loss/10.png)
 
 Si los usuarios se ponen en contacto con usted acerca de flujos suspendidos, aquí hay algunas cosas a tener en cuenta:
 
@@ -206,7 +206,7 @@ Para agregar los conectores HTTP a una directiva existente a través de la [plan
 
 ## <a name="add-custom-and-http-connectors-with-powershell"></a>Incorporación de conectores personalizados y HTTP con PowerShell
 
-Para agregar compatibilidad con conectores personalizados o conectores HTTP a una directiva con PowerShell, puede [descargar](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) e importar los últimos scripts de PowerShell de Power Apps y después usar los cmdlets  “New-AdminDlpPolicy”, “Set-AdminDlpPolicy”, “Add-CustomConnectorToPolicy” y “Remove-CustomConnectorFromPolicy” para modificar la directiva. Use el cmdlet "Get-Help -detailed" como referencia.
+Para agregar compatibilidad con conectores personalizados o conectores HTTP a una directiva con PowerShell, [descargue](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) e importe los scripts de PowerShell de Power Apps más recientes y, luego, use estos cmdlets: "New-AdminDlpPolicy", "Set-AdminDlpPolicy", "Add-CustomConnectorToPolicy" y "Remove-CustomConnectorFromPolicy" para modificar la directiva. Use el cmdlet "Get-Help -detailed" como referencia.
 
 
 > [!IMPORTANT]
@@ -216,7 +216,7 @@ Para agregar compatibilidad con conectores personalizados o conectores HTTP a un
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-* [Aprender más acerca de los entornos](environments-overview-admin.md)
-* [Más información sobre Power Automate](getting-started.md)
+* [Más información acerca de los entornos](environments-overview-admin.md)
+* [Obtener más información acerca de Power Automate](getting-started.md)
 * [Más información acerca del Centro de administración](admin-center-introduction.md)
 * [Más información sobre la integración de datos](https://docs.microsoft.com/common-data-service/entity-reference/dynamics-365-integration)

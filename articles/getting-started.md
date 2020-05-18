@@ -1,6 +1,6 @@
 ---
 title: Introducción | Microsoft Docs
-description: Formas rápidas de empezar a automatizar el trabajo y la vida con Power Automate.
+description: Formas rápidas de empezar a automatizar el trabajo y la vida con Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,16 +20,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bd7d85dc2ec30147202c2838f00c7de6c7c587ad
-ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
+ms.openlocfilehash: e78ba6de412a067ae21eb4a11a5b1a7d5165448c
+ms.sourcegitcommit: c86134235a4e3a819800c77fbc50034cfd8714c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82852653"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3298669"
 ---
 # <a name="get-started-with-power-automate"></a>Introducción a Power Automate 
 
-Bienvenido. Power Automate es un servicio que le ayuda a crear flujos de trabajo automatizados entre sus aplicaciones y servicios favoritos para sincronizar archivos, obtener notificaciones, recopilar datos, etc.
+¡Bienvenido! Power Automate es un servicio que le ayuda a crear flujos de trabajo automatizados entre sus aplicaciones y servicios favoritos para sincronizar archivos, obtener notificaciones, recopilar datos, etc.
 
 <br/>
 
@@ -42,11 +42,11 @@ Power Automate es uno de los pilares de Power Platform. Proporciona una platafor
 
 | **Tipo de flujo**                                                                       | **Caso de uso**                                                                                  | **Destino**                                                                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Flujos automatizados](get-started-logic-flow.md)                 | Cree un flujo que realizará una o varias tareas automáticamente después de que un evento lo desencadene. | [Conectores](https://docs.microsoft.com/connectors/) para servicios en la nube o locales. |
+| [Flujos automatizados](get-started-logic-flow.md)                 | Cree un flujo que realice automáticamente una o varias tareas después de que lo desencadene un evento. | [Conectores](https://docs.microsoft.com/connectors/) para servicios en la nube o locales. |
 | [Flujos de botón](introduction-to-button-flows.md)              | Ejecute tareas repetitivas desde cualquier lugar, en cualquier momento, a través del dispositivo móvil.                        |                                                                                        |
 | [Flujos programados](run-scheduled-tasks.md)                    | Cree un flujo que realice una o varias tareas según una programación.             |                                                                                        |
 | [Flujos de proceso de negocio](business-process-flows-overview.md) | Defina un conjunto de pasos que los usuarios pueden seguir para llegar a un resultado deseado.                 | Procesos humanos                                                                        |
-| [Flujos de interfaz de usuario](ui-flows/overview.md)                                                | Registre y automatice la reproducción de pasos manuales en un software heredado.                    | Aplicaciones web y de escritorio que no tienen API disponibles para la automatización.    |
+| [Flujos de interfaz de usuario (versión preliminar)](ui-flows/overview.md)                                                | Registre y automatice la reproducción de pasos manuales en un software heredado.                    | Aplicaciones web y de escritorio que no tienen API disponibles para la automatización.    |
 
 Puede crear y administrar todos los flujos de la pestaña **Mis flujos** de Power Automate.
 
@@ -56,7 +56,7 @@ El primer paso es [registrarse](sign-up-sign-in.md) o, si ya tiene una cuenta de
 
 ## <a name="check-out-the-start-page"></a>Visitar la página de inicio ##
 
-[En la página de inicio](https://flow.microsoft.com) de Power Automate, puede [explorar una amplia variedad de plantillas](https://flow.microsoft.com/templates) y obtener más información sobre sus características clave. Se hará una idea rápidamente de lo que Power Automate puede hacer y de cómo puede ayudarle tanto en el ámbito profesional como personal.
+[En la página de inicio](https://flow.microsoft.com) de Power Automate, puede [explorar una amplia variedad de plantillas](https://flow.microsoft.com/templates) y obtener más información sobre las características clave para Power Automate. Se hará una idea rápidamente de lo que Power Automate puede hacer y de cómo puede ayudarle tanto en el ámbito profesional como personal.
 
 Con Power Automate, puede hacer lo siguiente:
 
@@ -108,12 +108,12 @@ Si crea un flujo de trabajo desde cero, podrá controlarlo en su totalidad. Aqu�
 - [Creación de un flujo de aprobación](wait-for-approvals.md)
 - [Visualización de un flujo en acción](see-a-flow-run.md)
 - [Publicación de una plantilla](publish-a-template.md)
-- [Creación de flujos desde una plantilla de Microsoft Teams](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/)
+- [Crea flujos a partir de una plantilla de Microsoft Teams](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
 
 
 ## <a name="peek-at-the-code"></a>Inspección del código
 
-No es necesario que sea desarrollador para crear flujos; sin embargo, Power Automate proporciona la característica **	Inspeccionar código** para permitir a cualquier persona examinar más de cerca el código que se genera para todas las acciones y desencadenadores de un flujo. Al inspeccionar el código, puede obtener una descripción más clara de los datos que usan los desencadenadores y las acciones. Siga estos pasos para inspeccionar el código que se genera para los flujos desde el diseñador de Power Automate: 
+No es necesario que sea desarrollador para crear flujos; sin embargo, Power Automate proporciona la característica **Inspeccionar código** para permitir a cualquier persona examinar más de cerca el código que se genera para todas las acciones y desencadenadores de un flujo. Al inspeccionar el código, puede obtener una descripción más clara de los datos que usan los desencadenadores y las acciones. Siga estos pasos para inspeccionar el código que se genera para los flujos desde el diseñador de Power Automate: 
 
 1. Seleccione el elemento de menú **...** en la esquina superior derecha de cualquier **acción** o **desencadenador**. 
 1. Seleccione **Inspeccionar código**.
@@ -144,8 +144,8 @@ Desde el centro de notificaciones, puede ir a la página **Actividad** de Power 
 
 ## <a name="use-the-mobile-app"></a>Uso de la aplicación móvil ##
 
-Descargue la aplicación móvil de Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows). Con la aplicación, podrá [supervisar la actividad de los flujos](mobile-monitor-activity.md), [administrarlos](mobile-manage-flows.md) y [crearlos a partir de plantillas](mobile-create-flow.md).
+Descargue de la aplicación móvil de Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows). Con la aplicación, podrá [supervisar la actividad de los flujos](mobile-monitor-activity.md), [administrarlos](mobile-manage-flows.md) y [crearlos a partir de plantillas](mobile-create-flow.md).
 
-## <a name="were-here-to-help"></a>Podemos ayudarle ##
+## <a name="were-here-to-help"></a>Estamos aquí para ayudarle ##
 
-Tenemos muchas ganas de ver lo que puede hacer con Power Automate, y queremos asegurarnos de que tenga una gran experiencia. No olvide visitar nuestros tutoriales de [aprendizaje paso a paso](https://flow.microsoft.com/guided-learning/) ni de [unirse a nuestra comunidad](https://go.microsoft.com/fwlink/?LinkID=787467), donde podrá realizar preguntas y compartir sus ideas. [Póngase en contacto con soporte técnico](https://go.microsoft.com/fwlink/?LinkID=787479) si surge algún problema.
+Tenemos muchas ganas de ver lo que puede hacer con Power Automate y queremos asegurarnos de que tenga una gran experiencia. No olvide visitar nuestros tutoriales de [aprendizaje paso a paso](https://flow.microsoft.com/guided-learning/) ni de [unirse a nuestra comunidad](https://go.microsoft.com/fwlink/?LinkID=787467), donde podrá realizar preguntas y compartir sus ideas. [Póngase en contacto con soporte técnico](https://go.microsoft.com/fwlink/?LinkID=787479) si surge algún problema.

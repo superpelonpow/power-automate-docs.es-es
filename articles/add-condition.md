@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 3be9b2414a0f30581763622de0c7d49cb694e3b3
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79224248"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296689"
 ---
 # <a name="add-a-condition-to-a-flow"></a>Adición de una condición a un flujo
 
@@ -36,7 +36,7 @@ Especifique que un flujo realice una o varias tareas solo si el valor de una con
 
 * [Creación de un flujo](get-started-logic-template.md) desde una plantilla: en este tutorial se [utiliza esta plantilla](https://flow.microsoft.com/galleries/public/templates/e78571e5c70e4806a18eeacba5a897c8/) a modo de ejemplo
 
-## <a name="add-a-condition"></a>Agregar una condición
+## <a name="add-a-condition"></a>Agrega una condición
 
 1. En [Power Automate](https://flow.microsoft.com), seleccione **Mis flujos** en la barra de navegación superior.
 

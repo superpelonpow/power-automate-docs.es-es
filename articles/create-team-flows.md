@@ -25,7 +25,7 @@ ms.sourcegitcommit: 5b1965a0c319c4294b7dc0c829120ed1f4f90444
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/25/2020
-ms.locfileid: "82153575"
+ms.locfileid: "3299329"
 ---
 # <a name="create-team-flows"></a>Creación de flujos de equipo
 
@@ -37,7 +37,7 @@ Cree un flujo de equipo mediante la adición de otros usuarios de su organizaci�
 * Agregar y quitar otros propietarios (pero no el creador del flujo).
 * Eliminar el flujo.
 
-Si es creador o propietario de un flujo de equipo, verá que aparece indicado en la pestaña **Flujos del equipo** de [Power Automate](https://flow.microsoft.com).
+Si es el creador o un propietario de un flujo de equipo, verá que aparece indicado en la pestaña **Flujos de equipo** en [Power Automate](https://flow.microsoft.com).
 
 ![pestaña flujos del equipo](./media/create-team-flows/addowner5.png)
 
@@ -49,13 +49,13 @@ Si es creador o propietario de un flujo de equipo, verá que aparece indicado en
 Los propietarios pueden usar los servicios de un flujo, pero no modificar las credenciales de una conexión que haya creado otro propietario.
 
 ## <a name="prerequisites"></a>Requisitos previos
-Para crear un flujo de equipo, debe tener un [plan de pago de Power Automate](https://flow.microsoft.com/pricing/). Además, debe ser el creador o el propietario para poder agregar o quitar propietarios de un flujo de equipo.
+Para crear un flujo de equipo, debe tener un [plan de pago de Power Automate](https://flow.microsoft.com/pricing/): Además, debe ser el creador o el propietario para poder agregar o quitar propietarios de un flujo de equipo.
 
 ## <a name="create-a-team-flow"></a>Creación de un flujo de equipo
 Siga estos pasos para crear un flujo de equipo o para agregar más propietarios a un flujo de equipo.
 
 1. Inicie sesión en [Power Automate](https://flow.microsoft.com) y seleccione **Mis flujos**.
-2. Seleccione **Más comandos** y, luego, elija **Compartir** para el flujo que quiere compartir:
+2. Seleccione **Más comandos** y, después, seleccione **Compartir** para el flujo que quiera compartir:
    
     ![icono de equipo](./media/create-team-flows/addowner1.png)
 3. Escriba el nombre, la dirección de correo electrónico o el nombre de grupo de la persona o grupo que desea agregar como propietario:
@@ -69,7 +69,7 @@ Siga estos pasos para crear un flujo de equipo o para agregar más propietarios 
    
     ![nuevo propietario](./media/create-team-flows/addowner4.png)
    
-     Ya se ha creado el flujo del equipo.
+     Enhorabuena: ya se ha creado el flujo del equipo.
 
 ## <a name="add-a-list-as-a-co-owner"></a>Agregar una lista como copropietario
 
@@ -82,11 +82,11 @@ Puede agregar listas de SharePoint como copropietario a un flujo para que todos 
 ## <a name="remove-an-owner"></a>Eliminación de un propietario
 
 > [!IMPORTANT]
-> Al quitar un propietario cuyas credenciales se usan para acceder a los servicios de Power Automate, debe actualizar las credenciales de esas conexiones para que el flujo siga funcionando correctamente.
+> Si elimina a un propietario cuyas credenciales se usan para acceder a los servicios de Power Automate, debe actualizar las credenciales de esas conexiones para que el flujo siga funcionando correctamente.
 > 
 > 
 
-1. Seleccione **Más comandos** y, luego, elija **Compartir** para el flujo que quiera compartir:
+1. Seleccione **Más comandos** y, después, seleccione **Compartir** para el flujo que quiera compartir:
    
     ![seleccionar icono de personas](./media/create-team-flows/addowner1.png)
 2. Seleccione el icono **Eliminar** del propietario que desea quitar:
@@ -95,7 +95,7 @@ Puede agregar listas de SharePoint como copropietario a un flujo para que todos 
 3. En el cuadro de diálogo de confirmación, seleccione **Quitar este propietario**:
    
     ![confirmar eliminación](./media/create-team-flows/removeowner3.png)
-4. ¡Felicidades! El usuario o grupo que quitó ya no aparece como propietario del flujo:
+4. Enhorabuena: el usuario o grupo que quitó ya no aparece como propietario del flujo.
 
 
 ## <a name="update-connection-owner"></a>Actualización del propietario de la conexión
@@ -112,7 +112,7 @@ Es posible que deba cambiar el propietario de una conexión en un flujo si quita
 
 Las conexiones que se usan en un flujo se dividen en dos categorías:
 
-* **Insertadas**: estas conexiones se utilizan en el flujo.
+* **Insertadas**: estas conexiones se usan en el flujo.
 * **Otras**: estas conexiones se han definido para un flujo, pero no se utilizan en él.
 
 Si una conexión deja de usarse en un flujo, aparecerá en la lista de **Otras** conexiones, donde permanecerá hasta que un propietario vuelva a incluirla en el flujo.

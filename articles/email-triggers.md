@@ -21,20 +21,20 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: f7588a3ca1db5c62a4e60380575542671e8d408d
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192328"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297877"
 ---
 # <a name="trigger-a-flow-based-on-email-properties"></a>Desencadenamiento de un flujo basado en las propiedades del correo electrónico
 
 Use el desencadenador **Cuando llega un correo electrónico nuevo** para crear un flujo que se ejecuta cuando una o varias de las propiedades de correo electrónico que se indican a continuación coinciden con los criterios que ha proporcionado:
 
-| Propiedad | Cuándo se usa |
+| Propiedad | Cuándo usar |
 | --- | --- |
 | Carpeta |Desencadene un flujo cada vez que lleguen correos electrónicos a una carpeta concreta. Esta propiedad puede ser útil si tiene reglas que enruten los correos electrónicos a carpetas diferentes. |
-| Para |Desencadene un flujo en función de la dirección a la que se envió un correo electrónico. Esta propiedad puede ser útil cuando se recibe correo electrónico que se envió a direcciones de correo electrónico diferente en la misma Bandeja de entrada. |
+| Hasta |Desencadene un flujo en función de la dirección a la que se envió un correo electrónico. Esta propiedad puede ser útil cuando se recibe correo electrónico que se envió a direcciones de correo electrónico diferente en la misma Bandeja de entrada. |
 | De |Desencadene un flujo en función de la dirección de correo electrónico del remitente. |
 | Importancia |Desencadene un flujo basado en la importancia con la que se enviaron los mensajes de correo electrónico. El correo electrónico puede enviarse con importancia alta, normal o baja. |
 | Tiene datos adjuntos |Desencadene un flujo en función de la presencia de datos adjuntos en los correos electrónicos entrantes. |
@@ -52,7 +52,7 @@ En los tutoriales siguientes, comprobamos todas las propiedades del desencadenad
 ## <a name="prerequisites"></a>Requisitos previos
 * Una cuenta con acceso a [Power Automate](https://flow.microsoft.com)
 * Una cuenta de Office 365 Outlook
-* La aplicación móvil de Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows)
+* La aplicación móvil de Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows).
 * Conexiones a Office, Outlook y al servicio de notificaciones push
 
 ## <a name="trigger-a-flow-based-on-an-emails-subject"></a>Desencadenamiento de un flujo basado en el asunto del correo electrónico
@@ -79,11 +79,11 @@ De acuerdo, empecemos:
 
     [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
-1. Asigne un nombre al flujo. Después, guárdelo seleccionando **Crear flujo** en la parte superior de la página.
+1. Asígnele un nombre al flujo. Después, guárdelo seleccionando **Crear flujo** en la parte superior de la página.
    
     ![Guardar flujo](./media/email-triggers/email-triggers-subject-notification.png)
 
-¡Enhorabuena! Recibirá una notificación push cada vez que reciba un correo electrónico que contenga la palabra "lotería" en el asunto.
+Enhorabuena. Recibirá una notificación push cada vez que reciba un correo electrónico que contenga la palabra "lotería" en el asunto.
 
 ## <a name="trigger-a-flow-based-on-an-emails-sender"></a>Desencadenamiento de un flujo basado en remitente del correo electrónico
 En este tutorial, vamos a crear un flujo que envía una notificación push a su teléfono móvil si llega cualquier correo electrónico nuevo procedente de un remitente específico (dirección de correo electrónico). El flujo marca también cualquier correo electrónico como *leído*.

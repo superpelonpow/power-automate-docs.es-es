@@ -16,11 +16,11 @@ ms.workload: na
 ms.date: 01/04/2020
 ms.author: deonhe
 ms.openlocfilehash: b1ecc0240dba1866ea3468647d06637397d73170
-ms.sourcegitcommit: e3543e32e4e8e8163bef0565e27b657eabbdc741
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868305"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296513"
 ---
 # <a name="acronyms-form-sample"></a>Ejemplo de formulario de acrónimos
 

@@ -1,5 +1,5 @@
 ---
-title: Creación de flujos que publiquen tarjetas adaptables en Microsoft Teams | Microsoft Docs
+title: Crear flujos que publiquen tarjetas adaptables en Microsoft Teams | Microsoft Docs
 description: Aprenda a crear flujos que publiquen contenido con formato enriquecido mediante tarjetas adaptables en Microsoft Teams.
 services: ''
 suite: flow
@@ -16,11 +16,11 @@ ms.workload: na
 ms.date: 01/04/2020
 ms.author: deonhe
 ms.openlocfilehash: 186526427d8de7ee05dd6860e302faae5ac1d97f
-ms.sourcegitcommit: 0761c15339ba3de6036f7fe5251aa8ad9173ee8b
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75902236"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297437"
 ---
 # <a name="create-your-first-adaptive-card"></a>Creación de su primera tarjeta adaptable
 
@@ -34,23 +34,23 @@ En cualquier caso, tendrá que esbozar los conjuntos de datos que va a compartir
 ## <a name="prerequisites"></a>Requisitos previos
 
 <!-- Is it still called Flow App? -->
-- Microsoft Teams con la aplicación Flow instalada.
+- Microsoft Teams con la aplicación Flow instalada.
 
-## <a name="add-an-action"></a>Agregar una acción
+## <a name="add-an-action"></a>Agrega una acción
 
-En este procedimiento, agregará una acción que usará los datos de las acciones anteriores en el flujo para publicar información en un canal de Microsoft Teams.
+En este procedimiento, agregará una acción que usará los datos de las acciones anteriores en el flujo para publicar información en un canal de Microsoft Teams.
 
-1. Inicie sesión en Power Automate.
+1. Iniciar sesión en Power Automate.
 1. Seleccione **Mis flujos** en la barra de navegación superior.
 1. Seleccione **Nueva** > **Instant from blank** (Instantánea desde cero).
-1. Asigne un nombre al flujo.
+1. Asígnele un nombre al flujo.
 1. Seleccione **Desencadenar un flujo manualmente** como desencadenador.
 1. Seleccione **Crear**.
 
     <!-- | [./media/image5.png](./media/image5.png) | [./media/image6.png](./media/image6.png) | -->
 
-1. Seleccione **New step**(Nuevo paso).
-1. Busque **Microsoft Teams** y seleccione **Publique una tarjeta adaptable en un canal de Teams y espere respuesta** como acción.
+1. Seleccione **Nuevo paso**.
+1. Busque **Microsoft Teams** y seleccione **Publique una tarjeta adaptable en un canal de Teams y espere respuesta** como acción.
 1. Seleccione **Teams** y el **canal** al que quiere enviar la tarjeta.
 1. Pegue este archivo JSON en el cuadro **Mensaje**.
 
@@ -144,7 +144,7 @@ En este procedimiento, agregará una acción que usará los datos de las accione
 1. Seleccione **Nuevo paso** y luego busque y seleccione una de las acciones de **enviar un correo electrónico** a las que tenga acceso. 
 1. Indique el destinatario de correo electrónico como la persona que seleccionó el botón instantáneo (use la etiqueta de **correo electrónico** del contenido dinámico del **desencadenador**).
 1. Configure el **cuerpo** del correo electrónico de la manera siguiente: Reemplace las palabras entre llaves "{}" por tokens dinámicos:  
-    **Su respuesta al sondeo fue {acPollChoices}** (acPollChoices consiste en contenido dinámico de la espera de una acción de respuesta).  **Lo envió {nombre de usuario}** (el nombre de usuario es contenido dinámico del desencadenador)
+    **Su respuesta al sondeo fue {acPollChoices}** (acPollChoices consiste en contenido dinámico de la espera de una acción de respuesta).  **Lo envió {Nombre de usuario}** (el nombre de usuario es contenido dinámico del desencadenador)
 
 ## <a name="test-your-adaptive-card"></a>Prueba de la tarjeta adaptable
 
@@ -166,7 +166,7 @@ Para probar su trabajo, ejecute el flujo que creó anteriormente y confirme lo s
 
 - La notificación por correo electrónico contiene el cuerpo que muestra quién envió la respuesta y qué automóvil se seleccionó.
 
-¡Enhorabuena! acaba de crear su primera tarjeta interactiva adaptable.
+Enhorabuena. acaba de crear su primera tarjeta interactiva adaptable.
 
 ![Primera tarjeta finalizada](media/adaptive-cards/finished-first-card.png) 
 
@@ -177,7 +177,7 @@ Los problemas más habituales que encontrará al crear tarjetas adaptables son:
 
 -   Los errores de ejecución de flujo suelen deberse a uno de los siguientes factores:
 
-    -  La aplicación Flow no está instalada en Microsoft Teams: [Instale la aplicación Flow](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams) en Teams. 
+    -  La aplicación Flow no está instalada en Microsoft Teams: [Instale la aplicación Flow en Teams](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams). 
     
     En este caso, el error puede ser similar a esta captura de pantalla:  
 
@@ -195,16 +195,16 @@ Los problemas más habituales que encontrará al crear tarjetas adaptables son:
 
     - Compruebe que los valores de marcadores de posición, estilos de texto y cualquier lenguaje de marcado se alinean con los requisitos del esquema de tarjeta adaptada (revise los **procedimientos recomendados para el esquema de tarjeta adaptable** [aquí](https://adaptivecards.io/explorer/)).
 
-    - Aproveche el validador de tarjeta adaptable de **Visual Studio Code**. Para instalarlo desde la aplicación de Visual Studio Code, abra el Marketplace de extensiones y busque **Adaptive Card Viewer** (Visor de tarjetas adaptables).
+    - Aproveche el validador de tarjeta adaptable de **Visual Studio Code**. Para instalarlo desde la aplicación de Visual Studio Code, abra el Marketplace de extensiones y busque **Visor de tarjetas adaptables**.
 
       ![Extensión de Visual Studio Code](media/adaptive-cards/visual-studio-code-extension.png)
   
-Captura de pantalla truncada de la extensión del visor de tarjetas adaptables instalada en Visual Studio Code (acceso directo: Ctrl+V+A una vez habilitada).
+Captura de pantalla truncada de la extensión del visor de tarjetas adaptables instalada en Visual Studio Code (acceso directo: Ctrl+V+A una vez esté habilitado).
 
 - Los errores siguientes al envío de tarjeta adaptable suelen deberse a:
 
     - Uso de una acción que no incluye "en espera de respuesta" en el nombre  
         
-        ![Inténtelo de nuevo.](media/adaptive-cards/try-again.png)
+        ![Intentar de nuevo](media/adaptive-cards/try-again.png)
 
     - Se intenta enviar la tarjeta más de una vez. Cada tarjeta adaptable solo se puede enviar una vez, tras lo cual se omitirán todos los envíos posteriores.

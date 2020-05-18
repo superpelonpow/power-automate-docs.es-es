@@ -1,6 +1,6 @@
 ---
 title: Catálogo de aprendizaje de Power Automate
-description: Búsqueda de todas las opciones de entrenamiento para Power Automate
+description: Encuentre todas las opciones de formación para Power Automate
 author: loreleishannonmsft
 ms.topic: article
 ms.date: 03/17/2020
@@ -10,11 +10,11 @@ ms.sourcegitcommit: c86134235a4e3a819800c77fbc50034cfd8714c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/27/2020
-ms.locfileid: "80330145"
+ms.locfileid: "3298581"
 ---
 # <a name="learning-catalog-for-power-automate"></a>Catálogo de aprendizaje de Power Automate
 
-Busque el curso en línea, el taller presencial y los eventos adecuados para su rol como usuario de Power Apps.
+Encuentre la formación en línea adecuada, talleres en persona y eventos para su rol como usuario de Power Apps.
 
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
@@ -22,11 +22,11 @@ Busque el curso en línea, el taller presencial y los eventos adecuados para su 
     :::column:::
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
-    ### <a name="business-and-technical-decision-makers"></a>Responsables de la toma de decisiones técnicas y empresariales
+    ### <a name="business-and-technical-decision-makers"></a>Responsables de toma de decisiones empresariales y técnicas
 
     ¿Decide si desea invertir en nuevas tecnologías? 
 
-    [Catálogo de aprendizaje para responsables de la toma de decisiones técnicas y empresariales](learning-catalog-bdm.md#)
+    [Catálogo de aprendizaje para responsables de toma de decisiones empresariales y técnicas](learning-catalog-bdm.md#)
 
         :::column-end:::
     :::column:::
@@ -37,7 +37,7 @@ Busque el curso en línea, el taller presencial y los eventos adecuados para su 
 
     [Catálogo de aprendizaje para creadores de aplicaciones](learning-catalog-app-maker.md#)
 
-    [Primeros pasos](learning-catalog-app-maker.md#get-started)
+    [Introducción](learning-catalog-app-maker.md#get-started)
 
     [Crear flujos](learning-catalog-app-maker.md#create-flows)
 
@@ -61,7 +61,7 @@ Busque el curso en línea, el taller presencial y los eventos adecuados para su 
 
     ¿Necesita mantener los sistemas y los datos en flujo, aprovisionados y protegidos ininterrumpidamente?
 
-    [Catálogo de aprendizaje para administradores](learning-catalog-administrator.md)
+    [Catálogo de aprendizaje de administradores](learning-catalog-administrator.md)
 
     :::column-end:::
 :::row-end:::
@@ -81,9 +81,9 @@ Busque el curso en línea, el taller presencial y los eventos adecuados para su 
 
     ¿Es un experto en implementación para un dominio empresarial? 
 
-    [Catálogo de aprendizaje para asesores de aplicaciones funcionales](learning-catalog-functional-consultant.md)
+    [Catálogo de aplicación de aprendizaje de consultoría funcional](learning-catalog-functional-consultant.md)
 
-    [Get started](learning-catalog-functional-consultant.md#get-started) (Primeros pasos)
+    [Introducción](learning-catalog-functional-consultant.md#get-started)
 
     [Crear flujos](learning-catalog-functional-consultant.md#create-flows)
 

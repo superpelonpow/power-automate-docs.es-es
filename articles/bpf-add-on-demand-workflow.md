@@ -18,11 +18,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: bb8ca7efb83a863f3031dd18d0d9bd67ae3c5c07
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194080"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297129"
 ---
 # <a name="add-an-on-demand-workflow-to-a-business-process-flow"></a>Adición de un flujo de trabajo a petición a un flujo de proceso de negocio
 
@@ -34,14 +34,14 @@ Un flujo de trabajo se activa en función de la ubicación donde se coloque en e
 - Procesos globales a petición. Cuando el flujo de trabajo se coloca en el área **Flujos de trabajo globales**, se desencadena al activar o archivar el proceso (cuando el estado cambia a aplicado, finalizado, reactivado o abandonado). 
 
 Tenga en cuenta los requisitos siguientes al agregar un flujo de trabajo a un flujo de proceso de negocio.
-- Para los flujos de trabajo que se agregan a una fase: solo se pueden usar flujos de trabajo activos y a petición creados para la misma entidad de la fase donde se agrega el flujo de trabajo.  
+- Para los flujos de trabajo que se agregan a una fase: solo se pueden usar flujos de trabajo activos a petición creados para la misma entidad de la fase donde se agrega el flujo de trabajo.  
 - Para los flujos de trabajo globales: solo se pueden usar flujos de trabajo activos y a petición creados para la entidad primaria del flujo de proceso de negocio.
 
 ## <a name="add-an-on-demand-workflow-to-a-business-process-flow-stage"></a>Adición de un flujo de trabajo a petición a una fase de flujo de proceso de negocio
 
 Para agregar un flujo de trabajo a petición desde el Diseñador de flujos de proceso de negocio, arrastre el componente de flujo de trabajo a una fase del proceso o a la sección de flujos de trabajo globales. 
 
-En el sitio de [PowerApps](https://make.powerapps.com), haga clic en **Basado en modelos** (en la parte inferior izquierda del panel de navegación). 
+En el sitio de [PowerApps](https://make.powerapps.com) seleccione **Controlado por modelos** (parte inferior izquierda del panel de navegación). 
 
 Abra el Diseñador de flujos de proceso de negocio. Puede hacerlo de dos maneras.
 - Si el flujo de proceso de negocio ya se ha agregado a una aplicación, vaya a **Aplicaciones**, haga clic en **...** al lado de la aplicación que quiera seleccionar y después seleccione **Editar**. En el Diseñador de aplicaciones, seleccione el flujo de proceso de negocio y luego haga clic en ![Abrir el Diseñador de flujos de proceso de negocio](media/dynamics365-open-designer.PNG).  
@@ -68,5 +68,5 @@ En el ejemplo siguiente, se agrega un flujo de trabajo a petición denominado **
  
 ## <a name="next-steps"></a>Pasos siguientes
 [Uso de procesos de flujo de trabajo para automatizar los procesos que no requieren interacción del usuario](workflow-processes.md) <br/>
-[Tutorial: Crear un flujo de proceso de negocio para estandarizar los procesos](create-business-process-flow.md) <br/>
-[Business process flow automation in Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/) (Automatización de flujos de proceso de negocios en Dynamics 365)
+[Tutorial: Crear un flujo de proceso de negocio para estandarizar procesos](create-business-process-flow.md) <br/>
+[Business process flow automation in Dynamics 365 (Automatización de flujos de proceso de negocios en Dynamics 365)](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/)

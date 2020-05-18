@@ -24,7 +24,7 @@ ms.sourcegitcommit: 71f9b72d551887324c92b122dadd1b4dd584bc4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2020
-ms.locfileid: "82081201"
+ms.locfileid: "3299263"
 ---
 # <a name="best-practices-in-using-business-process-flow-attributes"></a>Procedimientos recomendados para usar los atributos de flujo de proceso de negocio
 

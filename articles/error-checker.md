@@ -1,6 +1,6 @@
 ---
-title: Búsqueda y corrección de errores con el Comprobador de flujo de Power Automate | Microsoft Docs
-description: Busque y corrija errores rápidamente con el Comprobador de flujo en Power Automate.
+title: Encontrar y corregir errores con el comprobador de flujo en Power Automate | Microsoft Docs
+description: Encuentre y corrija errores rápidamente con el comprobador de flujo en Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,12 +25,12 @@ ms.sourcegitcommit: 9cca2a2fca8371ab883b12011c1c4485ceb9c761
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/28/2020
-ms.locfileid: "82200383"
+ms.locfileid: "3299461"
 ---
-# <a name="find-and-fix-errors-with-flow-checker"></a>Búsqueda y corrección de errores con el Comprobador de flujo
+# <a name="find-and-fix-errors-with-flow-checker"></a>Encontrar y corregir errores rápidamente con el comprobador de flujo
 
 
-El Comprobador de flujo de Power Automate promueve flujos de mayor calidad, ya que garantiza que se siguen los procedimientos recomendados al diseñar flujos. Al ejecutar el comprobador, obtiene respuestas detalladas a preguntas como "¿qué áreas de la implementación de su flujo suponen un riesgo para el rendimiento o la confiabilidad?".
+El comprobador de flujo en Power Automate promueve flujos de mayor calidad, ya que garantiza que se siguen los procedimientos recomendados al diseñar flujos. Al ejecutar el comprobador, obtiene respuestas detalladas a preguntas como "¿qué áreas de la implementación de su flujo suponen un riesgo para el rendimiento o la confiabilidad?".
 
 En cada problema que el comprobador identifica, señala repeticiones específicas en el flujo donde se deberían realizar mejoras. Además, aprenderá a implementar estas mejoras siguiendo una guía detallada.
 

@@ -25,7 +25,7 @@ ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80524622"
+ms.locfileid: "3298845"
 ---
 # <a name="create-and-test-your-web-ui-flows"></a>Creación y prueba de los flujos de la interfaz de usuario web
 
@@ -33,7 +33,7 @@ Siga estos pasos para crear un flujo de interfaz de usuario web simple.
 
 ## <a name="create-a-web-ui-flow"></a>Creación de un flujo de interfaz de usuario web
 
-1. Abra la [versión 80 o posterior de Microsoft Edge](https://www.microsoft.com/edge), o Google Chrome, y vaya a [Power Automate](https://flow.microsoft.com/).
+1. Abra [Microsoft Edge (versión 80 o posterior) ](https://www.microsoft.com/edge) o Google Chrome, y luego vaya a [Power Automate](https://flow.microsoft.com/).
 
 1. Inicie sesión con su cuenta profesional o educativa si es necesario.
 
@@ -54,7 +54,7 @@ Siga estos pasos para crear un flujo de interfaz de usuario web simple.
    Se inicia el IDE de Selenium.
 
    >[!TIP] 
-   >Sugerencia: puede grabar acciones en varios sitios web HTTP o HTTPS dentro de la misma pestaña.  
+   >Sugerencia: Puede grabar acciones en varios sitios web HTTP o HTTPS dentro de la misma pestaña.  
 
 1. En el IDE de Selenium, seleccione el botón **REC** rojo que está en el lado superior derecho de la pantalla para iniciar la grabadora.
 
@@ -106,7 +106,7 @@ Para solucionarlo, el usuario debe editar manualmente el script para insertar lo
 
 -   Multi-Factor Authentication (MFA) no es compatible. Use un inquilino que no requiera MFA.
 
--   No se admiten estos comandos de Selenium IDE: Run, AnswerOnNextPrompt, ChooseCancelOnNextConfirmation, ChooseCancelOnNextPrompt, ChooseOkOnNextConfirmation, Debugger, ClickAt, DoubleClickAt, Echo, MouseOut, MouseUpAt y MouseDownAt.
+-   No se admiten estos comandos del IDE de Selenium: Run, AnswerOnNextPrompt, ChooseCancelOnNextConfirmation, ChooseCancelOnNextPrompt, ChooseOkOnNextConfirmation, Debugger, ClickAt, DoubleClickAt, Echo, MouseOut, MouseUpAt ni MouseDownAt.
 
 -   No se admite el clic con el botón derecho. 
 

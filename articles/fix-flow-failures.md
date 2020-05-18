@@ -21,18 +21,18 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: faa0b50a9a525d5abaa818d05be8a97e6ad6663b
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192792"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297327"
 ---
 # <a name="troubleshooting-a-flow"></a>Solución de problemas en un flujo
 
 
 ## <a name="repair-tips-in-email"></a>Sugerencias de reparación en el correo electrónico
 
-Las sugerencias de reparación se envían a los propietarios de los flujos por correo electrónico cada vez que se produce un error en un flujo. Estos mensajes de correo electrónico de sugerencias de reparación contienen comentarios específicos y accionables sobre determinados errores. Por ejemplo, un error común es configurar un flujo que intenta obtener el administrador de una persona en Office 365, pero no hay ningún administrador configurado en Azure Active Directory (Azure AD). Si esta u otras diversas condiciones hacen que el flujo genere un error, recibirá un correo electrónico de sugerencias de reparación como este:
+Las sugerencias de reparación se envían a los propietarios de los flujos por correo electrónico cada vez que se produce un error en un flujo. Estos mensajes de correo electrónico de sugerencias de reparación contienen comentarios específicos y accionables sobre determinados errores. Por ejemplo, un error común es configurar un flujo que intenta obtener el administrador de una persona en Office 365, pero no hay ningún administrador configurado en Azure Active Directory (Azure AD). Si esta u otras diversas condiciones hacen que el flujo genere un error, recibirá un correo electrónico de sugerencias de reparación como este:
 
 ![Sugerencias de reparación](media/fix-flow-failures/repair-tips-email.png)
 
@@ -52,7 +52,7 @@ Los correos electrónicos de sugerencias de reparación son opcionales. Si no qu
 Si el flujo genera un error, también puede solucionarlo directamente en Power Automate.  Estos son algunos escenarios de error comunes y sugerencias para corregirlos.
 
 ## <a name="identify-the-error"></a>Identificación del error
-Antes de que pueda corregir un flujo, debe identificar el motivo por el que se produjo un error. Haga clic o pulse en el icono de notificaciones de la parte superior del portal web (o abra la pestaña **Actividad** en la aplicación móvil) y, a continuación, haga clic o pulse en el flujo en la lista que aparece.
+Antes de poder corregir un flujo, debe identificar el motivo del error. Haga clic o pulse en el icono de notificaciones de la parte superior del portal web (o abra la pestaña **Actividad** en la aplicación móvil) y, a continuación, haga clic o pulse en el flujo en la lista que aparece.
 
 ![Notificaciones](./media/fix-flow-failures/notifications-toolbar.png)
 
@@ -62,14 +62,14 @@ Los detalles del flujo aparecen y, al menos en un paso se muestra un icono rojo 
 
 
 ## <a name="authentication-failures"></a>Errores de autenticación
-En muchos casos, los flujos dan error debido a un error de autenticación. Si tiene este tipo de error, el mensaje de error contiene el texto **No autorizado** o aparece un código de error **401** o **403**. Normalmente, se puede corregir un error de autenticación mediante la actualización de la conexión:
+En muchos casos, los flujos generan errores debido a un error de autenticación. Si tiene este tipo de error, el mensaje de error contiene el texto **No autorizado** o aparece un código de error **401** o **403**. Normalmente, se puede corregir un error de autenticación mediante la actualización de la conexión:
 
 1. En la parte superior del portal web, haga clic o pulse en el icono de engranaje para abrir el menú **Configuración** y, luego, haga clic o pulse en **Conexiones**.
 2. Desplácese hasta la conexión en la que aparecía el mensaje de error de **No autorizado**.
 3. Junto a la conexión, haga clic o pulse en el vínculo **Repetir contraseña** del mensaje sobre la conexión que no se autentica.
 4. Compruebe sus credenciales mediante las instrucciones que aparecen, vuelva al error de ejecución del flujo y, a continuación, haga clic o pulse en **Volver a enviar**.
    
-    El flujo debe ya ejecutarse según lo previsto.
+    Ahora el flujo debería ejecutarse según lo previsto.
 
 ## <a name="action-configuration"></a>Configuración de acciones
 Los flujos también pueden producir un error si una opción de una acción del flujo no funciona según lo previsto. En este caso, el mensaje de error contiene el texto **Solicitud incorrecta** o **No se encuentra**, o aparece un código de error **400** o **404**.

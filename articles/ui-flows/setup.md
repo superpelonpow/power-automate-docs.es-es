@@ -25,7 +25,7 @@ ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80524646"
+ms.locfileid: "3298779"
 ---
 # <a name="set-up-ui-flows"></a>Configuración de los flujos de la interfaz de usuario
 
@@ -36,15 +36,15 @@ Antes de poder usar el dispositivo para crear flujos de interfaz de usuario, deb
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Un plan de Power Automate [pagado](https://flow.microsoft.com/pricing/) o [de prueba](https://flow.microsoft.com/manage/).
+- Un plan de Power Automate [pagado](https://flow.microsoft.com/pricing/) o de [prueba](https://flow.microsoft.com/manage/).
 
 - Una cuenta profesional o educativa para iniciar sesión en el dispositivo Windows con privilegios de administrador y Power Automate.
 
-- Un dispositivo que ejecute Windows 10 Pro, Windows Server 2016 o Windows Server 2019.
+- Un dispositivo que ejecuta Windows 10 Pro, Windows Server 2016 o Windows Server 2019.
 
-- El explorador [Microsoft Edge](https://www.microsoft.com/edge/) (versión 80 o posterior) o Google Chrome.
+- El explorador [Microsoft Edge](https://www.microsoft.com/edge/) (versión 80 o posterior) o Google Chrome.
 
-- Un [entorno](https://docs.microsoft.com/power-platform/admin/environments-overview) con una [base de datos de Common Data Service](https://docs.microsoft.com/power-platform/admin/create-database).
+- Un [entorno](https://docs.microsoft.com/power-platform/admin/environments-overview) con una [base de datos Common Data Service](https://docs.microsoft.com/power-platform/admin/create-database).
 
 - Un teclado compatible conectado.
 
@@ -91,13 +91,13 @@ Durante la instalación, si no quiere enviar datos de uso a Microsoft, puede cam
 
 Una vez que se complete el instalador de flujos de interfaz de usuario, el explorador le pedirá activar la extensión.
 
-- En [Microsoft Edge](https://www.microsoft.com/edge/) (versión 80 o posterior), seleccione cada icono de advertencia en la parte superior derecha del explorador y, después, **Habilitar extensión**.
+- En [Microsoft Edge](https://www.microsoft.com/edge/) (versión 80 o posterior), seleccione cada icono de advertencia en la parte superior derecha del explorador y, después, **Habilitar extensión**.
 -   En Google Chrome, seleccione **Enable extension** (Habilitar extensión) cuando se le solicite.  
 
 > [!TIP]
 > Si no ve la solicitud en el explorador, revise lo siguiente:
-> - Debe usar el explorador [Microsoft Edge](https://www.microsoft.com/edge/) (versión 80 o posterior) o Google Chrome.
-> - Es posible que tenga que habilitar manualmente la extensión. Para Microsoft Edge, vaya a **edge://extensions** o, en el caso de Google Chrome, a **chrome://extensions**.
+> - Debe usar [Microsoft Edge](https://www.microsoft.com/edge/) (versión 80 o posterior) o Google Chrome.
+> - Es posible que tenga que habilitar manualmente la extensión. Para Microsoft Edge, vaya a **edge://extensions** o, en el caso de Google Chrome, a **chrome://extensions**.
 > - Si la extensión de los flujos de interfaz de usuario de Power Automate no aparece, puede volver a instalarla con el [instalador de flujos de interfaz de usuario](https://go.microsoft.com/fwlink/?linkid=2102613).
 
 
@@ -109,9 +109,9 @@ Con flujos de interfaz de usuario, puede ejecutar scripts del IDE de Selenium de
 
 Siga estos pasos para instalar el IDE de Selenium:
 
-1. [Descargue e instale](https://go.microsoft.com/fwlink/?linkid=2107665) Selenium IDE para la versión 80 o posterior de [Microsoft Edge](https://www.microsoft.com/edge/) o Google Chrome.
+1. [Descargue e instale](https://go.microsoft.com/fwlink/?linkid=2107665) Selenium IDE para [Microsoft Edge](https://www.microsoft.com/edge/) (versión 80 o posterior) o Google Chrome.
 
-1. En Microsoft Edge (versión 80 o posterior), seleccione **Permitir extensiones de otras tiendas** y, después, **Agregar a Chrome**.
+1. En Microsoft Edge (versión 80 o posterior), seleccione **Permitir extensiones de otras tiendas** y, después, **Agregar a Chrome**.
 
 ## <a name="install-the-on-premises-data-gateway"></a>Instalación de la puerta de enlace de datos local
 
@@ -147,7 +147,7 @@ Necesitará la puerta de enlace para desencadenar el flujo de interfaz de usuari
 
     - **Dominio y nombre de usuario**: proporcione su cuenta de dispositivo. Puede usar una cuenta local con el nombre del usuario (por ejemplo, “MACHINENAME\\usuario” o “local\\usuario”) o una cuenta de Active Directory como “DOMAIN\\usuario”.
     - **Contraseña**: la contraseña de su cuenta.
-    - **Elegir una puerta de enlace**: Seleccione la puerta de enlace que quiere usar.
+    - **Elegir una puerta de enlace**: seleccione la puerta de enlace que quiera usar.
 
       ![Captura de pantalla que muestra dónde especificar las credenciales para la conexión](../media/ui-flows-setup/credentials-screen.png)
 
@@ -157,7 +157,7 @@ Necesitará la puerta de enlace para desencadenar el flujo de interfaz de usuari
 
 Es posible que no encuentre la puerta de enlace en la lista mientras crea la conexión por las siguientes razones:
 
-- La puerta de enlace se puede instalar en una región distinta a la de Power Automate. Para resolver este problema, desinstale la puerta de enlace del dispositivo y vuelva a instalarla; para ello, seleccione [la región de Power Automate correcta](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
+- La puerta de enlace se puede instalar en una región distinta a la de Power Automate. Para resolver este problema, desinstale la puerta de enlace del dispositivo y vuelva a instalarla; para ello, seleccione la [región de Power Automate correcta](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
 - El propietario de la puerta de enlace la ha eliminado.
 
 ## <a name="supported-keyboard-layouts"></a>Distribuciones de teclado admitidas
@@ -182,13 +182,13 @@ Es posible que no encuentre la puerta de enlace en la lista mientras crea la con
 - Teclado Q turco: turco (Turquía)
 - Teclado de India: inglés (India)
 
-## <a name="supported-languages"></a>Idiomas admitidos
+## <a name="supported-languages"></a>Idiomas compatibles
 
 A continuación se indican los idiomas compatibles con los flujos de interfaz de usuario, además del inglés:
 
 |||||
 ----|-----|-----|--------
-Vasco  | Francés    | Letón   | Eslovaco
+Euskera  | Francés    | Letón   | Eslovaco
 Búlgaro   |   Gallego    |   Lituano  |   Esloveno
 Catalán |   Alemán      |Malayo  |   Español
 Chino (simplificado)    |   Griego   |   Noruego   |   Sueco
@@ -197,8 +197,8 @@ Croata    |   Húngaro   |   Portugués (Brasil) |   Turco
 Checo   |   Indonesio  |   Portugués (Portugal)       |Ucraniano
 Danés  |   Italiano |   Rumano    |   Vietnamita
 Neerlandés       |Japonés   |   Ruso 
-Estonio    |Kazajo |   Serbio (cirílico, Serbia)  
-Finés     |Coreano     |Serbio (latino, Serbia)
+Estonio    |Kazajo |   Serbio cirílico (Serbia)  
+Finés     |Coreano     |Serbio latino (Serbia)
 
 ## <a name="uninstall-ui-flows"></a>Desinstalación de los flujos de interfaz de usuario
 

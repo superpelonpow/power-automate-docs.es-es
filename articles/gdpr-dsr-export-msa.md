@@ -1,6 +1,6 @@
 ---
-title: Solicitudes de exportación de los interesados en el RGPD en Power Automate para cuentas Microsoft (MSA) | Microsoft Docs
-description: Aprenda a usar Power Automate para responder a las solicitudes de exportación de los interesado en el RGPD para cuentas Microsoft.
+title: Solicitudes de exportación del titular de los datos de acuerdo con el RGPD en Power Automate para cuentas Microsoft (MSA) | Microsoft Docs
+description: Obtenga información sobre cómo usar Power Automate para responder a solicitudes de exportación del titular de los datos de acuerdo con el RGPD para cuentas de Microsoft.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,13 +21,13 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 487f19badd67650c686c9e497cad739ee1560885
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195112"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297459"
 ---
-# <a name="responding-to-gdpr-data-subject-export-requests-for-power-automate"></a>Respuesta a las solicitudes de exportación de los interesados en el RGPD para Power Automate
+# <a name="responding-to-gdpr-data-subject-export-requests-for-power-automate"></a>Responder a las solicitudes de exportación del titular de los datos de acuerdo con el RGPD para Power Automate
 
 
 Como parte de nuestro compromiso de acompañarle en su viaje de adaptación al Reglamento general de protección de datos (RGPD), hemos elaborado una documentación que le ayudará a prepararse. En esta documentación no solo se describe lo que estamos haciendo para prepararnos para el RGPD, sino que también se comparten ejemplos de pasos que se pueden adoptar actualmente para el cumplimiento de este reglamento al usar Power Automate.
@@ -41,10 +41,10 @@ Use el [panel de privacidad de Microsoft](https://account.microsoft.com/privacy/
 |Datos personales|Ubicación|
 |-----------------|-------------------|
 |Actividad de productos y servicios|Panel de privacidad de Microsoft|
-|Flujos|Portal de creadores de Power Automate|
-|Historial de ejecución|Portal de creadores de Power Automate|
-|Fuente de actividades|Portal de creadores de Power Automate|
-|Conexiones|Portal de creadores de Power Automate|
+|Flows|Creador de portal de Power Automate|
+|Historial de ejecución|Creador de portal de Power Automate|
+|Fuente de actividades|Creador de portal de Power Automate|
+|Conexiones|Creador de portal de Power Automate|
 
 ## <a name="export-product-and-service-activity"></a>Exportar actividad de productos y servicios
 
@@ -75,7 +75,7 @@ Un usuario final que tenga acceso a un flujo puede exportarlo siguiendo estos pa
 
     ![Exportación de flujo](./media/gdpr-dsr-export/export-flow.png)
 
-1. Seleccione **Paquete (.zip)** .
+1. Seleccione **Paquete (.zip)**.
 
 El flujo estará ahora disponible como un paquete comprimido. Para obtener más información, consulte la entrada de blog sobre [cómo exportar e importar un flujo](https://flow.microsoft.com/blog/import-export-bap-packages/).
 
@@ -101,7 +101,7 @@ El historial de ejecuciones se descarga como un archivo .csv para que pueda abri
 
 En [Power Automate](https://flow.microsoft.com/), la fuente de actividad muestra el historial de actividades, errores y notificaciones de un usuario. Los usuarios pueden ver su fuente de actividad siguiendo estos pasos:
 
-1. Inicie sesión en [Power Automate](https://flow.microsoft.com/), seleccione el icono de campana cerca de la esquina superior derecha y, luego, seleccione **Mostrar todas las actividades**.
+1. Inicie sesión en [Power Automate](https://flow.microsoft.com/), seleccione el icono de campana cerca de la esquina superior derecha y, a continuación, seleccione **Mostrar todas las actividades**.
 
     ![Muestra de la fuente de actividades](./media/gdpr-dsr-export/show-activity-feed.png)
 
@@ -113,7 +113,7 @@ En [Power Automate](https://flow.microsoft.com/), la fuente de actividad muestra
 
 Las conexiones permiten a los flujos conectarse a las API, las aplicaciones de SaaS y otros sistemas de terceros. Siga estos pasos para ver las conexiones:
 
-1. Inicie sesión en [Power Automate](https://flow.microsoft.com/), seleccione el icono de engranaje cerca de la esquina superior derecha y, luego, seleccione **Conexiones**.
+1. Inicie sesión en [Power Automate](https://flow.microsoft.com/), seleccione el icono de engranaje cerca de la esquina superior derecha y después seleccione **Conexiones**.
 
-    ![Muestra de conexiones](./media/gdpr-dsr-export/show-connections.png)
+    ![Mostrar Contactos](./media/gdpr-dsr-export/show-connections.png)
 1. Copie los resultados y, después, péguelos en un editor de texto como Microsoft Word.

@@ -21,33 +21,33 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: b4e087855890d7ca94a8288793494ce1e81826b2
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193298"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296733"
 ---
-# <a name="manage-connections-in-power-automate"></a>Administración de conexiones en Power Automate
+# <a name="manage-connections-in-power-automate"></a>Administrar conexiones en Power Automate
 
-Si crea una conexión en Power Automate, podrá acceder fácilmente a los datos durante la compilación de un flujo. Power Automate incluye conexiones que se utilizan habitualmente, por ejemplo, SharePoint, SQL Server, Office 365, OneDrive para la Empresa, Salesforce, Excel, Dropbox, Twitter, etc. Las conexiones se comparten con Power Apps, por lo que cuando se crea una conexión en un producto, se muestra en el otro.
+Si crea una conexión en Power Automate, podrá acceder fácilmente a los datos durante la compilación de un flujo. Power Automate incluye conexiones de uso común, que incluyen SharePoint, Servidor SQL, Office 365, OneDrive para empresas, Salesforce, Excel, Dropbox, Twitter y más. Las conexiones se comparten con Power Apps, por lo que cuando se crea una conexión en un producto, se muestra en el otro.
 
 Por ejemplo, puede usar una conexión para realizar estas tareas:
 
-* Actualizar una lista de SharePoint.
+* Actualice una lista de SharePoint.
 * Obtener datos de un archivo de Excel de una cuenta de OneDrive para la Empresa o Dropbox.
 * Enviar correo electrónico en Office 365.
-* Enviar un tweet.
+* Envíe un tweet.
 
 Puede crear una conexión en varios escenarios, como estos:
 
 * Creación de un [flujo desde una plantilla](get-started-logic-template.md)
 * Creación de un [flujo desde cero](get-started-logic-flow.md) o actualización de un flujo existente
-* Creación de una conexión en el [sitio web de Power Automate][1] directamente
+* Crear una conexión en el [sitio web de Power Automate][1] directamente
 
 En este tema se muestra cómo administrar conexiones en el [sitio web de Power Automate][1].
 
 ## <a name="add-a-connection"></a>Agregar una conexión
-1. En el [sitio web de Power Automate][1], inicie sesión con su cuenta profesional o de organización.
+1. En el sitio [web de Power Automate][1], inicie sesión con su cuenta profesional o de organización.
 2. Cerca de la esquina superior derecha, seleccione el icono del engranaje y, después, seleccione **Conexiones**.
    
     ![Seleccionar conexiones](./media/add-manage-connections/connections-menu.png)
@@ -75,7 +75,7 @@ Actualmente, SQL Server y SharePoint Server admiten la puerta de enlace de datos
    
     Cuando la conexión esté configurada, aparecerá en **Mis conexiones**.
 
-## <a name="delete-a-connection"></a>Eliminación de una conexión
+## <a name="delete-a-connection"></a>Eliminar una conexión
 1. Vaya a la página **Mis conexiones** y seleccione el icono de la papelera de la conexión que desea eliminar.
    
     ![Eliminar conexión](./media/add-manage-connections/delete-connection.png)
@@ -96,9 +96,9 @@ Si una conexión no funciona porque los datos de la cuenta o la contraseña han 
 Cuando se actualiza una conexión, se hace tanto en Power Apps como en Power Automate.
 
 ## <a name="troubleshoot-a-connection"></a>Solución de problemas de una conexión
-En función de las directivas de la organización, puede que tenga que usar la misma cuenta para iniciar sesión en Power Automate y para crear una conexión a SharePoint, Office 365 o OneDrive para la Empresa.
+En función de las directivas de la organización, puede que tenga que usar la misma cuenta para iniciar sesión en Power Automate y para crear una conexión a SharePoint, Office 365 o OneDrive para la Empresa.
 
-Por ejemplo, puede iniciar sesión en Power Automate con *yourname@outlook.com* , pero se le bloqueará al intentar conectarse SharePoint con *yourname@contoso.com* . En su lugar, puede iniciar sesión en Power Automate con *yourname@contoso.com* y podrá conectarse a SharePoint.
+Por ejemplo, puede iniciar sesión en Power Automate con *yourname@outlook.com*, pero se le bloqueará al intentar conectarse a SharePoint con *yourname@contoso.com*. En su lugar, puede iniciar sesión en Power Automate con *yourname@contoso.com* y podrá conectarse a SharePoint.
 
 <!--Reference links in article-->
 [1]: https://flow.microsoft.com

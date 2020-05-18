@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 4aac1ace0e30d5e36d59f0d2bcbb3cb692f7256c
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195575"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297987"
 ---
 # <a name="submit-a-template-to-the-power-automate-gallery"></a>Envío de una plantilla a la galería de Power Automate
 

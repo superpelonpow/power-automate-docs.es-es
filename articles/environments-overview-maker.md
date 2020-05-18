@@ -1,5 +1,5 @@
 ---
-title: Más información sobre los entornos de Power Automate | Microsoft Docs
+title: Obtenga información sobre los entornos de Power Automate | Microsoft Docs
 description: Aprenda a usar entornos para aislar los flujos
 services: ''
 suite: flow
@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/07/2020
+ms.date: 04/07/2020
 ms.author: sunayv
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b1ad11b90b9682f68c6c8f22d350313f0c2edb75
-ms.sourcegitcommit: 7a42629c7bc15208c5a9d692ab89616fc0aa40cb
+ms.openlocfilehash: b797fc6e4a2e7835a7322f9fc55d50c96d113031
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82973123"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3299065"
 ---
 # <a name="choosing-an-environment"></a>Elección de un entorno
 
@@ -37,7 +37,7 @@ Obtendrá información sobre:
 * Cómo cambiar entre entornos.
 * Cómo crear un flujo en el entorno adecuado.
 
-## <a name="environments-overview"></a>Información general sobre los entornos
+## <a name="environments-overview"></a>Información general de entornos
 
 Cuando se crea un flujo, se puede elegir en qué entorno se va a hospedar y los recursos que va a usar. Se pueden usar entornos distintos para diferentes escenarios.
 
@@ -49,16 +49,13 @@ Quiere crear un flujo que use una conexión a Common Data Service.|Coloque el fl
 Va a crear un flujo para el departamento de recursos humanos. Desea asegurarse de que los usuarios del departamento de recursos humanos son los únicos que tienen acceso al flujo.|Cree un entorno y agregue solo a los usuarios de recursos humanos a él. Coloque el flujo y los demás recursos que el flujo utilice en este entorno.
 Hay usuarios en Europa que utilizan un flujo para mostrar datos de SharePoint.|Cree un entorno en Europa y, a continuación, cree el flujo y la conexión de SharePoint a este. Este entorno de Europa ofrece a los usuarios europeos el mejor rendimiento, ya que todos los recursos son locales en Europa (localidad de los datos).
 
-Cualquier usuario con una licencia adecuada puede crear entornos en el Centro de administración de Power Platform de forma predeterminada, a menos que la configuración predeterminada de **Quién puede crear entornos de producción** haya cambiado de **Todos** a **Solo administradores específicos**.
-
-
-Para más información acerca de cómo crearlos y administrarlos, consulte el tema sobre [administración de entornos](environments-overview-admin.md).
+Para crear entornos, debe ser administrador de Power Automate. Los administradores controlan quién tiene acceso a los entornos. Para más información acerca de cómo crearlos y administrarlos, consulte el tema sobre [administración de entornos](environments-overview-admin.md).
 
 ## <a name="switching-environments"></a>Cambio de entornos
 
-Power Automate facilita el cambio entre entornos. Al cambiar de entorno, solo verá los elementos que se han creado en ese entorno específico; no podrá ver ni acceder a los elementos de ningún otro entorno.
+Con Power Automate, es más fácil cambiar entre entornos. Al cambiar de entorno, solo verá los elementos que se han creado en ese entorno específico; no podrá ver ni acceder a los elementos de ningún otro entorno.
 
-Aquí se muestra un ejemplo.
+Aquí tiene un ejemplo.
 
 Cree un flujo denominado *NewEmployee* en el entorno de *recursos humanos*. En [Power Automate](https://flow.microsoft.com), se abre el entorno *Sales*. El flujo *NewEmployee* no aparece en la lista. Para ver el flujo *NewEmployee*, abra el entorno de *recursos humanos*. Recuerde que las mismas reglas se pueden aplicar a todos los elementos que creó en ese entorno, incluidas las conexiones, las puertas de enlace y los flujos, entre otras cosas.
 
@@ -86,7 +83,8 @@ Antes de crear un flujo, seleccione el entorno en el que se agregará el flujo y
 
 Considere los siguientes factores al elegir en qué entorno quiere hospedar los flujos:
 
-* Common Data Service está asociado a un entorno específico. Por lo tanto, si desea crear un flujo que use Common Data Service, debe crear el flujo en el entorno que hospeda la base de datos.
+* Solo puede crear puertas de enlace en el entorno predeterminado. Por tanto, si desea usar una puerta de enlace para conectar el flujo a datos locales, tendrá que usar el entorno predeterminado.
+* Common Data Service está vinculado a un entorno específico. Por lo tanto, si desea crear un flujo que use Common Data Service, debe crear el flujo en el entorno que hospeda la base de datos.
 * Verá todos los entornos en los que se pueden editar recursos. Sin embargo, tendrá que pedir a un administrador que lo agregue como creador a todos los entornos en los que desee crear flujos.
 
 > [!NOTE]

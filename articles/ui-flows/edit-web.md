@@ -25,7 +25,7 @@ ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80525146"
+ms.locfileid: "3298757"
 ---
 # <a name="edit-web-ui-flows"></a>Edición de los flujos de la interfaz de usuario web
 

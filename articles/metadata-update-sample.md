@@ -16,11 +16,11 @@ ms.workload: na
 ms.date: 01/04/2020
 ms.author: deonhe
 ms.openlocfilehash: 902510ac5c2dd61fbcaae7c1dad771588e431873
-ms.sourcegitcommit: e3543e32e4e8e8163bef0565e27b657eabbdc741
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868213"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297657"
 ---
 # <a name="metadata-update-card-sample"></a>Ejemplo de tarjeta de actualización de metadatos
 
@@ -39,13 +39,13 @@ Esta tarjeta consta de tres secciones:
 
 | Nombre del token dinámico (entradas) | Texto de marcador de posición    | Notas                                     |
 |-----------------------------|---------------------|--------------------------------------------|
-| acHeader                    | {Header}            | Display text                               |
-| acSubHeader                 | {SubHeader}         | Display text                               |
-| acDescription               | Texto latino          | Display text                               |
-| acFact1                     | {acFact1}           | Display text                               |
-| acFact2                     | {acFact2}           | Display text                               |
-| acFact3                     | {acFact3}           | Display text                               |
-| acColumnSetHeader           | Encabezados del 1 al 3 | Display text <br>  Texto para mostrar del encabezado del conjunto de columnas                               |
+| acHeader                    | {Header}            | Texto para mostrar                               |
+| acSubHeader                 | {SubHeader}         | Texto para mostrar                               |
+| acDescription               | Texto latino          | Texto para mostrar                               |
+| acFact1                     | {acFact1}           | Texto para mostrar                               |
+| acFact2                     | {acFact2}           | Texto para mostrar                               |
+| acFact3                     | {acFact3}           | Texto para mostrar                               |
+| acColumnSetHeader           | Encabezados del 1 al 3 | Texto para mostrar <br>  Texto para mostrar del encabezado del conjunto de columnas                               |
 | acColumnSet                 | Columnas de la 1 a la 3 | Se reemplazan por valores de matriz o de columna.       |
 
 

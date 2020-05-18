@@ -1,6 +1,6 @@
 ---
 title: Uso de expresiones con condiciones. | Microsoft Docs
-description: Use expresiones avanzadas como "and", "or", "empty", "less" y "greater" con las condiciones de Power Automate.
+description: Usar expresiones avanzadas como "and", "or", "empty", "less" y "greater" con las condiciones de Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -19,11 +19,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 3c1eb0f208f964f2a41e26ca831c60edef0d747c
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195986"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298449"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Uso de expresiones en condiciones para comprobar varios valores
 
@@ -33,26 +33,26 @@ Cuando se crea un flujo, puede usar la tarjeta [**Condición**](add-condition.md
 
 En las condiciones puede usar cualquier combinación de las siguientes expresiones lógicas.
 
-Expresión|Descripción|Ejemplo
+Expression|Descripción|Ejemplo
 --------|-----------|-------
-|[and](#use-the-and-expression)|Toma dos argumentos y devuelve true si ambos valores son true.<br><b>Nota:</b> Ambos argumentos deben ser valores booleanos.|Esta expresión devuelve false: <br>and(greater(1,10),equals(0,0))
-|[or](#use-the-or-expression)|Toma dos argumentos y devuelve true si cualquiera de los dos argumentos es true. <br><b>Nota:</b> Ambos argumentos deben ser valores booleanos.|Esta expresión devuelve true:<br>or(greater(1,10),equals(0,0))
-|equals|Devuelve true si los dos valores son iguales.|Por ejemplo, si el valor de parameter1 es someValue, esta expresión devuelve true:<br>equals(parameters('parameter1'), 'someValue')
-|[less](#use-the-less-expression)|Toma dos argumentos y devuelve true si el primer argumento es menor que el segundo. <br><b>Nota:</b> Los tipos admitidos son integer, float y string.|Esta expresión devuelve true:<br>less(10,100)
-|lessOrEquals|Toma dos argumentos y devuelve true si el primer argumento es menor o igual que el segundo. <br><b>Nota:</b> Los tipos admitidos son integer, float y string.|Esta expresión devuelve true:<br>lessOrEquals(10,10)
-|[greater](#use-the-greater-expression)|Toma dos argumentos y devuelve true si el primero es mayor que el segundo. <br><b>Nota:</b> Los tipos admitidos son integer, float y string.|Esta expresión devuelve false:<br>greater(10,10)
-|greaterOrEquals|Toma dos argumentos y devuelve true si el primer argumento es mayor o igual que el segundo. <br><b>Nota:</b> Los tipos admitidos son integer, float y string.|Esta expresión devuelve false:<br>greaterOrEquals(10,100)
+|[y](#use-the-and-expression)|Toma dos argumentos y devuelve true si ambos valores son true.<br><b>Nota</b>: ambos argumentos deben ser valores booleanos.|Esta expresión devuelve false: <br>and(greater(1,10),equals(0,0))
+|[o](#use-the-or-expression)|Toma dos argumentos y devuelve true si cualquiera de los dos argumentos es true. <br><b>Nota</b>: ambos argumentos deben ser valores booleanos.|Esta expresión devuelve true:<br>or(greater(1,10),equals(0,0))
+|es igual a|Devuelve true si los dos valores son iguales.|Por ejemplo, si el valor de parameter1 es someValue, esta expresión devuelve true:<br>equals(parameters('parameter1'), 'someValue')
+|[menos](#use-the-less-expression)|Toma dos argumentos y devuelve true si el primer argumento es menor que el segundo. <br><b>Nota</b>: los tipos admitidos son integer, float y string.|Esta expresión devuelve true:<br>less(10,100)
+|lessOrEquals|Toma dos argumentos y devuelve true si el primer argumento es menor o igual que el segundo. <br><b>Nota</b>: los tipos admitidos son integer, float y string.|Esta expresión devuelve true:<br>lessOrEquals(10,10)
+|[mayor que](#use-the-greater-expression)|Toma dos argumentos y devuelve true si el primero es mayor que el segundo. <br><b>Nota</b>: los tipos admitidos son integer, float y string.|Esta expresión devuelve false:<br>greater(10,10)
+|greaterOrEquals|Toma dos argumentos y devuelve true si el primer argumento es mayor o igual que el segundo. <br><b>Nota</b>: los tipos admitidos son integer, float y string.|Esta expresión devuelve false:<br>greaterOrEquals(10,100)
 |[empty](#use-the-empty-expression)|Devuelve true si el objeto, matriz o cadena están vacíos.|Esta expresión devuelve true:<br>empty('')
-|no|Devuelve el opuesto de un valor booleano. |Esta expresión devuelve true:<br>not(contains('200 Success','Fail'))
+|not|Devuelve el opuesto de un valor booleano. |Esta expresión devuelve true:<br>not(contains('200 Success','Fail'))
 |if|Devuelve un valor específico si el resultado de la expresión es true o false.|Esta expresión devuelve "yes":<br>if(equals(1, 1), 'yes', 'no')
 
 ## <a name="prerequisites"></a>Requisitos previos
-* Acceso a Power Automate.
+* Obtenga acceso a Power Automate.
 * Una hoja de cálculo con las tablas que se describirán más adelante en este tutorial. Asegúrese de guardar la hoja de cálculo en una ubicación como Dropbox o Microsoft OneDrive para que Power Automate pueda acceder a ella.
 * Microsoft Office 365 Outlook (aunque aquí se usa Office 365 Outlook, se puede utilizar cualquier servicio de correo electrónico compatible en los flujos).
 
 ## <a name="use-the-or-expression"></a>Use la expresión or
-En ocasiones un flujo de trabajo debe realizar una acción si el valor de un elemento es valueA **o** valueB. Por ejemplo, puede hacer un seguimiento del estado de las tareas de una tabla de una hoja de cálculo. Suponga que la tabla tiene una columna denominada *Status*, cuyos valores posibles son:
+En ocasiones un flujo de trabajo debe realizar una acción si el valor de un elemento es valueA **o** valueB. Por ejemplo, puede hacer un seguimiento del estado de las tareas de una tabla de una hoja de cálculo. Suponga que la tabla tiene una columna denominada *Estado* y los posibles valores en la columna *Estado* son:
 
 * **completed**
 * **blocked**
@@ -63,7 +63,7 @@ A continuación se muestra un ejemplo del aspecto que podría tener la hoja de c
 
 ![hoja de cálculo de ejemplo](./media/use-expressions-in-conditions/spreadsheet-table.png)
 
-Dada la hoja de cálculo anterior, es posible que desee usar Power Automate para quitar todas las filas con una columna *Status* establecida en *completed* o *unnecesary*.
+Dada la hoja de cálculo anterior, es posible que desea usar Power Automate para quitar todas las filas con una columna *Estado* que se establece en *completed* o *unnecesary*.
 
 Vamos a crear el flujo.
 
@@ -90,10 +90,9 @@ Vamos a crear el flujo.
 1. Seleccione **Nuevo paso** > **Agregar una acción**.
 
     ![nuevo paso](includes/media/new-step/action.png)
-2. Busque **filas** y seleccione **Excel - 
-Obtener filas**.
+2. Busque **filas** y seleccione **Excel - Obtener filas**.
 
-    Nota: Seleccione la acción "obtener filas" que corresponda a la hoja de cálculo que esté usando. Por ejemplo, si va a utilizar Hojas de cálculo de Google, seleccione **Hojas de cálculo de Google - Obtener filas**.
+    Nota: Seleccione la acción "obtener filas" que corresponda a la hoja de cálculo que vaya a usar. Por ejemplo, si va a utilizar Hojas de cálculo de Google, seleccione **Hojas de cálculo de Google - Obtener filas**.
 
     ![obtener filas](includes/media/new-step/get-excel-rows.png)
 3. Seleccione el icono de la carpeta en el cuadro **Nombre de archivo**, busque la hoja de cálculo que contiene los datos y selecciónela.
@@ -126,7 +125,7 @@ Obtener filas**.
 2. Busque **Eliminar fila**y, después, seleccione **Excel - Eliminar fila**.
 
     ![imagen de eliminar fila](includes/media/new-step/select-delete-excel-row.png)
-3. En el cuadro  **Nombre de archivo**, busque y seleccione el archivo de la hoja de cálculo que contiene los datos que desea eliminar.
+3. En el cuadro **Nombre de archivo**, busque y seleccione el archivo de la hoja de cálculo que contiene los datos que desea eliminar.
 4. En la lista **Nombre de tabla**, seleccione la tabla que contiene los datos.
 5. Coloque el token **Id. de fila** en el cuadro **Id. de fila**.
 
@@ -200,8 +199,8 @@ Use la expresión **and** junto con la función **less**, ya que se deben valida
 
 |          Condición que se valida          | expresión que se usa |                    Ejemplo                     |
 |-----------------------------------------|-------------------|------------------------------------------------|
-|   ¿Se ha pagado el importe total que se debe?    |      greater      |   @greater(item()?['Due'], item()?['Paid'])    |
-| ¿Es el fecha de vencimiento inferior a un día? |       less        | @less(item()?['DueDate'], addDays(utcNow(),1)) |
+|   ¿Se ha pagado el importe total que se debe?    |      mayor que      |   @greater(item()?['Due'], item()?['Paid'])    |
+| ¿Es el fecha de vencimiento inferior a un día? |       menos        | @less(item()?['DueDate'], addDays(utcNow(),1)) |
 
 ## <a name="combine-the-greater-and-less-expressions-in-an-and-expression"></a>Combinación de las expresiones greater y less en una expresión and
 Utilice la expresión **greater** para identificar a los empleados que han pagado menos que la cantidad total que se debe y la expresión **less** para determinar si la fecha de vencimiento del pago sea inferior a un día desde la fecha actual. Luego puede usar la acción **Enviar un correo electrónico** para enviar un recordatorio amistoso por correo electrónico a aquellos que no hayan pagado la totalidad cuando la fecha de vencimiento sea inferior a un día.
@@ -216,4 +215,4 @@ Esta es la implementación de la expresión **and** que identifica a todas las p
 
 ## <a name="use-functions-in-expressions"></a>Uso de funciones en expresiones
 
-Algunas expresiones obtienen sus valores de acciones en tiempo de ejecución que es posible que aún no existan cuando un flujo empiece a ejecutarse. Para hacer referencia a estos valores o trabajar con ellos en expresiones, puede usar las funciones que proporciona el lenguaje de definición de flujo de trabajo. Más información: [Referencia de funciones para el lenguaje de definición de flujo de trabajo en Power Automate](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
+Algunas expresiones obtienen sus valores de acciones en tiempo de ejecución que es posible que aún no existan cuando un flujo empiece a ejecutarse. Para hacer referencia a estos valores o trabajar con ellos en expresiones, puede usar las funciones que proporciona el lenguaje de definición de flujo de trabajo. Más información: [Referencia de funciones para el lenguaje de definición de flujo de trabajo en Power Automate](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)

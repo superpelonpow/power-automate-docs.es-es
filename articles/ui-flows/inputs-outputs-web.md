@@ -25,7 +25,7 @@ ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80525011"
+ms.locfileid: "3298713"
 ---
 # <a name="use-inputs-and-outputs-in-web-ui-flows"></a>Uso de entradas y salidas en los flujos de la interfaz de usuario web
 
@@ -39,7 +39,7 @@ Cualquier variable que se use (que se lea) antes de la inicialización (que habi
 
 Puede usar variables a través de la interpolación de cadenas; por ejemplo, cambie el campo de destino del comando click a "id=\${elementId}". O cambie el campo del valor del comando type a "\${inputText}".
 
-El comando **set window size** y el comando **type** de las siguientes capturas de pantalla usan variables sin inicializar \${Width}, \${Height} y \${search}. Estas variables se convertirán en valores de entrada.
+El comando **establecer tamaño de ventana** y el comando **tipo** de las capturas de pantalla siguientes usan variables sin inicializar \${Width}, \${Height} y \${search}. Estas variables se convertirán en valores de entrada.
 
 ![Establecimiento del tipo y el tamaño de la ventana](../media/inputs-outputs-web/set-window-size.png "Establecimiento del tipo y el tamaño de la ventana")
 

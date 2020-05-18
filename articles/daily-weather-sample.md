@@ -16,11 +16,11 @@ ms.workload: na
 ms.date: 01/04/2020
 ms.author: deonhe
 ms.openlocfilehash: 8f7128104d3cb8aae361b6dd574822f503893e35
-ms.sourcegitcommit: e3543e32e4e8e8163bef0565e27b657eabbdc741
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868190"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297085"
 ---
 # <a name="daily-weather-report-sample"></a>Ejemplo de informe meteorológico diario
 
@@ -32,13 +32,13 @@ El ejemplo de **informe meteorológico diario** consiste en una tarjeta adaptabl
 
 | Nombre del token dinámico     | Texto de marcador de posición | Notas                                                                         |
 |------------------------|------------------|--------------------------------------------------------------------------------|
-| {acCityState}          | Ver plantilla     | Display text <br>  Se puede usar una variable para contener los valores de ciudad, estado o código postal.                                                                   |
-| {acDailySummary}       | Ver plantilla     | Display text                                                                   |
-| {acCurrentDateTime}    | Ver plantilla     | Display text                                                                   |
-| {acUrlConditionsImage} | Ver plantilla     | Display text  <br> Consulte los comentarios de la plantilla Debe reemplazarse por una dirección URL válida.                                                                 |
-| {acCurrentTemperature} | Ver plantilla     | Display text                                                                   |
-| {actempHi}             | Ver plantilla     | Display text                                                                   |
-| {actempLow}            | Ver plantilla     | Display text                                                                   |
+| {acCityState}          | Ver plantilla     | Texto para mostrar <br>  Se puede usar una variable para contener los valores de ciudad, estado o código postal.                                                                   |
+| {acDailySummary}       | Ver plantilla     | Texto para mostrar                                                                   |
+| {acCurrentDateTime}    | Ver plantilla     | Texto para mostrar                                                                   |
+| {acUrlConditionsImage} | Ver plantilla     | Texto para mostrar  <br> Consulte los comentarios de la plantilla Debe reemplazarse por una dirección URL válida.                                                                 |
+| {acCurrentTemperature} | Ver plantilla     | Texto para mostrar                                                                   |
+| {actempHi}             | Ver plantilla     | Texto para mostrar                                                                   |
+| {actempLow}            | Ver plantilla     | Texto para mostrar                                                                   |
 
 
 ``` json

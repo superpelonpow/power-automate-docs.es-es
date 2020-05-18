@@ -21,18 +21,18 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 9b0d2986e33aa65f9c5a0abc06d3beda116dbdc1
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192102"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298097"
 ---
-# <a name="create-a-flow-in-power-automate"></a>Creación de un flujo en Power Automate
+# <a name="create-a-flow-in-power-automate"></a>Crear un flujo en Power Automate
 
 
 > [!VIDEO https://www.youtube.com/embed/Gt3CMhLAQqE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
 
-Cree un flujo que realizará una o varias tareas automáticamente después de que un evento lo desencadene. Por ejemplo, cree un flujo que le envíe una notificación por correo electrónico cuando alguien envíe un tweet que contenga una palabra clave que especifique. En este ejemplo, el envío de un tweet es el evento y el envío de correo es la acción.
+Cree un flujo que realice automáticamente una o varias tareas después de que lo desencadene un evento. Por ejemplo, cree un flujo que le notifique por correo electrónico cuando alguien envíe un tweet que contenga una palabra clave que especifique. En este ejemplo, el envío de un tweet es el evento y el envío de correo es la acción.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -40,7 +40,7 @@ Cree un flujo que realizará una o varias tareas automáticamente después de qu
 * Una cuenta de Twitter
 * Credenciales de Office 365
 
-## <a name="specify-an-event-to-start-the-flow"></a>Especificación del evento que va a iniciar el flujo
+## <a name="specify-an-event-to-start-the-flow"></a>Especificar un evento para iniciar el flujo
 
 En primer lugar, será preciso que seleccione el evento, o *desencadenador*, que inicia el flujo.
 
@@ -54,7 +54,7 @@ En primer lugar, será preciso que seleccione el evento, o *desencadenador*, que
    >[!TIP]
    >Los conectores admiten varios tipos de autenticación. Por ejemplo, SQL Server admite Azure AD, autenticación de SQL Server, autenticación de Windows y cadena de conexión SQL. Los usuarios eligen qué tipo de autenticación desean usar al configurar un conector.
 
-1. Si todavía no ha conectado su cuenta de Twitter con Power Automate, seleccione **Iniciar sesión en Twitter** y, luego, escriba sus credenciales.
+1. Si todavía no ha conectado su cuenta de Twitter con Power Automate, seleccione **Iniciar sesión en Twitter** y, luego, proporcione sus credenciales.
 
 1. En el cuadro **Buscar texto**, escriba la palabra clave que desea buscar.
 
@@ -62,11 +62,11 @@ En primer lugar, será preciso que seleccione el evento, o *desencadenador*, que
 
 ## <a name="specify-an-action"></a>Especificación de una acción
 
-1. Seleccione **Nuevo paso** y, luego, **Agregar una acción**.
+1. Haga clic en **Nuevo paso** y después en **Agregar una acción**.
 
     ![Agregar acción](./media/get-started-logic-flow/add-action-icon.png)
 
-1. En el cuadro **Buscar todos los conectores y acciones**, escriba o pegue **enviar correo electrónico** y seleccione **Office 365 Outlook - Enviar un correo electrónico**.
+1. En el cuadro que indica **Buscar en todos los conectores y acciones**, escriba o pegue **enviar correo electrónico** y luego seleccione **Office 365 Outlook - Enviar correo electrónico**.
 
     ![Lista de acciones](./media/get-started-logic-flow/send-email.png)
 
@@ -112,7 +112,7 @@ En primer lugar, será preciso que seleccione el evento, o *desencadenador*, que
    * Para editar un flujo, seleccione el icono de lápiz correspondiente al flujo que quiere editar.
 
        ![Seleccionar flujo](./media/get-started-logic-flow/select-flow.png)
-   * Para eliminar un flujo, seleccione el icono **...** , seleccione **Eliminar**y, después, seleccione **Eliminar** en el cuadro de mensaje que aparece.
+   * Para eliminar un flujo, seleccione el icono **...**, seleccione **Eliminar**y, después, seleccione **Eliminar** en el cuadro de mensaje que aparece.
 
        ![Icono de eliminar](./media/get-started-logic-flow/delete-icon.png)
    * Para ver el historial de ejecuciones de un flujo, seleccione dicho flujo en la página **Mis flujos de** y vea el historial de la sección **HISTORIAL DE EJECUCIONES** de la página que se abre.

@@ -1,6 +1,6 @@
 ---
 title: Administración de puertas de enlace de datos locales | Microsoft Docs
-description: Vea e instale una puerta de enlace de datos local en Power Automate.
+description: Ver e instalar una puerta de enlace de datos local en Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,13 +21,13 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 33c2e0e6a3a35e23d0889cd19908a055cc7f5f5e
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193574"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297679"
 ---
-# <a name="manage-an-on-premises-data-gateway-in-power-automate"></a>Administración de una puerta de enlace de datos local en Power Automate
+# <a name="manage-an-on-premises-data-gateway-in-power-automate"></a>Administrar una puerta de enlace de datos local en Power Automate
 
 
 Instale y administre una puerta de enlace de datos local para integrar de forma segura varias aplicaciones que están en la nube con sus datos y aplicaciones locales a través de Power Automate.
@@ -44,7 +44,7 @@ Con una puerta de enlace, puede conectarse a datos locales a través de estas co
 * Oracle Database
 * PostgreSQL
 * SharePoint
-* SQL Server
+* SQL Server
 * Teradata (versión preliminar)
 
 > [!IMPORTANT]
@@ -52,18 +52,18 @@ Con una puerta de enlace, puede conectarse a datos locales a través de estas co
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* El nombre de usuario y la contraseña que se usaron para [registrarse](sign-up-sign-in.md) en Power Automate.
+* El nombre de usuario y la contraseña que usó para [registrarse](sign-up-sign-in.md) en Power Automate.
 * Los permisos administrativos de una puerta de enlace.
 
   Tiene estos permisos de manera predeterminada para cada puerta de enlace que instale. Además, un administrador de otra puerta de enlace puede conceder estos permisos para esa puerta de enlace.
-* Una licencia que admite puertas de enlace. Para más información, consulte la sección "Conectividad" de la [página de precios](https://flow.microsoft.com/pricing/).
+* Una licencia que admita puertas de enlace Para más información, consulte la sección "Conectividad" de la [página de precios](https://flow.microsoft.com/pricing/).
 
 > [!TIP]
 > Las puertas de enlace y las conexiones locales se pueden crear para [cualquier entorno](environments-overview-maker.md).
 
 ## <a name="install-a-gateway"></a>Instalación de una puerta de enlace
 
-Para instalar una puerta de enlace, siga los pasos descritos en [Instalación de una puerta de enlace de datos local](/data-integration/gateway/service-gateway-install). Instale la puerta de enlace en modo estándar, ya que la _puerta de enlace de datos local (modo personal)_ solo está disponible para Power BI.
+Para instalar una puerta de enlace, siga los pasos descritos en [Instalación de una puerta de enlace de datos local](/data-integration/gateway/service-gateway-install). Instale la puerta de enlace en modo estándar, ya que la _puerta de enlace de datos local (modo personal)_ solo está disponible para Power BI.
 
 ## <a name="view-your-gateways"></a>Visualización de las puertas de enlace
 
@@ -87,10 +87,10 @@ Siga estos pasos para distribuir el tráfico a través de las puertas de enlace:
 1. Seleccione **Datos** en la barra de navegación del lado izquierdo.
 1. Seleccione **Puertas de enlace**.
 1. Seleccione cualquiera de las puertas de enlace.
-1. Seleccione **Distribuya las solicitudes por todas las puertas de enlace activas de este clúster.** .
+1. Seleccione **Distribuya las solicitudes por todas las puertas de enlace activas de este clúster.**.
 1. Seleccione **Aplicar** para guardar los cambios.
 
-Para más información, consulte [Puertas de enlace](gateway-reference.md).
+Para más información, consulte [Información acerca de las puertas de enlace de datos locales de Microsoft Flow](gateway-reference.md).
 
 <!-- Image references -->
 [1]: ./media/manage-gateway/view-gateways.png

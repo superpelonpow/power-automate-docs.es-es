@@ -25,7 +25,7 @@ ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80525138"
+ms.locfileid: "3298735"
 ---
 # <a name="manage-ui-flows"></a>Administración de los flujos de la interfaz de usuario
 
@@ -33,7 +33,7 @@ Después de crear flujos de interfaz de usuario, puede que necesite ver, editar 
 
 ## <a name="list-of-ui-flows"></a>Lista de flujos de interfaz de usuario
 
-1. Inicie sesión en Power Automate.
+1. Iniciar sesión en Power Automate.
 1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario**.
 
    ![Ver todos los flujos de interfaz de usuario](../media/manage-ui-flows/view-all.png "Ver todos los flujos de interfaz de usuario")
@@ -49,7 +49,7 @@ Para cada uno de los flujos de interfaz de usuario, puede ver sus detalles si se
 
 Siga estos pasos para ver los detalles de un flujo de interfaz de usuario:
 
-1. Inicie sesión en Power Automate.
+1. Iniciar sesión en Power Automate.
 1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario**.
 1. Seleccione cualquiera de los flujos de interfaz de usuario.
 

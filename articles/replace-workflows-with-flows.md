@@ -1,5 +1,5 @@
 ---
-title: Reemplazo de flujos de trabajo clásicos de Common Data Service con Power Automate | Microsoft Docs
+title: Reemplazar flujos de trabajo Common Data Service clásicos con Power Automate | Microsoft Docs
 description: En este artículo se describen las funcionalidades de Power Automate y los patrones recomendados para usar un flujo en lugar de un flujo de trabajo clásico.
 author: MSFTMAN
 manager: KVIVEK
@@ -13,13 +13,13 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 6e3e6d1ca0a1700bbfaf6d8e8fb76cc888456c2c
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193755"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296623"
 ---
-# <a name="replace-classic-common-data-service-workflows-with-flows"></a>Reemplazo de flujos de trabajo clásicos de Common Data Service con flujos
+# <a name="replace-classic-common-data-service-workflows-with-flows"></a>Reemplazar flujos de trabajo de Common Data Service clásicos con flujos
 
 
 En este tema se comparan las funcionalidades de Power Automate con el flujo de trabajo clásico.
@@ -32,12 +32,12 @@ Cree flujos en lugar de flujos de trabajo clásicos de Common Data Service para 
 
 En esta tabla se resume una comparación entre las funcionalidades de Power Automate y las funcionalidades de los flujos de trabajo clásicos. 
 
-*Estaremos agregando continuamente nuevas funcionalidades a Power Automate de modo que estén al mismo nivel e incluso mejor que las funcionalidades del flujo de trabajo clásico. A medida que aumenten las funcionalidades de Power Automate, actualizaremos la información de esta tabla, por lo que no olvide volver a consultarla con frecuencia. Para información sobre las próximas funcionalidades de los flujos que lo ayudarán a reemplazar el flujo de trabajo clásico por un flujo, consulte las [características nuevas y previstas para Power Automate](https://docs.microsoft.com/business-applications-release-notes/April19/microsoft-flow/planned-features) en las notas de la versión de abril de 2019*.
+*Estamos agregando continuamente nuevas capacidades a Power Automate para que esté a la par e incluso mejor que las capacidades clásicas de flujo de trabajo. Actualizaremos la información en esta tabla a medida que Power Automate gana capacidades; ¡visítela con frecuencia! Para obtener información sobre las próximas capacidades de flujo que lo ayudarán a reemplazar el flujo de trabajo clásico con flujo, ¡consulte [Qué hay de nuevo y planeado para Power Automate](https://docs.microsoft.com/business-applications-release-notes/April19/microsoft-flow/planned-features) en las notas de la versión de abril de 2019!*
 
 <table>
 <tr>
-<th colspan="2">Funcionalidad</th>
-<th>Power Automate</th>
+<th colspan="2">En su funcionalidad.</th>
+<th>Power Automate</th>
 <th>Flujo de trabajo clásico</th>
 </tr>
 <tr>
@@ -177,7 +177,7 @@ En esta tabla se resume una comparación entre las funcionalidades de Power Auto
             <tr>
                 <td>
                     
-   Ejecución de acciones de Common Data Service (incluidas personalizadas)
+   Ejecutar acciones Common Data Service (incluidas las personalizadas)
                     
                 </td>
                 <td>
@@ -470,15 +470,15 @@ Para permitir que el vendedor desencadene la solicitud de aprobación a petició
 
 1. Inicie sesión en [Power Automate](https://flow.microsoft.com/) y cree un flujo en una solución. Más información: [Creación de un flujo en una solución](create-flow-solution.md). 
 
-1. En la lista de desencadenadores, seleccione **Common Data Service (Current Environment) – When a record is selected** (Common Data Service (entorno actual): cuando se selecciona un registro) y seleccione **Quotes** (Cotizaciones) como la entidad. Este desencadenador permite que un flujo se ejecute a petición en un registro o lista de registros.
+1. En la lista de desencadenadores, seleccione **Common Data Service (entorno actual): cuando se selecciona un registro** y seleccione **Ofertas** como la entidad. Este desencadenador permite que un flujo se ejecute a petición en un registro o lista de registros.
 
-1. Con el desencadenador configurado, agregue acciones para que se ejecuten en el flujo. Esto le proporcionará al aprobador el resumen detallado que necesita para identificar los valores y elementos cotizados. Para empezar, agregue la acción **Common Data Service (Current Environment) – List records** (Common Data Service (entorno actual): enumerar registros). Como queremos obtener elementos de línea individuales de una cotización, establezca la entidad en **Quote lines** (Líneas de cotización). Para garantizar que solo se muestren los elementos de la línea de cotización que pertenecen a la cotización para la que se desencadenó el flujo, especificaremos un criterio de filtro de estilo OData. En el campo **Filter Query** (Consulta de filtro), escriba *\_quoteid_value eq* y, luego, seleccione *Quote* (Cotización) en la lista de valores dinámicos que aparece.
+1. Con el desencadenador configurado, agregue acciones para que se ejecuten en el flujo. Esto le proporcionará al aprobador el resumen detallado que necesita para identificar los valores y elementos cotizados. Para empezar, agregue la acción **Common Data Service (entorno actual): enumerar registros**. Como queremos obtener elementos de línea individuales de una cotización, establezca la entidad en **Quote lines** (Líneas de cotización). Para garantizar que solo se muestren los elementos de la línea de cotización que pertenecen a la cotización para la que se desencadenó el flujo, especificaremos un criterio de filtro de estilo OData. En el campo **Filter Query** (Consulta de filtro), escriba *\_quoteid_value eq* y, luego, seleccione *Quote* (Cotización) en la lista de valores dinámicos que aparece.
 
     ![Definición del flujo](media/define-flow-1.png "Definición del flujo")
 
 1. Como queremos resumir los elementos de línea de la cotización para la aprobación, agregue la acción **Initialize variable** (Inicializar la variable). Establezca el campo **Name** (Nombre) en *Quote line summary* (Resumen de línea de cotización) y el campo **Type** (Tipo) en String (Cadena) (del menú desplegable) y deje en blanco el campo **Value** (Valor).
 
-1. Agregue la acción **Append to string variable** (Anexar a la variable de cadena) y seleccione la variable *Quote line summary* (Resumen de línea de cotización) que creamos anteriormente. En el campo **Value** (Valor), seleccione *Quantity, Name, Price per unit, Extended amount and Manual amount* (Cantidad, Nombre, Precio por unidad, Importe extendido e Importe manual) en la lista de valores dinámicos. El diseñador de Power Automate identifica que estos valores provienen de una lista de elementos de línea de la cotización y agrega esta acción en un bucle **Apply to each** (Aplicar a cada uno) para garantizar que la información de cada elemento de línea se agregue a este resumen.
+1. Agregue la acción **Append to string variable** (Anexar a la variable de cadena) y seleccione la variable *Quote line summary* (Resumen de línea de cotización) que creamos anteriormente. En el campo **Value** (Valor), seleccione *Quantity, Name, Price per unit, Extended amount and Manual amount* (Cantidad, Nombre, Precio por unidad, Importe extendido e Importe manual) en la lista de valores dinámicos. El diseñador de Power Automate identifica que estos valores provienen de una lista de elementos de línea de la cotización y agrega esta acción en un bucle **Apply to each (Aplicar a cada uno)** para garantizar que la información de cada elemento de línea se agregue a este resumen.
 
     ![Definición del flujo](media/define-flow-2.png "Definición del flujo")
 
@@ -513,7 +513,7 @@ Cuando este flujo se ejecuta en la cotización, resume los elementos de línea d
 
     -   En escenarios en los que un conector necesario no está disponible de manera inmediata, puede crear fácilmente su propio conector personalizado. [Aprenda a crear conectores personalizados](https://docs.microsoft.com/connectors/custom-connectors/define-blank).
 
-    -   Por último, si hay escenarios en los que no puede desencadenar el flujo mediante el conector de Common Data Service, uno de los conectores integrados, o crear un conector personalizado, aproveche el desencadenador [Cuando se recibe una solicitud HTTP](https://docs.microsoft.com/azure/connectors/connectors-native-reqres#use-the-http-request-trigger) para invocar el flujo.
+    -   Por último, si hay escenarios en los que no puede desencadenar el flujo mediante el conector de Common Data Service, uno de los conectores integrados, o crear un conector personalizado, aproveche el desencadenador [Cuando se recibe una solicitud HTTP](https://docs.microsoft.com/azure/connectors/connectors-native-reqres#use-the-http-request-trigger) para invocar el flujo
 
 -   **Flujos de trabajo que se ejecutan de manera recursiva**  
     
@@ -538,13 +538,13 @@ Cuando este flujo se ejecuta en la cotización, resume los elementos de línea d
 ## <a name="faqs"></a>Preguntas más frecuentes
 
 
--   **Tengo una licencia de Dynamics 365. ¿Puedo usar Power Automate?**
+-   **Tengo una licencia de Dynamics 365. ¿Puedo usar Power Automate?**
 
     Cada usuario de Dynamics 365 tiene derecho a usar Power Automate. Revise la información de la licencia: <https://flow.microsoft.com/pricing/>
 
 -   **¿Con qué frecuencia se pueden desencadenar los flujos?**
 
-    -   Los flujos de Dynamics 365 (o Common Data Service) se ejecutan casi en tiempo real después del desencadenador porque usan webhooks (no se requiere ningún sondeo).
+    -   Los flujos de Dynamics 365 (o Common Data Service) se ejecutan casi en tiempo real después del desencadenador porque usan webhooks (no se requiere ningún sondeo)
 
     -   Al igual que con el acceso directo a la API, hay limitaciones o límites en el sistema, lo que está totalmente documentado aquí: <https://docs.microsoft.com/flow/limits-and-config>
 
@@ -560,7 +560,7 @@ Cuando este flujo se ejecuta en la cotización, resume los elementos de línea d
     
     Al igual que los flujos de trabajo clásicos, puede crear flujos en soluciones para admitir todo el ciclo de vida de la aplicación para los procesos.
 
--   **¿Se hace un seguimiento de las dependencias de Power Automate en Common Data Service?**  
+-   ¿**Son las dependencias de Power Automate rastreadas en Common Data Service?**  
     
     De manera similar a otros componentes de una solución, se realiza un seguimiento de todas las dependencias de los flujos de soluciones en Common Data Service.
 
@@ -570,7 +570,7 @@ Cuando este flujo se ejecuta en la cotización, resume los elementos de línea d
 
 -   **Con Power Automate, ¿mis datos permanecerán dentro de la región (es decir, en la misma región que mi entorno de Common Data Service o Dynamics 365)?**  
     
-    Sí, Power Automate siempre usa la misma región que Common Data Service.
+    Si, Power Automate siempre usa la misma región que Common Data Service.
 
 -   **¿Es necesario modificar el proxy o el firewall?**  
     

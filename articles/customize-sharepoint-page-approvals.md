@@ -1,6 +1,6 @@
 ---
-title: Administración de aprobaciones de páginas de SharePoint con Power Automate | Microsoft Docs
-description: Aprenda a administrar aprobaciones de páginas de SharePoint con Power Automate.
+title: Administrar las aprobaciones de la página de SharePoint con Power Automate | Microsoft Docs
+description: Aprenda a administrar las aprobaciones de la página de SharePoint con Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,16 +20,16 @@ ms.sourcegitcommit: c43c98cc777780d42d15e287233c040771a6e147
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/07/2020
-ms.locfileid: "80801512"
+ms.locfileid: "3298999"
 ---
-# <a name="manage-sharepoint-page-approvals-with-power-automate"></a>Administración de aprobaciones de páginas de SharePoint con Power Automate
+# <a name="manage-sharepoint-page-approvals-with-power-automate"></a>Administrar las aprobaciones de la página de SharePoint con Power Automate
 
 
 Los administradores de sitios de SharePoint pueden usar Power Automate para exigir la aprobación de páginas de sitio nuevas o actualizadas antes de publicarse.
 
 En este artículo, aprenderá a configurar el sitio de SharePoint para que use un flujo que exija que se aprueben los cambios en el sitio antes de que se apliquen.
 
-## <a name="configure-sharepoint-for-page-approvals"></a>Configuración de SharePoint para aprobaciones de páginas
+## <a name="configure-sharepoint-for-page-approvals"></a>Configurar SharePoint para las aprobaciones de páginas
 
 ### <a name="prerequisites"></a>Requisitos previos 
 
@@ -54,7 +54,7 @@ Debe ser administrador del sitio de SharePoint para realizar las actividades de 
     
     ![Seleccionar flujo de aprobación de páginas](media/customize-sharepoint-page-approvals/flow-name-approvers-create.png)
 
-Eso es todo. Ahora, cada vez que se agrega o se modifica una página, se envía una solicitud de aprobación a los **Aprobadores** que se muestran en el flujo.
+¡Eso es! Ahora, cada vez que se agrega o se modifica una página, se envía una solicitud de aprobación a los **Aprobadores** que se muestran en el flujo.
 
 El flujo de aprobación de páginas es igual que cualquier otro flujo, por lo que se muestra en la pestaña **Mis flujos**.
 

@@ -1,6 +1,6 @@
 ---
-title: Integración de Power Automate con sitios web y aplicaciones | Microsoft Docs
-description: Inserte las experiencias de Power Automate en su sitio web o aplicación.
+title: Integre Power Automate con sitios web y aplicaciones | Microsoft Docs
+description: Insertar de las experiencia de Power Automate en un sitio web o una aplicación.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,25 +13,25 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/05/2020
+ms.date: 01/31/2019
 ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 9ab8c2c7c0b830aa908a7445757418d4ff073921
-ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
+ms.openlocfilehash: 6ca077b6a7b0d04f184ddf8a716dd677713e0667
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82852734"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297701"
 ---
-# <a name="integrate-power-automate-with-websites-and-apps"></a>Integración de Power Automate con sitios web y aplicaciones
+# <a name="integrate-power-automate-with-websites-and-apps"></a>Integrar Power Automate con sitios web y aplicaciones
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 Inserte Power Automate en la aplicación o sitio web mediante *widgets de flujo* para proporcionar a los usuarios una manera sencilla de automatizar sus tareas profesionales o personales.
 
-Los widgets de flujo son iframes ubicados en un documento de host. Este documento apunta a una página del diseñador de Power Automate. Estos widgets integran funcionalidad específica de Power Automate en la aplicación de terceros.
+Los widgets de flujo son iframes ubicados en un documento de host. Este documento señala a una página del diseñador de Power Automate. Estos widgets integran la funcionalidad específica de Power Automate en la aplicación de terceros.
 
 Los widgets pueden ser sencillos. Por ejemplo, un widget que representa una lista de plantillas sin comunicación alguna entre el host y el iframe. Los widgets también pueden ser complejos. Por ejemplo, un widget que aprovisiona un flujo a partir de una plantilla y, después, lo desencadena a través de una comunicación bidireccional entre el host y el widget.
 
@@ -53,11 +53,11 @@ Para empezar, agregue este código para mostrar las plantillas de Power Automate
 
 | Parámetro | Descripción |
 | --- | --- |
-| locale |El código de región e idioma de cuatro letras para la vista de la plantilla. Por ejemplo, `en-us` representa el inglés de Estados Unidos, mientras que `de-de` representa el alemán. |
-| search term |El término de búsqueda para las plantillas que desea mostrar en la vista. Por ejemplo, busque `SharePoint` para mostrar las plantillas de SharePoint. |
+| configuración regional |El código de región e idioma de cuatro letras para la vista de la plantilla. Por ejemplo, `en-us` representa el inglés de Estados Unidos, mientras que `de-de` representa el alemán. |
+| search term |El término de búsqueda para las plantillas que desea mostrar en la vista. Por ejemplo, busque `wunderlist` para mostrar las plantillas de Wunderlist. |
 | number of templates |El número de plantillas que desea mostrar en la vista. |
 | destination |La página que se abre cuando los usuarios seleccionan la plantilla. Escriba `details` para mostrar los detalles de la plantilla, o bien `new` para abrir el diseñador de Power Automate. |
-| category |Filtra por la categoría de plantilla determinada. | 
+| categoría |Filtra por la categoría de plantilla determinada. | 
 | parameters.{name} |Contexto adicional que se pasa en el flujo. |
 
 
@@ -65,22 +65,23 @@ Si el parámetro de destino es `new`, se abre el diseñador de Power Automate cu
 
 ### <a name="passing-additional-parameters-to-the-flow-template"></a>Paso de parámetros adicionales a la plantilla de flujo
 
-Si el usuario está en un contexto determinado en el sitio web o la aplicación, es posible que quiera pasar ese contexto al flujo. Por ejemplo, un usuario puede abrir una plantilla para *Cuando se crea un elemento* mientras ve una lista concreta en SharePoint. Siga estos pasos para pasar el identificador de la lista como *parámetro* al flujo:
+Si el usuario está en un contexto determinado en el sitio web o la aplicación, es posible que quiera pasar ese contexto al flujo. Por ejemplo, un usuario puede abrir una plantilla para *Notify me when an item is added to a list* (Notificarme cuando se agrega un elemento a una lista) mientras ve una lista concreta en Wunderlist. Siga estos pasos para pasar el identificador de la lista como *parámetro* al flujo:
 
 1. Defina el parámetro de la plantilla de flujo antes de publicarlo. Así es un parámetro, `@{parameters('parameter_name')}`.
 1. Pase el parámetro en la cadena de consulta del iframe src. Por ejemplo, agregue `&parameters.listName={the name of the list}` si tiene un parámetro denominado **listName**.
 
 ### <a name="full-sample"></a>Ejemplo completo
 
-Para mostrar las cuatro plantillas principales de SharePoint en alemán e iniciar el usuario con **myCoolList**, use este código:
+Para mostrar las cuatro plantillas principales de Wunderlist en alemán e iniciar el usuario con **myCoolList**, use este código:
 
 ```html
-<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=sharepoint%20&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
+<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist
+&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
 ```
 
 ## <a name="use-the-authenticated-flow-widgets"></a>Uso de widgets de flujo autenticados
 
-En la tabla siguiente se muestra la lista de widgets de Power Automate que admiten la experiencia completa en el widget mediante el token de acceso de autenticación de usuario. Tendrá que usar el kit de desarrollo de software de JavaScript (SDK de JS) de Power Automate para insertar los widgets y proporcionar el token de acceso de usuario necesario.
+En la tabla siguiente se muestra la lista de widgets de Power Automate que admiten la experiencia completa desde el widget mediante el token de acceso de autenticación de usuario. Tendrá que usar el kit de desarrollo de software de Javascript (SDK de JS) de Power Automate para insertar los widgets y proporcionar el token de acceso de usuario requerido.
 
 | Tipo de widget    | Característica admitida                                                                                                                  | 
 |----------------|------------------------------------------------------------------------------------------------------------------------------------| 
@@ -88,16 +89,16 @@ En la tabla siguiente se muestra la lista de widgets de Power Automate que admit
 | flowCreation   | Crea un flujo a partir de un identificador de plantilla proporcionado por la aplicación host.                                                                | 
 | runtime        | Desencadena un flujo manual o de desencadenador híbrido que proporciona la aplicación host.                                                        | 
 | approvalCenter | Inserta las solicitudes de aprobación y las aprobaciones enviadas.                                                                                        | 
-| templates      | Muestra una lista de plantillas. El usuario elige una para crear un flujo.                                                                         | 
+| plantillas      | Muestra una lista de plantillas. El usuario elige una para crear un flujo.                                                                         | 
 
-Use el SDK de Flow autenticado para permitir que los usuarios creen y administren flujos directamente desde el sitio web o la aplicación (en lugar de ir hasta Power Automate). Para usar el SDK autenticado, es preciso que el usuario inicie sesión con su cuenta de Microsoft o Azure Active Directory.
+Use el SDK de Flow autenticado para permitir a los usuarios crear y administrar flujos directamente desde el sitio web o la aplicación (en lugar de navegar hasta Power Automate). Para usar el SDK autenticado, es preciso que el usuario inicie sesión con su cuenta de Microsoft o Azure Active Directory.
 
 > [!NOTE]
-> No hay forma alguna de ocultar la personalización de marca de Power Automate al usar widgets.
+> No hay forma alguna de ocultar la personalización de marca de Power Automate al usar los widgets.
 
 ## <a name="widget-architecture"></a>Arquitectura de widget
 
-Los widgets de Power Automate funcionan mediante la inserción de un iframe que hace referencia a la mencionada aplicación en una aplicación host. El host proporciona el token de acceso que necesita el widget de Power Automate. El SDK de JS de Power Automate permite a la aplicación host inicializar y administrar el ciclo de vida del widget.
+Los widgets de Power Automate funcionan mediante la inserción de un iframe que hace referencia a Power Automate en una aplicación host. El host proporciona el token de acceso que requiere el widget de Power Automate. El SDK de JS de Power Automate permite a la aplicación host inicializar y administrar el ciclo de vida del widget.
 
 ![Arquitectura de widget](../media/embed-flow-dev/Architecture.png)
 
@@ -124,17 +125,17 @@ var sdk = new MsFlowSdk({
 
 | Nombre     | Requerido/Opcional | Descripción                                                    | 
 |----------|-------------------|----------------------------------------------------------------| 
-| `hostName` | Opcional          | Nombre de host de Power Automate, por ejemplo, https://flow.microsoft.com        | 
-| `locale`   | Opcional          | Configuración regional del cliente para el widget (si no se especifica, el valor predeterminado es `en-Us`). | 
+| `hostName` | Opcionales          | Nombre de host de Power Automate, por ejemplo https://flow.microsoft.com        | 
+| `locale`   | Opcionales          | Configuración regional del cliente para el widget (si no se especifica, el valor predeterminado es `en-Us`). | 
 
 
-Una vez creada la instancia del SDK de JS, se puede inicializar e insertar un widget de Power Automate en un elemento principal de la aplicación host. Para ello, agregue una etiqueta div de HTML:
+Una vez creada la instancia del SDK de JS, se puede inicializar e insertar un widget de Power Automate en un elemento primario de la aplicación host. Para ello, agregue una etiqueta div de HTML:
 
 ```html
 <div id="flowDiv" class="flowContainer"></div>
 ```
 
-A continuación, inicialice el widget de Power Automate con el `renderWidget()` del SDK de JS. Asegúrese de proporcionar el tipo de widget y los valores correspondientes.
+A continuación, inicialice el widget de Power Automate con el método `renderWidget()` del SDK de JS. Asegúrese de proporcionar el tipo de widget y los valores correspondientes.
 
 ```javascript
 var widget = sdk.renderWidget('<widgettype>', {
@@ -165,15 +166,15 @@ Estos son los parámetros para `renderWidget()`:
 
 | Parámetro        | Requerido/Opcional | Descripción                                                                                 | 
 |------------------|-------------------|---------------------------------------------------------------------------------------------| 
-| `container`        | Requerido          | Identificador de un elemento DIV en la página de host donde se insertará el widget.                   | 
-| `environmentId`    | Opcional          | Los widgets necesitan un identificador de entorno. Si no se proporciona un identificador, se usa un entorno predeterminado. | 
-| `flowsSettings`    | Opcional          | Objeto de configuración de Power Automate                                                                        | 
-| `templateSettings` | Opcional          | Objeto de configuración de plantilla                                                                    | 
-| `approvalSettings` | Opcional          | Objeto de configuración de aprobación                                                                    | 
+| `container`        | Obligatorios          | Identificador de un elemento DIV en la página de host donde se insertará el widget.                   | 
+| `environmentId`    | Opcionales          | Los widgets necesitan un identificador de entorno. Si no proporciona una identificación, se utiliza un entorno predeterminado. | 
+| `flowsSettings`    | Opcionales          | Objeto de configuración de Power Automate                                                                        | 
+| `templateSettings` | Opcionales          | Objeto de configuración de plantilla                                                                    | 
+| `approvalSettings` | Opcionales          | Objeto de configuración de aprobación                                                                    | 
 
 ### <a name="access-tokens"></a>Tokens de acceso
 
-Después de que se ejecuta el método `renderWidget()` del SDK de JS, este inicializa un iframe que apunta a la dirección URL del widget de Power Automate. Esta dirección URL contiene toda la configuración en los parámetros de cadena de consulta. La aplicación host debe obtener un token de acceso de Power Automate para el usuario (token JWT de Azure Active Directory con audiencia https://service.flow.microsoft.com) antes de inicializar el widget. El widget genera un evento `GET_ACCESS_TOKEN` para solicitar un token de acceso al host. El host debe controlar el evento y pasar el token al widget:
+Después de que se ejecute el método `renderWidget()` del SDK de JS, el SDK de JS inicializa un iframe que apunta a la dirección URL del widget de Power Automate. Esta dirección URL contiene toda la configuración en los parámetros de cadena de consulta. La aplicación host tiene que obtener un token de acceso de Power Automate para el usuario (token JWT de Azure Active Directory con audiencia https://service.flow.microsoft.com) antes de inicializar el widget. El widget genera un evento `GET_ACCESS_TOKEN` para solicitar un token de acceso al host. El host debe controlar el evento y pasar el token al widget:
 
 ```javascript
 widget.listen("GET_ACCESS_TOKEN", function(requestParam, widgetDoneCallback) {
@@ -212,9 +213,9 @@ flowsSettings?: {
 
 | Parámetro | Requerido/Opcional | Descripción | 
 |-----------|-------------------|-------------| 
-| `createFromBlankTemplateId` | Requerido | Se usa el GUID de la plantilla cuando el usuario hace clic en el botón **Crear desde cero** en el widget de Flow. | 
-| `flowsFilter` | Opcional | El widget de Power Automate aplica el filtro proporcionado al enumerar los flujos. Por ejemplo, se muestran los flujos que hacen referencia a un sitio de SharePoint concreto. <br /> ```flowFilter: "operations/any(operation: operation/sharepoint.site eq 'https://microsoft.sharepoint.com/teams/ProcessSimple' )"   ``` |                 
-| `tab` | Opcional | De forma predeterminada, la pestaña activa se muestra en el widget de Power Automate. <br /> Por ejemplo, <br /> ```tab:'sharedFlows' ``` muestra la pestaña Equipo<br /> y ``` tab:'myFlows' ``` muestra la pestaña Mis flujos. |   
+| `createFromBlankTemplateId` | Obligatorios | Se usa el GUID de la plantilla cuando el usuario hace clic en el botón **Crear desde cero** en el widget de Flow. | 
+| `flowsFilter` | Opcionales | El widget de Power Automate aplica el filtro proporcionado al enumerar los flujos. Por ejemplo, se muestran los flujos que hacen referencia a un sitio de SharePoint concreto. <br /> ```flowFilter: "operations/any(operation: operation/sharepoint.site eq 'https://microsoft.sharepoint.com/teams/ProcessSimple' )"   ``` |                 
+| `tab` | Opcionales | Aparece de forma predeterminada la pestaña activa predeterminada que se va a mostrar en el widget de Power Automate. <br /> Por ejemplo, <br /> ```tab:'sharedFlows' ``` muestra la pestaña Equipo<br /> y ``` tab:'myFlows' ``` muestra la pestaña Mis flujos. |   
 
 ### <a name="templatessettings"></a>TemplatesSettings 
 
@@ -234,11 +235,11 @@ templatesSettings?: {
 
 | Parámetro |Requerido/Opcional | Descripción                                                                        
 |-----------|-------------------|-----------------| 
-|`defaultParams` | Opcional          | Parámetros de tiempo de diseño que se usan al crear un flujo a partir de una plantilla, por ejemplo: <br /> ``` defaultParams: {'parameters.sharepoint.site': 'https://microsoft.sharepoint.com/teams/ProcessSimple', 'parameters.sharepoint.list': 'b3a5baa8-fe94-44ca-a6f0-270d9f821668'   } ```| 
-| `destination` | Opcional          | Los valores válidos son "new" o "details". Cuando se establece en "details", se muestra una página de detalles al crear un flujo a partir de una plantilla.     |
-| `pageSize` | Opcional          | El número de plantillas que se van a mostrar. El tamaño predeterminado es 6. | 
-| `searchTerm` | Opcional          | Se muestran plantillas que coinciden con el término de búsqueda proporcionado.| 
-| `templateCategory` | Opcional          | Se muestran las plantillas de una categoría específica.| 
+|`defaultParams` | Opcionales          | Parámetros de tiempo de diseño que se usan al crear un flujo a partir de una plantilla, por ejemplo: <br /> ``` defaultParams: {'parameters.sharepoint.site': 'https://microsoft.sharepoint.com/teams/ProcessSimple', 'parameters.sharepoint.list': 'b3a5baa8-fe94-44ca-a6f0-270d9f821668'   } ```| 
+| `destination` | Opcionales          | Los valores válidos son "new" o "details". Cuando se establece en "details", se muestra una página de detalles al crear un flujo a partir de una plantilla.     |
+| `pageSize` | Opcionales          | El número de plantillas que se van a mostrar. El tamaño predeterminado es 6. | 
+| `searchTerm` | Opcionales          | Se muestran plantillas que coinciden con el término de búsqueda proporcionado.| 
+| `templateCategory` | Opcionales          | Se muestran las plantillas de una categoría específica.| 
  
 ### <a name="approvalcentersettings"></a>ApprovalCenterSettings
 
@@ -255,12 +256,12 @@ Se aplica a widgets ApprovalCenter.
  ```
 | Parámetro | Requerido/Opcional | Descripción | 
 |------------|-------------------|--------------| 
-| `hideLink`| Opcional | Cuando se establece en `true`, el widget oculta los vínculos de las aprobaciones recibidas y enviadas. | 
-| `autoNavigateToDetails`| Opcional | Cuando se establece en `true`, el widget abre de forma automática los detalles de aprobación cuando solo existe una aprobación. | 
-| `approvalsFilter`| Opcional | El widget de aprobación aplicará el filtro de aprobación especificado al enumerar las aprobaciones, por ejemplo:    El widget de aprobación aplicará el filtro de aprobación especificado al enumerar las aprobaciones, por ejemplo: <br/> ``` approvalsFilter: 'properties/itemlink eq \'https://microsoft.sharepoint.com/teams/ProcessSimple/_layouts/15/listform.aspx?PageType=4&ListId=737e30a6-5bc4-4e9c-bcdc-d34c5c57d938&ID=3&ContentTypeID=0x010010B708969A9C16408696FD23801531C6\'' ```  <br/> <br/>``` approvalsFilter: 'properties/itemlinkencoded eq \'{Your base64 encoded item link url} \'' ```|
-| `tab`| Opcional | La pestaña activa predeterminada que se va a mostrar en el widget de Flow. <br/> Valores válidos: "receivedApprovals", "sentApprovals". | 
-| `showSimpleEmptyPage`| Opcional | Muestra una página vacía cuando no hay ninguna aprobación. | 
-| `hideInfoPaneCloseButton` | Opcional | Oculta el botón Cerrar del panel de información (o el host ya tiene un botón Cerrar). | 
+| `hideLink`| Opcionales | Cuando se establece en `true`, el widget oculta los vínculos de las aprobaciones recibidas y enviadas. | 
+| `autoNavigateToDetails`| Opcionales | Cuando se establece en `true`, el widget abre de forma automática los detalles de aprobación cuando solo existe una aprobación. | 
+| `approvalsFilter`| Opcionales | El widget de aprobación aplicará el filtro de aprobación especificado al enumerar las aprobaciones, por ejemplo: <br/> ``` approvalsFilter: 'properties/itemlink eq \'https://microsoft.sharepoint.com/teams/ProcessSimple/_layouts/15/listform.aspx?PageType=4&ListId=737e30a6-5bc4-4e9c-bcdc-d34c5c57d938&ID=3&ContentTypeID=0x010010B708969A9C16408696FD23801531C6\'' ```  <br/> <br/>``` approvalsFilter: 'properties/itemlinkencoded eq \'{Your base64 encoded item link url} \'' ```|
+| `tab`| Opcionales | La pestaña activa predeterminada que se va a mostrar en el widget de Flow. <br/> Valores válidos: "receivedApprovals", "sentApprovals". | 
+| `showSimpleEmptyPage`| Opcionales | Muestra una página vacía cuando no hay ninguna aprobación. | 
+| `hideInfoPaneCloseButton` | Opcionales | Oculta el botón Cerrar del panel de información (o el host ya tiene un botón Cerrar). | 
 
 <!-- why isn't this: hideInfoPaneCloseButton listed in the approvalCenterSettings? call since other optionals are there -->
 
@@ -380,7 +381,7 @@ widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });
 
 ## <a name="configuring-your-client-application"></a>Configuración de la aplicación cliente
 
-Tendrá que configurar la aplicación cliente con ámbitos del servicio Flow (permisos delegados). Si en la aplicación de Azure Active Directory (AAD) que se utiliza para la integración de widgets se usa un flujo de autorización de "concesión de código", será necesario preconfigurar la aplicación de AAD con permisos delegados que sean compatibles con Power Automate. Esto proporciona permisos delegados que permiten a la aplicación:
+Tendrá que configurar la aplicación cliente con ámbitos del servicio Flow (permisos delegados). Si en la aplicación de Azure Active Directory (AAD) que se utiliza para la integración de widgets se usa un flujo de autorización de "concesión de código", será necesario configurar la aplicación de AAD con permisos delegados que sean compatibles con Power Automate. Esto proporciona permisos delegados que permiten a la aplicación:
 
 -   Administrar aprobaciones
 -   Leer aprobaciones
@@ -390,17 +391,17 @@ Tendrá que configurar la aplicación cliente con ámbitos del servicio Flow (pe
 
 Siga estos pasos para seleccionar uno o varios permisos delegados:
 
-1.  Vaya a https://portal.azure.com. 
-2.  Haga clic en **Azure Active Directory**.
+1.  Ir a https://portal.azure.com 
+2.  Seleccione **Azure Active Directory**.
 3.  En **Administrar**, haga clic en **Registros de aplicaciones**.
 4.  Escriba la aplicación de terceros que se va a configurar para los ámbitos de servicio de Flow.
-5.  Haga clic en **Configuración**.
+5.  Seleccione **Configuración**.
       ![Arquitectura de widget](../media/embed-flow-dev/AAD-App-Settings.png)
 6. Haga clic en **Permisos necesarios** en **Acceso de API**/.
-7. Haga clic en **Agregar**.
-8. Haga clic en **Seleccionar una API**.
+7. Seleccione **Agregar**.
+8. Elija **Seleccionar una API**.
       ![Arquitectura de widget](../media/embed-flow-dev/AAD-App-Select-an-API.png)
-9. Busque el **servicio Power Automate** y selecciónelo. Nota: para poder ver el servicio Power Automate, el inquilino debe tener al menos un usuario de AAD que haya iniciado sesión en el portal de Flow (<https://flow.microsoft.com>)
+9. Busque el **servicio de Power Automate** y selecciónelo. Nota: Para poder ver el servicio de Power Automate, el inquilino debe tener al menos un usuario de AAD que haya iniciado sesión en el portal de Flow (<https://flow.microsoft.com>)
 10. Elija los ámbitos de Flow necesarios para la aplicación y después haga clic en **Guardar**.
       ![Arquitectura de widget](../media/embed-flow-dev/AAD-App-DelegatedPermissions.png)
 
@@ -412,12 +413,12 @@ Se proporciona un ejemplo de aplicación de página única (SPA) de JavaScript e
 
 ### <a name="registering-an-aad-app"></a>Registro de una aplicación de AAD
 
-1.  Inicie sesión en [Azure Portal](https://portal.azure.com/).
+1.  Inicie sesión en el [portal Azure](https://portal.azure.com/).
 2.  En el panel de navegación de la izquierda, haga clic en **Azure Active Directory** y, después, seleccione **Registros de la aplicación** (versión preliminar) \> Nuevo registro.
 3.  Cuando aparezca la página **Registrar una aplicación**, escriba un nombre para la aplicación.
 4.  En **Tipos de cuenta compatibles**, haga clic en **Cuentas en cualquier directorio organizativo**.
-5.  En la sección **URL de redireccionamiento**, seleccione la plataforma web y establezca el valor en la dirección URL de la aplicación en función del servidor web.  Establezca este valor en http://localhost:30662/ para ejecutar la aplicación de ejemplo.
-6.  Haga clic en **Registrar**.
+5.  En la sección **URL de redireccionamiento**, seleccione la plataforma web y establezca el valor en la dirección URL de la aplicación\' en función del servidor web.  Establezca este valor en http://localhost:30662/ para ejecutar la aplicación de ejemplo.
+6.  Seleccione **Registrar**.
 7.  En la página **Información general** de la aplicación, anote el valor de identificador (cliente) de la aplicación.
 8.  En el ejemplo es necesario habilitar el [flujo de concesión implícito](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). En el panel de navegación de la izquierda de la aplicación registrada, haga clic en **Autenticación**.
 9.  En **Configuración avanzada**, en **Concesión implícita**, active las casillas **Tokens de id.** y **Tokens de acceso**. Los tokens de id. y los de acceso son necesarios, ya que en esta aplicación se debe iniciar la sesión de los usuarios y llamar a la API de Flow.
@@ -482,7 +483,7 @@ Si no se muestra la configuración regional inicializada, Flow usará de forma p
 | lt-LT      | Lituano (Lituania)     | 
 | lv-lv      | Letón (Letonia)           | 
 | ms-my      | Malayo (Malasia)           | 
-| nb-no      | Noruego (Bokmål)         | 
+| nb-no      | Noruego (bokmål)         | 
 | nl-nl      | Neerlandés (Países Bajos)        | 
 | pl-pl      | Polaco (Polonia)            | 
 | pt-br      | Portugués (Brasil)        | 
@@ -491,8 +492,8 @@ Si no se muestra la configuración regional inicializada, Flow usará de forma p
 | ru-ru      | Ruso (Rusia)           | 
 | sk-sk      | Eslovaco (Eslovaquia)          | 
 | sl-si      | Esloveno (Eslovenia)       | 
-| sr-cyrl-rs | Serbio (cirílico, Serbia) | 
-| sr-latn-rs | Serbio (latino, Serbia)    | 
+| sr-cyrl-rs | Serbio cirílico (Serbia) | 
+| sr-latn-rs | Serbio latino (Serbia)    | 
 | sv-se      | Sueco (Suecia)           | 
 | th-th      | Tailandés (Tailandia)            | 
 | tr-tr      | Turco (Turquía)           | 

@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 6ec875a8a3bf682b7a3d9b44a0cc1d3624bf7a70
-ms.sourcegitcommit: 0761c15339ba3de6036f7fe5251aa8ad9173ee8b
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75902224"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298207"
 ---
 # <a name="lead-collection-sample"></a>Ejemplo de colección de clientes potenciales
 
@@ -37,8 +37,8 @@ El ejemplo de **colección de clientes potenciales** consiste en una tarjeta ada
 
 | Nombre del token dinámico    | Texto de marcador de posición       | Notas                                                                                       |
 |-----------------------|------------------------|--------------------------------------|
-| Título                 |                        | Display text                                                                                  |
-| acInstructions        |                        | Display text                                                                                  |
+| Tratamiento                 |                        | Texto para mostrar                                                                                  |
+| acInstructions        |                        | Texto para mostrar                                                                                  |
 | acLeadFName           | {firstName}            | **Salida** de respuesta                                                                           |
 | acLeadLName           | {lastName}             | **Salida** de respuesta                                                                           |
 | acLeadEmail           | {emailAddress}         | **Salida** de respuesta                                                                           |

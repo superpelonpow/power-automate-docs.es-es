@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 5a2fa063b5379999a5dcbe37a56271fccf435cae
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192379"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297217"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Presentación de los flujos de botones con entradas del usuario
 
@@ -37,10 +37,10 @@ Puede crear un flujo de botón en el sitio web de Power Automate o en la aplicac
 * Una cuenta en el sitio web de Power Automate.
 
 ## <a name="open-the-template"></a>Apertura de la plantilla
-1. Inicie sesión en el [sitio web de Power Automate](https://flow.microsoft.com), escriba **Visual Studio** en el cuadro de búsqueda y haga clic o pulse en el icono de búsqueda para buscar todas las plantillas que estén relacionadas con Visual Studio:
+1. Inicie sesión en el [sitio web de Power Automate](https://flow.microsoft.com), escriba **Visual Studio** en el cuadro de búsqueda y haga clic o pulse en el icono de búsqueda para buscar todas las plantillas que estén relacionadas con Visual Studio:
    
     ![](./media/button-flow-with-user-input-tokens/1.png)  
-2. Seleccione la plantilla **Open a Priority 2 Bug in Visual Studio**:
+2. Seleccione la plantilla **Abrir un error de prioridad 2 en Visual Studio**:
    
     ![](./media/button-flow-with-user-input-tokens/2.png)  
 3. Seleccione el botón **Usar esta plantilla**:
@@ -55,7 +55,7 @@ Puede crear un flujo de botón en el sitio web de Power Automate o en la aplicac
    
     ![](./media/button-flow-with-user-input-tokens/5.png)
 
-## <a name="customize-the-user-input"></a>Personalizar la entrada de usuario
+## <a name="customize-the-user-input"></a>Personalización de la entrada del usuario
 1. En la tarjeta del desencadenador, seleccione **Editar**:
    
     ![](./media/button-flow-with-user-input-tokens/6.png)  
@@ -87,7 +87,7 @@ Puede crear un flujo de botón en el sitio web de Power Automate o en la aplicac
    
     ![](./media/button-flow-with-user-input-tokens/12.png)
 
-## <a name="customize-the-push-notification"></a>Personalización de la notificación push
+## <a name="customize-the-push-notification"></a>Personalizar la notificación de inserción
 1. Pulse la barra de título de la tarjeta **Send a push notification** (Enviar notificación de inserción) para expandirla.
 2. En la lista de símbolos (tokens) de contenido dinámico, seleccione **Ver más**y, después, agregue el símbolo (token) **URL** en el campo de texto **Link** (Vínculo).
 3. En el campo de texto **Link label** (Etiqueta de vínculo), agregue el símbolo (token) **Id**:
@@ -98,7 +98,7 @@ Puede crear un flujo de botón en el sitio web de Power Automate o en la aplicac
 ## <a name="run-your-flow"></a>Ejecución del flujo
 En este tutorial, usará la aplicación móvil para Power Automate para ejecutar el flujo de botón que acaba de crear. Proporcionará toda la entrada de usuario necesaria para crear un error con un título, una descripción, los pasos para la reproducción y un nivel de gravedad.  
 
-1. En la aplicación móvil para Power Automate, pulse en la pestaña **Botones** y, después, pulse el botón **Create bug report with steps** (Crear informe de errores con pasos).
+1. En la aplicación móvil para Power Automate, pulse en la pestaña **Botones** y, después, pulse el botón **Crear informe de errores con pasos**.
    
     ![](./media/button-flow-with-user-input-tokens/runmt1.png)  
 2. Escriba el título del error que está notificando y pulse **Next** (Siguiente). Por ejemplo:

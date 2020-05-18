@@ -21,17 +21,17 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 8ccb933188902b89fa45b65cfec0d3d0e96de4c8
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195713"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297811"
 ---
-# <a name="create-a-flow-from-a-template-in-power-automate"></a>Creación de un flujo desde una plantilla en Power Automate
+# <a name="create-a-flow-from-a-template-in-power-automate"></a>Crear un flujo partir de una plantilla en Power Automate
 
 Cree un flujo desde una de las muchas plantillas integradas que pueden, por ejemplo, enviarle un mensaje Slack cuando un administrador le envíe un correo electrónico en Office 365.
 
-**Nota**: use la opción [Crear un flujo desde cero](get-started-logic-flow.md) si ya tiene un proceso en mente y no encuentra una plantilla para él.
+**Nota:** [Cree un flujo desde cero](get-started-logic-flow.md) si ya tiene un proceso en mente y no encuentra una plantilla para él.
 
 **Requisitos previos**
 
@@ -74,6 +74,6 @@ Ahora, cuando el administrador le envíe un correo electrónico, recibirá un me
 ## <a name="next-steps"></a>Pasos siguientes
 * [Visualización de flujos en acción](see-a-flow-run.md)
 * [Publicación de su propia plantilla](publish-a-template.md)
-* [Uso de una plantilla para Common Data Service](common-data-model-intro.md)
+* [Usar una plantilla para Common Data Service](common-data-model-intro.md)
 * [Cree flujos de equipo](create-team-flows.md) e invite a otros a colaborar en el diseño de flujos.
 

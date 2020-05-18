@@ -25,7 +25,7 @@ ms.sourcegitcommit: 855ee8b55aebe7b8e202006c39debfff02df1d30
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/03/2020
-ms.locfileid: "80627084"
+ms.locfileid: "3298933"
 ---
 # <a name="run-attended-and-unattended-ui-flows"></a>Ejecución de flujos de interfaz de usuario atendidos y desatendidos
 
@@ -46,7 +46,7 @@ Después de crear y probar un flujo de interfaz de usuario, puede ejecutarlo des
 
 En este ejemplo, usaremos un flujo automatizado para desencadenar un flujo de interfaz de usuario cuando llega un correo nuevo.
 
-1. Navegue a [Power Automate](https://flow.microsoft.com/).
+1. Navegue hasta [Power Automate](https://flow.microsoft.com/).
 1. Seleccione **Mis flujos** en la barra de navegación de la izquierda.
 1. Seleccione **Nuevo** y después **Automatizado: desde cero**.
 
@@ -68,13 +68,13 @@ En este ejemplo, usaremos un flujo automatizado para desencadenar un flujo de in
 
    Tendrá que hacerlo una vez por dispositivo:
 
-    - **Puerta de enlace**: Seleccione la puerta de enlace que creó anteriormente o use **Nueva puerta de enlace** para crear una.   
+    - **Puerta de enlace**: seleccione la puerta de enlace que creó anteriormente o use **Nueva puerta de enlace** para crear una.   
     - **Dominio y nombre de usuario**: muestra la cuenta profesional o educativa del dispositivo.
        >[!Important]
         >Asegúrese de que puede iniciar sesión en el dispositivo con estas credenciales.  
-    - **Contraseña**: proporcione la contraseña de la cuenta profesional o educativa.
+    - **Contraseña**: proporciona su contraseña de la cuenta profesional o educativa.
 
-      ![Configuración del dispositivo](../media/run-ui-flow/uiflow-connection-card.png "Configuración de la conexión")
+      ![Configuración del dispositivo](../media/run-ui-flow/uiflow-connection-card.png "Configuración de conexión")
 
       >[!TIP]
       >Si no ve la puerta de enlace, es posible que se encuentre en un entorno cuya región sea diferente de la de la puerta de enlace. Seleccione **Solucionar problemas de una puerta de enlace que falta** en la lista de nombres de puerta de enlace para obtener más información. También puede confirmar la puerta de enlace y que las regiones de Power Automate se [asignen correctamente](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
@@ -91,7 +91,7 @@ En este ejemplo, usaremos un flujo automatizado para desencadenar un flujo de in
 
 1. Seleccione **Guardar** para guardar el flujo automatizado.
  >[!TIP]
- >Antes de realizar las pruebas, confirme que la puerta de enlace está en línea. Vaya a **Datos** > **Puertas de enlace** en el panel de navegación, seleccione el nombre de la puerta de enlace, haga clic en **...** , vaya a **Detalles** y compruebe si el **estado de la puerta de enlace** es **en línea**. Si el **estado de la puerta de enlace** es **sin conexión**, compruebe que el dispositivo está encendido y conectado a Internet. 
+ >Antes de realizar las pruebas, confirme que la puerta de enlace está en línea. Vaya a **Datos** > **Puertas de enlace** en el panel de navegación, seleccione el nombre de la puerta de enlace, haga clic en **...**, vaya a **Detalles** y compruebe si el **estado de la puerta de enlace** es **en línea**. Si el **estado de la puerta de enlace** es **sin conexión**, compruebe que el dispositivo está encendido y conectado a Internet. 
 
 1. Para probar el flujo, envíe un corre electrónico para desencadenarlo. Verá que el flujo de interfaz de usuario reproduce los pasos que ha grabado. 
 
@@ -117,7 +117,7 @@ Cuando define entradas y salidas dentro de un flujo de interfaz de usuario, pued
 
 Cuando se crean flujos de interfaz de usuario, se ejecutan en modo **atendido** o **desatendido**. El modo desatendido es más adecuado para aplicaciones que no necesitan supervisión humana.
 
-Al ejecutarse en modo desatendido, la aplicación de flujos de interfaz de usuario inicia sesión automáticamente en los dispositivos de destino que ejecutan Windows 10, Windows Server 2016 o Windows Server 2019. Una vez completada la automatización, la aplicación de flujos de interfaz de usuario cierra la sesión en el dispositivo y notifica su actividad en Power Automate.
+Al ejecutarse en modo desatendido, la aplicación de flujos de interfaz de usuario inicia sesión automáticamente en los dispositivos de destino que ejecutan Windows 10, Windows Server 2016 o Windows Server 2019. Una vez completada la automatización, la aplicación de flujos de interfaz de usuario cierra la sesión en el dispositivo y notifica su actividad en Power Automate.
 
 Al ejecutarse en modo atendido, la aplicación de flujos de interfaz de usuario usará una sesión de usuario de Windows existente.
 
@@ -135,9 +135,9 @@ Los flujos de interfaz de usuario realizan lo siguiente:
 
 1. Los flujos de interfaz de usuario desatendidos se ejecutan en dispositivos con la pantalla bloqueada para que nadie pueda verlos mientras se ejecutan.
 
-1. Los dispositivos con Windows 10 no se pueden ejecutar en modo desatendido si hay alguna sesión de usuario de Windows activa (incluso si está bloqueada). Recibirá este error: *No se puede ejecutar el flujo de interfaz de usuario. Hay una sesión de usuario de Windows bloqueada o inactiva en el dispositivo de destino*.
+1. Los dispositivos con Windows 10 no se pueden ejecutar en modo desatendido si hay alguna sesión de usuario de Windows activa (incluso si está bloqueada). Recibirá este error: *No se puede ejecutar el flujo de la interfaz de usuario. Hay una sesión de usuario de Windows bloqueada o inactiva en el dispositivo de destino*.
 
-1. En Windows Server, si tiene una sesión de usuario de Windows bloqueada abierta con el mismo usuario con el que se supone que se ejecuta el flujo de la interfaz de usuario, recibirá el mismo error: *No se puede ejecutar el flujo de interfaz de usuario. Hay una sesión de usuario de Windows bloqueada o inactiva en el dispositivo de destino*.
+1. En Windows Server, si tiene una sesión de usuario de Windows bloqueada abierta con el mismo usuario con el que se debe ejecutar el flujo de la interfaz de usuario, recibirá el mismo error: *No se puede ejecutar el flujo de la interfaz de usuario. Hay una sesión de usuario de Windows bloqueada o inactiva en el dispositivo de destino*.
 
 ### <a name="attended-mode"></a>Modo atendido
 Para ejecutar un flujo de interfaz de usuario atendido, debe tener una sesión de usuario de Windows activa que coincida con el nombre del usuario configurado para la conexión. La sesión no debe estar bloqueada.
@@ -178,11 +178,11 @@ En la página de detalles de puertas de enlace, active Ejecutar en todas las pue
    
 >[!IMPORTANT]
 >Si usa cuentas de Windows locales, todos los equipos del clúster deben tener la misma cuenta local con la misma contraseña. Use estas credenciales al crear la conexión de flujo de interfaz de usuario.
->Si usa equipos unidos de Active Directory o Azure AD, compruebe que la cuenta de usuario que va a usar en la conexión de flujo de interfaz de usuario puede acceder a todos los equipos del clúster.
+>Si usa equipos unidos de Active Directory o Azure AD, compruebe que la cuenta de usuario que va a usar en la conexión de flujo de interfaz de usuario puede acceder a todos los equipos del clúster.
    
 ## <a name="best-practices-to-avoid-timeouts-and-distribute-load-across-machines"></a>Prácticas recomendadas para evitar tiempos de espera y distribuir la carga entre equipos
 
-Si planea ejecutar varios flujos de interfaz de usuario, hay una serie de estrategias que puede adoptar para distribuir la carga y asegurarse de que todos los flujos de interfaz de usuario se ejecutan correctamente sin sobrecargar los equipos de destino o provocar tiempos de espera porque se están ejecutando varios flujos de interfaz de usuario al mismo tiempo. Puede:
+Si planea ejecutar varios flujos de interfaz de usuario, hay una serie de estrategias que puede adoptar para distribuir la carga y asegurarse de que todos los flujos de interfaz de usuario se ejecutan correctamente sin sobrecargar los equipos de destino o provocar tiempos de espera porque se están ejecutando varios flujos de interfaz de usuario al mismo tiempo. Puede usar uno de los siguientes:
 
 1. Planifique los flujos de interfaz de usuario para que se ejecuten en distintos momentos del día y se reparta la carga a lo largo del tiempo. Esto funciona mejor si tiene un conjunto de máquinas único o limitado que puede ejecutar cargas de trabajo y puede controlar los desencadenadores (por ejemplo, flujos programados) que inician los flujos de interfaz de usuario.
 1. Cree clústeres de equipos que puedan ejecutar flujos de interfaz de usuario con configuraciones idénticas en paralelo. 
@@ -202,12 +202,12 @@ Si se produce un error al ejecutar un flujo de interfaz de usuario, corríjalo y
 
    1. En el menú Acción, seleccione el botón **Volver a enviar**.
 
-## <a name="troubleshoot-failures"></a>Solución de errores
+## <a name="troubleshoot-failures"></a>Solucionar problemas de fallos
 
 1. Si el flujo de interfaz de usuario desatendido produce el error **No se puede crear una nueva sesión**, siga estos pasos para resolver el problema:
 
     - En Windows 10, confirme que no tiene una sesión de usuario activa bloqueada o desbloqueada en el dispositivo de destino.
-    - En Windows Server 2016 o Windows Server 2019, confirme que no ha alcanzado el número máximo de sesiones de usuario activas configuradas para el dispositivo. Los flujos de interfaz de usuario no podrán ejecutarse si no pueden crear nuevas sesiones.
+    - En Windows Server 2016 o Windows Server 2019, confirme que no ha alcanzado el número máximo de sesiones de usuario activas configuradas para el dispositivo. Los flujos de interfaz de usuario no podrán ejecutarse si no pueden crear nuevas sesiones.
 
 1. Si está ejecutando flujos de interfaz de usuario en un sistema operativo con un idioma distinto del inglés y recibe el mensaje *502: Solicitud incorrecta*, confirme que ha seguido los [pasos para actualizar los flujos de interfaz de usuario de la versión preliminar](upgrade.md).
 

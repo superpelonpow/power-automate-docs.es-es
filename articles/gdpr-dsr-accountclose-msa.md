@@ -1,6 +1,6 @@
 ---
-title: Solicitudes de cierre de cuenta del interesado de acuerdo con el RGPD en Power Automate para cuentas Microsoft (MSA) | Microsoft Docs
-description: Obtenga información sobre cómo usar Power Automate para responder a solicitudes de cierre de cuenta del interesado de acuerdo con el RGPD para cuentas de Microsoft.
+title: Solicitudes de cierre de cuenta del titular de los datos de acuerdo con el RGPD en Power Automate para cuentas Microsoft (MSA) | Microsoft Docs
+description: Obtenga información sobre cómo usar Power Automate para responder a solicitudes de cierre de cuenta del titular de los datos de acuerdo con el RGPD para cuentas de Microsoft.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,13 +21,13 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 10f232e45a53cea30892f512b626246fec16deed
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195644"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297833"
 ---
-# <a name="responding-to-gdpr-data-subject-account-close-requests-for-power-automate"></a>Respuesta a solicitudes de cierre de cuenta del interesado de acuerdo con el RGPD para Power Automate
+# <a name="responding-to-gdpr-data-subject-account-close-requests-for-power-automate"></a>Responder a las solicitudes de cierre de cuenta del titular de los datos de acuerdo con el RGPD para Power Automate.
 
 
 El **derecho al olvido** de los datos personales es una protección clave en el RGPD. Este derecho incluye la eliminación de todos los datos personales excepto la información del registro de auditoría. Cuando un usuario decide cerrar su cuenta Microsoft (MSA), también se eliminan los datos subyacentes del usuario.
@@ -38,7 +38,7 @@ Estos recursos contienen datos personales que se eliminan de manera automática 
 |------|
 |Actividad de productos y servicios|
 |Historial de ejecución|
-|Flujos|
+|Flows|
 |Fuente de actividades|
 |Detalles del usuario|
 |Conexiones|
@@ -66,5 +66,5 @@ En estos pasos se describe cómo iniciar solicitudes de cierre de cuenta de auto
 
 ## <a name="learn-more"></a>Más información
 
-* Introducción a [Power Automate](getting-started.md).
-* Información sobre las [novedades](release-notes.md) de Power Automate.
+* Introducción a [Power Automate](getting-started.md)
+* [Novedades](release-notes.md) de Power Automate

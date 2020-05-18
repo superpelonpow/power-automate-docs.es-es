@@ -21,13 +21,13 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 34e17dbb8fdc1c3b3f6ba835b80c687504b9abd6
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195851"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298383"
 ---
-# <a name="wait-for-approval-in-power-automate"></a>Espera de aprobación en Power Automate
+# <a name="wait-for-approval-in-power-automate"></a>Espere aprobación en Power Automate
 
 
 > [!VIDEO https://www.youtube.com/embed/W6oxcYRtW-8?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
@@ -48,7 +48,7 @@ Cree un flujo que, si crea un elemento en SharePoint, envíe un mensaje de aprob
 
 1. Seleccione el cuadro **Buscar entre cientos de conectores y desencadenadores**, escriba **nuevo elemento** y luego vaya a **SharePoint - Cuando se crea un elemento**.
 
-1. Si se le pide, inicie sesión en SharePoint.
+1. Si se le solicita, inicie sesión en SharePoint.
 1. En **Dirección del sitio**, escriba la dirección URL del sitio de SharePoint que contiene la lista.
 
 1. En **Nombre de lista**, seleccione la lista que ha creado anteriormente. Si va siguiendo el tutorial, el nombre es **Seguimiento de proyectos**.
@@ -61,7 +61,7 @@ Cree un flujo que, si crea un elemento en SharePoint, envíe un mensaje de aprob
 
 1. En el cuadro **Buscar en todos los conectores y acciones**, escriba o pegue **enviar correo electrónico** y luego seleccione **Office 365 Outlook - Enviar correo electrónico con opciones**.
 
-1. Si se le pide, inicie sesión en Office 365 Outlook.
+1. Si se le solicita, inicie sesión en Office 365 Outlook.
 
 1. Seleccione el campo **Para** y luego el token **Asignado a correo electrónico**.
 
@@ -72,7 +72,7 @@ Cree un flujo que, si crea un elemento en SharePoint, envíe un mensaje de aprob
 
     ![Imagen del campo Enviar correo electrónico de aprobación a](./media/wait-for-approvals/send-approval-email-to.png)
 
-## <a name="add-a-condition"></a>Agregar una condición
+## <a name="add-a-condition"></a>Agrega una condición
 
 1. Seleccione el botón **Nuevo paso** y luego **Agregar una condición**.
 

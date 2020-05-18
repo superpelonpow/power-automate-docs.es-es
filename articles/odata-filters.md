@@ -1,6 +1,6 @@
 ---
 title: Filtrado y copia de datos | Microsoft Docs
-description: Información sobre cómo filtrar y copiar datos de un origen a un destino con Power Automate
+description: Aprenda a filtrar y copiar datos de un origen a un destino con Microsoft Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,17 +21,17 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 6a71b3ae1e72588dc6fb21aad83631a91ae1d4ba
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193065"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297723"
 ---
-# <a name="filter-and-copy-data-with-power-automate"></a>Filtrado y copia de datos con Power Automate
+# <a name="filter-and-copy-data-with-power-automate"></a>Filtrar y copiar datos con Power Automate
 
 En este tutorial se muestra cómo crear un flujo que supervise un origen para los elementos nuevos o cambiado, y, luego, copia dichos cambios a un destino. Puede crear un flujo como este si los usuarios escriben datos en una ubicación, pero el equipo los necesita en otra ubicación o formato.
 
-Aunque este tutorial copia datos de una [lista](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) de Microsoft SharePoint (el origen) a una tabla de [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) (el destino), es posible copiar datos entre cualesquiera de los más de [150 servicios](https://flow.microsoft.com/connectors/) que admite Power Automate.
+Aunque este tutorial copie datos de una [lista](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) de Microsoft SharePoint (el origen) a una tabla de [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) (el destino), es posible copiar datos entre cualesquiera de los más de [150 servicios](https://flow.microsoft.com/connectors/) que admite Power Automate.
 
 > [!IMPORTANT]
 > Los cambios que se realizan en el destino no se copian en el origen porque no se admiten las sincronizaciones bidireccionales. Si intenta configurar una sincronización bidireccional, creará un bucle infinito en el que los cambios se envían continuamente entre el origen y el destino.
@@ -39,38 +39,38 @@ Aunque este tutorial copia datos de una [lista](https://support.office.com/artic
 > 
 
 ## <a name="prerequisites"></a>Requisitos previos
-* Acceso a un origen de datos y a un destino. En este tutorial no se incluyen los pasos para crear el origen y el destino.
-* Acceso a [Power Automate](https://flow.microsoft.com).
-* Un conocimiento básico de cómo se almacenan los datos.
-* Familiaridad con los conceptos básicos de la creación de flujos. Puede revisar cómo agregar [acciones, desencadenadores](multi-step-logic-flow.md#add-another-action) y [condiciones](add-condition.md). En los pasos siguientes se da por hecho que sabe cómo realizar estas acciones.
+* Acceso a un origen de datos y un destino. En este tutorial no se incluyen los pasos para crear el origen y el destino.
+* Tener acceso a [Power Automate](https://flow.microsoft.com).
+* Conocimientos básicos sobre cómo se almacenan los datos.
+* Conocer los aspectos básicos de la creación de flujos. Puede revisar cómo agregar [acciones, desencadenadores](multi-step-logic-flow.md#add-another-action) y [condiciones](add-condition.md). En los pasos siguientes se da por hecho que sabe cómo realizar estas acciones.
 
 > [!TIP]
 > No es necesario que coincidan todos los nombres de columna del origen y del destino, pero cuando inserte o actualice un elemento debe especificar los datos de todas las columnas *necesarias*. Power Automate identifica los campos obligatorios.
 > 
 > 
 
-## <a name="quick-overview-of-the-steps"></a>Información general sobre los pasos
+## <a name="quick-overview-of-the-steps"></a>Descripción rápida de los pasos
 Si se siente a gusto con Power Automate, siga estos pasos rápidos para copiar datos desde un origen de datos a otro:
 
 1. Identifique el origen que va a supervisar y el destino al que va a copiar los datos modificados. Confirme que tiene acceso a ambos.
-2. Identifique al menos una columna que identifique de forma única los elementos del origen y destino. En el ejemplo siguiente, se utiliza la columna **Title**, pero puede usar las que desee.
-3. Configure un desencadenador que supervise los cambios que se producen en el origen.
+2. Identifique al menos una columna que identifica de forma única los elementos de origen y de destino. En el ejemplo siguiente, se utiliza la columna **Title**, pero puede usar las que desee.
+3. Configure un desencadenador que supervise los cambios en el origen.
 4. Busque en el destino para determinar si existe el elemento modificado.
 5. Use un **condición** similar a la siguiente:
    * Si el elemento nuevo o modificado no existe en el destino, créelo.
    * Si el elemento nuevo o modificado existe en el destino, actualícelo.
-6. Desencadene el flujo y, después, confirme que los elementos nuevos o modificados se están copiando del origen al destino.
+6. Desencadene el flujo y, después, confirme que se copian los elementos nuevos o modificados del origen al destino.
 
 > [!NOTE]
-> Si no ha creado previamente una conexión a SharePoint o a Azure SQL Database, siga las instrucciones cuando se le pida que inicie sesión.
+> Si no ha creado previamente una conexión a SharePoint o una instancia de Azure SQL Database anteriormente, siga las instrucciones cuando se le pida que inicie sesión.
 > 
 > 
 
 Estos son los pasos detallados para crear el flujo.
 
-## <a name="monitor-the-source-for-changes"></a>Supervisar los cambios en el origen
-1. Inicie sesión en [Power Automate](https://flow.microsoft.com), seleccione **Mis flujos** > **Crear desde cero**.
-2. Busque **SharePoint** y seleccione **SharePoint - Cuando se crea o modifica un elemento** en la lista de desencadenadores.
+## <a name="monitor-the-source-for-changes"></a>Supervisión del origen de los cambios
+1. Iniciar sesión en [Power Automate](https://flow.microsoft.com), seleccione **Mis flujos** > **Crear desde cero**.
+2. Busque **SharePoint** y seleccione el desencadenador **SharePoint - Cuando se crea o modifica** un elemento en la lista de desencadenadores.
 3. Escriba la **dirección del sitio** y seleccione el **nombre de lista** en la tarjeta **Cuando se crea o se modifica un elemento**.
    
     Especifique los valores de **Dirección del sitio** y **Nombre de lista** de la lista de SharePoint en la que el flujo supervisa si hay elementos nuevos o actualizados.
@@ -83,7 +83,7 @@ La acción **SQL Server - Obtener filas** se usa para buscar un elemento nuevo o
 1. Seleccione **Nuevo paso** > **Agregar una acción**.
 2. Busque **Obtener filas**, seleccione **SQL Server - Obtener filas** y, después, la tabla que desea supervisar en la lista **Nombre de tabla**.
 3. Seleccione **Mostrar opciones avanzadas**.
-4. En el cuadro **Consulta de filtro** cuadro, escriba **Título eq '** , seleccione el símbolo (token) **Título** en la lista de contenido dinámico y, después, escriba **'** .
+4. En el cuadro **Consulta de filtro** cuadro, escriba **Título eq '**, seleccione el símbolo (token) **Título** en la lista de contenido dinámico y, después, escriba **'**.
    
     En el paso anterior se da por supuesto que va a asociar los títulos de las filas del origen y del destino.
    
@@ -98,7 +98,7 @@ En la tarjeta Condición:
 
 1. Seleccione el cuadro de la izquierda.
    
-    Se abre la lista **Agregue contenido dinámico de las aplicaciones y conectores que se usan en este flujo**.
+    Se abrirá la lista **Agregar contenido dinámico de las aplicaciones y conectores que se usan en este flujo**.
 2. Seleccione **value** en la categoría **Obtener filas**.
    
    > [!TIP]
@@ -113,7 +113,7 @@ En la tarjeta Condición:
     ![configurar una condición](media/odata-filters/configure-condition.png)
 5. Seleccione **Editar en modo avanzado**.
    
-    Cuando se abre el modo avanzado, se muestra la expresión **\@equals(body('Get_rows')? ['value'], 0)** en el cuadro. Edite esta expresión mediante la adición de **length()** a la función **body('Get_items')? [' value']** . Ahora la expresión completa es como esta: **@equals(length(body('Get_rows')? ['value']), 0)**
+    Cuando se abre el modo avanzado, se muestra la expresión **\@equals(body('Get_rows')? ['value'], 0)** en el cuadro. Edite esta expresión mediante la adición de **length()** a la función **body('Get_items')? [' value']**. Ahora la expresión completa es como esta: **@equals(length(body('Get_rows')?['value']), 0)**
    
     La tarjeta **Condición** ahora es como la que aparece en esta imagen:
    
@@ -126,7 +126,7 @@ En la tarjeta Condición:
 
 Cuando el flujo "obtiene" elementos del destino, hay dos resultados posibles.
 
-| Resultado | Siguiente paso |
+| Resultado | Paso siguiente |
 | --- | --- |
 | El elemento existe |[Actualizar el elemento](odata-filters.md#update-the-item-in-the-destination) |
 | El elemento no existe |[Crear un nuevo elemento](odata-filters.md#create-the-item-in-the-destination) |
@@ -169,7 +169,7 @@ Si el elemento existe en el destino, actualícelo con los cambios.
 Ahora, cada vez que cambie algún elemento de la lista de SharePoint (origen), el flujo desencadena e inserta un elemento nuevo, o bien actualiza un elemento existente en la instancia de Azure SQL Database (destino).
 
 > [!NOTE]
-> Cuando un elemento se elimina del origen, el flujo no se desencadena. Si se trata de un escenario importante, considere la posibilidad de agregar una columna independiente que indique si un elemento deja de ser necesario.
+> El flujo no se desencadena cuando se elimina un elemento desde el origen. Si se trata de un escenario importante, considere la posibilidad de agregar una columna independiente que indique si un elemento deja de ser necesario.
 > 
 > 
 

@@ -1,5 +1,5 @@
 ---
-title: Supervisión y administración de procesos de flujo de trabajo con Power Apps | Microsoft Docs
+title: Supervisión y administración de procesos de flujo de trabajo con Power Apps | Microsoft Docs
 ms.custom: ''
 ms.date: 05/06/2018
 ms.reviewer: ''
@@ -22,11 +22,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: e4042b71e6913f1008f506697fa39291b3cbf59a
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79224294"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298273"
 ---
 # <a name="monitor-and-manage-workflow-processes"></a>Supervisión y administración de procesos de flujo de trabajo
 
@@ -34,45 +34,45 @@ ms.locfileid: "79224294"
 Para supervisar y administrar los procesos, debe localizar el proceso, evaluar el estado y realizar las acciones necesarias para solucionar los problemas.  
   
 <a name="BKMK_MonitorAsyncWorkflows"></a>   
-## <a name="monitoring-background-workflows"></a>Supervisión de flujos de trabajo en segundo plano  
- Los flujos de trabajo en segundo plano generan registros de trabajo del sistema para realizar el seguimiento de su estado. Puede acceder a información sobre estos trabajos del sistema en varios lugares dentro de la aplicación:  
+## <a name="monitoring-background-workflows"></a>Supervisar flujos de trabajo en segundo plano  
+ Los flujos de trabajo en segundo plano generan registros del trabajo del sistema para realizar un seguimiento de su estado. Puede obtener acceso a la información acerca de estos trabajos del sistema en varios lugares dentro de la aplicación:  
   
  **[Configuración](/powerapps/maker/model-driven-apps/advanced-navigation#settings) > Trabajos del sistema**  
- Esto incluye todos los tipos de trabajos del sistema. Tendrá que filtrar los registros por aquellos en los que **Tipo de trabajo del sistema** sea **Flujo de trabajo**.  
+ Se incluyen todos los tipos de trabajos del sistema. Necesitará filtrar los registros a aquellos donde **Tipo de trabajo del sistema** sea **Flujo de trabajo**.  
   
  **Desde el proceso de flujo de trabajo**  
- Abra la definición de flujo de trabajo en segundo plano y vaya a la pestaña **Sesión de proceso**. Solo se mostrarán los trabajos del sistema para este flujo de trabajo en segundo plano.  
+ Abra la definición de flujo de trabajo en segundo plano y vaya a la pestaña **Sesión de proceso**. Esto le mostrará solo los trabajos del sistema de este flujo de trabajo en segundo plano.  
   
  **Desde el registro**  
- Puede editar el formulario de la entidad para que en el panel de navegación se incluya la relación **Procesos en segundo plano**. Esto mostrará todos los trabajos del sistema que se hayan iniciado en el contexto del registro.  
+ Puede modificar el formulario de la entidad para que la navegación incluya la relación **Procesos en segundo plano**. Esta acción le mostrará todos los trabajos del sistema que se han iniciado en el contexto del registro.  
   
 > [!NOTE]
 >  Si en un trabajo del sistema asincrónico (flujo de trabajo) se produce un error varias veces consecutivas, el sistema empieza a posponer la ejecución de ese trabajo en intervalos de tiempo cada vez más prolongados para que el administrador o el creador de la aplicación pueda investigar y resolver el problema. Cuando el trabajo vuelva a ser correcto, la ejecución se reanudará con normalidad.  
   
 <a name="BKMK_ActionsOnRunningWorkflows"></a>   
-### <a name="actions-on-running-background-workflows"></a>Acciones sobre flujos de trabajo en segundo plano en ejecución  
- Mientras se ejecuta un flujo de trabajo en segundo plano, tiene opciones para **Cancelar**, **Pausar** o **Posponer** el flujo de trabajo. Si anteriormente ha pausado un flujo de trabajo, puede **reanudarlo**.  
+### <a name="actions-on-running-background-workflows"></a>Acciones para flujos de trabajo en segundo plano en ejecución  
+ Mientras un flujo de trabajo en segundo plano se ejecuta, tiene opciones para **Cancelar**, **Pausa** o **Posponer** el flujo de trabajo. Si anteriormente pausó un flujo de trabajo, puede reanudarlo con **Reanudar**.  
   
 <a name="BKMK_MonitorSyncWorkflows"></a>   
-## <a name="monitoring-real-time-workflows-and-actions"></a>Supervisión de flujos de trabajo y acciones en tiempo real  
- Las acciones y los flujos de trabajo en tiempo real no usan registros de trabajo del sistema porque se producen de forma inmediata. Los errores que se produzcan se mostrarán al usuario en la aplicación con el encabezado **Error de proceso de negocio**.  
+## <a name="monitoring-real-time-workflows-and-actions"></a>Controlar los flujos de trabajo y acciones en tiempo real  
+ Los flujos de trabajo y las acciones en tiempo real no usan los registros del trabajo del sistema porque se producen inmediatamente. Los errores que se produzcan se mostrarán el usuario en la aplicación con el encabezado **Error de proceso empresarial**.  
   
- No hay ningún registro para las operaciones correctas. Puede habilitar el registro de errores si activa la opción **Mantiene registros para las tareas de flujo de trabajo que encontraron errores** del área **Retención de registro del flujo de trabajo** en la parte inferior de la pestaña **Administración** del proceso.  
+ No hay ningún registro para las operaciones que se realizan correctamente. Puede habilitar el registro de errores activando la opción **Mantiene registros para las tareas del flujo de trabajo que encontraron errores** en el área **Retención de registro del flujo de trabajo** en la parte inferior de la ficha **Administración** del proceso.  
   
- Para ver el registro de errores de un proceso específico, abra la definición de flujo de trabajo o acción en tiempo real y vaya a la pestaña **Sesión de proceso**. Solo se mostrarán los errores registrados para este proceso.  
+ Para ver el registro de errores de un proceso específico, abra la definición del flujo de trabajo o la acción en tiempo real y vaya a la ficha **Sesión de proceso**. Esta opción solo le mostrará los errores registrados del proceso.  
   
- Si quiere una vista de todos los errores para cualquier proceso, vaya a **Búsqueda avanzada** y cree una vista en la que se muestren los errores de la entidad de la sesión de proceso.  
+ Si desea una vista de todos los errores de cualquier proceso, vaya a **Búsqueda avanzada** y cree una vista que muestre los errores en la entidad de la sesión de proceso.  
   
 <a name="BKMK_StatusOfWorkflowProcesses"></a>   
 ## <a name="status-of-workflow-processes"></a>Estado de los procesos de flujo de trabajo  
- Al ver una lista de procesos de flujo de trabajo, cualquier proceso individual puede tener uno de los valores siguientes de **Estado** y **Razón para el estado**:  
+ Al ver una lista de los procesos de flujo de trabajo, cualquier proceso individual puede tener uno de los siguientes valores de **Estado** y **Razón para el estado**:  
   
 |Estado|Razón para el estado|  
 |-----------|-------------------|  
-|Listo|Esperando recursos|  
-|Suspendido|En espera|  
+|Preparado|Esperando recursos|  
+|Suspendida|En espera|  
 |Bloqueado|En curso<br /><br /> Pausando<br /><br /> Cancelando|  
-|Completado|Correcto<br /><br /> Incorrecto<br /><br /> Cancelado|  
+|Completada|Correcta<br /><br /> Con errores<br /><br /> Cancelada|  
 
 ## <a name="deleting-process-log-records"></a>Eliminación de entradas de registro de proceso
 

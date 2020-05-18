@@ -1,6 +1,6 @@
 ---
 title: Automatice fácilmente los flujos de trabajo de aprobación. | Microsoft Docs
-description: Automatice los flujos de trabajo de aprobación que se integran con SharePoint, Dynamics CRM, Salesforce, One Drive para la Empresa, Zendesk o WordPress.
+description: Automatice los flujos de trabajo de aprobación que se integran con SharePoint, Dynamics CRM, Salesforce, OneDrive para la Empresa, Zendesk o WordPress.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,13 +21,13 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 4892ac2806009a1ed33b8bfb019b551aec6fce70
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79224317"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297789"
 ---
-# <a name="create-and-test-an-approval-workflow-with-power-automate"></a>Creación y prueba de un flujo de trabajo de aprobación con Power Automate
+# <a name="create-and-test-an-approval-workflow-with-power-automate"></a>Crear y probar de trabajo de aprobación con Power Automate
 
 
 Con Power Automate, puede administrar la aprobación de documentos o procesos en varios servicios, entre los que se incluyen SharePoint, Dynamics 365, Salesforce, OneDrive para la Empresa, Zendesk o WordPress.
@@ -36,7 +36,7 @@ Para crear un flujo de trabajo de aprobación, agregue la acción **Approvals - 
 
 Los aprobadores pueden responder a las solicitudes desde la bandeja de entrada del correo electrónico, el [centro de aprobaciones](https://flow.microsoft.com/manage/approvals/received/) del sitio web de Power Automate o la aplicación Power Automate.
 
-## <a name="create-an-approval-flow"></a>Creación de un flujo de aprobación
+## <a name="create-an-approval-flow"></a>Crear un flujo de aprobación
 Esta es una visión general del flujo de que vamos a crear y probar:
 
    ![información general del flujo](./media/modern-approvals/create-flow-overview.png)
@@ -72,13 +72,13 @@ La **dirección del sitio** y el **nombre de la lista** son los elementos que an
 
 ## <a name="add-a-profile-action"></a>Adición de una acción de perfil
 
-1. Seleccione **Nuevo paso** y, luego, **Agregar una acción**.
+1. Haga clic en **Nuevo paso** y después en **Agregar una acción**.
    
     ![nuevo paso](./media/modern-approvals/select-sharepoint-add-action.png)
 2. Escriba **perfil** en el cuadro de búsqueda **Elegir una acción**.
    
     ![buscar perfil](./media/modern-approvals/search-for-profile.png)
-3. Busque y, después, seleccione la acción **Usuarios de Office 365 - Obtener mi perfil**.
+3. Busque y, después, seleccione la acción Usuarios de **Office 365 - Obtener mi perfil**.
    
     ![seleccionar usuarios de office](./media/modern-approvals/select-my-profile.png)
 4. Proporcione un nombre para el flujo y, después, seleccione **Crear flujo** para guardar el trabajo que hemos hecho hasta ahora.
@@ -94,7 +94,7 @@ La **dirección del sitio** y el **nombre de la lista** son los elementos que an
 >
 > Si su escenario lo requiere, puede adjuntar archivos a las solicitudes de aprobación que usan Common Data Service.
 
-## <a name="add-a-condition"></a>Agregar una condición
+## <a name="add-a-condition"></a>Agrega una condición
 
 [!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
 
@@ -151,7 +151,7 @@ Ahora que hemos creado el flujo, es el momento de probarlo.
 
 ## <a name="create-long-running-approvals"></a>Creación de aprobaciones de larga duración
 
-Si es probable que el flujo se ejecute durante más de 30 días, considere la posibilidad de almacenar las aprobaciones en Common Data Service. Esto permite crear flujos que actúan sobre las respuestas a las solicitudes de aprobación, incluso después de que se agote el tiempo de espera de la ejecución del flujo original. Para hacerlo, use dos flujos, uno para enviar una solicitud de aprobación y el otro para ejecutar la lógica de negocios en las respuestas a la solicitud de aprobación, en función de la acción **Crear una aprobación (V2)** . Más información sobre las [aprobaciones de larga duración](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/long-lived-approvals-other-approval-improvements).
+Si es probable que el flujo se ejecute durante más de 30 días, considere la posibilidad de almacenar las aprobaciones en Common Data Service. Esto le permite crear flujos que actúan sobre las respuestas de las solicitudes de aprobación, incluso después de que se agote el tiempo de ejecución del flujo original. Para hacer esto, use dos flujos, uno para enviar una solicitud de aprobación y el otro para ejecutar la lógica empresarial en las respuestas de la solicitud de aprobación, en función de la acción **Crear una aprobación (v2)**. Más información sobre las [aprobaciones de larga duración](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/long-lived-approvals-other-approval-improvements).
 
 >[!TIP]
 > Si usa clientes de correo electrónico modernos, no tiene que preguntarse si todavía se requiere una solicitud, porque Power Automate actualiza automáticamente el correo electrónico para indicar que se completó la aprobación.
@@ -167,11 +167,11 @@ En algunas ocasiones, es posible que quiera cancelar una solicitud de aprobació
 >Siempre puede seleccionar la pestaña **Historial** para ver las solicitudes de aprobación que canceló.
 
 >[!NOTE]
-> La característica de cancelación es compatible con la acción **Crear una aprobación (v2)** .
+> La característica de cancelación es compatible con la acción **Crear una aprobación (v2)**.
 
 ## <a name="request-approvals-from-guest-users"></a>Solicitud de aprobaciones de usuarios invitados
 
-Puede enviar solicitudes de aprobación a personas ajenas a la organización. Para hacerlo, use los usuarios invitados de Azure Active Directory (Azure AD) para [invitar a los usuarios de otros inquilinos como invitados](https://docs.microsoft.com/azure/active-directory/b2b/add-user-without-invite).
+Puede enviar solicitudes de aprobación a personas ajenas a la organización. Para hacer esto, use los usuarios invitados de Azure Active Directory ( Azure AD) [invitando a usuarios desde otros inquilinos como invitados](https://docs.microsoft.com/azure/active-directory/b2b/add-user-without-invite).
 
 Cuando asigna un rol a un invitado, se proporciona al invitado el permiso necesario para participar en el proceso de aprobación.
 

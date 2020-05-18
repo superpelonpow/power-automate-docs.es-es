@@ -21,11 +21,11 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 9c7ed87d62ff6fc7370d5b57053239c8bfbeb591
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193459"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296821"
 ---
 # <a name="sharing-and-connectors-admin-analytics-reports"></a>Informes de análisis de administración de conectores y uso compartido
 
@@ -38,7 +38,7 @@ Desde el punto de vista del uso compartido, puede conocer quiénes son sus exper
 
 ## <a name="view-shared-flows-reports"></a>Visualización de informes de flujos compartidos
 
-1. Inicie sesión en el [centro de administración de Power Platform](https://admin.powerplatform.microsoft.com/).
+1. Inicie sesión en el [Centro de administración de Power Platform](https://admin.powerplatform.microsoft.com/).
 1. Seleccione **Análisis** en la barra de navegación de la izquierda.
 1. Seleccione la pestaña **Compartido** y vea la lista de flujos que se comparten en su organización.
  
@@ -47,7 +47,7 @@ Desde el punto de vista del uso compartido, puede conocer quiénes son sus exper
 
 ## <a name="view-connectors-report"></a>Visualización del informe de conectores
 
-1. Inicie sesión en el [centro de administración de Power Platform](https://admin.powerplatform.microsoft.com/).
+1. Inicie sesión en el [Centro de administración de Power Platform](https://admin.powerplatform.microsoft.com/).
 1. Seleccione **Análisis** en la barra de navegación de la izquierda.
 1. Seleccione la pestaña **Conectores** y vea la lista de conectores que se usan en su organización.
  
@@ -62,7 +62,7 @@ Los resultados de estos informes se basan en el entorno seleccionado. Para cambi
     ![Cambiar filtros](media/admin-analytics-report/filters.png)
 
 1. Seleccione los valores de **Entorno** y **Período de tiempo** para los que le interesa ver informes.
-1. Haga clic en el botón **Aplicar**.
+1. Seleccione el botón **Aplicar**.
 
     ![Cambiar filtros](media/admin-analytics-report/filters-detail.png)
 

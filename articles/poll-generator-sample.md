@@ -1,6 +1,6 @@
 ---
 title: Ejemplo de generador de sondeo | Microsoft Docs
-description: Formulario de entrada de tarjeta adaptable diseñado para enviar sondeos a Microsoft Teams.
+description: Formulario de entrada de tarjeta adaptable diseñado para enviar sondeos a Microsoft Teams.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,15 +21,15 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: b19a5b58db4680786ade089731846f0f8000d164
-ms.sourcegitcommit: e3543e32e4e8e8163bef0565e27b657eabbdc741
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868236"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297305"
 ---
 # <a name="create-a-poll-sample"></a>Ejemplo de creación de un sondeo
 
-El ejemplo de **creación de un sondeo** consiste en un formulario de entrada de tarjeta adaptable diseñado para enviar sondeos a Microsoft Teams. Reemplace el texto para mostrar de esta tarjeta para personalizar el sondeo. Esta tarjeta adaptable le permite tomar diferentes rutas de decisiones según las respuestas proporcionadas en los valores de sondeo, o recuentos de votos, de los consumidores de la tarjeta.
+El ejemplo de **creación de un sondeo** consiste en un formulario de entrada de tarjeta adaptable diseñado para enviar sondeos a Microsoft Teams. Reemplace el texto para mostrar de esta tarjeta para personalizar el sondeo. Esta tarjeta adaptable le permite tomar diferentes rutas de decisiones según las respuestas proporcionadas en los valores de sondeo, o recuentos de votos, de los consumidores de la tarjeta.
 
 ![Ejemplo de sondeo](media/adaptive-cards/poll.png)
 
@@ -37,10 +37,10 @@ El ejemplo de **creación de un sondeo** consiste en un formulario de entrada de
 
 | Nombre del token dinámico | Texto de marcador de posición | Notas:                                            |
 |--------------------|------------------|---------------------------------------------------|
-| Título              |                  | Display text                                      |
-| acHeaderTagLine    |                  | Display text                                      |
-| acHeader           |                  | Display text                                      |
-| acPollQuestion     |                  | Display text                                      |
+| Tratamiento              |                  | Texto para mostrar                                      |
+| acHeaderTagLine    |                  | Texto para mostrar                                      |
+| acHeader           |                  | Texto para mostrar                                      |
+| acPollQuestion     |                  | Texto para mostrar                                      |
 | acPollChoices      |                  | **Salida** de respuesta  <br> Selección simple como botones de radio|
 
 ``` json

@@ -13,40 +13,40 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/07/2020
+ms.date: 04/07/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 5b646d486666b92f0496f7bb5c3f851cc8ab56f0
-ms.sourcegitcommit: 8714786a5b632dfd60099871629cf369a31c4125
+ms.openlocfilehash: 99a666c80cb1e6994b774f6b269d657a62996548
+ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895846"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3299021"
 ---
 # <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ## <a name="audience-and-strategy"></a>Destinatarios y estrategia
 ### <a name="what-is-power-automate"></a>¿Qué es Power Automate?
-Power Automate es un servicio basado en la nube que permite a los usuarios de línea de negocio crear de forma práctica y sencilla flujos de trabajo que automaticen procesos y tareas empresariales que requieren mucho tiempo entre aplicaciones y servicios.
+Power Automate es un servicio basado en la nube que hace que sea práctico y sencillo para los usuarios de línea de negocio construir flujos de trabajo que automatizan las tareas y procesos de negocio que consumen mucho tiempo a través de aplicaciones y servicios.
 
 ### <a name="who-is-the-intended-audience-for-power-automate"></a>¿Cuáles son los destinatarios previstos para Power Automate?
-Power Automate tiene dos tipos de destinatarios distintos:
+Power Automate tiene dos destinatarios distintos:
 
 * "Integradores colaboradores" de línea de negocio en organizaciones empresariales que se asocian con TI para hacer recaer la responsabilidad de las soluciones empresariales en la propia empresa.
 * Los responsables de toma de decisiones de TI que desean capacitar a los asociados de la línea de negocio para que creen sus propias soluciones, de forma que los profesionales de TI y los especialistas en integración puedan centrar sus conocimientos en herramientas de integración más avanzadas, como Azure Logic Apps.
 
-### <a name="how-do-power-automate-and-logic-apps-relate-to-each-other"></a>¿Cómo se relacionan Power Automate y Logic Apps?
+### <a name="how-do-power-automate-and-logic-apps-relate-to-each-other"></a>¿Cómo se relacionan entre sí Power Automate y Logic Apps?
 Power Automate proporciona características que ayudan a los usuarios de la línea de negocio a crear flujos de trabajo automatizados. Logic Apps es un servicio de Azure que proporciona las mismas características que Power Automate, además de otras como la integración con Azure Resource Manager y Azure Portal, PowerShell y la CLI de xPlat, Visual Studio y otros muchos conectores. [Aprenda más sobre Logic Apps](https://azure.microsoft.com/services/app-service/logic/).
 
 ### <a name="how-does-power-automate-fit-in-microsofts-overall-business-application-platform-strategy"></a>¿Cómo encaja Power Automate en la estrategia de plataformas de aplicaciones empresariales globales de Microsoft?
-Power Automate forma parte de una plataforma de aplicaciones empresariales eficaces y adaptables que incluye Power Apps, Common Data Service, Dynamics 365 y Office 365. Esta plataforma permite a nuestros clientes, nuestros asociados y nuestros asociados ISV crear soluciones específicas para sus propias empresas, sector, roles funcionales o incluso ubicaciones geográficas específicas. Los usuarios de la línea de negocio, que comprenden mejor las necesidades de su empresa, pueden fácilmente analizar, redactar y simplificar los datos y procesos. Los desarrolladores profesionales pueden ampliar fácilmente la automatización, análisis y servicios de aplicaciones de la línea de negocio para aprovechar servicios de Azure como Functions, App Service y Logic Apps. Los conectores de API, las puertas de enlace y Common Data Service permiten obtener más provecho de los servicios o datos ya en uso, ya sea en la nube o en un almacenamiento local.
+Power Automate es parte de una plataforma de aplicaciones empresariales eficaz y adaptable que incluye Power Apps, Common Data Service, Dynamics 365 y Office 365. Esta plataforma permite a nuestros clientes, nuestros asociados y nuestros asociados ISV crear soluciones específicas para sus propias empresas, sector, roles funcionales o incluso ubicaciones geográficas específicas. Los usuarios de la línea de negocio, que comprenden mejor las necesidades de su empresa, pueden fácilmente analizar, redactar y simplificar los datos y procesos. Los desarrolladores profesionales pueden ampliar fácilmente la automatización, análisis y servicios de aplicaciones de la línea de negocio para aprovechar servicios de Azure como Functions, App Service y Logic Apps. Los conectores de API, las puertas de enlace y Common Data Service permiten obtener más provecho de los servicios o datos ya en uso, ya sea en la nube o en un almacenamiento local.
 
 ## <a name="functionality"></a>Funcionalidad
-### <a name="what-do-i-need-to-use-power-automate"></a>¿Qué es necesario instalar para poder usar Power Automate?
+### <a name="what-do-i-need-to-use-power-automate"></a>¿Qué necesito para utilizar Power Automate?
 Lo único que necesita para usar Power Automate es un explorador web y una dirección de correo electrónico.
 
 ### <a name="what-browsers-and-devices-can-i-use-with-power-automate"></a>¿Qué exploradores y dispositivos puedo usar con Power Automate?
@@ -55,7 +55,7 @@ Power Automate se puede ejecutar en todos los exploradores y dispositivos modern
 
 #### <a name="supported-devices"></a>Dispositivos compatibles
 
-Power Automate funciona perfectamente en los dispositivos modernos. Si necesita administrar Power Automate desde un dispositivo móvil, pruebe la aplicación Power Automate para móviles, que está disponible en [iPhone](https://itunes.apple.com/app/microsoft-flow/id1094928825?ls=1&mt=8), [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow) y [Windows Phone](https://www.microsoft.com/p/microsoft-flow/9nkn0p5l9n84?rtc=1#activetab=pivot:overviewtab).
+Power Automate funciona muy bien en dispositivos modernos. Si necesita administrar Power Automate desde un dispositivo móvil, pruebe la aplicación Power Automate para móviles, que está disponible en [iPhone](https://itunes.apple.com/app/microsoft-flow/id1094928825?ls=1&mt=8), [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow) y [Windows Phone](https://www.microsoft.com/p/microsoft-flow/9nkn0p5l9n84?rtc=1#activetab=pivot:overviewtab).
 
 #### <a name="supported-browsers"></a>Exploradores compatibles
 
@@ -70,7 +70,7 @@ Se recomienda que use el explorador más reciente que sea compatible con el sist
 ### <a name="which-email-addresses-are-supported"></a>¿Qué direcciones de correo electrónico se admiten?
 Power Automate admite direcciones de correo electrónico que tengan cualquier terminación, excepto .gov y .mil.  
 
-### <a name="is-power-automate-available-on-premises"></a>¿Power Automate está disponible de forma local?
+### <a name="is-power-automate-available-on-premises"></a>¿Está disponible Power Automate en el entorno local?
 Power Automate es solo un servicio en la nube pública. Sin embargo, es posible conectarse de forma segura a los servicios locales propios a través de la puerta de enlace de datos local.
 
 ### <a name="what-services-can-power-automate-connect-to"></a>¿A qué servicios se puede conectar Power Automate?
@@ -113,9 +113,9 @@ Puede compartir los flujos de cualquiera de estas maneras:
 * Para que los flujos se puedan ejecutar manualmente, también puede conceder a otros usuarios o grupos de su organización permiso solo para ejecutar el flujo.
 
 ### <a name="how-many-flows-can-i-have"></a>¿Cuántos flujos puedo tener?
-En función del [tipo de licencia](https://flow.microsoft.com/pricing) que tenga, podrá crear un número ilimitado de flujos.
+Power Automate viene con hasta 50 flujos. Si necesita más, puede solicitarlos.
 
-### <a name="where-do-i-get-started-with-power-automate"></a>¿Por dónde empiezo con Power Automate?
+### <a name="where-do-i-get-started-with-power-automate"></a>¿Dónde aprendo a utilizar Power Automate?
 Comience con los siguientes recursos:
 
 * [Blog](https://flow.microsoft.com)
@@ -123,8 +123,8 @@ Comience con los siguientes recursos:
 * [Tema](getting-started.md)
 * [Comunidad](https://powerusers.microsoft.com)
 
-### <a name="what-operating-systems-does-the-mobile-app-for-power-automate-support"></a>¿Qué sistemas operativos admite la aplicación móvil de Power Automate?
-La aplicación móvil de Power Automate está disponible para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows).
+### <a name="what-operating-systems-does-the-mobile-app-for-power-automate-support"></a>¿Qué sistemas operativos admite la aplicación móvil para Power Automate?
+La aplicación móvil Power Automate está disponible en [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)o [Windows Phone](https://aka.ms/flowmobilewindows).
 
 ### <a name="can-flows-be-turned-off-or-disabled"></a>¿Se pueden desactivar o deshabilitar los flujos?
 
@@ -140,13 +140,13 @@ Webhook|Cuando el flujo se activa de nuevo, solo procesa nuevos eventos que se g
 ### <a name="what-regions-and-languages-does-power-automate-support"></a>¿Qué regiones e idiomas admite Power Automate?
 Power Automate está disponible en 42 idiomas y [seis regiones](regions-overview.md).
 
-### <a name="how-does-power-automate-compare-to-sharepoint-designer-2013"></a>¿En qué se puede comparar Power Automate con SharePoint Designer 2013?
+### <a name="how-does-power-automate-compare-to-sharepoint-designer-2013"></a>¿Cómo se compara Power Automate con SharePoint Designer 2013?
 Power Automate es el sucesor de SharePoint Designer para muchos escenarios empresariales comunes, como aprobaciones, revisión de documentos y la incorporación o externalización. Se convertirá en la herramienta predeterminada para la creación de automatización empresarial en SharePoint de ahora en adelante.
 
 ### <a name="how-does-power-automate-ensure-that-corporate-data-isnt-accidentally-released-to-social-media-services"></a>¿Cómo garantiza Power Automate que no se publiquen accidentalmente datos corporativos en las redes sociales?
 Los administradores pueden crear [directivas de prevención de pérdida de datos](prevent-data-loss.md) para asegurarse de que solo se puedan utilizar los servicios autorizados en Power Automate.
 
-### <a name="does-power-automate-support-service-accounts"></a>¿Power Automate admite cuentas de servicio?
+### <a name="does-power-automate-support-service-accounts"></a>¿Admite Power Automate cuentas de servicio?
 
 Aunque puede crear flujos con una cuenta de servicio, no se recomienda hacerlo si se comparten las credenciales para la cuenta de servicio.
 
@@ -159,5 +159,5 @@ Power Automate ofrece niveles de servicio gratuito y de pago. [Más información
 
 ## <a name="learn-more"></a>Más información
 
-* Realice un [paseo por el aprendizaje guiado](https://docs.microsoft.com/learn/paths/automate-process-using-flow) de Power Automate.
+* Realizar un [paseo por el aprendizaje guiado](https://docs.microsoft.com/learn/paths/automate-process-using-flow) de Power Automate
 * Obtenga información sobre los conceptos básicos de Power Automate en la [guía de introducción](getting-started.md)

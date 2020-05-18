@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: cdd901c75e7245126760200cc94d28555dc4a33a
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.sourcegitcommit: 7d6c210192ce68ad0d0b27f67f581e307d5ef606
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80801542"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "3298955"
 ---
 # <a name="introduction-to-ui-flows"></a>Introducción a los flujos de la interfaz de usuario
 
@@ -45,7 +45,7 @@ Puede ir directamente a:
 
 Con Power Automate, puede automatizar tanto aplicaciones modernas con API como aplicaciones heredadas con API incompletas o ausentes. Incluso puede combinar aplicaciones heredadas, aplicaciones modernas y procesos manuales en una única automatización.
 
-| **Tipo de aplicación**      | **Característica** | **Ventajas**     |
+| **Tipo de aplicación**      | **Característica** | **Beneficios**     |
 |---------------------------|----------------------------|------------------|
 | Aplicaciones modernas con API| Conectores                 | Alta confiabilidad con actualizaciones de la interfaz de usuario de software |
 | Aplicaciones heredadas (sin API)          | Flujos de interfaz de usuario                    | Fácil de crear. Funciona si no hay ninguna API disponible.   |

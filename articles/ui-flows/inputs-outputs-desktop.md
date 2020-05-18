@@ -25,7 +25,7 @@ ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80524844"
+ms.locfileid: "3298801"
 ---
 # <a name="use-inputs-and-outputs-in-desktop-ui-flows"></a>Uso de entradas y salidas en los flujos de la interfaz de usuario de escritorio
 
@@ -37,7 +37,7 @@ Por ejemplo, puede usar la información de clientes de una lista de SharePoint c
 
 1. Seleccione **Nueva entrada**.
 
-   ![Seleccionar Nuevo](../media/inputs-outputs-desktop/select-new.png)
+   ![Seleccione nuevo](../media/inputs-outputs-desktop/select-new.png)
 
 1. Agregue un nombre, un ejemplo de datos y una descripción a la entrada.
 
@@ -66,11 +66,11 @@ Por ejemplo, puede usar la información de clientes de una lista de SharePoint c
 
    ![Seleccionar el tipo de entrada](../media/inputs-outputs-desktop/select-input-type.png)
 
-1. Seleccione la ubicación en la que quiere usar la entrada. El valor de ejemplo que definió se usa automáticamente. En el ejemplo siguiente, "Hola mundo" es el valor de ejemplo del nombre de la entrada "Mi entrada" y se agrega a la página dentro de Microsoft Word.  
+1. Seleccione la ubicación en la que quiere usar la entrada. El valor de ejemplo que definió se usa automáticamente. En el ejemplo siguiente, "Hola mundo" es el valor de ejemplo del nombre de la entrada "Mi entrada" y se agrega a la página dentro de Microsoft Word.  
     
     ![Seleccionar la ubicación de la entrada](../media/inputs-outputs-desktop/select-location-for-input.png)
 
-1. En la sección **Grabar y editar pasos** de Power Automate, expanda las acciones que usan entradas para ver cuál está seleccionada.
+1. En **Registrar y editar pasos** de Power Automate, expanda las acciones que usan entradas para ver cuál está seleccionada.
 
    ![Expandir acciones](../media/inputs-outputs-desktop/expand-actions.png)
 
@@ -111,7 +111,7 @@ La salida ya está disponible en el área dedicada del asistente.
 Cada salida tiene:
 
 -  Un nombre de salida tal como se define durante la grabación.
--  Una descripción: Este campo puede ser muy útil cuando se definen muchas salidas durante una grabación y se quiere identificarlas fácilmente en un momento posterior.
+-  Una descripción: este campo puede ser muy útil cuando se definen muchas salidas durante una grabación y se desea identificarlas más tarde.
 -  Un nombre de acción: la acción en la que se definió la salida en el flujo de interfaz de usuario.
 
 ## <a name="delete-an-output-from-a-ui-flow"></a>Eliminación de una salida de un flujo de interfaz de usuario

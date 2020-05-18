@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 4eaafb1a551cc3333cde2058aebc41076b0267bd
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194172"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297151"
 ---
 # <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Ejecutar los flujos con botones físicos (bttn) de The Button Corporation (versión preliminar)
 
@@ -47,7 +47,7 @@ Desencadene los flujos presionando un bttn (un botón físico realizado por [The
 También puede desencadenar un flujo mediante un [botón físico Flic](flic-button-flows.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
-* Acceso a [Power Automate](https://flow.microsoft.com).
+* Tener acceso a [Power Automate](https://flow.microsoft.com).
 * Al menos un [bttn registrado](https://my.bt.tn/).
 
 ## <a name="create-a-flow-thats-triggered-from-a-bttn"></a>Crear un flujo desencadenado por un bttn
@@ -57,7 +57,7 @@ Puede usar cualquiera de estas plantillas para crear flujos rápidamente para su
 
 ![plantillas de bttn](./media/bttn-button-flows/bttn-templates.png)
 
-Sugerencia: para los fines de este tutorial, asigne un nombre al bttn que represente una sala de conferencias en un edificio de oficinas convencional.
+Sugerencia: Para los fines de este tutorial, asigne un nombre al bttn que represente una sala de conferencias en un edificio de oficinas convencional.
 
 La configuración del bttn debe ser similar a la de este ejemplo (del sitio web de bttn):
 
@@ -70,7 +70,7 @@ Ahora que ha registrado y configurado el bttn, vamos a empezar a crear el flujo.
    
     ![iniciar sesión](./media/bttn-button-flows/sign-into-flow.png)
    
-    Nota: como alternativa, puede crear flujos en la aplicación móvil de Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows).
+    Nota: Como alternativa, puede crear flujos en la aplicación móvil de Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows).
 2. Escriba **bttn** en el cuadro de búsqueda y seleccione el icono de búsqueda.
    
     ![buscar](./media/bttn-button-flows/bttn-search-template.png)
@@ -80,13 +80,13 @@ Ahora que ha registrado y configurado el bttn, vamos a empezar a crear el flujo.
    
     ![plantilla de soporte técnico](./media/bttn-button-flows/bttn-select-template.png)
 
-### <a name="authorize-power-automate-to-connect-to-your-bttn"></a>Autorizar a Power Automate a conectarse a su bttn
+### <a name="authorize-power-automate-to-connect-to-your-bttn"></a>Autorizar a Power Automate para conectar a bttn
 1. Si se le solicita, inicie sesión en el bttn y en los servicios de Outlook de Office 365, lo que habilitará el botón **Continuar**.
    
     ![credenciales](./media/bttn-button-flows/bttn-provide-credentials.png)
-2. Al iniciar sesión en el servicio Bttn, autorice a Power Automate a usar sus bttn.
+2. Al iniciar sesión en el servicio bttn, autorice a Power Automate a usar sus bttn.
    
-    **Importante**: si no autoriza a Power Automate a usar sus bttn, no podrá verlos ni conectarse a ellos desde esta aplicación.
+    **Importante**: Si no autoriza a Power Automate para usar sus bttns, no podrá verlos ni conectarse a ellos desde Power Automate.
    
     ![autorizar](./media/bttn-button-flows/authorize-bttn.png)
 3. Después de iniciar sesión en ambos servicios, seleccione **Continuar**.
@@ -111,7 +111,7 @@ Ahora que ha registrado y configurado el bttn, vamos a empezar a crear el flujo.
    
     Puede comprobar el historial de ejecución en el sitio web de Power Automate o en el dispositivo móvil.
    
-    Nota: el estado de ejecución se establece en **En ejecución** hasta que un usuario selecciona **Confirmación** en el correo electrónico de solicitud de soporte técnico.
+    Nota: El estado de ejecución se establece en **En ejecución** hasta que un usuario selecciona **Confirmación** en el correo electrónico de solicitud de soporte técnico.
 3. También puede confirmar que el correo electrónico se envió al equipo de soporte técnico.
    
     Si ha seguido estos pasos, el correo electrónico de soporte técnico tendrá un aspecto similar al de este ejemplo:

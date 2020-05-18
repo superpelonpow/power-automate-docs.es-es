@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 167f9321dba853e801102bed2ebe7e8902437d71
-ms.sourcegitcommit: 26cda5060446812f3725ccd4fe435839088f50fa
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78253189"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298493"
 ---
 # <a name="use-input-method-editors-imes-in-ui-flows"></a>Uso de editores de métodos de entrada (IME) en flujos de interfaz de usuario
 
@@ -76,7 +76,7 @@ En el diseñador, puede revisar y editar la información de grabación en el for
 > [!NOTE]
 > Una versión anterior de la grabadora de los flujos de interfaz de usuario usaba las acciones **SendKeys** y **PostElement**. Estas acciones quedarán en desuso. Se recomienda actualizar la grabadora de flujos de interfaz de usuario a la versión más reciente y, después, volver a grabar los scripts para aprovechar las ventajas de las nuevas características.
 
-## <a name="troubleshooting-tips"></a>Sugerencias de solución de problemas
+## <a name="troubleshooting-tips"></a>Sugerencias para solucionar problemas
 
 1. Si graba acciones de teclado con el modo **Reproducir pulsaciones de teclas**, asegúrese de que la máquina de reproducción use el mismo teclado que el entorno de grabación, ya que, en distintos teclados, las mismas secuencias de teclas de reproducción pueden introducir valores distintos.
 

@@ -1,6 +1,6 @@
 ---
-title: Solicitudes de eliminación del interesado de acuerdo con el RGPD en Power Automate | Microsoft Docs
-description: Obtenga información acerca de cómo usar Power Automate para responder a solicitudes de eliminación del interesado de acuerdo con el RGPD.
+title: Solicitudes de eliminación del titular de los datos de acuerdo con el RGPD en Power Automate| Microsoft Docs
+description: Obtenga información sobre cómo usar Power Automate para responder a solicitudes de eliminación del titular de los datos de acuerdo con el RGPD.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,9 +25,9 @@ ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862685"
+ms.locfileid: "3299087"
 ---
-# <a name="responding-to-gdpr-data-subject-delete-requests-for-power-automate"></a>Respuesta a solicitudes de eliminación del interesado de acuerdo con el RGPD para Power Automate
+# <a name="responding-to-gdpr-data-subject-delete-requests-for-power-automate"></a>Responder a las solicitudes de eliminación del titular de los datos de acuerdo con el RGPD para Power Automate.
 
 
 El "derecho a borrado" mediante la eliminación de los datos personales de los datos de cliente de una organización es una de las principales protecciones contempladas en el RGPD. La eliminación de los datos personales incluye la eliminación de todos los datos personales y los registros generados por el sistema, excepto la información del registro de auditoría.
@@ -36,50 +36,50 @@ Power Automate permite a los usuarios crear flujos de trabajo de automatización
 
 En la siguiente tabla se muestra cuáles datos personales se eliminan automáticamente y cuáles datos requieren que un administrador los revise y elimine manualmente:
 
-|Requiere revisión y eliminación manual|Se elimina automáticamente cuando se elimina el usuario de Azure Active Directory|
+|Requieren revisión y eliminación manual|Eliminado automáticamente cuando se elimina el usuario de Azure Active Directory|
 |------|------|
 |Entorno*|Registros generados por el sistema|
-|Permisos del entorno**|Historial de ejecución|
-|Flujos|Fuente de actividades|
+|Permisos de entorno**|Historial de ejecución|
+|Flows|Fuente de actividades|
 |Permisos de flujo|Puerta de enlace |
 |Detalles del usuario|Permisos de puerta de enlace|
 |Conexiones*||
 |Permisos de conexión||
 |Conector personalizado*||
-|Permisos de conector personalizado||
+|Permisos del conector personalizado||
 
 *Cada uno de estos recursos contiene registros "Creado por" y "Modificado por" que incluyen datos personales. Por motivos de seguridad, estos registros se conservan hasta que se elimina el recurso.
 
-** En el caso de los entornos que incluyen una base de datos de Common Data Service, los permisos de entorno (por ejemplo, qué usuarios están asignados a los roles Creador de entorno y Administrador) se almacenan como registros en Common Data Service. Consulte [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener instrucciones sobre cómo responder a DSR para los usuarios que utilizan Common Data Service.
+** En el caso de los entornos que incluyen una base de datos de Common Data Service ambiente, los permisos de entorno (por ejemplo, qué usuarios están asignados a los roles Creador de entorno y Administrador) se almacenan como registros en Common Data Service. Vea [Ejecutar DSR según los datos de clientes en Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251), para obtener orientación sobre cómo responder a DSR para usuarios que usan Common Data Service.
 
 En el caso de los datos y recursos que requieren una revisión manual, Power Automate ofrece las experiencias siguientes para buscar o cambiar los datos personales de un usuario específico:
 
-* **Acceso a sitio web:** inicie sesión en el [centro de administración de Power Apps](https://admin.powerapps.com/) o el [centro de administración de Power Automate](https://admin.flow.microsoft.com/).
+* **Acceso a sitio web:** inicie sesión en el [Centro de administración de Power Apps](https://admin.powerapps.com/) o el [Centro de administración de Power Automate](https://admin.flow.microsoft.com/).
 
-* **Acceso a PowerShell:**  [Cmdlets de PowerShell de administración de Power Apps](https://go.microsoft.com/fwlink/?linkid=871804) 
+* **Acceso a PowerShell:** [cdmlets de PowerShell de administración de Power Apps](https://go.microsoft.com/fwlink/?linkid=871804). 
 
 Este es el desglose de las experiencias que están disponibles para que un administrador elimine cada tipo de datos personales dentro de cada tipo de recurso:
 
 |Recursos que contienen datos personales|Acceso al sitio web|Acceso a PowerShell|Eliminación automatizada|
 |-----|----|----|----|
 |Registros generados por el sistema|[Portal de confianza de servicios de Office 365](https://servicetrust.microsoft.com/)|||
-|Entorno|Centro de administración de Power Automate|Cmdlets de Power Apps||
-|Permisos del entorno*|Centro de administración de Power Automate|Cmdlets de Power Apps||
+|Entorno|Centro de administración de Power Automate|Cmdlets Power Apps||
+|Permisos del entorno*|Centro de administración de Power Automate|Cmdlets Power Apps||
 |Historial de ejecución||| Eliminación a través de la directiva de retención de 28 días|
 |Fuente de actividades |||Eliminación a través de la directiva de retención de 28 días|
 |Trabajos de usuario|| ||
-|Flujos|Portal de creador de Power Automate**|||
-|Permisos de flujo|Portal de creador de Power Automate|||
-|Detalles del usuario||Cmdlets de Power Apps||
-|Conexiones|Portal de creador de Power Automate| ||
-|Permisos de conexión|Portal de creador de Power Automate| ||
-|Conector personalizado|Portal de creador de Power Automate| ||
-|Permisos de conector personalizado|Portal de creador de Power Automate| ||
-|Historial de aprobación|Portal de creador de Microsoft Power Apps*|||
+|Flows|Creador de portal de Power Automate**|||
+|Permisos de flujo|Creador de portal de Power Automate|||
+|Detalles del usuario||Cmdlets Power Apps||
+|Conexiones|Creador de portal de Power Automate| ||
+|Permisos de conexión|Creador de portal de Power Automate| ||
+|Conector personalizado|Creador de portal de Power Automate| ||
+|Permisos del conector personalizado|Creador de portal de Power Automate| ||
+|Historial de aprobación|Creador de portal de Microsoft Power Apps*|||
 
-* Con la introducción de Common Data Service, si se crea una base de datos dentro del entorno, los permisos del entorno y los de las aplicaciones controladas por modelos se almacenan como registros dentro de Common Data Service. Consulte [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener instrucciones sobre cómo responder a DSR para los usuarios que utilizan Common Data Service.
+* Con la introducción de Common Data Service, si se crea una base de datos dentro del entorno, los permisos del entorno y los de las aplicaciones controladas por modelos se almacenan como registros dentro de Common Data Service. Vea [Ejecutar DSR según los datos de clientes en Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251), para obtener orientación sobre cómo responder a DSR para usuarios que usan Common Data Service.
 
-\*\* Un administrador solo podrá acceder a estos recursos desde el portal de creador de Power Automate si el administrador le asignado acceso desde el Centro de administración de Power Automate.
+\*\*Un administrador solo podrá obtener acceso a estos recursos desde el portal de creador de Power Automate si el administrador le asignado acceso desde el centro de administración de Power Automate.
 
 ## <a name="manage-delete-requests"></a>Administración de las solicitudes de eliminación
 
@@ -94,9 +94,9 @@ En los pasos siguientes se describen las funciones administrativas que existen p
 
 Estos pasos copian flujos existentes para un usuario saliente. Si asigna una propiedad nueva a las copias, estos flujos pueden continuar admitiendo los procesos empresariales existentes. La copia de estos flujos es importante para eliminar vínculos de identificación personal para el usuario saliente, y se deben establecer nuevas conexiones para que el flujo se conecte con otras API y sistemas SaaS.
 
-1. Inicie sesión en el [centro de administración de Power Automate](https://admin.flow.microsoft.com/) y, a continuación, seleccione el entorno que contiene los flujos que posee el usuario eliminado.
+1. Inicie sesión en el [Centro de administración de Power Automate](https://admin.flow.microsoft.com/) y, a continuación, seleccione el entorno que contiene los flujos que posee el usuario eliminado.
 
-    ![Vista de entornos](./media/gdpr-dsr-delete/view-environments.png)
+    ![Ver entornos](./media/gdpr-dsr-delete/view-environments.png)
 
 1. Seleccione **Recursos** > **Flujos** y, a continuación, seleccione el título del flujo que desea reasignar.
 
@@ -110,7 +110,7 @@ Estos pasos copian flujos existentes para un usuario saliente. Si asigna una pro
 
     ![Flujo del recurso compartido](./media/gdpr-dsr-delete/flow-sharing-save.png)
 
-1. Inicie sesión en [Power Automate](https://flow.microsoft.com/), seleccione **Mis flujos** y, después, seleccione **Flujos del equipo**.
+1. Inicie sesión en [Power Automate](https://flow.microsoft.com/), seleccione **Mis flujos** y, después, seleccione **Flujos de equipo**.
 
 1. Seleccione los puntos suspensivos **(...)** del flujo que desea copiar y, a continuación, seleccione **Guardar como**.
 
@@ -126,29 +126,29 @@ Estos pasos copian flujos existentes para un usuario saliente. Si asigna una pro
 
     ![Flujos del equipo](./media/gdpr-dsr-delete/team-flows.png)
 
-1. Elimine el flujo original seleccionando sus puntos suspensivos **(...)** , luego **Eliminar** y, cuando se le solicite, otra vez **Eliminar**. Con este paso también se quitarán los identificadores personales subyacentes que se incluyen en las dependencias del sistema entre el usuario y Power Automate.
+1. Elimine el flujo original seleccionando sus puntos suspensivos **(...)**, luego **Eliminar** y, cuando se le solicite, otra vez **Eliminar**. Con este paso también se quitarán los identificadores personales subyacentes que se incluyen en las dependencias del sistema entre el usuario y Power Automate.
 
     ![Confirmación de la eliminación del flujo](./media/gdpr-dsr-delete/delete-flow-confirmation.png)
 
 1. Habilite la copia del flujo; para ello, abra **Mis flujos** y, a continuación, ponga el control de alternancia en **Activado**.
 
-    ![Habilitación del flujo](./media/gdpr-dsr-delete/toggle-on.png)
+    ![Habilitar flujo](./media/gdpr-dsr-delete/toggle-on.png)
 
 1. La copia ahora realiza la misma lógica de flujo de trabajo que la versión original.
 
-## <a name="delete-approval-history-from-power-automate"></a>Eliminación de historial de aprobación de Power Automate
+## <a name="delete-approval-history-from-power-automate"></a>Eliminar el historial de aprobación de Power Automate
 
- Los datos de aprobación de Power Automate se almacenan en la versión anterior o actual de Common Data Service. Dentro de una aprobación, existe información personal en forma de asignaciones de aprobación y comentarios incluidos en una respuesta de aprobación. Los administradores pueden tener acceso a esos datos siguiendo estos pasos:
+ Los datos de aprobación para Power Automate se almacenan dentro de la versión actual o anterior de Common Data Service. Dentro de una aprobación, existe información personal en forma de asignaciones de aprobación y comentarios incluidos en una respuesta de aprobación. Los administradores pueden tener acceso a esos datos siguiendo estos pasos:
 
 1. Inicie sesión en [PowerApps](https://make.powerapps.com/).
 
 1. Seleccione **Datos** y, a continuación, seleccione **Entidades**.
 
-1. Seleccione los puntos suspensivos **(...)**  de la entidad **Flow Approval** (Aprobación de flujo) y, a continuación, abra los datos en Microsoft Excel.
+1. Seleccione los puntos suspensivos **(...)** de la entidad **Aprobación de flujo** y, a continuación, abra los datos en Microsoft Excel.
 
 1. En Microsoft Excel, busque, filtre y, a continuación, elimine los datos de aprobación según sea necesario.
 
-Consulte [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener más instrucciones sobre cómo responder a DSR para los usuarios que utilizan Common Data Service.
+Vea [Ejecutar DSR según los datos de clientes en Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251), para obtener orientación adicional sobre cómo responder a DSR para usuarios que usan Common Data Service.
 
 
 ## <a name="delete-connections-created-by-a-user"></a>Eliminación de las conexiones creadas por un usuario
@@ -157,7 +157,7 @@ Las conexiones se utilizan junto con los conectores para establecer la conectivi
 
 Cmdlets de PowerShell de creador de Power Apps
 
-Un usuario puede eliminar todas sus conexiones mediante la función Remove-Connection desde los [cmdlets de PowerShell de creador de Power Apps](https://go.microsoft.com/fwlink/?linkid=871448):
+Un usuario puede eliminar todas sus conexiones mediante la función Remove-Connection desde los [cmdlets de PowerShell creador de Power Apps](https://go.microsoft.com/fwlink/?linkid=871448):
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -166,7 +166,7 @@ Add-PowerAppsAccount
 Get-AdminPowerAppConnection | Remove-Connection
 ```
 
-Cmdlets de PowerShell de administración de Power Apps
+Cmdlets de PowerShell del administrador de Power Apps
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -190,7 +190,7 @@ Add-PowerAppsAccount
 Get-ConnectionRoleAssignment | Remove-ConnectionRoleAssignment
 ```
 
-Cmdlets de PowerShell de administración de Power Apps
+Cmdlets de PowerShell del administrador de Power Apps
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -207,7 +207,7 @@ Get-AdminConnectionRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-A
 
 ## <a name="delete-custom-connectors-created-by-the-user"></a>Eliminación de conectores personalizados creados por el usuario
 
-Los conectores personalizados complementan los conectores incluidos y permiten la conectividad con otras API y sistemas SaaS y de desarrollo personalizado. Los conectores personalizados incluyen referencias al usuario que las creó y, como resultado, se pueden eliminar para quitar todas las referencias al usuario.
+Los conectores personalizados complementan los conectores de serie ya existentes y permiten la conectividad con otras API, SaaS y sistemas desarrollados a medida. Los conectores personalizados incluyen referencias al usuario que las creó y, como resultado, se pueden eliminar para quitar todas las referencias al usuario.
 
 Cmdlets de PowerShell de creador de Power Apps
 
@@ -220,7 +220,7 @@ Add-PowerAppsAccount
 Get-Connector -FilterNonCustomConnectors | Remove-Connector
 ```
 
-Cmdlets de PowerShell de administración de Power Apps
+Cmdlets de PowerShell del administrador de Power Apps
 ```PowerShell
 Add-PowerAppsAccount
 
@@ -234,7 +234,7 @@ Get-AdminConnector -CreatedBy $deleteDsrUserId | Remove-AdminConnector
 
 Cmdlets de PowerShell de creador de Power Apps
 
-Un usuario puede eliminar todas sus asignaciones de roles de conector para el conector personalizado compartido mediante la función Remove-ConnectorRoleAssignment en los [cmdlets de PowerShell de creador de Power Apps](https://go.microsoft.com/fwlink/?linkid=871448):
+Un usuario puede eliminar todas sus asignaciones de roles de conector para el conector personalizado compartido con la función Remove-ConnectionRoleAssignment en los [cmdlets de PowerShell de creador de Power Apps](https://go.microsoft.com/fwlink/?linkid=871448):
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -243,7 +243,7 @@ Add-PowerAppsAccount
 Get-ConnectorRoleAssignment | Remove-ConnectorRoleAssignment
 ```
 
-Cmdlets de PowerShell de administración de Power Apps
+Cmdlets de PowerShell del administrador de Power Apps
 ```PowerShell
 Add-PowerAppsAccount
 
@@ -270,9 +270,9 @@ Como administrador, tendrá que elegir entre dos opciones al procesar una solici
 >
 >
 
-## <a name="give-access-to-a-users-environments-from-the-power-automate-admin-center"></a>Concesión de acceso a los entornos de un usuario desde el centro de administración de Power Automate
+## <a name="give-access-to-a-users-environments-from-the-power-automate-admin-center"></a>Dar acceso a los entornos de un usuario desde el Centro de administración de Power Automate
 
-Un administrador puede conceder acceso de administrador a un entorno creado por un usuario específico desde el [centro de administración de Power Automate](https://admin.flow.microsoft.com/). Para obtener más información sobre la administración de entornos, vaya a [Uso de entornos en Power Automate](https://docs.microsoft.com/flow/environments-overview-admin).
+Un administrador puede conceder acceso de administrador a un entorno creado por un usuario específico desde el [Centro de administración de Power Automate](https://admin.flow.microsoft.com/). Para obtener más información sobre la administración de entornos vaya a [Uso de entornos en Power Automate](https://docs.microsoft.com/flow/environments-overview-admin).
 
 ## <a name="delete-the-users-permissions-to-all-other-environments"></a>Eliminación de los permisos del usuario para el resto de entornos
 
@@ -290,7 +290,7 @@ Las respuestas a las solicitudes de eliminación del interesado para puertas de 
 
 Los detalles del usuario ofrecen una vinculación entre un usuario y un inquilino específico. Antes de ejecutar este comando, asegúrese de que se hayan reasignado o eliminado todos los flujos de este usuario. Una vez que se haya completado esto, un administrador puede eliminar los detalles del usuario mediante una llamada al cmdlet **Remove-AdminFlowUserDetails** y pasar el identificador de objeto para el usuario.
 
-Cmdlets de PowerShell de administración de Power Apps
+Cmdlets de PowerShell del administrador de Power Apps
 ```PowerShell
 Add-PowerAppsAccount
 Remove-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
@@ -301,9 +301,9 @@ Remove-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
 >
 >
 
-## <a name="delete-the-user-from-azure-active-directory"></a>Eliminar el usuario de Azure Active Directory
+## <a name="delete-the-user-from-azure-active-directory"></a>Eliminar al usuario de Azure Active Directory
 
-Una vez completados los pasos anteriores, el último paso consiste en eliminar la cuenta del usuario de Azure Active Directory mediante los pasos descritos en la documentación de Azure sobre solicitudes del interesado del RGPD que se puede encontrar en el [Portal de confianza de servicios de Office 365](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
+Una vez completados los pasos anteriores, el último paso consiste en eliminar la cuenta del usuario de Azure Active Directory mediante los pasos descritos en la documentación de Azure sobre solicitudes del titular de los datos de acuerdo con el RGPD que se puede encontrar en el [Portal de confianza de servicios de Office 365](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
 
 ## <a name="delete-the-user-from-unmanaged-tenant"></a>Eliminar el usuario del inquilino no administrado
 
@@ -311,12 +311,12 @@ En caso de que sea miembro de un inquilino no administrado, tendrá que realizar
 
 Para determinar si es o no un usuario de un inquilino administrado o no administrado, realice las acciones siguientes:
 
-1. Abra la dirección URL siguiente en un explorador y asegúrese de reemplazar la dirección de correo electrónico en la dirección URL:[https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1).
-1. Si es miembro de un **inquilino no administrado**, verá `"IsViral": true` en la respuesta.
+1. Abra la siguiente dirección URL en un explorador, asegurándose de reemplazar su dirección de correo electrónico en la dirección URL:[https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1).
+1. Si usted es miembro de un **inquilino no administrado** verá `"IsViral": true` en la respuesta.
 
     {
 
-     "Login": "foobar@unmanagedcontoso.com",
+     "Iniciar sesión": "foobar@unmanagedcontoso.com",
 
     "DomainName": "unmanagedcontoso.com",
 

@@ -21,20 +21,20 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: ce9a943f50ef5c8cc69e5dbf8fde796a75e4cdf9
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195825"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296755"
 ---
-# <a name="manage-flows-in-power-automate-from-your-phone"></a>Administración de flujos en Power Automate desde el teléfono
+# <a name="manage-flows-in-power-automate-from-your-phone"></a>Administración de flujos en Power Automate desde un teléfono
 
 Vea una lista de todos los flujos que ha creado y habilite o deshabilite cada uno de ellos, vea sus eventos y acciones, y explore su historial de ejecución.
 
 **Requisitos previos**
 
-* Instale la aplicación móvil de Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows) en un [dispositivo compatible](getting-started.md#use-the-mobile-app). Los elementos gráficos de este tema reflejan la versión de iPhone de la aplicación, pero los elementos gráficos en las versiones Android y Windows Phone son similares.
-* Si todavía no tiene un flujo, cree uno en [el sitio web de Power Automate](https://flow.microsoft.com/). Para facilitar la realización de pruebas, utilice uno que pueda desencadenar, en lugar de tener que esperar a un evento externo.
+* Instale la aplicación móvil Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows) en un [dispositivo compatible](getting-started.md#use-the-mobile-app). Los elementos gráficos de este tema reflejan la versión de iPhone de la aplicación, pero los elementos gráficos en las versiones Android y Windows Phone son similares.
+* Si aún no tiene un flujo, cree uno en [el sitio web de Power Automate](https://flow.microsoft.com/). Para facilitar la realización de pruebas, utilice uno que pueda desencadenar, en lugar de tener que esperar a un evento externo.
 
 El flujo de este tutorial se ejecuta cuando se recibe correo de una dirección específica:
 
@@ -46,7 +46,7 @@ Cuando se ejecuta el flujo, envía una notificación push personalizada, con est
 
 ![Enviar mensaje Slack](./media/mobile-manage-flows/create-event.png)
 
-**Nota:** también puede [supervisar la actividad del flujo](mobile-monitor-activity.md) desde la aplicación móvil.
+**Nota**: también puede [supervisar la actividad del flujo](mobile-monitor-activity.md) desde la aplicación móvil.
 
 ## <a name="manage-a-flow"></a>Administración de un flujo
 1. Abra la aplicación móvil y pulse **My flows** (Mis flujos) en la parte inferior de la pantalla para enumerar todos los flujos.

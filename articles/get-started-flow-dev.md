@@ -21,19 +21,19 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 74a7bdb451771dd11e88dbf824c3d92383b5a66d
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194126"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298075"
 ---
-# <a name="start-to-build-with-power-automate"></a>Inicio del proceso de compilación con Power Automate
+# <a name="start-to-build-with-power-automate"></a>Empezar a compilar con Power Automate
 
 
 Estos son algunos métodos mediante los que puede ampliar su aplicación con Power Automate:
 
 * Crear un conector personalizado y conectarse a él.
-* Compartir el conector personalizado con todos los usuarios de Power Automate.
+* Comparta el conector personalizado con todos los usuarios de Power Automate.
 * Insertar la experiencia del flujo en una aplicación.
 * Resaltar todos los conectores personalizados para que los usuarios puedan interactuar con Power Automate de la mejor manera posible para ellos.
 
@@ -47,7 +47,7 @@ Si dispone de un servicio web al que quiera conectarse desde Power Automate, pri
 
 Siga este tutorial para obtener información sobre cómo [registrar y usar conectores personalizados](https://powerapps.microsoft.com/tutorials/register-custom-api/). Después de registrar el conector personalizado, puede compartirlo en su organización para realizar pruebas.
 
-## <a name="share-a-custom-connector-with-all-power-automate-users"></a>Uso compartido de un conector personalizado con todos los usuarios de Power Automate
+## <a name="share-a-custom-connector-with-all-power-automate-users"></a>Compartir un conector personalizado con todos los usuarios de Power Automate
 
 Después de probar por completo el conector personalizado, inicie el [proceso de revisión](https://flow.microsoft.com/blog/calling-all-saas-apps-now-you-can-build-your-own-connector-for-flow-and-logic-apps/) para que Microsoft apruebe que lo comparta con todos los demás usuarios de Power Automate.
 
@@ -69,4 +69,4 @@ Puede [insertar](developer/embed-flow-dev.md) Power Automate en su aplicación p
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Obtenga información acerca de cómo [insertar](developer/embed-flow-dev.md) Power Automate en la aplicación.
+Aprenda a [integrar](developer/embed-flow-dev.md) Power Automate en su aplicación.

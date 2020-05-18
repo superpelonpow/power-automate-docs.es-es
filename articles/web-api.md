@@ -1,26 +1,26 @@
 ---
-title: Los flujos se almacenan ahora en Common Data Service y usan la API web enriquecida.
-description: Ahora, los flujos se almacenan en Common Data Service y usan la API web enriquecida.
+title: Los flujos se almacenan ahora en Common Data Service y usan la API web enriquecida
+description: Los flujos se almacenan ahora en Common Data Service y usan la API web enriquecida.
 author: stepsic-microsoft-com
 ms.reviewer: deonhe
-ms.date: 04/28/2020
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: business-applications
 ms.technology: ''
 ms.author: stepsic
 audience: Power user
-ms.openlocfilehash: ebcd4951abae85f843ddaf34c8ce222eb1a83c33
-ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
+ms.openlocfilehash: f446b1b4147b8531ee808447a18058628c2ac0cf
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82852741"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298361"
 ---
 # <a name="power-automate-web-api"></a>API web de Power Automate
 
 
-A partir de ahora, todos los flujos se almacenarán en Common Data Service y usarán [la API web enriquecida](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
+A partir de ahora, todos los flujos se almacenarán en Common Data Service y usarán la [API web enriquecida](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
 
 Este contenido cubre la administración de flujos incluidos en la pestaña **Soluciones** de Power Automate. Actualmente, estas API no admiten los flujos incluidos en **Mis flujos**.
 
@@ -46,15 +46,14 @@ Para empezar a crear las solicitudes, primero deberá crear la dirección URL. E
      | Australia      | crm6        |
      | Japón          | crm7        |
      | India          | crm8        |
-     | Gobierno de EE. UU.  | crm9        |
+     |  para la Administración Pública de Estados Unidos  | crm9        |
      | Reino Unido | crm11       |
-     |Emiratos Árabes Unidos |   crm15|
 
 La lista de instancias disponibles también se puede obtener mediante programación a través del método [Get Instances](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) de la API de Online Management.
 
 Cada solicitud realizada a la API web debe tener los encabezados `Accept` y `Content-type` establecidos en `application/json`.
 
-Por último, rellene el encabezado `Authorization` con un token de portador de Azure AD. Puede [obtener información](https://docs.microsoft.com/powerapps/developer/common-data-service/authenticate-oauth) sobre cómo adquirir un token de portador de Azure AD para Common Data Service. Por ejemplo, en esta solicitud:
+Por último, rellene el encabezado `Authorization` con un token de portador de Azure AD. Usted puede [aprender](https://docs.microsoft.com/powerapps/developer/common-data-service/authenticate-oauth) cómo adquirir un token de portador de Azure AD para Common Data Service. Por ejemplo, en esta solicitud:
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows
@@ -93,7 +92,7 @@ Tal y como se ha señalado arriba, se puede obtener la lista de flujos de trabaj
 
 | Nombre de la propiedad     | Descripción                                              |
 | ----------------- | -------------------------------------------------------- |
-| category          | Categoría del flujo. Los distintos tipos son: 0 (flujos de trabajo clásicos de Common Data Service), 1 (cuadros de diálogo clásicos de Common Data Service), 2 (reglas de negocio), 3 (acciones clásicas de Common Data Service), 4 (flujos de procesos de negocio) y 5 (flujos automatizados, instantáneos o programados). |
+| categoría          | Categoría del flujo. Los distintos tipos son: 0 - flujos de trabajo clásicos de Common Data Service, 1 - cuadros de diálogo clásicos de Common Data Service, 2 - reglas de negocio, 3 - acciones clásicas de Common Data Service, 4 - flujos de procesos de negocio y 5 - flujos automatizados, instantáneos o programados. |
 | statecode         | Estado del flujo. El estado puede ser **0** (desactivado) o **1** (activado).|
 | workflowuniqueid  | Identificador único de esta instalación del flujo. |
 | workflowid        | Identificador único de un flujo en todas las importaciones. |
@@ -101,14 +100,14 @@ Tal y como se ha señalado arriba, se puede obtener la lista de flujos de trabaj
 | _ownerid_value    | Identificador único del usuario o el equipo que posee el flujo. Se trata de un identificador de la entidad systemusers en Common Data Service. |
 | modifiedon        | Última vez que se actualizó el flujo. |
 | ismanaged         | Indica si el flujo se ha instalado a través de una solución administrada. |
-| name              | Nombre para mostrar que se le ha dado al flujo. |
+| nombre              | Nombre para mostrar que se le ha dado al flujo. |
 | _modifiedby_value | Último usuario que actualizó el flujo. Se trata de un identificador de la entidad systemusers en Common Data Service. |
 | _createdby_value  | Usuario que creó el flujo. Se trata de un identificador de la entidad systemusers en Common Data Service. |
-| type              | Indica si el flujo es un flujo en ejecución o una plantilla que se puede usar para crear más flujos. 1 (flujo), 2 (activación) o 3 (plantilla). |
-| description       | Descripción del flujo proporcionada por el usuario. |
+| tipo              | Indica si el flujo es un flujo en ejecución o una plantilla que se puede usar para crear más flujos. 1 (flujo), 2 (activación) o 3 (plantilla). |
+| descripción       | Descripción del flujo proporcionada por el usuario. |
 | clientdata        | JSON codificado como cadena de un objeto que contiene el parámetro connectionReferences y la definición del flujo. |
 
-También puede solicitar propiedades concretas, filtrar la lista de flujos y mucho más, como se describe en la [documentación de la API de Common Data Service para la consulta de datos](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api). Por ejemplo, esta consulta devuelve únicamente los flujos automatizados, instantáneos o programados que están activados actualmente:
+También puede solicitar propiedades concretas, filtrar la lista de flujos y realizar otras muchas cosas, como se describe en la [documentación de la API de Common Data Service ](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api). Por ejemplo, esta consulta devuelve únicamente los flujos automatizados, instantáneos o programados que están activados actualmente:
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows?$filter=category eq 5 and statecode eq 1
@@ -116,7 +115,7 @@ Accept: application/json
 Authorization: Bearer ey...
 ```
 
-## <a name="create-a-flow"></a>Creación de un flujo
+## <a name="create-a-flow"></a>Crear un flujo
 
 Para crear un flujo, llame a `POST` en la colección `workflows`. Las propiedades necesarias en los flujos automatizados, instantáneos o programados son category, name, type, primaryentity y clientdata. Use `none` como primaryentity en estos tipos de flujos.
 
@@ -145,8 +144,8 @@ Hay tres propiedades:
 | Nombre de la propiedad  | Descripción                                                 |
 | -------------- | ----------------------------------------------------------- |
 | connectionName | Identifica la conexión. Para ver la propiedad connectionName, vaya a la página **Conexiones** y, después, cópiela desde la dirección URL de la conexión. |
-| source         | `Embedded` o `Invoker`. `Invoker` solo es válido en los flujos instantáneos (aquellos en los que un usuario selecciona un botón para ejecutar el flujo) e indica que el usuario final proporcionará la conexión. En este caso, la propiedad connectionName solo se utiliza en el tiempo de diseño. Si la conexión es `Embedded`, significa que siempre se usa la propiedad connectionName que se especifique. |
-| id             | Identificador del conector. El identificador siempre comienza por `/providers/Microsoft.PowerApps/apis/` y le sigue el nombre del conector, que puede copiar desde la dirección URL de la conexión, o bien seleccionando el conector en la página **Conectores**. |
+| origen         | `Embedded` o `Invoker`. `Invoker` solo es válido en los flujos instantáneos (aquellos en los que un usuario selecciona un botón para ejecutar el flujo) e indica que el usuario final proporcionará la conexión. En este caso, la propiedad connectionName solo se utiliza en el tiempo de diseño. Si la conexión es `Embedded`, significa que siempre se usa la propiedad connectionName que se especifique. |
+| id.             | Identificador del conector. El identificador siempre comienza por `/providers/Microsoft.PowerApps/apis/` y le sigue el nombre del conector, que puede copiar desde la dirección URL de la conexión, o bien seleccionando el conector en la página **Conectores**. |
 
 Una vez ejecutada la solicitud `POST`, recibirá el encabezado `OData-EntityId`, que contendrá la propiedad `workflowid` del nuevo flujo.
 
@@ -195,7 +194,7 @@ Authorization: Bearer ey...
 
 ## <a name="get-all-users-with-whom-a-flow-is-shared"></a>Obtener todos los usuarios con los que se comparte un flujo
 
-Para obtener una lista de los usuarios con acceso al flujo, se usa una *función* de Common Data Service. Esta función toma un solo parámetro `Target`:
+Para obtener una lista de los usuarios con acceso al flujo, se usa una *función* en Common Data Service. Esta función toma un solo parámetro `Target`:
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/RetrieveSharedPrincipalsAndAccess(Target=@tid)?@tid={'@odata.id':'workflows(00000000-0000-0000-0000-000000000002)'}
@@ -249,7 +248,7 @@ El parámetro `AccessMask` es un campo con los siguientes valores relativos a lo
 | Nombre         | Descripción                                          |
 | ------------ | ---------------------------------------------------- |
 | Ninguno         | Sin acceso.                                           |
-| ReadAccess   | Derecho a leer el flujo.                          |
+| Acceso de lectura   | Derecho a leer el flujo.                          |
 | WriteAccess  | Derecho a actualizar el flujo.                        |
 | DeleteAccess | Derecho a eliminar el flujo.                        |
 | ShareAccess  | Derecho a compartir el flujo.                         |
@@ -257,7 +256,7 @@ El parámetro `AccessMask` es un campo con los siguientes valores relativos a lo
 
 Puede combinar varios permisos usando comas; por ejemplo, para proporcionar la capacidad tanto de leer como de actualizar un flujo, se pasaría `ReadAccess,WriteAccess`.
 
-También puede *dejar de compartir* un flujo con la acción `RevokeAccess`. Aquí se muestra un ejemplo:
+También puede *dejar de compartir* un flujo con la acción `RevokeAccess`. Veamos un ejemplo:
 
 ```http
 POST https://org00000000.crm0.dynamics.com/api/data/v9.1/RevokeAccess
@@ -312,8 +311,8 @@ Llame a la acción `ImportSolution` para importar una solución.
 
 | Nombre de la propiedad                    | Descripción                               |
 | -------------------------------- | ----------------------------------------- |
-| OverwriteUnmanagedCustomizations | Si hay instancias existentes de estos flujos en Common Data Service, esta marca se debe establecer en `true` para importarlas. En caso contrario, no se sobrescribirán. |
-| PublishWorkflows                 | Indica si los flujos de trabajo clásicos de Common Data Service se activarán al importarse. Esta configuración no es válida con ningún otro tipo de flujo. |
+| OverwriteUnmanagedCustomizations | Si no hay instancias existentes de estos flujos en Common Data Service, esta marca se debe establecer en `true` para importarlos. En caso contrario, no se sobrescribirán. |
+| PublishWorkflows                 | Indica si los flujos de trabajo clásicos de Common Data Service se activarán con la importación. Esta configuración no es válida con ningún otro tipo de flujo. |
 | ImportJobId                      | Proporciona un GUID nuevo y único para realizar un seguimiento del trabajo de importación. |
 | CustomizationFile                | Archivo ZIP con codificación en Base64 que contiene la solución. |
 
@@ -340,4 +339,4 @@ Authorization: Bearer ey...
 
 Esta llamada devuelve el estado de la operación de importación, incluidos `progress` (porcentaje de finalización), `startedon` y `completedon` (si la importación ha finalizado).
 
-Cuando la importación finalice correctamente, deberá configurar las conexiones del flujo, ya que `connectionNames` probablemente sea diferente en el entorno de destino (si es que existen conexiones). Si está configurando nuevas conexiones en el entorno de destino, el propietario de los flujos deberá crearlas en el diseñador de Power Automate. Si las conexiones ya están configuradas en el nuevo entorno, puede usar una acción `PATCH` en el `clientData` del flujo con los nombres de las conexiones.
+Cuando la importación finalice correctamente, deberá configurar las conexiones del flujo, ya que `connectionNames` probablemente sea diferente en el entorno de destino (si es que existen conexiones). Si está configurando nuevas conexiones en el entorno de destino, el propietario de los flujos deberá crearlas en Microsoft Power Automate. Si las conexiones ya están configuradas en el nuevo entorno, puede usar una acción `PATCH` en el `clientData` del flujo con los nombres de las conexiones.

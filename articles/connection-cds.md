@@ -1,6 +1,6 @@
 ---
-title: Creación de un flujo automatizado con Common Data Service | Microsoft Docs
-description: Creación de flujos de trabajo mediante una conexión de Common Data Service y Power Automate
+title: Crear un flujo automatizado con Common Data Service | Microsoft Docs
+description: Crear flujos de trabajo utilizando una conexión de Common Data Service y Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,17 +25,17 @@ ms.sourcegitcommit: e58c8e6954c8e666497a66dc945fdc16c7c845a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/02/2020
-ms.locfileid: "82727910"
+ms.locfileid: "3331092"
 ---
-# <a name="create-an-automated-flow-by-using-common-data-service"></a>Creación de un flujo automatizado mediante Common Data Service
+# <a name="create-an-automated-flow-by-using-common-data-service"></a>Crear un flujo automatizado utilizando Common Data Service
 
 >[!IMPORTANT]
->Hay tres conectores disponibles para conectarse a Common Data Service. Use el [conector de Common Data Service (entorno actual)](./connection-cds-native.md) recomendado. Si no puede usar el conector recomendado, tiene a su disposición el **conector de Common Data Service**, que se trata en este artículo, y el [conector de Dynamics 365](https://docs.microsoft.com/connectors/dynamicscrmonline/).
+>Hay tres conectores disponibles para conectarse a Common Data Service. Use el conector recomendado de [Common Data Service (entorno actual)](./connection-cds-native.md). El **conector de Common Data Service**, que se trata en este artículo, y [Dynamics 365 Connector](https://docs.microsoft.com/connectors/dynamicscrmonline/) también están disponibles para su uso si no puede usar el conector recomendado.
 
 
-Con el conector de Common Data Service, puede crear flujos que se inicien mediante los eventos de creación y actualización en Common Data Service. Además, puede realizar acciones de creación, actualización, recuperación y eliminación en registros dentro de Common Data Service.
+Con el conector de Common Data Service, puede crear flujos iniciados mediante la creación y actualización de eventos dentro de Common Data Service. Además, puede realizar acciones de creación, actualización, recuperación y eliminación en registros dentro de Common Data Service.
 
-## <a name="initiate-a-flow-from-common-data-service"></a>Inicio de un flujo desde Common Data Service
+## <a name="initiate-a-flow-from-common-data-service"></a>Iniciar un flujo desde Common Data Service
 
 Puede usar cualquiera de los siguientes desencadenadores para iniciar el flujo:
 
@@ -51,18 +51,18 @@ Puede usar cualquiera de los siguientes desencadenadores para iniciar el flujo:
 Si el desencadenador seleccionado requiere la selección de un entorno, puede elegir `(Current)`, que siempre usa la base de datos del entorno en el que se ejecuta Power Automate. Si quiere que el flujo siempre se desencadene en función de un evento de un entorno determinado, seleccione ese entorno.
 
 > [!div class="mx-imgBorder"]
-> ![Elección de entorno](./media/cds-connector/Environments.png)
+> ![Elegir entorno](./media/cds-connector/Environments.png)
 
 Puede usar ámbitos para determinar si el flujo se ejecuta al crear un nuevo registro, si un usuario de la unidad de negocio crea un nuevo registro o si lo hace cualquier usuario de la organización.
 
 > [!div class="mx-imgBorder"]
-> ![Elección de ámbito](./media/cds-connector/Scopes.png)
+> ![Elegir ámbito](./media/cds-connector/Scopes.png)
 
-|Ámbito|Momento del desencadenador|
+|Scope|Momento del desencadenador|
 | --- | --- |
 |Unidad de negocio|Se realiza una acción en un registro que es propiedad de la unidad de negocio|
 |Organización|Cualquier usuario de la organización o la base de datos realiza una acción|
-|Elemento principal: unidades de negocio secundarias|Se realiza una acción en un registro que es propiedad de la unidad de negocio o una unidad de negocio secundaria|
+|Elemento principal: unidad de negocio secundaria|Se realiza una acción en un registro que es propiedad de la unidad de negocio o una unidad de negocio secundaria|
 |Usuario|Se realiza una acción en un registro de su propiedad|
 
 Los desencadenadores que se ejecutan cuando se actualiza un registro también pueden usar atributos de filtrado. Esto garantiza que el flujo solo se ejecute cuando se actualice cualquiera de los atributos definidos.
@@ -73,17 +73,17 @@ Los desencadenadores que se ejecutan cuando se actualiza un registro también pu
 Este flujo se desencadena cada vez que se actualiza el nombre o apellido de contacto que posee el usuario del flujo.
 
 > [!div class="mx-imgBorder"]
-> ![Atributos de filtrado](./media/cds-connector/FilterAttributes.png)
+> ![Atributos del filtro](./media/cds-connector/FilterAttributes.png)
 
 ## <a name="trigger-privileges"></a>Privilegios de desencadenador
 
 Para crear un flujo que se desencadene en función de la creación, actualización o eliminación de un registro, el usuario debe tener permisos de nivel de usuario para crear, leer, escribir y eliminar en la entidad de registro de devolución de llamadas. Además, según los ámbitos definidos, el usuario puede necesitar al menos ese nivel de lectura en la misma entidad.  [Más información](https://docs.microsoft.com/power-platform/admin/database-security) sobre la seguridad del entorno.
 
-## <a name="write-data-into-common-data-service"></a>Escritura de datos en Common Data Service
+## <a name="write-data-into-common-data-service"></a>Escribir datos en Common Data Service
 
 Para escribir datos en Common Data Service, use cualquiera de las acciones siguientes:
 
-- Crear un nuevo registro
+- Crear un registro nuevo
 - Actualizar un registro
 
 Este es un ejemplo de creación de una tarea de seguimiento cuando el usuario crea un nuevo registro de cuenta.  

@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 1df42c58cb02f8d62e016b071b3ce556b06a0efe
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195897"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298405"
 ---
 # <a name="design-flows-in-microsoft-visio"></a>Diseño de flujos en Microsoft Visio
 
@@ -70,7 +70,7 @@ El diseñador de Power Automate es una potente herramienta en la que puede confi
 
    ![Formas básicas de BPMN](./media/visio-flows/bpmn-basic-shapes.png)
 
-## <a name="prepare-to-export-your-workflow-to-power-automate"></a>Preparación para exportar el flujo de trabajo a Power Automate
+## <a name="prepare-to-export-your-workflow-to-power-automate"></a>Prepárese para exportar su flujo de trabajo a Power Automate
 
 Siga estos pasos para preparar el flujo de trabajo de modo que pueda exportarlo a Power Automate.
 

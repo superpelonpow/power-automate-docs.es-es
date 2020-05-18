@@ -25,7 +25,7 @@ ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80525093"
+ms.locfileid: "3298823"
 ---
 # <a name="edit-desktop-ui-flows"></a>Edición de los flujos de la interfaz de usuario de escritorio
 
@@ -92,7 +92,7 @@ Es posible que quiera grabar el flujo de interfaz de usuario en varias sesiones.
 
 Una vez que haya grabado una aplicación con al menos una acción, puede agregar manualmente cualquier de estas acciones para esa aplicación.
 
-| **Acción**          | **Comentario**                                                       |
+| **Action**          | **Comentario**                                                       |
 |---------------------|-------------------------------------------------------------------|
 | Cerrar aplicación   |                                                                   |
 | Clic con el botón derecho         |                                                                   |
@@ -167,26 +167,26 @@ Para realizar estas operaciones avanzadas, realice los pasos siguientes en un fl
 
 1. Seleccione el flujo de interfaz de usuario que ha creado > **Más comandos** (...) > **Editar**.
 
-1. Seleccione **+**  > **Agregar una acción** en la flecha hacia abajo del paso de flujo de interfaz de usuario al que desea agregar la lógica.
+1. Seleccione **+** > **Agregar una acción** en la flecha hacia abajo del paso de flujo de interfaz de usuario al que desea agregar la lógica.
 
-   ![Agregar una acción](../media/edit-desktop/add-action.png)
+   ![Agrega una acción](../media/edit-desktop/add-action.png)
 
 1. Seleccione **Integrado** y, después, seleccione una de las acciones de control disponibles.
 
-   ![Integrada](../media/edit-desktop/select-built-in.png)
+   ![Integrado](../media/edit-desktop/select-built-in.png)
 
 1. Complete la expresión que debe evaluarse. Puede utilizar contenido dinámico y expresiones para evaluar los controles de condición y modificador. Además, puede usar cualquier salida generada a partir de los pasos anteriores del flujo de interfaz de usuario.
 
    ![Tarjeta de condición](../media/edit-desktop/condition-card.png)
 
 
-## <a name="handle-error-conditions"></a>Control de condiciones de error
+## <a name="handle-error-conditions"></a>Tratamiento de las condiciones de error
 
 Durante la reproducción pueden surgir condiciones inesperadas y provocar errores en los flujos de interfaz de usuario. Puede usar características avanzadas de control de errores para crear pasos alternativos cuando surjan condiciones inesperadas. 
 
 Estos son los pasos que debe seguir.
 
-1. Inicie sesión en [Power Automate](https://powerautomate.microsoft.com) con su cuenta profesional o educativa.
+1. Inicie sesión con una cuenta profesional o educativa en [Power Automate](https://powerautomate.microsoft.com).
 1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario** para mostrar los flujos de la interfaz de usuario.
 1. Seleccione **Más comandos**, los tres puntos verticales correspondientes al flujo de la interfaz de usuario que quiera editar.
 1. Seleccione **Editar**.

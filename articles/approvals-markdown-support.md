@@ -1,5 +1,5 @@
 ---
-title: Uso de Markdown para dar formato a las aprobaciones de Power Automate | Microsoft Docs
+title: Uso de Markdown para dar formato a aplicaciones de Power Automate | Microsoft Docs
 description: Aprenda a usar Markdown para dar formato a las solicitudes de aprobación de Power Automate.
 services: ''
 suite: flow
@@ -25,9 +25,9 @@ ms.sourcegitcommit: 28adfdffc00c149bc46fab85b7307e4e819000c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/28/2020
-ms.locfileid: "82189620"
+ms.locfileid: "3299395"
 ---
-# <a name="use-markdown-in-power-automate-approval-requests"></a>Uso de Markdown en las solicitudes de aprobación de Power Automate
+# <a name="use-markdown-in-power-automate-approval-requests"></a>Usar Markdown en solicitudes de aprobación de Power Automate
 
 
 En este artículo se muestra cómo usar la sintaxis de [Markdown](https://en.wikipedia.org/wiki/Markdown) para agregar formato enriquecido a las solicitudes de aprobación.
@@ -36,23 +36,23 @@ En este artículo se muestra cómo usar la sintaxis de [Markdown](https://en.wik
 > Los correos electrónicos de solicitud de aprobación son *mensajes accionables*. Si el [cliente de Microsoft Outlook](https://docs.microsoft.com/outlook/actionable-messages/#outlook-version-requirements-for-actionable-messages) no admite mensajes accionables, muestra las solicitudes de aprobación en formato HTML. 
 
 > [!IMPORTANT]
-> Todos los representadores de Markdown tienen diferencias de implementación. Revise la sección [Compatibilidad con clientes](#client-support) para más información.
+> Todos los representadores de Markdown tienen diferencias de implementación. Consulte la sección [Soporte a clientes](#client-support) para más detalles.
 
-## <a name="client-support"></a>Compatibilidad con clientes
+## <a name="client-support"></a>Soporte a clientes
 
-La compatibilidad con Markdown entre clientes es incoherente. El equipo de Power Automate trabaja para corregir estas incoherencias, pero aún no ha podido lograrlo. En la tabla siguiente se indican las limitaciones conocidas entre los clientes admitidos.
+El soporte de Markdown entre clientes es inconsistente. El equipo de Power Automate trabaja para abordar estas inconsistencias, sin embargo, las inconsistencias permanecen. La siguiente tabla presenta las limitaciones conocidas entre los clientes admitidos.
 
-| Característica | Power Automate | Aplicación móvil de Power Automate | Escritorio de Outlook | Web de Outlook | Teams | Aplicación móvil de Teams |  
+| Característica | Power Automate | Aplicación móvil de Power Automate | Escritorio de Outlook | Outlook Web | Teams | Aplicación Teams mobile |  
 |---------|--------|---------------|-----------------|-------------|-------|--------------|
 | **Encabezados** | Sí | Sí | Sí | Sí | **_No_** | **_No_** |
 | **Listas numeradas** | Sí | Sí | **_No_** | Sí | Sí | Sí |
 | **Listas numeradas anidadas** | Sí | Sí | **_No_** | Sí | Sí | Sí |
 | **Tablas** | Sí | Sí | Sí | Sí | **_No_** | **_No_** |
 | **Imágenes** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** |
-| **Saltos de línea forzosos** | Sí | Sí | **_No_** (usar en su lugar una línea de salto) | Sí | Sí | Sí |
+| **Saltos de línea forzados** | Sí | Sí | **_No_** (use una línea en blanco en su lugar) | Sí | Sí | Sí |
 | **Líneas en blanco** | **_No_** | **_No_** | Sí | Sí | **_No_** | Sí |
 
-## <a name="headers"></a>Headers
+## <a name="headers"></a>Encabezados
 
 Estructure sus comentarios mediante encabezados. Los encabezados segmentan los comentarios más largos, lo que facilita su lectura.
 
@@ -68,11 +68,11 @@ Inicie una línea con un carácter de almohadilla `#` para establecer un encabez
 ```
 
 **Resultado:**  
-![Exportación del flujo](./media/approvals-markdown-support/mrkdown-headers.png)
+![Exportación de flujo](./media/approvals-markdown-support/mrkdown-headers.png)
 
 ## <a name="paragraphs-and-line-breaks"></a>Párrafos y saltos de línea
 
-Facilite la lectura de su texto dividiéndolo en párrafos o saltos de línea. Escriba dos espacios antes del salto de línea para obligar a la mayoría de los clientes a iniciar una nueva línea.  
+Facilite la lectura de su texto dividiéndolo en párrafos o saltos de línea. Incluya dos espacios antes del salto de línea para forzar a la mayoría de los clientes a comenzar una nueva línea.  
    
 **Ejemplo:**  
 ```Markdown
@@ -80,9 +80,9 @@ This is line 1.(space, space)
 Now text will appear on the next line.
 ```
 
-**Resultado:**    
+**Resultado:**   
 Esta es la línea 1.  
-Ahora el texto aparecerá en la línea siguiente. 
+Ahora el texto aparecerá en la siguiente línea. 
 
 **Ejemplo 2**  
 ```Markdown
@@ -94,7 +94,7 @@ Line 2 has extra space before it.
 **Resultado:**  
 Esta es la línea 1.  
 
-La línea 2 tiene delante un espacio adicional.
+La línea 2 tiene un espacio adicional antes.
   
 
 ## <a name="lists"></a>Listas
@@ -183,7 +183,7 @@ Organice datos estructurados con tablas.
 - Separe las celdas de la tabla con el carácter de barra vertical `|` 
 - Las dos primeras líneas de una tabla establecen los encabezados de columna y la alineación de los elementos de la tabla
 - Utilice signos de dos puntos (`:`) al dividir el encabezado y el cuerpo de las tablas para especificar la alineación de la columna (izquierda, centro, derecha) 
-- Para iniciar una nueva línea, use la etiqueta de salto HTML (`<br/>`)
+- Para comenzar una nueva línea, use la etiqueta de salto HTML (`<br/>`)
 - Asegúrese de terminar cada fina con un CR o LF. 
 
 **Ejemplo:**  
@@ -195,7 +195,7 @@ Organice datos estructurados con tablas.
 ```
 
 **Resultado:**  
-| Heading 1 | Heading 2 | Heading 3 |  
+| Encabezado 1 | Encabezado 2 | Encabezado 3 |  
 |-----------|:---------:|-----------:|  
 | Cell A1 | Cell A2 | Cell A3 |  
 | Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
@@ -219,7 +219,7 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 
 **Resultado:**  
 Use el _resaltado_ en los comentarios para expresar opiniones **contundentes** e indicar <s>correcciones</s> .  
-**_Texto en negrita y cursiva_**    
+**_Texto en negrita y cursiva_**   
 **~~Texto en negrita y tachado~~**  
 
 ## <a name="special-characters"></a>Caracteres especiales

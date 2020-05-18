@@ -21,13 +21,13 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 32f8269bce8e36774bf937683776f97fc618d41a
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194954"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296557"
 ---
-# <a name="export-a-solution"></a>Exportación de una solución
+# <a name="export-a-solution"></a>Exportación de soluciones
 
 
 Siga estos pasos para mover la solución y sus dependencias a un nuevo entorno:
@@ -50,5 +50,5 @@ Siga estos pasos para mover la solución y sus dependencias a un nuevo entorno:
 
 * [Creación de una solución](./overview-solution-flows.md)
 * [Creación de un flujo en una solución](./create-flow-solution.md)
-* [Importación de una solución](./import-flow-solution.md)
+* [Importación de soluciones](./import-flow-solution.md)
 * [Edición de un flujo compatible con la solución](./edit-solution-aware-flow.md)

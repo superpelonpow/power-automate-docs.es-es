@@ -1,6 +1,6 @@
 ---
 title: Uso del Centro de administración para administrar directivas y directivas de datos | Microsoft Docs
-description: Los administradores de inquilinos y entornos usan el centro de administración de Power Automate para gestionar entornos y directivas de datos para implementaciones de Power Automate.
+description: El Centro de administración de Power Automate se utiliza por inquilino y administradores de entornos para administrar directivas de datos y entornos para implementaciones de Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,14 +25,14 @@ ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862731"
+ms.locfileid: "3299241"
 ---
 # <a name="the-admin-center"></a>El Centro de administración
 
 
-El Centro de administración es la ubicación central en la que tanto los administradores de inquilinos como los administradores de entornos administran las directivas de datos y los entornos de una organización. Los cambios que se realicen en el Centro de administración estarán disponibles inmediatamente para los usuarios de la organización.
+El Centro de administración es la ubicación central en la que tanto los administradores de inquilinos como los administradores de entornos administran las directivas de datos y los entornos de una organización. Los cambios que realice en el centro de administración están disponibles de inmediato para los usuarios de la organización.
 
-![introducción](./media/admin-center-introduction/overview.png)
+![información general](./media/admin-center-introduction/overview.png)
 
 ## <a name="access-the-admin-center"></a>Acceso al Centro de administración
 
@@ -48,5 +48,5 @@ Obtenga más información acerca del uso de [directivas de datos](prevent-data-l
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-* [Aprender más acerca de los entornos](environments-overview-admin.md)
-* [Más información sobre Power Automate](getting-started.md)
+* [Más información acerca de los entornos](environments-overview-admin.md)
+* [Obtener más información acerca de Power Automate](getting-started.md)

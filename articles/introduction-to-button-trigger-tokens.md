@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: d2a7cbf1f3bb582853583a790e2bd26f319655d3
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195736"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297503"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Introducción a los tokens de desencadenadores de botones
 
@@ -34,25 +34,25 @@ Los tokens de desencadenadores de botones son puntos de datos conocidos y dispon
 
 Por ejemplo, si está ejecutando un flujo de botones en un smartphone, es probable que el **teléfono conozca la hora** en su ubicación actual, así como la fecha y la dirección actuales. En este contexto, la hora, la fecha y la dirección donde se encuentra el teléfono están determinadas en el momento en que se ejecuta el flujo de botones. Están automáticamente disponibles para su uso en los flujos de botones que se ejecutan en el dispositivo. Puede usar estos tokens de desencadenadores para generar flujos útiles que minimizarán tareas repetitivas como proporcionar la ubicación a alguien o realizar el seguimiento de cuánto tiempo ha tardado en una llamada de trabajo o servicio determinada.
 
-### <a name="list-of-button-trigger-tokens"></a>Lista de tokens de desencadenadores de botones
+### <a name="list-of-button-trigger-tokens"></a>Lista de tokens de desencadenador de botón
 Esta es la lista de los tokens de desencadenadores de botones que están disponibles para su uso al crear los flujos de botones.
 
 | Parámetro | Descripción |
 | --- | --- |
-| Ciudad |La ciudad en la que se encuentra el dispositivo que está ejecutando el flujo. |
-| País o región |El país o región en el que se encuentra el dispositivo que está ejecutando el flujo. |
-| Dirección completa |La dirección completa en la que se encuentra el dispositivo que está ejecutando el flujo. |
-| Latitud |La latitud en la que se encuentra el dispositivo que está ejecutando el flujo. |
-| Longitud |La longitud en la que se encuentra el dispositivo que está ejecutando el flujo. |
-| Código postal |El código postal en el que se encuentra el dispositivo que está ejecutando el flujo. |
-| Estado |El estado en el que se encuentra el dispositivo que está ejecutando el flujo. |
-| Calle |La calle en la que se encuentra el dispositivo que está ejecutando el flujo. |
-| Marca de tiempo |La hora en la zona en la que se encuentra el dispositivo que está ejecutando el flujo. |
-| Fecha |La fecha en la zona en la que se encuentra el dispositivo que está ejecutando el flujo. |
+| Ciudad |Ciudad donde se encuentra el dispositivo que ejecuta el flujo. |
+| País o región |País o la región donde se encuentra el dispositivo que ejecuta el flujo. |
+| Full address |La dirección completa donde se encuentra el dispositivo que está ejecutando el flujo. |
+| Latitud |La latitud en la que se encuentra el dispositivo que ejecuta el flujo. |
+| Longitud |La longitud en la que se encuentra el dispositivo que ejecuta el flujo. |
+| PostalCode |El código postal en el que se encuentra el dispositivo que ejecuta el flujo. |
+| Estado o provincia |El estado en el que se encuentra el dispositivo que ejecuta el flujo. |
+| Calle |La calle en la que se encuentra el dispositivo que ejecuta el flujo. |
+| Marca de tiempo |La hora en el área donde se encuentra el dispositivo que está ejecutando el flujo. |
+| Fecha |La fecha en el área donde se encuentra el dispositivo que está ejecutando el flujo. |
 | Nombre de usuario |El nombre de usuario de la persona que inició sesión en el dispositivo que está ejecutando el flujo. |
-| Correo electrónico del usuario |La dirección de correo electrónico de la persona que inició sesión en el dispositivo que está ejecutando el flujo. |
+| User email |La dirección de correo electrónico de la persona que inició sesión en el dispositivo que está ejecutando el flujo. |
 
-## <a name="create-a-button-flow-that-uses-trigger-tokens"></a>Creación de un flujo de botones que usa tokens de desencadenadores
+## <a name="create-a-button-flow-that-uses-trigger-tokens"></a>Creación de un flujo de botón que usa tokens de desencadenador
 Cuando crea un botón, puede utilizar tokens de desencadenadores para agregarle funciones enriquecidas.
 
 En este tutorial se creará un flujo de botones en un dispositivo Android. El flujo de botones utilizará tokens de desencadenadores para enviar la fecha y la dirección completa en un correo electrónico con asunto "**Trabajo desde casa**" a su jefe.
@@ -60,7 +60,7 @@ En este tutorial se creará un flujo de botones en un dispositivo Android. El fl
 En este tutorial, verá capturas de pantalla de un dispositivo Android, sin embargo, la experiencia es similar en los dispositivos de iOS y Windows Phone.
 
 ### <a name="prerequisites"></a>Requisitos previos
-* Una dirección de correo electrónico profesional o educativa o una [cuenta Microsoft](https://account.microsoft.com/about?refd=www.microsoft.com) con acceso a Power Automate.
+* Una dirección de correo electrónico profesional o educativa o una [cuenta de Microsoft](https://account.microsoft.com/about?refd=www.microsoft.com) con acceso a Power Automate.
 * La aplicación móvil de Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows).
 
 Empecemos:
@@ -73,7 +73,7 @@ Empecemos:
    ![token de desencadenador de botones](./media/introduction-to-button-trigger-tokens/3.png)  
 4. Seleccione **Editar** en la tarjeta **Enviar un correo electrónico**  
    ![token de desencadenador de botones](./media/introduction-to-button-trigger-tokens/3-5.png)  
-5. Pulse en el cuadro de texto **Asunto** y escriba: "**hoy -** " después del texto "WFH". Tenga en cuenta que cuando pulse en el cuadro de texto, se abrirá también una lista de parámetros/tokens. Vamos a usar uno de estos tokens en el paso siguiente para agregar la fecha al asunto del correo electrónico.  
+5. Pulse en el cuadro de texto **Asunto** y escriba: "**hoy -**" después del texto "WFH". Tenga en cuenta que cuando pulse en el cuadro de texto, se abrirá también una lista de parámetros/tokens. Vamos a usar uno de estos tokens en el paso siguiente para agregar la fecha al asunto del correo electrónico.  
    ![token de desencadenador de botones](./media/introduction-to-button-trigger-tokens/4.png)  
 6. Con el cursor todavía en el cuadro de texto del asunto, desplácese hasta la lista **manual** de parámetros y pulse **Fecha**. Observe que el parámetro de fecha está ahora en el cuadro de texto **Asunto**:  
    ![token de desencadenador de botones](./media/introduction-to-button-trigger-tokens/6.png)  
@@ -81,10 +81,10 @@ Empecemos:
    ![token de desencadenador de botones](./media/introduction-to-button-trigger-tokens/7.png)  
 8. Pulse en el parámetro **Dirección completa** y, a continuación, pulse en **Crear**  
    ![token de desencadenador de botones](./media/introduction-to-button-trigger-tokens/8.png)  
-9. Pulse **Hecho**. Con esto, se crea el flujo de botones.  
+9. Pulse en **Listo**. Se ha creado el flujo de botón.  
    ![token de desencadenador de botones](./media/introduction-to-button-trigger-tokens/9.png)  
 
-## <a name="run-the-button-flow"></a>Ejecución del flujo de botones
+## <a name="run-the-button-flow"></a>Ejecución del flujo de botón
 **NOTA**: este flujo de botones enviará su ubicación actual a través de correo electrónico.  
 
 1. Pulse la categoría **Botones** en la parte inferior de la pantalla. Verá una lista de los botones de los que tiene permiso para usarlos. Pulse el botón que representa el flujo de botones que acaba de crear:  

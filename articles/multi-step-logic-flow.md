@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: e6a64f60802330857f8e17c9d4ea179426307633
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79224409"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297525"
 ---
 # <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>Agregar varias acciones y opciones avanzadas a un flujo
 
@@ -39,7 +39,7 @@ En este procedimiento, agregará una acción en el medio del flujo. Dicha acció
 
 1. En [flow.microsoft.com](https://flow.microsoft.com), seleccione **Mis flujos** en la barra de navegación superior.
 2. En la lista de flujos, seleccione el flujo que quiere editar.
-3. Seleccione **Nuevo paso** y, luego, **Agregar una acción**.
+3. Haga clic en **Nuevo paso** y después en **Agregar una acción**.
    
     ![Agregar contraído](./media/multi-step-logic-flow/add-action.png)
 4. En la lista de acciones posibles, busque **Crear archivo** y seleccione **Dropbox - Crear archivo**.
@@ -77,7 +77,7 @@ En este procedimiento, agregará una acción en el medio del flujo. Dicha acció
   
     ![Eliminar el menú](./media/multi-step-logic-flow/deletemenu.png)
   
-     **Nota**: no se puede eliminar una acción si se usa cualquier salida de ella en el flujo. Una vez que quite los resultados de los campos, podrá eliminar la acción.
+     **Nota:** No se puede eliminar una acción si se usa cualquier salida de ella en el flujo. Una vez que quite los resultados de los campos, podrá eliminar la acción.
 
 
 ## <a name="copy-and-paste-actions"></a>Acciones de copiar y pegar

@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 513200d18ac2a845cd63a6d269513f3bcb45118c
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193988"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297635"
 ---
 # <a name="approve-requests-on-your-mobile-device-by-using-power-automate"></a>Aprobación de solicitudes en dispositivos móviles mediante Power Automate
 
@@ -63,7 +63,7 @@ Si no hay solicitudes de aprobación pendientes, cree un [flujo de aprobación](
 2. Seleccione **APROBAR** en la solicitud que desea aprobar.
    
     ![seleccione aprobar](./media/mobile-approvals/select-approve.png)
-3. (Opcional) seleccione **Agregar comentario (opcional)** .
+3. (Opcional) seleccione **Agregar comentario (opcional)**.
    
     ![seleccione agregar una condición](./media/mobile-approvals/select-add-comment.png)
    

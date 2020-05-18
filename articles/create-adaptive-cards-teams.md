@@ -1,5 +1,5 @@
 ---
-title: Creación de flujos que publiquen tarjetas adaptables en Microsoft Teams | Microsoft Docs
+title: Crear flujos que publiquen tarjetas adaptables en Microsoft Teams | Microsoft Docs
 description: Aprenda a crear flujos que publiquen contenido con formato enriquecido mediante tarjetas adaptables en Microsoft Teams.
 services: ''
 suite: flow
@@ -16,16 +16,16 @@ ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
 ms.openlocfilehash: 3ba5f24bf24f57242441fab2770bce881bc78b69
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192126"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297393"
 ---
 <!--from editor: I notice that adaptive cards is capitalized on the page opened by the link in the first paragraph. But the screenshots in this file don't show it being capitalized. So I'm unsure if it should change.-->
 
 
-# <a name="use-adaptive-cards-in-microsoft-teams"></a>Uso de tarjetas adaptables en Microsoft Teams
+# <a name="use-adaptive-cards-in-microsoft-teams"></a>Usar de tarjetas adaptables en Microsoft Teams
 
 
 Puede crear un flujo que publique [tarjetas adaptables](https://adaptivecards.io) en un canal de Microsoft Teams. Con las tarjetas adaptables, puede usar formato enriquecido para que sus publicaciones sean más claras, interactivas y atractivas. Las tarjetas adaptables pueden contener componentes como imágenes, gráficos, texto con formato enriquecido, etc.
@@ -50,7 +50,7 @@ Siga estos pasos para crear un flujo que publique una tarjeta adaptable en el ca
     ![Tarjeta de periodicidad](media/create-adaptive-cards-teams/recurrence-card.png)
     
 1. Seleccione **Nuevo paso**.
-1. Busque **adaptable**, seleccione **Microsoft Teams** y, luego, elija la acción **Muestre su propia tarjeta adaptable como el bot de Flow en un canal (versión preliminar)** .
+1. Busque **adaptable**, seleccione **Microsoft Teams** y, luego, elija la acción **Muestre su propia tarjeta adaptable como el bot de Flow en un canal (versión preliminar)**.
 
    ![Tarjeta adaptable](media/create-adaptive-cards-teams/select-adaptive-post-message-action.png)
 

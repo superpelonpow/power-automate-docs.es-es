@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: d74cbdb6c03d65a7902a81194491ef67feda6bb2
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192033"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297481"
 ---
 # <a name="create-a-flow-in-a-solution"></a>Creación de un flujo en una solución
 
@@ -51,7 +51,7 @@ Debe tener al menos una solución para poder crear un flujo compatible con la so
 
    ![](./media/create-flow-solution/select-new-flow.png)
 
-   Se abre Power Automate.
+   Power Automate se abre.
 
 1. Utilice los conectores y desencadenadores disponibles para aumentar el flujo.
 
@@ -74,7 +74,7 @@ Debe tener al menos una solución para poder crear un flujo compatible con la so
 ## <a name="learn-more"></a>Más información
 
 * [Creación de una solución](./overview-solution-flows.md)
-* [Exportación de una solución](./export-flow-solution.md)
-* [Importación de una solución](./import-flow-solution.md)
+* [Exportación de soluciones](./export-flow-solution.md)
+* [Importación de soluciones](./import-flow-solution.md)
 * [Edición de un flujo compatible con la solución](./edit-solution-aware-flow.md)
 * [Eliminación de un flujo compatible con la solución](./remove-solution-aware-flow.md)

@@ -1,6 +1,6 @@
 ---
-title: Creación de un flujo con Dynamics 365 (en línea) | Microsoft Docs
-description: Creación de flujos de trabajo útiles mediante una conexión de Dynamics 365 y Power Automate
+title: Crear un flujo con Dynamics 365 (online) | Microsoft Docs
+description: Crear flujos de trabajo útiles mediante una conexión de Dynamics 365 y Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,23 +25,23 @@ ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/08/2020
-ms.locfileid: "80862547"
+ms.locfileid: "3299131"
 ---
-# <a name="create-a-flow-by-using-dynamics-365-online"></a>Creación de un flujo mediante Dynamics 365 (con conexión)
+# <a name="create-a-flow-by-using-dynamics-365-online"></a>Crear un flujo mediante Dynamics 365 (online)
 
 Mediante un conector de Dynamics 365 se pueden crear flujos que se inician cuando se produce un evento en 365 Dynamics, o algún otro servicio, que realiza una acción en Dynamics 365, o en algún otro servicio. 
 
-En Power Automate puede configurar flujos de trabajo automatizados entre sus aplicaciones y servicios preferidos para sincronizar archivos, obtener notificaciones, recopilar datos, etc. Para más información, consulte [Introducción a Power Automate](getting-started.md).
+En Power Automate, puede configurar flujos de trabajo automatizados entre sus aplicaciones y servicios favoritos para sincronizar archivos, recibir notificaciones, recopilar datos y más. Para obtener más información, vea [Empezar a usar Power Automate](getting-started.md).
 
 > [!IMPORTANT] 
-> Para invocar un desencadenador de Power Automate, la entidad de Common Data Service utilizada con el flujo debe tener activada la opción **Seguimiento de cambios**. Más información: [Habilitar seguimiento de cambios para controlar la sincronización de datos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization). 
+> Para invocar un desencadenador de Power Automate, la entidad de Common Data Service utilizada con el flujo debe tener activada la opción **Seguimiento de cambios**. Para obtener más información, consulte [Habilitar seguimiento de cambios para controlar la sincronización de datos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization). 
 
 ## <a name="create-a-flow-from-a-template"></a>Creación de un flujo desde una plantilla
 Para crear un flujo se puede utilizar una de las muchas plantillas disponibles, como en estos ejemplos:
 
 * Cuando se crea un objeto en Dynamics 365, cree un elemento de lista en SharePoint.
 * Cree registros de clientes potenciales de Dynamics 365 desde una tabla de Excel.
-* Copie cuentas de Dynamics 365 a los clientes de Dynamics 365 for Operations.
+* Copiar cuentas de Dynamics 365 para clientes de Dynamics 365 for Operations.
 
 Para crear un flujo desde una plantilla, siga estos pasos.
 
@@ -79,7 +79,7 @@ Si no hay una plantilla disponible para lo que necesita, cree un flujo desde el 
     
     ![Flujo agregar tema](./media/connection-dynamics365/flow-addtopic.png)
     
-    > **Sugerencia:** En el panel de contenido dinámico, haga clic en **Ver más** o pulse dicho vínculo para mostrar más campos asociados a la entidad. Por ejemplo, también puede rellenar el campo **Asunto** de la tarea con los campos **Nombre de la compañía**, **Cliente**, **Descripción**, o **Correo electrónico** del cliente potencial.
+    > **Sugerencia:** en el panel de contenido dinámico, haga clic o pulse **Ver más** para mostrar más campos asociados a la entidad. Por ejemplo, también puede rellenar el campo **Asunto** de la tarea con los campos **Nombre de la compañía**, **Cliente**, **Descripción**, o **Correo electrónico** del cliente potencial.
     > 
     > 
 12. Haga clic o pulse **Crear flujo**.
@@ -108,19 +108,19 @@ Cuando se produce el desencadenador, el flujo recibe una notificación, pero se 
 ## <a name="specify-advanced-options"></a>Especificación de opciones avanzadas
 Cuando se agrega un paso a un flujo, se puede hacer clic o pulsar **Mostrar opciones avanzadas** para agregar un filtro o un pedido por la consulta que controla cómo se filtran los datos en el flujo.
 
-Por ejemplo, puede usar una consulta de filtro para recuperar únicamente los contactos activos y puede ordenarlos por apellido. Para ello, escriba la consulta de filtro OData **statuscode eq 1** y seleccione **Apellidos** en el panel de contenido dinámico. Para más información acerca de las consultas de filtro y ordenar por, vea [MSDN: $filter](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_1) y [MSDN: $orderby](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_2).
+Por ejemplo, puede usar una consulta de filtro para recuperar solo los contactos activos y puede ordenarlos por sus apellidos. Para ello, escriba la consulta de filtro OData **statuscode eq 1** y seleccione **Apellidos** en el panel de contenido dinámico. Para más información acerca de las consultas de filtro y ordenar por, vea [MSDN: $filter](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_1) y [MSDN: $orderby](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_2).
 
-  ![Consulta de orderby de flujo](./media/connection-dynamics365/flow-orderby-query.png)
+  ![Consulta orderby de flujo](./media/connection-dynamics365/flow-orderby-query.png)
 
 ### <a name="best-practices-when-using-advanced-options"></a>Procedimientos recomendados cuando se usan las opciones avanzadas
 Cuando se agrega un valor a un campo, debe coincidir con el tipo de campo independientemente de que escriba un valor o lo seleccione en el panel de contenido dinámico.
 
-| Tipo de campo | Cómo se usa | Dónde se encuentra | Nombre | Tipo de datos |
+| Tipo de campo | Modo de uso | Dónde encontrarlo | Nombre | Tipo de datos |
 | --- | --- | --- | --- | --- |
-| Campos de texto |Los campos de texto requieren una sola línea de texto o contenido dinámico que es un campo de tipo texto. Entre los ejemplos se incluyen los campos **Categoría** y **Subcategoría**. |**Configuración** > **Personalizaciones** > **Personalizar el sistema** > **Entidades** > **Tarea** > **Campos** |**category** |**Una línea de texto** |
-| Campos numéricos de tipo entero |Algunos campos requieren un entero o contenido dinámico que sea un campo de tipo entero. Algunos ejemplos son: **Porcentaje completado** y **Duración**. |**Configuración** > **Personalizaciones** > **Personalizar el sistema** > **Entidades** > **Tarea** > **Campos** |**percentcomplete** |**Número entero** |
+| Campos de texto |Los campos de texto requieren una sola línea de texto o contenido dinámico que es un campo de tipo texto. Algunos ejemplos son los campos **Categoría** y **Subcategoría**. |**Configuración** > **Personalizaciones** > **Personalizar el sistema** > **Entidades** > **Tarea** > **Campos** |**category** |**Línea de texto única** |
+| Campos numéricos enteros |Algunos campos requieren un entero o contenido dinámico que sea un campo de tipo entero. Algunos ejemplos son: **Porcentaje completado** y **Duración**. |**Configuración** > **Personalizaciones** > **Personalizar el sistema** > **Entidades** > **Tarea** > **Campos** |**percentcomplete** |**Número entero** |
 | Campos de fecha |Algunos campos requieren que una fecha escrita en formato dd/mm/aaaa o contenido dinámico que sea un campo de tipo de fecha. Algunos ejemplos son: **Fecha de creación**, **Fecha de inicio**, **Inicio real**, **Último período de retención**, **Finalización real**, y **Fecha de vencimiento**. |**Configuración** > **Personalizaciones** > **Personalizar el sistema** > **Entidades** > **Tarea** > **Campos** |**createdon** |**Fecha y hora** |
-| Campos que requieren un identificador de registro y un tipo de búsqueda |Algunos campos que hacen referencia a otro registro de entidad requieren tanto el identificador de registro como el tipo de búsqueda. |**Configuración** > **Personalizaciones** > **Personalizar el sistema** > **Entidades** > **Cuenta** > **Campos** |**accountid** |**Clave principal** |
+| Campos que requieren un identificador de registro y un tipo de búsqueda |Algunos campos que hacen referencia a otro registro de entidad requieren el identificador de registro y el tipo de búsqueda. |**Configuración** > **Personalizaciones** > **Personalizar el sistema** > **Entidades** > **Cuenta** > **Campos** |**accountid** |**Clave principal** |
 |Conjunto de opciones|Los campos de Conjunto de opciones requieren pasar un valor entero conocido a este tipo de campo.  En el área de personalización de Dynamics 365, puede ver los conjuntos de opciones que respaldan el campo de entero junto con su etiqueta respectiva.|Configuración > Personalización > Personalizar el sistema > Entidades > Cuenta > Campos | Método de contacto preferido| Número entero|
 
 ### <a name="more-examples-of-fields-that-require-both-a-record-id-and-lookup-type"></a>Más ejemplos de campos que requieren un identificador de registro y un tipo de búsqueda

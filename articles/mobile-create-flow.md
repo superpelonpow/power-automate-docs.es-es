@@ -21,13 +21,13 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 393ae5f6a86363610c26aea78a04748f34dc4f97
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193620"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296777"
 ---
-# <a name="create-a-flow-from-your-phone-by-using-power-automate"></a>Creación de un flujo desde un teléfono mediante Power Automate
+# <a name="create-a-flow-from-your-phone-by-using-power-automate"></a>Crear un flujo desde un teléfono mediante Power Automate
 
 Cree un flujo desde un teléfono mediante una plantilla, que se puede encontrar de cualquiera de las tres formas siguientes: búsqueda en una lista de servicios, examen de categorías o especificación de palabras clave. Siga los pasos de este tema para crear un flujo que envíe una notificación push a su teléfono cuando reciba un correo electrónico de un administrador.
 
@@ -35,7 +35,7 @@ Si nunca ha usado Power Automate, [aquí puede obtener una visión general](gett
 
 ## <a name="prerequisites"></a>Requisitos previos
 * Una [cuenta para Power Automate](sign-up-sign-in.md).
-* La aplicación móvil de Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows) en un [dispositivo compatible](getting-started.md#use-the-mobile-app). Los elementos gráficos de este tema reflejan la versión de iPhone de la aplicación, pero la interfaz en un dispositivo Android o Windows Phone es similar.
+* La aplicación móvil Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows) en un [dispositivo compatible](getting-started.md#use-the-mobile-app). Los elementos gráficos de este tema reflejan la versión de iPhone de la aplicación, pero la interfaz en un dispositivo Android o Windows Phone es similar.
 * Para utilizar la plantilla que se muestra en este tema, también necesitará:
   
   * Credenciales de Office 365.
@@ -60,7 +60,7 @@ Si nunca ha usado Power Automate, [aquí puede obtener una visión general](gett
     ![Mostrar lista de servicios](./media/mobile-create-flow/list-services.png)
 3. Pulse el icono de **notificación push**.
    
-    ![Notificaciones push](./media/mobile-create-flow/push-notifications.png)
+    ![Notificaciones de inserción](./media/mobile-create-flow/push-notifications.png)
 4. En la barra de búsqueda, escriba **correo electrónico** y pulse la plantilla para enviar una notificación push cuando reciba un mensaje de un administrador.
    
     ![Elegir plantilla](./media/mobile-create-flow/choose-template.png)
@@ -69,7 +69,7 @@ Si nunca ha usado Power Automate, [aquí puede obtener una visión general](gett
     ![Confirmar plantilla](./media/mobile-create-flow/confirm-template.png)
 
 ## <a name="finish-the-flow"></a>Finalización del flujo
-1. Si se le solicita, pulse **Sign in** (Iniciar sesión) y especifique las credenciales de Office 365 Outlook, Usuarios de Office 365, o ambos.
+1. Si se le solicita, pulse **Iniciar sesión** y especifique las credenciales de Office 365 Outlook, Usuarios de Office 365, o ambos.
    
     ![Iniciar sesión en Office 365](./media/mobile-create-flow/office-signin.png)
    

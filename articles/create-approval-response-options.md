@@ -25,7 +25,7 @@ ms.sourcegitcommit: 9cca2a2fca8371ab883b12011c1c4485ceb9c761
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/28/2020
-ms.locfileid: "82200505"
+ms.locfileid: "3299439"
 ---
 # <a name="create-custom-response-options-for-approval-flows"></a>Creación de opciones de respuesta personalizadas para flujos de aprobación
 
@@ -41,20 +41,20 @@ Supongamos que quiere enviar una solicitud de aprobación cada vez que un emplea
 ## <a name="create-approval-flow"></a>Creación de un flujo de aprobación
 1. Inicie sesión en [Power Automate](https://flow.microsoft.com).
 1. En la barra de navegación izquierda, seleccione **Mis flujos**.
-1. Seleccione **Nuevo** > **Automatizado: desde cero**.
+1. Seleccione **Nuevo** > **Automatizar desde cero**.
 
     ![Opción Crear desde cero](media/create-approval-response-options/create-approval-response-options.png)
 
-1. En la pantalla que se abre, proporcione un nombre para el flujo en **Nombre de flujo**. 
+1. En la pantalla que se abre, especifique un nombre para su flujo en **Nombre de flujo**. 
   
-1. Busque **SharePoint** en **Choose your flow's trigger** (Elegir el desencadenador del flujo), seleccione **Cuando se crea un elemento** en la lista de desencadenadores y, después, **Crear**.
+1. Buscar **SharePoint** en **Elija el desencadenador del flujo**, seleccione **Cuando se crea un artículo** de la lista de desencadenadores, y luego seleccione **Crear**.
 
    ![Seleccionar Crear desde cero](media/create-approval-response-options/create-from-blank.png)
 
-1. Rellene los campos **Dirección del sitio** y **Nombre de lista**. 
+1. Rellene los campos **Dirección del sitio** y **Nombre de lista** de SharePoint. 
 
    >[!TIP]
-   >Seleccione **Escribir un valor personalizado** en el campo **Dirección del sitio** antes de especificar texto en **Dirección del sitio**.
+   >Seleccione **Escribir valor personalizado** en el campo **Dirección del sitio** antes de escribir texto en **Dirección del sitio**.
 
 1. Seleccione **Nuevo paso**, busque **Aprobación** y, luego, seleccione **Iniciar y esperar una aprobación**.
 
@@ -67,13 +67,13 @@ Supongamos que quiere enviar una solicitud de aprobación cada vez que un emplea
     A continuación, creará las respuestas personalizadas que los aprobadores usarán cuando respondan a una solicitud de aprobación de los gastos de un empleado.
 
 
-1. En el cuadro **Response options Item** (Elemento de opciones de respuesta), escriba **Aceptar** y, luego, seleccione **Agregar nuevo elemento**. 
+1. En el cuadro **Elemento de opciones de respuesta**, escriba **Aceptar** y, luego, seleccione **Agregar nuevo elemento**. 
 
     ![Respuesta personalizada 1](media/create-approval-response-options/enter-response-1.png)
 
-1. En el cuadro **Response options Item** (Elemento de opciones de respuesta), escriba **Rechazar** y, luego, seleccione **Agregar nuevo elemento**.
+1. En el cuadro **Elemento de opciones de respuesta**, escriba **Aceptar** y, luego, seleccione **Agregar nuevo elemento**.
 
-1. En el cuadro **Response options Item**  (Elemento de opciones de respuesta), escriba **Se necesita más información**.
+1. En el cuadro **Elemento de opciones de respuesta**, escriba **Se necesita más información**.
 
     ![Respuesta personalizada 3](media/create-approval-response-options/enter-response-3.png)   
     

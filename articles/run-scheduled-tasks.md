@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 4970554dee8e031a746cf604e2a628f41056b46c
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193689"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296645"
 ---
 # <a name="run-flows-on-a-schedule"></a>Ejecución de flujos de forma programada
 
@@ -36,7 +36,7 @@ Cree un flujo que lleva a cabo una o varias tareas (como enviar un informe por c
 * después del número de días, horas o minutos que especifique
 
 ## <a name="create-a-recurring-flow"></a>Creación de un flujo repetitivo
-1. Inicie sesión en [Power Automate](https://flow.microsoft.com) y seleccione **Mis flujos** en la barra de navegación superior.
+1. Inicie sesión en [Power Automate](https://flow.microsoft.com) y seleccione **Mis flujos** en la barra de navegación superior.
    
     ![Opción Mis flujos](./media/run-scheduled-tasks/create-flow.png)
 2. Seleccione **Crear desde cero**.
@@ -52,9 +52,9 @@ Cree un flujo que lleva a cabo una o varias tareas (como enviar un informe por c
     ![Especificar periodicidad](./media/run-scheduled-tasks/specify-recurrence.png)
 
 ## <a name="specify-advanced-options"></a>Especificación de opciones avanzadas
-1. Siga los pasos descritos en la sección anterior y, después, seleccione **Mostrar opciones avanzadas**.
+1. Siga los pasos descritos en la sección anterior y después haga clic en **Mostrar opciones avanzadas**.
    
-    **Nota:** Estas opciones cambian en función de los valores de los campos **Intervalo** y **Frecuencia**. Si la pantalla no es la misma que la siguiente, asegúrese de los valores de **Intervalo** y **Frecuencia** son los mismos valores que se muestran en el gráfico.
+    **Nota**: Estas opciones cambian en función de los valores de los campos **Intervalo** y **Frecuencia**. Si la pantalla no es la misma que la siguiente, asegúrese de los valores de **Intervalo** y **Frecuencia** son los mismos valores que se muestran en el gráfico.
 2. Seleccione una **zona horaria** para especificar si la **hora de inicio** refleja una zona horaria local, hora universal coordinada (UTC), etc.
 3. Especifique un **hora de inicio** en este formato:
    <br>AAAA-MM-DDTHH:MM:SSZ
@@ -67,14 +67,14 @@ Cree un flujo que lleva a cabo una o varias tareas (como enviar un informe por c
 6. Agregue la acción, o acciones, que desea que realice el flujo, como se describe en [Create a flow in Microsoft Flow](get-started-logic-flow.md) (Crear un flujo en Microsoft Flow).
 
 ## <a name="delay-a-flow"></a>Retrasar un flujo
-1. Inicie sesión en [Power Automate](https://flow.microsoft.com) y seleccione **Mis flujos** en la barra de navegación superior.
+1. Inicie sesión en [Power Automate](https://flow.microsoft.com) y seleccione **Mis flujos** en la barra de navegación superior.
    
     ![Crear un flujo desde cero](./media/run-scheduled-tasks/create-flow.png)
 2. Seleccione **Crear desde cero**.
    
     ![Crear un flujo desde cero](./media/run-scheduled-tasks/create-from-blank.png)
 3. Especifique un evento como se describe en [Crear un flujo desde cero](get-started-logic-flow.md).
-4. Seleccione **Nuevo paso** y, luego, **Agregar una acción**.
+4. Haga clic en **Nuevo paso** y después en **Agregar una acción**.
    
     ![Opción para agregar una acción a un flujo](./media/run-scheduled-tasks/add-action.png)
 5. En la lista de acciones, realice cualquiera de estas acciones:

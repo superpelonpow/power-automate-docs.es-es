@@ -21,25 +21,25 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 65d9a93215030905f41e082d38789592a4267404
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79194356"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297415"
 ---
 # <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Ejecute flujos presionando un botón inteligente Flic (versión preliminar)
 
 Desencadene flujos presionando un botón físico, conocido como Flic, de Shortcut Labs. Por ejemplo, presione un Flic para realizar un seguimiento de las horas de trabajo, bloquear el calendario, contar los visitantes de un evento o guardar ubicaciones geográficas.
 
 > [!IMPORTANT]
-> Antes de crear un flujo, configure todas las propiedades del Flic mediante la aplicación móvil de Flic para [Android](https://play.google.com/store/apps/details?id=io.flic.app) o [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8).
+> Antes de crear un flujo, configure todas las propiedades del Flic mediante la aplicación móvil de Flic para [Android](https://play.google.com/store/apps/details?id=io.flic.app)o [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8).
 > 
 > 
 
 ## <a name="prerequisites"></a>Requisitos previos
-Para usar Flics con Power Automate, debe cumplir estos requisitos:
+Para usar Flics con Power Automate, deber tener:
 
-* Disponer de acceso a [Power Automate](https://flow.microsoft.com).
+* Tener acceso a [Power Automate](https://flow.microsoft.com).
 * Haber descargado la aplicación móvil de Flic para [Android](https://play.google.com/store/apps/details?id=io.flic.app) o [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8), y haberla usado para emparejar uno o varios Flics.
 
 ## <a name="configure-flic-properties"></a>Configurar las propiedades del Flic
@@ -58,7 +58,7 @@ Una vez que haya vinculado un evento de Flic a Power Automate, puede seleccionar
 ## <a name="create-a-flow-thats-triggered-by-a-flic"></a>Cree un flujo desencadenado por un Flic
 En este tutorial, usamos un Flic para ejecutar un flujo que registra el tiempo que un consultor invierte en cada cliente. El consultor pulsa el Flic al llegar y vuelve a pulsarlo inmediatamente antes de salir del cliente. Cada vez que se pulsa el Flic se inicia una ejecución del flujo al que está conectado. El flujo guarda la hora actual en Hojas de cálculo de Google y, después, envía una notificación por correo electrónico. El correo electrónico contiene detalles acerca de la ejecución de flujo.
 
-Nota: asegúrese de que ha usado la aplicación móvil Flic para realizar el emparejamiento y configure al menos una acción **click** que desencadene Power Automate. En esta captura de pantalla, he configurado la acción **click** para desencadenar Power Automate. Más adelante configuraremos que se desencadene nuestro flujo cuando el Flic se pulsa una vez (se hace clic en él).
+Nota: Asegúrese de que ha usado la aplicación móvil Flic para realizar el emparejamiento y configure al menos una acción **clic** que desencadene Power Automate. En esta captura de pantalla, he configurado la acción **clic** para desencadenar Power Automate. Más adelante configuraremos que se desencadene nuestro flujo cuando el Flic se pulsa una vez (se hace clic en él).
 
    ![configuración de flic](./media/flic-button-flows/flic-configured-for-flow.png)
 
@@ -147,5 +147,5 @@ Si lo desea, puede considerar la posibilidad de extender el flujo para grabar au
 ## <a name="more-information"></a>Más información
 * [Compartir flujos de botones en Microsoft Flow](share-buttons.md).
 * Aprenda a usar [tokens de desencadenadores de botones](introduction-to-button-trigger-tokens.md) para enviar datos activos cuando se ejecuten los flujos de botón.
-* Instale la aplicación móvil de Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows).
+* Instale la aplicación móvil de Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows).
 

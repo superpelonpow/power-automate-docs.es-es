@@ -1,6 +1,6 @@
 ---
-title: Creación y administración de flujos en Microsoft Teams | Microsoft Docs
-description: Cree y administre flujos para publicar mensajes a petición, @mention usuarios y canales, publicar tarjetas con opciones de respuesta, etc.
+title: Aprender a crear y administrar flujos en Microsoft Teams | Microsoft Docs
+description: Cree y administre flujos para publicar mensajes a petición, mencionar usuarios (utilice @) y canales, publicar tarjetas con opciones de respuesta, etc.
 services: ''
 suite: flow
 documentationcenter: na
@@ -16,25 +16,25 @@ ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
 ms.openlocfilehash: 1fbd0c6b1f6a7cd453f6c1a336f5ce450e236c5e
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79195667"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296843"
 ---
 # <a name="power-automate-in-teams"></a>Power Automate en Teams
 
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-1. Access a Microsoft Teams.
-1. Acceso a Power Automate.
+1. Obtenga acceso a Microsoft Teams.
+1. Obtenga acceso a Power Automate.
 
-## <a name="install-the-power-automate-app-in-teams"></a>Instalación de la aplicación Power Automate en Teams
+## <a name="install-the-power-automate-app-in-teams"></a>Instalar la aplicación Power Automate en Teams
 
-Siga estos pasos para instalar la aplicación Power Automate en Microsoft Teams.
+Siga estos pasos para instalar la aplicación Power Automate en Microsoft Teams.
 
-1. Inicie sesión en Microsoft Teams.
+1. Inicie sesión en Microsoft Teams.
 
 1. Pulse el icono **Aplicaciones** situado en la parte inferior izquierda de la barra de navegación de Teams.
 
@@ -44,18 +44,18 @@ Siga estos pasos para instalar la aplicación Power Automate en Microsoft Teams
 
     ![Selección de la aplicación Flow](media/flows-teams/select-flow-app.png)
 
-1. Haga clic en **Instalar**.
+1. Seleccionar **Instalar**.
 
     ![Botón de instalación](media/flows-teams/select-install.png)
 
-1. Power Automate ya está instalado.
+1. Power Automate ya está instalada.
 
     ![Instalado](media/flows-teams/flow-installed.png)
 
 
 ## <a name="create-a-flow-in-teams"></a>Creación de un flujo en Teams
 
-1. Inicie sesión en Microsoft Teams.
+1. Inicie sesión en Microsoft Teams.
 
 1. Seleccione el vínculo **Más aplicaciones agregadas** (...) en la barra de navegación y, a continuación, seleccione la aplicación **Flow**.
 
@@ -63,19 +63,19 @@ Siga estos pasos para instalar la aplicación Power Automate en Microsoft Teams
 
 1. Si no lo ha hecho antes, puede que tenga que iniciar sesión y conceder permisos.
 
-    ![Iniciar sesión](media/flows-teams/grant-permissions-sign-in.png)
+    ![Inicio de sesión](media/flows-teams/grant-permissions-sign-in.png)
 
 
     Observe las pestañas siguientes:
 
     ![Página de aterrizaje de Flow](media/flows-teams/flow-landing-page.png)
 
-    Nombre|Propósito
+    Nombre|Finalidad
     ----|-----|
     Conversación|Interactúe con el bot de Flow.
-    Flujos|Cree y administre flujos
+    Flows|Cree y administre flujos
     Aprobaciones|Enumera las solicitudes de aprobación enviadas y recibidas.
-    Acerca de|Muestra la versión y otra información sobre Power Automate.
+    Acerca de la aplicación|Muestra la versión y otra información sobre Power Automate.
 
 
     Ahora verá todos los flujos que ha creado a partir del diseñador de Power Automate (si hay alguno). 
@@ -84,19 +84,19 @@ Siga estos pasos para instalar la aplicación Power Automate en Microsoft Teams
 
 ## <a name="manage-approvals"></a>Administrar aprobaciones
 
-Puede administrar las [aprobaciones](modern-approvals.md) en Microsoft Teams, de la misma forma que lo haría en Power Automate. Siga estos pasos para administrar las aprobaciones:
+Puede gestionar [aprobaciones](modern-approvals.md) en Microsoft Teams, tal como lo haría en Power Automate. Siga estos pasos para administrar las aprobaciones:
 
-1. Inicie sesión en Microsoft Teams.
+1. Inicie sesión en Microsoft Teams.
 1. Seleccione la pestaña **Aprobaciones**.
 
     ![Pestaña de aprobaciones](media/flows-teams/approvals-tab.png)
 
     Observará las siguientes subpestañas:
 
-    Pestaña|Propósito
+    Ficha|Finalidad
     ----|-----|
-    Recibidas|Muestra las solicitudes de aprobación que ha recibido y que están pendientes de acción por su parte.
-    Enviadas|Muestra las solicitudes de aprobación que ha enviado y que están pendientes de acción por otros.
+    Recibida|Muestra las solicitudes de aprobación que ha recibido y que están pendientes de acción por su parte.
+    Enviados|Muestra las solicitudes de aprobación que ha enviado y que están pendientes de acción por otros.
     Historial|Enumera las solicitudes de aprobación enviadas y recibidas.
     Creación de un flujo de aprobación|Cree flujos de aprobación.
 
@@ -115,7 +115,7 @@ Puede administrar las [aprobaciones](modern-approvals.md) en Microsoft Teams, de
 > [!TIP]
 > El bot muestra y ejecuta los flujos desencadenados por una programación o desencadenados manualmente sin intervención del usuario.
 
-1. Inicie sesión en Microsoft Teams.
+1. Inicie sesión en Microsoft Teams.
 1. Seleccione el vínculo **Más aplicaciones agregadas** (...) en la barra de navegación y, a continuación, seleccione la aplicación **Flow**.
 
     ![Icono de aplicaciones agregadas](media/flows-teams/added-apps-icon.png)

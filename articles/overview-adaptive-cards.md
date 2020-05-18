@@ -1,6 +1,6 @@
 ---
 title: Introducción a Tarjetas adaptables para Teams | Microsoft Docs
-description: Aprenda a usar tarjetas adaptables en Microsoft Teams.
+description: Aprenda a usar tarjetas adaptables en Microsoft Teams.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,27 +21,27 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 7b39474bbc59ba059fd73f2edc7f9b5750edbec2
-ms.sourcegitcommit: e3543e32e4e8e8163bef0565e27b657eabbdc741
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868765"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3298317"
 ---
-# <a name="overview-of-adaptive-cards-for-microsoft-teams"></a>Introducción a Tarjetas adaptables para Microsoft Teams
+# <a name="overview-of-adaptive-cards-for-microsoft-teams"></a>Introducción a las tarjetas adaptables para Microsoft Teams
 
 <br>
 <iframe width="1129" height="635" src="https://www.youtube.com/embed/FqQ3jM2qPRM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-Las tarjetas adaptables constituyen un método independiente de la plataforma para compartir y mostrar bloques de información sin la complejidad de personalizar CSS o HTML para representarlos. Puede crear tarjetas adaptables en formato JSON, con integraciones que las aplicaciones y los servicios en la nube pueden intercambiar de forma abierta. Cuando se entrega a un host específico, como Microsoft Teams, el formato JSON se transforma en una interfaz de usuario nativa que se adapta automáticamente al host. Por lo tanto, los diseñadores de procesos pueden ofrecer ahora patrones de interfaz de usuario coherentes siempre que necesiten mostrar información como parte de una automatización o un proceso de negocio.
+Las tarjetas adaptables constituyen un método independiente de la plataforma para compartir y mostrar bloques de información sin la complejidad de personalizar CSS o HTML para representarlos. Puede crear tarjetas adaptables en formato JSON, con integraciones que las aplicaciones y los servicios en la nube pueden intercambiar de forma abierta. Cuando se entrega a un host específico, como Microsoft Teams, el formato JSON se transforma en una interfaz de usuario nativa que se adapta automáticamente al host. Por lo tanto, los diseñadores de procesos pueden ofrecer ahora patrones de interfaz de usuario coherentes siempre que necesiten mostrar información como parte de una automatización o un proceso de negocio.
  
-Dado que las tarjetas adaptables se ajustan al host, son vehículos perfectos para compartir información entre Microsoft Teams y otros servicios.
+Dado que las tarjetas adaptables se ajustan al host, son vehículos perfectos para compartir información entre Microsoft Teams y otros servicios.
 
   ![Captura de pantalla de Tarjetas adaptables](media/adaptive-cards/multi-adaptive-cards.png)
  
 ## <a name="currently-available-actions-for-flows"></a>Acciones disponibles actualmente para flujos
  
-Las siguientes acciones permiten a los desarrolladores crear tarjetas adaptables para Microsoft Teams. A medida que los escenarios de integración evolucionen, Power Automate admitirá también otros hosts, lo que ampliará sus oportunidades de aprovechar Tarjetas Adaptables a través de las suscripciones a la nube de Microsoft.
+Las siguientes acciones permiten a los desarrolladores crear tarjetas adaptables para Microsoft Teams. A medida que los escenarios de integración evolucionen, Power Automate admitirá también otros hosts, lo que ampliará sus oportunidades de aprovechar Tarjetas Adaptables a través de las suscripciones a la nube de Microsoft.
  
 ## <a name="directing-content-to-teams-members-or-aad-users"></a>Direccionamiento de contenido a **miembros de Teams o usuarios de AAD**
  
@@ -91,6 +91,6 @@ Las siguientes acciones permiten a los desarrolladores crear tarjetas adaptables
 ## <a name="learn-more"></a>Más información 
  
 - Creación de su [primera tarjeta adaptable](https://docs.microsoft.com/power-automate/create-adaptive-cards)
-- Documentación completa sobre el [conector de Microsoft Teams](https://docs.microsoft.com/connectors/teams/)
+- Documentación completa del [Conector de Microsoft Teams](https://docs.microsoft.com/connectors/teams/)
 - Documentación completa sobre [E/S de tarjetas adaptables](https://docs.microsoft.com/adaptive-cards) 
 

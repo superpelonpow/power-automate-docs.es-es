@@ -21,16 +21,16 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 9515fee127c1130803f075c6b6a08802a7c1eaea
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79192470"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3296997"
 ---
 # <a name="create-parallel-approval-workflows-with-power-automate"></a>Creación de flujos de trabajo de aprobaciones en paralelo con Power Automate
 
 
-En un flujo de trabajo de aprobaciones en paralelo, son necesarias varias personas para aprobar distintos elementos, como facturas, pedidos de compra o solicitudes de vacaciones, entre otros. La aprobación de cada persona es independiente de todos los demás aprobadores.
+En un flujo de trabajo de aprobación paralelo, se requieren varias personas para aprobar artículos tales como facturas, órdenes de compra, solicitudes de vacaciones, etc. La aprobación de cada persona es independiente de todos los demás aprobadores.
 
 En este tutorial, usamos Power Automate para crear un flujo que automatiza un flujo de trabajo de aprobaciones en paralelo. Este flujo automatiza un proceso de solicitud de vacaciones de los empleados que requiere la aprobación de todas las personas (o equipos) con los que el empleado colabora regularmente. Los empleados usan una [lista de SharePoint](https://support.office.com/article/Introduction-to-lists-0a1c3ace-def0-44af-b225-cfa8d92c52d7) para solicitar vacaciones. Son necesarias las aprobaciones de las vacaciones por parte del administrador directo del empleado, el equipo de ventas y el equipo de recursos humanos. Cada solicitud de vacaciones se enruta a cada aprobador para que tome una decisión. El flujo envía un correo electrónico con los cambios de estado y, después, actualiza SharePoint con las decisiones.
 
@@ -40,7 +40,7 @@ En este tutorial, usamos Power Automate para crear un flujo que automatiza un fl
 
 La lista de SharePoint Online que cree debe incluir las columnas siguientes:
 
-   ![Columnas de la lista de SharePoint](./media/parallel-modern-approvals/sharepoint-columns.png)
+   ![Columnas de lista de SharePoint](./media/parallel-modern-approvals/sharepoint-columns.png)
 
 Tome nota del nombre y la dirección URL de la lista de SharePoint Online. Usamos estos elementos después al configurar el desencadenador **SharePoint - Cuando se crea un elemento**.
 
@@ -75,7 +75,7 @@ Tome nota del nombre y la dirección URL de la lista de SharePoint Online. Usamo
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
 > [!IMPORTANT]
-> Esta acción envía la solicitud de vacaciones a la dirección de correo electrónico del cuadro **Asignado a**, por tanto inserte el token **Correo electrónico** en la lista **Obtener el administrador (v2)** .
+> Esta acción envía la solicitud de vacaciones a la dirección de correo electrónico del cuadro **Asignado a**, por tanto inserte el token **Correo electrónico** en la lista **Obtener el administrador (v2)**.
 > 
 > 
 
@@ -148,7 +148,7 @@ Sigamos:
 
 Realice los siguientes pasos en la sección **EN CASO POSITIVO** de la rama **Condición**.
 
-   Nota: el flujo usa estos pasos para enviar un correo electrónico cuando se aprueba la solicitud:
+   Nota: El flujo usa estos pasos para enviar un correo electrónico cuando se aprueba la solicitud:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
@@ -162,7 +162,7 @@ Repita los pasos anteriores en las ramas **Start an approval 2** (Iniciar una ap
 
 Realice los pasos siguientes para actualizar SharePoint cuando se toman decisiones.
 
-   Nota: asegúrese de realizar estos pasos en ambos lados **IF YES** (En caso positivo) e **IF NO** (En caso negativo) de la rama.
+   Nota: Asegúrese de realizar estos pasos en ambos lados **IF YES** (En caso positivo) y **IF NO** (En caso negativo) de la sucursal.
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 

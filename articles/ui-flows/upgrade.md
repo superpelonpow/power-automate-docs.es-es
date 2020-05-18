@@ -25,7 +25,7 @@ ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80525066"
+ms.locfileid: "3298691"
 ---
 # <a name="upgrade-ui-flows-app-and-connections-from-previous-releases"></a>Actualización de la aplicación de flujos de interfaz de usuario y de las conexiones a partir de versiones anteriores
 
@@ -35,7 +35,7 @@ Hemos modificado varios componentes subyacentes y hemos agregado varias caracter
 
 No es necesario realizar ninguna acción hasta que actualice la aplicación de flujos de interfaz de usuario o la conexión a la puerta de enlace. Debe actualizar ambas al mismo tiempo.
 
-### <a name="how-do-i-upgrade"></a>¿Cómo realizar una actualización?
+### <a name="how-do-i-upgrade"></a>¿Cómo me actualizo?
 
 1.  Descargue la [versión más reciente de la aplicación de flujos de interfaz de usuario](https://go.microsoft.com/fwlink/?linkid=2102613&clcid=0x409) e instálela en sus dispositivos.
 

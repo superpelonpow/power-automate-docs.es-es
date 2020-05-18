@@ -1,6 +1,6 @@
 ---
-title: Solicitudes de eliminación del interesado de acuerdo con el RGPD en Power Automate para cuentas de Microsoft (MSA) | Microsoft Docs
-description: Obtenga información sobre cómo usar Power Automate para responder a solicitudes de eliminación del interesado de acuerdo con el RGPD para cuentas de Microsoft.
+title: Solicitudes de eliminación del titular de los datos de acuerdo con el RGPD en Power Automate para cuentas Microsoft (MSA) | Microsoft Docs
+description: Obtenga información sobre cómo usar Power Automate para responder a solicitudes de eliminación del titular de los datos de acuerdo con el RGPD para cuentas de Microsoft.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,11 +21,11 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 48aafe66584e42f3011b135ff8dbdc5fec69737f
-ms.sourcegitcommit: 84fb0547e79567efa19d7c16857176f7f1b53934
+ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79193942"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3297965"
 ---
 # <a name="respond-to-gdpr-data-subject-delete-requests"></a>Respuesta a solicitudes de eliminación del interesado de acuerdo con el RGPD
 
@@ -39,7 +39,7 @@ En la siguiente tabla se muestra qué datos personales se eliminan de manera aut
 |Requiere el usuario de MSA para la revisión y eliminación|Se eliminan automáticamente|
 |------|------|
 |Actividad de productos y servicios|Historial de ejecución|
-|Flujos|Fuente de actividades|
+|Flows|Fuente de actividades|
 |Conexiones||
 
 Power Automate ofrece las experiencias siguientes para ayudar a los usuarios a buscar, revisar o cambiar los datos personales que no se eliminan de forma automática:
@@ -94,5 +94,5 @@ Los conectores usan conexiones para comunicarse con API y sistemas SaaS. Las con
 
 ## <a name="learn-more"></a>Más información
 
-* Introducción a [Power Automate](getting-started.md).
-* Información sobre las [novedades](release-notes.md) de Power Automate.
+* Introducción a [Power Automate](getting-started.md)
+* [Novedades](release-notes.md) de Power Automate

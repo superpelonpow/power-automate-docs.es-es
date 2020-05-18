@@ -1,7 +1,7 @@
 ---
-title: Introducción a los flujos de proceso de negocio | Microsoft Docs
+title: Información general sobre flujos de proceso de negocio | MicrosoftDocs
 ms.custom: ''
-ms.date: 05/06/2019
+ms.date: 12/12/2019
 ms.reviewer: ''
 ms.service: flow
 author: MSFTMAN
@@ -21,88 +21,88 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9d3ded6a38d45fa97a206abdf0ee5d89d2255124
-ms.sourcegitcommit: 7a42629c7bc15208c5a9d692ab89616fc0aa40cb
+ms.openlocfilehash: a6e936b833f6b1e1d6cf6e050031969d41e40de6
+ms.sourcegitcommit: 31692af25f91af60cf77572edcb0c986602dc9a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82973077"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3298889"
 ---
-# <a name="business-process-flows-overview"></a>Introducción a los flujos de proceso de negocio
+# <a name="business-process-flows-overview"></a>Información general sobre flujos de proceso de negocio
 
 
-Puede ayudar a garantizar que los usuarios escriban los datos de forma coherente y sigan los mismos pasos cada vez que trabajan con un cliente mediante la creación de un flujo de proceso de negocio. Por ejemplo, es posible que quiera crear un flujo de proceso de negocio para que todos los usuarios controlen las solicitudes de servicio de cliente del mismo modo, o bien para requerir que el personal obtenga la aprobación de una factura antes de enviar un pedido. Los flujos de proceso de negocio usan la misma tecnología subyacente que otros procesos, pero las funcionalidades que proporcionan son muy diferentes a las de otras características que usan los procesos. Para obtener información sobre cómo crear o modificar un flujo de proceso de negocio, vea [Creación de un flujo de proceso de negocio](create-business-process-flow.md).  
+Puede ayudar a asegurarse de que los usuarios especifiquen datos de manera coherente y siguen los mismos pasos cada vez que trabajan con un cliente mediante la creación de un flujo de proceso de negocio. Por ejemplo, es posible que quiera crear un flujo de proceso de negocio para que todos los usuarios controlen las solicitudes del servicio de atención al cliente de la misma manera, o bien para exigir que los usuarios obtengan la aprobación de una factura antes de enviar un pedido. Los flujos de proceso de negocio usan la misma tecnología subyacente que otros procesos, pero las funciones que proporcionan son muy diferentes de otras características que usan los procesos. Para obtener más información sobre cómo crear o editar un flujo de proceso de negocio, consulte [Crear un flujo de proceso de negocio](create-business-process-flow.md).  
   
- [Vea un vídeo corto (4:49) sobre los flujos de proceso de negocio.](https://go.microsoft.com/fwlink/p/?linkid=842226)  
+ [Vea un vídeo corto (4:49) sobre flujos de proceso de negocio.](https://go.microsoft.com/fwlink/p/?linkid=842226)  
   
 <a name="BKMK_Why"></a>   
-## <a name="why-use-business-process-flows"></a>Cuándo usar los flujos de proceso de negocio  
-Los flujos de proceso de negocio proporcionan una guía para que los usuarios realicen su trabajo. Proporcionan una experiencia de usuario más eficaz que guía a los usuarios a través de los procesos que la organización ha definido para las interacciones que se deben hacer avanzar a algún tipo de conclusión. Esta experiencia de usuario se puede adaptar para que usuarios con distintos roles de seguridad puedan tener la experiencia que mejor se adapte al trabajo que realizan.  
+## <a name="why-use-business-process-flows"></a>Motivos para usar flujos de proceso de negocio  
+Los flujos de proceso de negocio proporcionan una guía para que la gente realice el trabajo. Proporcionan una experiencia de usuario simplificada que guía a los usuarios por los procesos que su organización ha definido para las interacciones que deben avanzarse a una conclusión de algún tipo. Esta experiencia del usuario se puede adaptar para que la gente con diferentes roles de seguridad pueda tener una experiencia que se adapte mejor al trabajo que hacen.  
   
- Puede usar flujos de proceso de negocio para definir un conjunto de pasos que los usuarios pueden seguir para llegar a un resultado deseado. Estos pasos proporcionan un indicador visual que indica a los usuarios en qué parte del proceso de negocio se encuentran. Los flujos de proceso de negocio reducen la necesidad de aprendizaje, ya que no es necesario que los usuarios se centren en qué entidad deberían usar. Pueden permitir que el proceso les guíe. Puede configurar flujos de proceso de negocio para admitir metodologías de venta comunes que pueden ayudar a los grupos de ventas a obtener mejores resultados. Para los grupos de servicio, los flujos de proceso de negocio pueden ayudar a los empleados nuevos a ponerse al día más rápidamente y evitar errores que podrían dar lugar a la insatisfacción de los clientes.  
+ Use flujos de proceso de negocio para definir un conjunto de pasos para que la gente siga para obtener el resultado deseado. Estos pasos ofrecen un indicador visual que especifica en qué parte del proceso empresarial se encuentra cada cual. Los flujos de proceso de negocio reducen la necesidad de entrenamiento porque no es necesario que los nuevos usuarios se centren en la entidad que deben usar. Pueden dejar que el proceso les guíe. Puede configurar los flujos de proceso de negocio para respaldar aspectos comunes de ventas que pueden ayudar a los grupos de ventas a obtener mejores resultados. Para los grupos de servicios, los flujos de proceso de negocio pueden ayudar al nuevo personal a adaptarse al ritmo más rápido y a evitar errores que pueden provocar clientes insatisfechos.  
   
 <a name="BKMK_What"></a>   
 ## <a name="what-can-business-process-flows-do"></a>¿Qué pueden hacer los flujos de proceso de negocio?  
- Con los flujos de proceso de negocio, se define un conjunto de *fases* y *pasos* que, después, se muestran en un control en la parte superior del formulario.  
+ Con los flujos de proceso de negocio, puede definir un conjunto de *fases* y *pasos* que se mostrarán a continuación en un control en la parte superior del formulario.  
   
- ![Proceso de negocio con fases](media/business-process-stages.png "Proceso de negocio con fases")  
+ ![Proceso de negocio con fases](media/business-process-stages.png "Proceso empresarial con fases")  
   
- Cada fase contiene un grupo de pasos. Cada paso representa un campo donde se pueden escribir datos. Los usuarios avanzan a la fase siguiente por medio del botón **Fase siguiente**. Puede hacer que un paso sea obligatorio para que los usuarios tengan que escribir datos para el campo correspondiente antes de poder continuar a la fase siguiente. Normalmente, esto se denomina "puerta de fase".  
+ Cada fase contiene un grupo de pasos. Cada paso representa un campo donde pueden introducirse los datos. Los usuarios avanzan a la siguiente fase con el botón **Fase siguiente**. Puede crear un paso necesario para que la gente deba especificar los datos en el campo correspondiente para poder pasar a la siguiente fase. Esto habitualmente se denomina "puerta de fase".  
   
- Los flujos de proceso de negocio parecen relativamente simples en comparación con otros tipos de procesos, ya que no proporcionan ninguna lógica de negocios condicional o automatización más allá de proporcionar la experiencia simplificada para la entrada de datos y controlar la entrada en fases. Pero al combinarlos con otros procesos y personalizaciones, pueden desempeñar un papel importante a la hora de ahorrar tiempo para los usuarios, reducir los costos de aprendizaje y aumentar la adopción del usuario.  
+ Los flujos de proceso de negocio parecen relativamente simples comparado con otros tipos de procesos porque no se ofrecen ninguna lógica de negocio condicional o automatización además de ofrecer la experiencia simplificada de entrada de datos y el control de la entrada en las fases. Sin embargo, cuando se combinan con otros procesos y personalizaciones, pueden tener un rol importante para ahorrar tiempo a los usuarios, reducir costos de aprendizaje y aumentar la adopción por parte del usuario.  
 
 <a name="BKMK_BPFwithOtherCustomizations"></a>   
 ### <a name="business-process-flows-integrated-with-other-customizations"></a>Flujos de proceso de negocio integrados con otras personalizaciones  
- Cuando usted o el usuario escribe datos mediante flujos de proceso de negocio, los cambios de los datos también se aplican a los campos de formulario para que la automatización proporcionada por las reglas de negocios o los scripts de formulario se pueda aplicar de forma inmediata. Se pueden agregar pasos que establezcan valores para los campos que no están presentes en el formulario y estos campos se agregarán al modelo de objetos de `Xrm.Page` que se usa para los scripts de formulario. Los flujos de trabajo que se inicien por los cambios realizados en los campos incluidos en un flujo de proceso de negocio se aplicarán cuando se guarden los datos del formulario. Si la automatización la aplica un flujo de trabajo en tiempo real, los cambios serán visibles inmediatamente para el usuario cuando se actualicen los datos del formulario después de guardar el registro.  
+ Cuando usted o el usuario especifican datos mediante flujos de proceso de negocio, los cambios de los datos también se aplican a los campos de formulario para aplicar una automatización que suministra reglas de negocio o scripts de formularios inmediatamente. Los pasos pueden agregarse a los valores definidos para los campos que no se encuentran presentes en el formulario y estos campos se agregarán al modelo de objetos `Xrm.Page` usado para scripts de formularios. Cualquier flujo de trabajo que esté iniciado por los cambios en los campos incluidos en un flujo de proceso de negocio se aplicará cuando se guarden datos en el formulario. Si la automatización la aplica un flujo de trabajo en tiempo real, los cambios serán visibles inmediatamente para el usuario cuando los datos del formulario se actualicen después de guardar el registro.  
   
- Aunque el control de flujo de proceso de negocio en el formulario no proporciona ninguna programación del lado cliente directa, los cambios aplicados por las reglas de negocios o los scripts de formulario se aplican automáticamente a los controles de flujo de proceso de negocio. Si oculta un campo en un formulario, ese campo también se ocultará en el control de flujo de proceso de negocio. Si establece un valor mediante reglas de negocios o scripts de formulario, ese valor se establecerá en el flujo de proceso de negocio.  
+ Aunque el control del flujo de proceso de negocio del formulario no proporciona ninguna programabilidad de cliente directa, los cambios que se aplican por reglas de negocio o scripts de formularios se aplican automáticamente a los controles del flujo de proceso de negocio. Si oculta un campo en un formulario, ese campo también estará oculto en el control del flujo de proceso de negocio. Si establece un valor mediante reglas de negocio o scripts de formularios, el valor se establecerá en el flujo de proceso de negocio.  
   
 ### <a name="concurrent-process-flows"></a>Flujos de proceso simultáneos  
- Los flujos de proceso de negocio simultáneos permiten a los personalizadores configurar varios procesos de negocio y asociarlos con el mismo registro inicial. Los usuarios pueden cambiar entre varios procesos de negocio que se ejecuten de forma simultánea y reanudar su trabajo en la fase del proceso en la que se encontraban.  
+ Los flujos de proceso de negocio simultáneos permiten a los personalizadores configurar varios procesos de negocio y asociarlos con el mismo registro inicial. Los usuarios pueden cambiar entre varios procesos de negocio que se ejecutan simultáneamente, y reanudar su trabajo en la fase del proceso en la que estaban.  
   
 <a name="BKMK_SystemBPF"></a>   
 ### <a name="system-business-process-flows"></a>Flujos de proceso de negocio del sistema  
- Se incluyen los flujos de proceso de negocio siguientes. Para entender cómo funcionan los flujos de proceso de negocio, revise estos flujos de proceso de negocio del sistema:  
+ Se incluyen los siguientes flujos de proceso de negocio. Para comprender cómo funcionan los flujos de procesos de negocio, revise estos flujos de procesos de negocio del sistema:  
   
--   Proceso de cliente potencial a ventas de la oportunidad  
+-   Proceso de cliente potencial a oportunidad de venta  
   
--   Proceso de ventas de la oportunidad  
+-   Proceso de oportunidad de venta  
   
 -   Proceso de teléfono a caso  
   
 <a name="BKMK_multipleEntities"></a>   
 ## <a name="multiple-entities-in-business-process-flows"></a>Varias entidades en flujos de proceso de negocio  
- Puede usar un flujo de proceso de negocio para una sola entidad o abarcar varias entidades. Por ejemplo, puede tener un proceso que comienza con una oportunidad, continúa con una oferta, un pedido y después una factura, antes de volver para cerrar la oportunidad en último lugar.  
+ Puede usar un flujo de proceso de negocio para una sola entidad o abarcar varias entidades. Por ejemplo, puede tener un proceso que empiece con una oportunidad, continúe a una oferta, un pedido y después a una factura, para acabar volviendo a cerrar la oportunidad.  
   
- Puede diseñar flujos de proceso de negocio que conecten entre sí los registros de hasta cinco entidades diferentes en un único proceso, para que los usuarios de la aplicación puedan centrarse en el flujo de su proceso en lugar de la entidad en la que están trabajando. Se pueden desplazar con más facilidad entre los registros de la entidad relacionada.  
+ Puede diseñar flujos de proceso de negocio que relacionen los registros de hasta cinco entidades distintas en un solo proceso para que las personas que usan la aplicación puedan concentrarse en el flujo del proceso en lugar de en la entidad en la que trabajan. Pueden desplazarse más fácilmente entre los registros relacionados de la entidad.  
   
 <a name="BKMK_MultipleBPF"></a>   
-## <a name="multiple-business-process-flows-are-available-per-entity"></a>Varios flujos de proceso de negocio disponibles por cada entidad  
- No todos los usuarios de una organización pueden seguir el mismo proceso y cada condición puede requerir que se aplique un proceso distinto. Puede tener hasta 10 flujos de proceso de negocio activos por cada entidad para proporcionar procesos adecuados para cada situación.  
+## <a name="multiple-business-process-flows-are-available-per-entity"></a>Varios flujos de proceso de negocio están disponibles por entidad  
+ No todos los usuarios de una organización pueden seguir el mismo proceso y varias condiciones pueden requerir que se aplique otro proceso. Puede tener hasta 10 flujos de proceso de negocio activos por entidad para proporcionar los procesos adecuados para diferentes situaciones.  
   
 <a name="BPF_controlsWhichBPF"></a>   
-### <a name="control-which-business-process-flow-will-be-applied"></a>Control del flujo de proceso de negocio que se va a aplicar  
- Puede asociar flujos de proceso de negocio con roles de seguridad para que solo los usuarios con esos roles de seguridad puedan verlos o usarlos. También puede establecer el orden de los flujos de proceso de negocio para controlar cuáles se establecerán de forma predeterminada. Esto funciona de la misma manera que la definición de varios formularios para una entidad.  
+### <a name="control-which-business-process-flow-will-be-applied"></a>Controlar el flujo de proceso de negocio que se aplicará  
+ Puede asociar los flujos de procesos de negocio con roles de seguridad para que solo los usuarios con esos roles de seguridad puedan consultarlos o usarlos. También puede establecer el orden de los flujos de proceso de negocio de modo que pueda controlar el flujo de proceso de negocio que se establecerá de forma predeterminada. Esto funciona de la misma forma en que se definen los formularios múltiples para una entidad.  
   
- Cuando alguien crea un registro de entidad, la lista de definición de procesos de negocio activos disponibles se filtra por el rol de seguridad del usuario. La primera definición de proceso de negocio activado disponible para el rol de seguridad del usuario según la lista de orden de procesos es la que se aplica de forma predeterminada. Si hay más de una definición de proceso de negocio activo, los usuarios pueden cargar otra desde el cuadro de diálogo Cambiar proceso. Cada vez que los procesos se cambian, el que se representa actualmente pasa a segundo plano y se reemplaza por el que se ha seleccionado, pero mantiene su estado y se puede cambiar de nuevo. Cada registro puede tener varias instancias de proceso asociadas (una para cada definición de flujo de proceso de negocio diferente, hasta un total de 10). Al cargar el formulario, solo se representa un flujo de proceso de negocio. Cuando un usuario aplica otro proceso, ese proceso solo se puede cargar de forma predeterminada para ese usuario concreto.  
+ Al crear un nuevo registro de entidad, la lista de definiciones de procesos de negocio activos disponible se filtra según el rol de seguridad del usuario. La primera definición de proceso de negocio activada disponible para el rol de seguridad del usuario según la lista de orden del proceso es la que se aplica de forma predeterminada. Si hay disponibles varias definiciones de proceso de negocio activas, los usuarios pueden cargar otra desde el cuadro de diálogo Cambiar proceso. Siempre que se intercambian los procesos, el que se está usando actualmente pasa al segundo plano y se reemplaza por el seleccionado, pero mantiene su estado y se pueden volver a intercambiar. Cada registro puede tener varias instancias de proceso asociadas (cada una de ellas para una definición de flujo de proceso de negocio diferente, hasta un total de 10). Al cargar un formulario, se representa solo un flujo de proceso de negocio. Cuando un usuario aplica un proceso diferente, dicho proceso se puede cargar solo de forma predeterminada para ese usuario determinado.  
   
- Para asegurarse de que un proceso de negocio se carga de forma predeterminada para todos los usuarios (un comportamiento equivalente a "fijar" el proceso), se puede agregar un script de API cliente personalizado (recurso web) al cargar el formulario en el que se cargue de forma específica una instancia existente de proceso de negocio en función del identificador de la definición de proceso de negocio. 
+ Para asegurarse de que un proceso de negocio se cargue de forma predeterminada para todos los usuarios (comportamiento equivalente a “anclar” el proceso), se puede agregar un script de API de cliente personalizado (recurso web) en la carga del formulario que cargue específicamente una instancia de proceso de negocio existente en función del ID de la definición del proceso de negocio. 
  
   
 <a name="BKMK_Considerations"></a>   
-## <a name="business-process-flow-considerations"></a>Consideraciones sobre los flujos de proceso de negocio  
- Solo puede definir flujos de proceso de negocio para las entidades que los admitan. También deberá tener en cuenta los límites para el número de procesos, fases y pasos que se pueden agregar.  
+## <a name="business-process-flow-considerations"></a>Consideraciones sobre el flujo de proceso de negocio  
+ Puede definir flujos de proceso de negocio solo para esas entidades que las admitan. También deberá tener en cuenta los límites para el número de procesos, fases y pasos que se pueden agregar.  
   
 ### <a name="business-process-flows-that-call-a-workflow"></a>Flujos de proceso de negocio que llaman a un flujo de trabajo  
- Puede llamar a flujos de trabajo a petición desde dentro de un flujo de proceso de negocio. Para configurarlo desde el nuevo Diseñador de flujos de proceso de negocio, arrastre un componente de flujo de trabajo a una fase del proceso o a la sección de flujos de trabajo globales. Para obtener más información sobre el empleo de flujos de trabajo en flujos de proceso de negocio, vea [Blog: Business process flow automation in Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/) (Blog: Automatización de flujos de proceso de negocio en Dynamics 365).  
+ Puede llamar a flujos de trabajo a petición desde dentro de un flujo de proceso de negocio. Puede configurar esto en el nuevo diseñador de flujo de proceso de negocio arrastrando un componente de flujo de trabajo a una fase del proceso o la sección Flujos de trabajo globales. Para obtener más información acerca del uso de flujos de trabajo en flujos de proceso de negocio, consulte [Blog: Automatización de flujos de proceso de negocio en Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
   
- Cuando incluye un flujo de trabajo que quiere que se desencadene en la salida de fase de una fase del flujo de proceso de negocio, y esa fase es la última del flujo, el diseñador da la impresión de que el flujo de trabajo se desencadenará cuando que se haya completado la fase. Pero el flujo de trabajo no se desencadenará porque no tiene lugar una transición de fase. No recibirá una advertencia ni un error que le impida incluir el flujo de trabajo en la fase. Cuando un usuario interactúa con el flujo de proceso de negocio, finalizar o abandonar el proceso no produce una transición de fase y, por tanto, el flujo de trabajo no se desencadena. Considere los ejemplos siguientes:  
+ Cuando incluye un flujo de trabajo que desea desencadenar en la salida de una fase en el flujo de proceso de negocio, y esa fase es la última fase del flujo, el diseñador da la impresión de que el flujo de trabajo se desencadenará cuando se complete esa fase. Sin embargo, el flujo de trabajo no se desencadenará porque no se produce una transición de fase. No recibirá una advertencia o un error que le impida incluir el flujo de trabajo en la fase. Cuando un usuario interactúa con el flujo de proceso de negocio, al acabar o abandonar el proceso no se produce una transición de fase y, por tanto, el flujo de trabajo no se desencadena. Tenga en cuenta los siguientes ejemplos:  
   
--   Crea un flujo de proceso de negocio con dos fases, S1 se conecta a S2, con un flujo de trabajo en la fase S2 y establece el desencadenador en **Salida de fase**.  
+-   Puede crear un flujo de proceso de negocio con dos fases, S1 se conecta a S2, con un flujo de trabajo en la fase S2 y establece el desencadenador en **Salida de fase**.  
   
--   Crea un flujo de proceso de negocio con tres fases, S1 se conecta a S2 y después S2 se bifurca a S3. Incluye un flujo de trabajo en S2 y establece el desencadenador en **Salida de fase**.  
+-   Puede crear un flujo de proceso de negocio con tres fases, S1 se conecta a S2, después S2 se bifurca a S3. Incluya también un flujo de trabajo en S2 y establezca el desencadenador en **Salida de fase**.  
   
- El flujo de trabajo no se desencadenará en ninguno de los casos. Para solucionar este problema, puede agregar un flujo de trabajo global y agregarle el flujo de trabajo que quiere que se desencadene para que el flujo de trabajo se desencadene para el proceso de negocio empresarial en lugar de para una fase del proceso. Puede establecer el desencadenador de un flujo de trabajo global en Proceso abandonado o Proceso finalizado para que el flujo de trabajo se desencadene cuando un usuario abandone o complete el proceso de negocio.  
+ El flujo de trabajo no se desencadenará en ningún caso. Para solucionar este problema, puede agregar un flujo de trabajo global y agregarle el flujo de trabajo que desea desencadenar de modo que el flujo de trabajo se desencadene para el proceso de negocio en lugar para una fase del proceso. Puede establecer el desencadenador de un flujo de trabajo global en Proceso abandonado o Proceso finalizado para que el flujo de trabajo se desencadene cuando un usuario abandone o complete el proceso de negocio.  
   
 <a name="BKMK_Entities"></a>   
 ### <a name="entities-that-can-use-business-process-flows"></a>Entidades que pueden usar flujos de proceso de negocio  
@@ -112,10 +112,10 @@ Los flujos de proceso de negocio proporcionan una guía para que los usuarios re
 -   Cita  
 -   Campaña  
 -   Actividad de campaña  
--   Respuesta de la campaña  
+-   Respuesta de campaña  
 -   Competidor  
 -   Contacto  
--   Correo  
+-   Enviar por correo electrónico  
 -   Derecho  
 -   Fax  
 -   Caso  
@@ -131,41 +131,41 @@ Los flujos de proceso de negocio proporcionan una guía para que los usuarios re
 -   Cita periódica  
 -   Documentación de ventas  
 -   Actividad social  
--   Pedido  
+-   Orden  
 -   Usuario  
 -   Tarea  
 -   Equipo  
   
- Para habilitar una entidad personalizada para flujos de proceso de negocio, active la casilla **Flujos de proceso de negocio (se crearán campos)** de la definición de la entidad. Tenga en cuenta que esta acción no se puede deshacer.  
+ Para habilitar una entidad personalizada para flujos de procesos de negocio, active la casilla **Flujos de proceso de negocio (se crearán campos)** en la definición de la entidad. Tenga en cuenta que no se puede deshacer esta acción.  
   
 > [!NOTE]
->  Si navega a la fase de flujo de proceso de negocio que contiene la entidad `Social Activity` y hace clic en el botón **Fase siguiente**, verá la opción **Crear**. Al hacer clic en **Crear**, se carga el formulario **Actividad social**. Pero como `Social Activity` no es válido para `Create` desde la interfaz de usuario de la aplicación, no se puede guardar el formulario y aparece el mensaje de error: "Error inesperado".  
+>  Si se desplaza a la fase del flujo del proceso de negocio que contiene la entidad de `Social Activity` y elige el botón **Fase siguiente** , verá la opción **Crear** . Al elegir **Crear** se carga el formulario **Actividad social**. Sin embargo, dado que `Social Activity` no es válido para `Create` desde la interfaz de usuario de la aplicación, no podrá guardar el formulario y verá el mensaje de error: "Error inesperado".  
   
 <a name="BPF_MaxNumbers"></a>   
 ### <a name="maximum-number-of-processes-stages-and-steps"></a>Número máximo de procesos, fases y pasos  
- Para garantizar un rendimiento aceptable y la facilidad de uso de la interfaz de usuario, hay algunas limitaciones que debe tener en cuenta cuando vaya a usar flujos de proceso de negocio:  
+ Para garantizar un rendimiento aceptable y la capacidad de uso de la interfaz de usuario, hay algunas limitaciones que debe conocer cuando planee usar flujos de proceso de negocio:  
   
--   No puede haber más de 10 procesos de flujo de proceso de negocio activos por entidad.  
+-   No puede haber más de 10 procesos de flujo de proceso de negocio habilitados por entidad.  
   
--   Cada proceso no puede contener más de 30 fases.  
+-   Cada proceso puede contener 30 fases como máximo.  
   
--   Los procesos de varias entidades no pueden contener más de 5 entidades.
+-   Los procesos de múltiples entidades no pueden contener más de cinco entidades.
   
 ## <a name="business-process-flow-entity-customization-support"></a>Compatibilidad con la personalización de entidades de flujo de proceso de negocio 
 
-Introducidas en la actualización de la versión 9.0 de Dynamics 365 (en línea), las entidades de flujo de proceso de negocio pueden aparecer en el sistema para que los datos de registro de entidad puedan estar disponibles en paneles, vistas, gráficos y cuadrículas. 
+Introducidas en la actualización de la versión 9.0 de Dynamics 365 (online), las entidades de flujo de proceso de negocio pueden aparecer en el sistema para que los datos de registro de entidad pueden estar disponibles en cuadrículas, vistas, gráficos y paneles. 
 
-### <a name="use-business-process-flow-entity-records-with-grids-views-charts-and-dashboards"></a>Uso de registros de entidad de flujo de proceso de negocio con paneles, vistas, gráficos y cuadrículas
+### <a name="use-business-process-flow-entity-records-with-grids-views-charts-and-dashboards"></a>Utilice registros de entidad de flujo de proceso de negocio con cuadrículas, vistas, gráficos y paneles
 
-Como los flujos de procesos de negocio están disponibles como una entidad, ahora puede usar búsquedas avanzadas, vistas, gráficos y paneles con origen en los datos de flujo de proceso de negocio para una entidad determinada, por ejemplo un cliente potencial o una oportunidad. Los administradores del sistema y los personalizadores pueden crear paneles, vistas, gráficos y cuadrículas de flujo de proceso de negocio personalizados similares a los que se crean con cualquier otra entidad.
+Con los flujos de proceso de negocio disponibles como una entidad, ahora puede usar búsquedas avanzadas, vistas, gráficos y paneles procedentes de datos de flujos de procesos de negocio para una entidad dada, como un cliente potencial o una oportunidad. Los personalizadores y los administradores del sistema pueden crear paneles, vistas, gráficos y cuadrículas de flujo de proceso de negocio personalizados similar a los creados con cualquier otra entidad.
 
 Los flujos de proceso de negocio, como **Proceso de cliente potencial a ventas de la oportunidad**, aparecen como una entidad personalizable en el Explorador de soluciones.
 
 ![Explorador de soluciones con la entidad Proceso de cliente potencial a ventas de la oportunidad](media/bpf-lead-solution-explorer.png)
 
-Para acceder a una vista de flujo de proceso de negocio predeterminada, abra el Explorador de soluciones, expanda **Entidades** > expanda el proceso que quiera, como **Proceso de cliente potencial a ventas de la oportunidad**, seleccione **Vistas**  y, después, seleccione la vista que quiera.
+Para acceder a una vista de flujo de proceso de negocio predeterminada, abra el explorador de soluciones, expanda **Entidades** > expanda el proceso que desee, como **Proceso de venta de cliente potencial a oportunidad**, seleccione **Vistas**y seleccione la vista que desee.
 
-Hay disponibles varias vistas predeterminadas que puede ver como un gráfico, como la vista **Proceso de ventas de oportunidad activa**. 
+Hay varias vistas predeterminadas disponibles que puede ver como un gráfico, como la vista **Proceso de venta de oportunidad activo**. 
 
 ![Vista Proceso de ventas de la oportunidad activa](media/bpf-default-view.png)
 
@@ -176,11 +176,11 @@ También puede interactuar con las entidades de flujo de proceso de negocio desd
 
 Puede usar los flujos de procesos de negocio sin conexión si se cumplen estas condiciones:
 
-- El flujo del proceso de negocio se usa desde una aplicación de Power Apps.
-- La aplicación Power Apps está habilitada para su uso sin conexión.
+- El flujo del proceso de negocio se usa desde una aplicación de Power Apps.
+- Se ha habilita la aplicación Power Apps para su uso sin conexión.
 - El flujo de procesos de negocio tiene una sola entidad.
 
-En concreto, los tres comandos que están disponibles para un flujo de proceso de negocio cuando la aplicación Power Apps está sin conexión son:
+En concreto, los tres comandos que están disponibles para un flujo de proceso de negocio cuando la aplicación Power Apps está sin conexión son:
 
 - Fase siguiente
 - Fase anterior
@@ -189,11 +189,11 @@ En concreto, los tres comandos que están disponibles para un flujo de proceso d
 ### <a name="limitations-of-using-business-process-flow-entities"></a>Limitaciones del uso de entidades de flujo de proceso de negocio
 
 - En la actualidad, no se pueden crear formularios personalizados para entidades en función de un flujo de proceso de negocio.
-- Si una solución incluye una entidad de flujo de proceso de negocio, esta se debe agregar de forma manual a la solución antes de exportarla. En caso contrario, la entidad de flujo de proceso de negocio no se incluirá en el paquete de solución. Más información: [Crear y editar entidades](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-entities-solution-explorer)
+- Si una solución incluye una entidad de flujo de proceso de negocio, esta se debe agregar de forma manual a la solución antes de exportarla. En caso contrario, la entidad de flujo de proceso de negocio no se incluirá en el paquete de solución. Más información: [Agregar componentes de la solución](/powerapps/maker/model-driven-apps/create-solution#add-solution-components)
 - Al agregar una entidad Proceso a una aplicación controlada por modelos, la funcionalidad puede quedar limitada. Obtenga más información acerca de la [creación y edición de flujos de procesos de negocio](https://docs.microsoft.com/power-automate/create-business-process-flow). 
 
 ### <a name="next-steps"></a>Pasos siguientes  
- [Vea un vídeo corto (4:49) sobre los flujos de proceso de negocio](https://go.microsoft.com/fwlink/p/?linkid=842226)  
- [Crear un flujo de proceso de negocio](create-business-process-flow.md)  
+ [Vea un vídeo corto (4:49) sobre flujos de proceso de negocio](https://go.microsoft.com/fwlink/p/?linkid=842226)   
+ [Crear un flujo de proceso de negocio](create-business-process-flow.md)   
  [Mejora de los flujos de proceso de negocio con ramas](enhance-business-process-flows-branching.md) <br/>
- [Whitepaper: Process Enablement with Dynamics 365](https://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf) (Notas del producto: Habilitación de procesos con Dynamics 365)</br>
+ [Notas del producto: Habilitación de procesos con Dynamics 365](https://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>
