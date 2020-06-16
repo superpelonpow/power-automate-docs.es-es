@@ -45,11 +45,11 @@
         "AshleyWoodruff"
       ],
       "breadcrumb_path": "breadcrumb/toc.yml",
-      "searchScope": [
-        "Power Automate"
-      ],
       "titleSuffix": "Power Automate",
       "search.appverid": "met150",
+      "search.app": [
+        "Flow"
+      ],
       "toc_preview": true,
       "disable_contribution_on_translation_quality": [
         "MT",
@@ -68,6 +68,9 @@
         "**/*.md": [
           "flow"
         ]
+      },
+      "searchScope": {
+        "**.*": [ "Power Platform", "Power Automate" ]
       }
     },
     "template": [],
