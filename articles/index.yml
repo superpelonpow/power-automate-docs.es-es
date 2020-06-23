@@ -12,12 +12,12 @@ metadata:
   author: MSFTMAN
   ms.author: Deonhe
   ms.date: 01/18/2020
-  ms.openlocfilehash: c3a46514627a133e6f90abd6476ecd3d914dcdf2
-  ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+  ms.openlocfilehash: 1db41def6d71c0aa64e255e3bdb36fa03a44862a
+  ms.sourcegitcommit: 26bd05fc4729481ba09681aea2b82ebbeef1e1ec
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/26/2020
-  ms.locfileid: "3295874"
+  ms.lasthandoff: 05/27/2020
+  ms.locfileid: "3407459"
 landingContent:
 - title: Acerca de Power Automate
   linkLists:
@@ -36,7 +36,7 @@ landingContent:
   - linkListType: video
     links:
     - text: Información general de Power Automate
-      url: https://www.youtube.com/watch?v=hCuxuUaGC6Y
+      url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
   - linkListType: whats-new
     links:
     - text: Planes de versiones
@@ -69,10 +69,12 @@ landingContent:
       url: /power-automate/ui-flows/overview
   - linkListType: how-to-guide
     links:
-    - text: Configuración de los flujos de la interfaz de usuario
+    - text: Configurar flujos de interfaz de usuario
       url: /power-automate/ui-flows/setup
     - text: Creación de los flujos de la interfaz de usuario de escritorio
       url: /power-automate/ui-flows/create-desktop
+    - text: Usar WinAutomation de Softomotive (¡NUEVO!)
+      url: /power-automate/ui-flows/create-processes
     - text: Creación de flujos de interfaz de usuario web
       url: /power-automate/ui-flows/create-web
     - text: Ejecución de los flujos de la interfaz de usuario
@@ -91,9 +93,9 @@ landingContent:
     links:
     - text: Creación de un flujo en una solución
       url: /power-automate/create-flow-solution
-    - text: Exportación de la solución
+    - text: Exportar solución
       url: /power-automate/export-flow-solution
-    - text: Importación de la solución
+    - text: Importar solución
       url: /power-automate/import-flow-solution
 - title: Aplicaciones adicionales de los flujos
   linkLists:
@@ -127,5 +129,5 @@ landingContent:
       url: https://flow.microsoft.com/en-us/blog/
     - text: Licencias de Power Automate
       url: /power-automate/billing-questions
-    - text: Planes de Power Automate para la Administración Pública de Estados Unidos
+    - text: Planes de Power Automate US Government
       url: /power-automate/us-govt

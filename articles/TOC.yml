@@ -26,7 +26,7 @@
           href: learning-catalog/learning-catalog-administrator.md
         - name: Desarrollador
           href: learning-catalog/learning-catalog-developer.md
-        - name: Consultor funcional
+        - name: Consultor de funciones
           href: learning-catalog/learning-catalog-functional-consultant.md
         - name: Roles de preventas de asociados
           href: learning-catalog/learning-catalog-sales.md
@@ -100,34 +100,36 @@
       href: create-business-process-flow.md
     - name: Mejora de los flujos de proceso de negocio con ramas
       href: enhance-business-process-flows-branching.md
-    - name: Adición de controles personalizados en flujos de procesos empresariales
+    - name: Adición de controles personalizados en flujos de procesos de negocio
       href: custom-controls-business-process-flows.md
     - name: Procedimientos recomendados para los atributos de flujo de proceso de negocio
       href: best-practices-entity-attributes.md
 - name: Flujos de interfaz de usuario
   items:
-    - name: Introducción a los flujos de la interfaz de usuario
+    - name: Introducción a los flujos de interfaz de usuario
       href: ./ui-flows/overview.md
     - name: Actualización de flujos de interfaz de usuario a partir de versiones anteriores
       href: ./ui-flows/upgrade.md
-    - name: Configuración de los flujos de la interfaz de usuario
+    - name: Configurar flujos de interfaz de usuario
       href: ./ui-flows/setup.md
-    - name: Creación y prueba de los flujos de la interfaz de usuario de escritorio
+    - name: Crear y probar flujos de interfaz de usuario de escritorio
       href: ./ui-flows/create-desktop.md
-    - name: Edición de los flujos de la interfaz de usuario de escritorio
+    - name: Editar flujos de interfaz de usuario de escritorio
       href: ./ui-flows/edit-desktop.md
-    - name: Uso de entradas y salidas en los flujos de la interfaz de usuario de escritorio
+    - name: Usar entradas y salidas en flujos de interfaz de usuario de escritorio
       href: ./ui-flows/inputs-outputs-desktop.md
       items:
         - name: Uso de editores de métodos de entrada (IME) en flujos de interfaz de usuario
           href: ./ui-flows/use-ime.md
     - name: Creación y prueba de los flujos de la interfaz de usuario web
       href: ./ui-flows/create-web.md
+    - name: Usar WinAutomation con flujos de interfaz de usuario
+      href: ./ui-flows/create-processes.md
     - name: Edición de los flujos de la interfaz de usuario web
       href: ./ui-flows/edit-web.md
     - name: Uso de entradas y salidas en los flujos de la interfaz de usuario web
       href: ./ui-flows/inputs-outputs-web.md
-    - name: Ejecución de flujos de interfaz de usuario atendidos y desatendidos
+    - name: Ejecutar flujos de interfaz de usuario asistidos y no asistidos
       href: ./ui-flows/run-ui-flow.md
     - name: Administración de los flujos de la interfaz de usuario
       href: ./ui-flows/manage.md
@@ -137,9 +139,9 @@
       href: overview-solution-flows.md
     - name: Creación de un flujo en una solución
       href: create-flow-solution.md
-    - name: Exportación de la solución
+    - name: Exportar solución
       href: export-flow-solution.md
-    - name: Importación de la solución
+    - name: Importar solución
       href: import-flow-solution.md
     - name: Edición de un flujo basado en la solución
       href: edit-solution-aware-flow.md
@@ -157,11 +159,11 @@
           href: monitor-manage-processes.md
         - name: Procedimientos recomendados para los procesos de flujo de trabajo
           href: best-practices-workflow-processes.md
-        - name: Permite reemplazar los flujos de trabajo por flujos.
+        - name: Reemplazar flujos de trabajo por flujos
           href: replace-workflows-with-flows.md
     - name: Acciones clásicas de Common Data Service
       items:
-        - name: Uso de las acciones
+        - name: Usar acciones
           href: actions.md
         - name: Creación de una acción personalizada
           href: create-actions.md
@@ -300,7 +302,7 @@
           href: gdpr-dsr-delete-msa.md
         - name: Cierre de solicitudes
           href: gdpr-dsr-accountclose-msa.md
-    - name: Power Automate para la Administración Pública de Estados Unidos
+    - name: Power Automate US Government
       href: us-govt.md
 - name: Referencia
   items:
