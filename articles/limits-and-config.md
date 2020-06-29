@@ -13,26 +13,29 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/26/2020
+ms.date: 05/19/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 06230d493fd43a9d9e23f4faebd6e1c6dc8d8045
-ms.sourcegitcommit: 28adfdffc00c149bc46fab85b7307e4e819000c8
+ms.openlocfilehash: 4f1ff6a7171ecb31ef1273fdc7dc273755089d5e
+ms.sourcegitcommit: 549224cf13fc761f473c880e8d0d8f2741cc7b0f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3299417"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435073"
 ---
 # <a name="limits-and-configuration-in-power-automate"></a>Límites y configuración en Power Automate
 
 Este tema contiene información sobre los límites actuales y detalles de la configuración de flujos.
 
+>[!TIP]
+>Compruebe los [precios](https://flow.microsoft.com/pricing) para obtener detalles sobre los diferentes planes disponibles.
+
 ## <a name="request-limits"></a>Límites de solicitudes
-Límites para una única solicitud saliente.
+Estos son los límites para una única solicitud saliente.
 
 ### <a name="timeout"></a>Tiempo de espera
 
@@ -78,25 +81,25 @@ Estos son los límites de una sola ejecución de flujo. En el caso de los límit
 | Nombre | Límite | Notas |
 | --- | --- | --- |
 | Elementos de Aplicar a cada uno: Office 365 y licencias gratuitas|5000 |Puede usar la acción de filtrado para filtrar matrices de mayor tamaño según sea necesario. |
-| Elementos de Aplicar a cada uno: licencias de Plan 1, Plan 2, Por usuario y Por flujo|100,000 |Puede usar la acción de filtrado para filtrar matrices de mayor tamaño según sea necesario. |
+| Aplicar a cada elemento: licencias de Plan 1, Plan 2, Por usuario y Por flujo|100,000 |Puede usar la acción de filtrado para filtrar matrices de mayor tamaño según sea necesario. |
 | Iteraciones Until |5000 | |
 | Elementos de SplitOn: Office 365 y licencias gratuitas |5000 ||
 | Elementos de SplitOn: licencias de Plan 1, Plan 2, Por usuario y Por flujo |100,000 ||
 | Aplicar a cada paralelismo |50 |De forma predeterminada, los bucles se ejecutan en secuencia (básicamente, el paralelismo es 1). Puede configurar hasta 50 en paralelo. |
 | Ejecuciones de acciones por 5 minutos: licencias gratuita, de Office 365, Plan 1 y versiones de prueba | 2000 | Además, puede distribuir una carga de trabajo por más de un flujo según sea necesario. |
 |Ejecuciones de acciones por 5 minutos: licencias Plan de pago 2, Por usuario y Por flujo|100,000|Además, puede distribuir una carga de trabajo por más de un flujo según sea necesario.|
-| Llamadas salientes a acciones simultáneas: licencias gratuita, de Office 365, Plan 1 y versiones de prueba | Más de 500 | Reduzca la cantidad de solicitudes simultáneas o la duración según sea necesario. |
+| Llamadas salientes a acciones simultáneas: licencias gratuita, de Office 365, Plan 1 y versiones de prueba | ~500 | Reduzca la cantidad de solicitudes simultáneas o la duración según sea necesario. |
 | Llamadas salientes simultáneas de acciones: licencias plan 2, por usuario y por flujo | ~2500 | Reduzca la cantidad de solicitudes simultáneas o la duración según sea necesario. | 
 
 ## <a name="throughput-limits"></a>Límites de rendimiento
 
 |Nombre|Límite|Notas|
 |---|---|---|
-|Punto de conexión en tiempo de ejecución - Número de llamadas de lectura permitidas por 5 minutos: licencias gratuita, de Office 365, Plan 1 y versiones de prueba|6000||
-|Punto de conexión en tiempo de ejecución - Número de llamadas de lectura permitidas por 5 minutos: licencias Plan de pago 2, Por usuario y Por flujo|60 000||
-|Punto de conexión en tiempo de ejecución - Llamadas de invocación por 5 minutos: licencias gratuita, de Office 365, Plan 1 y versiones de prueba|4 500||
-|Punto de conexión en tiempo de ejecución - Número de llamadas de invocación por 5 minutos: licencias de Plan de pago 2, Por usuario y Por flujo|45 000||
-|Cantidad de rendimiento permitido por 5 minutos: licencias gratuita, de Office 365, Plan 1 y versiones de prueba|600 MB||
+|Punto de conexión en tiempo de ejecución - Número de llamadas de lectura permitidas por 5 minutos: licencias gratuita, de Office 365, Plan 1 y versiones de prueba|6,000||
+|Punto de conexión en tiempo de ejecución - Número de llamadas de lectura permitidas por 5 minutos: licencias Plan de pago 2, Por usuario y Por flujo|60,000||
+|Punto de conexión en tiempo de ejecución - Llamadas de invocación por 5 minutos: licencias gratuita, de Office 365, Plan 1 y versiones de prueba|4,500||
+|Punto de conexión en tiempo de ejecución - Número de llamadas de invocación por 5 minutos: licencias de Plan de pago 2, Por usuario y Por flujo|45,000||
+|Cantidad de rendimiento permitido por 5 minutos: licencias gratuita, de Office 365, Plan 1 y versiones de prueba|600 MB||
 |Cantidad de rendimiento permitido por 5 minutos: licencias Plan de pago 2, Por usuario y Por flujo|6 GB||
 |Cantidad de flujos de contenido que se pueden generar (entradas/salidas de acciones) por hora: licencias gratuita, de Office 365, Plan 1, Plan 2, Por usuario y Por flujo|200 GB||
 
@@ -108,7 +111,7 @@ Estos son los límites de un solo flujo.
 | --- | --- | --- |
 | Acciones por flujo de trabajo |500|Puede agregar flujos de trabajo anidados para ampliar este límite según sea necesario. |
 | Profundidad permitida de anidamiento de acciones |8 |Puede agregar flujos de trabajo anidados para ampliar este límite según sea necesario. |
-| Número máximo de caracteres por cada expresión |8192 | |
+| Número máximo de caracteres por cada expresión |8,192 | |
 | `action`/`trigger` límite de nombre |80 | |
 | `description` límite de longitud |256 | |
 
@@ -136,13 +139,14 @@ Las llamadas realizadas desde un conector (por ejemplo, la API de SQL o la de Sh
 | India  | 104.211.81.192 - 104.211.81.207, 52.172.211.12, 40.78.194.240 - 40.78.194.255, 13.71.125.22, 104.211.146.224 - 104.211.146.239, 104.211.189.218 |
 | Japón | 13.78.108.0 - 13.78.108.15, 13.71.153.19, 40.74.100.224 - 40.74.100.239, 104.215.61.248 |
 | Sudamérica | 191.233.203.192 - 191.233.203.207, 104.214.19.48 - 104.214.19.63, 13.65.86.57, 104.41.59.51 |
+| Emiratos Árabes Unidos | 40.120.8.0 - 40.120.8.31, 20.37.74.192 - 20.37.74.207, 20.45.67.28|
 | Reino Unido | 51.140.148.0 - 51.140.148.15, 51.140.80.51, 51.140.211.0 - 51.140.211.15, 51.141.47.105 |
 | Estados Unidos | 13.89.171.80 - 13.89.171.95, 52.173.245.164, 40.71.11.80 - 40.71.11.95, 40.71.249.205, 40.70.146.208 - 40.70.146.223, 52.232.188.154, 52.162.107.160 - 52.162.107.175, 52.162.242.161, 40.112.243.160 - 40.112.243.175, 104.42.122.49|
-| Versión preliminar (Estados Unidos)  | 13.71.195.32 - 13.71.195.47, 52.161.102.22, 13.66.140.128 - 13.66.140.143, 52.183.78.157 |
+| Vista previa (Estados Unidos)  | 13.71.195.32 - 13.71.195.47, 52.161.102.22, 13.66.140.128 - 13.66.140.143, 52.183.78.157 |
 
-Por ejemplo, use las direcciones IP que deba autorizar para Azure SQL Database.
+Por ejemplo, si debe autorizar direcciones IP para su base de datos de Azure SQL, debería usar estas direcciones.
 
-### <a name="required-services"></a>Servicios requeridos
+### <a name="required-services"></a>Servicios obligatorios
 En la tabla siguiente se enumeran los servicios a los que se conecta Power Automate. Asegúrese de que ninguno de estos servicios están bloqueado en la red.
 
 Dominios | Protocolos | Usos
@@ -159,3 +163,13 @@ webshell.suite.office.com|https|Acceso a Office para encabezados y búsqueda. Pa
 
 ### <a name="approval-email-delivery"></a>Aprobar el envío de correos electrónicos
 Por favor consulte el [artículo sobre aprobaciones de envíos de correos electrónicos](https://go.microsoft.com/fwlink/?linkid=2128304) para obtener detalles sobre las aprobaciones del enrutamiento de correo electrónico.
+
+### <a name="ui-flows-required-services"></a>Servicios requeridos para flujos de interfaz de usuario
+La siguiente tabla enumera los requisitos de datos punto de conexión para la conectividad desde la máquina de un usuario para una instalación exitosa de flujos de interfaz de usuario.
+
+Tipo de punto de conexión | Dominios | Protocolos | Usos
+--------| --------|  ---------| -----
+Puntos de conexión mundiales|ocsp.digicert.com<br>ocsp.msocsp.com<br>mscrl.microsoft.com<br>crl3.digicert.com<br>crl4.digicert.com|http|Acceso al servidor CRL para la nube pública.
+Puntos de conexión del gobierno de los EE. UU. GCC y GCC High|ocsp.digicert.com<br>crl3.digicert.com<br>crl4.digicert.com|http|Acceso al servidor CRL para la nube de la administración pública de Estados Unidos.
+Puntos de conexión operados por 21Vianet|crl.digicert.cn<br>ocsp.digicert.cn|http|Acceso a los servidores CRL para la nube operada por 21Vianet.
+Todos los puntos de conexión|msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com|https|Acceso a descargadores de flujos de interfaz de usuario WebDriver.

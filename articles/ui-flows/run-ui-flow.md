@@ -20,14 +20,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7d9142fa86b256ca816cf128f8b76bae7d1c5a90
-ms.sourcegitcommit: 855ee8b55aebe7b8e202006c39debfff02df1d30
+ms.openlocfilehash: f893000afea0d554ab911303cbdac2549170f554
+ms.sourcegitcommit: aefd1ebedfbd8c6cc3d08397ac171cb4ba5b5315
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3298933"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412967"
 ---
-# <a name="run-attended-and-unattended-ui-flows"></a>Ejecución de flujos de interfaz de usuario atendidos y desatendidos
+# <a name="run-attended-and-unattended-ui-flows"></a>Ejecutar flujos de interfaz de usuario asistidos y no asistidos
 
 Después de crear y probar un flujo de interfaz de usuario, puede ejecutarlo desde un evento, una programación o un botón. Para que esto sea posible, agregue el flujo de interfaz de usuario a un [flujo automatizado](../get-started-logic-flow.md), un [flujo de botón](../introduction-to-button-flows.md), un [flujo programado](../run-scheduled-tasks.md) o un [flujo de proceso empresarial](../business-process-flows-overview.md).
 
@@ -62,7 +62,7 @@ En este ejemplo, usaremos un flujo automatizado para desencadenar un flujo de in
 
 1. Busque **Flujos de interfaz de usuario** y seleccione **Ejecutar flujo de interfaz de usuario para el escritorio** en la lista de **acciones**. 
 
-   ![Acción de búsqueda](../media/run-ui-flow/search-action.png "Acción de búsqueda")
+   ![Buscar acción](../media/run-ui-flow/search-action.png "Buscar acción")
 
 1. Proporcione la información de puerta de enlace y las credenciales del dispositivo. 
 
@@ -74,7 +74,7 @@ En este ejemplo, usaremos un flujo automatizado para desencadenar un flujo de in
         >Asegúrese de que puede iniciar sesión en el dispositivo con estas credenciales.  
     - **Contraseña**: proporciona su contraseña de la cuenta profesional o educativa.
 
-      ![Configuración del dispositivo](../media/run-ui-flow/uiflow-connection-card.png "Configuración de conexión")
+      ![Configuración del dispositivo](../media/run-ui-flow/uiflow-connection-card.png "Configuración del dispositivo")
 
       >[!TIP]
       >Si no ve la puerta de enlace, es posible que se encuentre en un entorno cuya región sea diferente de la de la puerta de enlace. Seleccione **Solucionar problemas de una puerta de enlace que falta** en la lista de nombres de puerta de enlace para obtener más información. También puede confirmar la puerta de enlace y que las regiones de Power Automate se [asignen correctamente](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
@@ -90,15 +90,16 @@ En este ejemplo, usaremos un flujo automatizado para desencadenar un flujo de in
    ![Selección del flujo de interfaz de usuario](../media/run-ui-flow/select-ui-flow.png "Selección del flujo de interfaz de usuario")
 
 1. Seleccione **Guardar** para guardar el flujo automatizado.
- >[!TIP]
- >Antes de realizar las pruebas, confirme que la puerta de enlace está en línea. Vaya a **Datos** > **Puertas de enlace** en el panel de navegación, seleccione el nombre de la puerta de enlace, haga clic en **...**, vaya a **Detalles** y compruebe si el **estado de la puerta de enlace** es **en línea**. Si el **estado de la puerta de enlace** es **sin conexión**, compruebe que el dispositivo está encendido y conectado a Internet. 
+ 
+    >[!TIP]
+    >Antes de realizar las pruebas, confirme que la puerta de enlace está en línea. Vaya a **Datos** > **Puertas de enlace** en el panel de navegación, seleccione el nombre de la puerta de enlace, haga clic en **...**, vaya a **Detalles** y compruebe si el **estado de la puerta de enlace** es **en línea**. Si el **estado de la puerta de enlace** es **sin conexión**, compruebe que el dispositivo está encendido y conectado a Internet. 
 
 1. Para probar el flujo, envíe un corre electrónico para desencadenarlo. Verá que el flujo de interfaz de usuario reproduce los pasos que ha grabado. 
 
-![Ejecución correcta que llama a un flujo de interfaz de usuario](../media/run-ui-flow/successful-run.png "Ejecución correcta que llama a un flujo de interfaz de usuario")
+   ![Ejecución correcta que llama a un flujo de interfaz de usuario](../media/run-ui-flow/successful-run.png "Ejecución correcta que llama a un flujo de interfaz de usuario")
 
->[!TIP]
->No interactúe con el dispositivo mientras se ejecuta el flujo.
+   >[!TIP]
+   >No interactúe con el dispositivo mientras se ejecuta el flujo.
 
 ## <a name="use-inputs-and-outputs"></a>Uso de las entradas y salidas
 
@@ -113,7 +114,38 @@ Cuando define entradas y salidas dentro de un flujo de interfaz de usuario, pued
 
 1. También puede usar las salidas del flujo de la interfaz de usuario como entradas para las acciones que aparecen más adelante en el flujo. Para hacerlo, seleccione el campo de entrada y, a continuación, seleccione una entrada del selector de tokens.
 
-## <a name="run-ui-flows-unattended-or-attended"></a>Ejecución de flujos de interfaz de usuario en modo atendido o desatendido
+
+## <a name="use-sensitive-text-inputs"></a>Usar entradas de texto confidenciales
+
+Algunas entradas, como las contraseñas, deben ofuscarse y omitirse del registro mientras se usan en la aplicación. Los flujos de IU admiten entradas llamadas **Entradas de texto confidenciales** para almacenar estos valores "privados". 
+
+Para obtener más información sobre cómo crear este tipo de entradas, haga clic aquí.
+
+
+Para recuperar contenido confidencial de otro conector, active **Entradas seguras** y **Salidas seguras** siguiendo estos pasos:
+1.  Seleccione **…** en la esquina superior derecha de la acción.
+1.  Seleccione **Configuración**.
+
+    ![La opción Configuración ](../media/run-ui-flow/settings.png "La opción Configuración ")
+
+1. Active las propiedades **Entradas seguras (vista previa**) y **Salidas seguras (vista previa)** para evitar que esta configuración se muestre en los registros.
+
+   ![Entradas y salidas seguras](../media/run-ui-flow/secure-outputs-secure-inputs.png "Entradas y salidas seguras")
+
+1.  Seleccione **Listo**.
+   
+    Notará que la acción ahora tiene un icono de candado en la parte superior derecha, que indica un control especial para los valores de entrada y salida.
+
+      ![El icono de bloqueo](../media/run-ui-flow/lock-icon.png "El icono de bloqueo")
+
+   
+      >[!TIP]
+      >Siga los mismos pasos indicados anteriormente en este artículo para configurar entradas para pasar la salida de este conector a un flujo de interfaz de usuario y luego active **Texto seguro (vista previa)** en **Configuración**.
+
+      ![Pasar las salidas al flujo de la interfaz de usuario ](../media/run-ui-flow/pass-to-ui-flow.png "Entradas de flujo de interfaz de usuario")
+
+
+## <a name="run-ui-flows-unattended-or-attended"></a>Ejecutar flujos de interfaz de usuario en modo atendido o desatendido
 
 Cuando se crean flujos de interfaz de usuario, se ejecutan en modo **atendido** o **desatendido**. El modo desatendido es más adecuado para aplicaciones que no necesitan supervisión humana.
 
@@ -224,7 +256,7 @@ Si se produce un error al ejecutar un flujo de interfaz de usuario, corríjalo y
 
  - Instale la [puerta de enlace de datos local](https://docs.microsoft.com/data-integration/gateway/service-gateway-app).
  - [Use la documentación de la aplicación Puerta de enlace de datos local](https://docs.microsoft.com/flow/gateway-manage).
- - [Solucione los problemas](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot) de la puerta de enlace de datos local.
+ - [Solución de problemas](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot) con la puerta de enlace de datos local.
 
 
 

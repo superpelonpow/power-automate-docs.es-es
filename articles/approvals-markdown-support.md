@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 739d407df91661a6a82aa72f2891a3dac3bda3cf
-ms.sourcegitcommit: 28adfdffc00c149bc46fab85b7307e4e819000c8
+ms.openlocfilehash: fcda9a1098275ddd1e9688c2eec55ac4801aac4e
+ms.sourcegitcommit: 4dfd4013e4e632a91041783df64845651a8935c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3299395"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "3442698"
 ---
 # <a name="use-markdown-in-power-automate-approval-requests"></a>Usar Markdown en solicitudes de aprobación de Power Automate
 
@@ -37,6 +37,9 @@ En este artículo se muestra cómo usar la sintaxis de [Markdown](https://en.wik
 
 > [!IMPORTANT]
 > Todos los representadores de Markdown tienen diferencias de implementación. Consulte la sección [Soporte a clientes](#client-support) para más detalles.
+
+> [!IMPORTANT]
+> Actualmente no se ofrece el formato Markdown para los clientes de GCC y GCC High.
 
 ## <a name="client-support"></a>Soporte a clientes
 
@@ -58,7 +61,7 @@ Estructure sus comentarios mediante encabezados. Los encabezados segmentan los c
 
 Inicie una línea con un carácter de almohadilla `#` para establecer un encabezado. Organice sus comentarios con subtítulos empezando una línea con caracteres de almohadilla adicionales, por ejemplo `####`. Se admiten hasta seis niveles de encabezados.
 
-**Ejemplo:**  
+**Ejemplo**:  
 ```Markdown
 # This is a H1 header
 ## This is a H2 header
@@ -74,7 +77,7 @@ Inicie una línea con un carácter de almohadilla `#` para establecer un encabez
 
 Facilite la lectura de su texto dividiéndolo en párrafos o saltos de línea. Incluya dos espacios antes del salto de línea para forzar a la mayoría de los clientes a comenzar una nueva línea.  
    
-**Ejemplo:**  
+**Ejemplo**:  
 ```Markdown
 This is line 1.(space, space)
 Now text will appear on the next line.
@@ -105,7 +108,7 @@ Las listas ordenadas empiezan con un número seguido de un punto por cada elemen
 
 ### <a name="ordered-or-numbered-lists"></a>Listas numeradas u ordenadas
 
-**Ejemplo:**  
+**Ejemplo**:  
 ```Markdown
 0. First item.
 0. Second item.
@@ -113,13 +116,13 @@ Las listas ordenadas empiezan con un número seguido de un punto por cada elemen
 ```
 
 **Resultado:**  
-1. First item.
-2. Second item.
-3. Third item.
+1. Primer elemento.
+2. Segundo elemento.
+3. Tercer elemento.
 
 ### <a name="bullet-lists"></a>Listas con viñetas
 
-**Ejemplo:**  
+**Ejemplo**:  
 ```Markdown
 - Item 1
 - Item 2
@@ -127,13 +130,13 @@ Las listas ordenadas empiezan con un número seguido de un punto por cada elemen
 ```
 
 **Resultado:**  
-- Item 1
-- Item 2
-- Item 3
+- Elemento 1
+- Elemento 2
+- Elemento 3
 
 ### <a name="nested-lists"></a>Listas anidadas
 
-**Ejemplo:**  
+**Ejemplo**:  
 ```Markdown
 1. First item.
    - Item 1
@@ -146,15 +149,15 @@ Las listas ordenadas empiezan con un número seguido de un punto por cada elemen
 ```
 
 **Resultado:**  
-1. First item.
+1. Primer elemento.
 
-    - Item 1
-    - Item 2
-    - Item 3
-2. Second item.
-    - Nested item 1
-    - Nested item 2
-    - Nested item 3
+    - Elemento 1
+    - Elemento 2
+    - Elemento 3
+2. Segundo elemento.
+    - Elemento anidado 1
+    - Elemento anidado 2
+    - Elemento anidado 3
 
 
 ## <a name="links"></a>Vínculos
@@ -167,7 +170,7 @@ Puede establecer hipervínculos de texto para la dirección URL utilizando la si
 [Link Text](Link URL)
 ```
 
-**Ejemplo:**  
+**Ejemplo**:  
 ```Markdown
 [Power Automate](https://flow.microsoft.com)
 ```
@@ -184,9 +187,9 @@ Organice datos estructurados con tablas.
 - Las dos primeras líneas de una tabla establecen los encabezados de columna y la alineación de los elementos de la tabla
 - Utilice signos de dos puntos (`:`) al dividir el encabezado y el cuerpo de las tablas para especificar la alineación de la columna (izquierda, centro, derecha) 
 - Para comenzar una nueva línea, use la etiqueta de salto HTML (`<br/>`)
-- Asegúrese de terminar cada fina con un CR o LF. 
+- Asegúrese de terminar cada fila con un carácter CR o LF. 
 
-**Ejemplo:**  
+**Ejemplo**:  
 ```Markdown
 | Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:-----------:|-----------:|  
@@ -197,20 +200,20 @@ Organice datos estructurados con tablas.
 **Resultado:**  
 | Encabezado 1 | Encabezado 2 | Encabezado 3 |  
 |-----------|:---------:|-----------:|  
-| Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
+| Celda A1 | Celda A2 | Celda A3 |  
+| Celda B1 | Celda B2 | Celda B3<br/>segunda línea de texto |  
 
  
 ## <a name="emphasis-bold-italics-strikethrough"></a>Resaltado (negrita, cursiva, tachado)  
 
 Se puede resaltar texto mediante la aplicación de negrita, cursiva o tachado a los caracteres: 
-- Para aplicar cursiva: delimite el texto con un asterisco `*` o carácter de subrayado `_`   
+- Para aplicar cursiva: delimite el texto con un asterisco `*` o carácter de subrayado `_`.   
 - Para aplicar negrita: delimite el texto con asteriscos dobles `**`.    
-- Para aplicar tachado: delimite el texto con caracteres de tilde de la ñ doble `~~`.   
+- Para aplicar tachado: delimite el texto con caracteres de tilde doble `~~`.   
 
 Combine estos elementos para aplicar varios resaltados al texto.    
 
-**Ejemplo:**  
+**Ejemplo**:  
 ```Markdown
 Use _emphasis_ in comments to express **strong** opinions and point out ~~corrections~~ 
 **_Bold, italicized text_**  
@@ -218,7 +221,7 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 ```
 
 **Resultado:**  
-Use el _resaltado_ en los comentarios para expresar opiniones **contundentes** e indicar <s>correcciones</s> .  
+Use el _resaltado_ en los comentarios para expresar opiniones **contundentes** e indicar <s>correcciones</s>   
 **_Texto en negrita y cursiva_**   
 **~~Texto en negrita y tachado~~**  
 
@@ -235,7 +238,7 @@ Use el _resaltado_ en los comentarios para expresar opiniones **contundentes** e
 
 <tr>
 <td>
-<p>Para insertar uno de los caracteres siguientes: coloque delante una barra diagonal inversa:</p>
+<p>Para insertar uno de los caracteres siguientes, coloque delante una barra diagonal inversa:</p>
 
 <p style="margin-bottom:2px;">```\   backslash ``` </p>
 <p style="margin-bottom:2px;"><code>\`</code>   `backtick`</p>

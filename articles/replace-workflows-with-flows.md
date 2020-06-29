@@ -6,18 +6,18 @@ manager: KVIVEK
 ms.author: Deonhe
 ms.service: flow
 ms.topic: article
-ms.date: 08/27/2019
+ms.date: 05/12/2020
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 6e3e6d1ca0a1700bbfaf6d8e8fb76cc888456c2c
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 008a07cf5ee24b5de6d740cc19ee1f5219d86b76
+ms.sourcegitcommit: b872a664a8adcdfb3db5a4ec861c23eea883a71e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3296623"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367738"
 ---
 # <a name="replace-classic-common-data-service-workflows-with-flows"></a>Reemplazar flujos de trabajo de Common Data Service clásicos con flujos
 
@@ -36,13 +36,13 @@ En esta tabla se resume una comparación entre las funcionalidades de Power Auto
 
 <table>
 <tr>
-<th colspan="2">En su funcionalidad.</th>
+<th colspan="2">Capacidad</th>
 <th>Power Automate</th>
 <th>Flujo de trabajo clásico</th>
 </tr>
 <tr>
 <td rowspan="5">Modelado</td>
-<td>Creación de ramas condicional</td>
+<td>Rama condicional</td>
 <td>Sí</td>
 <td>
                     
@@ -165,7 +165,7 @@ En esta tabla se resume una comparación entre las funcionalidades de Power Auto
                 </td>
                 <td>
                     
-   No
+   Sí
                     
                 </td>
                 <td>
@@ -182,7 +182,7 @@ En esta tabla se resume una comparación entre las funcionalidades de Power Auto
                 </td>
                 <td>
                     
-   No
+   Sí
                     
                 </td>
                 <td>
@@ -289,7 +289,7 @@ En esta tabla se resume una comparación entre las funcionalidades de Power Auto
                 </td>
                 <td>
                     
-   No
+   Sí
                     
                 </td>
                 <td>
@@ -468,7 +468,7 @@ Con los flujos, esto es más fácil de elaborar, tal como se muestra en el tutor
 
 Para permitir que el vendedor desencadene la solicitud de aprobación a petición:
 
-1. Inicie sesión en [Power Automate](https://flow.microsoft.com/) y cree un flujo en una solución. Más información: [Creación de un flujo en una solución](create-flow-solution.md). 
+1. Inicie sesión en [Power Automate](https://flow.microsoft.com/) y cree un flujo en una solución. Más información: [Crear un flujo en una solución](create-flow-solution.md). 
 
 1. En la lista de desencadenadores, seleccione **Common Data Service (entorno actual): cuando se selecciona un registro** y seleccione **Ofertas** como la entidad. Este desencadenador permite que un flujo se ejecute a petición en un registro o lista de registros.
 
@@ -535,7 +535,7 @@ Cuando este flujo se ejecuta en la cotización, resume los elementos de línea d
     
     En Power Automate, use la **configuración run-after** en una acción para configurarla a fin de que se ejecute cuando la acción anterior presente un error. Por ejemplo, envíe una notificación móvil de Power Automate cuando la acción de **actualizar un registro** presente un error o se agote el tiempo de espera.
 
-## <a name="faqs"></a>Preguntas más frecuentes
+## <a name="faqs"></a>P + F
 
 
 -   **Tengo una licencia de Dynamics 365. ¿Puedo usar Power Automate?**

@@ -1,7 +1,7 @@
 ---
 title: Información general sobre flujos de proceso de negocio | MicrosoftDocs
 ms.custom: ''
-ms.date: 12/12/2019
+ms.date: 05/06/2019
 ms.reviewer: ''
 ms.service: flow
 author: MSFTMAN
@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a6e936b833f6b1e1d6cf6e050031969d41e40de6
-ms.sourcegitcommit: 31692af25f91af60cf77572edcb0c986602dc9a6
+ms.openlocfilehash: 9d3ded6a38d45fa97a206abdf0ee5d89d2255124
+ms.sourcegitcommit: 7a42629c7bc15208c5a9d692ab89616fc0aa40cb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3298889"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "3352073"
 ---
 # <a name="business-process-flows-overview"></a>Información general sobre flujos de proceso de negocio
 
@@ -91,7 +91,7 @@ Los flujos de proceso de negocio proporcionan una guía para que la gente realic
   
 <a name="BKMK_Considerations"></a>   
 ## <a name="business-process-flow-considerations"></a>Consideraciones sobre el flujo de proceso de negocio  
- Puede definir flujos de proceso de negocio solo para esas entidades que las admitan. También deberá tener en cuenta los límites para el número de procesos, fases y pasos que se pueden agregar.  
+ Puede definir flujos de proceso de negocio solo para esas entidades que las admitan. También debe conocer los límites de número de procesos, fases y paso que se pueden agregar.  
   
 ### <a name="business-process-flows-that-call-a-workflow"></a>Flujos de proceso de negocio que llaman a un flujo de trabajo  
  Puede llamar a flujos de trabajo a petición desde dentro de un flujo de proceso de negocio. Puede configurar esto en el nuevo diseñador de flujo de proceso de negocio arrastrando un componente de flujo de trabajo a una fase del proceso o la sección Flujos de trabajo globales. Para obtener más información acerca del uso de flujos de trabajo en flujos de proceso de negocio, consulte [Blog: Automatización de flujos de proceso de negocio en Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
@@ -102,10 +102,10 @@ Los flujos de proceso de negocio proporcionan una guía para que la gente realic
   
 -   Puede crear un flujo de proceso de negocio con tres fases, S1 se conecta a S2, después S2 se bifurca a S3. Incluya también un flujo de trabajo en S2 y establezca el desencadenador en **Salida de fase**.  
   
- El flujo de trabajo no se desencadenará en ningún caso. Para solucionar este problema, puede agregar un flujo de trabajo global y agregarle el flujo de trabajo que desea desencadenar de modo que el flujo de trabajo se desencadene para el proceso de negocio en lugar para una fase del proceso. Puede establecer el desencadenador de un flujo de trabajo global en Proceso abandonado o Proceso finalizado para que el flujo de trabajo se desencadene cuando un usuario abandone o complete el proceso de negocio.  
+ El flujo de trabajo no se desencadenará en ningún caso. Para solucionar este problema, puede agregar un flujo de trabajo global y agregarle el flujo de trabajo que desea desencadenar de modo que el flujo de trabajo se desencadene para el proceso de negocio en lugar para una fase del proceso. Puede establecer el desencadenador para un flujo de trabajo global como Proceso abandonado o Proceso completado para hacer que el flujo de trabajo se desencadene cuando un usuario abandone o complete el proceso de negocio.  
   
 <a name="BKMK_Entities"></a>   
-### <a name="entities-that-can-use-business-process-flows"></a>Entidades que pueden usar flujos de proceso de negocio  
+### <a name="entities-that-can-use-business-process-flows"></a>Entidades que usan flujos de proceso de negocio  
  Todas las entidades personalizadas pueden usar flujos de proceso de negocio. Las entidades estándar siguientes también pueden usar flujos de proceso de negocio:  
   
 -   Cuenta  
@@ -151,7 +151,7 @@ Los flujos de proceso de negocio proporcionan una guía para que la gente realic
   
 -   Los procesos de múltiples entidades no pueden contener más de cinco entidades.
   
-## <a name="business-process-flow-entity-customization-support"></a>Compatibilidad con la personalización de entidades de flujo de proceso de negocio 
+## <a name="business-process-flow-entity-customization-support"></a>Compatibilidad de personalización para entidades de flujo de proceso de negocio 
 
 Introducidas en la actualización de la versión 9.0 de Dynamics 365 (online), las entidades de flujo de proceso de negocio pueden aparecer en el sistema para que los datos de registro de entidad pueden estar disponibles en cuadrículas, vistas, gráficos y paneles. 
 
@@ -159,15 +159,15 @@ Introducidas en la actualización de la versión 9.0 de Dynamics 365 (online), l
 
 Con los flujos de proceso de negocio disponibles como una entidad, ahora puede usar búsquedas avanzadas, vistas, gráficos y paneles procedentes de datos de flujos de procesos de negocio para una entidad dada, como un cliente potencial o una oportunidad. Los personalizadores y los administradores del sistema pueden crear paneles, vistas, gráficos y cuadrículas de flujo de proceso de negocio personalizados similar a los creados con cualquier otra entidad.
 
-Los flujos de proceso de negocio, como **Proceso de cliente potencial a ventas de la oportunidad**, aparecen como una entidad personalizable en el Explorador de soluciones.
+Los flujos de proceso de negocio como **Proceso de venta de cliente potencial a oportunidad** aparecen como una entidad personalizable en el explorador de soluciones.
 
-![Explorador de soluciones con la entidad Proceso de cliente potencial a ventas de la oportunidad](media/bpf-lead-solution-explorer.png)
+![Explorador de soluciones con la entidad de proceso de cliente potencial a oportunidad](media/bpf-lead-solution-explorer.png)
 
 Para acceder a una vista de flujo de proceso de negocio predeterminada, abra el explorador de soluciones, expanda **Entidades** > expanda el proceso que desee, como **Proceso de venta de cliente potencial a oportunidad**, seleccione **Vistas**y seleccione la vista que desee.
 
 Hay varias vistas predeterminadas disponibles que puede ver como un gráfico, como la vista **Proceso de venta de oportunidad activo**. 
 
-![Vista Proceso de ventas de la oportunidad activa](media/bpf-default-view.png)
+![Vista Proceso de venta de oportunidad activo](media/bpf-default-view.png)
 
 ### <a name="interact-with-the-business-process-flow-entity-from-a-workflow"></a>Interacción con la entidad de flujo de proceso de negocio desde un flujo de trabajo
 También puede interactuar con las entidades de flujo de proceso de negocio desde un flujo de trabajo. Por ejemplo, puede crear un flujo de trabajo para el registro de entidad Flujo de proceso de negocio para cambiar la Fase activa cuando se actualice un campo en el registro de entidad Oportunidad. Para obtener más información sobre cómo hacerlo, vea [Automate business process flow stages using workflows](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows) (Automatización de las fases de flujo de proceso de negocio mediante flujos de trabajo).
@@ -184,16 +184,16 @@ En concreto, los tres comandos que están disponibles para un flujo de proceso d
 
 - Fase siguiente
 - Fase anterior
-- Fase Establecer como activo
+- Establecer la fase activa
 
 ### <a name="limitations-of-using-business-process-flow-entities"></a>Limitaciones del uso de entidades de flujo de proceso de negocio
 
-- En la actualidad, no se pueden crear formularios personalizados para entidades en función de un flujo de proceso de negocio.
-- Si una solución incluye una entidad de flujo de proceso de negocio, esta se debe agregar de forma manual a la solución antes de exportarla. En caso contrario, la entidad de flujo de proceso de negocio no se incluirá en el paquete de solución. Más información: [Agregar componentes de la solución](/powerapps/maker/model-driven-apps/create-solution#add-solution-components)
-- Al agregar una entidad Proceso a una aplicación controlada por modelos, la funcionalidad puede quedar limitada. Obtenga más información acerca de la [creación y edición de flujos de procesos de negocio](https://docs.microsoft.com/power-automate/create-business-process-flow). 
+- Actualmente, no se pueden crear formularios personalizados para entidades basándose en un flujo de proceso de negocio.
+- Si una solución incluye una entidad de flujo de proceso de negocio, esta se debe agregar de forma manual a la solución antes de exportarla. En caso contrario, la entidad de flujo de proceso de negocio no se incluirá en el paquete de solución. Más información: [crear y editar entidades](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-entities-solution-explorer).
+- Al agregar una entidad de proceso a una aplicación controlada por modelos, la funcionalidad puede quedar limitada. Obtenga más información acerca de la [creación y edición de flujos de procesos de negocio](https://docs.microsoft.com/power-automate/create-business-process-flow). 
 
 ### <a name="next-steps"></a>Pasos siguientes  
  [Vea un vídeo corto (4:49) sobre flujos de proceso de negocio](https://go.microsoft.com/fwlink/p/?linkid=842226)   
  [Crear un flujo de proceso de negocio](create-business-process-flow.md)   
  [Mejora de los flujos de proceso de negocio con ramas](enhance-business-process-flows-branching.md) <br/>
- [Notas del producto: Habilitación de procesos con Dynamics 365](https://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>
+ [Notas del producto: Habilitación de proceso con Dynamics 365](https://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>

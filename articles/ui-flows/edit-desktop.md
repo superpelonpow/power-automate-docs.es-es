@@ -1,6 +1,6 @@
 ---
-title: Información sobre editar crear flujos de interfaz de usuario de escritorio | Microsoft Docs
-description: Obtenga información sobre cómo editar flujos de interfaz de usuario de escritorio.
+title: Aprenda a editar crear flujos de interfaz de usuario de escritorio | Microsoft Docs
+description: Aprenda a editar flujos de interfaz de usuario de escritorio.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,23 +20,23 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8b0aebaa0e61758d6bc6ebeb3de7b71bde665edc
-ms.sourcegitcommit: bba5bd4ae3879b6bf1521d8ed636374fe09709e7
+ms.openlocfilehash: a6b34a58dc028d6d0df9bf03f66a04666998ac69
+ms.sourcegitcommit: aefd1ebedfbd8c6cc3d08397ac171cb4ba5b5315
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3298823"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412991"
 ---
-# <a name="edit-desktop-ui-flows"></a>Edición de los flujos de la interfaz de usuario de escritorio
+# <a name="edit-desktop-ui-flows"></a>Editar flujos de interfaz de usuario de escritorio
 
 Los flujos de interfaz de usuario de escritorio automatizan las aplicaciones de escritorio de Windows. Consulte los [problemas conocidos](create-desktop.md#known-issues-and-solutions) para obtener más información sobre los problemas que podría encontrar, soluciones alternativas para esos problemas y escenarios no admitidos en esta versión.
 
 ## <a name="prerequisites"></a>Requisitos previos
 Un flujo de interfaz de usuario de escritorio. [Cree ahora un flujo de interfaz de usuario de escritorio](create-desktop.md#create-and-test-desktop-ui-flows) si no tiene ninguno para editarlo.
 
-## <a name="edit-actions"></a>Acciones de edición
+## <a name="edit-actions"></a>Editar acciones
 
-![Acciones de edición](../media/edit-desktop/edit-actions.png "Acciones de edición")
+![Editar acciones](../media/edit-desktop/edit-actions.png "Editar acciones")
 
 Puede editar la grabación para:
 
@@ -51,7 +51,7 @@ Los parámetros avanzados le permiten cambiar:
 -   El [selector](edit-desktop.md#set-the-selector) del elemento de la interfaz de usuario de destino.
 
 
-## <a name="add-a-recording"></a>Incorporación de una grabación
+## <a name="add-a-recording"></a>Agregar una grabación
 
 Es posible que quiera grabar el flujo de interfaz de usuario en varias sesiones. Una vez que complete la primera grabación, puede continuar de la manera siguiente:
 
@@ -64,13 +64,13 @@ Es posible que quiera grabar el flujo de interfaz de usuario en varias sesiones.
 
    ![Nuevo paso](../media/edit-desktop/new-step.png "Nuevo paso")
 
-1. Seleccione **Record app** (Grabar aplicación) en la lista de acciones.
+1. Seleccione **Grabar aplicación** en la lista de acciones.
 
-   ![Record app (Grabar aplicación)](../media/edit-desktop/select-record-ui-actions.png "Record app (Grabar aplicación)")
+   ![Grabar aplicación](../media/edit-desktop/select-record-ui-actions.png "Grabar aplicación")
 
-1. Seleccione **Launch recorder** (Iniciar grabadora).
+1. Seleccione **Iniciar grabadora**.
 
-   ![Seleccionar Launch recorder (Iniciar grabadora)](../media/create-windows-ui-flow/select-launch-recorder.png "Seleccionar Launch recorder (Iniciar grabadora)")
+   ![Seleccione Iniciar grabadora](../media/create-windows-ui-flow/select-launch-recorder.png "Seleccione Iniciar grabadora")
 
    El control de la grabadora aparece en la parte superior de la pantalla.
 
@@ -79,16 +79,16 @@ Es posible que quiera grabar el flujo de interfaz de usuario en varias sesiones.
 1. Inicie la aplicación que quiere grabar.
 
      >[!TIP]
-     >Si mantiene el mouse sobre los controles de la aplicación, verá que cada control se resalta con un contorno azul. Espere siempre el resaltado azul antes de seleccionar un control.
+     >Si mantiene el ratón sobre los controles de la aplicación, verá que cada control se resalta con un contorno azul. Espere siempre el resaltado azul antes de seleccionar un control.
      >
      >Si el resaltado azul no aparece alrededor del elemento, es posible que no se grabe correctamente.
 
-1. Seleccione **Record** (Grabar) en el control de la grabadora.
+1. Seleccione **Grabar** en el control de la grabadora.
 
-1. Siga los pasos de la interfaz de usuario de la aplicación que está grabando y, luego, seleccione **Done** (Listo) en el control de la grabadora.
+1. Siga los pasos de la interfaz de usuario de la aplicación que está grabando y, luego, seleccione **Listo** en el control de la grabadora.
 1. Seleccione **Guardar** y, luego, pruebe el flujo de interfaz de usuario.
 
-## <a name="add-a-manual-action"></a>Incorporación de una acción manual
+## <a name="add-a-manual-action"></a>Agregar una acción manual
 
 Una vez que haya grabado una aplicación con al menos una acción, puede agregar manualmente cualquier de estas acciones para esa aplicación.
 
@@ -98,9 +98,9 @@ Una vez que haya grabado una aplicación con al menos una acción, puede agregar
 | Clic con el botón derecho         |                                                                   |
 | Enviar teclas           | Enviar teclas y combinaciones de teclas, como CTRL + C.                             |
 | Clic con el botón izquierdo          |                                                                   |
-| Obtener texto            | Leer el texto desde un elemento de la interfaz de usuario y luego usarlo como salida. |
+| Obtener texto            | Leer el texto desde un elemento de la interfaz de usuario y luego lo usa como salida. |
 | Escribir texto          |                                                                   |
-| Obtener un elemento habilitado | Comprobar si un elemento de la interfaz de usuario está habilitado o deshabilitado.         |
+| Obtener un elemento habilitado | Comprueba si un elemento de la interfaz de usuario está habilitado o deshabilitado.         |
 | Borrar un elemento       | Borrar el valor en un elemento de interfaz de usuario editable.             |
 | Esperar unos segundos    | Esperar antes de ir al paso siguiente.                           |
 
@@ -116,10 +116,10 @@ Siga estos pasos para agregar una acción manual:
 
    ![Selección de la tarjeta de grabación](../media/edit-desktop/manual-select-recording-card.png)
 
-1. Seleccione **Add an action** (Agregar una acción) en la tarjeta de grabación, justo debajo del último paso grabado.
+1. Seleccione **Agregar una acción** en la tarjeta de grabación, justo debajo del último paso grabado.
    Verá la lista de acciones manuales mencionadas anteriormente en el tutorial. 
 
-1. Seleccione la acción que quiere agregar. Aquí se seleccionó **Obtener un elemento habilitado**, pero puede seleccionar cualquier acción adecuada para el escenario.
+1. Seleccione la acción que quiere agregar. Aquí seleccionó **Obtener un elemento habilitado**, pero puede seleccionar cualquier acción adecuada para el escenario.
 
    ![Select action to add.png](../media/edit-desktop/select-action-to-add.png)
 
@@ -145,9 +145,9 @@ El formato del selector es:
 }
 ```
 
-Debe proporcionar los datos para los campos **elemementStack** y **elementXPath** del elemento del selector.
+Debe proporcionar los datos para los campos **elementStack** y **elementXPath** del elemento del selector.
 
-Este es un ejemplo del aspecto que podría tener **elemementStack**.
+Este es un ejemplo del aspecto que podría tener **elementStack**.
 
 ![Pila de elemento](../media/edit-desktop/elementstack.png "Pila de elemento")
 
@@ -169,7 +169,7 @@ Para realizar estas operaciones avanzadas, realice los pasos siguientes en un fl
 
 1. Seleccione **+** > **Agregar una acción** en la flecha hacia abajo del paso de flujo de interfaz de usuario al que desea agregar la lógica.
 
-   ![Agrega una acción](../media/edit-desktop/add-action.png)
+   ![Agregar una acción](../media/edit-desktop/add-action.png)
 
 1. Seleccione **Integrado** y, después, seleccione una de las acciones de control disponibles.
 
@@ -180,14 +180,90 @@ Para realizar estas operaciones avanzadas, realice los pasos siguientes en un fl
    ![Tarjeta de condición](../media/edit-desktop/condition-card.png)
 
 
-## <a name="handle-error-conditions"></a>Tratamiento de las condiciones de error
+## <a name="add-a-recording-of-a-remote-computer-using-image-recognition-preview"></a>Agregar una grabación de una computadora remota utilizando el reconocimiento de imagen (Vista previa)
 
-Durante la reproducción pueden surgir condiciones inesperadas y provocar errores en los flujos de interfaz de usuario. Puede usar características avanzadas de control de errores para crear pasos alternativos cuando surjan condiciones inesperadas. 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-preview-features-expect-changes.md)]
+
+El reconocimiento de imagen en los flujos de la interfaz de usuario es una función de vista previa y actualmente está disponible al grabar una computadora remota a través de la aplicación Remote Desktop Connection (RDC).
+ 
+
+### <a name="what-is-image-recognition"></a>¿Qué es el reconocimiento de imagen?
+
+Actualmente, los flujos de IU de escritorio se registran principalmente mediante API de accesibilidad (UI Automation y WinAppDriver) para detectar los controles en el árbol de interfaz de usuario de Microsoft Windows. A veces, el árbol de la IU no está disponible, como ocurre con las aplicaciones basadas en web o Java. El árbol de la interfaz de usuario puede no ser fiable, como cuando las ID de un control cambian con frecuencia o entre sesiones. 
+
+Con el reconocimiento de imágenes, las ubicaciones de los clics y otros detalles coinciden visualmente durante la reproducción, ampliando enormemente la gama de aplicaciones que pueden automatizarse. 
+
+### <a name="use-image-recognition-to-record-a-remote-computer"></a>Use el reconocimiento de imagen para grabar una computadora remota
+
+ 
+1. En un flujo de interfaz de usuario nuevo o existente, vaya a la pestaña Entradas y cree dos entradas nuevas de **texto de carácter reservado**, una para el nombre de usuario y otra para la contraseña que se utilizará para iniciar sesión en el dispositivo remoto. Las entradas de texto de carácter reservado le permiten pasar los valores dinámicamente al probar o llamar al flujo de la interfaz de usuario desde otro flujo, sin que el flujo de la interfaz de usuario los almacene o registre.
+
+   ![Texto de carácter reservado ](../media/create-remote-desktop/ir-sensitive-text.png)
+
+1. Sigue los pasos en **Agregar una grabación** para iniciar el control de la grabadora para un flujo de interfaz de usuario nuevo o existente.
+
+1. Use la aplicación Escritorio remoto para conectarse a la computadora remota.
+
+1. Expanda la ventana Escritorio remoto a pantalla completa.
+
+1. Seleccione **Grabar** desde el control de la grabadora y seleccione **Entendido** en la alerta que aparece.
+
+   ![Ventana emergente](../media/create-remote-desktop/popup.png)
+
+1. Realice los pasos en el ordenador remoto y luego seleccione **Listo** en el control de la grabadora.
+
+1. Localice la acción **Iniciar Escritorio remoto** dentro de su grabación, y luego introduzca las entradas de texto de carácter reservado para el nombre de usuario y la contraseña.
+
+![Texto de carácter reservado para el nombre de usuario y la contraseña](../media/create-remote-desktop/ir-launch-emote_desktop-session.png)
+
+1. Seleccione **Guardar** y, luego, pruebe el flujo de interfaz de usuario.
+
+>[!IMPORTANT]
+>Cuando llama a este flujo de interfaz de usuario desde un flujo automatizado, se recomienda utilizar una solución de administración de claves como [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) para recuperar el nombre de usuario y la contraseña y luego pasarlos a las entradas de **texto de carácter reservado** en la interfaz de usuario que fluyen dinámicamente, en lugar de almacenarlas en el flujo mismo. 
+
+>[!TIP]
+> Habilite **Entradas seguras** en el menú **Configuración** para la acción **Ejecutar un flujo de interfaz de usuario para escritorio** en el flujo que llama al flujo de la interfaz de usuario. Esto garantiza que las entradas no se almacenen en el historial de ejecución.
+
+### <a name="use-the-extract-text-from-image-action-while-recording-to-retrieve-an-output-from-a-remote-computer"></a>Use la acción Extraer texto de imagen mientras graba para recuperar una salida de una computadora remota.
+
+1. Mientras graba sus pasos, navegue hasta la ubicación del texto que desea capturar.
+
+1. Seleccione **Salidas** > **Extraer texto de imagen** desde el control de la grabadora.
+
+1. Siga las indicaciones para seleccionar un **área de anclaje** (una sección de la pantalla que no se espera que cambie, como la etiqueta al lado de un campo).
+
+    ![Área de anclaje](../media/create-remote-desktop/ir-anchors.png)
+
+1.  Seleccione el **área objetivo** (el área de la que se extraerá el texto usando OCR).
+
+    ![Área objetivo](../media/create-remote-desktop/ir-targets.png)
+
+1.  Introduzca un nombre para la salida.
+
+1.  Seleccione **Listo** en el control de la grabadora.
+
+1.  Seleccione **Guardar** y, luego, pruebe el flujo de interfaz de usuario.
+
+
+### <a name="known-issues-for-remote-desktop-recordings"></a>Problemas conocidos para grabaciones de escritorio remoto
+
+1. Asegúrese de que todas las entradas requeridas (nombre de la computadora, nombre de usuario y contraseña) se completen y guarden antes de registrar más pasos en el mismo flujo de interfaz de usuario.
+
+1. Para adjuntar a una sesión de escritorio remoto existente, la sesión debe haberse iniciado antes en el mismo flujo de interfaz de usuario.
+
+1. La forma recomendada de iniciar la Conexión a Escritorio remoto (RDC) al grabar es desde la aplicación Conexión a Escritorio remoto (mstc.exe) desde el menú Inicio. Si se registran acciones de seguridad de Windows además de la acción **Iniciar Escritorio remoto**, deben eliminarse del diseñador para que la reproducción no se interrumpa (esto puede suceder cuando la sesión de Escritorio remoto se inicia desde un acceso directo).
+
+1. La reproducción puede fallar si el flujo de la interfaz de usuario se registró en una pantalla con escala de pantalla (Configuración de Windows> Pantalla> Escala de pantalla) establecida en un valor diferente al 100%. Como solución alternativa, asegúrese de que la escala de la pantalla esté configurada al 100% antes de la grabación.
+
+
+## <a name="handle-error-conditions"></a>Control de condiciones de error
+
+Pueden surgir condiciones inesperadas durante la reproducción. Estas condiciones pueden hacer que sus flujos de interfaz de usuario fallen. Puede usar características avanzadas de control de errores para crear pasos alternativos cuando surjan condiciones inesperadas. 
 
 Estos son los pasos que debe seguir.
 
 1. Inicie sesión con una cuenta profesional o educativa en [Power Automate](https://powerautomate.microsoft.com).
-1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario** para mostrar los flujos de la interfaz de usuario.
+1. Seleccione **Mis flujos** > **Flujos de interfaz de usuario**.
 1. Seleccione **Más comandos**, los tres puntos verticales correspondientes al flujo de la interfaz de usuario que quiera editar.
 1. Seleccione **Editar**.
 1. Seleccione la flecha abajo que se encuentra inmediatamente antes del paso de flujo de la interfaz de usuario al que quiere agregar el control de errores y, luego, elija **+** (Insertar nuevo paso).
@@ -196,7 +272,7 @@ Estos son los pasos que debe seguir.
 
       ![Inserción de imagen de nuevo paso](../media/edit-desktop/insert-new-step.png) 
 
-1. Seleccione **Add a parallel branch** (Agregar una rama paralela).
+1. Seleccione **Agregar una rama paralela**.
 
     ![Imagen que muestra la adición de una rama paralela y otras opciones](../media/edit-desktop/add-parallel-branch.png)
 
@@ -248,8 +324,6 @@ Siga estos pasos después de haber grabado un script de flujo de interfaz de usu
 
 >[!WARNING]
 >Con la reproducción basada en coordenadas, la automatización puede seleccionar controles que no forman parte de la aplicación de destino debido a una serie de motivos, por ejemplo, que la interfaz de usuario de las aplicaciones de destino cambie drásticamente.
-
-
 
 
 ## <a name="next-steps"></a>Pasos siguientes

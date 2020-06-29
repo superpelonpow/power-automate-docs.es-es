@@ -1,5 +1,5 @@
 ---
-title: Preguntas más frecuentes | Microsoft Docs
+title: Preguntas más frecuentes | Documentos de Microsoft
 description: Respuestas a varias preguntas comunes sobre Power Automate
 services: ''
 suite: flow
@@ -13,25 +13,25 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 05/07/2020
 ms.author: stepsic
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 99a666c80cb1e6994b774f6b269d657a62996548
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: 5b646d486666b92f0496f7bb5c3f851cc8ab56f0
+ms.sourcegitcommit: 8714786a5b632dfd60099871629cf369a31c4125
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3299021"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346594"
 ---
 # <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
-## <a name="audience-and-strategy"></a>Destinatarios y estrategia
+## <a name="audience-and-strategy"></a>Público y estrategia
 ### <a name="what-is-power-automate"></a>¿Qué es Power Automate?
-Power Automate es un servicio basado en la nube que hace que sea práctico y sencillo para los usuarios de línea de negocio construir flujos de trabajo que automatizan las tareas y procesos de negocio que consumen mucho tiempo a través de aplicaciones y servicios.
+Power Automate es un servicio basado en la nube que hace que sea práctico y sencillo para los usuarios de línea de negocio crear flujos de trabajo que automatizan las tareas y procesos de negocio que consumen mucho tiempo a través de aplicaciones y servicios.
 
 ### <a name="who-is-the-intended-audience-for-power-automate"></a>¿Cuáles son los destinatarios previstos para Power Automate?
 Power Automate tiene dos destinatarios distintos:
@@ -57,7 +57,7 @@ Power Automate se puede ejecutar en todos los exploradores y dispositivos modern
 
 Power Automate funciona muy bien en dispositivos modernos. Si necesita administrar Power Automate desde un dispositivo móvil, pruebe la aplicación Power Automate para móviles, que está disponible en [iPhone](https://itunes.apple.com/app/microsoft-flow/id1094928825?ls=1&mt=8), [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow) y [Windows Phone](https://www.microsoft.com/p/microsoft-flow/9nkn0p5l9n84?rtc=1#activetab=pivot:overviewtab).
 
-#### <a name="supported-browsers"></a>Exploradores compatibles
+#### <a name="supported-browsers"></a>Exploradores admitidos
 
 Se recomienda que use el explorador más reciente que sea compatible con el sistema operativo. Se admiten estos exploradores:
 
@@ -113,10 +113,10 @@ Puede compartir los flujos de cualquiera de estas maneras:
 * Para que los flujos se puedan ejecutar manualmente, también puede conceder a otros usuarios o grupos de su organización permiso solo para ejecutar el flujo.
 
 ### <a name="how-many-flows-can-i-have"></a>¿Cuántos flujos puedo tener?
-Power Automate viene con hasta 50 flujos. Si necesita más, puede solicitarlos.
+Puede crear un número ilimitado de flujos, dependiendo del [tipo de licencia](https://flow.microsoft.com/pricing) que posea.
 
 ### <a name="where-do-i-get-started-with-power-automate"></a>¿Dónde aprendo a utilizar Power Automate?
-Comience con los siguientes recursos:
+Introducción a los siguientes recursos:
 
 * [Blog](https://flow.microsoft.com)
 * [Canal de YouTube](https://youtube.com/playlist?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF)

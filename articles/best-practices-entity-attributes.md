@@ -19,18 +19,18 @@ helpviewer_keywords:
 author: msftman
 ms.author: deonhe
 manager: kvivek
-ms.openlocfilehash: b9a4a2968a251efd360a043d23e837eaeb746e4e
-ms.sourcegitcommit: 71f9b72d551887324c92b122dadd1b4dd584bc4b
+ms.openlocfilehash: 10f7e72b931cf9d4dffc51527f1b4ac17bdfbae8
+ms.sourcegitcommit: 2284143cf147beb7d6071fd8005a41298e51e493
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "3299263"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3385018"
 ---
 # <a name="best-practices-in-using-business-process-flow-attributes"></a>Procedimientos recomendados para usar los atributos de flujo de proceso de negocio
 
 
 
-Los atributos de las entidades relacionados con los procesos heredados están en desuso Estos son algunos procedimientos recomendados para usar el atributo *Fase activa* (activestageid) de la entidad de flujo de proceso de negocio. 
+Los atributos heredados relacionados con el proceso en las entidades han quedado obsoletos. Estos son algunos procedimientos recomendados para usar el atributo *Fase activa* (activestageid) de la entidad de flujo de proceso de negocio. 
 
 ## <a name="reporting-on-the-active-stage-of-a-business-process-flow"></a>Informe sobre la fase activa de un flujo de proceso de negocio
 

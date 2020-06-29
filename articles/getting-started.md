@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e78ba6de412a067ae21eb4a11a5b1a7d5165448c
-ms.sourcegitcommit: c86134235a4e3a819800c77fbc50034cfd8714c2
+ms.openlocfilehash: bd7d85dc2ec30147202c2838f00c7de6c7c587ad
+ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3298669"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3340032"
 ---
 # <a name="get-started-with-power-automate"></a>Introducción a Power Automate 
 
@@ -38,15 +38,15 @@ ms.locfileid: "3298669"
 
 ## <a name="types-of-flows"></a>Tipos de flujos
 
-Power Automate es uno de los pilares de Power Platform. Proporciona una plataforma con poco código para la automatización de procesos y flujos de trabajo. Esta es una lista de los diferentes tipos de flujos:
+Power Automate es uno de los pilares de Power Platform. Facilita una plataforma con poco código para el flujo de trabajo y la automatización de procesos. Esta es una lista de los diferentes tipos de flujos:
 
 | **Tipo de flujo**                                                                       | **Caso de uso**                                                                                  | **Destino**                                                                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Flujos automatizados](get-started-logic-flow.md)                 | Cree un flujo que realice automáticamente una o varias tareas después de que lo desencadene un evento. | [Conectores](https://docs.microsoft.com/connectors/) para servicios en la nube o locales. |
+| [Flujos automatizados](get-started-logic-flow.md)                 | Cree un flujo que realizará una o varias tareas automáticamente después de que un evento lo desencadene. | [Conectores](https://docs.microsoft.com/connectors/) para servicios en la nube o locales. |
 | [Flujos de botón](introduction-to-button-flows.md)              | Ejecute tareas repetitivas desde cualquier lugar, en cualquier momento, a través del dispositivo móvil.                        |                                                                                        |
-| [Flujos programados](run-scheduled-tasks.md)                    | Cree un flujo que realice una o varias tareas según una programación.             |                                                                                        |
+| [Flujos programados](run-scheduled-tasks.md)                    | Cree un flujo que realiza una o más tareas en una programación.             |                                                                                        |
 | [Flujos de proceso de negocio](business-process-flows-overview.md) | Defina un conjunto de pasos que los usuarios pueden seguir para llegar a un resultado deseado.                 | Procesos humanos                                                                        |
-| [Flujos de interfaz de usuario (versión preliminar)](ui-flows/overview.md)                                                | Registre y automatice la reproducción de pasos manuales en un software heredado.                    | Aplicaciones web y de escritorio que no tienen API disponibles para la automatización.    |
+| [Flujos de interfaz de usuario](ui-flows/overview.md)                                                | Grabe y automatice la reproducción de pasos manuales en software heredado.                    | Aplicaciones web y de escritorio que no tienen API disponibles para la automatización.    |
 
 Puede crear y administrar todos los flujos de la pestaña **Mis flujos** de Power Automate.
 
@@ -62,21 +62,21 @@ Con Power Automate, puede hacer lo siguiente:
 
 - Buscar fácilmente servicios y plantillas.
 
-    ![Página de inicio de Flow (1)](./media/getting-started/flowhome1.png)
+    ![Página de inicio de Flow 1](./media/getting-started/flowhome1.png)
 
 - Elegir un servicio de entre los más populares.
 
-    ![Página de inicio de Flow (2)](./media/getting-started/flowhome2.png)
+    ![Página de inicio de Flow 2](./media/getting-started/flowhome2.png)
 
 - Ver información general sobre cada flujo.
 
-    ![Página de inicio de Flow (3)](./media/getting-started/flowhome3.png)
+    ![Página de inicio de Flow 3](./media/getting-started/flowhome3.png)
 
-Cada plantilla está diseñada para un propósito específico. Por ejemplo, el envío de un mensaje de texto cuando su jefe le envíe correos electrónicos, la incorporación de clientes potenciales de Twitter a Dynamics 365 o la realización de copias de seguridad de sus archivos. Estas plantillas son solo el aspecto más destacado, pero hay mucho más. Están diseñadas para inspirarle a crear flujos personalizados para cualquier proceso que necesite.
+Cada plantilla está diseñada para un propósito específico. Por ejemplo, hay plantillas para el envío de un mensaje de texto cuando su jefe le envíe correos electrónicos, la incorporación de clientes potenciales de Twitter a Dynamics 365 o la realización de copias de seguridad de sus archivos. Estas plantillas son solo el aspecto más destacado, pero hay mucho más. Están diseñadas para inspirarle a crear flujos personalizados para cualquier proceso que necesite.
 
 ## <a name="create-your-first-flow"></a>Creación del primer flujo ##
 
-1. Seleccione una plantilla que le resulte útil. Una plantilla sencilla es [**Recibir recordatorios diarios en el correo**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/):
+1. Seleccione una plantilla que le resulte útil. Una plantilla sencilla es [**Recibir recordatorios diarios en el correo electrónico**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/):
 
     ![plantilla de recordatorio diario](./media/getting-started/template-details.png)
 
@@ -103,11 +103,11 @@ Ahora que ha creado su primer flujo a partir de una plantilla, use cualquiera de
 
 Si crea un flujo de trabajo desde cero, podrá controlarlo en su totalidad. Aquí le presentamos algunas ideas para empezar:
 
-- [Flujos con muchos pasos](multi-step-logic-flow.md)
-- [Ejecución de tareas de forma programada](run-scheduled-tasks.md)
-- [Creación de un flujo de aprobación](wait-for-approvals.md)
-- [Visualización de un flujo en acción](see-a-flow-run.md)
-- [Publicación de una plantilla](publish-a-template.md)
+- [Flujos con muchos pasos](multi-step-logic-flow.md).
+- [Ejecución de tareas de forma programada](run-scheduled-tasks.md).
+- [Creación de un flujo de aprobación](wait-for-approvals.md).
+- [Visualización de un flujo en acción](see-a-flow-run.md).
+- [Publicación de una plantilla](publish-a-template.md).
 - [Crea flujos a partir de una plantilla de Microsoft Teams](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
 
 
@@ -142,7 +142,7 @@ Desde el centro de notificaciones, puede ir a la página **Actividad** de Power 
 
 ![Centro de notificaciones](media/getting-started/notification-center.png)
 
-## <a name="use-the-mobile-app"></a>Uso de la aplicación móvil ##
+## <a name="use-the-mobile-app"></a>Usar la aplicación móvil ##
 
 Descargue de la aplicación móvil de Power Automate para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows). Con la aplicación, podrá [supervisar la actividad de los flujos](mobile-monitor-activity.md), [administrarlos](mobile-manage-flows.md) y [crearlos a partir de plantillas](mobile-create-flow.md).
 

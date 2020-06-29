@@ -17,12 +17,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bb8ca7efb83a863f3031dd18d0d9bd67ae3c5c07
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: 2c74e54c61e030bad788db97b14fca93f2a256fb
+ms.sourcegitcommit: 2284143cf147beb7d6071fd8005a41298e51e493
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3297129"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3385013"
 ---
 # <a name="add-an-on-demand-workflow-to-a-business-process-flow"></a>Adición de un flujo de trabajo a petición a un flujo de proceso de negocio
 
@@ -54,7 +54,7 @@ Decida si quiere que el flujo de trabajo a petición se desencadene mediante uno
 En el ejemplo siguiente, se agrega un flujo de trabajo a petición denominado **My on demand workflow** (Mi flujo de trabajo a petición) a la **Fase 1** del flujo de proceso de negocio. 
 
 1. Expanda la fase 1 para mostrar la sección **Proceso desencadenado**. 
-2. Haga clic en la pestaña **Componentes** y arrastre **Flujo de trabajo** a la sección **Proceso desencadenado**.
+2. Seleccione la pestaña **Componentes** y arrastre **Flujo de trabajo** a la sección **Proceso desencadenado**.
     ![Adición del flujo de trabajo a una fase](media/add-workflow-to-bpf-1.png) Como alternativa, puede arrastrar **Flujo de trabajo** a la sección **Flujos de trabajo globales**, lo que lo desencadena cuando se activa o se archiva el proceso.
  ![Adición del flujo de trabajo a la activación o archivado del proceso](media/add-workflow-to-bpf-global.png)
 3. En el cuadro de búsqueda de la pestaña **Propiedades**, escriba y busque el nombre del flujo de trabajo a petición que quiera agregar a la fase de flujo de proceso de negocio y, después, haga clic en **Aplicar**.
@@ -64,9 +64,9 @@ En el ejemplo siguiente, se agrega un flujo de trabajo a petición denominado **
    
     Como alternativa, al colocar el flujo de trabajo en la sección **Flujos de trabajo globales**, las opciones de desencadenador son **Proceso aplicado**, **Proceso reactivado**, **Proceso abandonado** y **Proceso finalizado**.
 
-5. Haga clic en **Actualizar** en la barra del diseñador de flujos de proceso de negocio.
+5. Seleccione **Actualizar** en la barra del diseñador de flujos de proceso de negocio.
  
 ## <a name="next-steps"></a>Pasos siguientes
-[Uso de procesos de flujo de trabajo para automatizar los procesos que no requieren interacción del usuario](workflow-processes.md) <br/>
-[Tutorial: Crear un flujo de proceso de negocio para estandarizar procesos](create-business-process-flow.md) <br/>
-[Business process flow automation in Dynamics 365 (Automatización de flujos de proceso de negocios en Dynamics 365)](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/)
+[Usar los procesos del flujo de trabajo para automatizar los procesos que no requieran la interacción del usuario](workflow-processes.md) <br/>
+[Tutorial: Crear un flujo de proceso de negocio para estandarizar los procesos](create-business-process-flow.md) <br/>
+[Automatización de flujos de proceso de negocios en Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/)

@@ -20,17 +20,17 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 96b97fe3e6090a2810c0fa0e1dfae2d4b890da62
-ms.sourcegitcommit: e58c8e6954c8e666497a66dc945fdc16c7c845a9
+ms.openlocfilehash: ca3dc36827423bffaed53b4ce19c50b94e09df81
+ms.sourcegitcommit: 2284143cf147beb7d6071fd8005a41298e51e493
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "3331117"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3384972"
 ---
 # <a name="create-an-automated-flow-by-using-common-data-service-current-environment"></a>Crear un flujo automatizado mediante Common Data Service (entorno actual)
 
 >[!IMPORTANT]
->Hay tres conectores disponibles para conectarse a Common Data Service. Este artículo cubre el [conector de Common Data Service (entorno actual)](./connection-cds.md) recomendado para conectarse a Common Data Serivce. El [conector de Common Data Service](./connection-cds.md)y [Dynamics 365 Connector](https://docs.microsoft.com/connectors/dynamicscrmonline/) también están disponibles para su uso si no puede usar el conector recomendado.
+>Hay tres conectores disponibles para conectarse a Common Data Service. Este artículo cubre el [conector de Common Data Service (entorno actual)](./connection-cds.md) recomendado para conectarse a Common Data Service. El [conector de Common Data Service](./connection-cds.md)y [Dynamics 365 Connector](https://docs.microsoft.com/connectors/dynamicscrmonline/) también están disponibles para su uso si no puede usar el conector recomendado.
 
 
 Debe [crear flujos que reconozcan las soluciones](./overview-solution-flows.md) para usar el conector de Common Data Service (entorno actual). 
@@ -75,8 +75,8 @@ Aquí están los detalles de cada ámbito.
 | --- | --- |
 |Unidad de negocio|Se realiza una acción en un registro que es propiedad de la unidad de negocio|
 |Organización|Cualquier usuario de la organización o la base de datos realiza una acción|
-|Elemento principal: unidad de negocio secundaria|Se realiza una acción en un registro que es propiedad de la unidad de negocio o una unidad de negocio secundaria|
-|Usuario|Se realiza una acción en un registro de su propiedad|
+|Unidades de negocio Parent:Child|Se realiza una acción en un registro que es propiedad de la unidad de negocio o una unidad de negocio secundaria|
+|User|Se realiza una acción en un registro de su propiedad|
 
 
 Los desencadenadores que se ejecutan cuando se actualiza un registro también pueden usar atributos de filtrado. Esto garantiza que el flujo solo se ejecute cuando se actualice cualquiera de los atributos definidos.

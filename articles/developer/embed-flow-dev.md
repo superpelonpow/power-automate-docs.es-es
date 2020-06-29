@@ -13,31 +13,31 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/31/2019
+ms.date: 05/05/2020
 ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 6ca077b6a7b0d04f184ddf8a716dd677713e0667
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: bc2550d7ed20af51010b2091861732f918980a23
+ms.sourcegitcommit: 549224cf13fc761f473c880e8d0d8f2741cc7b0f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3297701"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435097"
 ---
 # <a name="integrate-power-automate-with-websites-and-apps"></a>Integrar Power Automate con sitios web y aplicaciones
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 Inserte Power Automate en la aplicación o sitio web mediante *widgets de flujo* para proporcionar a los usuarios una manera sencilla de automatizar sus tareas profesionales o personales.
 
-Los widgets de flujo son iframes ubicados en un documento de host. Este documento señala a una página del diseñador de Power Automate. Estos widgets integran la funcionalidad específica de Power Automate en la aplicación de terceros.
+Los widgets de Flow son iframes ubicados en un documento de host. Este documento señala a una página del diseñador de Power Automate. Estos widgets integran la funcionalidad específica de Power Automate en la aplicación de terceros.
 
 Los widgets pueden ser sencillos. Por ejemplo, un widget que representa una lista de plantillas sin comunicación alguna entre el host y el iframe. Los widgets también pueden ser complejos. Por ejemplo, un widget que aprovisiona un flujo a partir de una plantilla y, después, lo desencadena a través de una comunicación bidireccional entre el host y el widget.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Una **cuenta de Microsoft** o bien
+- Una **cuenta Microsoft** o bien
 - Una cuenta profesional o educativa
 
 ## <a name="use-the-unauthenticated-widget"></a>Uso del widget sin autenticar
@@ -54,9 +54,9 @@ Para empezar, agregue este código para mostrar las plantillas de Power Automate
 | Parámetro | Descripción |
 | --- | --- |
 | configuración regional |El código de región e idioma de cuatro letras para la vista de la plantilla. Por ejemplo, `en-us` representa el inglés de Estados Unidos, mientras que `de-de` representa el alemán. |
-| search term |El término de búsqueda para las plantillas que desea mostrar en la vista. Por ejemplo, busque `wunderlist` para mostrar las plantillas de Wunderlist. |
-| number of templates |El número de plantillas que desea mostrar en la vista. |
-| destination |La página que se abre cuando los usuarios seleccionan la plantilla. Escriba `details` para mostrar los detalles de la plantilla, o bien `new` para abrir el diseñador de Power Automate. |
+| término de búsqueda |El término de búsqueda para las plantillas que desea mostrar en la vista. Por ejemplo, busque `SharePoint` para mostrar las plantillas de SharePoint. |
+| número de plantillas |El número de plantillas que desea mostrar en la vista. |
+| destino |La página que se abre cuando los usuarios seleccionan la plantilla. Escriba `details` para mostrar los detalles de la plantilla, o bien `new` para abrir el diseñador de Power Automate. |
 | categoría |Filtra por la categoría de plantilla determinada. | 
 | parameters.{name} |Contexto adicional que se pasa en el flujo. |
 
@@ -65,27 +65,26 @@ Si el parámetro de destino es `new`, se abre el diseñador de Power Automate cu
 
 ### <a name="passing-additional-parameters-to-the-flow-template"></a>Paso de parámetros adicionales a la plantilla de flujo
 
-Si el usuario está en un contexto determinado en el sitio web o la aplicación, es posible que quiera pasar ese contexto al flujo. Por ejemplo, un usuario puede abrir una plantilla para *Notify me when an item is added to a list* (Notificarme cuando se agrega un elemento a una lista) mientras ve una lista concreta en Wunderlist. Siga estos pasos para pasar el identificador de la lista como *parámetro* al flujo:
+Si el usuario está en un contexto determinado en el sitio web o la aplicación, es posible que quiera pasar ese contexto al flujo. Por ejemplo, un usuario puede abrir una plantilla para *Cuando se crea un artículo* mientras mira una lista determinada en SharePoint. Siga estos pasos para pasar el identificador de la lista como *parámetro* al flujo:
 
-1. Defina el parámetro de la plantilla de flujo antes de publicarlo. Así es un parámetro, `@{parameters('parameter_name')}`.
+1. Defina el parámetro de la plantilla de flujo antes de publicarlo. Así es un parámetro `@{parameters('parameter_name')}`.
 1. Pase el parámetro en la cadena de consulta del iframe src. Por ejemplo, agregue `&parameters.listName={the name of the list}` si tiene un parámetro denominado **listName**.
 
 ### <a name="full-sample"></a>Ejemplo completo
 
-Para mostrar las cuatro plantillas principales de Wunderlist en alemán e iniciar el usuario con **myCoolList**, use este código:
+Para mostrar las cuatro plantillas principales de SharePoint en alemán e iniciar el usuario con **myCoolList**, use este código:
 
 ```html
-<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist
-&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
+<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=sharepoint%20&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
 ```
 
 ## <a name="use-the-authenticated-flow-widgets"></a>Uso de widgets de flujo autenticados
 
 En la tabla siguiente se muestra la lista de widgets de Power Automate que admiten la experiencia completa desde el widget mediante el token de acceso de autenticación de usuario. Tendrá que usar el kit de desarrollo de software de Javascript (SDK de JS) de Power Automate para insertar los widgets y proporcionar el token de acceso de usuario requerido.
 
-| Tipo de widget    | Característica admitida                                                                                                                  | 
+| Tipo de widget    | Característica compatible                                                                                                                  | 
 |----------------|------------------------------------------------------------------------------------------------------------------------------------| 
-| flows          | Muestra una lista de flujos en una pestaña para los flujos personales y compartidos. Permite editar un flujo existente o crear uno a partir de una plantilla o en blanco. | 
+| flujos          | Muestra una lista de flujos en una pestaña para los flujos personales y compartidos. Permite editar un flujo existente o crear uno a partir de una plantilla o en blanco. | 
 | flowCreation   | Crea un flujo a partir de un identificador de plantilla proporcionado por la aplicación host.                                                                | 
 | runtime        | Desencadena un flujo manual o de desencadenador híbrido que proporciona la aplicación host.                                                        | 
 | approvalCenter | Inserta las solicitudes de aprobación y las aprobaciones enviadas.                                                                                        | 
@@ -123,10 +122,10 @@ var sdk = new MsFlowSdk({
 }); 
 ```
 
-| Nombre     | Requerido/Opcional | Descripción                                                    | 
+| Nombre     | Obligatorio/Opcional | Descripción                                                    | 
 |----------|-------------------|----------------------------------------------------------------| 
 | `hostName` | Opcionales          | Nombre de host de Power Automate, por ejemplo https://flow.microsoft.com        | 
-| `locale`   | Opcionales          | Configuración regional del cliente para el widget (si no se especifica, el valor predeterminado es `en-Us`). | 
+| `locale`   | Opcionales          | Configuración regional del cliente para el widget (si no se especifica, el valor predeterminado es `en-Us`) | 
 
 
 Una vez creada la instancia del SDK de JS, se puede inicializar e insertar un widget de Power Automate en un elemento primario de la aplicación host. Para ello, agregue una etiqueta div de HTML:
@@ -164,7 +163,7 @@ Este es un estilo de ejemplo para el contenedor que se puede modificar para hace
 
 Estos son los parámetros para `renderWidget()`: 
 
-| Parámetro        | Requerido/Opcional | Descripción                                                                                 | 
+| Parámetro        | Obligatorio/Opcional | Descripción                                                                                 | 
 |------------------|-------------------|---------------------------------------------------------------------------------------------| 
 | `container`        | Obligatorios          | Identificador de un elemento DIV en la página de host donde se insertará el widget.                   | 
 | `environmentId`    | Opcionales          | Los widgets necesitan un identificador de entorno. Si no proporciona una identificación, se utiliza un entorno predeterminado. | 
@@ -211,11 +210,11 @@ flowsSettings?: {
 };
  ```
 
-| Parámetro | Requerido/Opcional | Descripción | 
+| Parámetro | Obligatorio/Opcional | Descripción | 
 |-----------|-------------------|-------------| 
-| `createFromBlankTemplateId` | Obligatorios | Se usa el GUID de la plantilla cuando el usuario hace clic en el botón **Crear desde cero** en el widget de Flow. | 
+| `createFromBlankTemplateId` | Obligatorios | Se usa el GUID de la plantilla cuando el usuario hace clic en el botón **Crear desde cero** en el widget de Flow | 
 | `flowsFilter` | Opcionales | El widget de Power Automate aplica el filtro proporcionado al enumerar los flujos. Por ejemplo, se muestran los flujos que hacen referencia a un sitio de SharePoint concreto. <br /> ```flowFilter: "operations/any(operation: operation/sharepoint.site eq 'https://microsoft.sharepoint.com/teams/ProcessSimple' )"   ``` |                 
-| `tab` | Opcionales | Aparece de forma predeterminada la pestaña activa predeterminada que se va a mostrar en el widget de Power Automate. <br /> Por ejemplo, <br /> ```tab:'sharedFlows' ``` muestra la pestaña Equipo<br /> y ``` tab:'myFlows' ``` muestra la pestaña Mis flujos. |   
+| `tab` | Opcionales | Aparece de forma predeterminada la pestaña activa predeterminada que se va a mostrar en el widget de Power Automate. <br /> Por ejemplo: <br /> ```tab:'sharedFlows' ``` muestra la pestaña Equipo<br /> y ``` tab:'myFlows' ``` muestra la pestaña Mis flujos. |   
 
 ### <a name="templatessettings"></a>TemplatesSettings 
 
@@ -233,13 +232,13 @@ templatesSettings?: {
 };
  ```
 
-| Parámetro |Requerido/Opcional | Descripción                                                                        
+| Parámetro |Obligatorio/Opcional | Descripción                                                                        
 |-----------|-------------------|-----------------| 
 |`defaultParams` | Opcionales          | Parámetros de tiempo de diseño que se usan al crear un flujo a partir de una plantilla, por ejemplo: <br /> ``` defaultParams: {'parameters.sharepoint.site': 'https://microsoft.sharepoint.com/teams/ProcessSimple', 'parameters.sharepoint.list': 'b3a5baa8-fe94-44ca-a6f0-270d9f821668'   } ```| 
 | `destination` | Opcionales          | Los valores válidos son "new" o "details". Cuando se establece en "details", se muestra una página de detalles al crear un flujo a partir de una plantilla.     |
-| `pageSize` | Opcionales          | El número de plantillas que se van a mostrar. El tamaño predeterminado es 6. | 
-| `searchTerm` | Opcionales          | Se muestran plantillas que coinciden con el término de búsqueda proporcionado.| 
-| `templateCategory` | Opcionales          | Se muestran las plantillas de una categoría específica.| 
+| `pageSize` | Opcionales          | El número de plantillas que se van a mostrar. Tamaño predeterminado = 6 | 
+| `searchTerm` | Opcionales          | Se muestran plantillas que coinciden con el término de búsqueda proporcionado| 
+| `templateCategory` | Opcionales          | Se muestran las plantillas de una categoría específica| 
  
 ### <a name="approvalcentersettings"></a>ApprovalCenterSettings
 
@@ -254,14 +253,14 @@ Se aplica a widgets ApprovalCenter.
     hideLink?: boolean
 };
  ```
-| Parámetro | Requerido/Opcional | Descripción | 
+| Parámetro | Obligatorio/Opcional | Descripción | 
 |------------|-------------------|--------------| 
-| `hideLink`| Opcionales | Cuando se establece en `true`, el widget oculta los vínculos de las aprobaciones recibidas y enviadas. | 
-| `autoNavigateToDetails`| Opcionales | Cuando se establece en `true`, el widget abre de forma automática los detalles de aprobación cuando solo existe una aprobación. | 
+| `hideLink`| Opcionales | Cuando se establece en `true`, el widget oculta los vínculos de las aprobaciones recibidas y enviadas | 
+| `autoNavigateToDetails`| Opcionales | Cuando se establece en `true`, el widget abre de forma automática los detalles de aprobación cuando solo existe una aprobación | 
 | `approvalsFilter`| Opcionales | El widget de aprobación aplicará el filtro de aprobación especificado al enumerar las aprobaciones, por ejemplo: <br/> ``` approvalsFilter: 'properties/itemlink eq \'https://microsoft.sharepoint.com/teams/ProcessSimple/_layouts/15/listform.aspx?PageType=4&ListId=737e30a6-5bc4-4e9c-bcdc-d34c5c57d938&ID=3&ContentTypeID=0x010010B708969A9C16408696FD23801531C6\'' ```  <br/> <br/>``` approvalsFilter: 'properties/itemlinkencoded eq \'{Your base64 encoded item link url} \'' ```|
-| `tab`| Opcionales | La pestaña activa predeterminada que se va a mostrar en el widget de Flow. <br/> Valores válidos: "receivedApprovals", "sentApprovals". | 
-| `showSimpleEmptyPage`| Opcionales | Muestra una página vacía cuando no hay ninguna aprobación. | 
-| `hideInfoPaneCloseButton` | Opcionales | Oculta el botón Cerrar del panel de información (o el host ya tiene un botón Cerrar). | 
+| `tab`| Opcionales | La pestaña activa predeterminada que se va a mostrar en el widget de Flow. <br/> Valores válidos: "receivedApprovals", "sentApprovals" | 
+| `showSimpleEmptyPage`| Opcionales | Muestra una página vacía cuando no hay ninguna aprobación | 
+| `hideInfoPaneCloseButton` | Opcionales | Oculta el botón Cerrar del panel de información (o el host ya tiene un botón Cerrar) | 
 
 <!-- why isn't this: hideInfoPaneCloseButton listed in the approvalCenterSettings? call since other optionals are there -->
 
@@ -281,51 +280,51 @@ widget.listen("<WIDGET_EVENT>", function() {
 
 | Evento de widget      | Detalles                                                         | 
 |-------------------|-----------------------------------------------------------------| 
-| `WIDGET_READY`      | El widget se ha cargado correctamente.                                      | 
-| `WIDGET_RENDERED`   | El widget se ha cargado y se ha completado la representación de la interfaz de usuario.                      | 
-| `GET_ACCESS_TOKEN`  | Solicitud del widget para insertar el token de acceso de usuario.                      | 
-| `GET_STRINGS`       | Permite al host reemplazar un conjunto de cadenas de interfaz de usuario que se muestran en el widget. | 
+| `WIDGET_READY`      | El widget se ha cargado correctamente                                      | 
+| `WIDGET_RENDERED`   | El widget se ha cargado y se ha completado la representación de la interfaz de usuario                      | 
+| `GET_ACCESS_TOKEN`  | Solicitud del widget para insertar el token de acceso de usuario                      | 
+| `GET_STRINGS`       | Permite al host reemplazar un conjunto de cadenas de interfaz de usuario que se muestran en el widget | 
 
 ### <a name="runtime-widget"></a>Widget de tiempo de ejecución
 
 | Evento de widget                    | Detalles                                     | Datos                                              | 
 |---------------------------------|---------------------------------------------|-----------| 
-| `RUN_FLOW_STARTED`                | Se ha desencadenado y se ha iniciado la ejecución del flujo.      |           | 
-| `RUN_FLOW_COMPLETED`              | La ejecución del flujo se ha desencadenado correctamente.             |           | 
-| `RUN_FLOW_DONE_BUTTON_CLICKED`    | El usuario ha hecho clic en el botón Listo durante la ejecución del flujo.       |           | 
-| `RUN_FLOW_CANCEL_BUTTON_CLICKED`  | El usuario ha hecho clic en el botón Cancelar durante la ejecución del flujo.     |           | 
-| `FLOW_CREATION_SUCCEEDED`         | El flujo se ha creado correctamente.           |`{ flowUrl: string, flowId: string, fromTemplate: string } `|
-| `WIDGET_CLOSE`                    | Se ha desencadenado cuando el host debía cerrar el widget. |       | 
+| `RUN_FLOW_STARTED`                | Se ha desencadenado y se ha iniciado la ejecución del flujo      |           | 
+| `RUN_FLOW_COMPLETED`              | La ejecución del flujo se ha desencadenado correctamente             |           | 
+| `RUN_FLOW_DONE_BUTTON_CLICKED`    | El usuario ha hecho clic en el botón Listo durante la ejecución del flujo       |           | 
+| `RUN_FLOW_CANCEL_BUTTON_CLICKED`  | El usuario ha hecho clic en el botón Cancelar durante la ejecución del flujo     |           | 
+| `FLOW_CREATION_SUCCEEDED`         | El flujo se ha creado correctamente           |`{ flowUrl: string, flowId: string, fromTemplate: string } `|
+| `WIDGET_CLOSE`                    | Se ha desencadenado cuando el host debía cerrar el widget |       | 
 
 ### <a name="flow-creation-widget"></a>Widget de creación de flujos
 
 | Evento de widget             | Detalles                                  | Datos  | 
 |--------------------------|------------------------------------------|-------| 
-| `FLOW_CREATION_FAILED`     | No se pudo crear el flujo.                     |       | 
-| `WIDGET_CLOSE`             | Se ha desencadenado cuando el host debía cerrar el widget.  |       | 
-| `TEMPLATE_LOAD_FAILED`     | No se pudo cargar la plantilla.              |       | 
-| `FLOW_CREATION_SUCCEEDED`  | El flujo se ha creado correctamente.        |` { flowUrl: string, flowId: string,fromTemplate?: string } `| 
+| `FLOW_CREATION_FAILED`     | No se pudo crear el flujo                     |       | 
+| `WIDGET_CLOSE`             | Se ha desencadenado cuando el host debía cerrar el widget  |       | 
+| `TEMPLATE_LOAD_FAILED`     | No se pudo cargar la plantilla              |       | 
+| `FLOW_CREATION_SUCCEEDED`  | El flujo se ha creado correctamente        |` { flowUrl: string, flowId: string,fromTemplate?: string } `| 
 
 ### <a name="approval-widget"></a>Widget de aprobación
 
 | Evento de widget                      | Detalles                             | 
 |-----------------------------------|-------------------------------------| 
-| `RECEIVED_APPROVAL_STATUS_CHANGED`  | El estado de la aprobación recibida ha cambiado.  | 
-| `SENT_APPROVAL_STATUS_CHANGED`      | El estado de la aprobación enviada ha cambiado.      | 
+| `RECEIVED_APPROVAL_STATUS_CHANGED`  | El estado de la aprobación recibida ha cambiado  | 
+| `SENT_APPROVAL_STATUS_CHANGED`      | El estado de la aprobación enviada ha cambiado      | 
 
 El evento **GET\_STRINGS** permite personalizar el texto de algunos de los elementos de interfaz de usuario que aparecen en el widget. Se pueden personalizar las cadenas siguientes:
 
 | Clave de cadena                     | Uso en el widget                                                                                                                  | 
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------| 
-| `FLOW_CREATION_CREATE_BUTTON`    | Texto que se muestra en el botón Crear flujo del widget de creación de flujos y tiempo de ejecución.                                                | 
+| `FLOW_CREATION_CREATE_BUTTON`    | Texto que se muestra en el botón Crear flujo del widget de creación de flujos y tiempo de ejecución                                                | 
 | `FLOW_CREATION_CUSTOM_FLOW_NAME` | El valor inicial que se va a usar para el nombre del flujo en el widget de creación de flujos. Solo se usa cuando se habilita la opción allowCustomFlowName. | 
-| `FLOW_CREATION_HEADER`           | El encabezado que se va a usar al crear un flujo en los widgets de tiempo de ejecución y creación de flujos.                                                    | 
-| `INVOKE_FLOW_HEADER`             | El encabezado que se va a usar al invocar un flujo en el widget de tiempo de ejecución.                                                                           | 
-| `INVOKE_FLOW_RUN_FLOW_BUTTON`    | Texto que se muestra en el botón que se usa para invocar o ejecutar un flujo en el widget de tiempo de ejecución.                                                       | 
+| `FLOW_CREATION_HEADER`           | El encabezado que se va a usar al crear un flujo en los widgets de tiempo de ejecución y creación de flujos                                                    | 
+| `INVOKE_FLOW_HEADER`             | El encabezado que se va a usar al invocar un flujo en el widget de tiempo de ejecución                                                                           | 
+| `INVOKE_FLOW_RUN_FLOW_BUTTON`    | Texto que se muestra en el botón que se usa para invocar o ejecutar un flujo en el widget de tiempo de ejecución                                                       | 
 
 ### <a name="example"></a>Ejemplo
 
-Llamada a `widgetDoneCallback` pasando un objeto JSON con pares de clave y valor de clave de cadena y texto para reemplazar el valor predeterminado.
+Llamada a `widgetDoneCallback` pasando un objeto JSON con pares clave-valor de clave de cadena y texto para reemplazar el valor predeterminado.
 
 ```javascript
 widget.listen("GET_STRINGS", function(requestParam, widgetDoneCallback) {
@@ -350,7 +349,7 @@ widget.notify('<WIDGET_ACTION>', parameterMatchingParameterInterface)
 
 ### <a name="example"></a>Ejemplo 
 
-Invocación de un flujo mediante el envío del comando siguiente a un widget de tiempo de ejecución. 
+Invocación de un flujo mediante el envío del comando siguiente a un widget de tiempo de ejecución 
 
 ```javascript
 widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });  
@@ -360,24 +359,24 @@ widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });
 
 | Acción de widget                               | Detalles                                                      | Interfaz de parámetros  | 
 |---------------------------------------------|--------------------------------------------------------------|----------------------| 
-| `triggerFlow`                                 | Desencadena la ejecución de un flujo.                                          | `{ flowName: string, implicitData?: string } `| 
-| `triggerFlowByTemplate`                       | Desencadena la ejecución de un flujo mediante una plantilla.                              | `{ templateId: string, implicitData?: string, designTimeParameters?: Record<string, any> }` |
-| `getTriggerSchema`                            | Obtiene el esquema del desencadenador de un flujo.                               | `{   flowName: string, }` | 
-| `closeWidget`                                 | Cancela cualquier actividad pendiente y genera un evento WIDGET_CLOSE. |                      | 
+| `triggerFlow`                                 | Desencadena la ejecución de un flujo                                          | `{ flowName: string, implicitData?: string } `| 
+| `triggerFlowByTemplate`                       | Desencadena la ejecución de un flujo mediante una plantilla                              | `{ templateId: string, implicitData?: string, designTimeParameters?: Record<string, any> }` |
+| `getTriggerSchema`                            | Obtiene el esquema del desencadenador de un flujo                               | `{   flowName: string, }` | 
+| `closeWidget`                                 | Cancela cualquier actividad pendiente y genera un evento WIDGET_CLOSE |                      | 
 
 ### <a name="flow-creation-widget"></a>Widget de creación de flujos
 
 | Acción de widget                               | Detalles                                                      | Interfaz de parámetros  | 
 |---------------------------------------------|--------------------------------------------------------------|----------------------| 
-| `createFlowFromTemplate`                      | Crea un flujo para la plantilla seleccionada.                     | `{ templateName: string, designTimeParameters?: Record<string, any> }`| 
-| `createFlowFromTemplateDefinition`            | Crea un flujo para la definición de la plantilla seleccionada.          | `{ templateDefinition: string }` | 
-| `closeWidget`                                 | Cancela cualquier actividad pendiente y genera un evento WIDGET_CLOSE. |                      | 
+| `createFlowFromTemplate`                      | Crea un flujo para la plantilla seleccionada                     | `{ templateName: string, designTimeParameters?: Record<string, any> }`| 
+| `createFlowFromTemplateDefinition`            | Crea un flujo para la definición de la plantilla seleccionada          | `{ templateDefinition: string }` | 
+| `closeWidget`                                 | Cancela cualquier actividad pendiente y genera un evento WIDGET_CLOSE |                      | 
 
 ### <a name="approval-widget"></a>Widget de aprobación
 
 | Acción de widget  | Detalles                                           | Interfaz de parámetros  | 
 |----------------|---------------------------------------------------|----------------------| 
-| `closeInfoPane`  | Cierra el panel de información en el que se muestran los detalles de la aprobación.  | N/D                  | 
+| `closeInfoPane`  | Cierra el panel de información en el que se muestran los detalles de la aprobación  | N/D                  | 
 
 ## <a name="configuring-your-client-application"></a>Configuración de la aplicación cliente
 
@@ -393,11 +392,11 @@ Siga estos pasos para seleccionar uno o varios permisos delegados:
 
 1.  Ir a https://portal.azure.com 
 2.  Seleccione **Azure Active Directory**.
-3.  En **Administrar**, haga clic en **Registros de aplicaciones**.
+3.  En **Administrar**, seleccione **Registros de aplicaciones**.
 4.  Escriba la aplicación de terceros que se va a configurar para los ámbitos de servicio de Flow.
 5.  Seleccione **Configuración**.
       ![Arquitectura de widget](../media/embed-flow-dev/AAD-App-Settings.png)
-6. Haga clic en **Permisos necesarios** en **Acceso de API**/.
+6. Seleccione **Permisos necesarios** en **Acceso de API**/.
 7. Seleccione **Agregar**.
 8. Elija **Seleccionar una API**.
       ![Arquitectura de widget](../media/embed-flow-dev/AAD-App-Select-an-API.png)
@@ -416,7 +415,7 @@ Se proporciona un ejemplo de aplicación de página única (SPA) de JavaScript e
 1.  Inicie sesión en el [portal Azure](https://portal.azure.com/).
 2.  En el panel de navegación de la izquierda, haga clic en **Azure Active Directory** y, después, seleccione **Registros de la aplicación** (versión preliminar) \> Nuevo registro.
 3.  Cuando aparezca la página **Registrar una aplicación**, escriba un nombre para la aplicación.
-4.  En **Tipos de cuenta compatibles**, haga clic en **Cuentas en cualquier directorio organizativo**.
+4.  En **Tipos de cuenta compatibles**, seleccione **Cuentas** en cualquier directorio organizativo.
 5.  En la sección **URL de redireccionamiento**, seleccione la plataforma web y establezca el valor en la dirección URL de la aplicación\' en función del servidor web.  Establezca este valor en http://localhost:30662/ para ejecutar la aplicación de ejemplo.
 6.  Seleccione **Registrar**.
 7.  En la página **Información general** de la aplicación, anote el valor de identificador (cliente) de la aplicación.
@@ -429,14 +428,14 @@ Se proporciona un ejemplo de aplicación de página única (SPA) de JavaScript e
 1.  Descargue el ejemplo y cópielo en una carpeta local del dispositivo.
 2.  Abra el archivo index.html de la carpeta FlowSDKSample y modifique `applicationConfig` para actualizar el valor `clientID` con el identificador de aplicación que ha registrado antes.
     ![Arquitectura de widget](../media/embed-flow-dev/SampleApp-ApplicationConfig.png)
-3.  La aplicación de ejemplo está configurada para usar los ámbitos de Flow **Flows.Read.All** y **Flow.Manage.All**. Puede configurar ámbitos adicionales si actualiza la propiedad **flowScopes** del objeto **applicationConfig**.
+3.  La aplicación de ejemplo está configurada para usar los ámbitos de Flow **Flows.Read.All** y **Flow.Manage.All.** Puede configurar ámbitos adicionales si actualiza la propiedad **flowScopes** del objeto **applicationConfig**.
 4.  Ejecute estos comandos para instalar la dependencia y ejecutar la aplicación de ejemplo:
     > \> npm install \> node server.js
-5. Abra el explorador y, después, escriba http://localhost:30662.
-6. Haga clic en el botón **Iniciar sesión** para autenticarse en AAD y adquirir un token de acceso de flujo.
+5. Abra el explorador y, después, escriba http://localhost:30662
+6. Seleccione el botón **Iniciar sesión** para autenticarse en AAD y adquirir un token de acceso de flujo.
 7. El cuadro de texto **Token de acceso** contiene el token de acceso.
     ![Arquitectura de widget](../media/embed-flow-dev/SampleApp-AccessToken.png)
-8. Haga clic en **Load Flows widget** (Cargar widget de flujos) o **Load Templates widget** (Cargar widget de plantillas) para insertar los widgets correspondientes.
+8. Seleccione **Cargar widget de flujos** o **Cargar widget de plantillas** para insertar los widgets correspondientes.
     ![Arquitectura de widget](../media/embed-flow-dev/SampleApp-TemplatesWidget.png)
 
 [Vínculo de descarga](https://procsi.blob.core.windows.net/docs/FlowWidgetSampleApp.zip) de la aplicación de ejemplo.
@@ -457,7 +456,7 @@ Obtenga más información sobre la configuración y la integración de widgets:
 
 Si no se muestra la configuración regional inicializada, Flow usará de forma predeterminada la configuración regional admitida más cercana.
 
-| Configuración regional     | Idioma                   | 
+| Configuración regional     | Language                   | 
 |------------|----------------------------| 
 | bg-bg      | Búlgaro (Bulgaria)       | 
 | ca-es      | Catalán (catalán)            | 
@@ -468,10 +467,10 @@ Si no se muestra la configuración regional inicializada, Flow usará de forma p
 | en-Us      | Inglés (Estados Unidos)    | 
 | es-es      | Español (España)        | 
 | et-ee      | Estonio (Estonia)         | 
-| eu-es      | Euskera (euskera)             | 
+| eu-es      | Euskera (Euskera)             | 
 | fi-fi      | Finés (Finlandia)          | 
 | fr-fr      | Francés (Francia)            | 
-| gl-es      | Gallego (España)           | 
+| gl-es      | Gallego (gallego)           | 
 | hi-HU      | Húngaro (Hungría)        | 
 | hi-in      | Hindi (India)              | 
 | hr-hr      | Croata (Croacia)         | 

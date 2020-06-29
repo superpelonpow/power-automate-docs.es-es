@@ -20,17 +20,17 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: df82a2aa48a8e85c950757ef4f72a6f7ee88e071
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: f9fee8a217cdec28f6a3b49dee6335c4f13a3d45
+ms.sourcegitcommit: 2284143cf147beb7d6071fd8005a41298e51e493
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3298031"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3384948"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-power-automate"></a>Responder a las solicitudes de exportación del titular de los datos de acuerdo con el RGPD para Power Automate
 
 
-Como parte de nuestro compromiso de acompañarle en su viaje de adaptación al Reglamento general de protección de datos (RGPD), hemos elaborado una documentación que le ayudará a prepararse. En esta documentación no solo se describe lo que estamos haciendo para prepararnos para el RGPD, sino que también se comparten ejemplos de pasos que se pueden adoptar actualmente para el cumplimiento de este reglamento al usar Power Automate.
+Como parte de nuestro compromiso de colaborar con usted en su viaje hacia el Reglamento General de Protección de Datos (RGPD), hemos desarrollado documentación para ayudarle a prepararse. En esta documentación no solo se describe lo que estamos haciendo para prepararnos para el RGPD, sino que también se comparten ejemplos de pasos que se pueden adoptar actualmente para el cumplimiento de este reglamento al usar Power Automate.
 
 ## <a name="manage-export-requests"></a>Administración de la exportación de solicitudes
 
@@ -40,19 +40,19 @@ Power Automate ofrece las siguientes experiencias para buscar o exportar los dat
 
 * **Acceso a sitio web:** inicie sesión en el [Centro de administración de Power Apps](https://admin.powerapps.com/) o el [Centro de administración de Power Automate](https://admin.flow.microsoft.com/).
 
-* **Acceso a PowerShell:** [cdmlets de PowerShell de administración de Power Apps](https://go.microsoft.com/fwlink/?linkid=871804).
+* **Acceso a PowerShell:** [cmdlets de PowerShell de administración de Power Apps](https://go.microsoft.com/fwlink/?linkid=871804).
 
-|**Datos de cliente**|**Acceso al sitio web**|**Acceso a PowerShell**|
+|**Datos de clientes**|**Acceso al sitio web**|**Acceso a PowerShell**|
 |-----------------|------------------|-------------------|
 |Registros generados por el sistema|[Portal de confianza de servicios de Office 365](https://servicetrust.microsoft.com/)|
 |Historial de ejecución|Creador de portal de Power Automate||
 |Flows|Creador de portal de Power Automate||
 |Permisos de flujo| Portal de creado e Power Automate y Centro de administración de Power Automate||
-|Detalles del usuario||Cmdlets Power Apps|
+|Detalles de usuario||Cmdlets Power Apps|
 |Conexiones|Creador de portal de Power Automate|Cmdlets Power Apps |
 |Permisos de conexión|Creador de portal de Power Automate|Cmdlets Power Apps |
 |Conectores personalizados|Creador de portal de Power Automate|Cmdlets Power Apps |
-|Permisos del conector personalizado|Creador de portal de Power Automate|Cmdlets Power Apps |
+|Permisos de conector personalizado|Creador de portal de Power Automate|Cmdlets Power Apps |
 |Puerta de enlace|Creador de portal de Power Automate|Cmdlets de PowerShell de puerta de enlace de datos local|
 |Permisos de puerta de enlace|Creador de portal de Power Automate|Cmdlets de PowerShell de puerta de enlace de datos local|
 
@@ -124,7 +124,7 @@ Get-AdminConnection -CreateBy $userId | ConvertTo-Json |Out-File -FilePath "User
 
 ## <a name="export-a-list-of-a-users-connection-permissions"></a>Exportación de una lista de permisos de conexión de un usuario
 
-Un usuario puede exportar las asignaciones de roles de conexión para todas las conexiones a las que tiene acceso a través de la función Get-ConnectionRoleAssignment en los [cdmlets de PowerShell de Power Apps](https://go.microsoft.com/fwlink/?linkid=871804).
+Un usuario puede exportar las asignaciones de roles de conexión para todas las conexiones a las que tiene acceso a través de la función Get-ConnectionRoleAssignment en los [cmdlets de PowerShell de Power Apps](https://go.microsoft.com/fwlink/?linkid=871804).
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -149,7 +149,7 @@ Siga estos pasos para exportar una lista de conectores de cliente:
 
 1. Navegue hasta [Power Automate](https://flow.microsoft.com).
 1. Seleccione el icono de **engranaje** de la configuración.
-1. Seleccione **Conectores personalizados**-
+1. Seleccione **Conectores personalizados**.
 1. Copie y pegue la lista de conectores personalizados en un editor de texto, como Microsoft Word.
 
     ![Exportación de conectores personalizados](./media/gdpr-dsr-export/export-custom-connectors.png)
@@ -174,7 +174,7 @@ Get-AdminConnector -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "Use
 
 ## <a name="export-a-users-custom-connector-permissions"></a>Exportación de los permisos de conector personalizado de un usuario
 
-Un usuario puede exportar todos los permisos de conector personalizado que haya creado a través de la función Get-ConnectorRoleAssignment en los [cdmlets de PowerShell de Power Apps](https://go.microsoft.com/fwlink/?linkid=871804).
+Un usuario puede exportar todos los permisos de conector personalizado que haya creado a través de la función Get-ConnectorRoleAssignment en los [cmdlets de PowerShell de Power Apps](https://go.microsoft.com/fwlink/?linkid=871804).
 
 ```PowerShell
 Add-PowerAppsAccount

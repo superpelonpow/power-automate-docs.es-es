@@ -20,33 +20,33 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 16d92a2d8aad6e39ff5e2eb446438dc769b1baf8
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: d15e9d4e9e52c61495ec464e4db46d993deebe8a
+ms.sourcegitcommit: 2284143cf147beb7d6071fd8005a41298e51e493
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3299087"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3385044"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-power-automate"></a>Responder a las solicitudes de eliminación del titular de los datos de acuerdo con el RGPD para Power Automate.
 
 
-El "derecho a borrado" mediante la eliminación de los datos personales de los datos de cliente de una organización es una de las principales protecciones contempladas en el RGPD. La eliminación de los datos personales incluye la eliminación de todos los datos personales y los registros generados por el sistema, excepto la información del registro de auditoría.
+El "derecho al borrado" de datos personales de los datos de clientes de una organización es una protección clave en el RGPD. La eliminación de los datos personales incluye la eliminación de todos los datos personales y registros generados por el sistema, excepto la información del registro de auditoría.
 
 Power Automate permite a los usuarios crear flujos de trabajo de automatización que formen parte de las operaciones cotidianas de su organización. Cuando un usuario abandone la organización, un administrador tendrá que revisar y determinar manualmente si se debe o no eliminar ciertos datos y recursos creados por el usuario. Hay otros datos personales que se eliminan automáticamente en el momento en que se elimina una cuenta de usuario de Azure Active Directory.
 
-En la siguiente tabla se muestra cuáles datos personales se eliminan automáticamente y cuáles datos requieren que un administrador los revise y elimine manualmente:
+En la siguiente tabla se muestra qué datos personales se eliminan automáticamente y cuáles requieren que un administrador los revise y elimine manualmente:
 
-|Requieren revisión y eliminación manual|Eliminado automáticamente cuando se elimina el usuario de Azure Active Directory|
+|Requiere revisar y eliminación manuales|Eliminado automáticamente cuando se elimina el usuario de Azure Active Directory|
 |------|------|
 |Entorno*|Registros generados por el sistema|
 |Permisos de entorno**|Historial de ejecución|
 |Flows|Fuente de actividades|
 |Permisos de flujo|Puerta de enlace |
-|Detalles del usuario|Permisos de puerta de enlace|
+|Detalles de usuario|Permisos de puerta de enlace|
 |Conexiones*||
 |Permisos de conexión||
 |Conector personalizado*||
-|Permisos del conector personalizado||
+|Permisos de conector personalizado||
 
 *Cada uno de estos recursos contiene registros "Creado por" y "Modificado por" que incluyen datos personales. Por motivos de seguridad, estos registros se conservan hasta que se elimina el recurso.
 
@@ -56,7 +56,7 @@ En el caso de los datos y recursos que requieren una revisión manual, Power Aut
 
 * **Acceso a sitio web:** inicie sesión en el [Centro de administración de Power Apps](https://admin.powerapps.com/) o el [Centro de administración de Power Automate](https://admin.flow.microsoft.com/).
 
-* **Acceso a PowerShell:** [cdmlets de PowerShell de administración de Power Apps](https://go.microsoft.com/fwlink/?linkid=871804). 
+* **Acceso a PowerShell:** [cmdlets de PowerShell de administración de Power Apps](https://go.microsoft.com/fwlink/?linkid=871804) 
 
 Este es el desglose de las experiencias que están disponibles para que un administrador elimine cada tipo de datos personales dentro de cada tipo de recurso:
 
@@ -64,17 +64,17 @@ Este es el desglose de las experiencias que están disponibles para que un admin
 |-----|----|----|----|
 |Registros generados por el sistema|[Portal de confianza de servicios de Office 365](https://servicetrust.microsoft.com/)|||
 |Entorno|Centro de administración de Power Automate|Cmdlets Power Apps||
-|Permisos del entorno*|Centro de administración de Power Automate|Cmdlets Power Apps||
+|Permisos de entorno*|Centro de administración de Power Automate|Cmdlets Power Apps||
 |Historial de ejecución||| Eliminación a través de la directiva de retención de 28 días|
 |Fuente de actividades |||Eliminación a través de la directiva de retención de 28 días|
 |Trabajos de usuario|| ||
 |Flows|Creador de portal de Power Automate**|||
 |Permisos de flujo|Creador de portal de Power Automate|||
-|Detalles del usuario||Cmdlets Power Apps||
+|Detalles de usuario||Cmdlets Power Apps||
 |Conexiones|Creador de portal de Power Automate| ||
 |Permisos de conexión|Creador de portal de Power Automate| ||
 |Conector personalizado|Creador de portal de Power Automate| ||
-|Permisos del conector personalizado|Creador de portal de Power Automate| ||
+|Permisos de conector personalizado|Creador de portal de Power Automate| ||
 |Historial de aprobación|Creador de portal de Microsoft Power Apps*|||
 
 * Con la introducción de Common Data Service, si se crea una base de datos dentro del entorno, los permisos del entorno y los de las aplicaciones controladas por modelos se almacenan como registros dentro de Common Data Service. Vea [Ejecutar DSR según los datos de clientes en Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251), para obtener orientación sobre cómo responder a DSR para usuarios que usan Common Data Service.
@@ -92,11 +92,11 @@ En los pasos siguientes se describen las funciones administrativas que existen p
 
 ## <a name="list-and-re-assign-flows"></a>Enumeración y reasignación de flujos
 
-Estos pasos copian flujos existentes para un usuario saliente. Si asigna una propiedad nueva a las copias, estos flujos pueden continuar admitiendo los procesos empresariales existentes. La copia de estos flujos es importante para eliminar vínculos de identificación personal para el usuario saliente, y se deben establecer nuevas conexiones para que el flujo se conecte con otras API y sistemas SaaS.
+Estos pasos copian flujos existentes para un usuario saliente. Si asigna una propiedad nueva a las copias, estos flujos pueden continuar admitiendo los procesos empresariales existentes. La copia de estos flujos es importante para eliminar vínculos de identificación personal para el usuario saliente y se deben establecer nuevas conexiones para que el flujo se conecte con otras API y sistemas SaaS.
 
 1. Inicie sesión en el [Centro de administración de Power Automate](https://admin.flow.microsoft.com/) y, a continuación, seleccione el entorno que contiene los flujos que posee el usuario eliminado.
 
-    ![Ver entornos](./media/gdpr-dsr-delete/view-environments.png)
+    ![Vista de entornos](./media/gdpr-dsr-delete/view-environments.png)
 
 1. Seleccione **Recursos** > **Flujos** y, a continuación, seleccione el título del flujo que desea reasignar.
 
@@ -153,7 +153,7 @@ Vea [Ejecutar DSR según los datos de clientes en Common Data Service](https://g
 
 ## <a name="delete-connections-created-by-a-user"></a>Eliminación de las conexiones creadas por un usuario
 
-Las conexiones se utilizan junto con los conectores para establecer la conectividad con otras API y sistemas SaaS.  Las conexiones incluyen referencias al usuario que las creó y, como resultado, se pueden eliminar para quitar todas las referencias al usuario.
+Las conexiones se utilizan junto con los conectores para establecer la conectividad con otras API y sistemas SaaS.  Las conexiones incluyen referencias al usuario que las creó y, como resultado, se pueden eliminar para quitar cualquier referencia al usuario.
 
 Cmdlets de PowerShell de creador de Power Apps
 
@@ -207,7 +207,7 @@ Get-AdminConnectionRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-A
 
 ## <a name="delete-custom-connectors-created-by-the-user"></a>Eliminación de conectores personalizados creados por el usuario
 
-Los conectores personalizados complementan los conectores de serie ya existentes y permiten la conectividad con otras API, SaaS y sistemas desarrollados a medida. Los conectores personalizados incluyen referencias al usuario que las creó y, como resultado, se pueden eliminar para quitar todas las referencias al usuario.
+Los conectores personalizados complementan los conectores predefinidos existentes y proporcionan conectividad a otros API, SaaS y sistemas de desarrollo personalizado. Los conectores personalizados incluyen referencias al usuario que las creó y, como resultado, se pueden eliminar para quitar todas las referencias al usuario.
 
 Cmdlets de PowerShell de creador de Power Apps
 
@@ -263,10 +263,10 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-Ad
 
 Como administrador, tendrá que elegir entre dos opciones al procesar una solicitud de eliminación de derechos de titulares de datos para un usuario para cada uno de los entornos que ha creado el usuario:
 
-1. Si determina que nadie más de su organización va a utilizar el entorno, puede optar por eliminarlo.
+1. Si determina que nadie más de su organización va a utilizar el entorno, puede optar por eliminarlo
 1. Si determina que el entorno sigue siendo necesario, puede optar por no eliminar el entorno y agregarse a usted mismo (u otro usuario de su organización) como administrador del entorno.
 > [!IMPORTANT]
-> La eliminación de un entorno eliminará permanentemente todos los recursos en el entorno, como aplicaciones, flujos, conexiones, etc., así que revise el contenido de un entorno antes de su eliminación.
+> La eliminación de un entorno eliminará permanentemente todos los recursos del entorno, incluidas todas las aplicaciones, flujos, conexiones, etc., por tanto, revise el contenido de un entorno antes de la eliminación.
 >
 >
 
@@ -309,7 +309,7 @@ Una vez completados los pasos anteriores, el último paso consiste en eliminar l
 
 En caso de que sea miembro de un inquilino no administrado, tendrá que realizar una acción **Cerrar cuenta** desde el [portal de privacidad profesional y educativa](https://go.microsoft.com/fwlink/?linkid=873123).
 
-Para determinar si es o no un usuario de un inquilino administrado o no administrado, realice las acciones siguientes:
+Para determinar si usted es usuario de un inquilino administrado o no administrado, realice las siguientes acciones:
 
 1. Abra la siguiente dirección URL en un explorador, asegurándose de reemplazar su dirección de correo electrónico en la dirección URL:[https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1).
 1. Si usted es miembro de un **inquilino no administrado** verá `"IsViral": true` en la respuesta.
@@ -324,4 +324,4 @@ Para determinar si es o no un usuario de un inquilino administrado o no administ
     
     }
 
-1. En caso contrario, pertenece a un inquilino administrado.
+1. De lo contrario, pertenece a un inquilino administrado.

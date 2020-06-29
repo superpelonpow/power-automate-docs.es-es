@@ -1,5 +1,5 @@
 ---
-title: Introducción acerca de los entornos para administradores | Microsoft Docs
+title: Introducción de los entornos para administradores | Microsoft Docs
 description: Usar, crear y administrar entornos en Power Automate
 services: ''
 suite: flow
@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 05/07/2020
 ms.author: sunayv
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 0e0b312ce5e962052770eb44fd1a61c2f19c8e4f
-ms.sourcegitcommit: 27ee91452be26cf5c96397c39f9f5b8bede14cdb
+ms.openlocfilehash: e1c2a93fb011b6f20ecaf79fb0bf95212a2506d4
+ms.sourcegitcommit: 2c9cffb59ef2382648a80966ebbf0fe8eafebe64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3299043"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "3354446"
 ---
 # <a name="using-environments-within-power-automate"></a>Uso de entornos en Power Automate
 
@@ -36,7 +36,7 @@ Los entornos proporcionan las ventajas siguientes:
 
 * **Localidad de los datos**: los entornos se pueden crear en distintas regiones y enlazarse a esa ubicación geográfica. Cuando se crea un flujo en un entorno, dicho flujo se enruta a todos los centros de datos de su ubicación geográfica. Esto también mejora el rendimiento.
 
-    Si los usuarios están en Europa, cree y use el entorno en la región de Europa. Si los usuarios están en Estados Unidos, cree y use el entorno de Estados Unidos. 
+    Si los usuarios están en Europa, cree y use el entorno en la región de Europa. Si sus usuarios están en Estados Unidos, cree y use el entorno en Estados Unidos. 
 
     > [!IMPORTANT]
     > Si elimina el entorno, también se eliminarán todos los flujos dentro de ese entorno. Esto es aplicable a cualquier elemento que haya creado en ese entorno, incluidas las conexiones, las puertas de enlace, Power Apps y otros.
@@ -45,7 +45,7 @@ Los entornos proporcionan las ventajas siguientes:
     Por ejemplo, puede agregar los servicios *SharePoint* y *OneDrive para la Empresa* a una directiva solo de datos empresariales. Los flujos creados en este entorno pueden usar los servicios *SharePoint* y *OneDrive para la Empresa*. Pero no podrán compartir datos con otros servicios que no estén incluidos en la directiva solo de datos empresariales.
 
   > [!NOTE]
-  > Prevención de pérdida de datos está disponible con los SKU de algunas licencias, entre las que se incluye la licencia de P2.
+  > La prevención de pérdida de datos está disponible con los SKU de algunas licencias, entre las que se incluye la licencia de P2.
 
 * **Límite de aislamiento para todos los recursos**: todos los flujos, puertas de enlace, conexiones, conectores personalizados, etc. residen en un entorno específico. No existen en ningún otro entorno.
 * **Common Data Service**: estas son las opciones que tiene si desea crear un flujo que inserte datos en un servicio:
@@ -62,22 +62,22 @@ Aunque los entornos proporcionan muchas ventajas, también introducen nuevas lim
 
 ## <a name="use-the-default-environment"></a>Uso del entorno predeterminado
 
-Todos los usuarios comparten el entorno **predeterminado** y cualquier usuario puede crear flujos en **él**.
+Todos los usuarios comparten el entorno **Predeterminado** y cualquier usuario puede crear flujos en el entorno **Predeterminado**.
 
 > [!TIP]
-> En los usuarios de versión preliminar, todos los flujos existentes residen en el entorno predeterminado. Un *usuario de versión preliminar* es alguien que usaba Power Automate antes de su versión de disponibilidad general (GA).
+> Para los usuarios de versión preliminar, todos los flujos existentes residen en el entorno predeterminado. Un *usuario de versión preliminar* es alguien que usaba Power Automate antes de su versión de disponibilidad general (GA).
 
-## <a name="the-admin-center"></a>El centro de administrador
+## <a name="the-admin-center"></a>El centro de administración
 
-Los administradores usan el centro de administrador para crear y administrar los entornos. El centro de administrador se puede abrir de cualquiera de estas dos formas:
+Los administradores usan el centro de administración para crear y administrar los entornos. El centro de administración se puede abrir de cualquiera de estas dos formas:
 
 ### <a name="option-1-select-settings"></a>Opción 1: seleccione Configuración
 
 1. Inicie sesión en [flow.microsoft.com](https://flow.microsoft.com).
-1. Seleccione el icono de engranaje para la configuración y elija **Centro de administrador** en la lista:
+1. Seleccione el icono de engranaje para la configuración y elija **Centro de administración** en la lista:
 
    ![Configuración y Portal de administrador](./media/environments-overview-admin/settings.png)
-1. Se abre el centro de administrador.
+1. Se abre el centro de administración.
 
 ### <a name="option-2-open-adminflowmicrosoftcom"></a>Opción 2: abra admin.flow.microsoft.com
 
@@ -97,8 +97,8 @@ Vaya a [admin.flow.microsoft.com](https://admin.flow.microsoft.com) e inicie ses
 
      ![configuración del entorno](./media/environments-overview-admin/new-environment-dialog.png)
 3. Haga clic en **Crear entorno**.
-4. Ahora tiene la opción **Crear base de datos** u **Omitir**.
-5. Si elige la opción **Crear base de datos**, se le pedirá que indique una **moneda** y un **idioma** para la base de datos. Además, también puede elegir tener implementados datos y aplicaciones de ejemplo.
+4. Ahora tiene la opción de **Crear base de datos** u **Omitir**.
+5. Si elige **Crear base de datos**, se le pedirá que indique una **moneda** y un **idioma** para la base de datos. Además, también puede elegir tener implementados datos y aplicaciones de ejemplo.
 
    ![configuración de base de datos](./media/environments-overview-admin/create-database-dialog2.png)
 
@@ -109,7 +109,7 @@ Ahora puede agregar usuarios al entorno.
 
 1. En el [centro de administración de Power Automate](https://admin.flow.microsoft.com), seleccione **Entornos**:
 
-   ![elemento de menú entornos](./media/environments-overview-admin/select-environments.png)
+   ![elemento del menú entornos](./media/environments-overview-admin/select-environments.png)
 1. Seleccione un entorno para abrir sus propiedades.
 1. Use la pestaña **Detalles** para ver información adicional sobre un entorno, entre la que se incluye quién lo creó, su ubicación geográfica y mucho más:
 
@@ -155,17 +155,17 @@ Ahora puede agregar usuarios al entorno.
 
 1. Asigne el rol al usuario.
 
-   ![asignar el rol al usuario](./media/environments-overview-admin/D365-Assign-Role.png)
+   ![asignar rol a usuario](./media/environments-overview-admin/D365-Assign-Role.png)
 
 > [!NOTE]
-> Los usuarios o grupos asignados a estos roles de entorno no tienen acceso automáticamente a la base de datos del entorno (si existe) y un propietario de base de datos debe darles acceso por separado. 
+> Los usuarios o grupos asignados a estos roles de entorno no reciben acceso automático a la base de datos del entorno (si existe) y un propietario de base de datos debe darles acceso. 
 >
 >
 
-### <a name="database-security"></a>Seguridad de la base de datos
-Los conjuntos de permisos y los roles de usuario de la base de datos controlan la capacidad de crear y modificar un esquema de la base de datos y de conectar con los datos almacenados dentro de una base de datos que se aprovisiona en el entorno. Puede administrar los roles de usuario y los conjuntos de permisos para la base de datos de su entorno desde las secciones **Roles de usuario** y **Conjuntos de permisos** de la pestaña **Seguridad**. 
+### <a name="database-security"></a>Seguridad de base de datos
+La capacidad de crear y modificar un esquema de base de datos y conectarse a los datos almacenados en una base de datos que se aprovisione en el entorno es controlada por las funciones de usuario y conjuntos de permisos de la base de datos. Puede administrar los roles de usuario y los conjuntos de permisos para la base de datos de su entorno desde las secciones **Roles de usuario** y **Conjuntos de permisos** de la pestaña **Seguridad**. 
 
-   ![asignar el rol al usuario](./media/environments-overview-admin/D365-Assign-Role.png)
+   ![asignar rol a usuario](./media/environments-overview-admin/D365-Assign-Role.png)
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -175,15 +175,13 @@ Sí, los flujos se pueden exportar de un entorno e importarlos a otro.
 
 ### <a name="which-license-includes-common-data-service"></a>¿Qué licencia incluye Common Data Service?
 
-Solamente el plan 2 de Microsoft Power Apps incluye derechos para crear bases de datos con Common Data Service. Sin embargo, todos los planes de pago (planes 1 y 2 de Power Automate y Microsoft Power Apps) tienen los derechos para usar Common Data Service.
-
-Para elegir un plan adecuado, visite la página sobre [precios de Power Automate](https://flow.microsoft.com/pricing/).
+Puede acceder a Common Data Service con cualquiera de las [licencias ](https://flow.microsoft.com/pricing) de Power Automate.
 
 Consulte el documento [Preguntas sobre facturación](billing-questions.md) para conocer las respuestas a las preguntas más frecuentes relativas a la facturación.
 
 ### <a name="can-common-data-service-be-used-outside-of-an-environment"></a>¿Se puede usar Common Data Service fuera de un entorno?
 
-Núm. Common Data Service requiere un entorno. [Obtenga más información](common-data-model-intro.md) sobre él.
+Núm. Common Data Service requiere un entorno. [Obtenga más información](common-data-model-intro.md) sobre ello.
 
 ### <a name="what-regions-include-power-automate"></a>¿Qué regiones incluyen Power Automate?
 

@@ -3,19 +3,19 @@ title: Los flujos se almacenan ahora en Common Data Service y usan la API web en
 description: Los flujos se almacenan ahora en Common Data Service y usan la API web enriquecida.
 author: stepsic-microsoft-com
 ms.reviewer: deonhe
-ms.date: 03/05/2019
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: business-applications
 ms.technology: ''
 ms.author: stepsic
 audience: Power user
-ms.openlocfilehash: f446b1b4147b8531ee808447a18058628c2ac0cf
-ms.sourcegitcommit: d336e5ffb6cf07e5c8fefe19a87dd7668db9e074
+ms.openlocfilehash: ebcd4951abae85f843ddaf34c8ce222eb1a83c33
+ms.sourcegitcommit: 4b9261984a554dfccb0d0d77f3d5fdca60e26433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3298361"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3340128"
 ---
 # <a name="power-automate-web-api"></a>API web de Power Automate
 
@@ -30,11 +30,11 @@ Para empezar a crear las solicitudes, primero deberá crear la dirección URL. E
 
 - **Organization ID** es un nombre único del entorno donde se almacenan los flujos. Este identificador de organización se puede ver en el conmutador de entorno, en la parte superior derecha de Power Automate. Cabe decir que **Organization ID** no es lo mismo que **Environment ID** (que es el GUID que aparece en la dirección URL del flujo).
 
-     ![Conmutador de entorno](media/web-api/get-organization-id.png "Conmutador de entorno")
+     ![Selector de entorno](media/web-api/get-organization-id.png "Selector de entorno")
 
 - **Regional Subdomain** depende de la ubicación de su entorno. Al iniciar sesión en Power Automate, puede ver la región de su entorno en la dirección URL de la página web. Use ese nombre de región para buscar el subdominio correspondiente en la siguiente tabla:
 
-     ![Dirección URL de flujo](media/web-api/get-region-name.png "Dirección URL de flujo")
+     ![URL de flujo](media/web-api/get-region-name.png "URL de flujo")
 
      | Región         | Subdominio   |
      | -------------- | ----------- |
@@ -48,6 +48,7 @@ Para empezar a crear las solicitudes, primero deberá crear la dirección URL. E
      | India          | crm8        |
      |  para la Administración Pública de Estados Unidos  | crm9        |
      | Reino Unido | crm11       |
+     |Emiratos Árabes Unidos |   crm15|
 
 La lista de instancias disponibles también se puede obtener mediante programación a través del método [Get Instances](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) de la API de Online Management.
 
@@ -86,7 +87,7 @@ La respuesta contiene la lista de flujos desde dentro de ese entorno:
 }
 ```
 
-## <a name="list-flows"></a>Lista de flujos
+## <a name="list-flows"></a>Mostrar flujos
 
 Tal y como se ha señalado arriba, se puede obtener la lista de flujos de trabajo con una llamada a `GET` en `workflows`. Cada flujo de trabajo tiene muchas propiedades, pero las más relevantes son las siguientes:
 
@@ -256,7 +257,7 @@ El parámetro `AccessMask` es un campo con los siguientes valores relativos a lo
 
 Puede combinar varios permisos usando comas; por ejemplo, para proporcionar la capacidad tanto de leer como de actualizar un flujo, se pasaría `ReadAccess,WriteAccess`.
 
-También puede *dejar de compartir* un flujo con la acción `RevokeAccess`. Veamos un ejemplo:
+También puede *dejar de compartir* un flujo con la acción `RevokeAccess`. Mostramos ahora un ejemplo:
 
 ```http
 POST https://org00000000.crm0.dynamics.com/api/data/v9.1/RevokeAccess
