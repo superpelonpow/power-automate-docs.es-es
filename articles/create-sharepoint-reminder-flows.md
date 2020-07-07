@@ -22,7 +22,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2020
 ms.locfileid: "3299285"
 ---
-# <a name="sharepoint-remind-me"></a>Recordármelo en SharePoint
+# <a name="sharepoint-remind-me"></a>Recuérdamelo en SharePoint
 
 
 Las listas y bibliotecas de SharePoint le permitían definir columnas de metadatos personalizadas para realizar el seguimiento de fechas. Gracias a la integración de Power Automate con SharePoint, puede crear fácilmente flujos de recordatorio según las columnas DateTime de SharePoint. Con los flujos de recordatorio, recibirá una alerta de correo electrónico personal un número determinado de días antes de una fecha sobre cualquier documento o elemento de SharePoint.
